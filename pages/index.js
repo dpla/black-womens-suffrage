@@ -1,9 +1,9 @@
 import React from "react";
 import { withRouter } from "next/router";
 
-import MainLayout from "components/MainLayout";
-import HomeHero from "components/HomePageComponents/HomeHero";
-import LocalIntro from "components/HomePageComponents/LocalIntro";
+import MainLayout from "../components/MainLayout";
+import HomeHero from "../components/HomePageComponents/HomeHero";
+import LocalIntro from "../components/HomePageComponents/LocalIntro";
 
 import { getCurrentUrl } from "lib";
 
