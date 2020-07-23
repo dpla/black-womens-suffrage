@@ -1,3 +1,6 @@
+@import "stylesheets/typography";
+
+
 $fuschia: #bd1187;
 
 $theme-dark-color: #000; //#1f1f1f;
@@ -67,3 +70,8 @@ HomeHero {
   background-size: 400px auto;
 }
 
+body {
+  font-family: $sansFont;
+  max-width: 1200px;
+  margin: auto;
+}

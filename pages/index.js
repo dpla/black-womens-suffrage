@@ -1,30 +1,8 @@
-import React from "react";
-import { withRouter } from "next/router";
+import React from "react"
+import Navbar from "../components/shared/Navbar"
 
-import MainLayout from "../components/MainLayout";
-import HomeHero from "../components/HomePageComponents/HomeHero";
-import LocalIntro from "../components/HomePageComponents/LocalIntro";
-
-import { getCurrentUrl } from "lib";
-
-const Home = ({ router, content }) =>
-  <MainLayout hidePageHeader={true} hideSearchBar={true} route={router}>
-    <div id="main" role="main">
-      <HomeHero />
-      <LocalIntro content={content} />
-    </div>
-  </MainLayout>;
-
-Home.getInitialProps = async ({ req }) => {
-  const fullUrl = getCurrentUrl(req);
-  const markdownUrl = `${fullUrl}/static/local/${LOCALS[LOCAL_ID]
-    .theme}/homepage.md`;
-  const markdownResponse = await fetch(markdownUrl);
-  const pageMarkdown = await markdownResponse.text();
-
-  return {
-    // content: pageMarkdown
-  };
+const Home = () => {
+  return <Navbar/>
 };
 
-export default withRouter(Home);
+export default Home;
