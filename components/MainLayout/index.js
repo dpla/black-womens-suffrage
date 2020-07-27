@@ -1,10 +1,6 @@
 import React from "react";
 import Router from "next/router";
-
-import * as gtag from "lib/gtag";
-import { getFullPath, getCurrentFullUrl } from "lib";
-
-import { SITE_ENV } from "constants/env";
+import Navbar from "../shared/Navbar";
 
 class MainLayout extends React.Component {
   // Google Analytics tracking for MainLayout-using pages
@@ -27,9 +23,12 @@ class MainLayout extends React.Component {
   }
 
   render() {
+    const {children} = this.props
+    
     return (
       <div>
         <Navbar />
+        {children}
       </div>
     );
   }
