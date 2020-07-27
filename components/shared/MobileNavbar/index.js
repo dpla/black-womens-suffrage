@@ -2,17 +2,40 @@ import React, { Component } from 'react'
 import Link from 'next/link'
 import scss from "../Navbar/Navbar.module.scss"
 
-class Navbar extends Component {
+class MobileNavbar extends Component {
+  constructor() {
+    super()
+
+    this.state = {
+      menuDisplayed: false,
+      menuIcon: "../static/images/menu-black.svg"
+    }
+  }
+
+  showMenu = (event) => {
+    const { name } = event.target
+    this.setState(prevState => ({
+      [name]: !prevState.menuDisplayed
+    }))
+  }
+
+  getMenuIcon = () => {
+    return this.state.menuDisplayed ? "../static/images/close.svg" : "../static/images/menu-black.svg"
+  }
+
   render() {
+    const menuIcon = this.getMenuIcon();
 
     return (
       <nav id={scss.navbar}>
         {/* logo and mobile menu icon*/}
         <div id={scss.navLogo}>
-          <img src="../static/images/logo/dpla_bws-logo-color-nav.png" />
+          <img src="../public/logo/dpla_bws-logo-color-nav.png" />
+          <img src={menuIcon} onClick={this.showMenu} name="menuDisplayed" id={scss.menuIcon}/>
         </div>
 
         {/* nav links */}
+        {this.state.menuDisplayed &&
           <div id={scss.navLinks}>
             <Link href="/about">
               <a>About</a>
@@ -40,9 +63,9 @@ class Navbar extends Component {
 
             <a href="https://dp.la" target="_blank">Visit DPLA</a>
 
-            <img src={"../static/images/icon/search/search-bar.svg"} alt="search-bar" id={scss.searchBar}/>
+            <img src={"../static/images/search-grey.svg"}/>
           </div>
-        
+        }
       </nav>
     )
   }
@@ -50,4 +73,4 @@ class Navbar extends Component {
 
 
 
-export default Navbar
+export default MobileNavbar
