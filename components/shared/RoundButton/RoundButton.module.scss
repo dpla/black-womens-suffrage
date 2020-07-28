@@ -1,0 +1,11 @@
+.roundButton {
+  color: white;
+  background: purple;
+  border-radius: 1.5rem;
+  border: none;
+  padding: 1rem 1.325rem;
+
+  & img {
+    padding-left: 1rem;
+  }
+}
