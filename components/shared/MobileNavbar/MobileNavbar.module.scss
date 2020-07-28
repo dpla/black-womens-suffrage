@@ -2,7 +2,7 @@
 @media only screen and (max-width: 600px) {
   #navbar {
     flex-direction: column;
-
+    
     // justify-content: space-between;
   
     & a {
@@ -60,7 +60,11 @@
 // }
 
 /* Medium devices (landscape tablets, 768px and up) */
-// @media only screen and (min-width: 768px) {...}
+@media only screen and (min-width: 768px) {
+  #navbar {
+    // display: none;
+  }
+}
 
 /* Large devices (laptops/desktops, 992px and up) */
 // @media only screen and (min-width: 992px) {...}
