@@ -1,8 +1,15 @@
 import React from "react"
-import Navbar from "../components/shared/Navbar"
+import MainLayout from "../components/MainLayout"
+import HomePage from "../components/HomePage"
 
 const Home = () => {
-  return <Navbar/>
+  return (
+      <MainLayout>
+        <div id="main" role="main">
+          <HomePage/>
+        </div>
+      </MainLayout>
+  )
 };
 
 export default Home;
