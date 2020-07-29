@@ -1,6 +1,7 @@
 import React from "react"
 import scss from "../HomePage/HomePage.module.scss"
 import RoundButton from "../shared/RoundButton"
+import StyledTextWithButtons from "../shared/StyledTextWithButtons"
 
 const HomePage = () => {
   return (
@@ -20,13 +21,22 @@ const HomePage = () => {
     </div>
 
     <div className={scss.collection}>
-      <div className={scss.collection__left}>
+
+      <StyledTextWithButtons 
+        title="BLACK WOMEN’S SUFFRAGE PORTAL" 
+        subtitle="The Black Women’s Suffrage Digital Collection is a collaborative project to provide digital access to materials documenting the roles and experiences of Black Women in the Women’s Suffrage Movement and, more broadly, women’s rights, voting rights,
+        and civic activism between the 1850s and 1960."
+        text="The materials in this collection include photographs, correspondence, speeches, event programs, publications, oral histories, and other artifacts." 
+        buttonText1="SEARCH THE COLLECTION"
+        buttonIcon1="../static/images/icon/button-arrow.svg"
+      />
+      {/* <div className={scss.collection__left}>
         <h6>BLACK WOMEN’S SUFFRAGE PORTAL</h6>
         <p className={scss.collection__text_large}>The Black Women’s Suffrage Digital Collection is a collaborative project to provide digital access to materials documenting the roles and experiences of Black Women in the Women’s Suffrage Movement and, more broadly, women’s rights, voting rights,
         and civic activism between the 1850s and 1960.</p>
         <p className={scss.collection__text_small}>The materials in this collection include photographs, correspondence, speeches, event programs, publications, oral histories, and other artifacts.</p>
         <RoundButton text="SEARCH THE COLLECTION" icon={"../static/images/icon/button-arrow.svg"} className={scss.collection__button}/>
-      </div>
+      </div> */}
 
       <div className={scss.collection__right}>
         <div className={scss.collection__img}></div>
