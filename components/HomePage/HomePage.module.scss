@@ -1,4 +1,4 @@
-#main {
+.hero {
   background-image: url("../../static/images/home/home-image-hero.png");
   background-color: #E77878;
   opacity: 0.5;
@@ -7,23 +7,18 @@
   justify-content: space-between;
 
   & .container {
-
-    // height: 135px;
-    // width: 450px;
-
     & p {
       margin: 0;
       text-shadow: 0 2px 10px rgba(40,40,48,0.2);
-
     }
   }
 
-  & #leftHeroDiv {
+  & .hero__left {
     display: flex;
     margin: auto;
   }
 
-  & #leftContainer {
+  & .container__left {
     color: #FFFFFF;
     // font-family: Inter;
     font-size: 34px;
@@ -33,32 +28,98 @@
     // text-shadow: 0 2px 10px 0 rgba(40,40,48,0.2);
   }
 
-  & #rightContainer {
+  & .container__right {
     background-image: url("../../static/images/graphic/home/home-graphic-hero.png");
     height: 435px;
     width: 725px;
   }
 
-  & #heroButton {
+  & .hero__button {
     margin-top: 3rem;
   }
 
 }
 
-@media only screen and (max-width: 600px) {
-  .container {
-    & .heroText {
-      margin: 0
-    }
+.collection {
+  height: 30rem;
+  background: white;
+  display: flex;
+  margin: 9rem;
+  justify-content: space-between;
 
+  & .collection__left {
+    width: 35rem;
+
+    & .collection__button {
+      margin-top: 1.5rem;
+    }
   }
 
-  #leftContainer {
+  .collection__img {
+    background: url("../../static/images/graphic/home/home-graphic-body-1.png");
+    height: 465px;
+    width: 480px;
+  }
+
+  & h6 {
+    height: 17px;
+    color: #F48C8C;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 0.75px;
+    line-height: 17px;
+  }
+
+  & .collection__text_large {
+    color: #4E4294;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    line-height: 34px;
+  }
+
+  & .collection__text_small {
+    color: #282830;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.35px;
+    line-height: 28px;
+  }
+
+
+}
+
+
+// Mobile
+@media only screen and (max-width: 768px) {
+  .container {
+    & .hero__text {
+      margin: 0
+    }
+  }
+
+  .container__left {
     margin: .5rem;
   }
 
-  #rightContainer {
+  .container__right {
     display: none;
   }
-}
 
+  .collection {
+    margin: 1rem;
+    flex-direction: column;
+
+    & .collection__left {
+      width: auto;
+    }
+
+    .collection__img {
+      margin-top: 1rem;
+      width: 320px;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+}
