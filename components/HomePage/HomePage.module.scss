@@ -41,7 +41,9 @@
 
 }
 
-.collection {
+// Section 1 - Search the collection
+
+.home__section_1 {
   height: 32rem;
   background: white;
   display: flex;
@@ -56,11 +58,11 @@
     }
   }
 
-  & .collection__right {
+  & .home__section_1__right {
     margin: auto;
   }
 
-  .collection__img {
+  .home__section_1__img {
     background: url("../../static/images/graphic/home/home-graphic-body-1.png");
     height: 465px;
     width: 480px;
@@ -68,7 +70,7 @@
 }
 
 
-// Section 3
+// Section 2 - Adding shades of context
 
 .home__section_2 {
   height: 32rem;
@@ -88,6 +90,24 @@
   }
 }
 
+// Section 3 - Digital Collection
+
+.home__section_3 {
+  display: flex;
+  justify-content: space-between;
+  margin: 9rem;
+
+  & .section_3__div_right {
+
+  }
+
+  & .section_3__div_right {
+    display: flex;
+    & img {
+      margin: auto;
+    }
+  }
+}
 
 // Mobile
 @media only screen and (max-width: 768px) {
@@ -105,11 +125,11 @@
     display: none;
   }
 
-  .collection {
+  .home__section_1 {
     margin: 1rem;
     flex-direction: column;
     height: auto;
-    .collection__img {
+    .home__section_1__img {
       display: none;
       // margin-top: 1rem;
       // width: 320px;
@@ -121,7 +141,7 @@
   }
 
 
-  // section 3 
+  // section 2 
   .home__section_2 {  
     height: auto;
     & .section_2__div_left {
@@ -134,6 +154,25 @@
     margin: 1rem;
 
     }
+  }
+
+  // section 3 
+
+  .home__section_3 {
+    height: auto;
+    margin: 1rem;
+
+    & .section_3__div_left {
+      width: auto;
+      height: auto;
+    }
+  
+    & .section_3__div_right {
+
+      display: none;
+
+    }
+
   }
 
 }
