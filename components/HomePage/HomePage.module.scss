@@ -109,6 +109,14 @@
   }
 }
 
+// Section 4 - Carousel
+
+.home__section_4 {
+  display: flex;
+  justify-content: space-between;
+  margin: 6rem;
+}
+
 // Mobile
 @media only screen and (max-width: 768px) {
   .container {

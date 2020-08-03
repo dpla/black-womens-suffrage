@@ -3,7 +3,7 @@ import scss from "../HomePage/HomePage.module.scss"
 import RoundButton from "../shared/RoundButton"
 import StyledTextWithButtons from "../shared/StyledTextWithButtons"
 import Carousel from "../shared/Carousel"
-import { collection } from "../../constants/collection"
+import { homeCarousel } from "../../constants/home-carousel"
 
 const HomePage = () => {
   return (
@@ -66,7 +66,7 @@ const HomePage = () => {
       </section>
 
       <section className={scss.home__section_4}>
-        <Carousel tilesData={collection}/>
+        <Carousel items={homeCarousel}/>
       </section>
     </>
   )

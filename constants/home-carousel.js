@@ -1,4 +1,4 @@
-export const collection = [
+export const homeCarousel = [
   {
     "title": "Ida B. Wells Barnett Papers",
     "description": "",
