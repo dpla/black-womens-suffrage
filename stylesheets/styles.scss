@@ -70,8 +70,48 @@ HomeHero {
   background-size: 400px auto;
 }
 
-body {
+.main {
   font-family: $sansFont;
   max-width: 1440px;
   margin: auto;
+}
+
+.title {
+  height: 17px;
+  color: #F48C8C;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.75px;
+  line-height: 17px;
+}
+
+.section__text_large {
+  color: #4E4294;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  line-height: 34px;
+}
+
+.banner__title {
+  height: 21px;
+  width: 72px;
+  color: #F48C8C;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 1.25px;
+  line-height: 21px;
+  margin-top: 0;
+}
+
+.banner__text_large {
+  height: 192px;
+  width: 455px;
+  color: #4E4294;
+  font-family: Inter;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 0.71px;
+  line-height: 48px;
 }
