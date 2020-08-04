@@ -5,7 +5,7 @@ import HomePage from "../components/HomePage"
 const Home = () => {
   return (
       <MainLayout>
-        <div id="main" role="main">
+        <div className="main" role="main">
           <HomePage/>
         </div>
       </MainLayout>
