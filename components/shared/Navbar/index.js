@@ -34,8 +34,8 @@ class Navbar extends Component {
               <a>Topics</a>
             </Link>
 
-            <Link href="/subgrant-awardees">
-              <a>Subgrant Awardees</a>
+            <Link href="/partners">
+              <a>Partners</a>
             </Link>
 
             <a href="https://dp.la" target="_blank">Visit DPLA</a>
