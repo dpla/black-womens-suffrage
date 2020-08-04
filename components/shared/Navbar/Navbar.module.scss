@@ -1,3 +1,5 @@
+@import "stylesheets/variables";
+
 #navbar {
   display: flex;
   background: white;
@@ -7,7 +9,12 @@
 
   & a {
     text-decoration: none;
-    color: black;
+    color: #282830;
+    font-family: $inter;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    line-height: 20px;
     padding: 0 .5rem;
   }
 
