@@ -66,7 +66,7 @@ const HomePage = () => {
       </section>
 
       <section className={scss.home__section_4}>
-        <Carousel items={homeCarousel}/>
+        <Carousel items={homeCarousel} slidesToShow={3.5}/>
       </section>
     </>
   )

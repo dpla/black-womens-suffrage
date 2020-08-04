@@ -24,16 +24,13 @@ import Slider from "react-slick"
 import CarouselTile from "./CarouselTile"
 import IconButton from "../IconButton"
 import scss from "../Carousel/Carousel.module.scss"
+import Link from "next/link"
 
 const Carousel = ({
-  browseLinkName,
-  browseLinkUrl,
   items,
   slidesToShow,
-  title,
 }) =>
-  <div className={`${scss.wrapper}`}>
-    <div className={`${scss.content} site-max-width`}>
+    <div className={`site-max-width`}>
       <Slider
         slidesToShow={slidesToShow ? slidesToShow : 2.5}
         infinite={false}
@@ -53,22 +50,22 @@ const Carousel = ({
           }
         ]}
       >
-        {items.map((data, index) => {
+        {items.map((item, index) => {
           return(
-            <CarouselTile tile={data} key={`home-carousel-tile-${index + 1}`}/>
+            <CarouselTile tile={item} key={`home-carousel-tile-${index + 1}`}/>
           )
         })}
       
         {/* {items.map(
-          ({ name, repImageUrl, thumbnailUrl, isFeatured, href, as }, index) =>
-            <div key={`${name}—${index}`}>
-              <Link prefetch href={href} as={as}>
+          ({ title, image, thumbnailUrl, href }, index) =>
+            <div key={`${title}—${index}`}>
+              <Link href={href}>
                 <a className={scss.item}>
                   <div className={scss.itemImgWrapper}>
                     <div
                       className={scss.itemImg}
                       style={{
-                        backgroundImage: `url(${repImageUrl || thumbnailUrl})`
+                        backgroundImage: `url(${image || thumbnailUrl})`
                       }}
                     />
                   </div>
@@ -78,6 +75,5 @@ const Carousel = ({
         )} */}
       </Slider>
     </div>
-  </div>;
 
 export default Carousel;
