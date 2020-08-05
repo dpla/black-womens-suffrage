@@ -13,22 +13,6 @@ const CarouselTile = ({tile}) => {
         </div>
       </div>
     </Link>
-      
-
-      {/* <div key={`${title}—${index}`}> */}
-        {/* <Link href={tile.href}>
-          <a className={scss.item}>
-            <div className={scss.itemImgWrapper}>
-              <div
-                className={scss.itemImg}
-                style={{
-                  backgroundImage: `url(${tile.image || thumbnailUrl})`
-                }}
-              />
-            </div>
-          </a>
-        </Link> */}
-      {/* </div> */}
     </>
   )
 }

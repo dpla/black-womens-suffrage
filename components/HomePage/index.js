@@ -3,6 +3,7 @@ import scss from "../HomePage/HomePage.module.scss"
 import RoundButton from "../shared/RoundButton"
 import StyledTextWithButtons from "../shared/StyledTextWithButtons"
 import Carousel from "../shared/Carousel"
+import HomePageSlider from "../shared/HomePageSlider"
 import { homeCarousel } from "../../constants/home-carousel"
 
 const HomePage = () => {
@@ -66,7 +67,8 @@ const HomePage = () => {
       </section>
 
       <section className={scss.home__section_4}>
-        <Carousel items={homeCarousel} slidesToShow={3.5}/>
+        <Carousel items={homeCarousel}/>
+        {/* <HomePageSlider items={homeCarousel}/> */}
       </section>
 
       <div className={scss.home__section_5}>
