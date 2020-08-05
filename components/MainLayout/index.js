@@ -30,7 +30,7 @@ class MainLayout extends React.Component {
     const {children} = this.props
 
     return (
-      <div>
+      <div className="container">
         <Helmet htmlAttributes={{ lang: "en" }} />
         {/* <DPLAHead
           additionalLinks={headLinks}

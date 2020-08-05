@@ -4,10 +4,8 @@ import HomePage from "../components/HomePage"
 
 const Home = () => {
   return (
-      <MainLayout>
-        <div className="main" role="main">
-          <HomePage/>
-        </div>
+      <MainLayout className="main" role="main">
+        <HomePage/>
       </MainLayout>
   )
 };

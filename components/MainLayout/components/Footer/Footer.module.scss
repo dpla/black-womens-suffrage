@@ -1,13 +1,16 @@
 @import "stylesheets/variables";
 
 .footer {
-  height: 464px;
+  height: 350px;
   background-color: #282830;
   display: flex;
   justify-content: flex-end;
   padding: 3.125rem;
   align-items: center;
   flex-direction: column;
+  position: absolute;
+  bottom: -11%;
+  z-index: -1;
 
   & .footer__section_top {
     display: flex;
