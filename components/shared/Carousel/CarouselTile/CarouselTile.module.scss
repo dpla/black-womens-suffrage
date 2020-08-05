@@ -1,0 +1,93 @@
+.content {
+  margin: auto;
+  padding: 2rem 1rem;
+
+  // @media (min-width: $smallRem) {
+  //   padding-top: 3rem;
+  //   padding-bottom: 3rem;
+  // }
+
+  // @media (min-width: $largeRem) {
+  //   padding: 4rem 0;
+  // }
+}
+
+.site-max-width {
+  width: 64rem;
+}
+
+.carousel__tile {
+  height: 345px;
+  width: 350px;
+  border-radius: 0 29.5px 0 29.5px;
+  background-color: #4E4294;
+  box-shadow: 0 0 12px 0 rgba(40,40,48,0.15);
+  position: relative;
+  opacity: 0.6;
+
+  & .tile__title {
+    background: #ffffff;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    padding-left: 2rem;
+  }
+
+  & .carousel__image {
+      /*
+        This small scale improves the visual appearance of these slider items
+        by truncating border artifacts around the edges of the cover images.
+       */
+      // transform: scale(1.15);
+      // padding-top: 72.75%;
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+      width: 100%;
+      border-radius: 0 29.5px 0 29.5px;
+
+  }
+}
+
+.items {
+  display: flex;
+}
+
+.item {
+  display: block;
+  position: relative;
+  padding-right: 0.5rem;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.itemImgWrapper {
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.itemImg {
+  /*
+    This small scale improves the visual appearance of these slider items
+    by truncating border artifacts around the edges of the cover images.
+   */
+  // transform: scale(1.15);
+  // padding-top: 72.75%;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+}
+
+.itemText {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  line-height: 1.25;
+
+  // @media (min-width: $largeRem) {
+  //   margin-top: 0.9rem;
+  // }
+}
