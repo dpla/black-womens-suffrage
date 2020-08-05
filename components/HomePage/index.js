@@ -51,6 +51,36 @@ const HomePage = () => {
       </div>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div className={scss.home__section_5}>
+        <div className={scss.home__section_5_container}>
+          <div className={scss.home__section_5_pink}>
+            <p>The grant for this collection is made possible through funding from <span>Pivotal Ventures, A Melinda Gates Company.</span></p>
+          </div>
+          <div className={scss.home__section_5_button}>
+            <RoundButton text="SEARCH THE COLLECTION" icon={"../static/images/icon/button-arrow.svg"}/>
+          </div>
+        </div>
+      </div>
+
+
     </>
   )
 };

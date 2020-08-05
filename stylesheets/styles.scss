@@ -70,8 +70,9 @@ HomeHero {
   background-size: 400px auto;
 }
 
-.main {
-  font-family: $sansFont;
+.container {
+  font-family: $inter;
+  position: relative;
   max-width: 1440px;
   margin: auto;
 }

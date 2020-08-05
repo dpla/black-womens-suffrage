@@ -6,14 +6,12 @@ class Navbar extends Component {
   render() {
 
     return (
-      <nav id={scss.navbar}>
-        {/* logo and mobile menu icon*/}
-        <div id={scss.navLogo}>
+      <nav className={scss.navbar}>
+        <div className={scss.nav__logo}>
           <img src="../static/images/logo/dpla_bws-logo-color-nav.png" />
         </div>
 
-        {/* nav links */}
-          <div id={scss.navLinks}>
+          <div className={scss.nav__links}>
             <Link href="/about">
               <a>About</a>
             </Link>
@@ -34,13 +32,13 @@ class Navbar extends Component {
               <a>Topics</a>
             </Link>
 
-            <Link href="/subgrant-awardees">
-              <a>Subgrant Awardees</a>
+            <Link href="/partners">
+              <a>Partners</a>
             </Link>
 
             <a href="https://dp.la" target="_blank">Visit DPLA</a>
 
-            <img src={"../static/images/icon/search/search-bar.svg"} alt="search-bar" id={scss.searchBar}/>
+            <img src={"../static/images/icon/search/search-bar.svg"} alt="search-bar" id={scss.searchbar}/>
           </div>
         
       </nav>

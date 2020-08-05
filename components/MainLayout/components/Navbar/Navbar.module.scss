@@ -1,6 +1,6 @@
 @import "stylesheets/variables";
 
-#navbar {
+.navbar {
   display: flex;
   background: white;
   padding: .5rem 1rem;
@@ -18,7 +18,7 @@
     padding: 0 .5rem;
   }
 
-  & #searchBar {
+  & .searchbar {
     position: relative;
     top: .1rem;
     left: .2rem;
@@ -26,7 +26,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-  #navLinks {
+  .nav__links {
     display: none;
   }
 }
