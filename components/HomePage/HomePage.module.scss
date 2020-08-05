@@ -1,3 +1,5 @@
+@import "stylesheets/variables";
+
 .hero {
   background-image: url("../../static/images/home/home-image-hero.png");
   background-color: #E77878;
@@ -20,7 +22,7 @@
   }
 
   & .container__left {
-    color: #FFFFFF;
+    color: $white;
     // font-family: Inter;
     font-size: 34px;
     font-weight: 800;
@@ -45,7 +47,7 @@
 
 .home__section_1 {
   height: 32rem;
-  background: white;
+  background: $white;
   display: flex;
   margin: 6rem;
   justify-content: space-between;
@@ -74,7 +76,7 @@
 
 .home__section_2 {
   height: 32rem;
-  background: #FEDFDF;
+  background: $lightPink;
   display: flex;
   justify-content: space-between;
   border-radius: 0 0 9.375rem 0;
@@ -117,6 +119,68 @@
   margin: 6rem;
   flex-direction: row;
 }
+
+
+
+
+
+  // section 5 
+
+  .home__section_5 {
+    height: 17.125rem;
+    background: $white;
+    border-radius: 0 0 9.375rem 9.375rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+    & .home__section_5_container {
+      height: 11.563rem;
+      width: 45rem;
+      position: relative;
+    }
+
+    & .home__section_5_pink {
+      height: 10rem;
+      border-radius: 150px 0 150px 0;
+      background-color: rgba(254,223,223,0.25);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      & p {
+        height: 3.5rem;
+        width: 31rem;
+        color: #282830;
+        font-size: 1rem;
+        font-weight: 500;
+        letter-spacing: 0.38px;
+        line-height: 28px;
+        text-align: center;
+      }
+
+      & span {
+        color: #8B2D9B;
+      }
+    }
+
+    & .home__section_5_button {
+      position: absolute;
+      top: 60%;
+      left: 30%;
+    }
+
+  }
+
+
+
+
+
+
+
+
+
+
 
 // Mobile
 @media only screen and (max-width: 768px) {
