@@ -1,12 +1,11 @@
 @import "stylesheets/variables";
 
 .footer {
-  height: 350px;
+  height: 18rem;
   background-color: #282830;
   display: flex;
   justify-content: flex-end;
   padding: 3.125rem;
-  align-items: center;
   flex-direction: column;
   position: absolute;
   bottom: -11%;

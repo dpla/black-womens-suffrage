@@ -1,6 +1,6 @@
 import React from "react"
 import Router from "next/router"
-import Navbar from "../shared/Navbar"
+import Navbar from "./components/Navbar"
 import MobileNavbar from "../shared/MobileNavbar"
 import Helmet from "react-helmet"
 import DPLAHead from "../DPLAHead"

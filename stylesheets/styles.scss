@@ -70,8 +70,9 @@ HomeHero {
   background-size: 400px auto;
 }
 
-.main {
+.container {
   font-family: $inter;
+  position: relative;
   max-width: 1440px;
   margin: auto;
 }
@@ -114,8 +115,4 @@ HomeHero {
   font-weight: 800;
   letter-spacing: 0.71px;
   line-height: 48px;
-}
-
-.container {
-  position: relative;
 }

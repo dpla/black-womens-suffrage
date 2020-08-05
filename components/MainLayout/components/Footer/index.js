@@ -5,7 +5,6 @@ import Link from "next/link"
 const Footer = () => {
   return (
     <footer className={scss.footer}>
-
       <section className={scss.footer__section_top}>
         <img src="static/images/logo/dpla_bws-logo-white-footer.png" />
 
@@ -42,7 +41,7 @@ const Footer = () => {
 
       <section className={scss.footer__section_bottom}>
         <p className={scss.footer__p}>The copyright status of items in DPLA's Black Women's Suffrage Collection varies. DPLA links to a wide variety of different materials: many are in the public domain,
-while others are under rights restrictions but nonetheless publicly viewable. For individual rights information about an item, please check the “Rights” field in the metadata,
+        while others are under rights restrictions but nonetheless publicly viewable. For individual rights information about an item, please check the “Rights” field in the metadata,
 or follow the link to the digital object on the content provider’s website for more information.</p>
 
         <nav className={scss.footer__links_small}>
@@ -53,7 +52,6 @@ or follow the link to the digital object on the content provider’s website for
           </Link>
         </nav>
       </section>
-
     </footer>
   )
 }
