@@ -6,7 +6,7 @@ $gutterWidth: 1rem;
 $outerPadding: 1rem;
 $gutterCompensation: calc((#{$gutterWidth} * 0.5) * -1);
 $halfGutterWidth: calc((#{$gutterWidth} * 0.5));
-$siteMaxWidth: 64rem;
+$siteMaxWidth: 90rem;
 $borderColor: rgba(0, 0, 0, 0.75);
 
 :global select {
@@ -113,11 +113,11 @@ $borderColor: rgba(0, 0, 0, 0.75);
 }
 
 .container {
-  padding-left: $outerPadding;
-  padding-right: $outerPadding;
-  margin-left: auto;
-  margin-right: auto;
   max-width: $siteMaxWidth;
+  font-family: $inter;
+  position: relative;
+  // max-width: 1440px;
+  margin: auto;
 
   @media ($lg-viewport) {
     padding-left: 0;

@@ -5,6 +5,8 @@ import Link from "next/link"
 const Footer = () => {
   return (
     <footer className={scss.footer}>
+
+      <div className={scss.footer__container}>
       <section className={scss.footer__section_top}>
         <img src="static/images/logo/dpla_bws-logo-white-footer.png" />
 
@@ -52,6 +54,8 @@ or follow the link to the digital object on the content provider’s website for
           </Link>
         </nav>
       </section>
+
+      </div>
     </footer>
   )
 }

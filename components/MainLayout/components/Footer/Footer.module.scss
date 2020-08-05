@@ -1,15 +1,19 @@
 @import "stylesheets/variables";
 
 .footer {
-  height: 18rem;
+  height: 25rem;
   background-color: #282830;
   display: flex;
   justify-content: flex-end;
-  padding: 3.125rem;
   flex-direction: column;
   position: absolute;
-  bottom: -11%;
+  bottom: -7%;
   z-index: -1;
+  width: 100%;
+
+  & .footer__container {
+    padding: 3.125rem;
+  }
 
   & .footer__section_top {
     display: flex;
