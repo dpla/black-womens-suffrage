@@ -1,5 +1,15 @@
-.about__section_1_left {
+.about__section_1 {
+  display: flex;
+  justify-content: space-between;
+}
 
+.about__section_1_left {
+  color: #F48C8C;
+  font-family: "Frank Ruhl Libre";
+  font-size: 35px;
+  font-weight: 900;
+  letter-spacing: 0.77px;
+  margin: auto;
 }
 
 .about__section_1_right {

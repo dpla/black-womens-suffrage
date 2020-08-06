@@ -1,8 +1,8 @@
 import React from "react"
 import scss from "../AboutPage/AboutPage.module.scss"
 import PageBanner from "../shared/PageBanner"
-import SplitBanner from "../shared/SplitBanner";
-
+import SplitBanner from "../shared/SplitBanner"
+import StyledText from "../shared/StyledText"
 
 const AboutPage = () => {
   const title = "ABOUT",
@@ -22,6 +22,22 @@ const AboutPage = () => {
   return (
     <>
       <PageBanner title={title} text={text} graphic={graphic}/>
+
+      <div className={`wrapper ${scss.about__section_1}`}>
+        <div className={scss.about__section_1_left}>
+          <p>Mary Church Terrell.</p>
+          <p>Frances Ellen Watkins Harper.</p>
+          <p>Anna Julia Cooper.</p>
+          <p>Ida B. Wells-Barnett.</p>
+        </div>
+
+        <div className={scss.about__section_1_right}>
+          <StyledText 
+            subtitle={"These women played significant leadership roles leading up to and during the United States Women’s Suffrage Movement and beyond, yet their stories and contributions are not widely known and the critical roles black women played at the forefront of the campaign for women’s rights are too often forgotten."}
+            text={"This gap in America’s public consciousness is rooted in the history of racism and exclusion within the Suffrage Movement, which resulted in white women emerging as the movement’s primary protagonists, while black women were effectively wiped from the narrative."}/>
+        </div>
+
+      </div>
       <SplitBanner left={left_text} right={right_text} left_class={scss.about__section_1_left} right_class={scss.about__section_1_right}/>
     </>
   )
