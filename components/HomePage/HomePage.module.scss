@@ -1,7 +1,7 @@
 @import "stylesheets/variables";
 
 .hero {
-  background-image: url("../../static/images/home/home-image-hero.png");
+  background-image: url("/static/images/graphic/home-image-hero.png");
   background-color: #E77878;
   opacity: 0.5;
   height: 435px;
@@ -32,7 +32,7 @@
   }
 
   & .container__right {
-    background-image: url("../../static/images/graphic/home/home-graphic-hero.png");
+    background-image: url("/static/images/graphic/home-graphic-hero.png");
     height: 435px;
     width: 725px;
   }
@@ -65,7 +65,7 @@
   }
 
   .home__section_1__img {
-    background: url("../../static/images/graphic/home/home-graphic-body-1.png");
+    background: url("/static/images/graphic/home-graphic-body-1.png");
     height: 465px;
     width: 480px;
   }
@@ -83,7 +83,7 @@
 
   & .section_2__div_left {
     width: 50%;
-    background: url("../../static/images/home/home-image-body-1.png");
+    background: url("/static/images/graphic/home-image-body-1.png");
   }
 
   & .section_2__div_right {

@@ -1,7 +1,4 @@
-.about__section_1 {
-  display: flex;
-  justify-content: space-between;
-}
+@import "stylesheets/variables";
 
 .about__section_1_left {
   color: #F48C8C;
@@ -14,4 +11,31 @@
 
 .about__section_1_right {
 
+}
+
+.about__section_2 {
+  height: 32rem;
+  border-radius: 150px 0 0 0;
+  background-color: #4E4294;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+
+  & h3 {
+    width: 319px;
+  }
+
+  & p {
+    height: 235px;
+    width: 814px;
+    color: #FFF7F7;
+    font-family: "Frank Ruhl Libre";
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 0.7px;
+    line-height: 47px;
+    text-align: center;
+  }
 }

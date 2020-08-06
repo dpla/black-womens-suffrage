@@ -8,7 +8,7 @@ class Navbar extends Component {
     return (
       <nav className={scss.navbar}>
         <div className={scss.nav__logo}>
-          <img src="../static/images/logo/dpla_bws-logo-color-nav.png" />
+          <img src="/static/images/logo/dpla_bws-logo-color-nav.png" />
         </div>
 
           <div className={scss.nav__links}>
@@ -38,7 +38,7 @@ class Navbar extends Component {
 
             <a href="https://dp.la" target="_blank">Visit DPLA</a>
 
-            <img src={"../static/images/icon/search/search-bar.svg"} alt="search-bar" id={scss.searchbar}/>
+            <img src={"/static/images/icon/search/search-bar.svg"} alt="search-bar" id={scss.searchbar}/>
           </div>
         
       </nav>

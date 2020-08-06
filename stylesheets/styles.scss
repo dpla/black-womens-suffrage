@@ -82,6 +82,11 @@ HomeHero {
   margin: 3rem;
 }
 
+.display__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
 .title {
   height: 17px;
   color: #F48C8C;
