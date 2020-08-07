@@ -38,12 +38,25 @@ const AboutPage = () => {
         </div>
       </div>
 
-      <div className={`${scss.about__section_2}`}>
+      <div className={scss.about__section_2}>
         <h3 className="title">BLACK WOMEN’S SUFFRAGE COLLECTION</h3>
         <p>The content featured in this collection explores linkages between women’s suffrage and other social causes of the nineteenth and early twentieth centuries (anti-slavery, anti-lynching, education reform and civil rights) as well as racism within the Suffrage Movement.</p>
       </div>
+
+      <div className={`wrapper display__flex ${scss.about__section_3}`}>
+
+        
+
+        <div  className={scss.about__section_3_left}>
+          <p>For black women, the struggle to vote and to effect change through civic engagement more broadly did not end in 1920.</p>
+          <p>Their stories add new shades of context to related topics in our nation today, from the suppression of voting rights based on race and gender to the increasing number of women of color running for—and winning—elected office.</p>
+        </div>
+
+        <div className={scss.about__section_3_right}>
+          <img src="/static/images/graphic/about-image-body-1.png"/>
+        </div>
+      </div>
       
-      <SplitBanner left={left_text} right={right_text} left_class={scss.about__section_1_left} right_class={scss.about__section_1_right}/>
     </>
   )
 }
