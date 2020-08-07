@@ -2,7 +2,7 @@
 
 .about__section_1_left {
   color: #F48C8C;
-  font-family: "Frank Ruhl Libre";
+  font-family: $libre;
   font-size: 35px;
   font-weight: 900;
   letter-spacing: 0.77px;
@@ -31,7 +31,7 @@
     height: 235px;
     width: 814px;
     color: #FFF7F7;
-    font-family: "Frank Ruhl Libre";
+    font-family: $libre;
     font-size: 28px;
     font-weight: bold;
     letter-spacing: 0.7px;
@@ -41,5 +41,39 @@
 }
 
 .about__section_3 {
-  background: $lightPink;
+  background-color: rgba(254,223,223,0.35);
+
+  & .about__section_3_left {
+    margin: auto;
+    height: 367px;
+    width: 460px;
+
+    & .about__section_3_left_bold {
+      // height: 235px;
+      // width: 460px;
+      color: #F18787;
+      font-family: $libre;
+      font-size: 35px;
+      font-weight: 900;
+      // letter-spacing: 0.88px;
+      line-height: 47px;
+      margin-bottom: 1rem;
+    }
+
+    & .about__section_1_left_p {
+      height: 112px;
+      width: 460px;
+      color: #282830;
+      font-family: Inter;
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0.35px;
+      line-height: 28px;
+    }
+  }
+
+  & img {
+    opacity: 0.55;
+    background-color: $lightPink;
+  }
 }

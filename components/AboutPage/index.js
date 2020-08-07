@@ -43,13 +43,22 @@ const AboutPage = () => {
         <p>The content featured in this collection explores linkages between women’s suffrage and other social causes of the nineteenth and early twentieth centuries (anti-slavery, anti-lynching, education reform and civil rights) as well as racism within the Suffrage Movement.</p>
       </div>
 
-      <div className={`wrapper display__flex ${scss.about__section_3}`}>
+      {/* <div className={scss.about__section_3}>
+        <SplitBanner 
+        style={scss.about__section_3}
+        left_children={
+          <div className={scss.about__section_3_left}>
+            <p>For black women, the struggle to vote and to effect change through civic engagement more broadly did not end in 1920.</p>
+            <p>Their stories add new shades of context to related topics in our nation today, from the suppression of voting rights based on race and gender to the increasing number of women of color running for—and winning—elected office.</p>
+          </div>
+          }
+        right_children={<img src="/static/images/graphic/about-image-body-1.png"/>}/>
+      </div> */}
 
-        
-
-        <div  className={scss.about__section_3_left}>
-          <p>For black women, the struggle to vote and to effect change through civic engagement more broadly did not end in 1920.</p>
-          <p>Their stories add new shades of context to related topics in our nation today, from the suppression of voting rights based on race and gender to the increasing number of women of color running for—and winning—elected office.</p>
+      <div className={`display__flex ${scss.about__section_3}`}>
+        <div className={scss.about__section_3_left}>
+          <p className={scss.about__section_3_left_bold}>For black women, the struggle to vote and to effect change through civic engagement more broadly did not end in 1920.</p>
+          <p className={scss.about__section_3_left_p}>Their stories add new shades of context to related topics in our nation today, from the suppression of voting rights based on race and gender to the increasing number of women of color running for—and winning—elected office.</p>
         </div>
 
         <div className={scss.about__section_3_right}>
