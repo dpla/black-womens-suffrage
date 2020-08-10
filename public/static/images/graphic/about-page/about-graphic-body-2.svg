@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="455px" height="455px" viewBox="0 0 455 455" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>graphic/about/about-graphic-body-2</title>
+    <g id="DPLA" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2.0-About" transform="translate(-1058.000000, -1669.000000)">
+            <g id="section" transform="translate(0.000000, 1505.000000)">
+                <g id="graphic/about/about-graphic-body-2" transform="translate(1285.500000, 391.500000) scale(-1, 1) translate(-1285.500000, -391.500000) translate(1058.000000, 164.000000)">
+                    <path d="M145,382.5 C145,422.540714 112.540714,455 72.5,455 C32.4592857,455 0,422.540714 0,382.5 C0,342.459286 32.4592857,310 72.5,310 C112.540714,310 145,342.459286 145,382.5" id="Fill-5" fill="#2F043E"></path>
+                    <path d="M145,72.5 C145,112.540714 112.540714,145 72.5,145 C32.4592857,145 0,112.540714 0,72.5 C0,32.4592857 32.4592857,0 72.5,0 C112.540714,0 145,32.4592857 145,72.5" id="Fill-5-Copy-2" fill="#FEDFDF"></path>
+                    <path d="M300,227.5 C300,267.540714 267.540714,300 227.5,300 C187.459286,300 155,267.540714 155,227.5 C155,187.459286 187.459286,155 227.5,155 C267.540714,155 300,187.459286 300,227.5" id="Fill-5-Copy-3" fill="#F18787"></path>
+                    <path d="M455,382.5 C455,422.540714 422.540714,455 382.5,455 C342.459286,455 310,422.540714 310,382.5 C310,342.459286 342.459286,310 382.5,310 C422.540714,310 455,342.459286 455,382.5" id="Fill-5-Copy" fill="#BFCADD"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

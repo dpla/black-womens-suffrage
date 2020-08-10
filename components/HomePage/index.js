@@ -61,7 +61,7 @@ const HomePage = () => {
           />
         </div>
         <div className={scss.section_3__div_right}>
-          <img src="/static/images/graphic/home/home-graphic-body-2.png"/>
+          <img src="/static/images/graphic/home-page/home-graphic-body-2.png"/>
         </div>
       </section>
 

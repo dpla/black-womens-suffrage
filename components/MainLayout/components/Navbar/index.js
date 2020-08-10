@@ -8,7 +8,11 @@ class Navbar extends Component {
     return (
       <nav className={scss.navbar}>
         <div className={scss.nav__logo}>
-          <img src="/static/images/logo/dpla_bws-logo-color-nav.png" />
+          <Link href="/">
+            <a>
+              <img src="/static/images/logo/dpla_bws-logo-color-nav.png" />
+            </a>
+          </Link>
         </div>
 
           <div className={scss.nav__links}>

@@ -7,7 +7,7 @@ import StyledText from "../shared/StyledText"
 const AboutPage = () => {
   const title = "ABOUT",
         text = "For Black women, the fight wasn't over in 1920. Their movement for gender and racial equality continues.",
-        graphic = "/static/images/graphic/about-graphic-hero.png",
+        graphic = "/static/images/graphic/about-page/about-graphic-hero.png",
         left_text = [
           "Mary Church Terrell.",
           "Frances Ellen Watkins Harper.",
@@ -62,7 +62,8 @@ const AboutPage = () => {
         </div>
 
         <div className={scss.about__section_3_right}>
-          <img src="/static/images/graphic/about-image-body-1.png"/>
+          <img src="/static/images/graphic/about-page/about-image-body-1.png"/>
+          <img src="/static/images/graphic/about-page/about-graphic-body-2.svg"/>
         </div>
       </div>
       

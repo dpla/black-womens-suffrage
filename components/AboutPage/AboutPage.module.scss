@@ -72,8 +72,18 @@
     }
   }
 
-  & img {
+  & .about__section_3_right {
+    position: relative;
+  }
+
+  & img:first-of-type {
     opacity: 0.55;
     background-color: $lightPink;
+  }
+
+  & img:nth-of-type(2) {
+    position: absolute;
+    right: -5rem;
+    bottom: -4rem;
   }
 }
