@@ -3,6 +3,7 @@ import scss from "../AboutPage/AboutPage.module.scss"
 import PageBanner from "../shared/PageBanner"
 import SplitBanner from "../shared/SplitBanner"
 import StyledText from "../shared/StyledText"
+import SponsorPreFooter from "../shared/SponsorPreFooter"
 
 const AboutPage = () => {
   const title = "ABOUT",
@@ -71,7 +72,7 @@ const AboutPage = () => {
         </div>
       </div>
 
-      <section className={`container ${scss.about__section_4}`}>
+      <div className={`site-max-width container medium_page_section ${scss.about__section_4}`}>
         <div>
           <div className={scss.about__section_4_div}>
             <img src="/static/images/graphic/about-page/about-graphic-body-3.svg"/>
@@ -83,7 +84,16 @@ const AboutPage = () => {
           </div>
           <p>The cultural institutions participating in DPLA represent the richness and diversity of America itself, from the smallest local history museum to our nation’s largest cultural institutions.</p>
         </div>
-      </section>
+      </div>
+
+      <div className={`site-max-width container large_page_section ${scss.about__section_5}`}>
+      </div>
+
+      <SponsorPreFooter 
+      text="The grant for this collection is made possible through funding from " 
+      sponsor="Pivotal Ventures, A Melinda Gates Company." 
+      buttonText="SEARCH THE COLLECTION" 
+      buttonIcon="/static/images/icon/button-arrow.svg"/>
       
     </>
   )

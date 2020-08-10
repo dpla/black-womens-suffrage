@@ -103,7 +103,6 @@
 
 .about__section_4 {
   background-color: $white;
-  height: 45rem;
 
   & div {
     display: flex;
@@ -158,4 +157,10 @@
     text-align: center;
     margin: 1.5rem;
   }
+}
+
+.about__section_5 {
+  opacity: 0.2;
+  border-radius: 150px 0 150px 0;
+  background-color: #BFCADD;
 }

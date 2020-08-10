@@ -70,12 +70,12 @@ HomeHero {
   background-size: 400px auto;
 }
 
-.container {
-  font-family: $inter;
-  position: relative;
-  max-width: 1440px;
-  margin: auto;
-}
+// .container {
+//   font-family: $inter;
+//   position: relative;
+//   max-width: 1440px;
+//   margin: auto;
+// }
 
 .wrapper {
   height: 32rem;
@@ -125,4 +125,12 @@ HomeHero {
   font-weight: 800;
   letter-spacing: 0.71px;
   line-height: 48px;
+}
+
+.medium_page_section {
+  height: 45rem;
+}
+
+.large_page_section {
+  height: 60rem;
 }
