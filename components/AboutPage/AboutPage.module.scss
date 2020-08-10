@@ -1,16 +1,28 @@
 @import "stylesheets/variables";
 
+.about__section_1_div {
+  position: relative;
+
+  & img {
+    position: absolute;
+    top: 15%;
+    z-index: -1;
+    height: 21.375rem;
+    width: 21.5rem;
+  }
+}
+
 .about__section_1_left {
   color: #F48C8C;
   font-family: $libre;
-  font-size: 35px;
+  font-size: 2.188rem;
   font-weight: 900;
-  letter-spacing: 0.77px;
+  letter-spacing: 0.048rem;
   margin: auto;
 }
 
 .about__section_1_right {
-
+  display: flex;
 }
 
 .about__section_2 {
@@ -24,18 +36,18 @@
   align-items: center;
 
   & h3 {
-    width: 319px;
+    width: 20rem;
   }
 
   & p {
-    height: 235px;
-    width: 814px;
+    height: 15rem;
+    width: 55%;
     color: #FFF7F7;
     font-family: $libre;
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: bold;
     letter-spacing: 0.7px;
-    line-height: 47px;
+    line-height: 2.938rem;
     text-align: center;
   }
 }
@@ -51,12 +63,12 @@
     & .about__section_3_left_bold {
       // height: 235px;
       // width: 460px;
-      color: #F18787;
+      color: $medPink;
       font-family: $libre;
-      font-size: 35px;
+      font-size: 2.188rem;
       font-weight: 900;
       // letter-spacing: 0.88px;
-      line-height: 47px;
+      line-height: 2.938rem;
       margin-bottom: 1rem;
     }
 
@@ -65,10 +77,10 @@
       width: 460px;
       color: #282830;
       font-family: Inter;
-      font-size: 16px;
+      font-size: 1rem;
       font-weight: 500;
       letter-spacing: 0.35px;
-      line-height: 28px;
+      line-height: 1.75rem;
     }
   }
 
@@ -85,5 +97,65 @@
     position: absolute;
     right: -5rem;
     bottom: -4rem;
+    z-index: 1;
+  }
+}
+
+.about__section_4 {
+  background-color: $white;
+  height: 45rem;
+
+  & div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  & h3 {
+    color: $medPink;
+    height: 1rem;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    line-height: 1rem;
+  }
+
+  .about__section_4_div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    & div {
+      position: absolute;
+      top: 35%;
+    }
+
+    & p {
+      height: 8rem;
+      width: 48rem;
+      color: $orange;
+      font-family: $libre;
+      font-size: 1.75rem;
+      font-weight: bold;
+      letter-spacing: 0.7px;
+      line-height: 2.938rem;
+      text-align: center;
+      margin: 1rem;
+    }
+  }
+
+  & p {
+    height: 84px;
+    width: 550px;
+    color: #282830;
+    font-family: $inter;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.35px;
+    line-height: 1.75rem;
+    text-align: center;
+    margin: 1.5rem;
   }
 }

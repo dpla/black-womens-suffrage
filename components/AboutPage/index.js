@@ -22,20 +22,24 @@ const AboutPage = () => {
   return (
     <>
       <PageBanner title={title} text={text} graphic={graphic}/>
+      <div className={scss.about__section_1_div}>
+      <img src="/static/images/graphic/about-page/about-graphic-body-1.svg"/>
 
       <div className="wrapper display__flex">
-        <div className={scss.about__section_1_left}>
-          <p>Mary Church Terrell.</p>
-          <p>Frances Ellen Watkins Harper.</p>
-          <p>Anna Julia Cooper.</p>
-          <p>Ida B. Wells-Barnett.</p>
-        </div>
+          <div className={scss.about__section_1_left}>
+            <p>Mary Church Terrell.</p>
+            <p>Frances Ellen Watkins Harper.</p>
+            <p>Anna Julia Cooper.</p>
+            <p>Ida B. Wells-Barnett.</p>
+          </div>
+        
 
         <div className={scss.about__section_1_right}>
           <StyledText 
             subtitle={"These women played significant leadership roles leading up to and during the United States Women’s Suffrage Movement and beyond, yet their stories and contributions are not widely known and the critical roles black women played at the forefront of the campaign for women’s rights are too often forgotten."}
             text={"This gap in America’s public consciousness is rooted in the history of racism and exclusion within the Suffrage Movement, which resulted in white women emerging as the movement’s primary protagonists, while black women were effectively wiped from the narrative."}/>
         </div>
+      </div>
       </div>
 
       <div className={scss.about__section_2}>
@@ -66,6 +70,20 @@ const AboutPage = () => {
           <img src="/static/images/graphic/about-page/about-graphic-body-2.svg"/>
         </div>
       </div>
+
+      <section className={`container ${scss.about__section_4}`}>
+        <div>
+          <div className={scss.about__section_4_div}>
+            <img src="/static/images/graphic/about-page/about-graphic-body-3.svg"/>
+
+            <div>
+              <h3>DIGITAL PUBLIC LIBRARY OF AMERICA (DPLA)</h3>
+              <p>DPLA connects people to the riches held within America’s libraries, archives, museums, and other cultural heritage institutions.</p>
+            </div>
+          </div>
+          <p>The cultural institutions participating in DPLA represent the richness and diversity of America itself, from the smallest local history museum to our nation’s largest cultural institutions.</p>
+        </div>
+      </section>
       
     </>
   )
