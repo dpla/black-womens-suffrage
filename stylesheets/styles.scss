@@ -70,20 +70,30 @@ HomeHero {
   background-size: 400px auto;
 }
 
-.container {
-  font-family: $inter;
-  position: relative;
-  max-width: 1440px;
-  margin: auto;
+// .container {
+//   font-family: $inter;
+//   position: relative;
+//   max-width: 1440px;
+//   margin: auto;
+// }
+
+.wrapper {
+  height: 32rem;
+  margin: 3rem;
+}
+
+.display__flex {
+  display: flex;
+  justify-content: space-between;
 }
 
 .title {
-  height: 17px;
+  height: 1.063rem;
   color: #F48C8C;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 800;
-  letter-spacing: 0.75px;
-  line-height: 17px;
+  letter-spacing: 0.075rem;
+  line-height: 1.063rem;
 }
 
 .section__text_large {
@@ -95,14 +105,15 @@ HomeHero {
 }
 
 .banner__title {
-  height: 21px;
-  width: 72px;
-  color: #F48C8C;
-  font-family: Inter;
-  font-size: 18px;
+  height: 26px;
+  width: 88px;
+  color: #F18787;
+  font-family: $inter;
+  font-size: 22px;
   font-weight: 800;
-  letter-spacing: 1.25px;
-  line-height: 21px;
+  letter-spacing: 1.53px;
+  line-height: 26px;
+  margin-bottom: 1.875rem;
   margin-top: 0;
 }
 
@@ -115,4 +126,12 @@ HomeHero {
   font-weight: 800;
   letter-spacing: 0.71px;
   line-height: 48px;
+}
+
+.medium_page_section {
+  height: 40rem;
+}
+
+.large_page_section {
+  height: 55rem;
 }

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="344px" height="342px" viewBox="0 0 344 342" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>graphic/about/about-graphic-body-1</title>
+    <g id="DPLA" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="2.0-About" transform="translate(42.000000, -602.000000)">
+            <g id="graphic/about/about-graphic-body-1" transform="translate(-42.000000, 602.000000)">
+                <path d="M172,0 C266.993143,0 344,76.5591429 344,171 L343.976957,173.827803 C342.458064,266.964384 266.043211,342 172,342 L172,342 L172,0 Z" id="Combined-Shape" fill-opacity="0.25" fill="#FEDFDF"></path>
+                <path d="M0,0 C94.9931429,0 172,76.5591429 172,171 L171.976957,173.827803 C170.458064,266.964384 94.0432114,342 0,342 L0,342 L0,0 Z" id="Combined-Shape-Copy" fill="#EC5938"></path>
+            </g>
+        </g>
+    </g>
+</svg>

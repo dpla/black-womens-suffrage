@@ -1,7 +1,6 @@
 @import "stylesheets/variables";
 
 .banner {
-  // background-image: url("../../static/images/home/home-image-hero.png");
   background-color: $lightPink;
   height: 435px;
   display: flex;
@@ -30,8 +29,7 @@
   }
 
   & .container__right {
-    // background-image: url("../../static/images/graphic/home/home-graphic-hero.png");
-    width: 50%;
+    // width: 50%;
   }
 
   & .banner__button {

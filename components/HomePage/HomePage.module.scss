@@ -1,7 +1,7 @@
 @import "stylesheets/variables";
 
 .hero {
-  background-image: url("../../static/images/home/home-image-hero.png");
+  background-image: url("/static/images/graphic/home-page/home-image-hero.png");
   background-color: #E77878;
   opacity: 0.5;
   height: 435px;
@@ -32,7 +32,7 @@
   }
 
   & .container__right {
-    background-image: url("../../static/images/graphic/home/home-graphic-hero.png");
+    background-image: url("/static/images/graphic/home-page/home-graphic-hero.png");
     height: 435px;
     width: 725px;
   }
@@ -65,7 +65,7 @@
   }
 
   .home__section_1__img {
-    background: url("../../static/images/graphic/home/home-graphic-body-1.png");
+    background: url("/static/images/graphic/home-page/home-graphic-body-1.png");
     height: 465px;
     width: 480px;
   }
@@ -83,7 +83,7 @@
 
   & .section_2__div_left {
     width: 50%;
-    background: url("../../static/images/home/home-image-body-1.png");
+    background: url("/static/images/graphic/home-page/home-image-body-1.png");
   }
 
   & .section_2__div_right {
@@ -119,67 +119,6 @@
   margin: 6rem;
   flex-direction: row;
 }
-
-
-
-
-
-  // section 5 
-
-  .home__section_5 {
-    height: 17.125rem;
-    background: $white;
-    border-radius: 0 0 9.375rem 9.375rem;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-
-    & .home__section_5_container {
-      height: 11.563rem;
-      width: 45rem;
-      position: relative;
-    }
-
-    & .home__section_5_pink {
-      height: 10rem;
-      border-radius: 150px 0 150px 0;
-      background-color: rgba(254,223,223,0.25);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      & p {
-        height: 3.5rem;
-        width: 31rem;
-        color: #282830;
-        font-size: 1rem;
-        font-weight: 500;
-        letter-spacing: 0.38px;
-        line-height: 28px;
-        text-align: center;
-      }
-
-      & span {
-        color: #8B2D9B;
-      }
-    }
-
-    & .home__section_5_button {
-      position: absolute;
-      top: 60%;
-      left: 30%;
-    }
-
-  }
-
-
-
-
-
-
-
-
-
 
 
 // Mobile
