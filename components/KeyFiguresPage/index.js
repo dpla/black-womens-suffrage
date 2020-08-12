@@ -8,7 +8,7 @@ class KeyFiguresPage extends React.Component {
     super()
 
     this.state = {
-      selectedKeyFigure: "SojournerTruth",
+      selectedKeyFigure: "sojournerTruth",
       keyFigures: []
     }
   }
