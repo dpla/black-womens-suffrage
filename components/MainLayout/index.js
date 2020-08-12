@@ -43,7 +43,7 @@ class MainLayout extends React.Component {
         {/* <MobileNavbar /> */}
         {children}
 
-        <Footer />
+        {/* <Footer /> */}
       </div>
     );
   }

@@ -1,0 +1,59 @@
+@import "stylesheets/variables";
+
+.banner {
+  background-color: $lightPink;
+
+  .banner_left__div {
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+
+    h6 {
+      color: $medPink;
+      font-family: $inter;
+      font-size: 1.125rem;
+      font-weight: $xBold;
+      letter-spacing: 0.078rem;
+      line-height: 1.313rem;
+    }
+
+    p {
+      color: $purple;
+      font-family: $inter;
+      font-size: 1.438rem;
+      font-weight: $xBold;
+      letter-spacing: 0.032rem;
+      line-height: 2rem;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+// @media only screen and (min-width: 768px) {...}
+@media only screen and ($md-viewport) {
+  .banner {
+    display: flex;
+    flex-direction: row;
+    border-radius: 0 0 0 150px;
+
+    .banner_left__div {
+      margin-bottom: 0;
+      width: 90%;
+      margin-left: 6rem;
+      
+      h6 {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+// @media only screen and (min-width: 992px) {...}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+// @media only screen and (min-width: 1200px) {...}
