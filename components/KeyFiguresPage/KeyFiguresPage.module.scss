@@ -32,6 +32,36 @@
 
 }
 
+.key_figures__info {
+  height: 161px;
+  width: 325px;
+  border-radius: 115px 0 115px 0;
+  background-color: rgba(254,223,223,0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h6 {
+    color: $medPink;
+    font-family: $inter;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    line-height: 17px;
+  }
+
+  h2 {
+    color: $purple;
+    font-family: $libre;
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 0.75px;
+    line-height: 34px;
+    margin: 0;
+    text-align: center;
+  }
+}
+
 /* Medium devices (landscape tablets, 768px and up) */
 // @media only screen and (min-width: 768px) {...}
 @media only screen and ($md-viewport) {
@@ -44,7 +74,7 @@
       margin-bottom: 0;
       width: 90%;
       margin-left: 6rem;
-      
+
       h6 {
         margin-bottom: 0;
       }
