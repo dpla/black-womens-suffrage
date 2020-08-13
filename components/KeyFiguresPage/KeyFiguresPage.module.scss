@@ -36,10 +36,6 @@
   display: flex;
 }
 
-.key_figures__intro_p_mobile {
-  display: none;
-}
-
 .key_figures__info {
   height: 161px;
   width: 100%;
@@ -78,6 +74,14 @@
   img {
     border-radius: 150px 0 150px 150px;
   }
+}
+
+.key_figures__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2em 0;
+  flex-direction: column;
 }
 
 .key_figures__left {
@@ -176,6 +180,12 @@
       li {
         padding: .5em;
       }
+    }
+  }
+
+  .key_figures__image {
+    img {
+      width: 25em;
     }
   }
 }

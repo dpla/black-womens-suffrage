@@ -46,7 +46,9 @@ const SelectedKeyFigure = ({selectedKeyFigure}) => {
 
         <BorderedTextBox text={`In 1843, believing she was called by God to travel around the country (or "sojourn") and preach truth, she changed her name to Sojourner Truth, moved to a Massachusetts utopian community and began working as an itinerant Methodist preacher, devoting herself to spreading Christianity and calling for the abolition of slavery. In her travels, she became acquainted with prominent abolitionists William Lloyd Garrison and Frederick Douglass, among others, who encouraged her to give speeches denouncing slavery. She also met temperance advocates and women's rights pioneers like Susan B. Anthony and Elizabeth Cady Stanton, becoming increasingly involved in both causes and advocating for the then-radical idea of political equality for both Black and white women.`} />
       
-        {/* <img /> */}
+        <div className={scss.key_figures__image}>
+          <img src="https://picsum.photos/300/400"/>
+        </div>
 
         <p>Unable to read or write, Truth dictated her autobiography, The Narrative of Sojourner Truth, to Olive Gilbert and supported herself—including paying off the mortgage on her Massachusetts home—with the proceeds. A talented orator, Truth was invited in 1851 to give what has become her most well-known speech at the Ohio Women's Right Convention. It is often referred to as the "Ain't I A Woman?" speech, although evidence suggests that she did not actually employ this refrain in her talk. As her words were delivered extemporaneously, there is no original copy of the speech to consult, leaving only secondhand sources. (Scholars note that the source that reports the "Ain't I A Woman" refrain wasn't written until 12 years after the speech was given, while a more contemporaneous account does not include the phrase.)</p>
       
