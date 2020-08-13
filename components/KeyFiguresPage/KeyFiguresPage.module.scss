@@ -74,7 +74,11 @@
     list-style: none;
   }
 
-  li {
+  .key_figures__active_item {
+    color: #8B2D9B;
+  }
+
+  .key_figures__li {
     opacity: 0.5;
     color: #282830;
     font-family: $inter;
@@ -82,10 +86,6 @@
     font-weight: 500;
     letter-spacing: 0.31px;
     line-height: 24px;
-  }
-
-  li:active {
-    color: #8B2D9B;
   }
 }
 

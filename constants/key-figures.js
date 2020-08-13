@@ -38,22 +38,76 @@ export const sojournerTruth = [
 ]
 
 export const keyFigures = [
-  "Charlotte Vandine Forten",
-  "Sojourner Truth",
-  "Harriet Forten Purvis",
-  "Margaretta Forten",
-  "Mary Ann Shadd Cary",
-  "Frances Ellen Watkins Harper",
-  "Sarah Remond",
-  "Charlotte Forten Grimké",
-  "Harriet Purvis, Jr.",
-  "Josephine St. Pierre Ruffin",
-  'Charlotte "Lottie" Rollin',
-  "Fannie Barrier Williams",
-  "Mary Church Terrell",
-  "Mary Talbert",
-  "Lugenia Burns Hope",
-  "Nannie Helen Burroughs",
-  "Angelina Weld Grimké",
-  "Fannie Lou Hamer"
+  {
+    "name" : "Charlotte Vandine Forten",
+    "value": "charlotteVandineForten"
+  }, 
+  {
+    "name" : "Sojourner Truth",
+    "value": "SojournerTruth"
+  },
+  {
+    "name" : "Harriet Forten Purvis",
+    "value": "harrietFortenPurvis"
+  },
+  {
+    "name" : "Margaretta Forten",
+    "value": "margarettaForten"
+  },
+  {
+    "name" : "Mary Ann Shadd Cary",
+    "value": "maryAnnShaddCary"
+  },
+  {
+    "name" : "Frances Ellen Watkins Harper",
+    "value": "francesEllenWatkinsHarper"
+  },
+  {
+    "name" : "Sarah Remond",
+    "value": "sarahRemond"
+  },
+  {
+    "name" : "Charlotte Forten Grimké",
+    "value": "charlotteFotrenGrimke"
+  },
+  {
+    "name" : "Harriet Purvis, Jr.",
+    "value": "harrietPurvisJr"
+  },
+  {
+    "name" : "Josephine St. Pierre Ruffin",
+    "value": "josephineStPierreRuffin"
+  },
+  {
+    "name" : 'Charlotte "Lottie" Rollin',
+    "value": "charlotteLottieRollin"
+  },
+  {
+    "name" : "Fannie Barrier Williams",
+    "value": "fannieBarrierWilliams"
+  },
+  {
+    "name" : "Mary Church Terrell",
+    "value": "maryChurchTerrell"
+  },
+  {
+    "name" : "Mary Talbert",
+    "value": "maryTalbert"
+  },
+  {
+    "name" : "Lugenia Burns Hope",
+    "value": "lugeniaBurnsHope"
+  },
+  {
+    "name" : "Nannie Helen Burroughs",
+    "value": "nannieHelenBurroughs"
+  },
+  {
+    "name" : "Angelina Weld Grimké",
+    "value": "angelinaWeldGrimke"
+  },
+  {
+    "name" : "Fannie Lou Hamer",
+    "value": "fannieLouHamer"
+  }
 ]
