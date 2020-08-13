@@ -1,7 +1,5 @@
 import React from "react"
 import scss from "../../KeyFiguresPage/KeyFiguresPage.module.scss"
-import keyFigures from "../../../constants/key-figures"
-// import { selectedKeyFigure } from "../../../constants/key-figures";
 import { sojournerTruth } from "../../../constants/key-figures";
 
 import SectionTitle from "../SectionTitle";
@@ -9,6 +7,7 @@ import CurvedTextBox from "../CurvedTextBox";
 import LeftBorderTextBox from "../LeftBorderTextBox";
 import BorderedTextBox from "../BorderedTextBox";
 import Sources from "../Sources";
+import KeyFiguresPagination from "../KeyFiguresPagination";
 
 const SelectedKeyFigure = ({selectedKeyFigure}) => {
   return (
@@ -53,6 +52,8 @@ const SelectedKeyFigure = ({selectedKeyFigure}) => {
       </section>
 
       <Sources sources={sojournerTruth.sources}/>
+
+      <KeyFiguresPagination prevFigure="Charlotte Vandine Forten" nextFigure="Harriet Forten Purvis"/>
     </>
   )
 }

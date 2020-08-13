@@ -36,3 +36,24 @@ export const sojournerTruth = [
     ]
   }
 ]
+
+export const keyFigures = [
+  "Charlotte Vandine Forten",
+  "Sojourner Truth",
+  "Harriet Forten Purvis",
+  "Margaretta Forten",
+  "Mary Ann Shadd Cary",
+  "Frances Ellen Watkins Harper",
+  "Sarah Remond",
+  "Charlotte Forten Grimké",
+  "Harriet Purvis, Jr.",
+  "Josephine St. Pierre Ruffin",
+  'Charlotte "Lottie" Rollin',
+  "Fannie Barrier Williams",
+  "Mary Church Terrell",
+  "Mary Talbert",
+  "Lugenia Burns Hope",
+  "Nannie Helen Burroughs",
+  "Angelina Weld Grimké",
+  "Fannie Lou Hamer"
+]
