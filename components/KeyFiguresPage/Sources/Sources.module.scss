@@ -1,0 +1,32 @@
+@import "stylesheets/variables";
+
+.sources__container {
+  border-radius: 0 115px 0 0;
+  background-color: rgba(254,223,223,0.25);
+  margin-bottom: 2.5em;
+  
+  h6 {
+    color: $medPink;
+    font-family: $inter;
+    font-size: 14px;
+    font-weight: $xBold;
+    letter-spacing: 1.2px;
+    line-height: 17px;
+    margin-bottom: 0;
+  }
+
+  li {
+    color: #282830;
+    font-family: $inter;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.31px;
+    line-height: 24px;
+  }
+
+  div {
+    margin: 0 auto;
+    width: 80%;
+    padding: 1em 0;
+  }
+}

@@ -1,0 +1,15 @@
+@import "stylesheets/variables";
+
+.left_border_text_box__container {
+  border-left: 4px solid $lightPink;
+
+  p {
+    color: $orange;
+    font-family: $libre;
+    font-size: 1.375em;
+    font-weight: $bold;
+    letter-spacing: 0.55px;
+    line-height: 40px;
+    padding-left: 1.773em;
+  }
+}
