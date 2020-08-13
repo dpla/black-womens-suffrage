@@ -36,9 +36,13 @@
   display: flex;
 }
 
+.key_figures__intro_p_mobile {
+  display: none;
+}
+
 .key_figures__info {
   height: 161px;
-  width: 325px;
+  width: 100%;
   border-radius: 115px 0 115px 0;
   background-color: rgba(254,223,223,0.25);
   display: flex;
@@ -63,6 +67,16 @@
     line-height: 34px;
     margin: 0;
     text-align: center;
+  }
+}
+
+.key_figures__portrait {
+  display: flex;
+  justify-content: center;
+  margin: 2em 0;
+
+  img {
+    border-radius: 150px 0 150px 150px;
   }
 }
 
@@ -172,6 +186,12 @@
     ul {
       padding-left: 3em;
     }
+  }
+
+  .key_figures__intro {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
   }
 }
 

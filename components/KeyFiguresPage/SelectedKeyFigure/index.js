@@ -12,12 +12,18 @@ import KeyFiguresPagination from "../KeyFiguresPagination";
 const SelectedKeyFigure = ({selectedKeyFigure}) => {
   return (
     <>
+    <div className={scss.key_figures__intro}>
       <div className={scss.key_figures__info}>
         <h6 className={scss.key_figures__dates}>C. 1797-1893</h6>
         <h2 className={scss.key_figures__name}>Sojourner Truth</h2>
       </div>
 
-      {/* <img /> */}
+      <div className={scss.key_figures__portrait}>
+        <img src="https://picsum.photos/300/400"/>
+      </div>
+    </div>
+      
+
       <p>Abolitionist, temperance advocate and women's rights crusader Sojourner Truth was born Isabella Bomefree (or Baumfree) to Dutch-speaking enslaved parents in a Dutch community in Ulster County, New York around 1797.</p>
    
 
