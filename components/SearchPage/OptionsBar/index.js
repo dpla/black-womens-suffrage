@@ -2,20 +2,13 @@ import React from "react";
 import Link from "next/link";
 import Router from "next/router";
 
-import { addCommasToNumber } from "lib/lib";
-import {
-  sortOptions,
-  pageSizeOptions,
-  mapSortOptionsToParams,
-  getSortOptionFromParams,
-  DEFAULT_PAGE_SIZE
-} from "constants/search";
+import { addCommasToNumber } from "lib";
 
 import utils from "stylesheets/utils.scss";
 import css from "./OptionsBar.scss";
 
-const gridViewIcon = "/static/images/grid-view-icon.svg";
-const listViewIcon = "/static/images/list-view-icon.svg";
+const gridViewIcon = "/static/images/dpla-icons/grid-view-icon.svg";
+const listViewIcon = "/static/images/dpla-icons/list-view-icon.svg";
 
 class OptionsBar extends React.Component {
   componentWillMount() {
@@ -233,5 +226,15 @@ class OptionsBar extends React.Component {
     );
   }
 }
+
+const getSortOptionFromParams = ({ sortBy, sortOrder }) => {
+  if (sortBy === "created") {
+    return sortOrder === "asc" ? "old_to_new" : "new_to_old";
+  } else if (sortBy === "title") {
+    return sortOrder === "asc" ? "a_to_z" : "z_to_a";
+  } else {
+    return "relevance";
+  }
+};
 
 export default OptionsBar;

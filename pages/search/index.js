@@ -11,21 +11,17 @@ import MaxPageError from "components/SearchPage/MaxPageError";
 import {
     getCurrentUrl,
     getItemThumbnail,
+    splitAndURIEncodeFacet,
     getSearchPageTitle,
 } from "lib";
 
-
-//todo get these from next environment
-
-// import {
-//     API_ENDPOINT,
-//     THUMBNAIL_ENDPOINT,
-//     LOCAL_ABOUT_ENDPOINT
-// } from "constants/items";
-
-// import { SITE_ENV, LOCAL_ID } from "constants/env";
-// import { LOCALS } from "constants/local";
-
+import {
+    possibleFacets,
+    mapFacetsToURLPrettified,
+    pageSizeOptions,
+    DEFAULT_PAGE_SIZE,
+    MAX_PAGE_SIZE
+} from "constants/search";
 
 class Search extends React.Component {
 
@@ -82,7 +78,6 @@ class Search extends React.Component {
                     route={router}
                     facets={results.facets}
                     results={results.docs}
-                    aboutness={aboutness}
                 />}
                 {currentPage > MAX_PAGE_SIZE &&
                 <MaxPageError maxPage={MAX_PAGE_SIZE} requestedPage={currentPage} />}
@@ -91,28 +86,42 @@ class Search extends React.Component {
     }
 }
 
+const getItemCount = (results) => {
+    var itemCount = 0;// default handles unexpected error
+    if ("count" in results) {
+        if (results.count.value !== undefined) {
+            itemCount = results.count.value // ElasticSearch 7
+        } else {
+            itemCount = results.count // ElasticSearch 6
+        }
+    }
+    return itemCount;
+};
+
 Search.getInitialProps = async context => {
     const query = context.query;
-    const req = context.req;
-    const currentUrl = getCurrentUrl(req);
+    const sort_order = query.sort_order || "";
+    const currentUrl = getCurrentUrl(context.req);
+
     const q = query.q
         ? encodeURIComponent(query.q)
             .replace(/'/g, "%27")
             .replace(/"/g, "%22")
         : "";
 
-    // todo BWS filtering
-    let filters = isLocal && local.filters ? local.filters : [];
-
+    // filters + tags
+    let filters = [ "tags:blackwomenssuffrage" ];
     let tags = [];
+
     if (query.tags) {
         tags = Array.isArray(query.tags) ? query.tags : new Array(query.tags);
         filters = filters.concat(tags.map(tag => `tags:${tag}`));
     }
 
+    // facets
     let hasDates = false;
 
-    const queryArray = possibleFacets
+    const facetQueries = possibleFacets
         .map(facet => {
             if (facet.indexOf("sourceResource.date") !== -1 && !hasDates) {
                 hasDates = true; // do it only once for date queries
@@ -133,29 +142,25 @@ Search.getInitialProps = async context => {
                     dateQuery.push(`${facet}.before=${endYear}-12-31`);
                 }
                 return dateQuery.join("&");
-            }
-            // everyone else
-            if (
+            } else if (
                 query[mapFacetsToURLPrettified[facet]] &&
                 facet.indexOf("sourceResource.date") === -1
             ) {
-                return `${facet}=${splitAndURIEncodeFacet(
-                    query[mapFacetsToURLPrettified[facet]]
-                )}`;
+                return `${facet}=${splitAndURIEncodeFacet(query[mapFacetsToURLPrettified[facet]])}`;
+            } else {
+                return "";
             }
-            return "";
         })
-        .filter(facetQuery => facetQuery !== "");
+        .filter(facetQuery => facetQuery !== "")
+        .join("&");
 
-    const facetQueries = queryArray.join("&");
-
+    // sort by
     let sort_by = "";
     if (query.sort_by === "title") {
         sort_by = "sourceResource.title";
     } else if (query.sort_by === "created") {
         sort_by = "sourceResource.date.begin";
     }
-    const sort_order = query.sort_order || "";
 
     let page_size = query.page_size || DEFAULT_PAGE_SIZE;
     const acceptedPageSizes = pageSizeOptions.map(item => item.value);
@@ -172,11 +177,11 @@ Search.getInitialProps = async context => {
 
         const facetsParam = `&facets=${theseFacets.join(",")}&${facetQueries}`;
         const filtersParam = filters.map(x => `&filter=${x}`).join("");
-        const url = `${currentUrl}${API_ENDPOINT}?exact_field_match=true&q=${q}&page=${page}&page_size=${page_size}&sort_order=${sort_order}&sort_by=${sort_by}${facetsParam}${filtersParam}`;
+        const url = `${currentUrl}/api/items?exact_field_match=true&q=${q}&page=${page}&page_size=${page_size}&sort_order=${sort_order}&sort_by=${sort_by}${facetsParam}${filtersParam}`;
 
         const res = await fetch(url);
-
         let json = await res.json();
+
         const docs = json.docs.map(result => {
             const thumbnailUrl = getItemThumbnail(result);
             return Object.assign({}, result.sourceResource, {
@@ -216,137 +221,5 @@ Search.getInitialProps = async context => {
         };
     }
 };
-
-import { joinIfArray } from "lib";
-
-export const possibleFacets = [
-    "sourceResource.type",
-    "sourceResource.subject.name",
-    "sourceResource.date.begin",
-    "sourceResource.date.end",
-    "sourceResource.spatial.name",
-    "sourceResource.language.name",
-    "admin.contributingInstitution",
-    "provider.name"
-
-];
-
-// assumed to be a superset of possibleFacets,
-// only active in QA mode
-export const qaFacets = [
-    "sourceResource.type",
-    "sourceResource.subject.name",
-    "sourceResource.date.begin",
-    "sourceResource.date.end",
-    "sourceResource.spatial.name",
-    "sourceResource.language.name",
-    "sourceResource.collection.title",
-    "admin.contributingInstitution",
-    "provider.name",
-    "intermediateProvider",
-    "rights"
-];
-
-export const mapFacetsToURLPrettified = {
-    "sourceResource.type": "type",
-    "sourceResource.subject.name": "subject",
-    "sourceResource.date.begin": "after",
-    "sourceResource.date.end": "before",
-    "sourceResource.spatial.name": "location",
-    "sourceResource.language.name": "language",
-    "sourceResource.collection.name": "collection",
-    "admin.contributingInstitution": "provider",
-    "provider.name": "partner",
-    intermediateProvider: "intermediateProvider",
-    rights: "standardizedRightsStatement",
-    tags: "tags"
-};
-
-export const mapURLPrettifiedFacetsToUgly = {
-    type: "sourceResource.type",
-    subject: "sourceResource.subject.name",
-    after: "sourceResource.date.begin",
-    before: "sourceResource.date.end",
-    location: "sourceResource.spatial.name",
-    language: "sourceResource.language.name",
-    collection: "sourceResource.collection.title",
-    provider: "admin.contributingInstitution",
-    partner: "provider.name",
-    intermediateProvider: "intermediateProvider",
-    standardizedRightsStatement: "rights",
-    tags: "tags"
-};
-
-export const prettifiedFacetMap = {
-    "sourceResource.type": "Type",
-    "sourceResource.subject.name": "Subject",
-    "sourceResource.spatial.name": "Location",
-    "sourceResource.date.begin": "Date",
-    "sourceResource.date.end": "Date",
-    "sourceResource.language.name": "Language",
-    "sourceResource.collection.title": "Collection",
-    "admin.contributingInstitution": "Contributing Institution",
-    "provider.name": "Partner",
-    intermediateProvider: "Intermediate Provider",
-    rights: "Standardized Rights Statement"
-};
-
-export const pageSizeOptions = [
-    { value: "10", label: "10" },
-    { value: "20", label: "20" },
-    { value: "50", label: "50" },
-    { value: "100", label: "100" }
-];
-
-export const sortOptions = [
-    { value: "relevance", label: "Relevance" },
-    { value: "a_to_z", label: "A–Z" },
-    { value: "z_to_a", label: "Z-A" },
-    { value: "old_to_new", label: "Oldest to Newest" },
-    { value: "new_to_old", label: "Newest to Oldest" }
-];
-
-export const mapSortOptionsToParams = {
-    a_to_z: {
-        sort_by: "title",
-        sort_order: "asc"
-    },
-    z_to_a: {
-        sort_by: "title",
-        sort_order: "desc"
-    },
-    old_to_new: {
-        sort_by: "created",
-        sort_order: "asc"
-    },
-    new_to_old: {
-        sort_by: "created",
-        sort_order: "desc"
-    },
-    relevance: {
-        sort_by: "",
-        sort_order: ""
-    }
-};
-
-export const getSortOptionFromParams = ({ sortBy, sortOrder }) => {
-    if (sortBy === "created") {
-        return sortOrder === "asc" ? "old_to_new" : "new_to_old";
-    } else if (sortBy === "title") {
-        return sortOrder === "asc" ? "a_to_z" : "z_to_a";
-    } else {
-        return "relevance";
-    }
-};
-
-export const splitAndURIEncodeFacet = facet =>
-    joinIfArray(facet, "|")
-        .split("|")
-        .map(param => encodeURIComponent(param))
-        .join("+AND+");
-
-export const DEFAULT_PAGE_SIZE = "20";
-
-export const MAX_PAGE_SIZE = 100;
 
 export default withRouter(Search);

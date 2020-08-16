@@ -2,17 +2,16 @@ import React from "react";
 import Link from "next/link";
 import Router from "next/router";
 
-import Button from "shared/Button";
+import Button from "components/shared/Button";
 import Accordion from "components/shared/Accordion";
 
 import {
   possibleFacets,
-  qaFacets,
   mapFacetsToURLPrettified,
   prettifiedFacetMap
 } from "constants/search";
-import { SITE_ENV } from "constants/env";
-import { addCommasToNumber, escapeForRegex, removeQueryParams } from "lib/lib";
+
+import { addCommasToNumber, escapeForRegex, removeQueryParams } from "lib";
 
 import css from "./Sidebar.scss";
 
@@ -88,7 +87,7 @@ class DateFacet extends React.Component {
 
   validateAfter = event => {
     let year = this.cleanText(event.target, this.state.after);
-    if (year != "" && this.state.before !== "" && year > this.state.before) {
+    if (year !== "" && this.state.before !== "" && year > this.state.before) {
       year = this.state.before;
       this.setState({
         before: this.state.before,
@@ -107,7 +106,7 @@ class DateFacet extends React.Component {
 
   validateBefore = event => {
     let year = this.cleanText(event.target, this.state.before);
-    if (year != "" && this.state.after !== "" && year < this.state.after) {
+    if (year !== "" && this.state.after !== "" && year < this.state.after) {
       year = this.state.after;
       this.setState({
         after: this.state.after,
@@ -117,7 +116,7 @@ class DateFacet extends React.Component {
   };
 
   handleKeyDown(e) {
-    if (e.keyCode == 13) {
+    if (e.keyCode === 13) {
       this.handleDateSubmit(e);
     }
   }
@@ -223,8 +222,6 @@ class Sidebar extends React.Component {
         <h2>Refine your search</h2>
         <Accordion
           items={Object.keys(facets).map((key, i) => {
-            if (SITE_ENV === "local" && key.indexOf("provider.name") !== -1)
-              return "";
             if (key.indexOf("sourceResource.date") === -1 && key.indexOf("tags") === -1) {
               return {
                 name: prettifiedFacetMap[key],
@@ -238,7 +235,7 @@ class Sidebar extends React.Component {
                 type: "term",
                 subitems: facets[key].terms.map(termObject => {
                   return {
-                    content: qaFacets.includes(key)
+                    content: possibleFacets.includes(key)
                       ? <FacetLink
                           route={route}
                           termObject={termObject}
