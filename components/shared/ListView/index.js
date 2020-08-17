@@ -120,14 +120,10 @@ class ListView extends React.Component {
 
 
   render() {
-    const { items, route, exportable, viewMode } = this.props;
+    const { items, route, viewMode } = this.props;
     const {
       readOnly,
-      listsInitialized,
       checkboxShown,
-      hasList,
-      lists,
-      listUUID,
       showMessage,
       selectedHash
     } = this.state;
@@ -135,49 +131,9 @@ class ListView extends React.Component {
 
     return (
       <div>
-        {listsInitialized &&
-          !readOnly &&
-          <div className={css.listTools}>
-            <ListNameModal
-              type="create"
-              value=""
-              onChange={this.onNameChange}
-              name={
-                lists.length > 0
-                  ? "Create new list"
-                  : "Create a list from these items"
-              }
-              className={css.createList}
-            />
-            {lists.length > 0 &&
-              <label htmlFor="list-select" className={css.listSelectLabel}>
-                {hasList ? "Adding" : "Add"} to:
-              </label>}
-            {lists.length > 0 &&
-              <select
-                value={listUUID}
-                aria-label={hasList ? "Adding to" : "Add to"}
-                id="list-select"
-                className={css.listSelect}
-                onChange={this.listSelectChange}
-              >
-                <option value="">No list</option>
-                {lists.map((list, index) => {
-                  return (
-                    <option key={index} value={list.uuid}>
-                      {list.name} ({list.count}
-                      {list.count !== 1 ? " items" : " item"})
-                    </option>
-                  );
-                })}
-              </select>}
-          </div>}
+
         <Alert showMessage={showMessage} />
-        {exportable &&
-          items.length > 0 &&
-          <div className={css.downloadLink}>
-            <a onClick={this.downloadCSV}>Download list</a>
-          </div>}
+
         <ul
           className={`${css.listView} ${viewMode === "grid" ? css.grid : ""}`}
         >

@@ -1,14 +1,12 @@
 import React from "react";
 
-import ListView from "../../shared/ListView";
-import Pagination from "../../shared/Pagination";
+import ListView from "components/shared/ListView";
+import Pagination from "components/shared/Pagination";
 import Sidebar from "./Sidebar";
 
-import { addLinkInfoToResults } from "../../../lib";
+import { addLinkInfoToResults } from "lib";
 
-//import utils from "../../../stylesheets/utils.scss";
 import css from "./MainContent.module.scss";
-//import contentCss from "../../../stylesheets/content-pages.scss";
 
 const MainContent = ({
   results,
@@ -16,10 +14,9 @@ const MainContent = ({
   facets,
   paginationInfo,
   hideSidebar,
-  aboutness
 }) =>
   <div className={css.wrapper}>
-    <div className={[utils.container, css.mainContent].join(" ")}>
+    <div className={`container ${css.mainContent}`}>
       {results.length > 0 &&
         <div className={`${!hideSidebar ? css.isOpen : ""} ${css.sidebar}`}>
           <Sidebar route={route} facets={facets} />
@@ -57,15 +54,6 @@ const MainContent = ({
         />
       </div>
     </div>
-    {SITE_ENV === "local" &&
-      aboutness.docs &&
-      aboutness.docs.length > 0 &&
-      <AboutLocal
-        items={aboutness.docs}
-        count={aboutness.count}
-        query={route.query}
-      />}
-
   </div>;
 
 export default MainContent;

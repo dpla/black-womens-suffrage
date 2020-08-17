@@ -3,8 +3,6 @@ import AriaModal from "react-aria-modal";
 
 import Button from "../../shared/Button";
 
-//import utils from "stylesheets/utils.scss";
-
 const DEFAULT_NAME = "Untitled list";
 const DEFAULT_TYPE = "create";
 const NAME_CHAR_LIMIT = 64;

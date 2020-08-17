@@ -1,15 +1,14 @@
 import React from "react";
 
-import Alert from "shared/Alert";
+import Alert from "components/shared/Alert";
 import ListNameModal from "components/ListComponents/ListNameModal";
 import { ListCheckbox } from "components/ListComponents";
 
 import { createUUID, deepCopyObject } from "lib";
-import { getLocalForageLists, setLocalForageItem } from "lib/localForage";
 
 import { MESSAGE_DELAY } from "constants/site";
 
-import css from "../ListComponents.scss";
+import css from "../ListComponents.module.scss";
 
 export class CheckableLists extends React.Component {
   state = { showMessage: "", checkedLists: [], lists: [], initialized: false };

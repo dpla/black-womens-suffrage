@@ -2,11 +2,11 @@ import React from "react";
 import fetch from "isomorphic-fetch";
 import { withRouter } from "next/router";
 
-import MainLayout from "../../components/MainLayout";
-import OptionsBar from "../../components/SearchPage/OptionsBar";
-import FiltersList from "../../components/SearchPage/FiltersList";
-import MainContent from "../../components/SearchPage/MainContent";
-import MaxPageError from "../../components/SearchPage/MaxPageError";
+import MainLayout from "components/MainLayout";
+import OptionsBar from "components/SearchPage/OptionsBar";
+import FiltersList from "components/SearchPage/FiltersList";
+import MainContent from "components/SearchPage/MainContent";
+import MaxPageError from "components/SearchPage/MaxPageError";
 
 import {
     getCurrentUrl,

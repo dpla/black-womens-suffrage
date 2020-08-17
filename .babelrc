@@ -3,6 +3,22 @@
     "next/babel"
   ],
   "plugins": [
-    "inline-react-svg"
+    "inline-react-svg",
+    [
+      "module-resolver",
+      {
+        "root": [
+          "./"
+        ],
+        "alias": {
+          "static": "./public/static",
+          "lib": "./lib",
+          "shared": "./components/shared",
+          "constants": "./constants",
+          "stylesheets": "./stylesheets",
+          "components": "./components"
+        }
+      }
+    ]
   ]
 }
