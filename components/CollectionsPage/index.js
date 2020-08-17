@@ -1,7 +1,9 @@
 import React from "react"
+import Link from "next/link"
 import scss from "../CollectionsPage/CollectionsPage.module.scss"
 import PageBanner from "../shared/PageBanner"
-import SectionTitle from "../shared/SectionTitle";
+import SectionTitle from "../shared/SectionTitle"
+import { collections } from "../../constants/collections"
 
 const CollectionsPage = () => {
   const title = "COLLECTIONS",
@@ -14,6 +16,21 @@ const CollectionsPage = () => {
 
       <section className={scss.collections__section}>
         <SectionTitle title="Featured Collections"/>
+
+        {collections.map((collection, index) => {
+          return (
+            <div className={scss.collections__tile}>
+              <img src={collection.image}/>
+              <h2>{collection.name}</h2>
+              <p>{collection.description}</p>
+
+              <Link href={collection.href} style={collection.buttonStyle}>
+                <a>{collection.buttonText}</a>
+              </Link>
+            </div>
+          )
+        })}
+        
 
       </section>
     </>
