@@ -2,10 +2,12 @@ import React from "react";
 import Link from "next/link";
 import Router from "next/router";
 
-import { addCommasToNumber } from "lib";
+import { addCommasToNumber } from "../../../lib";
 
-import utils from "stylesheets/utils.scss";
-import css from "./OptionsBar.scss";
+//import utils from "stylesheets/utils.scss";
+import css from "./OptionsBar.module.scss";
+
+import { DEFAULT_PAGE_SIZE } from "../../../constants/search";
 
 const gridViewIcon = "/static/images/dpla-icons/grid-view-icon.svg";
 const listViewIcon = "/static/images/dpla-icons/list-view-icon.svg";

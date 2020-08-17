@@ -2,24 +2,19 @@ import React from "react";
 import Link from "next/link";
 
 import ListImage from "./ListImage";
-import ListNameModal from "components/ListComponents/ListNameModal";
-import Alert from "shared/Alert";
+import ListNameModal from "../../../components/ListComponents/ListNameModal";
+import Alert from "../../shared/Alert";
 
 import {
-  createUUID,
-  deepCopyObject,
   joinIfArray,
   truncateString,
   bindLinkEvent
-} from "lib";
-import {
-  getLocalForageLists,
-  setLocalForageItem,
-  getLocalForageItem
-} from "lib/localForage";
-import { UNTITLED_TEXT, MESSAGE_DELAY, MAX_LIST_ITEMS } from "constants/site";
+} from "../../../lib";
 
-import css from "./ListView.scss";
+
+import { UNTITLED_TEXT, MESSAGE_DELAY, MAX_LIST_ITEMS } from "../../../constants/site";
+
+import css from "./ListView.module.scss";
 
 const joinTruncate = str => truncateString(joinIfArray(str));
 
@@ -51,7 +46,6 @@ class ListView extends React.Component {
   };
 
   componentDidMount() {
-    this.getLists();
     this.bindClickThroughEvent();
     this.bindBrowseEvent();
   }
@@ -64,7 +58,7 @@ class ListView extends React.Component {
     Array.from(links).forEach(function(link) {
       // Find item with sourceUrl that matches link href.
       const item = items.filter(function(i) {
-        return i.sourceUrl == link.href;
+        return i.sourceUrl === link.href;
       })[0];
 
       // Sanity check
@@ -116,146 +110,6 @@ class ListView extends React.Component {
     }
   }
 
-  getLists = async () => {
-    let readOnly = false;
-    this.setState({
-      listsInitialized: true
-    });
-    let lists = await getLocalForageLists();
-    // TODO: sometimes this doesnt arrive here because promises
-    lists.sort((a, b) => b.createdAt - a.createdAt);
-    if (this.props.defaultUUID) {
-      readOnly = true;
-      this.loadList(this.props.defaultUUID);
-    }
-    this.setState({
-      readOnly: readOnly,
-      lists: lists
-    });
-  };
-
-  onNameChange = value => {
-    this.createList(value);
-  };
-
-  createList = async listName => {
-    // add the new list to local storage
-    const uuid = createUUID();
-    const createdAt = Date.now();
-    let newLists = deepCopyObject(this.state.lists);
-    newLists.push({
-      uuid: uuid,
-      name: listName,
-      count: 0,
-      createdAt: createdAt
-    });
-    newLists.sort((a, b) => b.createdAt - a.createdAt);
-    let savedList = {
-      name: listName,
-      selectedHash: {},
-      createdAt: createdAt,
-      updatedAt: createdAt
-    };
-    this.setState({
-      listName: listName,
-      listCreatedAt: createdAt,
-      listUUID: uuid,
-      selectedHash: {},
-      lists: newLists,
-      checkboxShown: true,
-      hasList: true
-    });
-    await setLocalForageItem(uuid, savedList);
-  };
-
-  loadList = async uuid => {
-    const value = await getLocalForageItem(uuid);
-    const listName = value.name;
-    const selectedHash = value.selectedHash;
-    const listCreatedAt = value.createdAt;
-
-    this.setState({
-      listName: listName,
-      listCreatedAt: listCreatedAt,
-      listUUID: uuid,
-      selectedHash: selectedHash,
-      checkboxShown: true,
-      hasList: true
-    });
-  };
-
-  listSelectChange = e => {
-    const listUUID = e.target.value;
-    if (listUUID === "") {
-      this.setState({
-        listName: "",
-        listUUID: "",
-        listCreatedAt: 0,
-        selectedHash: {},
-        checkboxShown: false,
-        hasList: false
-      });
-    } else {
-      this.loadList(listUUID);
-    }
-  };
-
-  onCheckItem = e => {
-    const element = e.target;
-    let id = element.getAttribute("data-id");
-    let selected = element.checked;
-    if (selected) {
-      this.addCell(id);
-    } else {
-      this.removeCell(id);
-    }
-  };
-
-  onRemoveItem = e => {
-    const element = e.target;
-    let id = element.getAttribute("data-id");
-    let selected = element.checked;
-    if (!selected) {
-      this.addCell(id);
-    } else {
-      this.removeCell(id);
-    }
-  };
-
-  addCell = id => {
-    let hash = deepCopyObject(this.state.selectedHash);
-    if (hash[id]) return; // check if item already selected
-    hash[id] = id;
-    this.updateList(hash, "Item added");
-  };
-
-  removeCell = id => {
-    let hash = deepCopyObject(this.state.selectedHash);
-    delete hash[id];
-    const message = this.state.readOnly
-      ? "Item removed. Uncheck to undo."
-      : "Item removed";
-    this.updateList(hash, message);
-  };
-
-  updateList = async (hash, message) => {
-    const updatedAt = Date.now();
-    let savedList = {
-      name: this.state.listName,
-      selectedHash: hash,
-      createdAt: this.state.listCreatedAt,
-      updatedAt: updatedAt
-    };
-    await setLocalForageItem(this.state.listUUID, savedList);
-    let lists = deepCopyObject(this.state.lists);
-    lists.sort((a, b) => b.createdAt - a.createdAt);
-    lists.forEach(l => {
-      if (l.uuid === this.state.listUUID) {
-        l.count = Object.keys(hash).length;
-      }
-    });
-    this.setState({ selectedHash: hash, lists: lists, showMessage: message });
-  };
 
   componentDidUpdate(prevProps, prevState) {
     if (this.state.showMessage !== prevState.showMessage)
@@ -264,67 +118,6 @@ class ListView extends React.Component {
       this.setState({ listName: this.props.name });
   }
 
-  downloadCSV = () => {
-    const rows = this.props.items
-      .filter(item => {
-        const realId = item.itemDplaId || item.id;
-        return this.state.selectedHash[realId] !== undefined;
-      })
-      .map((item, index) => {
-        const realId = item.itemDplaId || item.id;
-        const thumbnailUrl = item.thumbnailUrl.indexOf("placeholderImages") ===
-          -1
-          ? item.thumbnailUrl
-          : "";
-        const title = item.title
-          ? `"${truncateString(item.title, 150).replace(/"/g, "”")}"`
-          : item.title ? `"${item.title.replace(/"/g, "”")}"` : UNTITLED_TEXT;
-        const date = item.date && item.date.displayDate
-          ? `"${item.date.displayDate.replace(/"/g, "”")}"`
-          : "";
-        const creator = item.creator
-          ? `"${joinIfArray(item.creator, ", ").replace(/"/g, "”")}"`
-          : "";
-        const description = item.description
-          ? `"${joinTruncate(item.description).replace(/"/g, "”")}"`
-          : "";
-        const provider = item.dataProvider
-          ? `"${joinIfArray(item.dataProvider).replace(/"/g, "”")}"`
-          : "";
-        const url = item.sourceUrl;
-        return `${realId},${title},${date},${creator},${description},${provider},${thumbnailUrl},${url}`;
-      });
-    const csvData = `id,Title,Date,Creator,Description,Provider,Thumbnail,URL\r\n${rows.join(
-      "\r\n"
-    )}`;
-
-    const filename = `${this.state.listName}.csv`;
-
-    let blob = new Blob([csvData], { type: "text/csv;charset=utf-8;" });
-    if (navigator.msSaveBlob) {
-      // IE 10+
-      navigator.msSaveBlob(blob, filename);
-    } else {
-      let link = document.createElement("a");
-      if (link.download !== undefined) {
-        // feature detection
-        // Browsers that support HTML5 download attribute
-        let url = URL.createObjectURL(blob);
-        link.setAttribute("href", url);
-        link.setAttribute("download", filename);
-        link.style.visibility = "hidden";
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
-      } else {
-        let reader = new FileReader();
-        reader.onload = function(e) {
-          window.location.href = reader.result;
-        };
-        reader.readAsDataURL(blob);
-      }
-    }
-  };
 
   render() {
     const { items, route, exportable, viewMode } = this.props;

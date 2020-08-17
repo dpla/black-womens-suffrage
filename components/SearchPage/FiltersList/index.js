@@ -5,13 +5,14 @@ import {
   possibleFacets,
   mapURLPrettifiedFacetsToUgly,
   mapFacetsToURLPrettified
-} from "constants/search";
-import { removeQueryParams, joinIfArray } from "lib";
+} from "../../../constants/search";
 
-import utils from "stylesheets/utils.scss";
-import css from "./FiltersList.scss";
+import { joinIfArray } from "../../../lib";
 
-const closeIcon = "/static/images/close-white.svg";
+//import utils from "stylesheets/utils.scss";
+import css from "./FiltersList.module.scss";
+
+const closeIcon = "../../public/static/images/dpla-images/close-white.svg";
 
 const clearAllFacets = query => {
   const duped = Object.assign({}, query);

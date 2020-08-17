@@ -2,18 +2,18 @@ import React from "react";
 import Link from "next/link";
 import Router from "next/router";
 
-import Button from "components/shared/Button";
-import Accordion from "components/shared/Accordion";
+import Button from "../../../../components/shared/Button";
+import Accordion from "../../../../components/shared/Accordion";
 
 import {
   possibleFacets,
   mapFacetsToURLPrettified,
   prettifiedFacetMap
-} from "constants/search";
+} from "../../../../constants/search";
 
-import { addCommasToNumber, escapeForRegex, removeQueryParams } from "lib";
+import { addCommasToNumber, escapeForRegex, removeQueryParams } from "../../../../lib";
 
-import css from "./Sidebar.scss";
+import css from "./Sidebar.module.scss";
 
 const FacetLink = ({ route, queryKey, termObject, disabled }) =>
   disabled

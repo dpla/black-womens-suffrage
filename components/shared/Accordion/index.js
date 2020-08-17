@@ -1,6 +1,6 @@
 import React from "react";
 
-import css from "./Accordion.scss";
+import css from "./Accordion.module.scss";
 
 const addIcon = "/static/images/dpla-icons/add.svg";
 const subtractIcon = "/static/images/dpla-icons/subtract.svg";

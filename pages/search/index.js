@@ -2,18 +2,18 @@ import React from "react";
 import fetch from "isomorphic-fetch";
 import { withRouter } from "next/router";
 
-import MainLayout from "components/MainLayout";
-import OptionsBar from "components/SearchPage/OptionsBar";
-import FiltersList from "components/SearchPage/FiltersList";
-import MainContent from "components/SearchPage/MainContent";
-import MaxPageError from "components/SearchPage/MaxPageError";
+import MainLayout from "../../components/MainLayout";
+import OptionsBar from "../../components/SearchPage/OptionsBar";
+import FiltersList from "../../components/SearchPage/FiltersList";
+import MainContent from "../../components/SearchPage/MainContent";
+import MaxPageError from "../../components/SearchPage/MaxPageError";
 
 import {
     getCurrentUrl,
     getItemThumbnail,
     splitAndURIEncodeFacet,
     getSearchPageTitle,
-} from "lib";
+} from "../../lib";
 
 import {
     possibleFacets,
@@ -21,7 +21,7 @@ import {
     pageSizeOptions,
     DEFAULT_PAGE_SIZE,
     MAX_PAGE_SIZE
-} from "constants/search";
+} from "../../constants/search";
 
 class Search extends React.Component {
 
@@ -175,14 +175,16 @@ Search.getInitialProps = async context => {
             .split(/(&|\+AND\+)/)
             .filter(facet => facet && facet !== "+AND+" && facet !== "&").length;
 
-        const facetsParam = `&facets=${theseFacets.join(",")}&${facetQueries}`;
+        const facetsParam = `&facets=${possibleFacets.join(",")}&${facetQueries}`;
         const filtersParam = filters.map(x => `&filter=${x}`).join("");
         const url = `${currentUrl}/api/items?exact_field_match=true&q=${q}&page=${page}&page_size=${page_size}&sort_order=${sort_order}&sort_by=${sort_by}${facetsParam}${filtersParam}`;
-
+        console.log(`URL: ${url}`);
         const res = await fetch(url);
         let json = await res.json();
 
-        const docs = json.docs.map(result => {
+        console.log(json);
+
+        const docs = json.docs ? json.docs.map(result => {
             const thumbnailUrl = getItemThumbnail(result);
             return Object.assign({}, result.sourceResource, {
                 thumbnailUrl,
@@ -192,7 +194,7 @@ Search.getInitialProps = async context => {
                 dataProvider: result.dataProvider,
                 useDefaultImage: !result.object
             });
-        });
+        }) : [];
 
         // fix facets because ES no longer returns them in the requested order
         let newFacets = {};

@@ -1,16 +1,14 @@
 import React from "react";
 
-import ListView from "shared/ListView";
-import Pagination from "shared/Pagination";
+import ListView from "../../shared/ListView";
+import Pagination from "../../shared/Pagination";
 import Sidebar from "./Sidebar";
-import AboutLocal from "./AboutLocal";
 
-import { addLinkInfoToResults } from "lib/lib";
-import { SITE_ENV } from "constants/env";
+import { addLinkInfoToResults } from "../../../lib";
 
-import utils from "stylesheets/utils.scss";
-import css from "./MainContent.scss";
-import contentCss from "stylesheets/content-pages.scss";
+//import utils from "../../../stylesheets/utils.scss";
+import css from "./MainContent.module.scss";
+//import contentCss from "../../../stylesheets/content-pages.scss";
 
 const MainContent = ({
   results,
