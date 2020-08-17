@@ -10,6 +10,5 @@ module.exports = {
     }
 
     return config
-  },
-  experimental: { scss: true }
+  }
 }
