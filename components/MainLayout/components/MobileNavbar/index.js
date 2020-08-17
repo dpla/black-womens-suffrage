@@ -8,7 +8,7 @@ class MobileNavbar extends Component {
 
     this.state = {
       menuDisplayed: false,
-      menuIcon: "../static/images/menu-black.svg"
+      menuIcon: "../static/assets/menu-black.svg"
     }
   }
 
@@ -20,7 +20,7 @@ class MobileNavbar extends Component {
   }
 
   getMenuIcon = () => {
-    return this.state.menuDisplayed ? "../static/images/close.svg" : "../static/images/menu-black.svg"
+    return this.state.menuDisplayed ? "../static/assets/close.svg" : "../static/assets/menu-black.svg"
   }
 
   render() {
@@ -63,7 +63,7 @@ class MobileNavbar extends Component {
 
             <a href="https://dp.la" target="_blank">Visit DPLA</a>
 
-            <img src={"../static/images/search-grey.svg"}/>
+            <img src={"../static/assets/search-grey.svg"}/>
           </div>
         }
       </nav>

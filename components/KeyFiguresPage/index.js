@@ -32,7 +32,7 @@ class KeyFiguresPage extends React.Component {
           </div>
           <div className={scss.banner_right__div}>
             <div className={scss.banner_right__section}>
-              <img src="/static/images/graphic/about-page/about-graphic-hero.png" />
+              <img src="/static/assets/graphic/about-page/about-graphic-hero.png" />
             </div>
           </div>
         </section>
