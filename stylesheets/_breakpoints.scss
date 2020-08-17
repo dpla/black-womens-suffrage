@@ -12,4 +12,4 @@ $largePx: 1152;
 
 $sm-viewport: "min-width: " + $smallRem;
 $md-viewport: "min-width: " + $mediumRem;
-$lg-viewport: "min-width: " + $largeRem;
+$lg-viewport: "min-width: " + $mediumPlusRem;

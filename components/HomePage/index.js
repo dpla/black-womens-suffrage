@@ -23,21 +23,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* <div className={scss.banner}>
-        <div className={scss.banner_left__div}>
-          <section className={`${scss.container} ${scss.container_left__section}`}>
-            <p className={scss.banner__text}>Black women’s suffrage.</p>
-            <p className={scss.banner__text}>Thousands of artifacts.</p>
-            <p className={scss.banner__text}>Thousands of stories.</p>
-            <RoundButton text="LEARN MORE" icon={"/static/images/icon/button-arrow.svg"} className={scss.banner__button} />
-          </section>
-        </div>
-        <div className={scss.banner_right__div}>
-          <div className={`${scss.container} ${scss.container_right__section}`}></div>
-        </div>
-      </div> */}
-
-      {/* <section className={scss.home__section_1}>
+      <section className={`wrapper ${scss.home__section_1}`}>
         <StyledTextWithButtons
           title="BLACK WOMEN’S SUFFRAGE PORTAL"
           subtitle="The Black Women’s Suffrage Digital Collection is a collaborative project to provide digital access to materials documenting the roles and experiences of Black Women in the Women’s Suffrage Movement and, more broadly, women’s rights, voting rights,
@@ -51,7 +37,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className={scss.home__section_2}>
+      {/* <section className={scss.home__section_2}>
         <div className={scss.section_2__div_left}></div>
         <div className={scss.section_2__div_right}>
           <StyledTextWithButtons
