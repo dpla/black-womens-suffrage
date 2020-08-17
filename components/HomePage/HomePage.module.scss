@@ -38,11 +38,9 @@
 // Section 1 - Search the collection
 
 .home__section_1 {
-  height: 32rem;
+  // height: 32rem;
   background: $white;
   display: flex;
-  // margin: 6rem;
-  // justify-content: space-between;
   flex-direction: column;
 
   & .collection__left {
@@ -53,14 +51,13 @@
     }
   }
 
-  & .home__section_1__right {
+  .home__section_1__right {
+    width: 50%;
     margin: auto;
   }
 
   .home__section_1__img {
     background: url("/static/images/graphic/home-page/home-graphic-body-1.png");
-    height: 465px;
-    width: 480px;
   }
 }
 
@@ -68,20 +65,23 @@
 // Section 2 - Adding shades of context
 
 .home__section_2 {
-  height: 32rem;
-  background: $lightPink;
+  background-color: rgba(245,240,238,0.8);
   display: flex;
-  justify-content: space-between;
-  border-radius: 0 0 9.375rem 0;
+  flex-direction: column-reverse;
+  margin: 0;
+  border-radius: 0 9.375rem 0 0;
 
-  & .section_2__div_left {
-    width: 50%;
-    background: url("/static/images/graphic/home-page/home-image-body-1.png");
+  .section_2__div_left {
+
+    img {
+      width: 100%;
+    }
   }
 
   & .section_2__div_right {
-    width: 50%;
     margin: auto;
+    padding: 1em;
+    // width: 100%;
   }
 }
 
@@ -144,6 +144,24 @@
     height: auto;
   }
 
+  .home__section_2 {
+    flex-direction: row;
+    height: auto;
+    
+    .section_2__div_right {
+
+    }
+
+    .section_2__div_left {
+      display: flex;
+      img {
+        display: none;
+      }
+    }
+
+
+  }
+
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -160,6 +178,18 @@
         height: 100%;
         width: auto;
       }
+    }
+  }
+
+  .home__section_2 {  
+    .section_2__div_left {
+      img {
+        display: block;
+      }
+    }
+    
+    .section_2__div_right {
+      width: auto;
     }
   }
 }

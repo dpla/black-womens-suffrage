@@ -37,8 +37,10 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* <section className={scss.home__section_2}>
-        <div className={scss.section_2__div_left}></div>
+      <section className={`wrapper ${scss.home__section_2}`}>
+        <div className={scss.section_2__div_left}>
+          <img src="/static/images/graphic/home-page/home-image-body-1.png" />
+        </div>
         <div className={scss.section_2__div_right}>
           <StyledTextWithButtons
             title="ADDING SHADES OF CONTEXT"
@@ -51,7 +53,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className={scss.home__section_3}>
+      {/* <section className={scss.home__section_3}>
         <div className={scss.section_3__div_leftt}>
           <StyledTextWithButtons
             title="DIGITAL COLLECTION"
