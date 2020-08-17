@@ -9,21 +9,35 @@ import SponsorPreFooter from "../shared/SponsorPreFooter"
 const HomePage = () => {
   return (
     <>
-      <div className={scss.hero}>
-        <div className={scss.hero__left}>
-          <section className={`${scss.container} ${scss.container__left}`}>
-            <p className={scss.hero__text}>Black women’s suffrage.</p>
-            <p className={scss.hero__text}>Thousands of artifacts.</p>
-            <p className={scss.hero__text}>Thousands of stories.</p>
-            <RoundButton text="LEARN MORE" icon={"/static/images/icon/button-arrow.svg"} className={scss.hero__button} />
+      <section className={scss.banner}>
+        <div className={scss.banner_left__div}>
+        <p className={scss.banner__text}>Black women’s suffrage.</p>
+            <p className={scss.banner__text}>Thousands of artifacts.</p>
+            <p className={scss.banner__text}>Thousands of stories.</p>
+            <RoundButton text="LEARN MORE" icon={"/static/images/icon/button-arrow.svg"} className={scss.banner__button} />
+        </div>
+        <div className={scss.banner_right__div}>
+          {/* <div className={scss.banner_right__section}> */}
+            <img src="/static/images/graphic/home-page/home-graphic-hero.png" />
+          {/* </div> */}
+        </div>
+      </section>
+
+      {/* <div className={scss.banner}>
+        <div className={scss.banner_left__div}>
+          <section className={`${scss.container} ${scss.container_left__section}`}>
+            <p className={scss.banner__text}>Black women’s suffrage.</p>
+            <p className={scss.banner__text}>Thousands of artifacts.</p>
+            <p className={scss.banner__text}>Thousands of stories.</p>
+            <RoundButton text="LEARN MORE" icon={"/static/images/icon/button-arrow.svg"} className={scss.banner__button} />
           </section>
         </div>
-        <div className={scss.hero__right}>
-          <div className={`${scss.container} ${scss.container__right}`}></div>
+        <div className={scss.banner_right__div}>
+          <div className={`${scss.container} ${scss.container_right__section}`}></div>
         </div>
-      </div>
+      </div> */}
 
-      <section className={scss.home__section_1}>
+      {/* <section className={scss.home__section_1}>
         <StyledTextWithButtons
           title="BLACK WOMEN’S SUFFRAGE PORTAL"
           subtitle="The Black Women’s Suffrage Digital Collection is a collaborative project to provide digital access to materials documenting the roles and experiences of Black Women in the Women’s Suffrage Movement and, more broadly, women’s rights, voting rights,
@@ -74,7 +88,7 @@ const HomePage = () => {
       text="The grant for this collection is made possible through funding from " 
       sponsor="Pivotal Ventures, A Melinda Gates Company." 
       buttonText="SEARCH THE COLLECTION" 
-      buttonIcon="/static/images/icon/button-arrow.svg"/>
+      buttonIcon="/static/images/icon/button-arrow.svg"/> */}
     </>
   )
 };
