@@ -13,7 +13,7 @@ import {
     getItemThumbnail,
     splitAndURIEncodeFacet,
     getSearchPageTitle,
-} from "../../lib";
+} from "lib";
 
 import {
     possibleFacets,
@@ -21,7 +21,7 @@ import {
     pageSizeOptions,
     DEFAULT_PAGE_SIZE,
     MAX_PAGE_SIZE
-} from "../../constants/search";
+} from "constants/search";
 
 class Search extends React.Component {
 
@@ -46,7 +46,12 @@ class Search extends React.Component {
         let itemCount = 0;
 
         if ("count" in results) {
-            itemCount = results.count.value
+            if (results.count.value !== undefined) {
+                console.log("VALUE!");
+                itemCount = results.count.value // ElasticSearch 7
+            } else {
+                itemCount = results.count // ElasticSearch 6
+            }
         }
 
         return (
@@ -110,7 +115,7 @@ Search.getInitialProps = async context => {
         : "";
 
     // filters + tags
-    let filters = [ "tags:blackwomenssuffrage" ];
+    let filters = [ "tags:blackwomensuffrage" ];
     let tags = [];
 
     if (query.tags) {
@@ -126,7 +131,7 @@ Search.getInitialProps = async context => {
             if (facet.indexOf("sourceResource.date") !== -1 && !hasDates) {
                 hasDates = true; // do it only once for date queries
                 // the date “facets” from ES do not map to the way the API expects requests
-                // remove whatever is after the last periot (“begin” or “end”)
+                // remove whatever is after the last period (“begin” or “end”)
                 facet = facet.replace(".begin", "");
                 facet = facet.replace(".end", "");
                 // dates are special (also all those pretty/uglifiers shold be one object instead of three but ¯\_(ツ)_/¯)
@@ -177,12 +182,9 @@ Search.getInitialProps = async context => {
 
         const facetsParam = `&facets=${possibleFacets.join(",")}&${facetQueries}`;
         const filtersParam = filters.map(x => `&filter=${x}`).join("");
-        const url = `${currentUrl}/api/items?exact_field_match=true&q=${q}&page=${page}&page_size=${page_size}&sort_order=${sort_order}&sort_by=${sort_by}${facetsParam}${filtersParam}`;
-        console.log(`URL: ${url}`);
+        const url = `${currentUrl}/api/dpla/items?exact_field_match=true&q=${q}&page=${page}&page_size=${page_size}&sort_order=${sort_order}&sort_by=${sort_by}${facetsParam}${filtersParam}`;
         const res = await fetch(url);
         let json = await res.json();
-
-        console.log(json);
 
         const docs = json.docs ? json.docs.map(result => {
             const thumbnailUrl = getItemThumbnail(result);
