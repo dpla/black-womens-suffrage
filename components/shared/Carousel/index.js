@@ -5,8 +5,8 @@
 // const Carousel = ({tilesData}) => {
 //   return (
 //     <>
-//     <IconButton icon="static/images/icon/carousel/corousel-arrow-left.png"/>
-//     <IconButton icon="static/images/icon/carousel/corousel-arrow-right.png"/>
+//     <IconButton icon="static/assets/icon/carousel/corousel-arrow-left.png"/>
+//     <IconButton icon="static/assets/icon/carousel/corousel-arrow-right.png"/>
 
 //     {tilesData.map((data, index) => {
 //       return(
@@ -29,8 +29,8 @@ const Carousel = ({items,slidesToShow,}) => {
     <Slider
       slidesToShow={slidesToShow ? slidesToShow : 2.5}
       infinite={false}
-      nextArrow={<IconButton icon="static/images/icon/carousel/corousel-arrow-right.png"/>}
-      prevArrow={<IconButton icon="static/images/icon/carousel/corousel-arrow-left.png"/>}
+      nextArrow={<IconButton icon="static/assets/icon/carousel/corousel-arrow-right.png"/>}
+      prevArrow={<IconButton icon="static/assets/icon/carousel/corousel-arrow-left.png"/>}
       draggable={false}
       slidesToScroll={slidesToShow ? Math.floor(slidesToShow) : 2}
       responsive={[

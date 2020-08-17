@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="491px" height="327px" viewBox="0 0 491 327" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>graphic/collections/collections-graphic-hero</title>
+    <g id="DPLA" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="5.0-Collections" transform="translate(-950.000000, -75.000000)">
+            <g id="hero" transform="translate(0.000000, 75.000000)">
+                <g id="graphic/collections/collections-graphic-hero" transform="translate(950.000000, 0.000000)">
+                    <path d="M490.5,83.25 C490.5,128.399357 453.899357,165 408.75,165 C363.600643,165 327,128.399357 327,83.25 C327,38.1006429 363.600643,1.5 408.75,1.5 C453.899357,1.5 490.5,38.1006429 490.5,83.25" id="Fill-1-Copy" fill="#FFD2D2"></path>
+                    <g id="Group-3">
+                        <path d="M163.5,0 L163.5,163.5 C73.2012857,163.5 0,90.2987143 0,0 L163.5,0 Z" id="Fill-21-Copy" fill="#F18787" transform="translate(81.750000, 81.750000) rotate(180.000000) translate(-81.750000, -81.750000) "></path>
+                        <path d="M327,0 L327,163.5 C236.701286,163.5 163.5,90.2987143 163.5,0 L327,0 Z" id="Fill-21-Copy-2" fill="#EC5938" transform="translate(245.250000, 81.750000) scale(-1, 1) rotate(180.000000) translate(-245.250000, -81.750000) "></path>
+                        <path d="M81.75,81.75 C172.048714,81.75 245.25,154.951286 245.25,245.25 L245.228096,247.953776 C243.784265,337.00542 171.145727,408.75 81.75,408.75 L81.75,408.75 L81.75,81.75 Z" id="Combined-Shape-Copy" fill="#8B2D9B" transform="translate(163.500000, 245.250000) rotate(90.000000) translate(-163.500000, -245.250000) "></path>
+                    </g>
+                    <path d="M490.5,163.5 L490.5,327 C400.201286,327 327,253.798714 327,163.5 L490.5,163.5 Z" id="Fill-21-Copy-3" fill="#4E4294" transform="translate(408.750000, 245.250000) rotate(180.000000) translate(-408.750000, -245.250000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
