@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "next": "9.4.4",
+    "next-http-proxy-middleware": "^1.0.4",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-helmet": "^6.1.0",
