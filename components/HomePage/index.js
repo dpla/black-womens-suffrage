@@ -9,21 +9,21 @@ import SponsorPreFooter from "../shared/SponsorPreFooter"
 const HomePage = () => {
   return (
     <>
-      <div className={scss.hero}>
-        <div className={scss.hero__left}>
-          <section className={`${scss.container} ${scss.container__left}`}>
-            <p className={scss.hero__text}>Black women’s suffrage.</p>
-            <p className={scss.hero__text}>Thousands of artifacts.</p>
-            <p className={scss.hero__text}>Thousands of stories.</p>
-            <RoundButton text="LEARN MORE" icon={"/static/assets/icon/button-arrow.svg"} className={scss.hero__button} />
-          </section>
+      <section className={scss.banner}>
+        <div className={scss.banner_left__div}>
+        <p className={scss.banner__text}>Black women’s suffrage.</p>
+            <p className={scss.banner__text}>Thousands of artifacts.</p>
+            <p className={scss.banner__text}>Thousands of stories.</p>
+            <RoundButton text="LEARN MORE" icon={"/static/images/icon/button-arrow.svg"} className={scss.banner__button} />
         </div>
-        <div className={scss.hero__right}>
-          <div className={`${scss.container} ${scss.container__right}`}></div>
+        <div className={scss.banner_right__div}>
+          {/* <div className={scss.banner_right__section}> */}
+            <img src="/static/images/graphic/home-page/home-graphic-hero.png" />
+          {/* </div> */}
         </div>
-      </div>
+      </section>
 
-      <section className={scss.home__section_1}>
+      <section className={`wrapper ${scss.home__section_1}`}>
         <StyledTextWithButtons
           title="BLACK WOMEN’S SUFFRAGE PORTAL"
           subtitle="The Black Women’s Suffrage Digital Collection is a collaborative project to provide digital access to materials documenting the roles and experiences of Black Women in the Women’s Suffrage Movement and, more broadly, women’s rights, voting rights,
@@ -37,8 +37,10 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className={scss.home__section_2}>
-        <div className={scss.section_2__div_left}></div>
+      <section className={`wrapper ${scss.home__section_2}`}>
+        <div className={scss.section_2__div_left}>
+          <img src="/static/images/graphic/home-page/home-image-body-1.png" />
+        </div>
         <div className={scss.section_2__div_right}>
           <StyledTextWithButtons
             title="ADDING SHADES OF CONTEXT"
@@ -51,7 +53,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className={scss.home__section_3}>
+      {/* <section className={scss.home__section_3}>
         <div className={scss.section_3__div_leftt}>
           <StyledTextWithButtons
             title="DIGITAL COLLECTION"

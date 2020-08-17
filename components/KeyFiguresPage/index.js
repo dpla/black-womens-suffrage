@@ -2,7 +2,8 @@ import React from "react"
 import scss from "../KeyFiguresPage/KeyFiguresPage.module.scss"
 import MobileDropdown from "../shared/MobileDropdown"
 import SelectedKeyFigure from "./SelectedKeyFigure"
-import { keyFigures } from "../../constants/key-figures";
+import { keyFigures } from "../../constants/key-figures"
+import PageBanner from "../shared/PageBanner"
 
 class KeyFiguresPage extends React.Component {
   constructor() {
@@ -25,7 +26,7 @@ class KeyFiguresPage extends React.Component {
   render() {
     return (
       <>
-        <section className={scss.banner}>
+        {/* <section className={scss.banner}>
           <div className={scss.banner_left__div}>
             <h6>KEY FIGURES</h6>
             <p>Shining a light on Black women's activism</p>
@@ -35,7 +36,9 @@ class KeyFiguresPage extends React.Component {
               <img src="/static/assets/graphic/about-page/about-graphic-hero.png" />
             </div>
           </div>
-        </section>
+        </section> */}
+
+        <PageBanner title="KEY FIGURES" text="Shining a light on Black women's activism" graphic="/static/images/graphic/about-page/about-graphic-hero.png"/>
   
         {/* <MobileDropdown items={keyFigures}/> */}
   

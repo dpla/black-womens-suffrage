@@ -8,19 +8,17 @@ const PageBanner = ({
 }) => {
   return (
     <>
-      <div className={scss.banner}>
-        <div className={scss.banner__left}>
-          <section className={`${scss.container} ${scss.container__left}`}>
-            <h6 className="banner__title">{title}</h6>
-            <p className="banner__text_large">{text}</p>
-          </section>
+      <section className={scss.banner}>
+        <div className={scss.banner_left__div}>
+          <h6>{title}</h6>
+          <p>{text}</p>
         </div>
-        <div className={scss.banner__right}>
-          <div className={`${scss.container} ${scss.container__right}`}>
-            <img src={graphic}/>
+        <div className={scss.banner_right__div}>
+          <div className={scss.banner_right__section}>
+            <img src={graphic} />
           </div>
         </div>
-      </div>  
+      </section>
       
     </>
   )
