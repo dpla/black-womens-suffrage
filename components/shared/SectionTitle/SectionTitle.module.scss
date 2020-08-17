@@ -1,0 +1,27 @@
+@import "stylesheets/variables";
+
+.section_title {
+  h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $purple;
+    font-family: $libre;
+    font-size: 2em;
+    font-weight: $xBold;
+    letter-spacing: 0.85px;
+    line-height: 47px;
+
+    span {
+      background: #fff;
+      margin: 0 15px;
+    }
+  }
+
+  h1:before {
+    background: $medPink;
+    height: 2px;
+    flex: 1;
+    content: '';
+  }
+}
