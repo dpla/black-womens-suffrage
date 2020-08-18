@@ -53,7 +53,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* <section className={scss.home__section_3}>
+      <section className={scss.home__section_3}>
         <div className={scss.section_3__div_leftt}>
           <StyledTextWithButtons
             title="DIGITAL COLLECTION"
