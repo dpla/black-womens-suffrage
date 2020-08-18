@@ -8,7 +8,7 @@ import SkipToContent from "shared/SkipToContent";
 import PageHeader from "../PageHeader";
 
 import * as gtag from "lib/gtag";
-import { getFullPath, getCurrentFullUrl } from "lib/lib";
+import { getFullPath, getCurrentFullUrl } from "lib";
 
 import { SITE_ENV } from "constants/env";
 
