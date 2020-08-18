@@ -78,15 +78,15 @@ HomeHero {
  }
 
 //todo THIS
-//.wrapper {
-//  height: 32rem;
-//  margin: 3rem;
-//
-//  @media(max-width: 600px) {
-//    margin: 1rem;
-//    height: auto;
-//  }
-//}
+.wrapper {
+ height: 32rem;
+ margin: 3rem;
+
+ @media(max-width: 600px) {
+   margin: 1rem;
+   height: auto;
+ }
+}
 
 .display__flex {
   display: flex;

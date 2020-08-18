@@ -14,11 +14,11 @@ const HomePage = () => {
         <p className={scss.banner__text}>Black women’s suffrage.</p>
             <p className={scss.banner__text}>Thousands of artifacts.</p>
             <p className={scss.banner__text}>Thousands of stories.</p>
-            <RoundButton text="LEARN MORE" icon={"/static/images/icon/button-arrow.svg"} className={scss.banner__button} />
+            <RoundButton text="LEARN MORE" icon={"/static/assets/icon/button-arrow.svg"} className={scss.banner__button} />
         </div>
         <div className={scss.banner_right__div}>
           {/* <div className={scss.banner_right__section}> */}
-            <img src="/static/images/graphic/home-page/home-graphic-hero.png" />
+            <img src="/static/assets/graphic/home-page/home-graphic-hero.png" />
           {/* </div> */}
         </div>
       </section>
@@ -39,7 +39,7 @@ const HomePage = () => {
 
       <section className={`wrapper ${scss.home__section_2}`}>
         <div className={scss.section_2__div_left}>
-          <img src="/static/images/graphic/home-page/home-image-body-1.png" />
+          <img src="/static/assets/graphic/home-page/home-image-body-1.png" />
         </div>
         <div className={scss.section_2__div_right}>
           <StyledTextWithButtons

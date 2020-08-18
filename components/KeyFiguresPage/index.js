@@ -38,7 +38,7 @@ class KeyFiguresPage extends React.Component {
           </div>
         </section> */}
 
-        <PageBanner title="KEY FIGURES" text="Shining a light on Black women's activism" graphic="/static/images/graphic/about-page/about-graphic-hero.png"/>
+        <PageBanner title="KEY FIGURES" text="Shining a light on Black women's activism" graphic="/static/assets/graphic/about-page/about-graphic-hero.png"/>
   
         {/* <MobileDropdown items={keyFigures}/> */}
   
