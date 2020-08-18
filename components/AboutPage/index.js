@@ -1,6 +1,7 @@
 import React from "react"
 import scss from "../AboutPage/AboutPage.module.scss"
 import PageBanner from "../shared/PageBanner"
+import SplitBanner from "../shared/SplitBanner"
 import StyledText from "../shared/StyledText"
 import SponsorPreFooter from "../shared/SponsorPreFooter"
 import RoundButton from "../shared/RoundButton"
