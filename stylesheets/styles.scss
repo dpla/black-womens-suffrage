@@ -70,22 +70,23 @@ HomeHero {
   background-size: 400px auto;
 }
 
-// .container {
-//   font-family: $inter;
-//   position: relative;
-//   max-width: 1440px;
-//   margin: auto;
-// }
+ .container {
+   font-family: $inter;
+   position: relative;
+   max-width: 1440px;
+   margin: auto;
+ }
 
-.wrapper {
-  height: 32rem;
-  margin: 3rem;
-
-  @media(max-width: 600px) {
-    margin: 1rem;
-    height: auto;
-  }
-}
+//todo THIS
+//.wrapper {
+//  height: 32rem;
+//  margin: 3rem;
+//
+//  @media(max-width: 600px) {
+//    margin: 1rem;
+//    height: auto;
+//  }
+//}
 
 .display__flex {
   display: flex;
