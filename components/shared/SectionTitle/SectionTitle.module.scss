@@ -11,10 +11,11 @@
     font-weight: $xBold;
     letter-spacing: 0.85px;
     line-height: 47px;
+    margin: .5em 0;
+    padding-left: .5em;
 
     span {
-      background: #fff;
-      margin: 0 15px;
+      background: $white;
     }
   }
 
