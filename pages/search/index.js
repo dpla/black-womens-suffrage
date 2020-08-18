@@ -115,7 +115,7 @@ Search.getInitialProps = async context => {
         : "";
 
     // filters + tags
-    let filters = [ "tags:blackwomensuffrage" ];
+    let filters = [ process.env.NEXT_PUBLIC_SITE_FILTER ];
     let tags = [];
 
     if (query.tags) {
