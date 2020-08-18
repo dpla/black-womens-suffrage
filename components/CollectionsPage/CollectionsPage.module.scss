@@ -2,6 +2,8 @@
 
 
 .collections__tile {
+  padding: 1em;
+
   h2 {
     color: $purple;
     font-family: $libre;
@@ -18,5 +20,45 @@
     font-weight: 500;
     letter-spacing: 0.35px;
     line-height: 28px;
+  }
+
+  .collections_button__active {
+    background: transparent;
+    border: none;
+
+    a {
+      color: #8B2D9B;
+      font-family: $inter;
+      font-size: 1em;
+      font-weight: 800;
+      letter-spacing: 0.86px;
+      line-height: 20px;
+    }
+
+    img {
+      padding-left: 1em;
+    }
+
+    .collections_button__active_underline {
+      padding-bottom: 5px;
+      background: linear-gradient(270deg, rgba(241,135,135,0.35) 0%, #8B2D9B 100%);
+      margin-top: 10px;
+    }
+  }
+
+  .collections_button__inactive {
+    color: #BBBBBB;
+    font-family: $inter;
+    font-size: 1em;
+    font-weight: 800;
+    letter-spacing: 0.86px;
+    line-height: 20px;
+
+    .collections_button__inactive_underline {
+      padding-bottom: 5px;
+      background: #BBBBBB;
+      margin-top: 10px;
+    }
+
   }
 }
