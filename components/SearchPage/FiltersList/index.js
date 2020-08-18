@@ -11,7 +11,7 @@ import { joinIfArray } from "lib";
 
 import css from "./FiltersList.module.scss";
 
-const closeIcon = "/static/images/dpla-icons/close-white.svg";
+const closeIcon = "/static/assets/dpla-icons/close-white.svg";
 
 const clearAllFacets = query => {
   const duped = Object.assign({}, query);
