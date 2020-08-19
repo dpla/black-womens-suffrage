@@ -1,5 +1,13 @@
 $white: #fff;
 $black: #000;
+
+$lightPink: #FEDFDF;
+$medPink: #F18787;
+$orange: #EC5938;
+$purple: #4E4294;
+
+
+
 $riceCakeWhite: #ece9da;
 $merinoWhite: #fbf8f4;
 $alabasterGray: #f4f0e9;
@@ -80,10 +88,5 @@ $featureBackgroundColor: #cbe3e8 !default;
 $footerLightColor: $ebonyClayBlue !default;
 $footerDarkColor: $minuitBlue !default;
 $heroBackgroundColor: $dplaHeroBlue !default;
-
-// pro colors
-$proSiteColor: $elephantBlue !default;
-$proIconColor: #5d7384 !default;
-$memberColor: #006d84 !default;
 
 @import "styles"; // overrides the values above with ./themes/[LOCAL_ID.theme]/theme

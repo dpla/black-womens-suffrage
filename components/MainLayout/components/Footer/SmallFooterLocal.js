@@ -6,7 +6,7 @@ import { LOCAL_ID } from "constants/env";
 import css from "./Footer.module.scss";
 import { LOCALS } from "constants/local";
 
-const logo = "/static/images/dpla-logo.svg";
+const logo = "/static/assets/dpla-logo.svg";
 
 class SmallFooterLocal extends React.Component {
   render() {

@@ -1,162 +1,89 @@
 @import "stylesheets/variables";
 
-.wrapper {
-  color: white;
-  background-color: $footerLightColor;
-  position: relative;
-
-  @media print {
-    display: none;
-  }
-}
-
 .footer {
-  padding: 2rem 1rem;
-  line-height: 1.5;
-  color: $gray75;
-  margin: 0 auto;
-
-  @media (min-width: $mediumRem) {
-    padding: 3rem 1rem;
-  }
-
-  @media (min-width: $largeRem) {
-    padding: 3rem 0;
-  }
-
-  & li a {
-    color: white;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
-
-    @media (min-width: $largeRem) {
-      font-size: 1.15rem;
-    }
-  }
-}
-
-/* Select all but the first two */
-.linkGroup {
-  &:nth-of-type(n + 3) {
-    margin-top: 1rem;
-
-    @media (min-width: $smallRem) {
-      margin-top: 0;
-    }
-  }
-}
-
-.linkHeader {
-  font-weight: 600;
-  font-size: 1rem;
-  color: white;
-  margin-bottom: 1rem;
-
-  @media (min-width: $largeRem) {
-    font-size: 1.25rem;
-  }
-}
-
-.donateButton {
-  width: 100%;
-  margin-top: 2rem;
-  text-align: center;
-
-  &:hover {
-    text-decoration: none;
-  }
-
-  @media (min-width: $mediumRem) {
-    margin-top: 0;
-  }
-
-  @media (min-width: $largeRem) {
-    float: right;
-    width: auto;
-  }
-}
-
-.smallFooterWrapper {
-  background-color: $footerDarkColor;
-}
-
-.smallFooter {
-  padding: 2rem 1rem;
-  margin: 0 auto;
+  height: 30rem;
+  background-color: #282830;
   display: flex;
+  justify-content: flex-end;
   flex-direction: column;
+  position: absolute;
+  bottom: -6%;
+  z-index: -1;
+  width: 100%;
 
-  @media (min-width: $mediumRem) {
-    align-items: center;
-    flex-direction: row;
+  & .footer__container {
+    padding: 3.125rem;
+  }
+
+  & .footer__section_top {
+    display: flex;
     justify-content: space-between;
+    width: 100%;
+    align-items: flex-end;
   }
 
-  @media (min-width: $largeRem) {
-    padding: 2rem 0;
+  & .footer__section_bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
-}
 
-.logo {
-  display: block;
-  margin: 0 auto;
-  width: 15rem;
-  height: 3rem;
+  & .footer__links {
+    height: 17px;
+    width: 578px;
+    justify-content: space-around;
+    display: flex;
 
-  @media (min-width: $mediumRem) {
+    & a {
+      color: $white;
+      font-family: $inter;
+      text-decoration: none;
+    }
+  }
+
+  & .footer__divider {
+    height: 1px;
+    width: 100%;
+    opacity: 0.25;
+    background-color: #D8D8D8;
+    margin: 1.5rem 0;
+  }
+
+  & .footer__p {
+    height: 54px;
+    width: 980px;
+    opacity: 0.5;
+    color: #FFFEFE;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 18px;
+    font-family: $inter;
     margin: 0;
-    width: 18rem;
-  }
-}
-
-.partnershipLogo {
-  display: block;
-  margin: 0 auto;
-  width: 15rem;
-  height: 2rem;
-
-  @media (min-width: $mediumRem) {
-    margin: 0;
-    width: 15rem;
-  }
-}
-
-.localLogo {
-  display: block;
-  height: 3rem;
-  margin: 0 auto 2rem;
-  max-width: 16rem;
-
-  @media (min-width: $largeRem) {
-    height: 3rem;
-    margin: 0;
-    max-width: 18rem;
-  }
-}
-
-.socialIcons {
-  text-align: center;
-  margin-top: 2rem;
-
-  @media (min-width: $mediumRem) {
-    margin-top: 0;
-  }
-}
-
-.socialButton {
-  padding-right: 1rem;
-  width: 2.25rem;
-  height: 1.25rem;
-
-  &:last-child {
-    padding: none;
   }
 
-  @media (min-width: $mediumRem) {
-    width: 2.5rem;
-    height: 1.5rem;
+  & .footer__links_small {
+    display: flex;
+    height: 1rem;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 1rem;
+    text-align: right;
+    justify-content: center;
+    align-items: center;
+
+    & .footer__a {
+      border-right: 1px rgba(216, 216, 216, 0.5) solid;
+      padding-right: .75rem;
+    }
+
+    & a {
+      color: #FFFEFE;
+      font-family: $inter;
+      text-decoration: none;
+      padding: 0.125rem;
+      padding-left: .75rem;
+    }
   }
 }

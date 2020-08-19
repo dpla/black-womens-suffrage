@@ -1,0 +1,38 @@
+// Mobile
+@media only screen and (max-width: 768px) {
+  .container {
+    width: auto;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .container {
+    width: 32rem;
+    margin: auto;
+  }
+}
+
+.title {
+  height: 17px;
+  color: #F48C8C;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.75px;
+  line-height: 17px;
+}
+
+.section__text_large {
+  color: #4E4294;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  line-height: 34px;
+}
+
+.section__text_small {
+  color: #282830;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.35px;
+  line-height: 28px;
+}

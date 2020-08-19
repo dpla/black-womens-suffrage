@@ -1,0 +1,12 @@
+.iconButton {
+  color: white;
+  background: purple;
+  border-radius: 50%;
+  border: none;
+  height: 3.75rem;
+  width: 3.75rem;
+
+  & img {
+    // padding-left: 1rem;
+  }
+}

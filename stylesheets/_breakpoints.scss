@@ -1,6 +1,6 @@
 $xSmallRem: 30em;
 $smallRem: 40em;
-$mediumRem: 52em;
+$mediumRem: 48em;
 $mediumPlusRem: 59.25em;
 $largeRem: 72em;
 $xLargeRem: 82em;
@@ -12,4 +12,4 @@ $largePx: 1152;
 
 $sm-viewport: "min-width: " + $smallRem;
 $md-viewport: "min-width: " + $mediumRem;
-$lg-viewport: "min-width: " + $largeRem;
+$lg-viewport: "min-width: " + $mediumPlusRem;

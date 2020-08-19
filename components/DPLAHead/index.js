@@ -13,7 +13,7 @@ const defaultPageTitle = "Digital Public Library of America"
 
 class DPLAHead extends React.Component {
   render() {
-    const { defaultImageUrl } = "/static/images/dpla-logo-square_250.png";
+    const { defaultImageUrl } = "/static/assets/dpla-logo-square_250.png";
     const {
       seoType,
       pageTitle,
@@ -77,7 +77,46 @@ class DPLAHead extends React.Component {
             />,
             <link key="manifest" rel="manifest" href="/manifest.json" />
           ]}
-
+          {SITE_ENV === "local" && [
+            <link
+              key="180"
+              rel="apple-touch-icon"
+              sizes="180x180"
+              href={`/static/local/${LOCAL_ID}/${LOCALS[LOCAL_ID].favicon}`}
+            />,
+            <link
+              key="32"
+              rel="icon"
+              type="image/png"
+              sizes="32x32"
+              href={`/static/local/${LOCAL_ID}/${LOCALS[LOCAL_ID].favicon}`}
+            />,
+            <link
+              key="16"
+              rel="icon"
+              type="image/png"
+              sizes="16x16"
+              href={`/static/local/${LOCAL_ID}/${LOCALS[LOCAL_ID].favicon}`}
+            />,
+            <link
+              key="mask"
+              rel="mask-icon"
+              href={`/static/local/${LOCAL_ID}/${LOCALS[LOCAL_ID].favicon}`}
+              color="#ffffff"
+            />,
+            <link key="manifest" rel="manifest" href="/manifest.json" />
+          ]}
+          <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
+          />
+          <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
+          />
+          {additionalLinks}
           <title>{getMetaPageTitle(pageTitle)}</title>
           <script src="https://cdn.polyfill.io/v2/polyfill.min.js?features=default,es6,EventSource,Object.values,Object.entries,Object.keys,Array.prototype.includes,Intl.~locale.en" />
           <script src="/static/js/localforage.min.js" type="text/javascript" />

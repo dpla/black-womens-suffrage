@@ -70,8 +70,74 @@ HomeHero {
   background-size: 400px auto;
 }
 
-body {
-  font-family: $sansFont;
-  max-width: 1440px;
-  margin: auto;
+ .container {
+   font-family: $inter;
+   position: relative;
+   max-width: 1440px;
+   margin: auto;
+ }
+
+//todo THIS
+.wrapper {
+ height: 32rem;
+ margin: 3rem;
+
+ @media(max-width: 600px) {
+   margin: 1rem;
+   height: auto;
+ }
+}
+
+.display__flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  height: 1.063rem;
+  color: #F48C8C;
+  font-size: 0.875rem;
+  font-weight: 800;
+  letter-spacing: 0.075rem;
+  line-height: 1.063rem;
+}
+
+.section__text_large {
+  color: #4E4294;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  line-height: 34px;
+}
+
+.banner__title {
+  height: 26px;
+  width: 88px;
+  color: #F18787;
+  font-family: $inter;
+  font-size: 22px;
+  font-weight: 800;
+  letter-spacing: 1.53px;
+  line-height: 26px;
+  margin-bottom: 1.875rem;
+  margin-top: 0;
+}
+
+// .banner__text_large {
+//   height: 192px;
+//   width: 455px;
+//   color: #4E4294;
+//   font-family: $inter;
+//   font-size: 32px;
+//   font-weight: 800;
+//   letter-spacing: 0.71px;
+//   line-height: 48px;
+// }
+
+.medium_page_section {
+  height: 40rem;
+}
+
+.large_page_section {
+  height: 55rem;
 }

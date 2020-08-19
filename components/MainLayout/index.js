@@ -1,9 +1,9 @@
 import React from "react"
 import Router from "next/router"
-import Navbar from "../shared/Navbar"
-import MobileNavbar from "../shared/MobileNavbar"
+import Navbar from "./components/Navbar"
 import Helmet from "react-helmet"
 import DPLAHead from "../DPLAHead"
+import Footer from "./components/Footer"
 
 class MainLayout extends React.Component {
   // Google Analytics tracking for MainLayout-using pages
@@ -29,7 +29,7 @@ class MainLayout extends React.Component {
     const {children} = this.props
 
     return (
-      <div>
+      <div className="container">
         <Helmet htmlAttributes={{ lang: "en" }} />
         {/* <DPLAHead
           additionalLinks={headLinks}
@@ -41,6 +41,8 @@ class MainLayout extends React.Component {
         <Navbar />
         {/* <MobileNavbar /> */}
         {children}
+
+        {/* <Footer /> */}
       </div>
     );
   }

@@ -6,12 +6,12 @@ $gutterWidth: 1rem;
 $outerPadding: 1rem;
 $gutterCompensation: calc((#{$gutterWidth} * 0.5) * -1);
 $halfGutterWidth: calc((#{$gutterWidth} * 0.5));
-$siteMaxWidth: 64rem;
+$siteMaxWidth: 90rem;
 $borderColor: rgba(0, 0, 0, 0.75);
 
 :global select {
   appearance: none;
-  background: url(/static/images/chevron-thick-black-down.svg) no-repeat white;
+  background: url(/static/assets/chevron-thick-black-down.svg) no-repeat white;
   background-position: calc(100% - 0.5rem) center;
   background-size: 0.9em;
   border: 0.075rem solid $formLabelColor;
@@ -113,11 +113,11 @@ $borderColor: rgba(0, 0, 0, 0.75);
 }
 
 .container {
-  padding-left: $outerPadding;
-  padding-right: $outerPadding;
-  margin-left: auto;
-  margin-right: auto;
   max-width: $siteMaxWidth;
+  font-family: $inter;
+  position: relative;
+  // max-width: 1440px;
+  margin: auto;
 
   @media ($lg-viewport) {
     padding-left: 0;
@@ -161,14 +161,14 @@ a {
   text-decoration: none;
 
   &:global.external {
-    background-image: url("/static/images/external-link-blue.svg");
+    background-image: url("/public/static/assets/dpla-icons/external-link-blue.svg");
     background-position: center right;
     background-repeat: no-repeat;
     background-size: 0.7em;
     padding-right: 1em;
 
     &.white {
-      background-image: url("/static/images/external-link-white.svg");
+      background-image: url("/public/static/assets/dpla-icons/external-link-white.svg");
       background-position: 90% center;
       padding-right: 0;
     }

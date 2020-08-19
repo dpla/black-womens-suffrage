@@ -1,0 +1,19 @@
+@import "stylesheets/variables";
+
+.curved_text_box__container {
+  box-sizing: border-box;
+  border: 2px solid $lightPink;
+  border-radius: 0 115px 0 115px;
+  margin: 2em 0;
+  
+  p {
+    color: $orange;
+    font-family: $libre;
+    font-size: 22px;
+    font-weight: $bold;
+    letter-spacing: 0.55px;
+    line-height: 40px;
+    text-align: center;
+    padding: 1.25em 2.25em;
+  }
+}
