@@ -3,8 +3,8 @@ import MainLayout from "../../../components/MainLayout"
 import fs from 'fs'
 import path from 'path'
 
-function IdaBWells({ itemsString }) {
-  const items = JSON.parse(itemsString)
+function IdaBWells({ items }) {
+  // const items = JSON.parse(itemsString);
 
   return (
       <MainLayout className="main" role="main">
@@ -22,14 +22,15 @@ function IdaBWells({ itemsString }) {
 };
 
 export async function getStaticProps() {
-  const ibwDirectory = path.join(process.cwd(), 'constants')
-  const filePath = path.join(ibwDirectory, 'ida-b-wells.js')
-  const itemsString = fs.readFileSync(filePath, 'utf8')
+  const ibwDirectory = path.join(process.cwd(), 'constants');
+  const filePath = path.join(ibwDirectory, 'ida-b-wells.js');
+  const itemsString = fs.readFileSync(filePath, 'utf8');
+  const items = JSON.parse(itemsString);
 
   return {
     props: {
-      itemsString,
-    },
+      items: items
+    }
   }
 }
 
