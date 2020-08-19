@@ -10,7 +10,7 @@ class Navbar extends Component {
         <div className={scss.nav__logo}>
           <Link href="/">
             <a>
-              <img src="/static/assets/logo/dpla_bws-logo-color-nav.png" />
+              <img src="/static/logo/dpla_bws-logo-color-nav.png" />
             </a>
           </Link>
         </div>
@@ -42,7 +42,7 @@ class Navbar extends Component {
 
             <a href="https://dp.la" target="_blank">Visit DPLA</a>
 
-            <img src={"/static/assets/icon/search/search-bar.svg"} alt="search-bar" id={scss.searchbar}/>
+            <img src={"/static/icon/search/search-bar.svg"} alt="search-bar" id={scss.searchbar}/>
           </div>
         
       </nav>

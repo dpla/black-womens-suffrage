@@ -8,7 +8,7 @@ import { collections } from "constants/collections"
 const CollectionsPage = () => {
   const title = "COLLECTIONS",
     text = "Telling the story of Black women’s suffrage, one artifact at a time.",
-    graphic = "static/assets/graphic/collections-page/collections-graphic-hero.png";
+    graphic = "static/graphic/collections-page/collections-graphic-hero.png";
 
   return (
     <>
@@ -31,7 +31,7 @@ const CollectionsPage = () => {
                     <Link href={`/collections/${collection.href}`}>
                       <a>VIEW COLLECTION</a>
                     </Link>
-                    <img src="static/assets/icon/collections-page/button-arrow.svg" />
+                    <img src="static/icon/collections-page/button-arrow.svg" />
                     <div className={scss.collections_button__active_underline}></div>
                   </button>
                   :

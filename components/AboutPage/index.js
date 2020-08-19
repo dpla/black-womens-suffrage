@@ -1,15 +1,14 @@
 import React from "react"
 import scss from "../AboutPage/AboutPage.module.scss"
-import PageBanner from "../shared/PageBanner"
-import SplitBanner from "../shared/SplitBanner"
-import StyledText from "../shared/StyledText"
-import SponsorPreFooter from "../shared/SponsorPreFooter"
-import RoundButton from "../shared/RoundButton"
+import PageBanner from "shared/PageBanner"
+import StyledText from "shared/StyledText"
+import SponsorPreFooter from "shared/SponsorPreFooter"
+import RoundButton from "shared/RoundButton"
 
 const AboutPage = () => {
   const title = "ABOUT",
         text = "For Black women, the fight wasn't over in 1920. Their movement for gender and racial equality continues.",
-        graphic = "/static/assets/graphic/about-page/about-graphic-hero.png",
+        graphic = "/static/graphic/about-page/about-graphic-hero.png",
         left_text = [
           "Mary Church Terrell.",
           "Frances Ellen Watkins Harper.",
@@ -25,7 +24,7 @@ const AboutPage = () => {
     <>
       <PageBanner title={title} text={text} graphic={graphic}/>
       <div className={scss.about__section_1_div}>
-      <img src="/static/assets/graphic/about-page/about-graphic-body-1.svg"/>
+      <img src="/static/graphic/about-page/about-graphic-body-1.svg"/>
 
       <div className="wrapper display__flex">
           <div className={scss.about__section_1_left}>
@@ -56,15 +55,15 @@ const AboutPage = () => {
         </div>
 
         <div className={scss.about__section_3_right}>
-          <img src="/static/assets/graphic/about-page/about-image-body-1.png"/>
-          <img src="/static/assets/graphic/about-page/about-graphic-body-2.svg"/>
+          <img src="/static/image/about-page/about-image-body-1.png"/>
+          <img src="/static/graphic/about-page/about-graphic-body-2.svg"/>
         </div>
       </div>
 
       <div className={`site-max-width container medium_page_section ${scss.about__section_4}`}>
         <div>
           <div className={scss.about__section_4_div}>
-            <img src="/static/assets/graphic/about-page/about-graphic-body-3.svg"/>
+            <img src="/static/graphic/about-page/about-graphic-body-3.svg"/>
 
             <div>
               <h3 className="title">DIGITAL PUBLIC LIBRARY OF AMERICA (DPLA)</h3>
@@ -81,18 +80,18 @@ const AboutPage = () => {
           <h2>Curating the Black Women’s Suffrage Digital Collection</h2>
           <p>Materials in this collection and the language that describes them may be harmful. Libraries and archives collect materials from different cultures and time periods to preserve and make available the historical record. As a result, library materials, such as those presented here, may reflect racist and misogynoir views that may be harmful and difficult to view.</p>
           <p>The content featured in this collection explores linkages between Black women’s suffrage and other social causes of the nineteenth and early twentieth centuries (anti-slavery, anti-lynching, education reform and civil rights) as well as racism within the Suffrage Movement. These materials are presented here to recognize and celebrate the important contributions of Black women and their resiliency in the face of ongoing racism and exclusion.</p>
-          <RoundButton text="SEE HARMFUL LANGUAGE DISCLAIMERS" icon="/static/assets/icon/button-arrow.svg"/>
+          <RoundButton text="SEE HARMFUL LANGUAGE DISCLAIMERS" icon="/static/icon/button-arrow.svg"/>
         </div>
 
-        <img src="/static/assets/graphic/about-page/about-graphic-body-4.svg"/>
-        <img src="/static/assets/graphic/about-page/about-graphic-body-5.svg" />    
+        <img src="/static/graphic/about-page/about-graphic-body-4.svg"/>
+        <img src="/static/graphic/about-page/about-graphic-body-5.svg" />    
       </div>
 
       <SponsorPreFooter 
       text="The grant for this collection is made possible through funding from " 
       sponsor="Pivotal Ventures, A Melinda Gates Company." 
       buttonText="SEARCH THE COLLECTION" 
-      buttonIcon="/static/assets/icon/button-arrow.svg"/>
+      buttonIcon="/static/icon/button-arrow.svg"/>
       
     </>
   )
