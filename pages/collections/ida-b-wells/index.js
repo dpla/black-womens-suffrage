@@ -10,11 +10,11 @@ function IdaBWells({ items }) {
       <MainLayout className="main" role="main">
         <section>
           <ul>
-            { Object.keys(items).map((key) => (
+            { items.map((item) => (
               <li>
-                <p>{ items[key]["title"].join(": ") }</p>
+                <p>{ item.title }</p>
               </li>
-            )) }
+            ))}
           </ul>
         </section>
       </MainLayout>
@@ -25,7 +25,15 @@ export async function getStaticProps() {
   const ibwDirectory = path.join(process.cwd(), 'constants');
   const filePath = path.join(ibwDirectory, 'ida-b-wells.js');
   const itemsString = fs.readFileSync(filePath, 'utf8');
-  const items = JSON.parse(itemsString);
+  const json = JSON.parse(itemsString);
+
+  const items = Object.keys(json).map((key) => {
+    const title = json[key]["title"].join(": ");
+
+    return {
+      title: title
+    }
+  });
 
   return {
     props: {
