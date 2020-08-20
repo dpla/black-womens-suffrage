@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 
 import ItemImage from "./ItemImage";
 import ItemTermValuePair from "./ItemTermValuePair";
@@ -60,7 +59,6 @@ class MainMetadata extends React.Component {
                 useDefaultImage={item.useDefaultImage}
               />
               {item.sourceUrl &&
-                <Link prefetch href={item.sourceUrl}>
                   <a
                     rel="noopener noreferrer"
                     target="_blank"
@@ -74,7 +72,7 @@ class MainMetadata extends React.Component {
                           : "View Full Item"}
                     </span>
                   </a>
-                </Link>}
+                }
               {item.edmRights && <RightsBadge url={item.edmRights} />}
               {/* 
         for situations where the rights are in sourceResource
