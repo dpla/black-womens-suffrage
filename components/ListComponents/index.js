@@ -43,10 +43,10 @@ export const ListEmpty = () =>
     <p>This list is empty.</p>
     <p>
       Add up to 50 items from our{" "}
-      <Link prefetch href="/browse-by-topic">
+      <Link href="/browse-by-topic">
         <a>topics</a>
       </Link>{" "}or{" "}
-      <Link prefetch href="/search">
+      <Link href="/search">
         <a>search results</a>
       </Link>:
     </p>
@@ -78,10 +78,10 @@ export const ListsEmpty = () =>
     <h2 className={css.contentTitle}>Create your lists</h2>
     <p>
       Create lists from our{" "}
-      <Link prefetch href="/browse-by-topic">
+      <Link href="/browse-by-topic">
         <a>topics</a>
       </Link>{" "}or{" "}
-      <Link prefetch href="/search">
+      <Link href="/search">
         <a>search results</a>
       </Link>{" "}
       (up to 50 items in each list):
@@ -102,7 +102,7 @@ export const ListsEmpty = () =>
     <p>
       Once you have created a list, you can visit{" "}
       <code>
-        <Link prefetch href="/lists">
+        <Link href="/lists">
           <a>dp.la/lists</a>
         </Link>
       </code>{" "}
