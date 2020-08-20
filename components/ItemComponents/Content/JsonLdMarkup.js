@@ -242,9 +242,9 @@ const JsonLdMarkup = ({ item, url }) => {
     "@context": "http://schema.org/",
     "@type": type(),
     // TODO: Is there a better way to generate the api URI?
-    "@id": "http://api.dp.la/items/" + url.query.itemId,
+    "@id": "http://api.dp.la/items/" + item.id,
     // TODO: Is there a better way to generate the URL of this page?
-    mainEntityOfPage: "https://dp.la/item/" + url.query.itemId,
+    mainEntityOfPage: "https://dp.la/item/" + item.id,
     isAccessibleForFree: true,
     provider: provider(),
     license: license(),
