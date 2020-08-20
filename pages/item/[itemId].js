@@ -21,14 +21,14 @@ import {
 
 import css from "components/ItemComponents/itemComponent.module.scss";
 
-const ItemDetail = () => {
+const ItemDetail = ({url, item}) => {
+  console.log(JSON.stringify(item));
   return (
     <MainLayout
       pageTitle={item.title}
       pageImage={item.thumbnailUrl}
     >
-      <BreadcrumbsModule /* searchItemCount={searchItemCount} */
-        /* paginationInfo={paginationInfo} */
+      <BreadcrumbsModule
         breadcrumbs={[
           {
             title: "All items",
@@ -40,25 +40,26 @@ const ItemDetail = () => {
         ]}
         route={url}
       />
+
       <div
-        id="main"
-        role="main"
-        className={`container ${css.contentWrapper}`}
-      >
+         id="main"
+         role="main"
+         className={`container ${css.contentWrapper}`}
+       >
 
-        <Content item={item} url={url} />
+         <Content item={item} url={url} />
 
-        <div className={css.faveAndCiteButtons}>
-          <CiteButton
-            creator={item.creator}
-            displayDate={item.date ? item.date.displayDate : item.date}
-            spatialName={item.spatial ? item.spatial.name : item.spatial}
-            sourceUrl={item.sourceUrl}
-            className={css.citeButton}
-            toCiteText="item"
-            title={item.title}
-          />
-          <CheckableLists itemId={item.id} />
+         <div className={css.faveAndCiteButtons}>
+           <CiteButton
+             creator={item.creator}
+             displayDate={item.date ? item.date.displayDate : item.date}
+             spatialName={item.spatial ? item.spatial.name : item.spatial}
+             sourceUrl={item.sourceUrl}
+             className={css.citeButton}
+             toCiteText="item"
+             title={item.title}
+           />
+           {/*<CheckableLists itemId={item.id} />*/}
         </div>
       </div>
 
@@ -76,8 +77,6 @@ export async function getServerSideProps(context) {
     const res = await fetch(`${currentUrl}${API_ENDPOINT}/${itemId}`);  //todo harmonize with search page
     const json = await res.json();
 
-    console.log(JSON.stringify(json));
-
     const doc = json.docs[0];
     const thumbnailUrl = getItemThumbnail(doc);
     const date = doc.sourceResource.date &&
@@ -92,31 +91,29 @@ export async function getServerSideProps(context) {
       : doc.sourceResource.language;
     const strippedDoc = Object.assign({}, doc, { originalRecord: "" });
     delete strippedDoc.originalRecord;
-    return {
+    return { props : {
       currentFullUrl,
       item: Object.assign({}, doc.sourceResource, {
         id: doc.id,
         thumbnailUrl,
         contributor: doc.dataProvider,
-        intermediateProvider: doc.intermediateProvider,
+        intermediateProvider: doc.intermediateProvider ? doc.intermediateProvider : "",
         date: date,
         language: language,
         partner: doc.provider.name,
         sourceUrl: doc.isShownAt,
         useDefaultImage: !doc.object,
-        edmRights: doc.rights,
+        edmRights: doc.rights ? doc.rights : "",
         doc: strippedDoc,
         originalRecord: doc.originalRecord
-      }),
-      randomItemId,
-      isQA
-    };
+      })
+    } };
   } catch (error) {
     console.log(error);
     if (res) {
       res.statusCode = 404;
     }
-    return { error: { statusCode: 404 } };
+    return { props: {error: { statusCode: 404 } } };
   }
 };
 export default ItemDetail;
