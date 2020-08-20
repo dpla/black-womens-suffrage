@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-import Chevron from "/public/static/images/dpla-icons/chevron-thick.svg";
+import Chevron from "static/dpla-icons/chevron-thick.svg";
 
 import { addCommasToNumber } from "lib";
 
