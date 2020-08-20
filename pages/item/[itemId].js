@@ -67,15 +67,13 @@ const ItemDetail = () => {
 };
 
 export async function getServerSideProps(context) {
-  const itemId = context.params.item_id;
-  console.log("ITEM ID: " + itemId);
-  const query = context.query;
+  const itemId = context.params.itemId;
   const req = context.req;
   const res = context.res;
   const currentFullUrl = getCurrentFullUrl(req);
   const currentUrl = getCurrentUrl(req);
   try {
-    const res = await fetch(`${currentUrl}${API_ENDPOINT}/${query.itemId}`);  //todo harmonize with search page
+    const res = await fetch(`${currentUrl}${API_ENDPOINT}/${itemId}`);  //todo harmonize with search page
     const json = await res.json();
 
     console.log(JSON.stringify(json));
