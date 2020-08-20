@@ -4,13 +4,11 @@ import Helmet from "react-helmet";
 import Router from "next/router";
 
 import DPLAHead from "components/DPLAHead";
-import SkipToContent from "shared/SkipToContent";
+import SkipToContent from "components/shared/SkipToContent";
 import PageHeader from "../PageHeader";
 
 import * as gtag from "lib/gtag";
 import { getFullPath, getCurrentFullUrl } from "lib";
-
-import { SITE_ENV } from "constants/env";
 
 class MinimalLayout extends React.Component {
   // Google Analytics tracking for MinimalLayout-using pages (404/500)

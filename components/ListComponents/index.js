@@ -8,7 +8,6 @@ import { addCommasToNumber } from "lib";
 
 import { MAX_LIST_ITEMS } from "constants/site";
 
-import utils from "stylesheets/utils.scss";
 import css from "./ListComponents.module.scss";
 
 export const List = ({ uuid, name, itemCount, createdAt }) =>
@@ -138,7 +137,7 @@ export const ListLoading = () =>
   </div>;
 
 export const ListsContent = ({ initialized, lists, onCreateList }) =>
-  <div className={`${utils.container}`}>
+  <div className={`container`}>
     <div className={`row ${css.wrapper}`}>
       {!initialized && <ListLoading />}
       {initialized && lists.length > 0 && <ListNote />}
