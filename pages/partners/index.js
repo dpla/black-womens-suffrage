@@ -1,6 +1,6 @@
 import React from "react"
-import MainLayout from "../../components/MainLayout"
-import PartnersPage from "../../components/PartnersPage"
+import MainLayout from "components/MainLayout"
+import PartnersPage from "components/PartnersPage"
 
 const Partners = () => {
   return (

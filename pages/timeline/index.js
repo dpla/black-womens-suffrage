@@ -1,6 +1,6 @@
 import React from "react"
-import MainLayout from "../../components/MainLayout"
-import TimelinePage from "../../components/TimelinePage"
+import MainLayout from "components/MainLayout"
+import TimelinePage from "components/TimelinePage"
 
 const Timeline = () => {
   return (
