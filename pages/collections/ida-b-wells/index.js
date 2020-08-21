@@ -43,5 +43,4 @@ export async function getStaticProps() {
   }
 }
 
-
 export default IdaBWells;
