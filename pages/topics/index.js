@@ -1,6 +1,6 @@
 import React from "react"
-import MainLayout from "../../components/MainLayout"
-import TopicsPage from "../../components/TopicsPage"
+import MainLayout from "components/MainLayout"
+import TopicsPage from "components/TopicsPage"
 
 const Topics = () => {
   return (

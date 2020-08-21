@@ -2,10 +2,7 @@ import React from "react";
 import Link from "next/link";
 import { withRouter } from "next/router";
 
-import DPLALogoWide from "../../../../static/assets/dpla-logo-white.svg";
-
-import { SITE_ENV, LOCAL_ID } from "constants/env";
-import { LOCALS } from "constants/local";
+import dplaLogoWide from "/public/static/assets/dpla-icons/dpla-logo-white.svg";
 
 import css from "./PageHeader.module.scss";
 
@@ -26,7 +23,7 @@ class PageHeader extends React.Component {
           {(SITE_ENV === "user" || SITE_ENV === "pro") &&
             <Link prefetch as="/" href={SITE_ENV === "user" ? "/" : "/pro"}>
               <a className={css.logo} title="Home Page">
-                <DPLALogoWide className={css.logoImg} />
+                <dplaLogoWide className={css.logoImg} />
               </a>
             </Link>}
           {SITE_ENV === "local" &&
