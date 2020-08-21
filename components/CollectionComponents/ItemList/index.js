@@ -1,8 +1,8 @@
 import React from "react"
 import Link from "next/link"
-import scss from "components/IdaBWellsPage/IdaBWellsPage.module.scss"
+import scss from "components/CollectionComponents/ItemList/ItemList.module.scss"
 
-const IdaBWellsPage = ({ items }) => {
+const ItemList = ({ items }) => {
 
   return (
     <section>
@@ -20,4 +20,4 @@ const IdaBWellsPage = ({ items }) => {
   )
 }
 
-export default IdaBWellsPage;
+export default ItemList;

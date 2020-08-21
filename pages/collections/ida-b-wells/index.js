@@ -1,6 +1,6 @@
 import React from "react"
 import MainLayout from "../../../components/MainLayout"
-import IdaBWellsPage from "../../../components/IdaBWellsPage"
+import ItemList from "../../../components/CollectionComponents/ItemList"
 import fs from 'fs'
 import path from 'path'
 
@@ -8,7 +8,7 @@ function IdaBWells({ items }) {
 
   return (
       <MainLayout className="main" role="main">
-        <IdaBWellsPage items={ items } />
+        <ItemList items={ items } />
       </MainLayout>
   )
 };
