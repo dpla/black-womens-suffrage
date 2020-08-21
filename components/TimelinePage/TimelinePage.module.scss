@@ -1,0 +1,44 @@
+@import "stylesheets/variables";
+
+.timeline {
+  .timeline__tile {
+    display: flex;
+    flex-direction: row;
+    margin: 1em 0;
+
+    .tile__year {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      color: $bwsPurple;
+      font-family: $libre;
+      font-size: 26px;
+      font-weight: 900;
+      letter-spacing: 0.65px;
+      line-height: 47px;
+
+      p {
+        margin-bottom: 1em;
+      }
+    }
+
+    .tile__line {
+      width: 2px;
+      background-color: $medPink;
+      height: 100%;
+    }
+
+    .tile__p {
+      p {
+        margin: 0 0 .5em 1em;
+        color: #282830;
+        font-family: $inter;
+        font-size: 1em;
+        font-weight: 500;
+        letter-spacing: 0.35px;
+        line-height: 28px;
+      }
+      
+    }
+  }
+}
