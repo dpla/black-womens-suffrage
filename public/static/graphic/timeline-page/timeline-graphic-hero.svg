@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="491px" height="328px" viewBox="0 0 491 328" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>graphic/timeline/timeline-graphic-hero</title>
+    <g id="DPLA" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="3.0-Timeline---1820-1859" transform="translate(-950.000000, -75.000000)">
+            <g id="hero" transform="translate(0.000000, 75.000000)">
+                <g id="graphic/timeline/timeline-graphic-hero" transform="translate(950.000000, 0.000000)">
+                    <path d="M327.333333,81.75 C327.333333,126.899357 290.695381,163.5 245.5,163.5 C200.304619,163.5 163.666667,126.899357 163.666667,81.75 C163.666667,36.6006429 200.304619,0 245.5,0 C290.695381,0 327.333333,36.6006429 327.333333,81.75" id="Fill-1" fill="#FFD2D2"></path>
+                    <path d="M491,0 L491,163.5 C400.609238,163.5 327.333333,90.2987143 327.333333,0 L491,0 Z" id="Fill-21-Copy" fill="#4E4294" transform="translate(409.166667, 81.750000) scale(1, -1) rotate(180.000000) translate(-409.166667, -81.750000) "></path>
+                    <path d="M245.5,81.75 C335.890762,81.75 409.166667,154.951286 409.166667,245.25 L409.14474,247.953776 C407.699437,337.00542 334.986854,408.75 245.5,408.75 L245.5,408.75 L245.5,81.75 Z" id="Combined-Shape-Copy" fill="#8B2D9B" transform="translate(327.333333, 245.250000) scale(-1, 1) rotate(90.000000) translate(-327.333333, -245.250000) "></path>
+                    <path d="M0,0 C90.3907619,0 163.666667,73.2012857 163.666667,163.5 L163.64474,166.203776 C162.199437,255.25542 89.4868543,327 0,327 L0,327 L0,0 Z" id="Combined-Shape-Copy" fill="#EC5938" transform="translate(81.833333, 163.500000) scale(-1, 1) translate(-81.833333, -163.500000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
