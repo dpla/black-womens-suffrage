@@ -11,6 +11,9 @@ export const resourceTypes = {
   VIDEO: "moving image"
 };
 
+export const GOOGLE_CLASSROOMS_SHARE_URL =
+    "https://classroom.google.com/u/0/share";
+
 export const rightsURLs = {
   "rightsstatements.org/vocab/noc-us/{version}/": {
     url: "http://rightsstatements.org/vocab/NoC-US/{version}/",
