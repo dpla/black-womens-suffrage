@@ -1,6 +1,10 @@
 @import "stylesheets/variables";
 
 .timeline {
+  .arrow_closed {
+    background-image: url("/static/mobile/icon/expand-arrow-down-mobile.png");
+  }
+
   .timeline__tile {
     display: flex;
     flex-direction: row;

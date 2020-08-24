@@ -1,7 +1,7 @@
 import React from "react";
 import scss from "components/TimelinePage/TimelinePage.module.scss"
 
-const TimelineTile = ({year, text}) => {
+const TimelineTile = ({ year, text }) => {
   return (
     <>
       <div className={scss.timeline__tile}>
@@ -10,7 +10,12 @@ const TimelineTile = ({year, text}) => {
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
-          <p>{text}</p>
+          {Array.isArray(text) ?
+            text.map((t, index) => (
+              <p key={`timeline-tile-p-${index + 1}`}>{t}</p>
+            )) :
+            <p>{text}</p>
+          }
         </div>
       </div>
     </>
