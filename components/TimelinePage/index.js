@@ -1,11 +1,13 @@
 import React from "react";
 import scss from "components/TimelinePage/TimelinePage.module.scss"
 import PageBanner from "components/shared/PageBanner"
+import { years1820to1859 } from "constants/timeline"
+import TimelineTile from "components/TimelinePage/TimelineTile"
 
 const TimelinePage = () => {
   const title = "TIMELINE",
-  text = "Celebrating Black women and the vote.",
-  graphic = "static/graphic/timeline-page/timeline-graphic-hero.png";
+    text = "Celebrating Black women and the vote.",
+    graphic = "static/graphic/timeline-page/timeline-graphic-hero.png";
 
   return (
     <>
@@ -13,26 +15,22 @@ const TimelinePage = () => {
 
       <section className={`section__default ${scss.timeline}`}>
 
-        <div className={scss.timeline__tile}>
-          <div className={scss.tile__year}>
-            <p>1833</p>
-            <div className={scss.tile__line}></div>
-          </div>
-          <div className={scss.tile__p}>
-            <p>The Philadelphia Female Anti-Slavery Society is founded. Among its founding members are Charlotte Vandine Forten and several of her daughters. This was the first biracial organization of female abolitionists in the United States, and one of six abolitionist groups the Forten family helped to found and finance.</p>
-          </div>
-        </div>
+        {years1820to1859.map((tile, index) => {
+          return (
+            <TimelineTile key={index} year={tile.year} text={tile.text} />
+          )
+        })
+        }
 
-        <div className={scss.timeline__tile}>
-          <div className={scss.tile__year}>
-            <p>1833</p>
-            <div className={scss.tile__line}></div>
+        <section className={scss.pagination__container}>
+          <div className={scss.pagination__next}>
+            <div>
+              <h5>NEXT</h5>
+              <img src="/static/icon/button-arrow.svg" />
+            </div>
+            <h4>1860-1869</h4>
           </div>
-          <div className={scss.tile__p}>
-            <p>The Philadelphia Female Anti-Slavery Society is founded. Among its founding members are Charlotte Vandine Forten and several of her daughters. This was the first biracial organization of female abolitionists in the United States, and one of six abolitionist groups the Forten family helped to found and finance.</p>
-          </div>
-        </div>
-
+        </section>
       </section>
     </>
   )
