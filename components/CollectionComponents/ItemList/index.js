@@ -10,7 +10,11 @@ const ItemList = ({ items }) => {
         { items.map((item) => (
           <li>
             <img src={ item.thumb } />
-            <p>{ item.title }</p>
+            <p>
+              <Link href="/collections/[colItemId]" as={`/collections/${ item.key }`}>
+                <a>{ item.title }</a>
+              </Link>
+            </p>
             <p>{ item.creator }</p>
             <p>{ item.description }</p>
           </li>
