@@ -8,7 +8,11 @@ import path from 'path'
 function CollectionItem({ item }) {
 
   return (
-      <MainLayout className="main" role="main">
+      <MainLayout 
+        className="main" 
+        role="main"
+        pageTitle={ item.title }
+      >
         <ItemView item={ item } />
       </MainLayout>
   );

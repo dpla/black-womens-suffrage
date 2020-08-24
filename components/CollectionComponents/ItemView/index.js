@@ -19,6 +19,7 @@ const ItemView = ({ item }) => {
         <li>Spatial: { item.spatial.join(", ") }</li>
         <li>Publisher: { item.publisher.join(", ") }</li>
         <li>Language: { item.language.join(", ") }</li>
+        <li>PDF URL: { item.href }</li>
       </ul>
     </section>
   )

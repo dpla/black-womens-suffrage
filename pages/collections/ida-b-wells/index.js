@@ -7,7 +7,11 @@ import path from 'path'
 function IdaBWells({ items }) {
 
   return (
-      <MainLayout className="main" role="main">
+      <MainLayout
+        className="main"
+        role="main"
+        pageTitle="Ida B. Wells Barnett Papers"
+      >
         <ItemList items={ items } />
       </MainLayout>
   )
