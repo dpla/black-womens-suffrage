@@ -24,8 +24,6 @@ export async function getStaticPaths() {
     params: { colItemId: key },
   }))
 
-  // const paths = [ { params: { colItemId: "ibwells-0010-001-06" } } ]
-
   return { paths, fallback: false }
 }
 
@@ -36,16 +34,9 @@ export async function getStaticProps({ params }) {
   const itemsString = fs.readFileSync(filePath, 'utf8')
   const json = JSON.parse(itemsString)
 
-  const item = {
-    colItemId: params.colItemId,
-    title: json[params.colItemId]["title"].join(": "),
-    creator: json[params.colItemId]["creator"].join("; "),
-    description: json[params.colItemId]["description"].join(" ")
-  }
-
   return {
     props: {
-      item: item
+      item: json[params.colItemId]
     }
   }
 }
