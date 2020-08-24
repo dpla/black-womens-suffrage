@@ -33,7 +33,7 @@ export async function getStaticProps() {
     const thumb = "/static/thumbnails/ibw/" + key + ".jpg";
 
     return {
-      key: key,
+      colItemId: key,
       title: title,
       creator: creator,
       description: description,

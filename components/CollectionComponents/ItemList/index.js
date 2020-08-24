@@ -11,7 +11,7 @@ const ItemList = ({ items }) => {
           <li>
             <img src={ item.thumb } />
             <p>
-              <Link href="/collections/[colItemId]" as={`/collections/${ item.key }`}>
+              <Link href="/collections/[colItemId]" as={`/collections/${ item.colItemId }`}>
                 <a>{ item.title }</a>
               </Link>
             </p>
