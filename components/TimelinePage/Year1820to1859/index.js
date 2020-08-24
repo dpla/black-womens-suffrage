@@ -5,8 +5,9 @@ const Year1820to1859 = () => {
   return (
     <>
       <div className={scss.timeline__title}>
-        <div></div>
+        <div className={scss.timeline__title_background}></div>
         <h1>1820-1859</h1>
+        <div className={scss.timeline__title_line}></div>
       </div>
 
       <div className={scss.timeline__tile}>

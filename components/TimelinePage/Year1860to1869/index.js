@@ -5,6 +5,12 @@ import scss from "components/TimelinePage/TimelinePage.module.scss"
 const Year1860to1869 = () => {
   return (
     <>
+      <div className={scss.timeline__title}>
+        <div className={scss.timeline__title_background}></div>
+        <h1>1860-1869</h1>
+        <div className={scss.timeline__title_line}></div>
+      </div>
+
       <div className={scss.timeline__tile}>
         <div className={scss.tile__year}>
           <p>1865</p>
@@ -75,12 +81,12 @@ const Year1860to1869 = () => {
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
-          <p>AERA dissolves after infighting over support for the 15th Amendment, which would give African-American men the right to vote, but ignore women's suffrage. In the wake of AERA's demise, the movement splits: One group of white suffragists, including Elizabeth Cady Stanton and Susan B. Anthony, found the National Woman Suffrage Association (NWSA). During this period, Stanton in particular expresses racist views, doubting the ability of Black men to be responsible voters. The resulting NWSA strategy "pitted Black men against women in a racist way." (Terborg-Penn, 27). Meanwhile, Lucy Stone, Henry Blackwell and Julia Ward Howe form the American Woman Suffrage Association (AWSA). The two groups move forward with different strategies: NWSA pursues a federal women's suffrage amendment, while AWSA takes a state-by-state approach. Black women join and are active in both groups, although more Black women choose the AWSA due to its support for suffrage for Black men, an important issue for Black women. Frances E.W. Harper, Charlotte Forten, 
+          <p>AERA dissolves after infighting over support for the 15th Amendment, which would give African-American men the right to vote, but ignore women's suffrage. In the wake of AERA's demise, the movement splits: One group of white suffragists, including Elizabeth Cady Stanton and Susan B. Anthony, found the National Woman Suffrage Association (NWSA). During this period, Stanton in particular expresses racist views, doubting the ability of Black men to be responsible voters. The resulting NWSA strategy "pitted Black men against women in a racist way." (Terborg-Penn, 27). Meanwhile, Lucy Stone, Henry Blackwell and Julia Ward Howe form the American Woman Suffrage Association (AWSA). The two groups move forward with different strategies: NWSA pursues a federal women's suffrage amendment, while AWSA takes a state-by-state approach. Black women join and are active in both groups, although more Black women choose the AWSA due to its support for suffrage for Black men, an important issue for Black women. Frances E.W. Harper, Charlotte Forten,
             <Link href="/search?q=Josephine+St+Pierre+Ruffin">
               <a>
-              Josephine St. Pierre Ruffin
+                Josephine St. Pierre Ruffin
               </a>
-            </Link>            
+            </Link>
             and Sojourner Truth are among those that join the AWSA, while Mary Ann Shadd Cary, Harriet Purvis and Hattie Purvis are among those that join the NWSA.</p>
           <p>Wyoming becomes the first American territory to grant women suffrage.</p>
           <p>At the 1869 AERA meeting in New York City, Frances E.W. Harper weighs in on the Black suffrage vs. women's suffrage debate; she supports suffrage for Black men, saying "When it was a question of race, I let the lesser question of sex go. But the white women all go for sex, letting race occupy a minor positio (Terborg-Penn, 32).\" (Harper, however, was not content with Black men's suffrage; she continued to fight for women's suffrage as well.) As white women at the meeting spoke out against suffrage for Black men, including Elizabeth Cady Stanton's remarks against the idea of "ignorant Negroes and foreigners to make laws for her to obey," Harper responded: "If the nation could handle only one question, I would not have Black women put a single straw in the way, if only the men of the race could obtain what they wanted." White feminists Lucy Stone and Abby Kelly Foster joined her in this position. (Terborg-Penn, 32)</p>
