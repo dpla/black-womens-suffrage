@@ -18,11 +18,15 @@ function CollectionItem({ item }) {
   );
 }
 
-export async function getStaticPaths() {
+function getItems() {
   const ibwDirectory = path.join(process.cwd(), 'constants')
   const filePath = path.join(ibwDirectory, 'ida-b-wells.js')
   const itemsString = fs.readFileSync(filePath, 'utf8')
-  const json = JSON.parse(itemsString)
+  return JSON.parse(itemsString)
+}
+
+export async function getStaticPaths() {
+  const json = getItems()
 
   const paths = Object.keys(json).map((key) => ({
     params: { colItemId: key },
@@ -32,11 +36,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-
-  const ibwDirectory = path.join(process.cwd(), 'constants')
-  const filePath = path.join(ibwDirectory, 'ida-b-wells.js')
-  const itemsString = fs.readFileSync(filePath, 'utf8')
-  const json = JSON.parse(itemsString)
+  const json = getItems()
 
   return {
     props: {
