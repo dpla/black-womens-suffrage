@@ -7,9 +7,10 @@ const ItemView = ({ item }) => {
   return (
     <section>
       <ul>
-        <li>
-          { item.colItemId }
-        </li>
+        <li>{ item.colItemId }</li>
+        <li>{ item.title }</li>
+        <li>{ item.creator }</li>
+        <li>{ item.description }</li>
       </ul>
     </section>
   )

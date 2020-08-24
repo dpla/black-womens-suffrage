@@ -15,34 +15,33 @@ function CollectionItem({ item }) {
 }
 
 export async function getStaticPaths() {
-  // const ibwDirectory = path.join(process.cwd(), 'constants')
-  // const filePath = path.join(ibwDirectory, 'ida-b-wells.js')
-  // const itemsString = fs.readFileSync(filePath, 'utf8')
-  // const json = JSON.parse(itemsString)
+  const ibwDirectory = path.join(process.cwd(), 'constants')
+  const filePath = path.join(ibwDirectory, 'ida-b-wells.js')
+  const itemsString = fs.readFileSync(filePath, 'utf8')
+  const json = JSON.parse(itemsString)
 
-  // const paths = Object.keys(json).map((key) => ({
-  //   params: { colItemId: key },
-  // }))
+  const paths = Object.keys(json).map((key) => ({
+    params: { colItemId: key },
+  }))
 
-  const paths = [ { params: { colItemId: "ibwells-0010-001-06" } } ]
+  // const paths = [ { params: { colItemId: "ibwells-0010-001-06" } } ]
 
   return { paths, fallback: false }
 }
 
 export async function getStaticProps({ params }) {
 
-  // const ibwDirectory = path.join(process.cwd(), 'constants')
-  // const filePath = path.join(ibwDirectory, 'ida-b-wells.js')
-  // const itemsString = fs.readFileSync(filePath, 'utf8')
-  // const json = JSON.parse(itemsString)
+  const ibwDirectory = path.join(process.cwd(), 'constants')
+  const filePath = path.join(ibwDirectory, 'ida-b-wells.js')
+  const itemsString = fs.readFileSync(filePath, 'utf8')
+  const json = JSON.parse(itemsString)
 
-  // const item = {
-  //   title: json[colItemId]["title"].join(": "),
-  //   creator: json[colItemId]["creator"].join("; "),
-  //   description: json[colItemId]["description"].join(" ")
-  // }
-
-  const item = { colItemId: params.colItemId };
+  const item = {
+    colItemId: params.colItemId,
+    title: json[params.colItemId]["title"].join(": "),
+    creator: json[params.colItemId]["creator"].join("; "),
+    description: json[params.colItemId]["description"].join(" ")
+  }
 
   return {
     props: {
