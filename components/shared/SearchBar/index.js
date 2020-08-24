@@ -17,7 +17,7 @@ class SearchBar extends React.Component {
                     placeholder="Search the collection"
                     aria-label="Search the collection"
                     autoComplete="off"
-                    defaultValue={router.}
+                    defaultValue={router && router.query && router.query.q ? router.query.q : ""}
                 />
                 <button type="submit" className={css.searchButton}>
                     Search
