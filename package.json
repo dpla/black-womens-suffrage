@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "clean": "rm -rf .next ./build ./coverage ./node_modules"
   },
   "dependencies": {
     "babel-plugin-inline-react-svg": "^1.1.1",
