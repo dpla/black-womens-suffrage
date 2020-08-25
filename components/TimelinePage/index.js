@@ -49,9 +49,21 @@ class TimelinePage extends React.Component {
     }
   }
 
-  goToPrev = () => {
+  // goToPrev = () => {
+  //   this.setState({
+  //     selected: this.state.prevYear
+  //   })
 
-  }
+  //   this.setTimelineNavYears(this.state.selected)
+  // }
+
+  // goToNext = () => {
+  //   this.setState({
+  //     selected: this.state.nextYear
+  //   })
+
+  //   this.setTimelineNavYears(this.state.selected)
+  // }
 
   render() {
     const title = "TIMELINE",
@@ -72,7 +84,7 @@ class TimelinePage extends React.Component {
 
           <section className={scss.pagination__container}>
             {this.state.prevYear &&
-              <div className={scss.pagination__prev} onClick={this.state.goToPrev}>
+              <div className={scss.pagination__prev} onClick={this.goToPrev}>
                 <div>
                   <h5>PREVIOUS</h5>
                   <img src="/static/icon/button-arrow.svg" />
@@ -82,7 +94,7 @@ class TimelinePage extends React.Component {
             }
 
             {this.state.nextYear &&
-              <div className={scss.pagination__next}>
+              <div className={scss.pagination__next} onClick={this.goToNext}>
                 <div>
                   <h5>NEXT</h5>
                   <img src="/static/icon/button-arrow.svg" />
