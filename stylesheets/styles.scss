@@ -88,6 +88,16 @@ HomeHero {
  }
 }
 
+.section__default {
+  height: 32rem;
+  margin: 3rem;
+ 
+  @media(max-width: 600px) {
+    margin: 1rem;
+    height: auto;
+  }
+}
+
 .display__flex {
   display: flex;
   justify-content: space-between;
