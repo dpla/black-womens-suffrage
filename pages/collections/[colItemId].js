@@ -1,7 +1,7 @@
 import React from "react"
 
-import MainLayout from "../../components/MainLayout"
-import ItemView from "../../components/CollectionComponents/ItemView"
+import MainLayout from "components/MainLayout"
+import ItemView from "components/CollectionComponents/ItemView"
 import fs from 'fs'
 import path from 'path'
 
