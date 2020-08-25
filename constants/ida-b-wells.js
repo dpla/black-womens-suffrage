@@ -1,4 +1,4 @@
-export const idaBWells = {
+{
   "ibwells-0010-001-06" : {
     "title" : [ "Ida B. Wells-Barnett her children, Charles Aked; Ida B. Wells, Jr.; Alfreda Marguerita; and, Herman Kohlsaat.." ],
     "creator" : [ "unknown" ],

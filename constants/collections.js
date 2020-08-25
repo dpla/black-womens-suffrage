@@ -3,7 +3,7 @@ export const collections = [
     "image": "/static/image/collections-page/collections-image-ida.png",
     "name": "Ida B. Wells Barnett Papers",
     "description": "Ida B. Wells, (1862-1931) teacher, journalist and anti-lynching activist. Contains correspondence, manuscript of Crusade for Justice: the Autobiography of Ida B. Wells, diaries, copies of articles and speeches by Wells, articles, and accounts about Wells, newspaper clippings, and photographs.",
-    "href": "ida-b-wells-barnett-papers"
+    "href": "ida-b-wells"
   },
   {
     "image": "/static/image/collections-page/collections-image-mary.png",
