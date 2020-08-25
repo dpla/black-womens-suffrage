@@ -11,7 +11,7 @@ function Collection({ collection, items }) {
       <MainLayout
         className="main"
         role="main"
-        pageTitle="Ida B. Wells Barnett Papers"
+        pageTitle={ collection.name }
       >
         <ItemList collection={ collection } items={ items } />
       </MainLayout>
