@@ -5,6 +5,7 @@ import { withRouter } from "next/router";
 import dplaLogoWide from "/public/static/assets/dpla-icons/dpla-logo-white.svg";
 
 import css from "./PageHeader.module.scss";
+import SearchBar from "components/shared/SearchBar";
 
 class PageHeader extends React.Component {
   render() {
@@ -39,38 +40,8 @@ class PageHeader extends React.Component {
                 <span className={css.localText}>{LOCALS[LOCAL_ID].name}</span>
               </a>
             </Link>}
-          {!hideSearchBar &&
-            SITE_ENV !== "pro" &&
-            <form action="/search" className={css.searchBar}>
-              <input
-                key={searchQuery}
-                className={css.searchInput}
-                name="q"
-                type="search"
-                placeholder="Search the collection"
-                aria-label="Search the collection"
-                autoComplete="off"
-                defaultValue={searchQuery}
-              />
-              {router &&
-                router.pathname === "/search" &&
-                router.query &&
-                Object.keys(router.query).map((key, index) => {
-                  if (key !== "q" && key !== "page") {
-                    return (
-                      <input
-                        type="hidden"
-                        key={`k_${index}`}
-                        name={key}
-                        value={router.query[key]}
-                      />
-                    );
-                  }
-                })}
-              <button type="submit" className={css.searchButton}>
-                Search
-              </button>
-            </form>}
+          {!hideSearchBar && <SearchBar />
+          }
         </div>
       </div>
     );
