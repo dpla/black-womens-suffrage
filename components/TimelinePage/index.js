@@ -14,7 +14,7 @@ class TimelinePage extends React.Component {
       prevYear: null,
       nextYear: "1860-1869",
       dropdownOptions: ["1820-1859", "1860-1869", "1870-1889", "1890-1899", "1900-1909", "1910-1919", "1920-1929", "1930-1959", "1960-present"],
-      activeLink: 1
+      activeLink: 0
     }
   }
 
