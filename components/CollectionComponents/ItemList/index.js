@@ -6,6 +6,11 @@ const ItemList = ({ collection, items }) => {
 
   return (
     <section>
+      <h2>Collection</h2>
+      <p>Name: { collection.name }</p>
+      <p>Description: { collection.description }</p>
+      <img src={collection.image} />
+      <h2>Items</h2>
       <ul>
         { items.map((item) => (
           <li>
