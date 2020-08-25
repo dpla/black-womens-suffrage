@@ -23,6 +23,36 @@
   }
 }
 
+
+.item__ul {
+  display: flex;
+  margin: 1em;
+  flex-wrap: wrap;
+
+  .item__li {
+    width: 50%;
+
+    .item__title {
+      color: #282830;
+      font-family: $inter;
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 0.17px;
+      line-height: 28px;
+    }
+    
+    .item__date {
+      opacity: 0.55;
+      color: #282830;
+      font-family: $inter;
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0.15px;
+      line-height: 28px;
+    }
+  }
+}
+
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .item_list__header {

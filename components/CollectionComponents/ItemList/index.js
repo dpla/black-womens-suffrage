@@ -11,13 +11,12 @@ const ItemList = ({ items }) => {
         <p>Explore the Collection</p>
       </div>
 
-      <ul>
+      <ul className={scss.item__ul}>
         { items.map((item) => (
-          <li>
+          <li className={scss.item__li}>
             <img src={ item.thumb } />
-            <p>{ item.title }</p>
-            <p>{ item.creator }</p>
-            <p>{ item.description }</p>
+            <p className={scss.item__title}>{ item.title }</p>
+            <p className={scss.item__date}>{ item.date }</p>
           </li>
         )) }
       </ul>
