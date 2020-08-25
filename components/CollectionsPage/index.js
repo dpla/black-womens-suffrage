@@ -30,7 +30,7 @@ const CollectionsPage = () => {
 
                 {collection.publish ?
                   <button className={scss.collections_button__active}>
-                    <Link href={`/collections/${ key }`}>
+                    <Link href="/collections/[colId]" as={`/collections/${ key }`}>
                       <a>VIEW COLLECTION</a>
                     </Link>
                     <img src="static/icon/collections-page/button-arrow.svg" />

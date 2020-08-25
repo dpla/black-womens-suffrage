@@ -3,8 +3,9 @@ import MainLayout from "components/MainLayout"
 import ItemList from "components/CollectionComponents/ItemList"
 import fs from 'fs'
 import path from 'path'
+import { collections } from "constants/collections"
 
-function IdaBWells({ items }) {
+function Collection({ collection, items }) {
 
   return (
       <MainLayout
@@ -12,12 +13,21 @@ function IdaBWells({ items }) {
         role="main"
         pageTitle="Ida B. Wells Barnett Papers"
       >
-        <ItemList items={ items } />
+        <ItemList collection={ collection } items={ items } />
       </MainLayout>
   )
 };
 
-export async function getStaticProps() {
+export async function getStaticPaths() {
+
+  const paths = Object.keys(collections).map((key) => ({
+    params: { colId: key },
+  }))
+
+  return { paths, fallback: false }
+}
+
+export async function getStaticProps({ params }) {
 
   const ibwDirectory = path.join(process.cwd(), 'constants');
   const filePath = path.join(ibwDirectory, 'ida-b-wells.js');
@@ -41,11 +51,15 @@ export async function getStaticProps() {
     }
   });
 
+  var collection = collections[params.colId];
+  collection["colId"] = params.colId;
+
   return {
     props: {
-      items: items
+      items: items,
+      collection: collection
     }
   }
 }
 
-export default IdaBWells;
+export default Collection;
