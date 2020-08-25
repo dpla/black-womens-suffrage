@@ -2,13 +2,13 @@ import React from "react";
 import fetch from "isomorphic-fetch";
 
 import MainLayout from "components/MainLayout";
-import PSSFooter from "components/PrimarySourceSetsComponents/PSSFooter";
-import BreadcrumbsModule from "components/PrimarySourceSetsComponents/BreadcrumbsModule";
-import SourceSetInfo from "components/PrimarySourceSetsComponents/SingleSet/SourceSetInfo";
-import ResourcesTabs from "components/PrimarySourceSetsComponents/SingleSet/ResourcesTabs";
-import TeachersGuide from "components/PrimarySourceSetsComponents/SingleSet/TeachersGuide";
+import PSSFooter from "components/PrimarySourceSetsPage/PSSFooter";
+import BreadcrumbsModule from "components/PrimarySourceSetsPage/BreadcrumbsModule";
+import SourceSetInfo from "components/PrimarySourceSetsPage/SingleSet/SourceSetInfo";
+import ResourcesTabs from "components/PrimarySourceSetsPage/SingleSet/ResourcesTabs";
+import TeachersGuide from "components/PrimarySourceSetsPage/SingleSet/TeachersGuide";
 
-import { PSS_BASE_URL } from "constants/env";
+import { PSS_BASE_URL } from "constants/primarySourceSets";
 
 import { removeQueryParams, getCurrentFullUrl } from "lib";
 

@@ -3,17 +3,15 @@ import fetch from "isomorphic-fetch";
 import ReactMarkdown from "react-markdown";
 
 import MainLayout from "components/MainLayout";
-import PSSFooter from "components/PrimarySourceSetsComponents/PSSFooter";
-import BreadcrumbsModule from "components/PrimarySourceSetsComponents/BreadcrumbsModule";
-import SourceSetInfo from "components/PrimarySourceSetsComponents/SingleSet/SourceSetInfo";
-import ResourcesTabs from "components/PrimarySourceSetsComponents/SingleSet/ResourcesTabs";
+import PSSFooter from "components/PrimarySourceSetsPage/PSSFooter";
+import BreadcrumbsModule from "components/PrimarySourceSetsPage/BreadcrumbsModule";
+import SourceSetInfo from "components/PrimarySourceSetsPage/SingleSet/SourceSetInfo";
+import ResourcesTabs from "components/PrimarySourceSetsPage/SingleSet/ResourcesTabs";
 
-import { PSS_BASE_URL } from "constants/env";
+import { PSS_BASE_URL } from "constants/primarySourceSets";
 import { getCurrentFullUrl, removeQueryParams, markdownLinks } from "lib";
 
-import utils from "stylesheets/utils.scss";
-import contentCss from "stylesheets/content-pages.scss";
-import css from "components/PrimarySourceSetsComponents/SingleSet/TeachersGuide/TeachersGuide.scss";
+import css from "components/PrimarySourceSetsPage/SingleSet/TeachersGuide/TeachersGuide.scss";
 
 const SingleSet = ({ url, set, currentFullUrl }) =>
   <MainLayout
@@ -43,7 +41,7 @@ const SingleSet = ({ url, set, currentFullUrl }) =>
           aria-labelledby="tab-additionalresources"
         >
           <ReactMarkdown
-            className={`${contentCss.content} ${utils.container}`}
+            className={`.content .container`}
             source={set.hasPart.find(item => item.name === "Resources").text}
             renderers={{
               linkReference: reference => markdownLinks(reference),

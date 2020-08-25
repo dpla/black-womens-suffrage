@@ -2,12 +2,12 @@ import React from "react";
 import fetch from "isomorphic-fetch";
 
 import MainLayout from "components/MainLayout";
-import PSSFooter from "components/PrimarySourceSetsComponents/PSSFooter";
-import BreadcrumbsModule from "components/PrimarySourceSetsComponents/BreadcrumbsModule";
-import ContentAndMetadata from "components/PrimarySourceSetsComponents/Source/components/ContentAndMetadata";
-import SourceCarousel from "components/PrimarySourceSetsComponents/Source/components/SourceCarousel";
+import PSSFooter from "components/PrimarySourceSetsPage/PSSFooter";
+import BreadcrumbsModule from "components/PrimarySourceSetsPage/BreadcrumbsModule";
+import ContentAndMetadata from "components/PrimarySourceSetsPage/Source/components/ContentAndMetadata";
+import SourceCarousel from "components/PrimarySourceSetsPage/Source/components/SourceCarousel";
 
-import { PSS_BASE_URL } from "constants/env";
+import { PSS_BASE_URL } from "constants/primarySourceSets";
 
 import { removeQueryParams } from "lib";
 

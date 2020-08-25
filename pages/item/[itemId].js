@@ -1,8 +1,6 @@
 import React from "react";
-import { useRouter } from 'next/router';
 
 import fetch from "isomorphic-fetch";
-
 
 import MainLayout from "components/MainLayout";
 import CiteButton from "components/shared/CiteButton";

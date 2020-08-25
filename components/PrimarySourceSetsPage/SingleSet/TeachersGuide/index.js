@@ -4,12 +4,10 @@ import ReactMarkdown from "react-markdown";
 
 import { removeQueryParams, markdownLinks } from "lib";
 
-
-import utils from "stylesheets/utils.scss";
 import contentCss from "stylesheets/content-pages.scss";
-import css from "./TeachersGuide.scss";
+import css from "./TeachersGuide.module.scss";
 
-const printer = "/static/images/printer.svg";
+const printer = "/static/dpla-icons/printer.svg";
 
 class TeachersGuide extends React.Component {
   state = { routePath: null };
@@ -32,7 +30,7 @@ class TeachersGuide extends React.Component {
         role="tabpanel"
         aria-labelledby="tab-teachingguide"
       >
-        <div className={`${css.teachingGuide} ${utils.container}`}>
+        <div className={`${css.teachingGuide} .container`}>
           <div className="row">
             <div className="col-xs-12 col-md-8">
               <div className={css.content}>
@@ -69,7 +67,6 @@ class TeachersGuide extends React.Component {
                     source
                     set,{" "}
                     <Link
-                      prefetch
                       href={`/primary-source-sets/set?set=${route.query.set}`}
                       as={{
                         pathname: `/primary-source-sets/${route.query.set}`,

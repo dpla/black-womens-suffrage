@@ -1,16 +1,15 @@
 import React from "react";
 import Link from "next/link";
 
-import utils from "stylesheets/utils.scss";
-import css from "./ResourcesTabs.scss";
+import css from "./ResourcesTabs.module.scss";
 
 class ResourcesTabs extends React.Component {
   render() {
-    const { currentTab, route } = this.props;
+    const { currentTab, slug } = this.props;
     return (
       <div id="tabs" className={`${css.wrapper}`}>
         <div className={css.tabsWrapper}>
-          <ul role="tablist" className={`${css.tabs} ${utils.container}`}>
+          <ul role="tablist" className={`${css.tabs} .container`}>
             <li
               id="tab-sourceset"
               role="tab"
@@ -21,9 +20,8 @@ class ResourcesTabs extends React.Component {
               ].join(" ")}
             >
               <Link
-                prefetch
-                href={`/primary-source-sets/set?set=${route.query.set}#tabs`}
-                as={`/primary-source-sets/${route.query.set}#tabs`}
+                href={`/primary-source-sets/set?set=${slug}#tabs`}
+                as={`/primary-source-sets/${slug}#tabs`}
               >
                 <a>
                   Source Set
@@ -40,11 +38,8 @@ class ResourcesTabs extends React.Component {
               ].join(" ")}
             >
               <Link
-                prefetch
-                href={`/primary-source-sets/set/additional-resources?set=${route
-                  .query.set}#tabs`}
-                as={`/primary-source-sets/${route.query
-                  .set}/additional-resources#tabs`}
+                href={`/primary-source-sets/set/additional-resources?set=${slug}#tabs`}
+                as={`/primary-source-sets/${slug}/additional-resources#tabs`}
               >
                 <a>
                   Additional Resources
@@ -61,11 +56,8 @@ class ResourcesTabs extends React.Component {
               ].join(" ")}
             >
               <Link
-                prefetch
-                href={`/primary-source-sets/set/teaching-guide?set=${route.query
-                  .set}#tabs`}
-                as={`/primary-source-sets/${route.query
-                  .set}/teaching-guide#tabs`}
+                href={`/primary-source-sets/set/teaching-guide?set=${slug}#tabs`}
+                as={`/primary-source-sets/${slug}/teaching-guide#tabs`}
               >
                 <a>
                   Teaching Guide

@@ -1,21 +1,21 @@
 import React from "react";
+import { withRouter } from "next/router";
 import fetch from "isomorphic-fetch";
 
 import MainLayout from "components/MainLayout";
-import PSSFooter from "components/PrimarySourceSetsComponents/PSSFooter";
-import BreadcrumbsModule from "components/PrimarySourceSetsComponents/BreadcrumbsModule";
-import SourceSetInfo from "components/PrimarySourceSetsComponents/SingleSet/SourceSetInfo";
-import RelatedSets from "components/PrimarySourceSetsComponents/SingleSet/RelatedSets";
-import ResourcesTabs from "components/PrimarySourceSetsComponents/SingleSet/ResourcesTabs";
-import SourceSetSources from "components/PrimarySourceSetsComponents/SingleSet/SourceSetSources";
+import PSSFooter from "components/PrimarySourceSetsPage/PSSFooter";
+import BreadcrumbsModule from "components/PrimarySourceSetsPage/BreadcrumbsModule";
+import SourceSetInfo from "components/PrimarySourceSetsPage/SingleSet/SourceSetInfo";
+import ResourcesTabs from "components/PrimarySourceSetsPage/SingleSet/ResourcesTabs";
+import SourceSetSources from "components/PrimarySourceSetsPage/SingleSet/SourceSetSources";
 
 import { removeQueryParams, getCurrentFullUrl } from "lib";
-import { PSS_BASE_URL } from "constants/env";
+import { PSS_BASE_URL } from "constants/primarySourceSets";
 
 const videoIcon = "/static/placeholderImages/Video.svg";
 const audioIcon = "/static/placeholderImages/Sound.svg";
 
-const SingleSet = ({ set, url, currentFullUrl }) =>
+const SingleSet = ({ slug, set, url, currentFullUrl }) =>
   <MainLayout
     route={url}
     pageTitle={set.name.replace(/\*/g, "")}
@@ -27,7 +27,7 @@ const SingleSet = ({ set, url, currentFullUrl }) =>
           title: "Primary Source Sets",
           url: {
             pathname: "/primary-source-sets",
-            query: removeQueryParams(url.query, ["set"])
+            query: removeQueryParams(url, ["set"])
           }
         },
         { title: set.name, search: "" }
@@ -39,7 +39,7 @@ const SingleSet = ({ set, url, currentFullUrl }) =>
       currentFullUrl={currentFullUrl}
       openDescription={false}
     />
-    <ResourcesTabs route={url} currentTab="sourceSet" set={set}>
+    <ResourcesTabs currentTab="sourceSet" slug={slug}>
       <SourceSetSources
         sources={set.hasPart.filter(
           item => item.disambiguatingDescription === "source"
@@ -47,13 +47,13 @@ const SingleSet = ({ set, url, currentFullUrl }) =>
         route={url}
       />
     </ResourcesTabs>
-    <RelatedSets sets={set.isRelatedTo} />
     <PSSFooter />
   </MainLayout>;
 
 SingleSet.getInitialProps = async ({ query, req }) => {
+  const slug = query.slug;
   const currentFullUrl = getCurrentFullUrl(req);
-  const res = await fetch(`${PSS_BASE_URL}/sets/${query.set}.json`);
+  const res = await fetch(`${PSS_BASE_URL}/sets/${slug}.json`);
   const json = await res.json();
   const parts = json.hasPart.map(part => {
     let thumbnailUrl = part.thumbnailUrl;
@@ -69,7 +69,7 @@ SingleSet.getInitialProps = async ({ query, req }) => {
     }
     return Object.assign({}, part, { thumbnailUrl, useDefaultImage });
   });
-  return { set: Object.assign({}, json, { hasPart: parts }), currentFullUrl };
+  return { slug, set: Object.assign({}, json, { hasPart: parts }), currentFullUrl };
 };
 
-export default SingleSet;
+export default withRouter(SingleSet);

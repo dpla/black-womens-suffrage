@@ -4,12 +4,12 @@ import ReactMarkdown from "react-markdown";
 import { withRouter } from "next/router";
 
 import MinimalLayout from "components/MainLayout/components/MinimalLayout";
-import PSSFooter from "components/PrimarySourceSetsComponents/PSSFooter";
-import TeachersGuide from "components/PrimarySourceSetsComponents/SingleSet/TeachersGuide";
+import PSSFooter from "components/PrimarySourceSetsPage/PSSFooter";
+import TeachersGuide from "components/PrimarySourceSetsPage/SingleSet/TeachersGuide";
 
-import { PSS_BASE_URL } from "constants/env";
+import { PSS_BASE_URL } from "constants/primarySourceSets";
 
-import { removeQueryParams, getCurrentFullUrl } from "lib";
+import { getCurrentFullUrl } from "lib";
 
 import utils from "stylesheets/utils.scss";
 
