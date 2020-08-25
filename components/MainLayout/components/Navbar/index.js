@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Link from 'next/link'
-import scss from "../Navbar/Navbar.module.scss"
+import scss from "./Navbar.module.scss"
+import SearchBar from "components/shared/SearchBar";
 
 class Navbar extends Component {
   render() {
@@ -43,6 +44,7 @@ class Navbar extends Component {
             <a href="https://dp.la" target="_blank">Visit DPLA</a>
 
             <img src={"/static/icon/search/search-bar.svg"} alt="search-bar" id={scss.searchbar}/>
+            <SearchBar/>
           </div>
         
       </nav>

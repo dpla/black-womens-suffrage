@@ -29,7 +29,7 @@ const MainContent = ({
             viewMode={route.query.list_view}
           />}
         {results.length === 0 &&
-          <div className={`${css.noResults} ${contentCss.content}`}>
+          <div className={``}>
             <p>
               Your search did not match any items.
             </p>
