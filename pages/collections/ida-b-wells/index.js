@@ -1,20 +1,19 @@
 import React from "react"
-import MainLayout from "../../../components/MainLayout"
-import ItemList from "../../../components/CollectionComponents/ItemList"
+import MainLayout from "components/MainLayout"
+import ItemList from "components/CollectionComponents/ItemList"
 import fs from 'fs'
 import path from 'path'
+import IdaBWellsCollection from "components/CollectionsPage/IdaBWells"
 
 function IdaBWells({ items }) {
-
   return (
       <MainLayout className="main" role="main">
-        <ItemList items={ items } />
+        <IdaBWellsCollection items={ items }/>
       </MainLayout>
   )
 };
 
 export async function getStaticProps() {
-
   const ibwDirectory = path.join(process.cwd(), 'constants');
   const filePath = path.join(ibwDirectory, 'ida-b-wells.js');
   const itemsString = fs.readFileSync(filePath, 'utf8');
