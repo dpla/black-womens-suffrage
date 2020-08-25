@@ -82,11 +82,11 @@ export async function getServerSideProps(context) {
       ? doc.sourceResource.date[0]
       : doc.sourceResource.date;
     const language = doc.sourceResource.language &&
-      Array.isArray(doc.sourceResource.language)
+        (Array.isArray(doc.sourceResource.language)
       ? doc.sourceResource.language.map(lang => {
           return lang.name;
         })
-      : doc.sourceResource.language;
+      : doc.sourceResource.language) || "";
     const strippedDoc = Object.assign({}, doc, { originalRecord: "" });
     delete strippedDoc.originalRecord;
     return { props : {
