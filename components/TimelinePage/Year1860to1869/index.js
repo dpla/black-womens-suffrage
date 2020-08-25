@@ -30,11 +30,11 @@ const Year1860to1869 = () => {
         <div className={scss.tile__p}>
           <p>
             <Link href="/search?q=Frances+Harper">
-              <a>
-                Frances E.W. Harper
+              <a className={scss.timeline__a}>
+                Frances E.W. Harper 
               </a>
             </Link>
-            calls for women's suffrage at the 11th National Woman's Rights Convention in May, saying, "justice is not fulfilled so long as woman is unequal before the law."</p>
+             calls for women's suffrage at the 11th National Woman's Rights Convention in May, saying, "justice is not fulfilled so long as woman is unequal before the law."</p>
           <p>Anti-Slavery Convention of American Women, an interracial meeting of women dedicated to ending slavery and racial discrimination, meets in New York City.</p>
           <p>The American Equal Rights Association (AERA) is founded. AERA advocates for and petitions Congress for universal suffrage. Sojourner Truth, Frances E.W. Harper, Margaretta Forten, Sarah Remond and Hattie Purvis among other Black women are active in the organization. Hattie Purvis serves on AERA's executive committee, serving at various times as the group's recording secretary and corresponding secretary."</p>
           <p>Both Black men and women participate in the founding of the interracial Philadelphia Suffrage Association. Harriet Purvis serves on the group's executive committee.</p>
@@ -83,7 +83,7 @@ const Year1860to1869 = () => {
         <div className={scss.tile__p}>
           <p>AERA dissolves after infighting over support for the 15th Amendment, which would give African-American men the right to vote, but ignore women's suffrage. In the wake of AERA's demise, the movement splits: One group of white suffragists, including Elizabeth Cady Stanton and Susan B. Anthony, found the National Woman Suffrage Association (NWSA). During this period, Stanton in particular expresses racist views, doubting the ability of Black men to be responsible voters. The resulting NWSA strategy "pitted Black men against women in a racist way." (Terborg-Penn, 27). Meanwhile, Lucy Stone, Henry Blackwell and Julia Ward Howe form the American Woman Suffrage Association (AWSA). The two groups move forward with different strategies: NWSA pursues a federal women's suffrage amendment, while AWSA takes a state-by-state approach. Black women join and are active in both groups, although more Black women choose the AWSA due to its support for suffrage for Black men, an important issue for Black women. Frances E.W. Harper, Charlotte Forten,
             <Link href="/search?q=Josephine+St+Pierre+Ruffin">
-              <a>
+              <a className={scss.timeline__a}>
                 Josephine St. Pierre Ruffin
               </a>
             </Link>
