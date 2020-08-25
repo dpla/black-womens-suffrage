@@ -26,7 +26,7 @@ const AboutPage = () => {
       <div className={scss.about__section_1_div}>
       <img src="/static/graphic/about-page/about-graphic-body-1.svg"/>
 
-      <div className="wrapper display__flex">
+      <div className="section__default display__flex">
           <div className={scss.about__section_1_left}>
             <p>Mary Church Terrell.</p>
             <p>Frances Ellen Watkins Harper.</p>

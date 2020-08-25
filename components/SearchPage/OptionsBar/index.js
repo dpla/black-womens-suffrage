@@ -13,8 +13,8 @@ import {
 
 import css from "./OptionsBar.module.scss";
 
-const gridViewIcon = "/static/assets/dpla-icons/grid-view-icon.svg";
-const listViewIcon = "/static/assets/dpla-icons/list-view-icon.svg";
+const gridViewIcon = "/static/dpla-icons/grid-view-icon.svg";
+const listViewIcon = "/static/dpla-icons/list-view-icon.svg";
 
 class OptionsBar extends React.Component {
   componentWillMount() {

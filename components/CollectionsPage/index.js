@@ -14,7 +14,7 @@ const CollectionsPage = () => {
     <>
       <PageBanner title={title} text={text} graphic={graphic} />
 
-      <section className={`wrapper display__flex ${scss.collections__section}`}>
+      <section className={`section__default display__flex ${scss.collections__section}`}>
         <SectionTitle title="Featured Collections" />
 
         <div className={scss.collections__tile_container}>

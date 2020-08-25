@@ -8,7 +8,7 @@ const KeyFiguresPagination = ({ prevFigure, nextFigure }) => {
         <div className={scss.pagination__prev}>
           <div>
             <h5>PREVIOUS</h5>
-            <img src="/static/assets/icon/button-arrow.svg"/>
+            <img src="/static/icon/button-arrow.svg"/>
           </div>
           <h4>{prevFigure}</h4>
         </div>
@@ -17,7 +17,7 @@ const KeyFiguresPagination = ({ prevFigure, nextFigure }) => {
         <div className={scss.pagination__next}>
           <div>
             <h5>NEXT</h5>
-            <img src="/static/assets/icon/button-arrow.svg"/>
+            <img src="/static/icon/button-arrow.svg"/>
           </div>
           <h4>{nextFigure}</h4>
         </div>

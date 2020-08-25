@@ -14,7 +14,7 @@ const defaultPageTitle = "Digital Public Library of America"
 
 class DPLAHead extends React.Component {
   render() {
-    const { defaultImageUrl } = "/static/assets/dpla-logo-square_250.png";
+    const { defaultImageUrl } = "/static/dpla-icons/dpla-logo-square_250.png";
     const {
       seoType,
       pageTitle,

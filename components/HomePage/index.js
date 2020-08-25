@@ -21,7 +21,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className={`wrapper ${scss.home__section_1}`}>
+      <section className={`section__default ${scss.home__section_1}`}>
         <StyledTextWithButtons
           title="BLACK WOMEN’S SUFFRAGE PORTAL"
           subtitle="The Black Women’s Suffrage Digital Collection is a collaborative project to provide digital access to materials documenting the roles and experiences of Black Women in the Women’s Suffrage Movement and, more broadly, women’s rights, voting rights,
@@ -35,7 +35,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className={`wrapper ${scss.home__section_2}`}>
+      <section className={`section__default ${scss.home__section_2}`}>
         <div className={scss.section_2__div_left}>
           <img src="/static/image/home-page/home-image-body-1.png" />
         </div>

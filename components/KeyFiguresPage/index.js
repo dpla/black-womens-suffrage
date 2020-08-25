@@ -29,7 +29,7 @@ class KeyFiguresPage extends React.Component {
   
         {/* <MobileDropdown items={keyFigures}/> */}
   
-        <section className={`${scss.key_figures} wrapper`}>
+        <section className={`${scss.key_figures} section__default`}>
           <div className={scss.key_figures__left}>
             <ul>
               {keyFigures.map((figure, index) => {
