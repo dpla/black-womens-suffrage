@@ -1,0 +1,35 @@
+@import "stylesheets/variables";
+
+.item_list__header {
+  display: flex;
+  justify-content: center;
+  margin: 1.5em 0;
+
+  .item_list__header_line {
+    height: 2px;
+    width: 25px;
+    background-color: $medPink;
+    margin: 1.2em .5em;
+  }
+
+  p {
+    color: #4E4294;
+    font-family: $libre;
+    font-size: 34px;
+    font-weight: 900;
+    letter-spacing: 0.85px;
+    line-height: 47px;
+    width: 60%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .item_list__header {
+    margin: 3em 0;
+  
+    p {
+      width: auto;
+    }
+  } 
+}

@@ -14,7 +14,7 @@ const IdaBWells = ({ items }) => {
   return (
     <section>
       <CollectionHeader image={image} years={years} name={name} styledText={styledText} description={description}/>
-      {/* <ItemList items={items} className={`section__default`}/> */}
+      <ItemList items={items}/>
     </section>
   )
 }

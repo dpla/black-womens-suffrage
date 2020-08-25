@@ -6,6 +6,11 @@ const ItemList = ({ items }) => {
 
   return (
     <section>
+      <div className={scss.item_list__header}>
+        <div className={scss.item_list__header_line}></div>
+        <p>Explore the Collection</p>
+      </div>
+
       <ul>
         { items.map((item) => (
           <li>
