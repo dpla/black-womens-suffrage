@@ -5,6 +5,29 @@
     background-image: url("/static/mobile/icon/expand-arrow-down-mobile.png");
   }
 
+  .timeline__left {
+    display: none;
+    margin: auto;
+  
+    ul {
+      list-style: none;
+    }
+  
+    .timeline__active_item {
+      color: #8B2D9B;
+    }
+  
+    .timeline__li {
+      opacity: 0.5;
+      color: #282830;
+      font-family: $inter;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.31px;
+      line-height: 24px;
+    }
+  }
+
   .timeline__tile {
     display: flex;
     flex-direction: row;
@@ -136,4 +159,43 @@
       }
     }
   }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and ($md-viewport) {
+
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .timeline {
+    display: flex;
+
+    .timeline__dropdown {
+      display: none;
+    }
+
+    .timeline__right {
+      width: 70%;
+      margin-left: auto;
+    }
+  
+    .timeline__left {
+      display: block;
+  
+      ul {
+        padding-left: 0;
+  
+        li {
+          padding: .5em;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+
+
+
 }
