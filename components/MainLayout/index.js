@@ -2,8 +2,6 @@ import React from "react"
 import Router from "next/router"
 import Navbar from "./components/Navbar"
 import Helmet from "react-helmet"
-import DPLAHead from "../DPLAHead"
-import Footer from "./components/Footer"
 
 class MainLayout extends React.Component {
   // Google Analytics tracking for MainLayout-using pages

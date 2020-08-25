@@ -5,7 +5,6 @@ import MainLayout from "components/MainLayout";
 import PSSFooter from "components/PrimarySourceSetsPage/PSSFooter";
 import BreadcrumbsModule from "components/PrimarySourceSetsPage/BreadcrumbsModule";
 import ContentAndMetadata from "components/PrimarySourceSetsPage/Source/components/ContentAndMetadata";
-import SourceCarousel from "components/PrimarySourceSetsPage/Source/components/SourceCarousel";
 
 import { PSS_BASE_URL } from "constants/primarySourceSets";
 
@@ -47,14 +46,6 @@ const Source = ({ url, source, set, currentSourceIdx }) =>
     <div id="main" role="main">
       <ContentAndMetadata source={source} />
     </div>
-    <SourceCarousel
-      sources={set.hasPart.filter(
-        item => item.disambiguatingDescription === "source"
-      )}
-      currentSourceIdx={currentSourceIdx}
-      route={url}
-      set={set}
-    />
     <PSSFooter />
   </MainLayout>;
 

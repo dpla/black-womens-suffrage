@@ -1,14 +1,15 @@
 import React from "react";
 import ReactMarkdown from "react-markdown";
-
+import { withRouter } from "next/router";
 import Link from "next/link";
 
 import { removeQueryParams, extractSourceId } from "lib";
 
 import css from "./SourceSetSources.module.scss";
 
-const SourceSetSources = ({ route, sources }) =>
+const SourceSetSources = ({ router, sources }) =>
   <div role="tabpanel" aria-labelledby="tab-sourceset" className={css.wrapper}>
+      { console.log(JSON.stringify(router))}
     <ul className={[css.sourceSetSources, `.container`].join(" ")}>
       {sources.map(({ name, thumbnailUrl, useDefaultImage }, i) => {
         const sourceId = extractSourceId(sources[i]["@id"]);
@@ -17,15 +18,15 @@ const SourceSetSources = ({ route, sources }) =>
             <Link
               key={name}
               as={{
-                pathname: `/primary-source-sets/${route.query
+                pathname: `/primary-source-sets/${router.query
                   .set}/sources/${sourceId}`,
-                query: removeQueryParams(route.query, ["source", "set"])
+                query: removeQueryParams(router.query, ["source", "set"])
               }}
               href={{
                 pathname: `/primary-source-sets/set/sources`,
-                query: Object.assign({}, route.query, {
+                query: Object.assign({}, router.query, {
                   source: sourceId,
-                  set: route.query.set
+                  set: router.query.set
                 })
               }}
             >
@@ -51,4 +52,4 @@ const SourceSetSources = ({ route, sources }) =>
     </ul>
   </div>;
 
-export default SourceSetSources;
+export default withRouter(SourceSetSources);

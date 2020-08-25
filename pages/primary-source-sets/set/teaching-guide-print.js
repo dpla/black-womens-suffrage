@@ -3,15 +3,12 @@ import fetch from "isomorphic-fetch";
 import ReactMarkdown from "react-markdown";
 import { withRouter } from "next/router";
 
-import MinimalLayout from "components/MainLayout/components/MinimalLayout";
 import PSSFooter from "components/PrimarySourceSetsPage/PSSFooter";
 import TeachersGuide from "components/PrimarySourceSetsPage/SingleSet/TeachersGuide";
 
 import { PSS_BASE_URL } from "constants/primarySourceSets";
 
 import { getCurrentFullUrl } from "lib";
-
-import utils from "stylesheets/utils.scss";
 
 class Printable extends React.Component {
   componentDidMount() {
@@ -28,9 +25,9 @@ class Printable extends React.Component {
       currentFullUrl
     } = this.props;
     return (
-      <MinimalLayout route={this.props.router} isPrintable={true}>
-        <div className={utils.container}>
-          <h1 className={utils.printableH1}>
+      <div>
+        <div className={`.container`}>
+          <h1 className={`.printableH1`}>
             <ReactMarkdown
               source={set.name}
               allowedTypes={["emphasis", "text"]}
@@ -46,7 +43,7 @@ class Printable extends React.Component {
           isPrintable={true}
         />
         <PSSFooter />
-      </MinimalLayout>
+      </div>
     );
   }
 }

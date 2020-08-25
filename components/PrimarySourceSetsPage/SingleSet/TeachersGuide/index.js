@@ -4,7 +4,6 @@ import ReactMarkdown from "react-markdown";
 
 import { removeQueryParams, markdownLinks } from "lib";
 
-import contentCss from "stylesheets/content-pages.scss";
 import css from "./TeachersGuide.module.scss";
 
 const printer = "/static/dpla-icons/printer.svg";
@@ -34,7 +33,7 @@ class TeachersGuide extends React.Component {
           <div className="row">
             <div className="col-xs-12 col-md-8">
               <div className={css.content}>
-                <div className={contentCss.content}>
+                <div className={`.content`}>
                   <h3>Discussion questions</h3>
                   <ReactMarkdown
                     source={

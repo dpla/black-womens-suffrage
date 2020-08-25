@@ -20,8 +20,7 @@ import {
 } from "lib";
 import * as gtag from "lib/gtag";
 
-import utils from "stylesheets/utils.scss";
-import css from "./ContentAndMetadata.scss";
+import css from "./ContentAndMetadata.module.scss";
 
 const link = "/static/images/link.svg";
 const external = "/static/images/external-link-black.svg";
@@ -145,7 +144,7 @@ class ContentAndMetadata extends React.Component {
 
     return (
       <div className={css.wrapper}>
-        <div className={[css.contentAndMetadata, utils.container].join(" ")}>
+        <div className={[css.contentAndMetadata, `.container`].join(" ")}>
           <h1 className={css.contentHeader}>
             <ReactMarkdown
               source={source.name}
