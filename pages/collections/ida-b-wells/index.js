@@ -1,13 +1,17 @@
 import React from "react"
-import MainLayout from "../../../components/MainLayout"
-import ItemList from "../../../components/CollectionComponents/ItemList"
+import MainLayout from "components/MainLayout"
+import ItemList from "components/CollectionComponents/ItemList"
 import fs from 'fs'
 import path from 'path'
 
 function IdaBWells({ items }) {
 
   return (
-      <MainLayout className="main" role="main">
+      <MainLayout
+        className="main"
+        role="main"
+        pageTitle="Ida B. Wells Barnett Papers"
+      >
         <ItemList items={ items } />
       </MainLayout>
   )
@@ -29,6 +33,7 @@ export async function getStaticProps() {
     const thumb = "/static/thumbnails/ibw/" + key + ".jpg";
 
     return {
+      colItemId: key,
       title: title,
       creator: creator,
       description: description,
