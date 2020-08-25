@@ -37,77 +37,77 @@ export const sojournerTruth = [
   }
 ]
 
-export const keyFigures = [
-  {
+export const keyFigures = {
+  "charlotteVandineForten": {
     "name" : "Charlotte Vandine Forten",
     "value": "charlotteVandineForten"
   }, 
-  {
+  "sojournerTruth": {
     "name" : "Sojourner Truth",
     "value": "SojournerTruth"
   },
-  {
+  "harrietFortenPurvis": {
     "name" : "Harriet Forten Purvis",
     "value": "harrietFortenPurvis"
   },
-  {
+  "margarettaForten": {
     "name" : "Margaretta Forten",
     "value": "margarettaForten"
   },
-  {
+  "maryAnnShaddCary": {
     "name" : "Mary Ann Shadd Cary",
     "value": "maryAnnShaddCary"
   },
-  {
+  "francesEllenWatkinsHarper": {
     "name" : "Frances Ellen Watkins Harper",
     "value": "francesEllenWatkinsHarper"
   },
-  {
+  "sarahRemond": {
     "name" : "Sarah Remond",
     "value": "sarahRemond"
   },
-  {
+  "charlotteFotrenGrimke": {
     "name" : "Charlotte Forten Grimké",
     "value": "charlotteFotrenGrimke"
   },
-  {
+  "harrietPurvisJr": {
     "name" : "Harriet Purvis, Jr.",
     "value": "harrietPurvisJr"
   },
-  {
+  "josephineStPierreRuffin": {
     "name" : "Josephine St. Pierre Ruffin",
     "value": "josephineStPierreRuffin"
   },
-  {
+  "charlotteLottieRollin": {
     "name" : 'Charlotte "Lottie" Rollin',
     "value": "charlotteLottieRollin"
   },
-  {
+  "fannieBarrierWilliams": {
     "name" : "Fannie Barrier Williams",
     "value": "fannieBarrierWilliams"
   },
-  {
+  "maryChurchTerrell": {
     "name" : "Mary Church Terrell",
     "value": "maryChurchTerrell"
   },
-  {
+  "maryTalbert": {
     "name" : "Mary Talbert",
     "value": "maryTalbert"
   },
-  {
+  "lugeniaBurnsHope": {
     "name" : "Lugenia Burns Hope",
     "value": "lugeniaBurnsHope"
   },
-  {
+  "nannieHelenBurroughs": {
     "name" : "Nannie Helen Burroughs",
     "value": "nannieHelenBurroughs"
   },
-  {
+  "angelinaWeldGrimke": {
     "name" : "Angelina Weld Grimké",
     "value": "angelinaWeldGrimke"
   },
-  {
+  "fannieLouHamer": {
     "name" : "Fannie Lou Hamer",
     "value": "fannieLouHamer"
   }
-]
+}
