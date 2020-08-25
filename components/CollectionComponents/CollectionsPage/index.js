@@ -1,6 +1,6 @@
 import React from "react"
 import Link from "next/link"
-import scss from "components/CollectionsPage/CollectionsPage.module.scss"
+import scss from "components/CollectionComponents/CollectionsPage/CollectionsPage.module.scss"
 import PageBanner from "components/shared/PageBanner"
 import SectionTitle from "components/shared/SectionTitle"
 import { collections } from "constants/collections"
