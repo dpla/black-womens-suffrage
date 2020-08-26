@@ -5,17 +5,20 @@ import MainMetadata from "./MainMetadata";
 import OtherMetadata from "./OtherMetadata";
 import JsonLdMarkup from "./JsonLdMarkup";
 
-import * as gtag from "lib/gtag";
-import { bindLinkEvent, getFullPath, joinIfArray } from "lib";
+import { getFullPath, joinIfArray, googleAnalytics } from "lib";
 import { UNTITLED_TEXT } from "constants/site";
 
 import css from "./Content.module.scss";
+import {initGA, logPageView} from "../../../lib/googleAnalytics";
 
 class Content extends React.Component {
   // items track the clickthroughs and the view for the partner
   componentDidMount() {
+    if (!window.GA_INITIALIZED) {
+      initGA()
+      window.GA_INITIALIZED = true
+    }
     this.trackItemView();
-    this.bindClickThroughEvent();
   }
 
   trackItemView() {
@@ -34,28 +37,9 @@ class Content extends React.Component {
         contributor: contributor
       };
 
-      gtag.event(gaEvent);
-
       this.lastTrackedPath = fullPath;
+      googleAnalytics.logEvent(gaEvent);
     }
-  }
-
-  bindClickThroughEvent() {
-    const links = document.getElementsByClassName("clickThrough");
-    const itemId = this.props.router.query.itemId;
-    const title = joinIfArray(this.props.item.title, ", ");
-    const contributor = joinIfArray(this.props.item.contributor, ", ");
-    const partner = joinIfArray(this.props.item.partner, ", ");
-
-    const gaEvent = {
-      type: "Click Through",
-      itemId: itemId,
-      title: title,
-      partner: partner,
-      contributor: contributor
-    };
-
-    bindLinkEvent(gaEvent, links);
   }
 
   render() {

@@ -1,36 +1,17 @@
 import React from "react"
-import Router from "next/router"
 import Navbar from "./components/Navbar"
 import MobileNavbar from "./components/MobileNavbar"
 import Helmet from "react-helmet"
-import DPLAHead from "../DPLAHead"
-import Footer from "./components/Footer"
+import GoogleAnalytics from "components/shared/GoogleAnalytics";
 
 class MainLayout extends React.Component {
-  // Google Analytics tracking for MainLayout-using pages
-  componentDidMount() {
-    Router.onRouteChangeComplete = url => this.trackPageview();
-  }
-
-  trackPageview() {
-    const fullPath = getFullPath();
-    const fullUrl = getCurrentFullUrl();
-
-    if (fullPath !== this.lastTrackedPath) {
-      gtag.pageview({
-        path: fullPath,
-        url: fullUrl,
-        title: this.props.pageTitle
-      });
-      this.lastTrackedPath = fullPath;
-    }
-  }
 
   render() {
     const {children} = this.props
 
     return (
       <div className="container">
+        <GoogleAnalytics>
         <Helmet htmlAttributes={{ lang: "en" }} />
         {/* <DPLAHead
           additionalLinks={headLinks}
@@ -44,6 +25,7 @@ class MainLayout extends React.Component {
         {children}
 
         {/* <Footer /> */}
+        </GoogleAnalytics>
       </div>
     );
   }

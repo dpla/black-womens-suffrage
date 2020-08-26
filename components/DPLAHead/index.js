@@ -25,20 +25,7 @@ class DPLAHead extends React.Component {
       <div>
         <Head>
           <meta charSet="utf-8" />
-          <script
-              async
-              src={`https://www.googletagmanager.com/gtag/js?id=${gaTrackingId}`}
-          />
-          <script
-              dangerouslySetInnerHTML={{
-                __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', '${procss.env.NEXT_PUBLIC_GA_TRACKING_ID}');
-          `
-              }}
-          />
+
           <meta
             name="viewport"
             content="width=device-width, initial-scale=1, shrink-to-fit=no"

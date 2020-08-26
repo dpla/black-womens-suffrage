@@ -72,7 +72,7 @@ export async function getServerSideProps(context) {
   const currentFullUrl = getCurrentFullUrl(req);
   const currentUrl = getCurrentUrl(req);
   try {
-    const res = await fetch(`${currentUrl}${API_ENDPOINT}/${itemId}`);  //todo harmonize with search page
+    const res = await fetch(`${currentUrl}${API_ENDPOINT}/${itemId}`);
     const json = await res.json();
 
     const doc = json.docs[0];
@@ -82,11 +82,11 @@ export async function getServerSideProps(context) {
       ? doc.sourceResource.date[0]
       : doc.sourceResource.date;
     const language = doc.sourceResource.language &&
-      Array.isArray(doc.sourceResource.language)
+        (Array.isArray(doc.sourceResource.language)
       ? doc.sourceResource.language.map(lang => {
           return lang.name;
         })
-      : doc.sourceResource.language;
+      : doc.sourceResource.language) || "";
     const strippedDoc = Object.assign({}, doc, { originalRecord: "" });
     delete strippedDoc.originalRecord;
     return { props : {
@@ -96,8 +96,8 @@ export async function getServerSideProps(context) {
         thumbnailUrl,
         contributor: doc.dataProvider,
         intermediateProvider: doc.intermediateProvider ? doc.intermediateProvider : "",
-        date: date,
-        language: language,
+        date: date ? date : "",
+        language: language ? language : "",
         partner: doc.provider.name,
         sourceUrl: doc.isShownAt,
         useDefaultImage: !doc.object,

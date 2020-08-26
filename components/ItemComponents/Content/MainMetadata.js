@@ -3,7 +3,7 @@ import React from "react";
 import ItemImage from "./ItemImage";
 import ItemTermValuePair from "./ItemTermValuePair";
 
-import { joinIfArray, readMyRights } from "lib";
+import {googleAnalytics, joinIfArray, readMyRights} from "lib";
 
 import css from "./Content.module.scss";
 
@@ -24,6 +24,18 @@ const RightsBadge = ({ url }) => {
       </div>
     : null;
 };
+
+function getOnClickForExternalLink(item) {
+  return (event) => {
+    googleAnalytics.logEvent({
+      contributor: joinIfArray(item.contributor, ","),
+      type: "Click Through",
+      partner: item.partner,
+      itemId: item.id,
+      title: joinIfArray(item.title, ",")
+    });
+  };
+}
 
 class MainMetadata extends React.Component {
   state = { isOpen: true }; // show it if js is disabled
@@ -60,9 +72,11 @@ class MainMetadata extends React.Component {
               />
               {item.sourceUrl &&
                   <a
-                    rel="noopener noreferrer"
+                    rel="noopener"
                     target="_blank"
                     className={`${css.sourceLink} clickThrough external white`}
+                    onClick={getOnClickForExternalLink(item)}
+                    href={item.sourceUrl}
                   >
                     <span className={css.sourceLinkText}>
                       {item.type === "image"
