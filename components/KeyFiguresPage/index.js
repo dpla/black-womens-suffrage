@@ -1,16 +1,17 @@
 import React from "react"
 import Link from "next/link"
 import scss from "../KeyFiguresPage/KeyFiguresPage.module.scss"
-import SelectedKeyFigure from "./SelectedKeyFigure"
 import { keyFigures } from "constants/key-figures"
 import PageBanner from "shared/PageBanner"
 import { useRouter } from "next/router"
+import SojournerTruth from "./AllKeyFigures/SojournerTruth"
 
 const KeyFiguresPage = ({ figure }) => {
 
   const router = useRouter();
   // If routher.asPath = /key-figures/sojournerTruth, then pathId = sojournerTruth
   const pathId = router.asPath.split("/").pop();
+  const ComponentName = figure.component
 
   return (
     <>
@@ -44,7 +45,8 @@ const KeyFiguresPage = ({ figure }) => {
         </div>
 
         <div className={scss.key_figures__right}>
-          <SelectedKeyFigure keyFigure={ figure.figId }/>
+          {figure.value == "SojournerTruth" && <SojournerTruth />}
+          {/* <ComponentName /> */}
         </div> 
       </section>
     </>
