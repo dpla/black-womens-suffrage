@@ -4,7 +4,6 @@ import scss from "../KeyFiguresPage/KeyFiguresPage.module.scss"
 import { keyFigures } from "constants/key-figures"
 import PageBanner from "shared/PageBanner"
 import { useRouter } from "next/router"
-import SojournerTruth from "./AllKeyFigures/SojournerTruth"
 import dynamic from 'next/dynamic'
 
 
