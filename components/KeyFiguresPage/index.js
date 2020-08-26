@@ -5,13 +5,15 @@ import { keyFigures } from "constants/key-figures"
 import PageBanner from "shared/PageBanner"
 import { useRouter } from "next/router"
 import SojournerTruth from "./AllKeyFigures/SojournerTruth"
+import dynamic from 'next/dynamic'
+
 
 const KeyFiguresPage = ({ figure }) => {
 
   const router = useRouter();
   // If routher.asPath = /key-figures/sojournerTruth, then pathId = sojournerTruth
   const pathId = router.asPath.split("/").pop();
-  const ComponentName = figure.component
+  const DynamicComponent = dynamic(import(`./AllKeyFigures/${ figure.value }`))
 
   return (
     <>
@@ -45,8 +47,7 @@ const KeyFiguresPage = ({ figure }) => {
         </div>
 
         <div className={scss.key_figures__right}>
-          {figure.value == "SojournerTruth" && <SojournerTruth />}
-          {/* <ComponentName /> */}
+          <DynamicComponent />
         </div> 
       </section>
     </>
