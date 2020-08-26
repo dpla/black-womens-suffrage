@@ -1,11 +1,18 @@
 import React from "react"
 import Link from "next/link"
 import scss from "components/CollectionComponents/ItemList/ItemList.module.scss"
+import CollectionHeader from "components/CollectionsPage/CollectionHeader"
 
 const ItemList = ({ collection, items }) => {
+  const image = collection.image,
+  name = collection.name,
+  description = collection.description,
+  years = collection.lived,
+  styledText = collection.intro;
 
   return (
     <section>
+      <CollectionHeader image={image} name={name} description={description} years={years} styledText={styledText}/>
       <div className={scss.item_list__header}>
         <div className={scss.item_list__header_line}></div>
         <p>Explore the Collection</p>
