@@ -3,8 +3,13 @@ import scss from "../KeyFiguresPage/KeyFiguresPage.module.scss"
 import SelectedKeyFigure from "./SelectedKeyFigure"
 import { keyFigures } from "constants/key-figures"
 import PageBanner from "shared/PageBanner"
+import { useRouter } from "next/router"
 
 const KeyFiguresPage = ({ figure }) => {
+
+  const router = useRouter();
+  const pathId = router.asPath.split("/").pop();
+  console.log(pathId);
 
   return (
     <>
@@ -16,16 +21,16 @@ const KeyFiguresPage = ({ figure }) => {
         <div className={scss.key_figures__left}>
           <ul>
             {Object.keys(keyFigures).map((key, index) => {
-              const figure = keyFigures[key]
+              const fig = keyFigures[key]
 
               return (
                 <li 
                 key={`key-figure-${index+1}`} 
                 id={index}
-                value={figure.value} 
+                value={fig.value} 
                 className={
-                  (index === { scss.key_figures__active_item })
-                }>{figure.name}</li>                  
+                  (key == pathId ? scss.key_figures__active_item : scss.key_figures__li)
+                }>{fig.name}</li>                  
               )
             })}
           </ul>
@@ -36,7 +41,7 @@ const KeyFiguresPage = ({ figure }) => {
         </div> 
       </section>
     </>
-  )
+  );
 }
   
-export default KeyFiguresPage
+export default KeyFiguresPage;

@@ -39,4 +39,4 @@ export async function getStaticProps({ params }) {
   }
 }
 
-export default KeyFigures;
+export default KeyFigure;
