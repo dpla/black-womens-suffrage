@@ -1,4 +1,5 @@
 import React from "react"
+import Link from "next/link"
 import scss from "../KeyFiguresPage/KeyFiguresPage.module.scss"
 import SelectedKeyFigure from "./SelectedKeyFigure"
 import { keyFigures } from "constants/key-figures"
@@ -28,9 +29,15 @@ const KeyFiguresPage = ({ figure }) => {
                 key={`key-figure-${index+1}`} 
                 id={index}
                 value={fig.value} 
-                className={
-                  (key == pathId ? scss.key_figures__active_item : scss.key_figures__li)
-                }>{fig.name}</li>                  
+                >
+                  <Link href="/key-figures/[figId]" as={`/key-figures/${ key }`}>
+                    <a className={
+                      (key == pathId ? scss.key_figures__active_item : scss.key_figures__li)
+                    }>
+                      { fig.name }
+                    </a>
+                  </Link>
+                </li> 
               )
             })}
           </ul>
