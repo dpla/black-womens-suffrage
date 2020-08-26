@@ -8,8 +8,8 @@ import { useRouter } from "next/router"
 const KeyFiguresPage = ({ figure }) => {
 
   const router = useRouter();
+  // If routher.asPath = /key-figures/sojournerTruth, then pathId = sojournerTruth
   const pathId = router.asPath.split("/").pop();
-  console.log(pathId);
 
   return (
     <>
