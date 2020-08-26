@@ -72,7 +72,7 @@ export async function getServerSideProps(context) {
   const currentFullUrl = getCurrentFullUrl(req);
   const currentUrl = getCurrentUrl(req);
   try {
-    const res = await fetch(`${currentUrl}${API_ENDPOINT}/${itemId}`);  //todo harmonize with search page
+    const res = await fetch(`${currentUrl}${API_ENDPOINT}/${itemId}`);
     const json = await res.json();
 
     const doc = json.docs[0];
