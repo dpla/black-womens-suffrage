@@ -1,5 +1,6 @@
 import React from "react"
 import Navbar from "./components/Navbar"
+import MobileNavbar from "./components/MobileNavbar"
 import Helmet from "react-helmet"
 import GoogleAnalytics from "components/shared/GoogleAnalytics";
 
@@ -11,9 +12,19 @@ class MainLayout extends React.Component {
     return (
       <div className="container">
         <GoogleAnalytics>
-            <Helmet htmlAttributes={{ lang: "en" }} />
-            <Navbar />
-            {children}
+        <Helmet htmlAttributes={{ lang: "en" }} />
+        {/* <DPLAHead
+          additionalLinks={headLinks}
+          pageTitle={pageTitle}
+          pageImage={pageImage}
+          seoType={seoType}
+          pageDescription={pageDescription}
+        /> */}
+        <Navbar />
+        <MobileNavbar />
+        {children}
+
+        {/* <Footer /> */}
         </GoogleAnalytics>
       </div>
     );

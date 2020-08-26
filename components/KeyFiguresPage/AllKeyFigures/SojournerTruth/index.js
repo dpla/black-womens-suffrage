@@ -1,18 +1,17 @@
-import React from "react"
-import scss from "../../KeyFiguresPage/KeyFiguresPage.module.scss"
-import { sojournerTruth } from "../../../constants/key-figures";
+import scss from "components/KeyFiguresPage/KeyFiguresPage.module.scss"
+import { sojournerTruth } from "constants/key-figures";
 
-import SectionTitle from "../SectionTitle";
-import CurvedTextBox from "../CurvedTextBox";
-import LeftBorderTextBox from "../LeftBorderTextBox";
-import BorderedTextBox from "../BorderedTextBox";
-import Sources from "../Sources";
-import KeyFiguresPagination from "../KeyFiguresPagination";
+import SectionTitle from "components/KeyFiguresPage/SectionTitle";
+import CurvedTextBox from "components/KeyFiguresPage/CurvedTextBox";
+import LeftBorderTextBox from "components/KeyFiguresPage/LeftBorderTextBox";
+import BorderedTextBox from "components/KeyFiguresPage/BorderedTextBox";
+import Sources from "components/KeyFiguresPage/Sources";
+import KeyFiguresPagination from "components/KeyFiguresPage/KeyFiguresPagination";
 
-const SelectedKeyFigure = ({selectedKeyFigure}) => {
+const SojournerTruth = () => {
   return (
     <>
-    <div className={scss.key_figures__intro}>
+     <div className={scss.key_figures__intro}>
       <div className={scss.key_figures__info}>
         <h6 className={scss.key_figures__dates}>C. 1797-1893</h6>
         <h2 className={scss.key_figures__name}>Sojourner Truth</h2>
@@ -66,4 +65,4 @@ const SelectedKeyFigure = ({selectedKeyFigure}) => {
   )
 }
 
-export default SelectedKeyFigure
+export default SojournerTruth

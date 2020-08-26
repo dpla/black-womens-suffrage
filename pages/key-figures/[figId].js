@@ -1,15 +1,9 @@
 import React from "react"
-import Router from "next/router"
 import MainLayout from "components/MainLayout"
 import KeyFiguresPage from "components/KeyFiguresPage"
 import { keyFigures } from "constants/key-figures"
 
-function KeyFiguresIndex({ figure }) {
-
-  // Redirect to the first key figure.
-  React.useEffect(() => {
-    Router.replace("/key-figures", `/key-figures/${ figure.figId }`)
-  })
+function KeyFigure({ figure }) {
 
   return (
       <MainLayout
@@ -20,14 +14,21 @@ function KeyFiguresIndex({ figure }) {
         <KeyFiguresPage figure={ figure } />
       </MainLayout>
   )
-
 };
+
+export async function getStaticPaths() {
+
+  const paths = Object.keys(keyFigures).map((key) => ({
+    params: { figId: key },
+  }))
+
+  return { paths, fallback: false }
+}
 
 export async function getStaticProps({ params }) {
 
-  const figId = Object.keys(keyFigures)[0];
-  var figure = keyFigures[figId];
-  figure["figId"] = figId;
+  var figure = keyFigures[params.figId];
+  keyFigures["figId"] = params.figId;
 
   return {
     props: {
@@ -36,4 +37,4 @@ export async function getStaticProps({ params }) {
   }
 }
 
-export default KeyFiguresIndex
+export default KeyFigure
