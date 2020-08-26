@@ -51,4 +51,4 @@ const KeyFiguresPage = ({ figure }) => {
   );
 }
   
-export default KeyFiguresPage;
+export default KeyFiguresPage

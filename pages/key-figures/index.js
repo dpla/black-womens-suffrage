@@ -2,12 +2,11 @@ import React from "react"
 import Router from "next/router"
 import MainLayout from "components/MainLayout"
 import KeyFiguresPage from "components/KeyFiguresPage"
-import fs from 'fs'
-import path from 'path'
 import { keyFigures } from "constants/key-figures"
 
 function KeyFiguresIndex({ figure }) {
 
+  // Redirect to the first key figure.
   React.useEffect(() => {
     Router.replace("/key-figures", `/key-figures/${ figure.figId }`)
   })
@@ -37,4 +36,4 @@ export async function getStaticProps({ params }) {
   }
 }
 
-export default KeyFiguresIndex;
+export default KeyFiguresIndex

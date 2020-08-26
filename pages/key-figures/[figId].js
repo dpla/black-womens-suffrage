@@ -1,8 +1,6 @@
 import React from "react"
 import MainLayout from "components/MainLayout"
 import KeyFiguresPage from "components/KeyFiguresPage"
-import fs from 'fs'
-import path from 'path'
 import { keyFigures } from "constants/key-figures"
 
 function KeyFigure({ figure }) {
@@ -39,4 +37,4 @@ export async function getStaticProps({ params }) {
   }
 }
 
-export default KeyFigure;
+export default KeyFigure
