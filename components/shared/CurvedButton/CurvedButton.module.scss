@@ -1,7 +1,12 @@
+@import "stylesheets/variables";
+
 .curvedButton {
-  color: white;
-  background: purple;
-  border-radius: 0 1rem;
+  color: $white;
+  background: #8B2D9B;
+  border-radius: 0 26px 0 29.5px;
   border: none;
-  padding: .6rem 1rem;
+  padding: 0.75rem 1.2rem;
+  font-family: $inter;
+  font-size: .75em;
+  font-weight: 800;
 }

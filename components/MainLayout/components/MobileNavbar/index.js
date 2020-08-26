@@ -27,7 +27,7 @@ class MobileNavbar extends Component {
     const menuIcon = this.getMenuIcon();
 
     return (
-      <nav id={scss.navbar}>
+      <nav className={scss.navbar}>
         {/* logo and mobile menu icon*/}
         <div id={scss.navLogo}>
           <img src="../public/logo/dpla_bws-logo-color-nav.png" />
