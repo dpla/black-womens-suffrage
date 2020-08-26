@@ -1,10 +1,10 @@
 import React from "react"
 import { withRouter } from "next/router"
 import CurvedButton from "components/shared/CurvedButton"
-import scss from "./SearchBar.module.scss"
+import scss from "./MobileSearchBar.module.scss"
 import Link from "next/link"
 
-class SearchBar extends React.Component {
+class MobileSearchBar extends React.Component {
 
   render() {
     const { searchQuery, router } = this.props;
@@ -19,8 +19,8 @@ class SearchBar extends React.Component {
               className={scss.searchbar__input}
               name="q"
               type="search"
-              placeholder="Search the Black Women's Suffrage Collection"
-              aria-label="Search the Black Women's Suffrage Collection"
+              placeholder="Search the collection"
+              aria-label="Search the collection"
               autoComplete="off"
               defaultValue={router && router.query && router.query.q ? router.query.q : ""}
             />
@@ -41,5 +41,5 @@ class SearchBar extends React.Component {
   }
 }
 
-export default withRouter(SearchBar);
+export default withRouter(MobileSearchBar);
 

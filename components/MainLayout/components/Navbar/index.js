@@ -4,17 +4,34 @@ import scss from "./Navbar.module.scss"
 import SearchBar from "components/shared/SearchBar";
 
 class Navbar extends Component {
+  constructor() {
+    super()
+
+    this.state = {
+      showSearchbar: false
+    }
+
+  }
+
+  triggerSearchbar = () => {
+    this.setState({
+      showSearchbar: !this.state.showSearchbar
+    })
+  }
+
+
   render() {
 
     return (
-      <nav className={scss.navbar}>
-        <div className={scss.nav__logo}>
-          <Link href="/">
-            <a>
-              <img src="/static/logo/dpla_bws-logo-color-nav.png" />
-            </a>
-          </Link>
-        </div>
+      <>
+        <nav className={scss.navbar}>
+          <div className={scss.nav__logo}>
+            <Link href="/">
+              <a>
+                <img src="/static/logo/dpla_bws-logo-color-nav.png" />
+              </a>
+            </Link>
+          </div>
 
           <div className={scss.nav__links}>
             <Link href="/about">
@@ -42,16 +59,16 @@ class Navbar extends Component {
             </Link>
 
             <a href="https://dp.la" target="_blank">Visit DPLA</a>
-
-            <img src={"/static/icon/search/search-bar.svg"} alt="search-bar" id={scss.searchbar}/>
-            <SearchBar/>
+            <img src={"/static/icon/search/search-bar.svg"} alt="search-bar" id={scss.searchbar} onClick={this.triggerSearchbar} />
           </div>
-        
-      </nav>
+        </nav>
+
+        {this.state.showSearchbar &&
+          <SearchBar />
+        }
+      </>
     )
   }
 }
-
-
 
 export default Navbar
