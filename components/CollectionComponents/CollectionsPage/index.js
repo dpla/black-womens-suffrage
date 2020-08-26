@@ -1,6 +1,6 @@
 import React from "react"
 import Link from "next/link"
-import scss from "components/CollectionsPage/CollectionsPage.module.scss"
+import scss from "components/CollectionComponents/CollectionsPage/CollectionsPage.module.scss"
 import PageBanner from "components/shared/PageBanner"
 import SectionTitle from "components/shared/SectionTitle"
 import { collections } from "constants/collections"
@@ -19,16 +19,18 @@ const CollectionsPage = () => {
 
         <div className={scss.collections__tile_container}>
 
-          {collections.map((collection, index) => {
+          { Object.keys(collections).map((key, index) => {
+            const collection = collections[key];
+
             return (
               <div className={scss.collections__tile} key={`collections-tile-${index + 1}`}>
                 <img src={collection.image} />
                 <h2>{collection.name}</h2>
                 <p>{collection.description}</p>
 
-                {collection.href ?
+                {collection.publish ?
                   <button className={scss.collections_button__active}>
-                    <Link href={`/collections/${collection.href}`}>
+                    <Link href="/collections/[colId]" as={`/collections/${ key }`}>
                       <a>VIEW COLLECTION</a>
                     </Link>
                     <img src="static/icon/collections-page/button-arrow.svg" />

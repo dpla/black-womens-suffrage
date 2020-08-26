@@ -1,6 +1,6 @@
 import React from "react"
 import MainLayout from "components/MainLayout"
-import CollectionsPage from "components/CollectionsPage"
+import CollectionsPage from "components/CollectionComponents/CollectionsPage"
 
 const Collections = () => {
   return (
