@@ -27,14 +27,10 @@ const RightsBadge = ({ url }) => {
 
 function getOnClickForExternalLink(item) {
   return (event) => {
-    console.log(JSON.stringify(item.id));
-    console.log(JSON.stringify(item.title));
-    console.log(JSON.stringify(item.contributor));
-    console.log(JSON.stringify(item.partner));
     googleAnalytics.logEvent({
-      contributor: joinIfArray(item.dataProvider, ","),
+      contributor: joinIfArray(item.contributor, ","),
       type: "Click Through",
-      partner: item.provider,
+      partner: item.partner,
       itemId: item.id,
       title: joinIfArray(item.title, ",")
     });
