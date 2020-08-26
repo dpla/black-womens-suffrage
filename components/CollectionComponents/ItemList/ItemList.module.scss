@@ -32,24 +32,31 @@
   .item__li {
     width: 50%;
 
-    .item__title {
-      color: #282830;
-      font-family: $inter;
-      font-size: 18px;
-      font-weight: 600;
-      letter-spacing: 0.17px;
-      line-height: 28px;
+    a {
+      .item__title {
+        color: #282830;
+        font-family: $inter;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 0.17px;
+        line-height: 28px;
+      }
+      
+      .item__date {
+        opacity: 0.55;
+        color: #282830;
+        font-family: $inter;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.15px;
+        line-height: 28px;
+      }
+  
+      p {
+        width: 95%;
+      }
     }
     
-    .item__date {
-      opacity: 0.55;
-      color: #282830;
-      font-family: $inter;
-      font-size: 16px;
-      font-weight: 500;
-      letter-spacing: 0.15px;
-      line-height: 28px;
-    }
   }
 }
 

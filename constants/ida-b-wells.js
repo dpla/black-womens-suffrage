@@ -208,7 +208,7 @@
     "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0001-001-008.pdf"
   },
   "ibwells-0010-001-01" : {
-    "title" : [ "da B. Wells, standing left, with Maurine Moss, widow of Tom Moss, lynched in Memphis March 9, 1892, with Tom Moss Jr. " ],
+    "title" : [ "Ida B. Wells, standing left, with Maurine Moss, widow of Tom Moss, lynched in Memphis March 9, 1892, with Tom Moss Jr. " ],
     "creator" : [ "Griffin, W. F." ],
     "subject" : [ "Wells-Barnett, Ida B., 1862-1931", "Milliken, Elizabeth Cooper Moss, 1862-1910", "Browning, Maurine Moss, 1891-1971", "Moss, Thomas Henry, 1892-1906", "Moss, Thomas Henry, died 1892 ", "African American women civil rights workers" ],
     "isPartOf" : [ "Ida B. Wells. Papers" ],
