@@ -31,7 +31,6 @@ const ItemDescription = ({ description }) => {
 
 function getOnClickForExternalLink(item) {
   return (event) => {
-    e
     googleAnalytics.logEvent({
       contributor: joinIfArray(item.dataProvider, ","),
       type: "Click Through",
