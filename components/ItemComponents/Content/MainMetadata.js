@@ -76,6 +76,7 @@ class MainMetadata extends React.Component {
                     target="_blank"
                     className={`${css.sourceLink} clickThrough external white`}
                     onClick={getOnClickForExternalLink(item)}
+                    href={item.sourceUrl}
                   >
                     <span className={css.sourceLinkText}>
                       {item.type === "image"
