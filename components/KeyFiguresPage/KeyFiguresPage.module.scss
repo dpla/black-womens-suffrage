@@ -60,6 +60,14 @@
     list-style: none;
   }
 
+  a:hover {
+    text-decoration: none;
+  }
+
+  a:focus {
+    outline: none;
+  }
+
   .key_figures__active_item {
     color: #8B2D9B;
   }
