@@ -39,6 +39,7 @@ export async function getStaticProps({ params }) {
     const title = json[key]["title"].join(": ");
     const creator = json[key]["creator"].join("; ");
     const description = json[key]["description"].join(" ");
+    const date = json[key]["date"].join(": ");
 
     const thumb = "/static/thumbnails/ibw/" + key + ".jpg";
 
@@ -47,7 +48,8 @@ export async function getStaticProps({ params }) {
       title: title,
       creator: creator,
       description: description,
-      thumb: thumb
+      thumb: thumb,
+      date: date
     }
   });
 
