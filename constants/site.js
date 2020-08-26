@@ -1,3 +1,5 @@
+export const GA_TRACKING_ID = "UA-28197764-11";
+
 export const UNTITLED_TEXT = "Untitled";
 
 export const MESSAGE_DELAY = 5000;
