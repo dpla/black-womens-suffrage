@@ -40,7 +40,7 @@ export const sojournerTruth = [
 export const keyFigures = {
   "charlotteVandineForten": {
     "name" : "Charlotte Vandine Forten",
-    "value": "charlotteVandineForten"
+    "value": "CharlotteVandineForten"
   }, 
   "sojournerTruth": {
     "name" : "Sojourner Truth",
@@ -48,66 +48,66 @@ export const keyFigures = {
   },
   "harrietFortenPurvis": {
     "name" : "Harriet Forten Purvis",
-    "value": "harrietFortenPurvis"
+    "value": "HarrietFortenPurvis"
   },
   "margarettaForten": {
     "name" : "Margaretta Forten",
-    "value": "margarettaForten"
+    "value": "MargarettaForten"
   },
   "maryAnnShaddCary": {
     "name" : "Mary Ann Shadd Cary",
-    "value": "maryAnnShaddCary"
+    "value": "MaryAnnShaddCary"
   },
   "francesEllenWatkinsHarper": {
     "name" : "Frances Ellen Watkins Harper",
-    "value": "francesEllenWatkinsHarper"
+    "value": "FrancesEllenWatkinsHarper"
   },
   "sarahRemond": {
     "name" : "Sarah Remond",
-    "value": "sarahRemond"
+    "value": "SarahRemond"
   },
   "charlotteFotrenGrimke": {
     "name" : "Charlotte Forten Grimké",
-    "value": "charlotteFotrenGrimke"
+    "value": "CharlotteFotrenGrimke"
   },
   "harrietPurvisJr": {
     "name" : "Harriet Purvis, Jr.",
-    "value": "harrietPurvisJr"
+    "value": "HarrietPurvisJr"
   },
   "josephineStPierreRuffin": {
     "name" : "Josephine St. Pierre Ruffin",
-    "value": "josephineStPierreRuffin"
+    "value": "JosephineStPierreRuffin"
   },
   "charlotteLottieRollin": {
     "name" : 'Charlotte "Lottie" Rollin',
-    "value": "charlotteLottieRollin"
+    "value": "CharlotteLottieRollin"
   },
   "fannieBarrierWilliams": {
     "name" : "Fannie Barrier Williams",
-    "value": "fannieBarrierWilliams"
+    "value": "FannieBarrierWilliams"
   },
   "maryChurchTerrell": {
     "name" : "Mary Church Terrell",
-    "value": "maryChurchTerrell"
+    "value": "MaryChurchTerrell"
   },
   "maryTalbert": {
     "name" : "Mary Talbert",
-    "value": "maryTalbert"
+    "value": "MaryTalbert"
   },
   "lugeniaBurnsHope": {
     "name" : "Lugenia Burns Hope",
-    "value": "lugeniaBurnsHope"
+    "value": "LugeniaBurnsHope"
   },
   "nannieHelenBurroughs": {
     "name" : "Nannie Helen Burroughs",
-    "value": "nannieHelenBurroughs"
+    "value": "NannieHelenBurroughs"
   },
   "angelinaWeldGrimke": {
     "name" : "Angelina Weld Grimké",
-    "value": "angelinaWeldGrimke"
+    "value": "AngelinaWeldGrimke"
   },
   "fannieLouHamer": {
     "name" : "Fannie Lou Hamer",
-    "value": "fannieLouHamer"
+    "value": "FannieLouHamer"
   }
 }
