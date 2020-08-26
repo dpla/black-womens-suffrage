@@ -13,6 +13,10 @@ const ItemList = ({ items }) => {
 
       <ul className={scss.item__ul}>
         { items.map((item) => (
+
+          // <Link href={}>
+          //   <a></a>
+          // </Link>
           <li className={scss.item__li}>
             <img src={ item.thumb } />
             <p className={scss.item__title}>{ item.title }</p>
