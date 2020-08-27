@@ -51,10 +51,27 @@ class TimelinePage extends React.Component {
     }
   }
 
+  getNewNext = (active) => {
+    return this.state.dropdownOptions[active + 1] === undefined ? null :
+      this.state.dropdownOptions[active + 1];
+  }
+
+  getNewPrev = (active) => {
+    return this.state.dropdownOptions[active - 1] === undefined ? null :
+      this.state.dropdownOptions[active - 1];
+  }
+
   handleClick = (event) => {
+    const newSelected = event.currentTarget.getAttribute('value');
+    const newActiveLink = parseInt(event.currentTarget.getAttribute('id'));
+    const newNext = this.getNewNext(newActiveLink);
+    const newPrev = this.getNewPrev(newActiveLink);
+
     this.setState({
-      selected: event.currentTarget.getAttribute('value'),
-      activeLink: parseInt(event.currentTarget.getAttribute('id'))
+      selected: newSelected,
+      activeLink: newActiveLink,
+      nextYear: newNext,
+      prevYear: newPrev
     })
 }
 
@@ -66,13 +83,20 @@ class TimelinePage extends React.Component {
   //   this.setTimelineNavYears(this.state.selected)
   // }
 
-  // goToNext = () => {
-  //   this.setState({
-  //     selected: this.state.nextYear
-  //   })
+  goToNext = () => {
+    const newPrev = this.state.selected;
+    const newSelected = this.state.nextYear;
+    const newActiveLink = this.state.activeLink + 1;
+    const newNext = getNewNext(newActiveLink)
 
-  //   this.setTimelineNavYears(this.state.selected)
-  // }
+    this.setState({
+      activeLink: newActiveLink,
+      prevYear: this.state.selected,
+      selected: this.state.nextYear
+    })
+
+    this.setTimelineNavYears(this.state.selected)
+  }
 
   render() {
     const title = "TIMELINE",
@@ -109,12 +133,7 @@ class TimelinePage extends React.Component {
             </ul>
           </div>
           <div className={scss.timeline__right}>
-            {/* this.state.selected === "1820-1859" && <Year1820to1859 /> */}
-            {/* this.state.selected === "1860-1869" && <Year1860to1869 /> */}
             {<DynamicComponent />}
-
-            {/* other components for each era go here */}
-
 
             <section className={scss.pagination__container}>
             {this.state.prevYear &&
