@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "clean": "rm -rf .next ./build ./coverage ./node_modules",
-    "nuke" : "npm run clean && npm i && npm run build && npm run start"
+    "nuke": "npm run clean && npm i && npm run build && npm run start"
   },
   "dependencies": {
     "babel-plugin-inline-react-svg": "^1.1.1",
