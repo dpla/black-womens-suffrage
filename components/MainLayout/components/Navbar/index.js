@@ -50,10 +50,6 @@ class Navbar extends Component {
               <a>Collections</a>
             </Link>
 
-            <Link href="/topics">
-              <a>Topics</a>
-            </Link>
-
             <Link href="/partners">
               <a>Partners</a>
             </Link>
