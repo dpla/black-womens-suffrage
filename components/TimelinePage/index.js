@@ -83,21 +83,6 @@ class TimelinePage extends React.Component {
   //   this.setTimelineNavYears(this.state.selected)
   // }
 
-  goToNext = () => {
-    const newPrev = this.state.selected;
-    const newSelected = this.state.nextYear;
-    const newActiveLink = this.state.activeLink + 1;
-    const newNext = getNewNext(newActiveLink)
-
-    this.setState({
-      activeLink: newActiveLink,
-      prevYear: this.state.selected,
-      selected: this.state.nextYear
-    })
-
-    this.setTimelineNavYears(this.state.selected)
-  }
-
   render() {
     const title = "TIMELINE",
       text = "Celebrating Black women and the vote.",
@@ -147,7 +132,11 @@ class TimelinePage extends React.Component {
             }
 
             {this.state.nextYear &&
-              <div className={scss.pagination__next} onClick={this.goToNext}>
+              <div
+              className={scss.pagination__next}
+              value={this.state.nextYear}
+              id={this.state.activeLink+1}
+              onClick={this.handleClick}>
                 <div>
                   <h5>NEXT</h5>
                   <img src="/static/icon/button-arrow.svg" />
