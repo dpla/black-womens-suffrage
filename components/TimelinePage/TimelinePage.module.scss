@@ -166,6 +166,45 @@
       }
     }
   }
+
+  .sources__container {
+    box-sizing: border-box;
+    border: 2px solid #FEDFDF;
+    border-radius: 0 150px 0 0;
+    padding: 36px;
+    padding-right: 56px;
+    margin-bottom: 69px;
+
+    h2 {
+      color: #E27979;
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 800;
+      letter-spacing: 1.2px;
+      line-height: 17px;
+      margin-bottom: 15px;
+    }
+
+    p {
+      margin-bottom: 15px;
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.31px;
+      line-height: 24px;
+    }
+
+    ul {
+      color: #282830;
+      font-family: Inter;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.31px;
+      line-height: 24px;
+      list-style-type: disc;
+      padding-left: 18px;
+    }
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */

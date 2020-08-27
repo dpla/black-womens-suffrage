@@ -55,7 +55,8 @@ class TimelinePage extends React.Component {
       nextYear: newNext,
       prevYear: newPrev
     })
-    
+
+    // scroll to top of page
     if(typeof window !== 'undefined') window.scrollTo(0, 0)
 }
 
