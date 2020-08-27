@@ -4,6 +4,7 @@ import PageBanner from "components/shared/PageBanner"
 import Dropdown from 'react-dropdown'
 import Year1820to1859 from "./Year1820to1859"
 import Year1860to1869 from "./Year1860to1869"
+import dynamic from "next/dynamic"
 
 class TimelinePage extends React.Component {
   constructor() {
@@ -13,7 +14,7 @@ class TimelinePage extends React.Component {
       selected: "1820-1859",
       prevYear: null,
       nextYear: "1860-1869",
-      dropdownOptions: ["1820-1859", "1860-1869", "1870-1889", "1890-1899", "1900-1909", "1910-1919", "1920-1929", "1930-1959", "1960-present"],
+      dropdownOptions: ["1820-1859", "1860-1869", "1870-1889", "1890-1899", "1900-1909", "1910-1919", "1920-1929", "1930-1959", "1960-present", "Sources"],
       activeLink: 0
     }
   }
@@ -79,6 +80,11 @@ class TimelinePage extends React.Component {
       graphic = "static/graphic/timeline-page/timeline-graphic-hero.png",
       initialYear = "1820-1859";
 
+    const templateName = this.state.selected == "Sources" ? "TimelineSources" :
+      "Year" + this.state.selected.replace("-", "to")
+
+    const DynamicComponent = dynamic(import(`./${ templateName }`))
+
     return (
       <>
         <PageBanner title={title} text={text} graphic={graphic} />
@@ -103,8 +109,9 @@ class TimelinePage extends React.Component {
             </ul>
           </div>
           <div className={scss.timeline__right}>
-            {this.state.selected === "1820-1859" && <Year1820to1859 />}
-            {this.state.selected === "1860-1869" && <Year1860to1869 />}
+            {/* this.state.selected === "1820-1859" && <Year1820to1859 /> */}
+            {/* this.state.selected === "1860-1869" && <Year1860to1869 /> */}
+            {<DynamicComponent />}
 
             {/* other components for each era go here */}
 
