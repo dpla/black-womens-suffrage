@@ -19,38 +19,6 @@ class TimelinePage extends React.Component {
     }
   }
 
-  _onSelect = (option) => {
-    this.setState({
-      selected: option.label
-    })
-    this.setTimelineNavYears(option.label)
-  }
-
-  setTimelineNavYears = (title) => {
-    const options = this.state.dropdownOptions;
-
-    for (var i = 0; i < options.length; i++) {
-      if (options[i] === title) {
-        if (i === 0) {
-          this.setState({
-            prevYear: null,
-            nextYear: options[i + 1]
-          })
-        } else if (i === options.length - 1) {
-          this.setState({
-            prevYear: options[i - 1],
-            nextYear: null
-          })
-        } else {
-          this.setState({
-            prevYear: options[i - 1],
-            nextYear: options[i + 1]
-          })
-        }
-      }
-    }
-  }
-
   getNewNext = (active) => {
     return this.state.dropdownOptions[active + 1] === undefined ? null :
       this.state.dropdownOptions[active + 1];
@@ -59,6 +27,20 @@ class TimelinePage extends React.Component {
   getNewPrev = (active) => {
     return this.state.dropdownOptions[active - 1] === undefined ? null :
       this.state.dropdownOptions[active - 1];
+  }
+
+  _onSelect = (option) => {
+    const newSelected = option.label;
+    const newActiveLink = this.state.dropdownOptions.indexOf(newSelected);
+    const newNext = this.getNewNext(newActiveLink);
+    const newPrev = this.getNewPrev(newActiveLink);
+
+    this.setState({
+      selected: newSelected,
+      activeLink: newActiveLink,
+      nextYear: newNext,
+      prevYear: newPrev
+    })
   }
 
   handleClick = (event) => {
@@ -73,6 +55,8 @@ class TimelinePage extends React.Component {
       nextYear: newNext,
       prevYear: newPrev
     })
+    
+    if(typeof window !== 'undefined') window.scrollTo(0, 0)
 }
 
   render() {
@@ -91,7 +75,7 @@ class TimelinePage extends React.Component {
         <PageBanner title={title} text={text} graphic={graphic} />
 
         <section className={`section__default ${scss.timeline}`}>
-          <Dropdown options={this.state.dropdownOptions} onChange={this._onSelect} value={initialYear} className={scss.timeline__dropdown}/>
+          <Dropdown options={this.state.dropdownOptions} onChange={this._onSelect} value={this.state.selected} className={scss.timeline__dropdown}/>
 
           <div className={scss.timeline__left}>
             <ul>
