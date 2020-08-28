@@ -1,0 +1,144 @@
+@import "stylesheets/variables";
+
+.harmful__section_1 {
+  height: 759px;
+  margin-top: 22px;
+  border-radius: 150px 0 150px 0;
+  background-color: rgba(255,210,210,0.2);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+
+  & h3 {
+
+    color: #4E4294;
+  }
+
+  & h2 {
+    height: 141px;
+    width: 610px;
+    color: #F18787;
+    font-family: $libre;
+    font-size: 35px;
+    font-weight: 900;
+    letter-spacing: 0.88px;
+    line-height: 47px;
+    margin:28px 0 28px 0;
+  }
+  & p {
+    width: 590px;
+    color: #282830;
+    font-family: $inter;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.35px;
+    line-height: 28px;
+  }
+}
+
+.harmful__faq {
+
+  width: 1180px;
+  margin-top: 84px;
+
+  & h2 {
+    color: #4E4294;
+    font-size: 35px;
+    font-weight: 900;
+    letter-spacing: 0.88px;
+    line-height: 47px;
+    font-family: $libre;
+  }
+
+  & div {
+    clear: both;
+    border-top: 2px solid #FFD2D2;
+
+    & dt {
+      padding-top: 32px;
+
+      color: #EC5938;
+      font-family: $libre;
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: 0.7px;
+      line-height: 47px;
+      display: block;
+      float: left;
+      padding-right: 60px;
+      width: 560px;
+      height: 100%;
+
+    }
+    & dd {
+      color: #282830;
+      font-family: $inter;
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 0.35px;
+      line-height: 28px;
+      display: block;
+      padding-bottom: 32px;
+      padding-top: 32px;
+      width: 560px;
+      float: right;
+
+      & ul {
+        list-style: disc;
+         & li {
+           margin-bottom: 24px;
+         }
+        & li.highlight {
+          color: #EC5938;
+        }
+      }
+    }
+  }
+}
+
+.harmful__section_3 {
+  margin-top: 84px;
+  height: 394px;
+  width: 875px;
+  border-radius: 0 150px 0 150px;
+  background-color: rgba(255, 210, 210, 0.2);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+
+  & div {
+      & h2 {
+        height: 94px;
+        width: 610px;
+        color: #F18787;
+        font-family: $libre;
+        font-size: 35px;
+        font-weight: 900;
+        letter-spacing: 0.88px;
+        line-height: 47px;
+        text-align: center;
+        margin-bottom: 1em;
+        margin-top: 1.5em;
+      }
+    & p {
+      width: 590px;
+      color: #282830;
+      font-family: $inter;
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 0.35px;
+      line-height: 28px;
+      text-align: center;
+      margin-bottom: 1em;
+      & a {
+        font-weight: $xBold;
+      }
+    }
+
+
+  }
+
+
+}
