@@ -1,7 +1,6 @@
 import scss from "components/KeyFiguresPage/KeyFiguresPage.module.scss"
 
-// TODO CHANGE IMPORT
-import { sojournerTruth } from "constants/key-figures";
+import { charlotteVandineForten } from "constants/key-figures";
 
 import SectionTitle from "components/KeyFiguresPage/SectionTitle";
 import CurvedTextBox from "components/KeyFiguresPage/CurvedTextBox";
@@ -9,43 +8,23 @@ import LeftBorderTextBox from "components/KeyFiguresPage/LeftBorderTextBox";
 import BorderedTextBox from "components/KeyFiguresPage/BorderedTextBox";
 import Sources from "components/KeyFiguresPage/Sources";
 import KeyFiguresPagination from "components/KeyFiguresPage/KeyFiguresPagination";
+import IntroAndPortrait from "components/KeyFiguresPage/IntroAndPortrait";
 
 const CharlotteVandineForten = () => {
+
   return (
     <>
-     <div className={scss.key_figures__intro}>
-      <div className={scss.key_figures__info}>
-        <h6 className={scss.key_figures__dates}>   DATE   </h6>
-        <h2 className={scss.key_figures__name}>Sojourner Truth</h2>
-      </div>
-
-      <div className={scss.key_figures__portrait}>
-        <img src="https://picsum.photos/300/400"/>
-      </div>
-    </div>
-      
-
-      <p>   INTRO SENTENCE    </p>
-   
+      <IntroAndPortrait figure={ charlotteVandineForten } />
 
       <section>
-        <SectionTitle title="   SUBHEADING   " />
-        <p></p>
-      </section>
-         
-
-      <section>
-        <SectionTitle title="   SUBHEADING   " />
-        <p></p>
+        <SectionTitle title="Women Abolitionists" />
+        <p>Charlotte Vandine Forten was the matriarch of a financially well-off and prominent Black family in Philadelphia, Pennsylvania. Forten's husband James was a sailmaker. Her daughters Margaretta Forten, Sarah Louise Forten Purvis and Harriet D. Forten Purvis, often referred to as the "Forten Sisters," were, along with their parents, active in the abolitionist movement. James Forten was a member of the American Anti-Slavery Society, but as the group did not permit women to join, Charlotte and her daughters joined with a like-minded group of women to form the Philadelphia Female Anti-Slavery Society in 1833. This was the first biracial organization of female abolitionists in the United States, and one of six abolitionist groups the Forten family helped to found and finance.</p>
       </section>
 
-      // TODO CHANGE SOURCES
-      <Sources sources={sojournerTruth.sources}/>
-
-      // TODO CHANGE PREV NEXT
-      <KeyFiguresPagination prevFigure="Charlotte Vandine Forten" nextFigure="Harriet Forten Purvis"/>
+      <Sources sources={charlotteVandineForten.sources}/>
     </>
   )
 }
 
 export default CharlotteVandineForten
+

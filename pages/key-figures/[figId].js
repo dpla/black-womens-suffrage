@@ -28,7 +28,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
 
   var figure = keyFigures[params.figId];
-  keyFigures["figId"] = params.figId;
+  figure["figId"] = params.figId;
 
   return {
     props: {
