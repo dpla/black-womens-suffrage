@@ -1,11 +1,14 @@
 import React from "react"
 import Link from "next/link"
 import scss from "components/CollectionComponents/ItemView/ItemView.module.scss"
+import PDFViewer from "../PDFViewer";
 
 const ItemView = ({ item }) => {
-
+  console.log(JSON.stringify(item.href));
   return (
     <section>
+      <PDFViewer pathToFile={item.href}/>
+
       <ul>
         <li>Title: { item.title.join(": ") }</li>
         <li>Creator: { item.creator.join("; ") }</li>
