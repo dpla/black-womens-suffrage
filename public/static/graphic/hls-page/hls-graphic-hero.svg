@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="491px" height="328px" viewBox="0 0 491 328" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>graphic/hld/hld-graphic-hero</title>
+    <g id="DPLA" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="7.0-HLD" transform="translate(-950.000000, -75.000000)">
+            <g id="hero" transform="translate(0.000000, 75.000000)">
+                <g id="graphic/hld/hld-graphic-hero" transform="translate(950.000000, 0.000000)">
+                    <path d="M163.5,81.75 C163.5,126.899357 126.899357,163.5 81.75,163.5 C36.6006429,163.5 0,126.899357 0,81.75 C0,36.6006429 36.6006429,0 81.75,0 C126.899357,0 163.5,36.6006429 163.5,81.75" id="Fill-1" fill="#FFD2D2"></path>
+                    <path d="M490.5,245.75 C490.5,290.899357 453.899357,327.5 408.75,327.5 C363.600643,327.5 327,290.899357 327,245.75 C327,200.600643 363.600643,164 408.75,164 C453.899357,164 490.5,200.600643 490.5,245.75" id="Fill-1-Copy" fill="#F18787"></path>
+                    <path d="M490.5,4.26325641e-14 C490.5,90.2987143 417.298714,163.5 327,163.5 L327.5,163.496 L327.5,163.5 L327.25,163.498 L327,163.5 L326.999,163.496 L324.796224,163.478096 C235.74458,162.034265 164,89.3957271 164,4.26325641e-14 Z" id="Combined-Shape" fill="#4E4294"></path>
+                    <path d="M327.5,164 L327.5,327.5 C237.201286,327.5 164,254.298714 164,164 L327.5,164 Z" id="Fill-21-Copy" fill="#EC5938" transform="translate(245.750000, 245.750000) rotate(180.000000) translate(-245.750000, -245.750000) "></path>
+                    <path d="M163.5,164 L163.5,327.5 C73.2012857,327.5 0,254.298714 0,164 L163.5,164 Z" id="Fill-21-Copy-2" fill="#8B2D9B" transform="translate(81.750000, 245.750000) rotate(180.000000) translate(-81.750000, -245.750000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
