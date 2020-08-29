@@ -1,12 +1,15 @@
 import React from "react"
 import scss from "../RoundButton/RoundButton.module.scss"
+import Link from "next/link";
 
-const RoundButton = ({text, icon}) => {
+const RoundButton = ({text, icon, url}) => {
   return (
-    <button className={scss.roundButton}>
-      {text}
-      <img src={icon}/>
-    </button>
+    <Link href={url}>
+        <a className={scss.roundButton}>
+            {text}
+            <img src={icon} alt={""}/>
+        </a>
+    </Link>
   )
 };
 
