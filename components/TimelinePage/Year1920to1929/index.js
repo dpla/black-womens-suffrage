@@ -13,7 +13,7 @@ const Year1920to1929 = () => {
 
       <div className={scss.timeline__tile}>
         <div className={scss.tile__year}>
-          <p>August 26, 1920</p>
+          <p>Aug 26, 1920</p>
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
@@ -35,7 +35,7 @@ const Year1920to1929 = () => {
 
        <div className={scss.timeline__tile}>
         <div className={scss.tile__year}>
-          <p>Early 1920s</p>
+          <p>Early<br/>1920s</p>
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
