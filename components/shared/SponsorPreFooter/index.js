@@ -10,7 +10,7 @@ const SponsorPreFooter = ({text, sponsor, buttonText, buttonIcon}) => {
         <p>{text}<span>{sponsor}</span></p>
       </div>
       <div className={scss.pre_footer_button}>
-        <RoundButton text={buttonText} icon={buttonIcon}/>
+        <RoundButton text={buttonText} icon={buttonIcon} url={"/search"}/>
       </div>
     </div>
   </div>

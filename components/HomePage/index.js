@@ -1,8 +1,8 @@
 import React from "react"
 import scss from "../HomePage/HomePage.module.scss"
-import RoundButton from "shared/RoundButton"
-import StyledTextWithButtons from "shared/StyledTextWithButtons"
-import SponsorPreFooter from "shared/SponsorPreFooter"
+import RoundButton from "components/shared/RoundButton"
+import StyledTextWithButtons from "components/shared/StyledTextWithButtons"
+import SponsorPreFooter from "components/shared/SponsorPreFooter"
 
 const HomePage = () => {
   return (
@@ -12,7 +12,7 @@ const HomePage = () => {
         <p className={scss.banner__text}>Black women’s suffrage.</p>
             <p className={scss.banner__text}>Thousands of artifacts.</p>
             <p className={scss.banner__text}>Thousands of stories.</p>
-            <RoundButton text="LEARN MORE" icon={"/static/icon/button-arrow.svg"} className={scss.banner__button} />
+            <RoundButton text="LEARN MORE" icon={"/static/icon/button-arrow.svg"} url={"/about"} />
         </div>
         <div className={scss.banner_right__div}>
           {/* <div className={scss.banner_right__section}> */}
@@ -29,6 +29,7 @@ const HomePage = () => {
           text="The materials in this collection include photographs, correspondence, speeches, event programs, publications, oral histories, and other artifacts."
           buttonText1="SEARCH THE COLLECTION"
           buttonIcon1="/static/icon/button-arrow.svg"
+          buttonUrl1="/search"
         />
         <div className={scss.home__section_1__right}>
           <div className={scss.home__section_1__img}></div>
@@ -45,8 +46,10 @@ const HomePage = () => {
             subtitle="The collection explores both the roots of women’s activism in Black communities; the ongoing struggle to secure, protect, and use the right to vote, beyond the Suffrage Movement; and the intersections between voting rights and other civil rights."
             buttonText1="SEE TIMELINE"
             buttonIcon1="/static/icon/button-arrow.svg"
+            buttonUrl1="/timeline"
             buttonText2="SEE KEY FIGURES"
             buttonIcon2="/static/icon/button-arrow.svg"
+            buttonUrl2="/key-figures"
           />
         </div>
       </section>
@@ -59,6 +62,7 @@ const HomePage = () => {
             text="By combining archival materials from DPLA’s network of over 4,000 institutions, newly digitized content and partnerships, the collection seeks to engage students, educators and researchers in exploration and dialogue around this important, yet overlooked chapter in our nation’s history."
             buttonText1="SEARCH ALL COLLECTIONS"
             buttonIcon1="/static/icon/button-arrow.svg"
+            buttonUrl1="/search"
           />
         </div>
         <div className={scss.section_3__div_right}>
