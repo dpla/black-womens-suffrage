@@ -6,7 +6,7 @@ import scss from "./HarmfulLanguageStatementPage.module.scss"
 const HarmfulLanguageStatementPage = () => {
     const title = "HARMFUL LANGUAGE DISCLAIMER",
         text = "DPLA's statement on potentially harmful content.",
-        graphic = "/static/graphic/";
+        graphic = "/static/graphic/hls-page/hls-graphic-hero.png";
 
 
     return (
@@ -20,7 +20,7 @@ const HarmfulLanguageStatementPage = () => {
                     <p>Libraries and archives collect materials from different cultures and time periods to preserve and make available the historical record. As a result, library materials, such as those presented here, may reflect racist and misogynoir views that may be harmful and difficult to view.</p>
                     <p>The content featured in this collection explores linkages between Black women’s suffrage and other social causes of the nineteenth and early twentieth centuries (anti-slavery, anti-lynching, education reform and civil rights) as well as racism within the Suffrage Movement. These materials are presented here to recognize and celebrate the important contributions of Black women and their resiliency in the face of ongoing racism and exclusion.</p>
                 </div>
-                <img src="/static/graphic/harmful-language-statement-page/harmful-language-statement-graphic-body-1.svg"/>
+                <img src={"/static/graphic/hls-page/hls-graphic-body-1.png"}/>
             </div>
 
             <div className={`site-max-width container large_page_section ${scss.harmful__faq}`}>
