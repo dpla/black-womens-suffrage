@@ -2,8 +2,8 @@ import React from "react";
 
 import css from "./Accordion.module.scss";
 
-const addIcon = "/static/assets/dpla-icons/add.svg";
-const subtractIcon = "/static/assets/dpla-icons/subtract.svg";
+const addIcon = "/static/dpla-icons/add.svg";
+const subtractIcon = "/static/dpla-icons/subtract.svg";
 
 class Accordion extends React.Component {
   componentWillMount() {
