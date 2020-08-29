@@ -33,30 +33,32 @@ class Navbar extends Component {
             </Link>
           </div>
 
-          <div className={scss.nav__links}>
+          <ul className={scss.nav__links}>
+            <li>
             <Link href="/about">
               <a>About</a>
-            </Link>
+            </Link></li>
 
-            <Link href="/timeline">
+            <li><Link href="/timeline">
               <a>Timeline</a>
-            </Link>
+            </Link></li>
 
-            <Link href="/key-figures">
+            <li><Link href="/key-figures">
               <a>Key Figures</a>
-            </Link>
+            </Link></li>
 
-            <Link href="/collections">
+            <li><Link href="/collections">
               <a>Collections</a>
-            </Link>
+            </Link></li>
 
-            <Link href="/partners">
+            <li><Link href="/partners">
               <a>Partners</a>
-            </Link>
-
-            <a href="https://dp.la" target="_blank">Visit DPLA</a>
-            <img src={"/static/icon/search/search-bar.svg"} alt="search-bar" id={scss.searchbar} onClick={this.triggerSearchbar} />
-          </div>
+            </Link></li>
+          <li><div className={scss.divider}/></li>
+          <li><a href="https://dp.la" target="_blank">Visit DPLA</a></li>
+          <li><div className={scss.divider}/></li>
+          <li><img src={"/static/icon/search/search-bar.svg"} alt="Search Bar" className={scss.searchIcon} onClick={this.triggerSearchbar} /></li>
+          </ul>
         </nav>
 
         {this.state.showSearchbar &&
