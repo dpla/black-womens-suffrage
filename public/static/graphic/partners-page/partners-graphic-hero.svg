@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="491px" height="328px" viewBox="0 0 491 328" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>graphic/partners/partners-graphic-hero</title>
+    <g id="DPLA" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="6.0-Partners" transform="translate(-950.000000, -75.000000)">
+            <g id="hero" transform="translate(0.000000, 75.000000)">
+                <g id="graphic/partners/partners-graphic-hero" transform="translate(950.000000, 0.000000)">
+                    <path d="M163.5,81.75 C163.5,126.899357 126.899357,163.5 81.75,163.5 C36.6006429,163.5 0,126.899357 0,81.75 C0,36.6006429 36.6006429,0 81.75,0 C126.899357,0 163.5,36.6006429 163.5,81.75" id="Fill-1" fill="#FFD2D2"></path>
+                    <path d="M490.5,81.75 C490.5,126.899357 453.899357,163.5 408.75,163.5 C363.600643,163.5 327,126.899357 327,81.75 C327,36.6006429 363.600643,0 408.75,0 C453.899357,0 490.5,36.6006429 490.5,81.75" id="Fill-1-Copy" fill="#EC5938"></path>
+                    <path d="M327.5,81.75 C327.5,126.899357 290.899357,163.5 245.75,163.5 C200.600643,163.5 164,126.899357 164,81.75 C164,36.6006429 200.600643,0 245.75,0 C290.899357,0 327.5,36.6006429 327.5,81.75" id="Fill-1-Copy" fill="#F18787"></path>
+                    <path d="M490.5,164 L490.5,327.5 C400.201286,327.5 327,254.298714 327,164 L490.5,164 Z" id="Fill-21-Copy" fill="#4E4294" transform="translate(408.750000, 245.750000) scale(-1, 1) rotate(180.000000) translate(-408.750000, -245.750000) "></path>
+                    <path d="M327.5,164 L327.5,327.5 C237.201286,327.5 164,254.298714 164,164 L327.5,164 Z" id="Fill-21-Copy" fill="#EC5938" transform="translate(245.750000, 245.750000) scale(-1, 1) rotate(180.000000) translate(-245.750000, -245.750000) "></path>
+                    <path d="M163.5,164 L163.5,327.5 C73.2012857,327.5 0,254.298714 0,164 L163.5,164 Z" id="Fill-21-Copy-2" fill="#8B2D9B" transform="translate(81.750000, 245.750000) scale(-1, 1) rotate(180.000000) translate(-81.750000, -245.750000) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
