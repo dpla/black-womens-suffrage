@@ -11,7 +11,7 @@ $borderColor: rgba(0, 0, 0, 0.75);
 
 :global select {
   appearance: none;
-  background: url(/static/assets/chevron-thick-black-down.svg) no-repeat white;
+  background: url("/public/static/dpla-icons/chevron-thick-black-down.svg") no-repeat white;
   background-position: calc(100% - 0.5rem) center;
   background-size: 0.9em;
   border: 0.075rem solid $formLabelColor;

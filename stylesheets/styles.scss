@@ -1,11 +1,11 @@
 @import "stylesheets/typography";
 
 
-$fuschia: #bd1187;
+$fuschia: purple; // come on, you know it's true
 
 $theme-dark-color: #000; //#1f1f1f;
 $theme-link-color: $fuschia;
-$theme-main-color: desaturate(lighten($fuschia, 55%), 75%);
+$theme-main-color: white; //desaturate(lighten($fuschia, 55%), 75%);
 $theme-background-color: lighten($theme-main-color, 5%);
 $theme-colder-tint: rgb(245, 245, 245);
 $theme-warmer-tint: lighten($theme-main-color, 30%); //good
