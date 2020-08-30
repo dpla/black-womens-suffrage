@@ -15,7 +15,7 @@ function PartnersPage() {
     return (
         <>
             <PageBanner title={title} text={text} graphic={graphic}/>
-            <div className={`site-max-width container large_page_section ${scss.partners__wrapper}`}>
+            <div className={`site-max-width container ${scss.partners__wrapper}`}>
                 <p>Digital Public Library of America (DPLA) is proud to partner with the following institutions in the
                     creation of a national digital collection that highlights the roles and experiences of Black women
                     in

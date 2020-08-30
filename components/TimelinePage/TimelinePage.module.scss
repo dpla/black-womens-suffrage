@@ -7,7 +7,8 @@
 
   .timeline__left {
     display: none;
-    margin: auto;
+    margin: 0;
+
   
     ul {
       list-style: none;
@@ -245,7 +246,7 @@
       display: block;
   
       ul {
-        padding-left: 0;
+        padding-left: 3em;
   
         li {
           padding: .5em;

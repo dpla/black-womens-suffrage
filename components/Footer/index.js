@@ -10,13 +10,6 @@ class Footer extends React.Component {
             <div className={scss.footerWrapper}>
                 <div className={scss.bevel}/>
                 <div className={scss.logoNavRow}>
-                    <ul className={scss.footer_nav}>
-                        <li><Link href={"/about"}><a>About</a></Link></li>
-                        <li><Link href={"/timeline"}><a>Timeline</a></Link></li>
-                        <li><Link href={"/key-figures"}><a>Key Figures</a></Link></li>
-                        <li><Link href={"/collections"}><a>Collections</a></Link></li>
-                        <li><Link href={"/partners"}><a>Partners</a></Link></li>
-                    </ul>
                     <div className={scss.bws__logo}>
                         <Link href={"/"}>
                             <a>
@@ -25,7 +18,13 @@ class Footer extends React.Component {
                             </a>
                         </Link>
                     </div>
-
+                    <ul className={scss.footer_nav}>
+                        <li><Link href={"/about"}><a>About</a></Link></li>
+                        <li><Link href={"/timeline"}><a>Timeline</a></Link></li>
+                        <li><Link href={"/key-figures"}><a>Key Figures</a></Link></li>
+                        <li><Link href={"/collections"}><a>Collections</a></Link></li>
+                        <li><Link href={"/partners"}><a>Partners</a></Link></li>
+                    </ul>
                     <div className={scss.dpla__logo}>
                         <a href={"https://dp.la"} target={"_blank"}><img src={"/static/logo/dpla-logo-footer.png"} alt={"DPLA Logo"}/></a>
                     </div>
