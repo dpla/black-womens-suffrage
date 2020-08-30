@@ -75,6 +75,7 @@ HomeHero {
    position: relative;
    max-width: 1440px;
    margin: auto;
+   background-color: white !important;
  }
 
 .section__default {
@@ -121,7 +122,6 @@ HomeHero {
   margin-bottom: 1.875rem;
   margin-top: 0;
 }
-
 // .banner__text_large {
 //   height: 192px;
 //   width: 455px;
