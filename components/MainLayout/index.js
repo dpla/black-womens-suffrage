@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar"
 import MobileNavbar from "./components/MobileNavbar"
 import Helmet from "react-helmet"
 import GoogleAnalytics from "components/shared/GoogleAnalytics";
+import Footer from "../Footer";
 
 class MainLayout extends React.Component {
 
@@ -23,8 +24,7 @@ class MainLayout extends React.Component {
         <Navbar />
         <MobileNavbar />
         {children}
-
-        {/* <Footer /> */}
+        <Footer/>
         </GoogleAnalytics>
       </div>
     );
