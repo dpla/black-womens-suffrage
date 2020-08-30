@@ -1,0 +1,27 @@
+@import "stylesheets/variables";
+
+.partners__wrapper {
+
+  margin-top: 22px;
+  width: 860px;
+
+  & p, ul {
+    color: #282830;
+    font-family: $inter;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.35px;
+    line-height: 28px;
+    padding-top: 28px;
+
+  }
+
+  & ul {
+    list-style: disc;
+    padding-left: 28px;
+  }
+
+  & h2 {
+    padding-top: 34px;
+  }
+}
