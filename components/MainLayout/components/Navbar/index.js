@@ -24,6 +24,7 @@ class Navbar extends Component {
 
     return (
       <>
+
         <nav className={scss.navbar}>
           <div className={scss.nav__logo}>
             <Link href="/">
