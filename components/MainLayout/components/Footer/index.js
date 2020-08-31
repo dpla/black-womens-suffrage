@@ -38,21 +38,21 @@ const Footer = () => {
 
         <img src="static/logo/dpla-logo-footer.png" />
       </section>
-
+ 
       <section className={scss.footer__divider}></section>
+
+      <nav className={scss.footer__links_small}>
+        <a href="http://dp.la/" className={scss.footer__a}> Visit DPLA</a>
+
+        <Link href="/harmful-language-disclaimer">
+          <a>Harmful Language Disclaimer</a>
+        </Link>
+      </nav>
 
       <section className={scss.footer__section_bottom}>
         <p className={scss.footer__p}>The copyright status of items in DPLA's Black Women's Suffrage Collection varies. DPLA links to a wide variety of different materials: many are in the public domain,
         while others are under rights restrictions but nonetheless publicly viewable. For individual rights information about an item, please check the “Rights” field in the metadata,
-or follow the link to the digital object on the content provider’s website for more information.</p>
-
-        <nav className={scss.footer__links_small}>
-          <a href="http://dp.la/" className={scss.footer__a}> Visit DPLA</a>
-
-          <Link href="/harmful-language-disclaimer">
-            <a>Harmful Language Disclaimer</a>
-          </Link>
-        </nav>
+        or follow the link to the digital object on the content provider’s website for more information.</p>        
       </section>
 
       </div>
