@@ -93,3 +93,20 @@
     }
   }
 }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and ($md-viewport) { 
+  .footer {
+    .footer__links {
+      width: 90%;
+    }
+
+    .footer__links_small {
+      justify-content: center;
+
+      a {
+        padding-left: .5em;
+      }
+    }
+  }
+}

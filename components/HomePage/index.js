@@ -5,6 +5,8 @@ import StyledTextWithButtons from "components/shared/StyledTextWithButtons"
 import SponsorPreFooter from "components/shared/SponsorPreFooter"
 import Link from "next/link"
 
+const Offlink = ({ url, image }) => <a href={url} target={"_blank"}>{image}</a>
+
 const HomePage = () => {
   return (
     <>
@@ -22,15 +24,17 @@ const HomePage = () => {
       </section>
 
       <section className={`section__default ${scss.home__section_1}`}>
-        <StyledTextWithButtons
-          title="BLACK WOMEN’S SUFFRAGE PORTAL"
-          subtitle="The Black Women’s Suffrage Digital Collection is a collaborative project to provide digital access to materials documenting the roles and experiences of Black Women in the Women’s Suffrage Movement and, more broadly, women’s rights, voting rights,
+        <div className={scss.home__section_1__left}>
+          <StyledTextWithButtons
+            title="BLACK WOMEN’S SUFFRAGE PORTAL"
+            subtitle="The Black Women’s Suffrage Digital Collection is a collaborative project to provide digital access to materials documenting the roles and experiences of Black Women in the Women’s Suffrage Movement and, more broadly, women’s rights, voting rights,
         and civic activism between the 1850s and 1960."
-          text="The materials in this collection include photographs, correspondence, speeches, event programs, publications, oral histories, and other artifacts."
-          buttonText1="SEARCH THE COLLECTION"
-          buttonIcon1="/static/icon/button-arrow.svg"
-          buttonUrl1="/search"
-        />
+            text="The materials in this collection include photographs, correspondence, speeches, event programs, publications, oral histories, and other artifacts."
+            buttonText1="SEARCH THE COLLECTION"
+            buttonIcon1="/static/icon/button-arrow.svg"
+            buttonUrl1="/search"
+          />
+        </div>
         <div className={scss.home__section_1__right}>
           <img src={"/static/graphic/home-page/home-graphic-body-1-mobile.png"} />
         </div>
@@ -105,17 +109,20 @@ const HomePage = () => {
           />
         </div>
         <div className={scss.section_5__div_right}>
-          {/* <img src={"/static/image/home-page/home-image-body-2-mobile.png"} /> */}
-
           <div className={scss.section_5__div_right_imgs}>
-            <img src="/static/graphic/home-page/partner/home-graphic-partner-1-amistad.png" />
-            <img src="/static/graphic/home-page/partner/home-graphic-partner-2-auc-woodriff.png" />
-            <img src="/static/graphic/home-page/partner/home-graphic-partner-3-scl.png" />
-            <img src="/static/graphic/home-page/partner/home-graphic-partner-4-charlotte-mecklenberg.png" />
-            <img src="/static/graphic/home-page/partner/home-graphic-partner-5-avery.png" />
-            <img src="/static/graphic/home-page/partner/home-graphic-partner-6-tuskegee.png" />
+            <Offlink url={"https://www.amistadresearchcenter.org/"}
+              image={<img src="/static/graphic/home-page/partner/home-graphic-partner-1-amistad.png" />} />
+            <Offlink url={"https://www.auctr.edu/"}
+              image={<img src="/static/graphic/home-page/partner/home-graphic-partner-2-auc-woodriff.png" />} />
+            <Offlink url={"http://www.socallib.org/"} 
+              image={<img src="/static/graphic/home-page/partner/home-graphic-partner-3-scl.png" />} />
+            <Offlink url={"https://cmlibrary.org"} 
+              image={<img src="/static/graphic/home-page/partner/home-graphic-partner-4-charlotte-mecklenberg.png" />} />
+            <Offlink url={"https://avery.cofc.edu/"}
+              image={<img src="/static/graphic/home-page/partner/home-graphic-partner-5-avery.png" />} />
+            <Offlink url={"https://www.tuskegee.edu/libraries"}
+              image={<img src="/static/graphic/home-page/partner/home-graphic-partner-6-tuskegee.png" />} />
           </div>
-          
         </div>
       </section>
 

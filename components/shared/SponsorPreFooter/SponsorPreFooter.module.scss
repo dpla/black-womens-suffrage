@@ -46,3 +46,24 @@
     left: 5%;
   }
 }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and ($md-viewport) {
+  .pre_footer {
+    height: 25em;
+    .pre_footer_container {
+      .pre_footer_pink {
+        height: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .pre_footer_button {
+        position: absolute;
+        top: 80%;
+        left: 30%;
+      }
+    }
+  }
+}
