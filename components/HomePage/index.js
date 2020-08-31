@@ -119,11 +119,11 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* <SponsorPreFooter
+      <SponsorPreFooter
         text="The grant for this collection is made possible through funding from "
         sponsor="Pivotal Ventures, A Melinda Gates Company."
         buttonText="SEARCH THE COLLECTION"
-        buttonIcon="/static/icon/button-arrow.svg" /> */}
+        buttonIcon="/static/icon/button-arrow.svg" />
     </>
   )
 };
