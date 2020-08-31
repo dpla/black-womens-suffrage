@@ -2,13 +2,13 @@
 
 // Mobile
 @media only screen and (max-width: 768px) {
-  .container {
+  .section__container {
     width: auto;
   }
 }
 
 @media only screen and (min-width: 769px) {
-  .container {
+  .section__container {
     width: 32rem;
     margin: auto;
   }
@@ -24,7 +24,7 @@
 }
 
 .section__text_large {
-  color: $blueGem;
+  color: #4E4294;
   font-size: 20px;
   font-weight: 800;
   letter-spacing: 0.5px;

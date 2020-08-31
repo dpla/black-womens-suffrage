@@ -1,6 +1,7 @@
+// BWS Colors
+
 $white: #fff;
 $black: #000;
-
 $wePeep: #FEDFDF;
 $lightCoral: #F18787;
 $cinnabar: #EC5938;
@@ -8,7 +9,9 @@ $blueGem: #4E4294;
 $jaguar: #282830;
 $nyPink: #E27979;
 $geraldine: #E77878;
+$vividViolet: #8B2D9B;
 
+// DPLA Colors
 
 $riceCakeWhite: #ece9da;
 $merinoWhite: #fbf8f4;
@@ -90,5 +93,3 @@ $featureBackgroundColor: #cbe3e8 !default;
 $footerLightColor: $ebonyClayBlue !default;
 $footerDarkColor: $minuitBlue !default;
 $heroBackgroundColor: $dplaHeroBlue !default;
-
-@import "styles"; // overrides the values above with ./themes/[LOCAL_ID.theme]/theme

@@ -49,29 +49,16 @@
   }
 }
 
-// Section 1 - Search the collection
+// Section 1 - Black Women's Suffrage Portal
 
 .home__section_1 {
-  // height: 32rem;
   background: $white;
   display: flex;
   flex-direction: column;
 
-  & .collection__left {
-    width: 35rem;
-
-    & .collection__button {
-      margin-top: 1.5rem;
-    }
-  }
-
   .home__section_1__right {
-    width: 50%;
-    margin: auto;
-  }
-
-  .home__section_1__img {
-    background: url("/static/graphic/home-page/home-graphic-body-1.png");
+    margin: 0 auto;
+    padding: 3em 0;
   }
 }
 
@@ -86,45 +73,107 @@
   border-radius: 0 9.375rem 0 0;
 
   .section_2__div_left {
+    // opacity: 0.5;
+    // background-color: #4E4294;
 
     img {
-      width: 100%;
+      // background-color: #4E4294;
     }
   }
 
-  & .section_2__div_right {
+  .section_2__div_right {
     margin: auto;
-    padding: 1em;
-    // width: 100%;
+    padding: 3em 1em;
+    
   }
 }
 
 // Section 3 - Digital Collection
 
 .home__section_3 {
-  display: flex;
-  justify-content: space-between;
-  margin: 6rem;
+  background-color: #F3F3F3;
 
-  & .section_3__div_right {
-
-  }
-
-  & .section_3__div_right {
+  .home__section_3_content {
+    background-color: $blueGem;
     display: flex;
-    & img {
-      margin: auto;
-    }
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 5em 0;
+    border-radius: 0 0 0 150px;
+  }
+  p {
+    width: 90%;
+    color: #FFF7F7;
+    font-family: $libre;
+    font-size: 1.75rem;
+    font-weight: $bold;
+    letter-spacing: 0.7px;
+    line-height: 2.938rem;
+    text-align: center;
+    padding-top: 1em;
   }
 }
 
 // Section 4 - Carousel
 
 .home__section_4 {
+  background: #F3F3F3;
   display: flex;
-  justify-content: space-between;
-  margin: 6rem;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5em 0;
+
+  .home__section_4_tile {
+    margin: 2em 1em;
+    
+    .home__section_4_tile_title {
+      height: 103px;
+      border-radius: 0 0 0 29.5px;
+      background-color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .home__section_4_tile_img {
+      width: 100%;
+    }
+
+    h3 {
+      color: $jaguar;
+      font-family: $inter;
+      font-weight: $semiBold;
+      padding: .5em;
+    }
+
+    p {
+      color: #BBBBBB;
+      font-family: $inter;
+      font-weight: $xBold;
+      letter-spacing: 0.75px;
+      padding: .5em;
+    }
+
+    a {
+      color: $vividViolet;
+      font-family: $inter;
+      font-weight: $xBold;
+      letter-spacing: 0.75px;
+      padding: .5em;
+
+      img {
+        padding-left: .5em;
+        height: .75em;
+      }
+    }
+  }
+
+
+  
 }
 
 

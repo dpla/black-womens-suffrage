@@ -3,6 +3,7 @@ import scss from "../HomePage/HomePage.module.scss"
 import RoundButton from "components/shared/RoundButton"
 import StyledTextWithButtons from "components/shared/StyledTextWithButtons"
 import SponsorPreFooter from "components/shared/SponsorPreFooter"
+import Link from "next/link"
 
 const HomePage = () => {
   return (
@@ -31,7 +32,7 @@ const HomePage = () => {
           buttonUrl1="/search"
         />
         <div className={scss.home__section_1__right}>
-          <div className={scss.home__section_1__img}></div>
+          <img src={"/static/graphic/home-page/home-graphic-body-1-mobile.png"} />
         </div>
       </section>
 
@@ -53,21 +54,50 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* <section className={scss.home__section_3}>
-        <div className={scss.section_3__div_leftt}>
-          <StyledTextWithButtons
-            title="DIGITAL COLLECTION"
-            subtitle="Loreum ipsum"
-            text="By combining archival materials from DPLA’s network of over 4,000 institutions, newly digitized content and partnerships, the collection seeks to engage students, educators and researchers in exploration and dialogue around this important, yet overlooked chapter in our nation’s history."
-            buttonText1="SEARCH ALL COLLECTIONS"
-            buttonIcon1="/static/icon/button-arrow.svg"
-            buttonUrl1="/search"
-          />
+      <section className={scss.home__section_3}>
+
+        <div className={scss.home__section_3_content}>
+          <h3 className="title">DIGITAL COLLECTION</h3>
+          <p>By combining archival materials from DPLA’s network of over 4,000 institutions, newly digitized content and partnerships, the collection seeks to engage students, educators and researchers in exploration and dialogue around this important, yet overlooked chapter in our nation’s history.</p>
         </div>
-        <div className={scss.section_3__div_right}>
-          <img src="/static/graphic/home-page/home-graphic-body-2.png"/>
+      </section>
+
+      <section className={scss.home__section_4}>
+        <h3 className="title">FEATURED COLLECTIONS</h3>
+
+        <div className={scss.home__section_4_collections}>
+          <div className={scss.home__section_4_tile}>
+            <img className={scss.home__section_4_tile_img} src="/static/image/home-page/home-carousel-ida.png" />
+            <div className={scss.home__section_4_tile_title}>
+              <h3>Ida B. Wells Barnett Papers</h3>
+
+              <Link href="/collections/ida-b-wells">
+                <a>
+                  VIEW COLLECTION
+                  <img src="/static/icon/button-arrow-purple.svg" />
+                </a>
+              </Link>
+            </div>
+          </div>
+          <div className={scss.home__section_4_tile}>
+            <img className={scss.home__section_4_tile_img} src="/static/image/home-page/home-carousel-mary.png" />
+            <div className={scss.home__section_4_tile_title}>
+              <h3>Mary Church Terrell Exhibit</h3>
+              <p>COMING SOON</p>
+            </div>
+          </div>
+          <div className={scss.home__section_4_tile}>
+            <img className={scss.home__section_4_tile_img} src="/static/image/home-page/home-carousel-charlotta.png" />
+            <div className={scss.home__section_4_tile_title}>
+              <h3>Charlotta Bass Papers</h3>
+              <p>COMING SOON</p>
+            </div>
+          </div>
         </div>
-      </section> */}
+
+        <RoundButton text="SEE ALL COLLECTIONS" icon={"/static/icon/button-arrow.svg"} url={"/collections"} />
+
+      </section>
 
       {/* <SponsorPreFooter
         text="The grant for this collection is made possible through funding from "
