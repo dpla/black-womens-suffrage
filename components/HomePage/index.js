@@ -55,7 +55,6 @@ const HomePage = () => {
       </section>
 
       <section className={scss.home__section_3}>
-
         <div className={scss.home__section_3_content}>
           <h3 className="title">DIGITAL COLLECTION</h3>
           <p>By combining archival materials from DPLA’s network of over 4,000 institutions, newly digitized content and partnerships, the collection seeks to engage students, educators and researchers in exploration and dialogue around this important, yet overlooked chapter in our nation’s history.</p>
@@ -64,13 +63,11 @@ const HomePage = () => {
 
       <section className={scss.home__section_4}>
         <h3 className="title">FEATURED COLLECTIONS</h3>
-
         <div className={scss.home__section_4_collections}>
           <div className={scss.home__section_4_tile}>
             <img className={scss.home__section_4_tile_img} src="/static/image/home-page/home-carousel-ida.png" />
             <div className={scss.home__section_4_tile_title}>
               <h3>Ida B. Wells Barnett Papers</h3>
-
               <Link href="/collections/ida-b-wells">
                 <a>
                   VIEW COLLECTION
@@ -94,9 +91,32 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-
         <RoundButton text="SEE ALL COLLECTIONS" icon={"/static/icon/button-arrow.svg"} url={"/collections"} />
+      </section>
 
+      <section className={scss.home__section_5}>
+        <div className={scss.section_5__div_left}>
+          <StyledTextWithButtons
+            title="PARTNERS"
+            subtitle="DPLA established new partnerships with five libraries and archives to collaborate on the creation of a national digital collection that highlights the roles and experiences of Black women in the women’s suffrage movement, as well as Black women’s history of activism, as part of the centennial celebration of the passage of the 19th Amendment."
+            buttonText1="LEARN MORE ABOUT PARTNERS"
+            buttonIcon1="/static/icon/button-arrow.svg"
+            buttonUrl1="/partners"
+          />
+        </div>
+        <div className={scss.section_5__div_right}>
+          {/* <img src={"/static/image/home-page/home-image-body-2-mobile.png"} /> */}
+
+          <div className={scss.section_5__div_right_imgs}>
+            <img src="/static/graphic/home-page/partner/home-graphic-partner-1-amistad.png" />
+            <img src="/static/graphic/home-page/partner/home-graphic-partner-2-auc-woodriff.png" />
+            <img src="/static/graphic/home-page/partner/home-graphic-partner-3-scl.png" />
+            <img src="/static/graphic/home-page/partner/home-graphic-partner-4-charlotte-mecklenberg.png" />
+            <img src="/static/graphic/home-page/partner/home-graphic-partner-5-avery.png" />
+            <img src="/static/graphic/home-page/partner/home-graphic-partner-6-tuskegee.png" />
+          </div>
+          
+        </div>
       </section>
 
       {/* <SponsorPreFooter

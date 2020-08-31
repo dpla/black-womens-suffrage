@@ -72,19 +72,9 @@
   margin: 0;
   border-radius: 0 9.375rem 0 0;
 
-  .section_2__div_left {
-    // opacity: 0.5;
-    // background-color: #4E4294;
-
-    img {
-      // background-color: #4E4294;
-    }
-  }
-
   .section_2__div_right {
     margin: auto;
-    padding: 3em 1em;
-    
+    padding: 3em 1em;    
   }
 }
 
@@ -116,7 +106,7 @@
   }
 }
 
-// Section 4 - Carousel
+// Section 4 - Collections
 
 .home__section_4 {
   background: #F3F3F3;
@@ -170,10 +160,38 @@
         height: .75em;
       }
     }
+  } 
+}
+
+// Section 5 - Partners 
+
+.home__section_5 {
+  background-color: #F3F3F3;
+
+  .section_5__div_left {
+    border-radius: 115px 0 0 0;
+    background-color: rgba(245,240,238,0.8);
+    margin: auto;
+    padding: 5em 1em;
   }
 
+  .section_5__div_right {
+    background-color: $blueGem;
+    background-image: url("/static/image/home-page/home-image-body-2-mobile.png");
 
-  
+    .section_5__div_right_imgs {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-top: 25em;
+
+      img {
+        width: 45%;
+        margin: .25em;
+      }
+    }
+  }
 }
 
 
