@@ -1,3 +1,5 @@
+@import "stylesheets/variables";
+
 .roundButton, .roundButton:visited {
   color: white;
   background: purple;
@@ -17,7 +19,11 @@
   }
 }
 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and ($lg-viewport) {
+  .roundButton, .roundButton:visited {
+    margin-top: 1.5rem;
+    margin-right: 1rem;
+  }
+}
 
-
-// margin-top: 1.5rem;
-// margin-right: 1rem;

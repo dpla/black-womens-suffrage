@@ -40,7 +40,7 @@ const Footer = () => {
         </section>
 
         <section className={scss.footer__divider}></section>
-
+        <div className={scss.footer__links_small_container}>
           <nav className={scss.footer__links_small}>
             <a href="http://dp.la/" className={scss.footer__a}> Visit DPLA</a>
 
@@ -54,8 +54,7 @@ const Footer = () => {
             while others are under rights restrictions but nonetheless publicly viewable. For individual rights information about an item, please check the “Rights” field in the metadata,
         or follow the link to the digital object on the content provider’s website for more information.</p>
           </section>
-
-
+        </div>
       </div>
     </footer>
   )

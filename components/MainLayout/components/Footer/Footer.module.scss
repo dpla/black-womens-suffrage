@@ -110,3 +110,30 @@
     }
   }
 }
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and ($lg-viewport) {
+  .footer {
+    .footer__section_top {
+      flex-direction: row;
+      justify-content: space-between;
+
+      .footer__links {
+        width: 50%;
+        justify-content: space-evenly;
+      }
+    }
+
+    .footer__links_small_container {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      
+      .footer__section_bottom {
+        width: 70%;
+      }
+
+    }
+
+  }
+}
