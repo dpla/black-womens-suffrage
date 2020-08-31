@@ -1,12 +1,14 @@
+@import "stylesheets/variables";
+
 // Mobile
 @media only screen and (max-width: 768px) {
-  .container {
+  .section__container {
     width: auto;
   }
 }
 
 @media only screen and (min-width: 769px) {
-  .container {
+  .section__container {
     width: 32rem;
     margin: auto;
   }
@@ -14,25 +16,29 @@
 
 .title {
   height: 17px;
-  color: #F48C8C;
-  font-size: 14px;
+  color: $nyPink;
   font-weight: 800;
   letter-spacing: 0.75px;
   line-height: 17px;
+  margin: 1em 0;
+  font-size: 1em;
 }
 
 .section__text_large {
-  color: #4E4294;
-  font-size: 20px;
+  color: $blueGem;
+  font-size: 1.25em;
   font-weight: 800;
   letter-spacing: 0.5px;
   line-height: 34px;
+  margin: 1em 0;
+  font-family: $libre;
 }
 
 .section__text_small {
-  color: #282830;
-  font-size: 16px;
-  font-weight: 500;
+  color: $jaguar;
+  font-family: $inter;
+  font-weight: 600;
   letter-spacing: 0.35px;
   line-height: 28px;
+  margin: 1em 0;
 }

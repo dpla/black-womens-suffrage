@@ -5,7 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    color: $bwsPurple;
+    color: #4E4294;
     font-family: $libre;
     font-size: 2em;
     font-weight: $xBold;
@@ -20,7 +20,7 @@
   }
 
   h1:before {
-    background: $medPink;
+    background: $lightCoral;
     height: 2px;
     flex: 1;
     content: '';

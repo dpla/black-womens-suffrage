@@ -1,47 +1,96 @@
 @import "stylesheets/variables";
 
-.pre_footer {
-  height: 35rem;
-  background: $white;
-  border-radius: 0 0 9.375rem 9.375rem;
-  align-items: center;
-  justify-content: center;
-  display: flex;
+.pre_footer__section {
+  background-color: #282830;
+}
 
-  & .pre_footer_container {
-    height: 11.563rem;
-    width: 45rem;
+.pre_footer {
+  height: 30em;
+  background: $white;
+  border-radius: 0 0 115px 115px;
+  padding: 1em;
+
+  .pre_footer_container {
+    width: 100%;
     position: relative;
+    margin-top: 5em;
   }
 
-  & .pre_footer_pink {
-    height: 10rem;
+  .pre_footer_pink {
+    height: 15rem;
     border-radius: 150px 0 150px 0;
     background-color: rgba(254,223,223,0.25);
     display: flex;
     justify-content: center;
     align-items: center;
 
-    & p {
-      height: 3.5rem;
-      width: 31rem;
+    p {
       color: #282830;
       font-size: 1rem;
       font-weight: 500;
       letter-spacing: 0.38px;
       line-height: 1.75rem;
       text-align: center;
+      width: 90%;
     }
 
-    & span {
+    span {
       color: #8B2D9B;
       font-weight: 800;
     }
   }
 
-  & .pre_footer_button {
+  .pre_footer_button {
     position: absolute;
-    top: 60%;
-    left: 30%;
+    top: 80%;
+    left: 5%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and ($md-viewport) {
+  .pre_footer {
+    height: 25em;
+    .pre_footer_container {
+      .pre_footer_pink {
+        height: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .pre_footer_button {
+        position: absolute;
+        top: 80%;
+        left: 30%;
+      }
+    }
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and ($lg-viewport) { 
+  .pre_footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .pre_footer_container {
+      width: 50%;
+      margin: 0;
+
+      .pre_footer_pink {
+        height: 10rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .pre_footer_button {
+        position: absolute;
+        top: 80%;
+        left: 30%;
+      }
+    }
   }
 }
