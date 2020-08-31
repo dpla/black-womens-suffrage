@@ -1,6 +1,6 @@
 import React from "react"
 import Link from "next/link"
-import scss from "components/CollectionComponents/ItemView/ItemView.module.scss"
+import scss from "components/CollectionsPage/ItemView/ItemView.module.scss"
 
 const ItemView = ({ item }) => {
 

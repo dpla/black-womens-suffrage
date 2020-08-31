@@ -1,6 +1,6 @@
 import React from "react"
 import Link from "next/link"
-import scss from "components/CollectionComponents/ItemList/ItemList.module.scss"
+import scss from "components/CollectionsPage/ItemList/ItemList.module.scss"
 import CollectionHeader from "components/CollectionsPage/CollectionHeader"
 
 const ItemList = ({ collection, items }) => {
