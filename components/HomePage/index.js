@@ -8,16 +8,15 @@ const HomePage = () => {
   return (
     <>
       <section className={scss.banner}>
+        <div className={scss.banner__background}></div>
         <div className={scss.banner_left__div}>
-        <p className={scss.banner__text}>Black women’s suffrage.</p>
-            <p className={scss.banner__text}>Thousands of artifacts.</p>
-            <p className={scss.banner__text}>Thousands of stories.</p>
-            <RoundButton text="LEARN MORE" icon={"/static/icon/button-arrow.svg"} url={"/about"} />
+          <p className={scss.banner__text}>Black women’s suffrage.</p>
+          <p className={scss.banner__text}>Thousands of artifacts.</p>
+          <p className={scss.banner__text}>Thousands of stories.</p>
+          <RoundButton text="LEARN MORE" icon={"/static/icon/button-arrow.svg"} url={"/about"} />
         </div>
         <div className={scss.banner_right__div}>
-          {/* <div className={scss.banner_right__section}> */}
-            <img src="/static/graphic/home-page/home-graphic-hero.png" />
-          {/* </div> */}
+          <img src="/static/graphic/home-page/home-graphic-hero.svg" />
         </div>
       </section>
 
@@ -54,7 +53,7 @@ const HomePage = () => {
         </div>
       </section>
 
-      <section className={scss.home__section_3}>
+      {/* <section className={scss.home__section_3}>
         <div className={scss.section_3__div_leftt}>
           <StyledTextWithButtons
             title="DIGITAL COLLECTION"
@@ -68,13 +67,13 @@ const HomePage = () => {
         <div className={scss.section_3__div_right}>
           <img src="/static/graphic/home-page/home-graphic-body-2.png"/>
         </div>
-      </section>
+      </section> */}
 
-      <SponsorPreFooter 
-      text="The grant for this collection is made possible through funding from " 
-      sponsor="Pivotal Ventures, A Melinda Gates Company." 
-      buttonText="SEARCH THE COLLECTION" 
-      buttonIcon="/static/icon/button-arrow.svg"/>
+      {/* <SponsorPreFooter
+        text="The grant for this collection is made possible through funding from "
+        sponsor="Pivotal Ventures, A Melinda Gates Company."
+        buttonText="SEARCH THE COLLECTION"
+        buttonIcon="/static/icon/button-arrow.svg" /> */}
     </>
   )
 };

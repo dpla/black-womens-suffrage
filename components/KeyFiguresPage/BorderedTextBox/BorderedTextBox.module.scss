@@ -1,7 +1,7 @@
 @import "stylesheets/variables";
 
 .bordered_text_box__container {
-  border: 2px solid $lightPink;
+  border: 2px solid $wePeep;
 
   p {
     font-family: $inter;
@@ -14,7 +14,7 @@
   }
 
   p::first-letter {
-    color: $bwsPurple;
+    color: $blueGem;
     font-family: $libre;
     font-size: 3em;
     font-weight: $bold;

@@ -38,7 +38,7 @@
       align-items: center;
       display: flex;
       flex-direction: column;
-      color: $bwsPurple;
+      color: $blueGem;
       font-family: $libre;
       font-size: 26px;
       font-weight: 900;
@@ -53,7 +53,7 @@
 
     .tile__line {
       width: 2px;
-      background-color: $medPink;
+      background-color: $lightCoral;
       height: 100%;
     }
 
@@ -72,7 +72,7 @@
     
     .timeline__a {
       margin: .25em;
-      color: $medPink;
+      color: $lightCoral;
     }
   }
 
@@ -101,7 +101,7 @@
 
     .timeline__title_line {
       width: 2px;
-      background-color: $medPink;
+      background-color: $lightCoral;
       height: 30px;
       margin-left: 30px;
     }
@@ -126,7 +126,7 @@
   
     .pagination__prev {
       border-radius: 29.5px 0 0 0;
-      background-color: $orange;
+      background-color: $cinnabar;
       padding: 1.5em;
       cursor: pointer;
   
@@ -156,7 +156,7 @@
       cursor: pointer;
   
       h5 {
-        color: $medPink;
+        color: $lightCoral;
         font-family: $inter;
         font-size: 14px;
         font-weight: $xBold;
