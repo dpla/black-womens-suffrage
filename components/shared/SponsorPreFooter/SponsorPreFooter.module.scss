@@ -5,17 +5,15 @@
 }
 
 .pre_footer {
-  height: 25em;
+  height: 30em;
   background: $white;
   border-radius: 0 0 115px 115px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
   padding: 1em;
 
   .pre_footer_container {
     width: 100%;
     position: relative;
+    margin-top: 5em;
   }
 
   .pre_footer_pink {
@@ -45,6 +43,6 @@
   .pre_footer_button {
     position: absolute;
     top: 80%;
-    left: 10%;
+    left: 5%;
   }
 }
