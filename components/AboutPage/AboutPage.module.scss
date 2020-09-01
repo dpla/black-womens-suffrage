@@ -104,7 +104,11 @@
   }
 }
 
-.about__section_4 {
+.about__section_4_desktop {
+  display: none;
+}
+
+.about__section_4_mobile {
   background-color: $white;
   display: flex;
   align-items: center;
@@ -206,10 +210,6 @@
       margin: 3em 0;
     }
   }
-  // img:nth-of-type(2) {
-  //   position: absolute;
-  //   bottom: -10%;
-  // }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -309,17 +309,81 @@
     }
   }
 
-  .about__section_4 {
-    .about__section_4_text {
-      width: 50%;
+  .about__section_4_mobile {
+    display: none;
+  }
+  
+  .about__section_4_desktop {
+    background-color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 3em;
 
-      .about__section_4_text_bold {
-        line-height: 30px;
-        font-size: 2em;
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .about__section_4_div {
+      position: relative;
+      text-align: center;
+      
+      img {
+        padding: 3em 1em 1em 1em;
       }
 
+      .about__section_4_header {
+        position: absolute;
+        top: 55%;
+
+        .about__section_4_text_bold {
+          color: $cinnabar;
+          font-family: $libre;
+          font-weight: bold;
+          letter-spacing: 0.7px;
+          text-align: center;
+          font-size: 2em;
+          margin: .5em 0;
+          line-height: 47px;
+        }
+      }
+    }
+
+    .about__section_4_text {
+      margin: 0 1em;
+      width: 50%;
+
       .about__section_4_text_p {
+        color: $jaguar;
+        font-family: $inter;
+        font-size: 1em;
+        font-weight: 500;
+        letter-spacing: 0.35px;
+        line-height: 1.75rem;
+        text-align: center;
         margin-top: 2em;
+      }
+    }
+  }
+
+  .about__section_5 {
+    .about__section_5_content {
+      display: flex;
+      padding: 3em;
+
+      .about__section_5_left {
+        width: 50%;
+      }
+
+      .about__section_5_right {
+        width: 50%;
+
+        .about__section_5_img {
+          width: 80%;
+        }
       }
     }
   }

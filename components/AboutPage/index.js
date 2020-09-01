@@ -53,7 +53,7 @@ const AboutPage = () => {
         </div>
       </div>
 
-      <div className={`${scss.about__section_4}`}>
+      <div className={scss.about__section_4_mobile}>
         <div className={scss.about__section_4_div}>
           <img src="/static/graphic/about-page/mobile/about-graphic-body-3-mobile.svg" />
           <h3 className="title">DIGITAL PUBLIC LIBRARY OF AMERICA (DPLA)</h3>
@@ -65,9 +65,23 @@ const AboutPage = () => {
         </div>
       </div>
 
+      <div className={scss.about__section_4_desktop}>
+        <div className={scss.about__section_4_div}>
+          <img src="/static/graphic/about-page/about-graphic-body-3.svg" />
+
+          <div className={scss.about__section_4_header}>
+            <h3 className="title">DIGITAL PUBLIC LIBRARY OF AMERICA (DPLA)</h3>
+            <p className={scss.about__section_4_text_bold}>DPLA connects people to the riches held within America’s libraries, archives, museums, and other cultural heritage institutions.</p>
+          </div>
+        </div>
+
+        <div className={scss.about__section_4_text}>
+          <p className={scss.about__section_4_text_p}>The cultural institutions participating in DPLA represent the richness and diversity of America itself, from the smallest local history museum to our nation’s largest cultural institutions.</p>
+        </div>
+      </div>
+
       <div className={scss.about__section_5}>
         <div className={scss.about__section_5_content}>
-
           <div className={scss.about__section_5_left}>
             <h3>DPLA’S STATEMENT ON POTENTIALLY HARMFUL CONTENT</h3>
             <h2>Curating the Black Women’s Suffrage Digital Collection</h2>
@@ -80,8 +94,6 @@ const AboutPage = () => {
             <img className={scss.about__section_5_img} src="/static/graphic/about-page/about-graphic-body-4.svg" />
           </div>
         </div>
-
-        {/* <img src="/static/graphic/about-page/about-graphic-body-5.svg" />     */}
       </div>
 
       <SponsorPreFooter
