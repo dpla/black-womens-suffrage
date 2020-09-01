@@ -1,6 +1,6 @@
 import React from "react"
 import Link from "next/link"
-import scss from "components/CollectionComponents/ItemView/ItemView.module.scss"
+import scss from "./ItemView.module.scss"
 import PDFViewer from "../PDFViewer";
 
 const ItemView = ({ item }) => {
