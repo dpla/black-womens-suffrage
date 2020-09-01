@@ -24,7 +24,7 @@ class MainLayout extends React.Component {
         <Navbar />
         <MobileNavbar />
         {children}
-        {/* <Footer/> */}
+        <Footer/>
         </GoogleAnalytics>
       </div>
     );
