@@ -55,7 +55,24 @@ const CollectionsPage = () => {
 
         <div className={scss.pss__tile_container}>
 
-          { primarySourceSets.map((pss) => {
+          { primarySourceSets.slice(0, 3).map((pss) => {
+            
+            return (
+              <a href={ pss.href } target="_blank">
+                <div className={scss.pss__tile}>
+                  <img src={ pss.image } />
+                  <h2>{ pss.title }</h2>
+                  <h3>{ pss.subtitle }</h3>
+                </div>
+              </a>
+            )
+          })}
+
+        </div>
+
+        <div className={scss.pss__tile_container}>
+
+          { primarySourceSets.slice(3, 6).map((pss) => {
             
             return (
               <a href={ pss.href } target="_blank">
