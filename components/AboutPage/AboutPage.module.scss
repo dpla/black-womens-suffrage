@@ -35,61 +35,58 @@
 
 
 .about__section_2 {
-  height: 32rem;
-  border-radius: 150px 0 0 0;
-  background-color: #4E4294;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-  align-items: center;
-
-  & p {
-    height: 15rem;
-    width: 55%;
-    color: #FFF7F7;
-    font-family: $libre;
-    font-size: 1.75rem;
-    font-weight: bold;
-    letter-spacing: 0.7px;
-    line-height: 2.938rem;
+    background-color: $blueGem;
+    display: flex;
+    justify-content: center;
     text-align: center;
-  }
+    flex-direction: column;
+    align-items: center;
+    padding: 5em 0;
+    border-radius: 115px 0 0 0;
+
+    h3 {
+      width: 80%;
+    }
+
+    p {
+      width: 90%;
+      color: #FFF7F7;
+      font-family: $libre;
+      font-size: 1.75rem;
+      font-weight: $bold;
+      letter-spacing: 0.7px;
+      line-height: 2.938rem;
+      text-align: center;
+      padding-top: 1em;
+    }
 }
 
 .about__section_3 {
-  background-color: rgba(254,223,223,0.35);
+  background-color: rgba(245,240,238,0.8);
 
-  & .about__section_3_left {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-
-    & .about__section_3_left_bold {
-      // height: 235px;
-      // width: 460px;
-      color: $lightCoral;
+  .about__section_3_left {
+    padding: 3em 1em;
+    .about__section_3_left_bold {
+      color: $nyPink;
       font-family: $libre;
-      font-size: 2.188rem;
-      font-weight: 700;
+      font-size: 35px;
+      font-weight: 900;
       letter-spacing: 0.88px;
-      line-height: 2.938rem;
-      margin: 0 8rem 0 8rem;
+      line-height: 47px;
     }
 
-    & .about__section_3_left_p {
-      width: 460px;
-      color: #282830;
+    .about__section_3_left_p {
+      color: $jaguar;
       font-family: $inter;
       font-size: 16px;
       font-weight: 500;
       letter-spacing: 0.35px;
       line-height: 28px;
+      padding-top: 1em;
     }
   }
 
-  & .about__section_3_right {
+  .about__section_3_right {
     position: relative;
   }
 
