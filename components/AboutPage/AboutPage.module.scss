@@ -2,28 +2,43 @@
 
 .about__section_1 {
   position: relative;
+  margin: 1em;
 
-  & img {
-    position: absolute;
-    top: 15%;
-    z-index: -1;
-    height: 21.375rem;
-    width: 21.5rem;
+  // & img {
+  //   position: absolute;
+  //   top: 15%;
+  //   z-index: -1;
+  //   height: 21.375rem;
+  //   width: 21.5rem;
+  // }
+
+  img {
+    height: 300px;
+  }
+
+  .about__section_1_left {
+    
+    .about__section_1_left_content {
+      color: $nyPink;
+      font-family: $libre;
+      font-size: 1.75em;
+      font-weight: 900;
+      position: absolute;
+      top: 15%;
+
+      p {
+        padding: .1em 0;
+      }
+    }
+    
+  }
+  
+  .about__section_1_right {
+    display: flex;
   }
 }
 
-.about__section_1_left {
-  color: #F48C8C;
-  font-family: $libre;
-  font-size: 2.188rem;
-  font-weight: 900;
-  letter-spacing: 0.048rem;
-  margin: auto;
-}
 
-.about__section_1_right {
-  display: flex;
-}
 
 .about__section_2 {
   height: 32rem;

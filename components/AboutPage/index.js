@@ -7,43 +7,33 @@ import RoundButton from "shared/RoundButton"
 
 const AboutPage = () => {
   const title = "ABOUT",
-        text = "For Black women, the fight wasn't over in 1920. Their movement for gender and racial equality continues.",
-        graphic = "/static/graphic/about-page/about-graphic-hero.png",
-        left_text = [
-          "Mary Church Terrell.",
-          "Frances Ellen Watkins Harper.",
-          "Anna Julia Cooper.",
-          "Ida B. Wells-Barnett."
-        ],
-        right_text = [
-          "These women played significant leadership roles leading up to and during the United States Women’s Suffrage Movement and beyond, yet their stories and contributions are not widely known and the critical roles black women played at the forefront of the campaign for women’s rights are too often forgotten.",
-          "This gap in America’s public consciousness is rooted in the history of racism and exclusion within the Suffrage Movement, which resulted in white women emerging as the movement’s primary protagonists, while black women were effectively wiped from the narrative."
-        ];
+    text = "For Black women, the fight wasn't over in 1920. Their movement for gender and racial equality continues.",
+    graphic = "/static/graphic/about-page/about-graphic-hero.svg";
 
   return (
     <>
-      <PageBanner title={title} text={text} graphic={graphic}/>
-      <div className={scss.about__section_1_div}>
-      <img src="/static/graphic/about-page/about-graphic-body-1.svg"/>
+      <PageBanner title={title} text={text} graphic={graphic} />
+      <div className={scss.about__section_1}>
+        <img src="/static/graphic/about-page/about-graphic-body-1.svg" />
 
-      <div className="section__default display__flex">
-          <div className={scss.about__section_1_left}>
+        <div  className={`section__default ${scss.about__section_1_left}`}>
+          <div className={scss.about__section_1_left_content}>
             <p>Mary Church Terrell.</p>
             <p>Frances Ellen Watkins Harper.</p>
             <p>Anna Julia Cooper.</p>
             <p>Ida B. Wells-Barnett.</p>
           </div>
-        
 
-        <div className={scss.about__section_1_right}>
+
+          {/* <div className={scss.about__section_1_right}>
           <StyledText 
             subtitle={"These women played significant leadership roles leading up to and during the United States Women’s Suffrage Movement and beyond, yet their stories and contributions are not widely known and the critical roles black women played at the forefront of the campaign for women’s rights are too often forgotten."}
             text={"This gap in America’s public consciousness is rooted in the history of racism and exclusion within the Suffrage Movement, which resulted in white women emerging as the movement’s primary protagonists, while black women were effectively wiped from the narrative."}/>
+        </div> */}
         </div>
       </div>
-      </div>
 
-      <div className={scss.about__section_2}>
+      {/* <div className={scss.about__section_2}>
         <h3 className="title">BLACK WOMEN’S SUFFRAGE COLLECTION</h3>
         <p>The content featured in this collection explores linkages between women’s suffrage and other social causes of the nineteenth and early twentieth centuries (anti-slavery, anti-lynching, education reform and civil rights) as well as racism within the Suffrage Movement.</p>
       </div>
@@ -92,7 +82,7 @@ const AboutPage = () => {
       sponsor="Pivotal Ventures, A Melinda Gates Company." 
       buttonText="SEARCH THE COLLECTION" 
       buttonIcon="/static/icon/button-arrow.svg"/>
-      
+       */}
     </>
   )
 }
