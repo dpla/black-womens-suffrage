@@ -119,34 +119,21 @@
   span {
     height: 2px;
     width: 25px;
-    background: $medPink;
     display: inline-block;
     margin-bottom: 0.5em;
+    background: $lightCoral;
   }
 
   h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     color: #4E4294;
     font-family: $libre;
     font-size: 2em;
     font-weight: $xBold;
     letter-spacing: 0.85px;
     line-height: 47px;
-
-    span {
-      background: #fff;
-      margin: 0 15px;
-    }
-  }
-
-  
-  h1:before {
-    background: $lightCoral;
-    height: 2px;
-    flex: 1;
-    content: '';
+    background: #fff;
+    margin-left: 10px;
+    display: inline;
   }
 }
 
