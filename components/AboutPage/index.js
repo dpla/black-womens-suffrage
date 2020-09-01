@@ -48,21 +48,19 @@ const AboutPage = () => {
         </div>
       </div>
 
-      {/* <div className={`site-max-width container medium_page_section ${scss.about__section_4}`}>
-        <div>
-          <div className={scss.about__section_4_div}>
-            <img src="/static/graphic/about-page/about-graphic-body-3.svg"/>
+      <div className={`${scss.about__section_4}`}>
+        <div className={scss.about__section_4_div}>
+          <img src="/static/graphic/about-page/mobile/about-graphic-body-3-mobile.svg"/>
+          <h3 className="title">DIGITAL PUBLIC LIBRARY OF AMERICA (DPLA)</h3>
+        </div>
 
-            <div>
-              <h3 className="title">DIGITAL PUBLIC LIBRARY OF AMERICA (DPLA)</h3>
-              <p>DPLA connects people to the riches held within America’s libraries, archives, museums, and other cultural heritage institutions.</p>
-            </div>
-          </div>
-          <p>The cultural institutions participating in DPLA represent the richness and diversity of America itself, from the smallest local history museum to our nation’s largest cultural institutions.</p>
+        <div className={scss.about__section_4_text}>
+          <p className={scss.about__section_4_text_bold}>DPLA connects people to the riches held within America’s libraries, archives, museums, and other cultural heritage institutions.</p> 
+          <p className={scss.about__section_4_text_p}>The cultural institutions participating in DPLA represent the richness and diversity of America itself, from the smallest local history museum to our nation’s largest cultural institutions.</p>
         </div>
       </div>
 
-      <div className={`site-max-width container large_page_section ${scss.about__section_5}`}>
+      {/* <div className={`site-max-width container large_page_section ${scss.about__section_5}`}>
         <div>
           <h3 className="title">DPLA’s STATEMENT ON POTENTIALLY HARMFUL CONTENT</h3>
           <h2>Curating the Black Women’s Suffrage Digital Collection</h2>
