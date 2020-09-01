@@ -1,6 +1,8 @@
 @import "stylesheets/variables";
 
 .timeline {
+  padding-bottom: 5em;
+
   .arrow_closed {
     background-image: url("/static/mobile/icon/expand-arrow-down-mobile.png");
   }
