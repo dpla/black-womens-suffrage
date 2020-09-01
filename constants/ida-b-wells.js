@@ -13,7 +13,7 @@
     "spatial" : [ "Chicago, Illinois" ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0010-001-06.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0010-001-06.pdf"
   },
   "ibwells-0008-010-02" : {
     "title" : [ "\"Never Allowed to be Dear,\" The Chicago Times, Sunday, September 3, 1893" ],
@@ -29,7 +29,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0008-010-02.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0008-010-02.pdf"
   },
   "ibwells-0010-001-07" : {
     "title" : [ "Postcard featuring photograph of Ida B. Wells, circa 1910" ],
@@ -45,7 +45,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0010-001-07.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0010-001-07.pdf"
   },
   "ibwells-0010-001-05" : {
     "title" : [ "Ferdinand Lee Barnett" ],
@@ -61,7 +61,7 @@
     "spatial" : [ "Chicago, Illinois" ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0010-001-05.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0010-001-05.pdf"
   },
   "ibwells-0008-010-14" : {
     "title" : [ "\"Mrs. Ida Barnett, Colored Leader, 62, Dies Suddenly,\" The Chicago Tribune, March 25, 1931" ],
@@ -77,7 +77,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0008-010-14.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0008-010-14.pdf"
   },
   "ibwells-0008-009-09" : {
     "title" : [ "Letter, Ida B. Wells to daughters Ida and Alfreda, October 30, 1920" ],
@@ -93,7 +93,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0008-009-09.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0008-009-09.pdf"
   },
   "ibwells-0008-009-08" : {
     "title" : [ "\"To the Young Men Who Want to Go to France,\" flyer, with letter on verso, circa 1910-1920" ],
@@ -109,7 +109,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0008-009-08.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0008-009-08.pdf"
   },
   "ibwells-0008-010-01" : {
     "title" : [ "Article which appeared in The Ladies Pictorial, England, May 1893" ],
@@ -125,7 +125,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0008-010-01.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0008-010-01.pdf"
   },
   "ibwells-0010-001-10" : {
     "title" : [ "Ida B. Wells-Barnett." ],
@@ -141,7 +141,7 @@
     "spatial" : [ "Chicago, Illinois" ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0010-001-10.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0010-001-10.pdf"
   },
   "ibwells-0010-001-04" : {
     "title" : [ "Ida B. Wells-Barnett with son, Charles Aked Barnett" ],
@@ -157,7 +157,7 @@
     "spatial" : [ "Chicago, Illinois" ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0010-001-04.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0010-001-04.pdf"
   },
   "ibwells-0010-008" : {
     "title" : [ "Scrapbook documenting the life of Ferdinand Barnett." ],
@@ -173,7 +173,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0010-008.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0010-008.pdf"
   },
   "ibwells-0008-010-11" : {
     "title" : [ "\"Miss Ida B. Wells,\" excerpt from \"The College of Life or Practical Self-Educator,\" 1895" ],
@@ -189,7 +189,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0008-010-11.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0008-010-11.pdf"
   },
   "ibwells-0001-001-008" : {
     "title" : [ "Crusade for Justice, original manuscript" ],
@@ -205,7 +205,7 @@
     "spatial" : [ "Chicago, Illinois" ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0001-001-008.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0001-001-008.pdf"
   },
   "ibwells-0010-001-01" : {
     "title" : [ "Ida B. Wells, standing left, with Maurine Moss, widow of Tom Moss, lynched in Memphis March 9, 1892, with Tom Moss Jr. " ],
@@ -221,7 +221,7 @@
     "spatial" : [ "Indianapolis, Indiana" ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0010-001-01.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0010-001-01.pdf"
   },
   "ibwells-0010-001-03" : {
     "title" : [ "Ida B. Wells, photograph of engraved illustration." ],
@@ -237,7 +237,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0010-001-03.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0010-001-03.pdf"
   },
   "ibwells-0008-010-12" : {
     "title" : [ "Excerpt from \"The White Side of a Black Subject,\"  1897" ],
@@ -253,7 +253,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0008-010-12.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0008-010-12.pdf"
   },
   "ibwells-0009-008" : {
     "title" : [ "Ida B. Wells pocket diary, 1885-1887" ],
@@ -269,7 +269,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0009-008.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0009-008.pdf"
   },
   "ibwells-0008-010-13" : {
     "title" : [ "Mrs. Delores Johnson Farrow, \"Side Lights or Shadows on the Recent Race Riots at East St. Louis, Illinois,\" The Broad Ax, Chicago, July 28, 1917" ],
@@ -285,7 +285,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0008-010-13.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0008-010-13.pdf"
   },
   "ibwells-0010-001-02" : {
     "title" : [ "Ida B. Wells, portrait photograph" ],
@@ -301,7 +301,7 @@
     "spatial" : [ "Chicago, Illinois" ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0010-001-02.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0010-001-02.pdf"
   },
   "ibwells-0010-002-20" : {
     "title" : [ "Ida B. Wells-Barnett, 1920" ],
@@ -317,7 +317,7 @@
     "spatial" : [ "Chicago, Illinois" ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0010-002-20.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0010-002-20.pdf"
   },
   "ibwells-0008-008-01" : {
     "title" : [ "\"Marriage Bells,\" The New York Age, November 1892" ],
@@ -333,7 +333,7 @@
     "spatial" : [ "New York, New York" ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0008-008-01.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0008-008-01.pdf"
   },
   "ibwells-0008-0012" : {
     "title" : [ "Ida B. Wells Woman's Club" ],
@@ -349,7 +349,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0008-0012.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0008-0012.pdf"
   },
   "ibwells-0008-008-02" : {
     "title" : [ "\"Lynch Law in All its Phases\"" ],
@@ -365,7 +365,7 @@
     "spatial" : [ "Boston, Massachusetts" ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0008-008-02.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0008-008-02.pdf"
   },
   "ibwells-0008-008-03" : {
     "title" : [ "\"The Reign of Mob Law: Iola’s Opinion of Doings in the Southern Field,\" New York Age, February 18, 1893, combined with \"The Lynchers Wince,\" New York Age, September 19, 1891" ],
@@ -381,7 +381,7 @@
     "spatial" : [ "New York, New York" ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0008-008-03.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0008-008-03.pdf"
   },
   "ibwells-0010-002-19" : {
     "title" : [ "Ida B. Wells-Barnett, circa 1920" ],
@@ -397,7 +397,7 @@
     "spatial" : [ "Chicago, Illinois" ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0010-002-19.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0010-002-19.pdf"
   },
   "ibwells-0008-008-04" : {
     "title" : [ "\"Lynch Law in the United States: to the Editor of the Daily Post,\" Birmingham Daily Post, May 14, 1894, with annotations by Ida B. Wells." ],
@@ -413,7 +413,7 @@
     "spatial" : [ "Birmingham, England" ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0008-008-04.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0008-008-04.pdf"
   },
   "ibwells-0008-008-05" : {
     "title" : [ "\"How Enfranchisement Stops Lynching,\" Original Rights Magazine, vol. I, no. 4 (June 1910)" ],
@@ -429,7 +429,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ "English" ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0008-008-05.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0008-008-05.pdf"
   },
   "ibwells-0010-002-18" : {
     "title" : [ "Ida B. Wells-Barnett with her sisters, 1920" ],
@@ -445,7 +445,7 @@
     "spatial" : [ "Chicago, Illinois" ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0010-002-18.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0010-002-18.pdf"
   },
   "ibwells-0010-002-15" : {
     "title" : [ "Ida B. Wells-Barnett, with husband, Ferdinand, and daughter, Alfreda, 1919" ],
@@ -461,7 +461,7 @@
     "spatial" : [ "Chicago, Illinois" ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0010-002-15.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0010-002-15.pdf"
   },
   "ibwells-0008-011-01" : {
     "title" : [ "\"A Darky Damsel Obtains a Verdict for Damages Against the Chesapeake & Ohio Railroad,\" Memphis Appeal-Avalanche, December 25, 1884" ],
@@ -477,7 +477,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0008-011-01.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0008-011-01.pdf"
   },
   "ibwells-0010-002-14" : {
     "title" : [ "Ferdinand L. Barnett with daughter, Alfreda, 1919" ],
@@ -493,7 +493,7 @@
     "spatial" : [ "Chicago, Illinois" ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0010-002-14.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0010-002-14.pdf"
   },
   "ibwells-0010-002-16" : {
     "title" : [ "Ferdinand L. Barnett, with son, Herman K. Barnett in window in background, 1919" ],
@@ -509,7 +509,7 @@
     "spatial" : [ "Chicago, Illinois" ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0010-002-16.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0010-002-16.pdf"
   },
   "ibwells-0008-011-02" : {
     "title" : [ "Excerpts from \"Cases Argued and Determined in the Supreme Court of Tennessee,\" Shelby County, April Term, 1887" ],
@@ -525,7 +525,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0008-011-02.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0008-011-02.pdf"
   },
   "ibwells-0010-002-17" : {
     "title" : [ "Ida B. Wells-Barnett, flanked by daughter, Alfreda and daughter-in-law Fiona Davis-Barnett, 1919" ],
@@ -541,7 +541,7 @@
     "spatial" : [ "Chicago, Illinois" ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0010-002-17.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0010-002-17.pdf"
   },
   "ibwells-0010-002-13" : {
     "title" : [ "Ida B. Wells-Barnett with nephew Jack Calvert Wells, 1919." ],
@@ -557,7 +557,7 @@
     "spatial" : [ "Chicago, Illinois" ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0010-002-13.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0010-002-13.pdf"
   },
   "ibwells-0010-002-12" : {
     "title" : [ "Ida B. Wells-Barnett, wearing \"Martyred Negro Soldiers\" button, circa 1917-1919" ],
@@ -573,7 +573,7 @@
     "spatial" : [ "Chicago, Illinois" ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0010-002-12.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0010-002-12.pdf"
   },
   "ibwells-0010-002-11" : {
     "title" : [ "Family of Ida B. Wells and Ferdinand Barnett" ],
@@ -589,7 +589,7 @@
     "spatial" : [ "Chicago, Illinois" ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0010-002-11.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0010-002-11.pdf"
   },
   "ibwells-0008-009-03" : {
     "title" : [ "\"\"Afro-Americans and Africa,\" The A.M.E. Church Review, vol. 9, no. 1 (July 1892)" ],
@@ -605,7 +605,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0008-009-03.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0008-009-03.pdf"
   },
   "ibwells-0009-004-07" : {
     "title" : [ "Articles Laid in the Cornerstone of the Ida B. Wells Homes" ],
@@ -621,7 +621,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0009-004-07.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0009-004-07.pdf"
   },
   "ibwells-0010-003-22" : {
     "title" : [ "Ida B. Wells at banquet" ],
@@ -637,7 +637,7 @@
     "spatial" : [ "Chicago, Illinois" ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0010-003-22.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0010-003-22.pdf"
   },
   "ibwells-0010-004-03" : {
     "title" : [ "\"Lynch Law in the United States,\" Birmingham Daily Post, May 17, 1894" ],
@@ -653,7 +653,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0010-004-03.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0010-004-03.pdf"
   },
   "ibwells-0010-004-02" : {
     "title" : [ " Editorial, Birmingham Daily Gazette, May 18, 1894" ],
@@ -669,7 +669,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0010-004-02.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0010-004-02.pdf"
   },
   "ibwells-0009-004-06" : {
     "title" : [ "Program for the dedication of the Ida B. Wells Homes" ],
@@ -685,7 +685,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0009-004-06.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0009-004-06.pdf"
   },
   "ibwells-0008-009-02" : {
     "title" : [ "\"Editorial,\" New York Age, September 12, 1891" ],
@@ -701,7 +701,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0008-009-02.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0008-009-02.pdf"
   },
   "ibwells-0008-010-09" : {
     "title" : [ "\"Idol of her People: Ida B. Wells, the Colored Advocate, Welcomed Home,\" The Daily Inter-Ocean, August 8, 1894" ],
@@ -717,7 +717,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0008-010-09.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0008-010-09.pdf"
   },
   "ibwells-0009-007" : {
     "title" : [ "Ida B. Wells pocket diary, 1930" ],
@@ -733,7 +733,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0009-007.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0009-007.pdf"
   },
   "ibwells-0009-004-04" : {
     "title" : [ "Letter, Alfreda M. Duster to Mr. A.E. Perkins" ],
@@ -749,7 +749,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0009-004-04.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0009-004-04.pdf"
   },
   "ibwells-0010-003-21" : {
     "title" : [ "Alfreda M. Barnett, circa 1920" ],
@@ -765,7 +765,7 @@
     "spatial" : [ "Chicago, Illinois" ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0010-003-21.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0010-003-21.pdf"
   },
   "ibwells-0010-004-01" : {
     "title" : [ "Articles on Ida B. Wells speaking tour in England, 1894" ],
@@ -781,7 +781,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0010-004-01.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0010-004-01.pdf"
   },
   "ibwells-0009-004-05" : {
     "title" : [ "Invitation to dedication of the Ida B. Wells Homes" ],
@@ -797,7 +797,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0009-004-05.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0009-004-05.pdf"
   },
   "ibwells-0009-006" : {
     "title" : [ "Historical Records of the Conventions of 1895-96 of the Colored Women of America." ],
@@ -813,7 +813,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0009-006.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0009-006.pdf"
   },
   "ibwells-0008-009-01" : {
     "title" : [ " Personal note [from diary?], \"Have just returned from watch meeting...,\" January 1, 1886" ],
@@ -829,7 +829,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0008-009-01.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0008-009-01.pdf"
   },
   "ibwells-0008-010-08" : {
     "title" : [ "\"Against Lynching: Ida B. Wells and her Recent Mission in England,\" The Daily Inter-Ocean, August 4, 1894" ],
@@ -845,7 +845,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0008-010-08.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0008-010-08.pdf"
   },
   "ibwells-0010-005" : {
     "title" : [ "The Reason Why the Colored American is Not in the World's Columbian Exposition." ],
@@ -861,7 +861,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0010-005.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0010-005.pdf"
   },
   "ibwells-0010-001-09" : {
     "title" : [ "Ida B. Wells-Barnett with daughters Ida, 13, and Alfreda, 10, September 1914." ],
@@ -877,7 +877,7 @@
     "spatial" : [ "Chicago, Illinois" ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0010-001-09.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0010-001-09.pdf"
   },
   "ibwells-0008-009-05" : {
     "title" : [ "Letter, Ida B. Wells to Charles W. Chesnutt," ],
@@ -893,7 +893,7 @@
     "spatial" : [ "Chicago, Illinois" ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0008-009-05.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0008-009-05.pdf"
   },
   "ibwells-0009-004-01" : {
     "title" : [ " \"Good Homes, Low Rents\"" ],
@@ -909,7 +909,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0009-004-01.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0009-004-01.pdf"
   },
   "ibwells-0008-009-10-11" : {
     "title" : [ "\"The New Year,\" January 1, 1931" ],
@@ -925,7 +925,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0008-009-10-11.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0008-009-10-11.pdf"
   },
   "ibwells-0010-004-05" : {
     "title" : [ "\"A Wearied Councillor's Protest,\" May 12, 1894, and reply by Ida B. Wells, \"Lynch Law in the United States,\" Birmingham Daily Post, May 14, 1894" ],
@@ -941,7 +941,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0010-004-05.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0010-004-05.pdf"
   },
   "ibwells-0010-004-04" : {
     "title" : [ "\"Lynch Law in America,\" Birmingham Daily Post, May 17, 1894" ],
@@ -957,7 +957,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0010-004-04.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0010-004-04.pdf"
   },
   "ibwells-0008-009-04" : {
     "title" : [ "Letter, Ida B. Wells to Charles W. Chesnutt, June 4, 2010" ],
@@ -973,7 +973,7 @@
     "spatial" : [ "Chicago, Illinois" ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0008-009-04.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0008-009-04.pdf"
   },
   "ibwells-0010-001-08" : {
     "title" : [ "Maureen Moss Browning, foster daughter of Ida B. Wells" ],
@@ -989,7 +989,7 @@
     "spatial" : [ "Chicago, Illinois" ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0010-001-08.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0010-001-08.pdf"
   },
   "ibwells-0008-009-12" : {
     "title" : [ "Calling card of Mrs. Ida B. Wells-Barnett, undated" ],
@@ -1005,7 +1005,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0008-009-12.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0008-009-12.pdf"
   },
   "ibwells-0008-009-06" : {
     "title" : [ "Letter, Ida B. Wells to Charles W. Chesnutt, May 29, 1915" ],
@@ -1021,7 +1021,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0008-009-06.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0008-009-06.pdf"
   },
   "ibwells-0009-004-02" : {
     "title" : [ "\"Let's Make History!\"" ],
@@ -1037,7 +1037,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0009-004-02.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0009-004-02.pdf"
   },
   "ibwells-0010-004-06" : {
     "title" : [ "\"Editorial notice of Wells' visit to Manchester, England, Manchester Guardian, April 1894" ],
@@ -1053,7 +1053,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0010-004-06.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0010-004-06.pdf"
   },
   "ibwells-0009-004-03" : {
     "title" : [ "News release from Chicago Housing Authority" ],
@@ -1069,7 +1069,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0009-004-03.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0009-004-03.pdf"
   },
   "ibwells-0008-009-07" : {
     "title" : [ "The Alpha Suffrage Record, Chicago: Vol 1, No. 1, March 18, 1914" ],
@@ -1085,7 +1085,7 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0008-009-07.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0008-009-07.pdf"
   },
   "ibwells-0008-009-13" : {
     "title" : [ "Campaign card supporting Mrs. Ida B. Wells-Barnett, candidate for Delegate to Republican National Convention, Kansas City, MO, June 1928" ],
@@ -1101,6 +1101,6 @@
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],
-    "href" : "https://dpla-bws.s3.amazonaws.com/IBW-20200818/ibwells-0008-009-13.pdf"
+    "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0008-009-13.pdf"
   }
 }
