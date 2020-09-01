@@ -2,28 +2,37 @@
 
 .key_figures {
   display: flex;
+  padding-bottom: 5em;
 }
 
+.key_figures__dropdown {
+   margin: 1rem;
+   margin-bottom: 1.5rem;
+  }
+
 .key_figures__info {
-  height: 161px;
   width: 100%;
   border-radius: 115px 0 115px 0;
   background-color: rgba(254,223,223,0.25);
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  margin-bottom: 3rem;
 
   h6 {
-    color: $medPink;
+    color: $lightCoral;
     font-family: $inter;
     font-size: 14px;
     font-weight: 800;
     letter-spacing: 1.2px;
     line-height: 17px;
+    margin-bottom: 10px;
   }
 
   h2 {
-    color: $bwsPurple;
+    color: #4E4294;
     font-family: $libre;
     font-size: 30px;
     font-weight: 900;
@@ -91,47 +100,50 @@
     font-weight: 500;
     letter-spacing: 1.18px;
     line-height: 28px;
+    margin-bottom: 1em;
+  }
+
+  section {
+    clear: left;
+  }
+
+  p:last-of-type {
+    margin-bottom: 3rem;
   }
 }
 
 .key_figures__section_title {
 
+  margin-top: 2em;
+  margin-bottom: 1em;
+
+  span {
+    height: 2px;
+    width: 25px;
+    display: inline-block;
+    margin-bottom: 0.5em;
+    background: $lightCoral;
+  }
+
   h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: $bwsPurple;
+    color: #4E4294;
     font-family: $libre;
     font-size: 2em;
     font-weight: $xBold;
     letter-spacing: 0.85px;
     line-height: 47px;
-
-    span {
-      background: #fff;
-      margin: 0 15px;
-    }
-  }
-
-  
-  h1:before {
-    background: $medPink;
-    height: 2px;
-    flex: 1;
-    content: '';
+    background: #fff;
+    margin-left: 10px;
+    display: inline;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 // @media only screen and (min-width: 768px) {...}
 @media only screen and ($md-viewport) {
-  .key_figures__right {
-    width: 70%;
-    margin-left: auto;
-  }
 
   .key_figures__left {
-    display: block;
+    display: none;
 
     ul {
       padding-left: 0;
@@ -151,16 +163,36 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+  .key_figures__right {
+    width: 70%;
+    margin-left: auto;
+  }
+
   .key_figures__left {
+    display: block;
+
     ul {
       padding-left: 3em;
     }
   }
 
-  .key_figures__intro {
-    flex-direction: row;
-    display: flex;
-    justify-content: space-between;
+  .key_figures__intro_container_with_portrait {
+    float: left;
+    width: 67%;
+  }
+
+  .key_figures__portrait {
+    float: right;
+    margin-top: 0;
+    width: 33%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .key_figures__dropdown {
+    display: none;
   }
 }
 

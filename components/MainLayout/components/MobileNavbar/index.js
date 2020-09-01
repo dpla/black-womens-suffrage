@@ -31,43 +31,47 @@ class MobileNavbar extends Component {
       <nav className={scss.navbar}>
         {/* logo and mobile menu icon*/}
         <div className={scss.navbar__graphic}>
-          <img src="static/mobile/logo/dpla_bws-logo-color-nav-mobile.png" />
-          <img src={menuIcon} onClick={this.showMenu} name="menuDisplayed" id={scss.menuIcon}/>
+          <Link href="/">
+            <a>
+              <img src="static/mobile/logo/dpla_bws-logo-color-nav-mobile.png" />
+            </a>
+          </Link>
+          <img src={menuIcon} onClick={this.showMenu} name="menuDisplayed" id={scss.menuIcon} />
         </div>
 
         {/* nav links */}
         {this.state.menuDisplayed &&
           <>
-          <MobileSearchBar />
-          <div className={scss.navbar__links}>
-            <Link href="/about">
-              <a>About</a>
-            </Link>
+            <MobileSearchBar />
+            <div className={scss.navbar__links}>
+              <Link href="/about">
+                <a>About</a>
+              </Link>
 
-            <Link href="/timeline">
-              <a>Timeline</a>
-            </Link>
+              <Link href="/timeline">
+                <a>Timeline</a>
+              </Link>
 
-            <Link href="/key-figures">
-              <a>Key Figures</a>
-            </Link>
+              <Link href="/key-figures">
+                <a>Key Figures</a>
+              </Link>
 
-            <Link href="/collections">
-              <a>Collections</a>
-            </Link>
+              <Link href="/collections">
+                <a>Collections</a>
+              </Link>
 
-            <Link href="/partners">
-              <a>Partners</a>
-            </Link>
+              <Link href="/partners">
+                <a>Partners</a>
+              </Link>
 
 
-            <div className={scss.navbar__links_secondary}>
-              <div className={scss.navbar__links_divider}></div>
-              <a href="https://dp.la" target="_blank">Visit DPLA</a>
-              <a href="https://dp.la" target="_blank">Harmful Language Disclaimer</a>
+              <div className={scss.navbar__links_secondary}>
+                <div className={scss.navbar__links_divider}></div>
+                <a href="https://dp.la" target="_blank">Visit DPLA</a>
+                <a href="https://dp.la" target="_blank">Harmful Language Disclaimer</a>
+              </div>
+
             </div>
-            
-          </div>
           </>
         }
       </nav>

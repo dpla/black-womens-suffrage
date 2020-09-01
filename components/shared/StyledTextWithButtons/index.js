@@ -5,7 +5,7 @@ import RoundButton from "../RoundButton"
 const StyledTextWithButtons = ({ title, subtitle, text, buttonText1, buttonIcon1, buttonUrl1, buttonText2, buttonIcon2, buttonUrl2 }) => {
   return (
     <>
-      <section className={scss.container}>
+      <section className={scss.section__container}>
         <h6 className={scss.title}>{title}</h6>
         <p className={scss.section__text_large}>{subtitle}</p>
         <p className={scss.section__text_small}>{text}</p>

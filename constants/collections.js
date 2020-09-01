@@ -14,5 +14,11 @@ export const collections = {
     "name": "Mary Church Terrell Exhibit",
     "description": " contains materials from Oberlin College Archives exhibit exploring Terrell’s life and work through four lenses: learning, labor, leadership, and legacy.",
     "publish": false 
+  },
+  "charlotta-bass": {
+    "intro": "",
+    "image": "/static/image/collections-page/collections-image-charlotta.jpg",
+    "name": "Charlotta Bass Papers",
+    "publish": false
   }
 }

@@ -1,15 +1,28 @@
 @import "stylesheets/variables";
 
 .banner {
-  background-image: url("/static/graphic/home-page/home-image-hero.png");
-  background-color: #E77878;
-  opacity: 0.5;
+  position: relative;
+  z-index: 1;
+
+  .banner__background {
+    background-image: url("/static/image/home-page/home-image-hero.png");
+    background-color: $geraldine;
+    opacity: 0.6;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
 
   .banner_left__div {
     padding: 2rem 1.5em;
 
     h6 {
-      color: $medPink;
+      color: $lightCoral;
       font-family: $inter;
       font-size: 1.125rem;
       font-weight: $xBold;
@@ -17,11 +30,11 @@
       line-height: 1.313rem;
     }
 
-    p {
+    .banner__text {
       color: $white;
       text-shadow: 0 2px 10px rgba(40,40,48,0.2);
       font-family: $inter;
-      font-size: 1.25rem;
+      font-size: 1.4rem;
       font-weight: $xBold;
       letter-spacing: 0.55px;
       margin: 0;
@@ -35,29 +48,16 @@
   }
 }
 
-// Section 1 - Search the collection
+// Section 1 - Black Women's Suffrage Portal
 
 .home__section_1 {
-  // height: 32rem;
   background: $white;
   display: flex;
   flex-direction: column;
 
-  & .collection__left {
-    width: 35rem;
-
-    & .collection__button {
-      margin-top: 1.5rem;
-    }
-  }
-
   .home__section_1__right {
-    width: 50%;
-    margin: auto;
-  }
-
-  .home__section_1__img {
-    background: url("/static/graphic/home-page/home-graphic-body-1.png");
+    margin: 0 auto;
+    padding: 3em 0;
   }
 }
 
@@ -71,46 +71,133 @@
   margin: 0;
   border-radius: 0 9.375rem 0 0;
 
-  .section_2__div_left {
 
-    img {
-      width: 100%;
-    }
-  }
-
-  & .section_2__div_right {
+  .section_2__div_right {
     margin: auto;
-    padding: 1em;
-    // width: 100%;
+    padding: 3em 1em;    
   }
 }
 
 // Section 3 - Digital Collection
 
 .home__section_3 {
-  display: flex;
-  justify-content: space-between;
-  margin: 6rem;
+  background-color: #F3F3F3;
 
-  & .section_3__div_right {
-
-  }
-
-  & .section_3__div_right {
+  .home__section_3_content {
+    background-color: $blueGem;
     display: flex;
-    & img {
-      margin: auto;
-    }
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 5em 0;
+    border-radius: 0 0 0 115px;
+  }
+  p {
+    width: 90%;
+    color: #FFF7F7;
+    font-family: $libre;
+    font-size: 1.75rem;
+    font-weight: $bold;
+    letter-spacing: 0.7px;
+    line-height: 2.938rem;
+    text-align: center;
+    padding-top: 1em;
   }
 }
 
-// Section 4 - Carousel
+// Section 4 - Collections
 
 .home__section_4 {
+  background: #F3F3F3;
   display: flex;
-  justify-content: space-between;
-  margin: 6rem;
-  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 5em 0;
+
+  .home__section_4_tile {
+    margin: 2em 1em;
+    
+    .home__section_4_tile_title {
+      height: 103px;
+      border-radius: 0 0 0 29.5px;
+      background-color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .home__section_4_tile_img {
+      width: 100%;
+    }
+
+    h3 {
+      color: $jaguar;
+      font-family: $inter;
+      font-weight: $semiBold;
+      padding: .5em;
+    }
+
+    p {
+      color: #BBBBBB;
+      font-family: $inter;
+      font-weight: $xBold;
+      letter-spacing: 0.75px;
+      padding: .5em;
+    }
+
+    a {
+      color: $vividViolet;
+      font-family: $inter;
+      font-weight: $xBold;
+      letter-spacing: 0.75px;
+      padding: .5em;
+
+      img {
+        padding-left: .5em;
+        height: .75em;
+      }
+    }
+  } 
+}
+
+// Section 5 - Partners 
+
+.home__section_5 {
+  background-color: #F3F3F3;
+
+  .section_5__div_left {
+    border-radius: 115px 0 0 0;
+    background-color: rgba(245,240,238,0.8);
+    margin: auto;
+    padding: 5em 1em;
+  }
+
+  .section_5__div_right {
+    background-color: $blueGem;
+    background-image: url("/static/image/home-page/home-image-body-2-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .section_5__div_right_imgs {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-top: 25em;
+
+      a {
+        width: 45%;
+        margin: .25em;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 
 
@@ -136,39 +223,56 @@
 
       }
     }
+
+    .banner_right__div {
+      width: 50%;
+    }
   }
 
   .home__section_1 {
     margin: 1rem;
     flex-direction: row;
     height: auto;
+
+    .home__section_1__left {
+      margin-right: 2em;
+    }
+
+    .home__section_1__right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
 
   .home__section_2 {
     flex-direction: row;
     height: auto;
-    
-    .section_2__div_right {
-
-    }
 
     .section_2__div_left {
       display: flex;
-      img {
-        display: none;
-      }
     }
-
-
   }
 
+  .home__section_4_collections {
+    width: 70%;
+  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and ($lg-viewport) {
   .banner {
-    border-radius: 0 0 0 150px;
     height: 25em;
+
+    .banner__background {
+      border-radius: 0 0 0 115px;
+    }
+
+    .banner_left__div {
+      .banner__text {
+        font-size: 2em;
+      }
+    }
 
     .banner_right__div {
       display: flex;
@@ -181,15 +285,52 @@
     }
   }
 
+  .home__section_1 {
+    margin: 4em 0;
+    display: flex;
+    justify-content: space-evenly;
+
+    .home__section_1__right {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
   .home__section_2 {  
     .section_2__div_left {
-      img {
-        display: block;
-      }
+      justify-content: center;
+      align-items: center;
+      width: 50%;
     }
     
     .section_2__div_right {
       width: auto;
+    }
+  }
+
+  .home__section_3 {
+    .home__section_3_content {
+      height: 30em;  
+    }
+  }
+
+  .home__section_4_collections {
+    display: flex;
+  }
+
+  .home__section_5 {
+    display: flex;
+
+    .section_5__div_left {
+      margin: 0;
+      width: 50%;
+    }
+
+    .section_5__div_right {
+      width: 50%;
+      .section_5__div_right_imgs {
+        padding: 1em;
+      }
     }
   }
 }
