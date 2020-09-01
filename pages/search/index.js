@@ -23,6 +23,10 @@ import {
     MAX_PAGE_SIZE
 } from "constants/search";
 
+import {
+    SITE_TAG
+} from "constants/site";
+
 class Search extends React.Component {
 
     state = {
@@ -115,7 +119,7 @@ Search.getInitialProps = async context => {
         : "";
 
     // filters + tags
-    let filters = [ process.env.NEXT_PUBLIC_SITE_FILTER ];
+    let filters = [ SITE_TAG ];
     let tags = [];
 
     if (query.tags) {
