@@ -58,7 +58,7 @@ class TimelinePage extends React.Component {
 
     // scroll to top of page
     if(typeof window !== 'undefined') window.scrollTo(0, 0)
-}
+  }
 
   render() {
     const title = "TIMELINE",
@@ -76,7 +76,11 @@ class TimelinePage extends React.Component {
         <PageBanner title={title} text={text} graphic={graphic} />
 
         <section className={`section__default ${scss.timeline}`}>
-          <Dropdown options={this.state.dropdownOptions} onChange={this._onSelect} value={this.state.selected} className={scss.timeline__dropdown}/>
+          <Dropdown 
+          options={this.state.dropdownOptions} 
+          onChange={this._onSelect} 
+          value={this.state.selected} 
+          className={scss.timeline__dropdown}/>
 
           <div className={scss.timeline__left}>
             <ul>

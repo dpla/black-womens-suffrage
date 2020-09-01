@@ -5,25 +5,39 @@ import { keyFigures } from "constants/key-figures"
 import PageBanner from "shared/PageBanner"
 import { useRouter } from "next/router"
 import dynamic from 'next/dynamic'
+import KeyFiguresPagination from "components/KeyFiguresPage/KeyFiguresPagination"
+import Dropdown from 'react-dropdown'
 
-
-const KeyFiguresPage = ({ figure }) => {
+function KeyFiguresPage({ figure }) {
 
   const router = useRouter();
-  // If routher.asPath = /key-figures/sojournerTruth, then pathId = sojournerTruth
-  const pathId = router.asPath.split("/").pop();
-  const DynamicComponent = dynamic(import(`./AllKeyFigures/${ figure.value }`))
+  const DynamicComponent = dynamic(import(`./AllKeyFigures/${ figure.value }`));
+  const figIds = Object.keys(keyFigures);
+  const currentIndex = figIds.indexOf(figure.figId);
+  const nextFig = figIds[currentIndex + 1];
+  const prevFig = figIds[currentIndex - 1];
+
+  function _onSelect (option) {
+    const newFig = figIds.find(key => keyFigures[key]["name"] === option.label);
+    router.push("/key-figures/[figId]", `/key-figures/${ newFig }`);
+  }
 
   return (
     <>
       <PageBanner title="KEY FIGURES" text="Shining a light on Black women's activism" graphic="/static/graphic/about-page/about-graphic-hero.png"/>
 
-      {/* <MobileDropdown items={keyFigures}/> */}
+      <Dropdown 
+        options={ Object.values(keyFigures).map(f => f.name) } 
+        onChange={ _onSelect } 
+        value={ figure.name }
+        className={ scss.key_figures__dropdown } />
 
       <section className={`${scss.key_figures} section__default`}>
+
         <div className={scss.key_figures__left}>
+
           <ul>
-            {Object.keys(keyFigures).map((key, index) => {
+            { figIds.map((key, index) => {
               const fig = keyFigures[key]
 
               return (
@@ -34,7 +48,7 @@ const KeyFiguresPage = ({ figure }) => {
                 >
                   <Link href="/key-figures/[figId]" as={`/key-figures/${ key }`}>
                     <a className={
-                      (key == pathId ? scss.key_figures__active_item : scss.key_figures__li)
+                      (key == figure.figId ? scss.key_figures__active_item : scss.key_figures__li)
                     }>
                       { fig.name }
                     </a>
@@ -47,6 +61,7 @@ const KeyFiguresPage = ({ figure }) => {
 
         <div className={scss.key_figures__right}>
           <DynamicComponent />
+          <KeyFiguresPagination prevFigure={ prevFig } nextFigure={ nextFig } />
         </div> 
       </section>
     </>

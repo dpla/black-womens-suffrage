@@ -19,6 +19,7 @@
     border-radius: 29.5px 0 0 0;
     background-color: $cinnabar;
     padding: 1.5em;
+    cursor: pointer;
 
     h5 {
       color: #FFFEFE;
@@ -43,6 +44,7 @@
     border-radius: 0 0 29.5px 0;
     background-color: #8B2D9B;
     padding: 1.5em;
+    cursor: pointer;
 
     h5 {
       color: $lightCoral;
@@ -56,6 +58,24 @@
     div {
       display: flex;
       justify-content: space-between;
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+// @media only screen and (min-width: 768px) {...}
+@media only screen and ($md-viewport) {
+
+  .pagination__container {
+
+    .pagination__next {
+      width: 50%;
+      float: right;
+    }
+
+    .pagination__prev {
+      width: 50%;
+      float: left;
     }
   }
 }

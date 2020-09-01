@@ -1,4 +1,5 @@
 import scss from "components/KeyFiguresPage/KeyFiguresPage.module.scss"
+
 import { sojournerTruth } from "constants/key-figures";
 
 import SectionTitle from "components/KeyFiguresPage/SectionTitle";
@@ -6,25 +7,17 @@ import CurvedTextBox from "components/KeyFiguresPage/CurvedTextBox";
 import LeftBorderTextBox from "components/KeyFiguresPage/LeftBorderTextBox";
 import BorderedTextBox from "components/KeyFiguresPage/BorderedTextBox";
 import Sources from "components/KeyFiguresPage/Sources";
-import KeyFiguresPagination from "components/KeyFiguresPage/KeyFiguresPagination";
+import IntroAndPortrait from "components/KeyFiguresPage/IntroAndPortrait";
 
 const SojournerTruth = () => {
+
   return (
     <>
-     <div className={scss.key_figures__intro}>
-      <div className={scss.key_figures__info}>
-        <h6 className={scss.key_figures__dates}>C. 1797-1893</h6>
-        <h2 className={scss.key_figures__name}>Sojourner Truth</h2>
-      </div>
+      <IntroAndPortrait figure={ sojournerTruth } />
 
-      <div className={scss.key_figures__portrait}>
-        <img src="https://picsum.photos/300/400"/>
-      </div>
-    </div>
-      
-
-      <p>Abolitionist, temperance advocate and women's rights crusader Sojourner Truth was born Isabella Bomefree (or Baumfree) to Dutch-speaking enslaved parents in a Dutch community in Ulster County, New York around 1797.</p>
-   
+      <section>
+        <p>Abolitionist, temperance advocate and women's rights crusader Sojourner Truth was born Isabella Bomefree (or Baumfree) to Dutch-speaking enslaved parents in a Dutch community in Ulster County, New York around 1797.</p>
+      </section>
 
       <section>
         <SectionTitle title="Early Years" />
@@ -46,7 +39,7 @@ const SojournerTruth = () => {
         <BorderedTextBox text={`In 1843, believing she was called by God to travel around the country (or "sojourn") and preach truth, she changed her name to Sojourner Truth, moved to a Massachusetts utopian community and began working as an itinerant Methodist preacher, devoting herself to spreading Christianity and calling for the abolition of slavery. In her travels, she became acquainted with prominent abolitionists William Lloyd Garrison and Frederick Douglass, among others, who encouraged her to give speeches denouncing slavery. She also met temperance advocates and women's rights pioneers like Susan B. Anthony and Elizabeth Cady Stanton, becoming increasingly involved in both causes and advocating for the then-radical idea of political equality for both Black and white women.`} />
       
         <div className={scss.key_figures__image}>
-          <img src="https://picsum.photos/300/400"/>
+          <img src="/static/image/key-figures/sojournerTruth-1.jpg"/>
         </div>
 
         <p>Unable to read or write, Truth dictated her autobiography, The Narrative of Sojourner Truth, to Olive Gilbert and supported herself—including paying off the mortgage on her Massachusetts home—with the proceeds. A talented orator, Truth was invited in 1851 to give what has become her most well-known speech at the Ohio Women's Right Convention. It is often referred to as the "Ain't I A Woman?" speech, although evidence suggests that she did not actually employ this refrain in her talk. As her words were delivered extemporaneously, there is no original copy of the speech to consult, leaving only secondhand sources. (Scholars note that the source that reports the "Ain't I A Woman" refrain wasn't written until 12 years after the speech was given, while a more contemporaneous account does not include the phrase.)</p>
@@ -59,8 +52,6 @@ const SojournerTruth = () => {
       </section>
 
       <Sources sources={sojournerTruth.sources}/>
-
-      <KeyFiguresPagination prevFigure="Charlotte Vandine Forten" nextFigure="Harriet Forten Purvis"/>
     </>
   )
 }

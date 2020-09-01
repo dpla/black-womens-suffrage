@@ -1,27 +1,37 @@
 import React from "react"
+import Link from "next/link"
 import scss from "../KeyFiguresPagination/KeyFiguresPagination.module.scss"
+import { keyFigures } from "constants/key-figures"
 
 const KeyFiguresPagination = ({ prevFigure, nextFigure }) => {
+
   return (
     <section className={scss.pagination__container}>
 
-        <div className={scss.pagination__prev}>
-          <div>
-            <h5>PREVIOUS</h5>
-            <img src="/static/icon/button-arrow.svg"/>
+      { prevFigure &&
+        <Link href="/key-figures/[key]" as={`/key-figures/${ prevFigure }`}>
+          <div className={scss.pagination__prev}>
+            <div>
+              <h5>PREVIOUS</h5>
+              <img src="/static/icon/button-arrow.svg"/>
+            </div>
+            <h4>{ keyFigures[prevFigure]["name"] }</h4>
           </div>
-          <h4>{prevFigure}</h4>
-        </div>
+        </Link>
+      }
         
 
-        <div className={scss.pagination__next}>
-          <div>
-            <h5>NEXT</h5>
-            <img src="/static/icon/button-arrow.svg"/>
+      { nextFigure &&
+        <Link href="/key-figures/[key]" as={`/key-figures/${ nextFigure }`}>
+          <div className={scss.pagination__next}>
+            <div>
+              <h5>NEXT</h5>
+              <img src="/static/icon/button-arrow.svg"/>
+            </div>
+           <h4>{ keyFigures[nextFigure]["name"] }</h4>
           </div>
-          <h4>{nextFigure}</h4>
-        </div>
-
+        </Link>
+      }
         
     </section>
   )
