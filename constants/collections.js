@@ -12,13 +12,15 @@ export const collections = {
     "intro": "Mary Church Terrell (1863-1954) educator, writer, lecturer, suffragist, and civil rights leader,",
     "image": "/static/image/collections-page/collections-image-mary.png",
     "name": "Mary Church Terrell Exhibit",
-    "description": " contains materials from Oberlin College Archives exhibit exploring Terrell’s life and work through four lenses: learning, labor, leadership, and legacy.",
+    "description": "Contains materials from Oberlin College Archives exhibit exploring Terrell’s life and work through four lenses: learning, labor, leadership, and legacy.",
     "publish": false 
   },
   "charlotta-bass": {
+    "lived": "",
     "intro": "",
     "image": "/static/image/collections-page/collections-image-charlotta.jpg",
     "name": "Charlotta Bass Papers",
+    "description": "",
     "publish": false
   }
 }

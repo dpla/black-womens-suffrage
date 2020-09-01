@@ -4,6 +4,7 @@ import scss from "components/CollectionsPage/CollectionsPage.module.scss"
 import PageBanner from "components/shared/PageBanner"
 import SectionTitle from "components/shared/SectionTitle"
 import { collections } from "constants/collections"
+import { primarySourceSets } from "constants/primary-source-sets"
 
 const CollectionsPage = () => {
   const title = "COLLECTIONS",
@@ -47,6 +48,27 @@ const CollectionsPage = () => {
           })}
         </div>
 
+      </section>
+
+      <section className={`section__default display__flex ${scss.pss__section}`}>
+        <SectionTitle title="Featured Primary Source Sets" />
+
+        <div className={scss.pss__tile_container}>
+
+          { primarySourceSets.map((pss) => {
+            
+            return (
+              <a href={ pss.href } target="_blank">
+                <div className={scss.pss__tile}>
+                  <img src={ pss.image } />
+                  <h2>{ pss.title }</h2>
+                  <h3>{ pss.subtitle }</h3>
+                </div>
+              </a>
+            )
+          })}
+        
+        </div>
       </section>
     </>
   )
