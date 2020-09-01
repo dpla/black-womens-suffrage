@@ -1,11 +1,14 @@
 import React from "react"
 import Link from "next/link"
-import scss from "components/CollectionsPage/ItemView/ItemView.module.scss"
+import scss from "./ItemView.module.scss"
+import PDFViewer from "../PDFViewer";
 
 const ItemView = ({ item }) => {
 
   return (
     <section>
+      <PDFViewer pathToFile={`/api/dpla/pdf/${item.colId}/${item.itemId}`}/>
+
       <ul>
         <li>Title: { item.title.join(": ") }</li>
         <li>Creator: { item.creator.join("; ") }</li>

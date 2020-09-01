@@ -24,12 +24,12 @@ function getItems(colId) {
   const directory = path.join(process.cwd(), 'constants');
   const fileName = `${ colId }.js`;
   const filePath = path.join(directory, fileName);
-  var json = new Object();
+  let json = {};
   try {
     const itemsString = fs.readFileSync(filePath, 'utf8');
     json = JSON.parse(itemsString);
   } catch (e) {
-    if (e.code == "ENOENT") {
+    if (e.code === "ENOENT") {
       // File containing items not found.
       console.log(e)
     } else {
@@ -60,11 +60,15 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const items = getItems(params.colId)
+  const items = getItems(params.colId);
+  const item = items[params.colItemId];
+
+  item.colId = params.colId;
+  item.itemId = params.colItemId;
 
   return {
     props: {
-      item: items[params.colItemId]
+      item: item
     }
   }
 }
