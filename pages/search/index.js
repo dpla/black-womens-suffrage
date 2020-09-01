@@ -26,6 +26,7 @@ import {
 import {
     SITE_TAG
 } from "constants/site";
+import Head from "next";
 
 class Search extends React.Component {
 
@@ -59,9 +60,10 @@ class Search extends React.Component {
         }
 
         return (
-            <MainLayout
-                pageTitle={getSearchPageTitle(router.query.q)}
-            >
+            <MainLayout>
+                <Head>
+                    <title>{getSearchPageTitle(router.query.q)}</title>
+                </Head>
                 <OptionsBar
                     showFilters={this.state.showSidebar}
                     currentPage={currentPage}

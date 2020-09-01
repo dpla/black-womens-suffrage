@@ -5,6 +5,7 @@ import ItemView from "components/CollectionsPage/ItemView"
 import fs from 'fs'
 import path from 'path'
 import { collections } from "constants/collections"
+import Head from "next/head";
 
 function CollectionItem({ item }) {
 
@@ -12,8 +13,10 @@ function CollectionItem({ item }) {
       <MainLayout 
         className="main" 
         role="main"
-        pageTitle={ item.title }
       >
+        <Head>
+          <title>{item.title} | DPLA</title>
+        </Head>
         <ItemView item={ item } />
       </MainLayout>
   );

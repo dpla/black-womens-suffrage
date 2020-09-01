@@ -1,9 +1,8 @@
 import React from "react";
-import { useRouter } from 'next/router';
 
 import fetch from "isomorphic-fetch";
 
-
+import Head from "next/head";
 import MainLayout from "components/MainLayout";
 import CiteButton from "components/shared/CiteButton";
 import BreadcrumbsModule from "components/ItemComponents/BreadcrumbsModule";
@@ -23,9 +22,11 @@ import css from "components/ItemComponents/itemComponent.module.scss";
 const ItemDetail = ({url, item}) => {
   return (
     <MainLayout
-      pageTitle={item.title}
       pageImage={item.thumbnailUrl}
     >
+      <Head>
+        <title>{item.title} | DPLA</title>
+      </Head>
       <BreadcrumbsModule
         breadcrumbs={[
           {
