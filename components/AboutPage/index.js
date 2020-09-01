@@ -43,7 +43,8 @@ const AboutPage = () => {
         </div>
 
         <div className={scss.about__section_3_right}>
-          <img src="/static/image/about-page/about-image-body-1-mobile.png"/>
+          <img className={scss.about__section_3_right_mobile} src="/static/image/about-page/about-image-body-1-mobile.png"/>
+          <img className={scss.about__section_3_right_desktop} src="/static/image/about-page/about-image-body-1.png"/>
           {/* <img src="/static/graphic/about-page/about-graphic-body-2.png"/> */}
         </div>
       </div>
@@ -62,12 +63,18 @@ const AboutPage = () => {
 
       <div className={scss.about__section_5}>
         <div className={scss.about__section_5_content}>
-          <h3>DPLA’S STATEMENT ON POTENTIALLY HARMFUL CONTENT</h3>
-          <h2>Curating the Black Women’s Suffrage Digital Collection</h2>
-          <p>Materials in this collection and the language that describes them may be harmful. Libraries and archives collect materials from different cultures and time periods to preserve and make available the historical record. As a result, library materials, such as those presented here, may reflect racist and misogynoir views that may be harmful and difficult to view.</p>
-          <p>The content featured in this collection explores linkages between Black women’s suffrage and other social causes of the nineteenth and early twentieth centuries (anti-slavery, anti-lynching, education reform and civil rights) as well as racism within the Suffrage Movement. These materials are presented here to recognize and celebrate the important contributions of Black women and their resiliency in the face of ongoing racism and exclusion.</p>
-          <RoundButton text="SEE HARMFUL LANGUAGE DISCLAIMERS" icon="/static/icon/button-arrow.svg" url={"/harmful-language-statement"}/>
-          <img  className={scss.about__section_5_img} src="/static/graphic/about-page/about-graphic-body-4.svg"/>
+
+          <div className={scss.about__section_5_left}>
+            <h3>DPLA’S STATEMENT ON POTENTIALLY HARMFUL CONTENT</h3>
+            <h2>Curating the Black Women’s Suffrage Digital Collection</h2>
+            <p>Materials in this collection and the language that describes them may be harmful. Libraries and archives collect materials from different cultures and time periods to preserve and make available the historical record. As a result, library materials, such as those presented here, may reflect racist and misogynoir views that may be harmful and difficult to view.</p>
+            <p>The content featured in this collection explores linkages between Black women’s suffrage and other social causes of the nineteenth and early twentieth centuries (anti-slavery, anti-lynching, education reform and civil rights) as well as racism within the Suffrage Movement. These materials are presented here to recognize and celebrate the important contributions of Black women and their resiliency in the face of ongoing racism and exclusion.</p>
+            <RoundButton text="SEE HARMFUL LANGUAGE DISCLAIMERS" icon="/static/icon/button-arrow.svg" url={"/harmful-language-statement"}/>
+          </div>
+                    
+          <div className={scss.about__section_5_right}>
+            <img className={scss.about__section_5_img} src="/static/graphic/about-page/about-graphic-body-4.svg"/>
+          </div>
         </div>
 
         {/* <img src="/static/graphic/about-page/about-graphic-body-5.svg" />     */}

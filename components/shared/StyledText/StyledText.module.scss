@@ -27,3 +27,17 @@
   font-family: $inter;
   margin-top: 2em;
 }
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and ($md-viewport) {
+  .section__text_large {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .section__text_small {
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 1em;
+  }
+}
