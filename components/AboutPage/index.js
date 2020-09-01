@@ -14,22 +14,20 @@ const AboutPage = () => {
     <>
       <PageBanner title={title} text={text} graphic={graphic} />
       <div className={scss.about__section_1}>
-        <img src="/static/graphic/about-page/about-graphic-body-1.svg" />
-
-        <div  className={`section__default ${scss.about__section_1_left}`}>
+        <div  className={`${scss.about__section_1_left}`}>
+          <img src="/static/graphic/about-page/about-graphic-body-1.svg" />
           <div className={scss.about__section_1_left_content}>
             <p>Mary Church Terrell.</p>
             <p>Frances Ellen Watkins Harper.</p>
             <p>Anna Julia Cooper.</p>
             <p>Ida B. Wells-Barnett.</p>
           </div>
+        </div>
 
-
-          {/* <div className={scss.about__section_1_right}>
+        <div className={scss.about__section_1_right}>
           <StyledText 
             subtitle={"These women played significant leadership roles leading up to and during the United States Women’s Suffrage Movement and beyond, yet their stories and contributions are not widely known and the critical roles black women played at the forefront of the campaign for women’s rights are too often forgotten."}
             text={"This gap in America’s public consciousness is rooted in the history of racism and exclusion within the Suffrage Movement, which resulted in white women emerging as the movement’s primary protagonists, while black women were effectively wiped from the narrative."}/>
-        </div> */}
         </div>
       </div>
 

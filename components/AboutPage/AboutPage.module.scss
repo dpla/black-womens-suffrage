@@ -4,37 +4,31 @@
   position: relative;
   margin: 1em;
 
-  // & img {
-  //   position: absolute;
-  //   top: 15%;
-  //   z-index: -1;
-  //   height: 21.375rem;
-  //   width: 21.5rem;
-  // }
-
-  img {
-    height: 300px;
-  }
-
   .about__section_1_left {
-    
+    padding: 2em 0;
+
+    img {
+      height: 300px;
+    }
+
     .about__section_1_left_content {
       color: $nyPink;
       font-family: $libre;
-      font-size: 1.75em;
+      font-size: 1.5em;
       font-weight: 900;
       position: absolute;
-      top: 15%;
+      top: 8%;
+      padding-left: .75em;
 
       p {
-        padding: .1em 0;
+        padding: .25em 0;
       }
     }
     
   }
   
   .about__section_1_right {
-    display: flex;
+    padding-bottom: 3em;
   }
 }
 
