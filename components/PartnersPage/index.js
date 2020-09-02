@@ -90,8 +90,7 @@ function PartnersPage() {
                     collections that they are digitizing as part of the Black Women’s Suffrage collection and provided
                     perspective about how these artifacts can help us better understand Black women suffragists and the
                     historical and continuing activism of Black women. <Offlink url={"https://dpla.zoom.us/rec/play/75Z8Ie6h_DI3T9PEtgSDVPEoW9TuJqis13BN_qIKzxmyVHMKNgamYLsWZeMsg3xlnOgP_huLHvi6gzs5?autoplay=true&startTime=1594918908000"} text={"A recording of this event is available here"}/>.</p>
-                    <p>For more information about this work, please contact DPLA community manager Shaneé Yvette Murrain at
-                        <a href={"mailto:shanee@dp.la"}>shanee@dp.la</a></p>
+                    <p>For more information about this work, please contact DPLA community manager Shaneé Yvette Murrain at <a href={"mailto:shanee@dp.la"}>shanee@dp.la</a></p>
 
                 <h2>Credits</h2>
                 <ul>
