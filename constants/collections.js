@@ -18,7 +18,7 @@ export const collections = {
   "charlotta-bass": {
     "lived": "1879/80-1969",
     "intro": "Charlotta A. Bass Papers (1879/80-1969) journalist, community activist, and candidate for several elected offices.",
-    "image": "/static/image/collections-page/collections-image-charlotta.jpg",
+    "image": "/static/image/collections-page/collections-image-charlotta.png",
     "name": "Charlotta Bass Papers",
     "description": "Contains articles, speeches, and campaign materials that document Bass’s political life and activism.",
     "publish": false
