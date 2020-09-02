@@ -4,8 +4,10 @@ import RoundButton from "components/shared/RoundButton"
 import StyledTextWithButtons from "components/shared/StyledTextWithButtons"
 import SponsorPreFooter from "components/shared/SponsorPreFooter"
 import Link from "next/link"
+import HomeSearchBar from "components/HomePage/HomeSearchBar"
 
 const Offlink = ({ url, image }) => <a href={url} target={"_blank"}>{image}</a>
+
 
 const HomePage = () => {
   return (
@@ -22,6 +24,8 @@ const HomePage = () => {
           <img src="/static/graphic/home-page/home-graphic-hero.svg" />
         </div>
       </section>
+
+      <HomeSearchBar />
 
       <section className={`section__default ${scss.home__section_1}`}>
         <div className={scss.home__section_1__left}>
