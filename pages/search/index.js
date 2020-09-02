@@ -61,9 +61,6 @@ class Search extends React.Component {
 
         return (
             <MainLayout>
-                <Head>
-                    <title>{getSearchPageTitle(router.query.q)}</title>
-                </Head>
                 <OptionsBar
                     showFilters={this.state.showSidebar}
                     currentPage={currentPage}
