@@ -99,6 +99,7 @@ const AboutPage = () => {
       </div>
 
       <div className={scss.about__section_6}>
+        <div className={scss.about__section_6_line}></div>
         <div className={scss.about__section_6_content}>
           <h2>Credits</h2>
           <ul>

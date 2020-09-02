@@ -215,9 +215,18 @@
 .about__section_6 {
   
   position: relative;
-  margin-top: 3em;
+  margin-top: 120px;
   margin-left: 3em;
   margin-right: 3em;
+
+  .about__section_6_line {
+    height: 120px;
+    width: 2px;
+    background-color: #EC5938;
+    position: absolute;
+    top: -80px;
+    left: 50%;
+  }
 
   .about__section_6_content {
     border: 2px solid #FEDFDF;
