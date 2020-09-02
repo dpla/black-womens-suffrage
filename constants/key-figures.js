@@ -543,6 +543,7 @@ export const idaBWellsBarnett = {
 export const maryChurchTerrell = {
   "name": "Mary Church Terrell",
   "date": "1863–1954",
+  "image": "/static/image/key-figures/maryChurchTerrell.jpg",
   "sources": [
     {
       "description": "National Women's History Museum: Mary Church Terrell",
@@ -570,6 +571,7 @@ export const maryChurchTerrell = {
 export const maryTalbert = {
   "name": "Mary Talbert",
   "date": "1866–1923",
+  "image": "/static/image/key-figures/maryTalbert.jpg",
   "sources": [
     {
       "description": "National Women’s Hall of Fame: Talbert, Mary Burnett",
@@ -605,6 +607,7 @@ export const maryTalbert = {
 export const nannieHelenBurroughs = {
   "name": "Nannie Helen Burroughs",
   "date": "1879–1961",
+  "image": "/static/image/key-figures/nannieHelenBurroughs.jpg",
   "sources": [
     {
       "description": "Turning Point Suffragist Memorial: African American Women Leaders in the Suffrage Movement",
