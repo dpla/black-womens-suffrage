@@ -143,6 +143,13 @@
   }
 }
 
+.key_figures__disclaimer {
+  opacity: 0.5;
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+  font-style: italic;
+}
+
 /* Medium devices (landscape tablets, 768px and up) */
 // @media only screen and (min-width: 768px) {...}
 @media only screen and ($md-viewport) {
