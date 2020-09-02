@@ -47,6 +47,10 @@ export const keyFigures = {
     "name" : "Fannie Barrier Williams",
     "value": "FannieBarrierWilliams"
   },
+  "idaBWellsBarnett": {
+    "name": "Ida B. Wells Barnett",
+    "value": "IdaBWellsBarnett"
+  },
   "maryChurchTerrell": {
     "name" : "Mary Church Terrell",
     "value": "MaryChurchTerrell"
@@ -472,6 +476,62 @@ export const maryAnnShaddCary = {
     {
       "description": "American Battlefield Trust: Fugitive Slave Act",
       "href": "https://www.battlefields.org/learn/primary-sources/fugitive-slave-act"
+    },
+    {
+      "description": "Black Women in America: An Historical Encyclopedia. Darlene Clark Hine, Elsa Barkley Brown and Rosalyn Terborg-Penn, editors.",
+      "href": "https://www.goodreads.com/book/show/1449467.Black_Women_in_America"
+    }
+  ]
+}
+
+export const idaBWellsBarnett = {
+  "name": "Ida B. Wells Barnett",
+  "date": "1862-1931",
+  "image": "/static/image/key-figures/idaBWellsBarnett.jpg",
+  "sources": [
+    {
+      "description": "Ida B. Wells-Barnett, National Women’s History Museum",
+      "href": "https://www.womenshistory.org/education-resources/biographies/ida-b-wells-barnett"
+    },
+    {
+      "description": "9 Things You Must Know About Ida B. Wells-Barnett, Chicago Tribune",
+      "href": "https://www.chicagotribune.com/news/ct-met-idabwells-nine-things-to-know-20180719-story.html"
+    },
+    {
+      "description": "Ida B. Wells-Barnett, Britannica",
+      "href": "https://www.britannica.com/biography/Ida-B-Wells-Barnett"
+    },
+    {
+      "description": "Memphis Free Speech, Tennessee Encyclopedia",
+      "href": "https://tennesseeencyclopedia.net/entries/memphis-free-speech/"
+    },
+    {
+      "description": "Ida B. Wells-Barnett, Tennessee Encyclopedia",
+      "href": "https://tennesseeencyclopedia.net/entries/ida-b-wells-barnett/"
+    },
+    {
+      "description": "Ida B. Wells used data journalism to fight lynching, Vox",
+      "href": "https://www.vox.com/2015/7/16/8979771/ida-b-wells-lynching-data"
+    },
+    {
+      "description": "Ida B. Wells-Barnett, Social History Project, Virginia Commonwealth University",
+      "href": "https://socialwelfare.library.vcu.edu/eras/civil-war-reconstruction/wells-barnett-ida-b/"
+    },
+    {
+      "description": "Ida B. Wells: unsung heroine of the civil rights movement, The Guardian",
+      "href": "https://www.theguardian.com/world/2018/apr/27/ida-b-wells-civil-rights-movement-reporter"
+    },
+    {
+      "description": "Ida Wells-Barnett and the Alpha Suffrage Club, Harvard University Press on Medium",
+      "href": "https://medium.com/@hup/ida-wells-barnett-and-the-alpha-suffrage-club-e978edfc85d4"
+    },
+    {
+      "description": "Civil Disobedience, Social Justice, Nationalism, & Populism, Violent Demonstrations, and Race Relations by Gerald F. Goodwin. and Cary D. Wintz",
+      "href": "https://www.seakinglibrary.com/uploads/2/5/0/5/25052505/ida_b._wells-_%E2%80%9Cbooker_t._washington_and_his_critics%E2%80%9D.pdf"
+    },
+    {
+      "description": "Booker T. Washington and His Critics, by Ida B. Wells",
+      "href": "https://nationalhumanitiescenter.org/ows/seminars/progressive/bookertweb/wellsbookertwashingtoncritics.pdf"
     },
     {
       "description": "Black Women in America: An Historical Encyclopedia. Darlene Clark Hine, Elsa Barkley Brown and Rosalyn Terborg-Penn, editors.",
