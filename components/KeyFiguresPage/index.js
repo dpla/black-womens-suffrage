@@ -50,6 +50,7 @@ function KeyFiguresPage({ figure }) {
                     <a className={
                       (key == figure.figId ? scss.key_figures__active_item : scss.key_figures__li)
                     }>
+                      <span></span>
                       { fig.name }
                     </a>
                   </Link>

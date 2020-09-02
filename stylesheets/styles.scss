@@ -75,7 +75,6 @@ HomeHero {
    position: relative;
    max-width: 1440px;
    margin: auto;
-   background-color: white !important;
  }
 
 .section__default {
@@ -122,16 +121,6 @@ HomeHero {
   margin-bottom: 1.875rem;
   margin-top: 0;
 }
-// .banner__text_large {
-//   height: 192px;
-//   width: 455px;
-//   color: #4E4294;
-//   font-family: $inter;
-//   font-size: 32px;
-//   font-weight: 800;
-//   letter-spacing: 0.71px;
-//   line-height: 48px;
-// }
 
 .medium_page_section {
   height: 40rem;
@@ -139,4 +128,13 @@ HomeHero {
 
 .large_page_section {
   height: 55rem;
+}
+
+.container__curve {
+  border-radius: 0 0 115px 115px;
+  background: white;  
+
+  @media(min-width: 600px) {
+    border-radius: 0 0 150px 150px;
+  }
 }
