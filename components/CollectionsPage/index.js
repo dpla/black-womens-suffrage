@@ -48,6 +48,8 @@ const CollectionsPage = () => {
           })}
         </div>
 
+        <div className={scss.collections__line}></div>
+
       </section>
 
       <section className={`section__default display__flex ${scss.pss__section}`}>
