@@ -1,6 +1,8 @@
 @import "stylesheets/variables";
 
 .navbar {
+  background: $white;
+  
   .navbar__graphic {
     display: flex;
     width: 90%;
