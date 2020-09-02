@@ -92,24 +92,6 @@ function PartnersPage() {
                     historical and continuing activism of Black women. <Offlink url={"https://dpla.zoom.us/rec/play/75Z8Ie6h_DI3T9PEtgSDVPEoW9TuJqis13BN_qIKzxmyVHMKNgamYLsWZeMsg3xlnOgP_huLHvi6gzs5?autoplay=true&startTime=1594918908000"} text={"A recording of this event is available here"}/>.</p>
                     <p>For more information about this work, please contact DPLA community manager Shaneé Yvette Murrain at <a href={"mailto:shanee@dp.la"}>shanee@dp.la</a></p>
 
-                <h2>Credits</h2>
-                <ul>
-                    <li>Concept and Ideation &mdash; Samantha Gibson</li>
-                    <li>Curation and Partnerships &mdash; Shaneé Yvette Murrain</li>
-                    <li>Copywriting &mdash; Kathleen Williams</li>
-                    <li>Historical Review &mdash; Alison M. Parker, Ph.D., historian and author, <Offlink url={"https://uncpress.org/book/9781469659381/unceasing-militant/"} text={"Unceasing Militant: The Life of Mary Church Terrell"}/>
-                    </li>
-                    <li>Design &mdash; <Offlink url={"http://www.jasminelockwood.com/"} text="Jasmine A. Lockwood"/></li>
-                    <li>Data Engineering &mdash; Audrey Altman, Michael Della Bitta</li>
-                    <li>Development &mdash; Audrey Altman, Kiara Contreras, Michael Della Bitta, Scott Williams</li>
-                    <li>DPLA’s Statement on Potentially Harmful Content &mdash; Audrey Altman, DPLA Metadata Working
-                        Group Members
-                    </li>
-                </ul>
-
-
-                {/*Image Credits*/}
-
                 {/*Potential Images for Homepage*/}
                 {/*(will need to check permissions)*/}
 

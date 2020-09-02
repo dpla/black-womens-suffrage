@@ -212,6 +212,77 @@
   }
 }
 
+.about__section_6 {
+  
+  position: relative;
+  margin-top: 120px;
+  margin-left: 3em;
+  margin-right: 3em;
+
+  .about__section_6_line {
+    height: 120px;
+    width: 2px;
+    background-color: #EC5938;
+    position: absolute;
+    top: -80px;
+    left: 50%;
+  }
+
+  .about__section_6_content {
+    border: 2px solid #FEDFDF;
+    box-sizing: border-box;
+    border-radius: 0 150px 0 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    padding-right: 2em;
+    padding-left: 2em;
+  }
+
+  h2 {
+    padding-top: 2em;
+    padding-bottom: 1em;
+    color: #4E4294;
+    font-family: "Frank Ruhl Libre";
+    font-size: 34px;
+    font-weight: 900;
+    letter-spacing: 0.85px;
+    line-height: 47px;
+    text-align: center;
+  }
+
+  li {
+    border-bottom: 1px solid #DDDDDD;
+    padding-bottom: 1em;
+    padding-top: 1em;
+  }
+
+  li:last-of-type {
+    border-bottom: none;
+  }
+
+  .about__section_6_role {
+    opacity: 0.55;
+    color: #282830;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.15px;
+    line-height: 28px;
+    display: block;
+  }
+
+  .about__section_6_name {
+    color: #282830;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.15px;
+    line-height: 28px;
+    display: block;
+  }
+}
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and ($md-viewport) {
   .about__section_1 {
@@ -259,6 +330,44 @@
           width: 50%;
           margin: 3em 0;
         }
+      }
+    }
+  }
+
+  .about__section_6 {
+    ul {
+      display: table;
+      padding-right: 2em;
+      padding-left: 2em;
+      padding-bottom: 2em;
+    }
+
+    li {
+      display: table-row;
+    }
+
+    .about__section_6_role {
+      padding-right: 1em;
+      display: table-cell;
+      width: 33%;
+      padding-bottom: 1em;
+      padding-top: 1em;
+      border-bottom: 1px solid #DDDDDD;
+    }
+
+    .about__section_6_name {
+      display: table-cell;
+      padding-bottom: 1em;
+      padding-top: 1em;
+      border-bottom: 1px solid #DDDDDD;
+    }
+
+    li:last-of-type {
+      .about__section_6_role {
+        border-bottom: none;
+      }
+      .about__section_6_name {
+        border-bottom: none;
       }
     }
   }
