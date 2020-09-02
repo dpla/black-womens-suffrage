@@ -18,6 +18,7 @@ const CollectionsPage = () => {
       <section className={`section__default display__flex ${scss.collections__section}`}>
         <SectionTitle title="Featured Collections" />
 
+        <div className={scss.collections__tile_container_background}></div>
         <div className={scss.collections__tile_container}>
 
           { Object.keys(collections).map((key, index) => {
