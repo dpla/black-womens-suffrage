@@ -78,10 +78,19 @@
   }
 }
 
+.collections__line {
+  width: 2px;
+  background-color: $lightCoral;
+  height: 80px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .collections__section_title {
 
   margin-top: 2em;
-  margin-bottom: 1em;
+  margin-bottom: 3em;
+  text-align: center;
 
   span {
     height: 2px;
