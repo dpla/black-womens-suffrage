@@ -487,6 +487,7 @@ export const maryAnnShaddCary = {
 export const idaBWellsBarnett = {
   "name": "Ida B. Wells Barnett",
   "date": "1862-1931",
+  "image": "/static/image/key-figures/idaBWellsBarnett.jpg",
   "sources": [
     {
       "description": "Ida B. Wells-Barnett, National Women’s History Museum",
