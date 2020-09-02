@@ -33,6 +33,10 @@ const CharlotteLottieRollin = () => {
       </section>
 
       <Sources sources={charlotteLottieRollin.sources}/>
+
+      <section className={scss.key_figures__disclaimer}>
+        <p>In the spirit of highlighting hidden voices, we share Charlotte Rollin’s history here as she and her sisters were prominent figures in the Black Women’s Suffrage Movement. We regret that DPLA currently does not have any records documenting her life. If you have information about collections that uncover more of Charlotte’s voice, please email <a href="mailto:info@dp.la">info@dp.la</a>.</p>
+      </section>
     </>
   )
 }
