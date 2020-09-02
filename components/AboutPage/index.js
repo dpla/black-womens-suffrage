@@ -104,36 +104,40 @@ const AboutPage = () => {
           <h2>Credits</h2>
           <ul>
               <li>
-                <span className={scss.about__section_6_role}>Concept + Idea: </span>
+                <span className={scss.about__section_6_role}>Concept + Idea </span>
                 <span className={scss.about__section_6_name}>Samantha Gibson</span>
               </li>
               <li>
-                <span className={scss.about__section_6_role}>Curation + Partnerships: </span>
+                <span className={scss.about__section_6_role}>Curation + Partnerships </span>
                 <span className={scss.about__section_6_name}>Shaneé Yvette Murrain</span>
               </li>
               <li>
-                <span className={scss.about__section_6_role}>Copywriting: </span>
+                <span className={scss.about__section_6_role}>Copywriting </span>
                 <span className={scss.about__section_6_name}>Kathleen Williams</span>
               </li>
               <li>
-                <span className={scss.about__section_6_role}>Historical Review: </span>
+                <span className={scss.about__section_6_role}>Historical Review </span>
                 <span className={scss.about__section_6_name}>Alison M. Parker, Ph.D., historian and author, <Offlink url={"https://uncpress.org/book/9781469659381/unceasing-militant/"} text={"Unceasing Militant: The Life of Mary Church Terrell"}/></span>
               </li>
               <li>
-                <span className={scss.about__section_6_role}>Design: </span>
+                <span className={scss.about__section_6_role}>Design </span>
                 <span className={scss.about__section_6_name}><Offlink url={"http://www.jasminelockwood.com/"} text="Jasmine A. Lockwood"/></span>
               </li>
               <li>
-                <span className={scss.about__section_6_role}>Data Engineering: </span>
+                <span className={scss.about__section_6_role}>Data Engineering </span>
                 <span className={scss.about__section_6_name}>Audrey Altman, Michael Della Bitta</span>
               </li>
               <li>
-                <span className={scss.about__section_6_role}>Development: </span>
+                <span className={scss.about__section_6_role}>Development </span>
                 <span className={scss.about__section_6_name}>Audrey Altman, Kiara Contreras, Michael Della Bitta, Scott Williams</span>
               </li>
               <li>
-                <span className={scss.about__section_6_role}>DPLA’s Statement on Potentially Harmful Content: </span>
+                <span className={scss.about__section_6_role}>DPLA’s Statement on Potentially Harmful Content </span>
                 <span className={scss.about__section_6_name}>Audrey Altman, DPLA Metadata Working Group Members</span>
+              </li>
+              <li>
+                <span className={scss.about__section_6_role}>Copyrighted Images </span>
+                <span className={scss.about__section_6_name}>Collection of the Massachusetts Historical Society; National Portrait Gallery, Smithsonian Institution; Schomburg Center for Research in Black Culture, Photographs and Prints Division, The New York Public Library; The Stephen H. Hart Research Center, History Colorado; WUSTL Digital Gateway Image Collections & Exhibitions</span>
               </li>
           </ul>
         </div>
