@@ -8,7 +8,7 @@ const Footer = () => {
 
       <div className={scss.footer__container}>
         <section className={scss.footer__section_top}>
-          <img src="static/logo/dpla_bws-logo-white-footer.svg" />
+          <img src="/static/logo/dpla_bws-logo-white-footer.svg" />
 
           <nav className={scss.footer__links}>
             <Link href="/about">
@@ -36,7 +36,7 @@ const Footer = () => {
             </Link>
           </nav>
 
-          <img src="static/logo/dpla-logo-footer.svg" />
+          <img src="/static/logo/dpla-logo-footer.svg" />
         </section>
 
         <section className={scss.footer__divider}></section>
