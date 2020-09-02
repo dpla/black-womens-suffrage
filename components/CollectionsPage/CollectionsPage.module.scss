@@ -80,16 +80,31 @@
 
 .pss__section {
   margin: 1em;
+  padding-bottom: 3rem;
   flex-direction: column;
 }
 
 .pss__tile_container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+
+  a {
+    max-width: 350px;
+    display: block;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  a:focus {
+    outline: none;
+  }
 }
 
 .pss__tile {
-  width: 350px;
+  max-width: 350px;
   margin-bottom: 2rem;
 
   h2 {

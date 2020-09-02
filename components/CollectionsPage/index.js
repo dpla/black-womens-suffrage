@@ -75,13 +75,14 @@ const CollectionsPage = () => {
           { primarySourceSets.slice(3, 6).map((pss) => {
             
             return (
-              <a href={ pss.href } target="_blank">
-                <div className={scss.pss__tile}>
+              
+              <div className={scss.pss__tile}>
+                <a href={ pss.href } target="_blank">
                   <img src={ pss.image } />
                   <h2>{ pss.title }</h2>
                   <h3>{ pss.subtitle }</h3>
-                </div>
-              </a>
+                </a>
+              </div>
             )
           })}
         
