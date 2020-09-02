@@ -212,6 +212,58 @@
   }
 }
 
+.about__section_6 {
+  
+  position: relative;
+  margin-top: 3em;
+  margin-left: 3em;
+  margin-right: 3em;
+
+  .about__section_6_content {
+    border: 2px solid #FEDFDF;
+    box-sizing: border-box;
+    border-radius: 0 150px 0 0;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    padding: 1.5em;
+  }
+
+  h2 {
+    padding-top: 2em;
+    padding-bottom: 2em;
+    color: #4E4294;
+    font-family: "Frank Ruhl Libre";
+    font-size: 34px;
+    font-weight: 900;
+    letter-spacing: 0.85px;
+    line-height: 47px;
+    text-align: center;
+  }
+
+  .about__section_6_role {
+    opacity: 0.55;
+    color: #282830;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.15px;
+    line-height: 28px;
+    display: block;
+  }
+
+  .about__section_6_name {
+    color: #282830;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.15px;
+    line-height: 28px;
+    display: block;
+    padding-bottom: 1em;
+  }
+}
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and ($md-viewport) {
   .about__section_1 {
@@ -260,6 +312,25 @@
           margin: 3em 0;
         }
       }
+    }
+  }
+
+  .about__section_6 {
+    ul {
+      display: table;
+    }
+
+    li {
+      display: table-row;
+    }
+
+    .about__section_6_role {
+      padding-right: 1em;
+      display: table-cell;
+    }
+
+    .about__section_6_name {
+      display: table-cell;
     }
   }
 }

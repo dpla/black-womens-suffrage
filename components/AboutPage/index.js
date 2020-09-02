@@ -10,6 +10,8 @@ const AboutPage = () => {
     text = "For Black women, the fight wasn't over in 1920. Their movement for gender and racial equality continues.",
     graphic = "/static/graphic/about-page/about-graphic-hero.svg";
 
+  const Offlink = ({url, text}) => <a href={url} target={"_blank"}>{text}</a>
+
   return (
     <>
       <PageBanner title={title} text={text} graphic={graphic} />
@@ -93,6 +95,46 @@ const AboutPage = () => {
           <div className={scss.about__section_5_right}>
             <img className={scss.about__section_5_img} src="/static/graphic/about-page/about-graphic-body-4.svg" />
           </div>
+        </div>
+      </div>
+
+      <div className={scss.about__section_6}>
+        <div className={scss.about__section_6_content}>
+          <h2>Credits</h2>
+          <ul>
+              <li>
+                <span className={scss.about__section_6_role}>Concept + Idea: </span>
+                <span className={scss.about__section_6_name}>Samantha Gibson</span>
+              </li>
+              <li>
+                <span className={scss.about__section_6_role}>Curation + Partnerships: </span>
+                <span className={scss.about__section_6_name}>Shaneé Yvette Murrain</span>
+              </li>
+              <li>
+                <span className={scss.about__section_6_role}>Copywriting: </span>
+                <span className={scss.about__section_6_name}>Kathleen Williams</span>
+              </li>
+              <li>
+                <span className={scss.about__section_6_role}>Historical Review: </span>
+                <span className={scss.about__section_6_name}>Alison M. Parker, Ph.D., historian and author, <Offlink url={"https://uncpress.org/book/9781469659381/unceasing-militant/"} text={"Unceasing Militant: The Life of Mary Church Terrell"}/></span>
+              </li>
+              <li>
+                <span className={scss.about__section_6_role}>Design: </span>
+                <span className={scss.about__section_6_name}><Offlink url={"http://www.jasminelockwood.com/"} text="Jasmine A. Lockwood"/></span>
+              </li>
+              <li>
+                <span className={scss.about__section_6_role}>Data Engineering: </span>
+                <span className={scss.about__section_6_name}>Audrey Altman, Michael Della Bitta</span>
+              </li>
+              <li>
+                <span className={scss.about__section_6_role}>Development: </span>
+                <span className={scss.about__section_6_name}>Audrey Altman, Kiara Contreras, Michael Della Bitta, Scott Williams</span>
+              </li>
+              <li>
+                <span className={scss.about__section_6_role}>DPLA’s Statement on Potentially Harmful Content: </span>
+                <span className={scss.about__section_6_name}>Audrey Altman, DPLA Metadata Working Group Members</span>
+              </li>
+          </ul>
         </div>
       </div>
 
