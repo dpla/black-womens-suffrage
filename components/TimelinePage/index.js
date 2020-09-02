@@ -2,8 +2,6 @@ import React from "react"
 import scss from "components/TimelinePage/TimelinePage.module.scss"
 import PageBanner from "components/shared/PageBanner"
 import Dropdown from 'react-dropdown'
-import Year1820to1859 from "./Year1820to1859"
-import Year1860to1869 from "./Year1860to1869"
 import dynamic from "next/dynamic"
 
 class TimelinePage extends React.Component {
@@ -93,7 +91,10 @@ class TimelinePage extends React.Component {
                   value={years} 
                   className={
                     (index === this.state.activeLink ? scss.timeline__active_item : scss.timeline__li)
-                  }>{years}</li>                  
+                  }>
+                  <span></span>
+                    {years}
+                  </li>                  
                 )
               })}
             </ul>

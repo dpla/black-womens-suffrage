@@ -11,7 +11,7 @@ class MainLayout extends React.Component {
     const {children} = this.props
 
     return (
-      <div className="container">
+      <main className="container">
         <GoogleAnalytics>
         <Helmet htmlAttributes={{ lang: "en" }} />
         {/* <DPLAHead
@@ -23,10 +23,12 @@ class MainLayout extends React.Component {
         /> */}
         <Navbar />
         <MobileNavbar />
-        {children}
+        <div className="container__curve">
+          {children}
+        </div>
         <Footer/>
         </GoogleAnalytics>
-      </div>
+      </main>
     );
   }
 }

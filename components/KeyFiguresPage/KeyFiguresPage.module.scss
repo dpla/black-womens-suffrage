@@ -32,7 +32,7 @@
   }
 
   h2 {
-    color: #4E4294;
+    color: $blueGem;
     font-family: $libre;
     font-size: 30px;
     font-weight: 900;
@@ -78,12 +78,21 @@
   }
 
   .key_figures__active_item {
-    color: #8B2D9B;
+    color: $vividViolet;
+    display: flex;
+
+    span {
+      height: 2px;
+      width: 15px;
+      display: inline-block;
+      margin: 0.5em 0.5em 0.5em 0;
+      background: $vividViolet;
+    }
   }
 
   .key_figures__li {
     opacity: 0.5;
-    color: #282830;
+    color: $jaguar;
     font-family: $inter;
     font-size: 14px;
     font-weight: 500;
@@ -94,7 +103,7 @@
 
 .key_figures__right {
   p {
-    color: #282830;
+    color: $jaguar;
     font-family: $inter;
     font-size: 1em;
     font-weight: 500;
@@ -122,11 +131,11 @@
     width: 25px;
     display: inline-block;
     margin-bottom: 0.5em;
-    background: $lightCoral;
+    background: $nyPink;
   }
 
   h1 {
-    color: #4E4294;
+    color: $blueGem;
     font-family: $libre;
     font-size: 2em;
     font-weight: $xBold;

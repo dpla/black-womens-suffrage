@@ -1,5 +1,5 @@
 import React from "react"
-import scss from "../../KeyFiguresPage/KeyFiguresPage.module.scss"
+import scss from "components/KeyFiguresPage/KeyFiguresPage.module.scss"
 
 const SectionTitle = ({title}) => {
   return (
