@@ -4,6 +4,8 @@ import ItemList from "components/CollectionsPage/ItemList"
 import fs from 'fs'
 import path from 'path'
 import { collections } from "constants/collections"
+import Head from "next/head";
+
 
 function Collection({ collection, items }) {
 
@@ -11,8 +13,10 @@ function Collection({ collection, items }) {
       <MainLayout
         className="main"
         role="main"
-        pageTitle={ collection.name }
       >
+        <Head>
+          <title>{collection.name} | DPLA</title>
+        </Head>
         <ItemList collection={ collection } items={ items } />
       </MainLayout>
   )
