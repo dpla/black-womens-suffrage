@@ -235,12 +235,13 @@
     margin-left: auto;
     margin-right: auto;
     max-width: 800px;
-    padding: 1.5em;
+    padding-right: 2em;
+    padding-left: 2em;
   }
 
   h2 {
     padding-top: 2em;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
     color: #4E4294;
     font-family: "Frank Ruhl Libre";
     font-size: 34px;
@@ -248,6 +249,16 @@
     letter-spacing: 0.85px;
     line-height: 47px;
     text-align: center;
+  }
+
+  li {
+    border-bottom: 1px solid #DDDDDD;
+    padding-bottom: 1em;
+    padding-top: 1em;
+  }
+
+  li:last-of-type {
+    border-bottom: none;
   }
 
   .about__section_6_role {
@@ -259,7 +270,6 @@
     letter-spacing: 0.15px;
     line-height: 28px;
     display: block;
-    padding-bottom: 1em;
   }
 
   .about__section_6_name {
@@ -270,7 +280,6 @@
     letter-spacing: 0.15px;
     line-height: 28px;
     display: block;
-    padding-bottom: 1em;
   }
 }
 
@@ -328,6 +337,9 @@
   .about__section_6 {
     ul {
       display: table;
+      padding-right: 2em;
+      padding-left: 2em;
+      padding-bottom: 2em;
     }
 
     li {
@@ -337,11 +349,26 @@
     .about__section_6_role {
       padding-right: 1em;
       display: table-cell;
-      width: 30%;
+      width: 33%;
+      padding-bottom: 1em;
+      padding-top: 1em;
+      border-bottom: 1px solid #DDDDDD;
     }
 
     .about__section_6_name {
       display: table-cell;
+      padding-bottom: 1em;
+      padding-top: 1em;
+      border-bottom: 1px solid #DDDDDD;
+    }
+
+    li:last-of-type {
+      .about__section_6_role {
+        border-bottom: none;
+      }
+      .about__section_6_name {
+        border-bottom: none;
+      }
     }
   }
 }
