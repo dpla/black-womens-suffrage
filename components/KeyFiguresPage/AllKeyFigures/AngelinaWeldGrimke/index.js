@@ -17,7 +17,6 @@ const AngelinaWeldGrimke = () => {
       <IntroAndPortrait figure={ angelinaWeldGrimke } />
    
       <section>
-        <SectionTitle title="Early Years" />
         <p>Angelina Weld Grimké was born into a prominent biracial abolitionist family from Boston. Her father was Archibald Grimké, the son of a white plantation owner and enslaver and an enslaved woman of mixed race, and the nephew of the well-known white abolitionist and suffragist sisters Sarah and Angelina Grimké. Her mother Sarah Stanley was from a middle-class Midwestern family. Grimké's parents split when she was just 3 years old, and although she initially lived with white mother, at 7 she was returned to her father's care and never saw her mother again. Raised by her well-off father, who was a lawyer and the executive director of the National Association for the Advancement of Colored People (NAACP), Grimké was educated at some of the best schools in Massachusetts. She became an English teacher in her early 20s, working at the Armstrong Manual Training School and what would become Dunbar High School, both in Washington, D.C., and continuing her education in the summers.</p>
       </section>
 
@@ -27,7 +26,7 @@ const AngelinaWeldGrimke = () => {
       </section>
 
       <section>
-        <SectionTitle title="Suffrage" />
+        <SectionTitle title="Using Poetry and Theater to Advance Suffrage" />
         <p>A supporter of women's suffrage like her well-known aunts, Grimké believed that winning the vote was essential to ending injustice against women. She developed friendships with prominent suffragists and activists Mary Church Terrell and Coralie Franklin Cook, both of whom were involved in the National American Woman Suffrage Association and Black women's club movement, and she was active in an influential group of Washington, D.C.-based Black women suffragists that included Terrell and Cook, as well as Nannie Helen Burroughs, Anna Julia Cooper and others.</p>
       </section>
 

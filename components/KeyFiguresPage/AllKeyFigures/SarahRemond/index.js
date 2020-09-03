@@ -17,7 +17,6 @@ const SarahRemond = () => {
       <IntroAndPortrait figure={ sarahRemond } />
 
       <section>
-        <SectionTitle title="Early Years" />
         <p>Sarah Remond was the daughter of a prominent free Black abolitionist family in Salem, Massachusetts. In addition to advocating for abolition, the Remond family was a vocal critic of school segregation and pushed for integrated schools in Salem, which became the first town in Massachusetts to enact integrated public schools in 1844. An avid reader, Remond become Involved in the abolitionist cause at a young age and frequently attended anti-slavery lectures in Salem and Boston.</p>
       </section>
          
@@ -27,7 +26,7 @@ const SarahRemond = () => {
       </section>
 
       <section>
-        <SectionTitle title="Later Years" />
+        <SectionTitle title="The Expat Abolitionist" />
         <p>After the Civil War, she continued to live in London, where she became a member of the London Emancipation Society and the Freedmen's Aid Association, working to raise money and supplies for the newly emancipated. Remond left London for Florence in 1866, where she attended medical school and then practiced medicine for two decades.</p>
       </section>
 
