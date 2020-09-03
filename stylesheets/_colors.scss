@@ -58,12 +58,12 @@ $cranberry: #e04f8e;
 
 /* semantic colors */
 
-$linkColor: #ca4316 !default;
-$linkHoverColor: #cd570a !default;
-$visitedLinkColor: #ad5c1d !default;
+$linkColor: $vividViolet !default;
+$linkHoverColor: $blueGem !default;
+$visitedLinkColor: $nyPink !default;
 $paginationLinkColor: $cascadeBlue !default;
 $lightLinkColor: darken($casablancaOrange, 10%) !default;
-$subLinkColor: #007294 !default;
+$subLinkColor: $geraldine !default;
 $subLinkColorHover: darken($linkColor, 10%);
 $lightBorderColor: #e7e7e7 !default;
 $darkBorderColor: $hippieBlue !default;
@@ -73,7 +73,7 @@ $navColor: $tiberBlue !default;
 $userSiteColor: $hippieBlue !default;
 $mobileNavColor: $elephantBlue !default;
 $mobileNavMenuButtonOpen: darken($navColor, 10%) !default;
-$secondaryButtonColor: #0080a5 !default;
+$secondaryButtonColor: $vividViolet !default;
 $secondaryColor: $secondaryButtonColor !default;
 $primaryBulletColor: $secondaryButtonColor !default;
 $secondaryBulletColor: $linkColor !default;

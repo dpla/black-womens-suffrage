@@ -3,7 +3,7 @@ import React from "react";
 import ItemImage from "./ItemImage";
 import ItemTermValuePair from "./ItemTermValuePair";
 
-import {googleAnalytics, joinIfArray, readMyRights} from "lib";
+import { googleAnalytics, joinIfArray, readMyRights } from "lib";
 
 import css from "./Content.module.scss";
 
@@ -15,13 +15,13 @@ const RightsBadge = ({ url }) => {
   const myRights = readMyRights(url);
   return myRights
     ? <div className={css.rightsStatement}>
-        <a
-          href={myRights.url}
-          title="Learn more about the copyright status of this item"
-        >
-          <img src={myRights.image} alt={myRights.description} />
-        </a>
-      </div>
+      <a
+        href={myRights.url}
+        title="Learn more about the copyright status of this item"
+      >
+        <img src={myRights.image} alt={myRights.description} />
+      </a>
+    </div>
     : null;
 };
 
@@ -71,23 +71,32 @@ class MainMetadata extends React.Component {
                 useDefaultImage={item.useDefaultImage}
               />
               {item.sourceUrl &&
-                  <a
-                    rel="noopener"
-                    target="_blank"
-                    className={`${css.sourceLink} clickThrough external white`}
-                    onClick={getOnClickForExternalLink(item)}
-                    href={item.sourceUrl}
-                  >
-                    <span className={css.sourceLinkText}>
-                      {item.type === "image"
-                        ? "View Full Image"
-                        : item.type === "text"
-                          ? "View Full Text"
-                          : "View Full Item"}
-                    </span>
-                  </a>
+                <a
+                  rel="noopener"
+                  target="_blank"
+                  onClick={getOnClickForExternalLink(item)}
+                  href={item.sourceUrl}
+                >
+                </a>
+              }
+
+              <div className={css.search__item_intro}>
+                <p className={css.item__intro_title}>{item.title}</p>
+                <p className={css.item__intro_date}>{item.date.displayDate}</p>
+                <p className={css.item__intro_creator}>{joinIfArray(item.creator, ", ")}</p>
+                
+                <p className={css.item__intro_description}>
+                {Array.isArray(item.description)
+                  ?
+                  item.description[0]
+                  : item.description
                 }
-              {item.edmRights && <RightsBadge url={item.edmRights} />}
+                </p>
+                {/* <p className={css.description__link}>See Full Description Below</p> */}
+              </div>
+
+
+              {/* {item.edmRights && <RightsBadge url={item.edmRights} />} */}
               {/* 
         for situations where the rights are in sourceResource
         see: https://dp.la/item/7f2973c3c4429087b4874725f3bc67ad
@@ -95,20 +104,52 @@ class MainMetadata extends React.Component {
          */}
               {item.rights && Array.isArray(item.rights)
                 ? item.rights.map((theRight, index) => {
-                    return <RightsBadge url={theRight} key={index} />;
-                  })
+                  return <RightsBadge url={theRight} key={index} />;
+                })
                 : item.rights ? <RightsBadge url={item.rights} /> : null}
             </dd>
           </div>
+
+
+          <div className={css.divider}></div>
+
+          <section className={css.section_title}>
+            <div className={css.section_title_left}></div>
+            <h1><span>Item details</span></h1>
+          </section>
+
+          {item.title &&
+            <div className={css.termValuePair}>
+              <dt className={css.term}>
+                Title:
+              </dt>
+              <dd className={[css.value, css.mainMetadataText].join(" ")}>
+                {item.title}
+              </dd>
+            </div>}
+
+            {item.creator &&
+            <div className={css.termValuePair}>
+              <dt className={css.term}>
+                Creator:
+              </dt>
+              <dd className={[css.value, css.mainMetadataText].join(" ")}>
+                {joinIfArray(item.creator, ", ")}
+              </dd>
+            </div>}
+
           {item.date &&
             <div className={css.termValuePair}>
               <dt className={css.term}>
-                Created Date
+                Date Created:
               </dt>
               <dd className={[css.value, css.mainMetadataText].join(" ")}>
                 {item.date.displayDate}
               </dd>
             </div>}
+
+          <div className={css.divider}></div>
+
           {item.description &&
             <div className={css.termValuePair}>
               <dt className={css.term}>
@@ -123,8 +164,8 @@ class MainMetadata extends React.Component {
                 >
                   {Array.isArray(item.description)
                     ? item.description.map((element, index) => {
-                        return <p key={index}>{element}</p>;
-                      })
+                      return <p key={index}>{element}</p>;
+                    })
                     : item.description}
                 </div>
                 {descriptionIsLong &&
@@ -142,9 +183,6 @@ class MainMetadata extends React.Component {
                   </div>}
               </dd>
             </div>}
-          <ItemTermValuePair heading="Creator">
-            {joinIfArray(item.creator, ", ")}
-          </ItemTermValuePair>
         </dl>
       </div>
     );
