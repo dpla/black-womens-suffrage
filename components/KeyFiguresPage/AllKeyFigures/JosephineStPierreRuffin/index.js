@@ -32,7 +32,7 @@ const JosephineStPierreRuffin = () => {
       </section>
 
       <section>
-        <SectionTitle title="Black Womens' Clubs" />
+        <SectionTitle title="Black Women's Clubs" />
         <p>In 1893, she co-founded the Woman's Era Club, the first club founded and managed by Black women in Boston. The club published the Woman's Era newspaper, which was the first newspaper in America published for and by Black women. It is also known for publishing the early writings of activist Ida B. Wells-Barnett.</p>
         <p>In 1895, Ruffin organized the first national conference of Black women's clubs, which resulted in the formation of National Federation of Afro-American Women. That group merged with the National Association of Colored Women (NACW) in 1896; Ruffin served as NACW's first vice president.</p>
         <p>Ruffin was a consistent critic of all-white national women's clubs like the Women's Christian Temperance Union and spoke out about the dual burden faced by Black women. In 1900 she was invited to attend a Milwaukee conference of the General Federation of Women's Clubs as a member of the three organizations: the Woman's Era Club, the New England Women's Press Association and the New England Women's Club. When organizers discovered that the Woman's Era Club was a Black organization, she was told she would only be able to sit as a member of the predominantly white clubs to which she belonged. A white conference attendee even attempted to grab her badge from her. She refused to sit at all, and the event was nationally publicized as the "Ruffin incident."</p>

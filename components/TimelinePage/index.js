@@ -60,7 +60,7 @@ class TimelinePage extends React.Component {
 
   render() {
     const title = "TIMELINE",
-      text = "Celebrating Black women and the vote.",
+      text = "Marching toward progress: the journey to Black women’s suffrage.",
       graphic = "static/graphic/timeline-page/timeline-graphic-hero.png",
       initialYear = "1820-1859";
 

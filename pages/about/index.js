@@ -7,7 +7,7 @@ const About = () => {
   return (
       <MainLayout className="main" role="main">
           <Head>
-              <title>About Black Womens' Suffrage | DPLA</title>
+              <title>About Black Women's Suffrage | DPLA</title>
           </Head>
         <AboutPage />
       </MainLayout>

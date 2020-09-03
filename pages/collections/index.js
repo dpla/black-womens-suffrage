@@ -8,7 +8,7 @@ const Collections = () => {
   return (
       <MainLayout className="main" role="main">
           <Head>
-              <title>Black Womens' Suffrage: Collections | DPLA</title>
+              <title>Black Women's Suffrage: Collections | DPLA</title>
           </Head>
         <CollectionsPage />
       </MainLayout>
