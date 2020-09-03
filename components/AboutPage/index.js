@@ -104,7 +104,7 @@ const AboutPage = () => {
           <h2>Credits</h2>
           <ul>
               <li>
-                <span className={scss.about__section_6_role}>Concept + Idea: </span>
+                <span className={scss.about__section_6_role}>Concept + Ideation: </span>
                 <span className={scss.about__section_6_name}>Samantha Gibson</span>
               </li>
               <li>
