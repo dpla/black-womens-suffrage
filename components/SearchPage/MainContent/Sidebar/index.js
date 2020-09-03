@@ -160,7 +160,6 @@ class DateFacet extends React.Component {
         onSubmit={e => this.handleDateSubmit(e)}
       >
         <label className={css.dateFacet} htmlFor="after-date">
-          <span>Between Year</span>
           <input
             id="after-date"
             type="numeric"
@@ -169,10 +168,10 @@ class DateFacet extends React.Component {
             onChange={e => this.handleAfterText(e)}
             onBlur={e => this.validateAfter(e)}
             onKeyDown={e => this.handleKeyDown(e)}
+            placeholder="Start Year"
           />
         </label>
         <label className={css.dateFacet} htmlFor="before-date">
-          <span>and Year</span>
           <input
             id="before-date"
             type="numeric"
@@ -181,13 +180,14 @@ class DateFacet extends React.Component {
             onChange={e => this.handleBeforeText(e)}
             onBlur={e => this.validateBefore(e)}
             onKeyDown={e => this.handleKeyDown(e)}
+            placeholder="End Year"
           />
         </label>
         {Object.entries(formVals).map(([k, v], index) => {
           return <input type="hidden" name={k} key={index} value={v} />;
         })}
         <Button type="secondary" className={css.dateButton} mustSubmit={true}>
-          Update
+          SET
         </Button>
       </form>
     );
@@ -218,7 +218,7 @@ class Sidebar extends React.Component {
     let hasDates = false;
     return (
       <div className={css.sidebar}>
-        <h2>Refine your search</h2>
+        <h2>REFINE YOUR SEARCH</h2>
         <Accordion
           items={Object.keys(facets).map((key, i) => {
             if (key.indexOf("sourceResource.date") === -1 && key.indexOf("tags") === -1) {

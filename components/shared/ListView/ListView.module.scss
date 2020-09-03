@@ -188,7 +188,7 @@
 
 .itemInfo {
   width: 66%;
-  padding-right: 1rem;
+  padding-right: .5em;
 }
 
 .defaultImageWrapper {
@@ -233,6 +233,7 @@
   font-size: 0.875rem;
   margin-top: 0.25rem;
   padding-bottom: 0.25rem;
+  word-wrap: break-word;
 }
 
 .itemSource, .itemSource:visited {

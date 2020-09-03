@@ -74,7 +74,7 @@ class FiltersList extends React.Component {
               : ""} ${css.filtersList} container`}
           >
             <div className={css.labelAndFilters}>
-              <span className={css.labelText}>Filtered by</span>
+              <span className={css.labelText}>FILTERS</span>
               <ul className={css.filters}>
                 {Object.keys(query).map((queryKey, index) => {
                   const value = joinIfArray(query[queryKey], "|");
