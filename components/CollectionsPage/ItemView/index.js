@@ -11,15 +11,15 @@ const ItemView = ({ item }) => {
         <PDFViewer pathToFile={`/api/dpla/pdf/${item.colId}/${item.itemId}`}/>
         <div className={scss.item_view__main_details}>
           <h1>{ item.title.join(": ") }</h1>
-          <div className={scss.item_view__main_date}>
+          { item.date.length != 0 && <div className={scss.item_view__main_date}>
             { item.date.join(", ") }
-          </div>
-          <div className={scss.item_view__main_creator}>
+          </div> }
+          { item.creator.length != 0 && <div className={scss.item_view__main_creator}>
             { item.creator.join("; ") }
-          </div>
-          <div className={scss.item_view__main_description}>
+          </div> }
+          { item.description.length != 0 && <div className={scss.item_view__main_description}>
             { item.description.join(". ") }
-          </div>
+          </div> }
         </div>
       </section>
 
@@ -51,7 +51,13 @@ const ItemView = ({ item }) => {
           </li> }
           { item.subject.length != 0 && <li>
             <span className={scss.item_view__label}>Subject: </span>
-            <span className={scss.item_view__value}>{ item.subject.join(", ") }</span>
+            <span className={scss.item_view__value}>
+              { item.subject.map((subject) => {
+                return(
+                  <p>{ subject }</p>
+                )
+             })}
+            </span>
           </li> }
           { item.type.length != 0 && <li>
             <span className={scss.item_view__label}>Type: </span>
@@ -69,12 +75,28 @@ const ItemView = ({ item }) => {
 
         <ul>
           { item.identifier.length != 0 && <li>
-            <span className={scss.item_view__label}>Identifier: </span>
-            <span className={scss.item_view__value}>{ item.identifier.join(", ") }</span>
+            <span className={scss.item_view__label}>URL: </span>
+            <span className={scss.item_view__value}>
+             { item.identifier.map((id) => {
+                return(
+                  <a href={ id }>
+                    { id }
+                  </a>
+                )
+             })}
+            </span>
           </li> }
           { item.rights.length != 0 && <li>
             <span className={scss.item_view__label}>Rights: </span>
-            <span className={scss.item_view__value}>{ item.rights.join(", ") }</span>
+            <span className={scss.item_view__value}>
+            { item.rights.map((rights) => {
+                return(
+                  <a href={ rights }>
+                    { rights }
+                  </a>
+                )
+             })}
+            </span>
           </li> }
           { item.publisher.length != 0 && <li>
             <span className={scss.item_view__label}>Publisher: </span>
