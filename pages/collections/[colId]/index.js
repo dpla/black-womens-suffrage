@@ -5,7 +5,7 @@ import fs from 'fs'
 import path from 'path'
 import { collections } from "constants/collections"
 import Head from "next/head";
-
+import BreadcrumbsModule from "components/CollectionsPage/BreadcrumbsModule"
 
 function Collection({ collection, items }) {
 
@@ -17,6 +17,17 @@ function Collection({ collection, items }) {
         <Head>
           <title>{collection.name} | DPLA</title>
         </Head>
+        <BreadcrumbsModule
+            breadcrumbs={[
+              {
+                title: "Collections",
+                url: {
+                  pathname: "/collections"
+                }
+              },
+              { title: collection.name, search: "" }
+            ]}
+          />
         <ItemList collection={ collection } items={ items } />
       </MainLayout>
   )
