@@ -2,6 +2,7 @@ import React from "react"
 import Link from "next/link"
 import scss from "components/CollectionsPage/ItemList/ItemList.module.scss"
 import CollectionHeader from "components/CollectionsPage/CollectionHeader"
+import BreadcrumbsModule from "components/CollectionsPage/BreadcrumbsModule"
 
 const ItemList = ({ collection, items }) => {
   const image = collection.image,
