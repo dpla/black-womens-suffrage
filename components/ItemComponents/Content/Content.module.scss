@@ -39,11 +39,14 @@ $listPadding: 1.125rem;
 }
 
 .term {
-  color: $dimmedTextColor;
-  font-size: 0.875rem;
-  font-weight: 600;
-  padding-top: 0.25rem;
-  width: auto;
+  opacity: 0.55;
+  color: $jaguar;
+  font-family: $sansFont;
+  font-size: 1em;
+  font-weight: 500;
+  letter-spacing: 0.19px;
+  line-height: 28px;
+  padding: .5em 0;
 
   @media (min-width: $smallRem) {
     width: 9rem;

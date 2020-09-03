@@ -115,7 +115,7 @@ class MainMetadata extends React.Component {
 
           <section className={css.section_title}>
             <div className={css.section_title_left}></div>
-            <h1><span>Item details</span></h1>
+            <h1>Item details</h1>
           </section>
 
           {item.title &&
@@ -153,7 +153,7 @@ class MainMetadata extends React.Component {
           {item.description &&
             <div className={css.termValuePair}>
               <dt className={css.term}>
-                Description
+                Description:
               </dt>
               <dd className={[css.value, css.mainMetadataText].join(" ")}>
                 <div

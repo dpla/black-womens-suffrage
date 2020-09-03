@@ -6,7 +6,7 @@ const ItemTermValuePair = ({ heading, children, className }) =>
   children
     ? <div className={[css.termValuePair, className].join(" ")}>
         <dt className={css.term}>
-          {heading}
+          {heading}:
         </dt>
         <dd className={[css.value, css.otherMetadataItem].join(" ")}>
           {children}

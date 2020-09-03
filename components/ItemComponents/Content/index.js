@@ -46,9 +46,6 @@ class Content extends React.Component {
     const { item, url } = this.props;
     return (
       <div className={`section__default ${css.content}`}>
-        {/* <h1 className={css.title}>
-          {item.title && item.title !== "" ? item.title : UNTITLED_TEXT}
-        </h1> */}
         <MainMetadata item={item} />
         <OtherMetadata item={item} />
         <JsonLdMarkup item={item} url={url} />
