@@ -6,9 +6,9 @@ import fs from 'fs'
 import path from 'path'
 import { collections } from "constants/collections"
 import Head from "next/head";
+import BreadcrumbsModule from "components/CollectionsPage/BreadcrumbsModule"
 
 function CollectionItem({ item }) {
-
   return (
       <MainLayout 
         className="main" 
@@ -17,6 +17,22 @@ function CollectionItem({ item }) {
         <Head>
           <title>{item.title} | DPLA</title>
         </Head>
+        <BreadcrumbsModule
+            breadcrumbs={[
+              {
+                title: "Collections",
+                url: "/collections"
+              },
+              { 
+                title: item.colName,
+                url: "/collections/[colId]",
+                as: "/collections/" + item.colId
+              },
+              {
+                title: item.title.join(", ")
+              }
+            ]}
+          />
         <ItemView item={ item } />
       </MainLayout>
   );
@@ -67,6 +83,7 @@ export async function getStaticProps({ params }) {
   const item = items[params.colItemId];
 
   item.colId = params.colId;
+  item.colName = collections[params.colId]["name"]
   item.itemId = params.colItemId;
 
   return {

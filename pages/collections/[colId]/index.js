@@ -25,7 +25,9 @@ function Collection({ collection, items }) {
                   pathname: "/collections"
                 }
               },
-              { title: collection.name, search: "" }
+              { 
+                title: collection.name
+              }
             ]}
           />
         <ItemList collection={ collection } items={ items } />
