@@ -9,8 +9,17 @@ const ItemView = ({ item }) => {
     <section className={scss.item_view}>
       <section className={scss.item_view__main}>
         <PDFViewer pathToFile={`/api/dpla/pdf/${item.colId}/${item.itemId}`}/>
-        <div className={scss.item_view__main_description}>
+        <div className={scss.item_view__main_details}>
           <h1>{ item.title.join(": ") }</h1>
+          <div className={scss.item_view__main_date}>
+            { item.date.join(", ") }
+          </div>
+          <div className={scss.item_view__main_creator}>
+            { item.creator.join("; ") }
+          </div>
+          <div className={scss.item_view__main_description}>
+            { item.description.join(". ") }
+          </div>
         </div>
       </section>
 
