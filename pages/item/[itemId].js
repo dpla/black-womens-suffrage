@@ -40,27 +40,13 @@ const ItemDetail = ({url, item}) => {
         route={url}
       />
 
-      <div
+      <main
          id="main"
          role="main"
          className={`container ${css.contentWrapper}`}
        >
-
          <Content item={item} url={url} />
-
-         <div className={css.faveAndCiteButtons}>
-           <CiteButton
-             creator={item.creator}
-             displayDate={item.date ? item.date.displayDate : item.date}
-             spatialName={item.spatial ? item.spatial.name : item.spatial}
-             sourceUrl={item.sourceUrl}
-             className={css.citeButton}
-             toCiteText="item"
-             title={item.title}
-           />
-           {/*<CheckableLists itemId={item.id} />*/}
-        </div>
-      </div>
+      </main>
 
     </MainLayout>
   );

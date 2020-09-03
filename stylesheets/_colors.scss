@@ -59,11 +59,11 @@ $cranberry: #e04f8e;
 /* semantic colors */
 
 $linkColor: $vividViolet !default;
-$linkHoverColor: $nyPink !default;
-$visitedLinkColor: $lightCoral !default;
-$paginationLinkColor: $vividViolet !default;
+$linkHoverColor: $blueGem !default;
+$visitedLinkColor: $nyPink !default;
+$paginationLinkColor: $cascadeBlue !default;
 $lightLinkColor: darken($casablancaOrange, 10%) !default;
-$subLinkColor: #007294 !default;
+$subLinkColor: $geraldine !default;
 $subLinkColorHover: darken($linkColor, 10%);
 $lightBorderColor: #e7e7e7 !default;
 $darkBorderColor: $hippieBlue !default;
