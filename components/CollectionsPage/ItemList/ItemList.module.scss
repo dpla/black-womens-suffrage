@@ -28,32 +28,39 @@
   display: flex;
   margin: 1em;
   flex-wrap: wrap;
+  padding-bottom: 5em;
 
   .item__li {
     width: 50%;
+    padding-bottom: 1em;
 
     a {
       .item__title {
         color: #282830;
         font-family: $inter;
-        font-size: 18px;
+        font-size: 16px;
         font-weight: 600;
         letter-spacing: 0.17px;
-        line-height: 28px;
+        line-height: 24px;
       }
       
       .item__date {
         opacity: 0.55;
         color: #282830;
         font-family: $inter;
-        font-size: 16px;
+        font-size: 14px;
         font-weight: 500;
         letter-spacing: 0.15px;
-        line-height: 28px;
+        line-height: 24px;
       }
   
       p {
         width: 95%;
+      }
+
+      img {
+        width: 100%;
+        object-fit: cover;
       }
     }
     
@@ -78,19 +85,4 @@
       width: auto;
     }
   } 
-
-  .item__ul {
-    .item__li {
-      height: 30em;
-      margin-bottom: 4.5em; 
-
-    }
-
-    img {
-      height: 85%;
-    }
-  }
-
-
-
 }
