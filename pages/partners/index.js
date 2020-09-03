@@ -8,7 +8,7 @@ function Partners() {
   return (
       <MainLayout className="main" role="main">
           <Head>
-              <title>Black Womens' Suffrage: Partners | DPLA</title>
+              <title>Black Women's Suffrage: Partners | DPLA</title>
           </Head>
         <PartnersPage />
       </MainLayout>

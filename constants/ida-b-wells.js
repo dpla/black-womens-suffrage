@@ -1081,7 +1081,7 @@
     "date" : [ "1914-03-18" ],
     "identifier" : [ "https://www.lib.uchicago.edu/ead/pdf/ibwells-0008-009-07.pdf" ],
     "rights" : [ "http://rightsstatements.org/vocab/NoC-US/1.0/" ],
-    "description" : [ "First issues of The Alpha Suffrage Record, published by the Alpha Suffrage Club, the first black women's suffrage club in Illinois, co-founded by Ida B. Wells." ],
+    "description" : [ "First issues of The Alpha Suffrage Record, published by the Alpha Suffrage Club, the first Black women's suffrage club in Illinois, co-founded by Ida B. Wells." ],
     "spatial" : [ ],
     "publisher" : [ "University of Chicago Library, Special Collections Research Center" ],
     "language" : [ ],

@@ -7,7 +7,7 @@ const Home = () => {
   return (
       <MainLayout className="main" role="main">
           <Head>
-              <title>Black Womens' Suffrage | DPLA</title>
+              <title>Black Women's Suffrage | DPLA</title>
           </Head>
         <HomePage/>
       </MainLayout>

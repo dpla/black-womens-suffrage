@@ -8,7 +8,7 @@ const Offlink = ({url, text}) => <a href={url} target={"_blank"}>{text}</a>
 
 function PartnersPage() {
     const title = "PARTNERS",
-        text = "Reconstructing visibility of Black womens' activism together.",
+        text = "Reconstructing visibility of Black women's activism together.",
         graphic = "/static/graphic/partners-page/partners-graphic-hero.png"
 
 

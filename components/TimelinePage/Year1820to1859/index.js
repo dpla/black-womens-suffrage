@@ -37,7 +37,7 @@ const Year1820to1859 = () => {
         </div>
         <div className={scss.tile__p}>
           <p>White woman suffragists gather at the Seneca Falls Convention. No Black women are invited to attend.</p>
-          <p>Frederick Douglass may have been the only Black person in attendance. Douglass becomes the first man (black or white) to publicly call for women’s suffrage. (Terborg-Penn, p. 14)</p>
+          <p>Frederick Douglass may have been the only Black person in attendance. Douglass becomes the first man (Black or white) to publicly call for women’s suffrage. (Terborg-Penn, p. 14)</p>
           <p>At the Colored National Convention, one woman makes a speech making a case for women’s rights.</p>
         </div>
       </div>

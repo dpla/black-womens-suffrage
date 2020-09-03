@@ -8,7 +8,7 @@ function HarmfulLanguageStatement() {
     return (
         <MainLayout className="main" role="main">
             <Head>
-                <title>Black Womens' Suffrage: Harmful Language Statement | DPLA</title>
+                <title>Black Women's Suffrage: Harmful Language Statement | DPLA</title>
             </Head>
             <HarmfulLanguageStatementPage />
         </MainLayout>

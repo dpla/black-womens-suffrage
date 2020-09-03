@@ -28,8 +28,8 @@ const AboutPage = () => {
 
         <div className={scss.about__section_1_right}>
           <StyledText
-            subtitle={"These women played significant leadership roles leading up to and during the United States Women’s Suffrage Movement and beyond, yet their stories and contributions are not widely known and the critical roles black women played at the forefront of the campaign for women’s rights are too often forgotten."}
-            text={"This gap in America’s public consciousness is rooted in the history of racism and exclusion within the Suffrage Movement, which resulted in white women emerging as the movement’s primary protagonists, while black women were effectively wiped from the narrative."} />
+            subtitle={"These women played significant leadership roles leading up to and during the United States Women’s Suffrage Movement and beyond, yet their stories and contributions are not widely known and the critical roles Black women played at the forefront of the campaign for women’s rights are too often forgotten."}
+            text={"This gap in America’s public consciousness is rooted in the history of racism and exclusion within the Suffrage Movement, which resulted in white women emerging as the movement’s primary protagonists, while Black women were effectively wiped from the narrative."} />
         </div>
       </div>
 
@@ -40,7 +40,7 @@ const AboutPage = () => {
 
       <div className={scss.about__section_3}>
         <div className={scss.about__section_3_left}>
-          <p className={scss.about__section_3_left_bold}>For black women, the struggle to vote and to effect change through civic engagement more broadly did not end in 1920.</p>
+          <p className={scss.about__section_3_left_bold}>For Black women, the struggle to vote and to effect change through civic engagement more broadly did not end in 1920.</p>
           <p className={scss.about__section_3_left_p}>Their stories add new shades of context to related topics in our nation today, from the suppression of voting rights based on race and gender to the increasing number of women of color running for—and winning—elected office.</p>
         </div>
 
@@ -89,7 +89,7 @@ const AboutPage = () => {
             <h2>Curating the Black Women’s Suffrage Digital Collection</h2>
             <p>Materials in this collection and the language that describes them may be harmful. Libraries and archives collect materials from different cultures and time periods to preserve and make available the historical record. As a result, library materials, such as those presented here, may reflect racist and misogynoir views that may be harmful and difficult to view.</p>
             <p>The content featured in this collection explores linkages between Black women’s suffrage and other social causes of the nineteenth and early twentieth centuries (anti-slavery, anti-lynching, education reform and civil rights) as well as racism within the Suffrage Movement. These materials are presented here to recognize and celebrate the important contributions of Black women and their resiliency in the face of ongoing racism and exclusion.</p>
-            <RoundButton text="SEE HARMFUL LANGUAGE DISCLAIMERS" icon="/static/icon/button-arrow.svg" url={"/harmful-language-statement"} />
+            <RoundButton text="SEE HARMFUL LANGUAGE STATEMENT" icon="/static/icon/button-arrow.svg" url={"/harmful-language-statement"} />
           </div>
 
           <div className={scss.about__section_5_right}>

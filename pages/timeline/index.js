@@ -8,7 +8,7 @@ function Timeline() {
   return (
       <MainLayout className="main" role="main">
           <Head>
-              <title>Black Womens' Suffrage Timeline | DPLA</title>
+              <title>Black Women's Suffrage Timeline | DPLA</title>
           </Head>
         <TimelinePage />
       </MainLayout>
