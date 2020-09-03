@@ -21,6 +21,17 @@
 }
 
 .item_view__main_details {
+  padding-top: 3em;
+  padding-bottom: 3em;
+
+  h1 {
+      color: #282830;
+      font-family: "Frank Ruhl Libre";
+      font-size: 34px;
+      font-weight: 900;
+      letter-spacing: 0.85px;
+      line-height: 47px;
+    }
 
   .item_view__main_date {
     opacity: 0.55;
@@ -48,9 +59,14 @@
   }
 }
 
+.item_view__metadata {
+  padding: 3em;
+  padding-bottom: 5em;
+}
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
   
   .item_view__main {
     flex-direction: row;
@@ -58,16 +74,13 @@
     .item_view__main_details {
       padding: 3em;
       width: 70%;
-
-      h1 {
-        color: #282830;
-        font-family: "Frank Ruhl Libre";
-        font-size: 34px;
-        font-weight: 900;
-        letter-spacing: 0.85px;
-        line-height: 47px;
-      }
     }
+  }
+
+  .item_view__metadata {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
 }
