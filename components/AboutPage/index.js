@@ -28,8 +28,8 @@ const AboutPage = () => {
 
         <div className={scss.about__section_1_right}>
           <StyledText
-            subtitle={"These women played significant leadership roles leading up to and during the United States Women’s Suffrage Movement and beyond, yet their stories and contributions are not widely known and the critical roles black women played at the forefront of the campaign for women’s rights are too often forgotten."}
-            text={"This gap in America’s public consciousness is rooted in the history of racism and exclusion within the Suffrage Movement, which resulted in white women emerging as the movement’s primary protagonists, while black women were effectively wiped from the narrative."} />
+            subtitle={"These women played significant leadership roles leading up to and during the United States Women’s Suffrage Movement and beyond, yet their stories and contributions are not widely known and the critical roles Black women played at the forefront of the campaign for women’s rights are too often forgotten."}
+            text={"This gap in America’s public consciousness is rooted in the history of racism and exclusion within the Suffrage Movement, which resulted in white women emerging as the movement’s primary protagonists, while Black women were effectively wiped from the narrative."} />
         </div>
       </div>
 
@@ -40,7 +40,7 @@ const AboutPage = () => {
 
       <div className={scss.about__section_3}>
         <div className={scss.about__section_3_left}>
-          <p className={scss.about__section_3_left_bold}>For black women, the struggle to vote and to effect change through civic engagement more broadly did not end in 1920.</p>
+          <p className={scss.about__section_3_left_bold}>For Black women, the struggle to vote and to effect change through civic engagement more broadly did not end in 1920.</p>
           <p className={scss.about__section_3_left_p}>Their stories add new shades of context to related topics in our nation today, from the suppression of voting rights based on race and gender to the increasing number of women of color running for—and winning—elected office.</p>
         </div>
 
