@@ -21,30 +21,34 @@ const CollectionsPage = () => {
         <div className={scss.collections__tile_container_background}></div>
         <div className={scss.collections__tile_container}>
 
-          { Object.keys(collections).map((key, index) => {
+          {Object.keys(collections).map((key, index) => {
             const collection = collections[key];
 
             return (
-              <div className={scss.collections__tile} key={`collections-tile-${index + 1}`}>
-                <img src={collection.image} />
-                <h2>{collection.name}</h2>
-                <p>{collection.description}</p>
-
-                {collection.publish ?
-                  <button className={scss.collections_button__active}>
-                    <Link href="/collections/[colId]" as={`/collections/${ key }`}>
+              collection.publish ?
+                <Link href="/collections/[colId]" as={`/collections/${key}`}>
+                  <div className={scss.collections__tile} key={`collections-tile-${index + 1}`}>
+                    <img src={collection.image} />
+                    <h2>{collection.name}</h2>
+                    <p>{collection.description}</p>
+                    <button className={scss.collections_button__active}>
                       <a>VIEW COLLECTION</a>
-                    </Link>
-                    <img src="static/icon/collections-page/button-arrow.svg" />
-                    <div className={scss.collections_button__active_underline}></div>
-                  </button>
-                  :
+                      <img src="static/icon/collections-page/button-arrow.svg" />
+                      <div className={scss.collections_button__active_underline}></div>
+                    </button>
+                  </div>
+                </Link>
+                :
+                <div className={scss.collections__tile} key={`collections-tile-${index + 1}`}>
+                  <img src={collection.image} />
+                  <h2>{collection.name}</h2>
+                  <p>{collection.description}</p>
+
                   <button className={scss.collections_button__inactive}>
                     <p>COMING SOON</p>
                     <div className={scss.collections_button__inactive_underline}></div>
                   </button>
-                }
-              </div>
+                </div>
             )
           })}
         </div>
@@ -58,14 +62,14 @@ const CollectionsPage = () => {
 
         <div className={scss.pss__tile_container}>
 
-          { primarySourceSets.slice(0, 3).map((pss) => {
-            
+          {primarySourceSets.slice(0, 3).map((pss) => {
+
             return (
-              <a href={ pss.href } target="_blank">
+              <a href={pss.href} target="_blank">
                 <div className={scss.pss__tile}>
-                  <img src={ pss.image } />
-                  <h2>{ pss.title }</h2>
-                  <h3>{ pss.subtitle }</h3>
+                  <img src={pss.image} />
+                  <h2>{pss.title}</h2>
+                  <h3>{pss.subtitle}</h3>
                 </div>
               </a>
             )
@@ -75,20 +79,20 @@ const CollectionsPage = () => {
 
         <div className={scss.pss__tile_container}>
 
-          { primarySourceSets.slice(3, 6).map((pss) => {
-            
+          {primarySourceSets.slice(3, 6).map((pss) => {
+
             return (
-              
+
               <div className={scss.pss__tile}>
-                <a href={ pss.href } target="_blank">
-                  <img src={ pss.image } />
-                  <h2>{ pss.title }</h2>
-                  <h3>{ pss.subtitle }</h3>
+                <a href={pss.href} target="_blank">
+                  <img src={pss.image} />
+                  <h2>{pss.title}</h2>
+                  <h3>{pss.subtitle}</h3>
                 </a>
               </div>
             )
           })}
-        
+
         </div>
       </section>
     </>

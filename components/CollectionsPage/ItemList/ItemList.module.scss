@@ -33,7 +33,7 @@
   .item__li {
     width: 50%;
     padding-bottom: 1em;
-
+    
     a {
       .item__title {
         color: #282830;
@@ -61,6 +61,7 @@
       img {
         width: 100%;
         object-fit: cover;
+        border-radius: .75em;
       }
     }
     
