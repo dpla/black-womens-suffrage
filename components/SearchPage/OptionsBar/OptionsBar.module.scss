@@ -132,20 +132,23 @@
 }
 
 .viewButtonInactive.gridViewButton {
-  box-shadow: 0 -0.075rem 0.15rem 0 $lightBorderColor;
+  // box-shadow: 0 -0.075rem 0.15rem 0 $lightBorderColor;
 }
 
 .viewButtonInactive.listViewButton {
-  box-shadow: 0 -0.075rem 0.15rem 0 $lightBorderColor;
+  // box-shadow: 0 -0.075rem 0.15rem 0 $lightBorderColor;
 }
 
 .viewButtonActive {
   cursor: default;
-  background-color: #ebe9e8;
+  // background-color: #ebe9e8;
+  border-radius: 8px 0 8px 0;
+  background-color: rgba(139,45,155,0.2);
+
 }
 
 .viewButtonActive .viewButtonIcon {
-  opacity: 0.45;
+  // opacity: 0.45;
 }
 
 .viewButtonIcon {

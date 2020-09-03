@@ -20,7 +20,8 @@
     font-size: 1.125rem;
     padding: 3px 10px;
     margin: 0 3px;
-    border-radius: 2px;
+    border-radius: 50%;
+    font-weight: $bold;
   }
 }
 
@@ -37,9 +38,9 @@
 }
 
 .activeLink, .activeLink:visited {
-  color: black;
+  color: $paginationLinkColor;
   box-sizing: border-box;
-  border: 0.1rem solid $lightBorderColor;
+  border: 2px solid $paginationLinkColor;
 }
 
 .link:not(.activeLink):hover {
@@ -81,7 +82,7 @@
   color: white;
 
   @media (min-width: $smallRem) {
-    background-color: $colderBackgroundColor;
+    background-color: $gray75;
     color: $paginationLinkColor;
     margin-left: 10px;
   }
