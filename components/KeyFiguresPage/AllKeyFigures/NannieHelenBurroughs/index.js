@@ -17,7 +17,6 @@ const NannieHelenBurroughs = () => {
       <IntroAndPortrait figure={ nannieHelenBurroughs } />
 
       <section>
-        <SectionTitle title="Early Years" />
         <p>Educator, suffragist and religious leader Nannie Helen Burroughs was born in 1879 in Orange, Virginia. Her father was the son of an enslaved man who had managed to buy his freedom; her mother was formerly enslaved. When she was a young child, her father died and she moved with her mother to Washington, D.C. so that she could pursue an education superior to that available to her in Virginia. She attended Washington, D.C.'s M Street Colored High School, where the suffragists and activists Mary Church Terrell and Anna Julia Cooper, who would exert great influence on her life, were among her teachers.</p>
       </section>
          
@@ -29,7 +28,7 @@ const NannieHelenBurroughs = () => {
       </section>
 
       <section>
-        <SectionTitle title="National Training School" />
+        <SectionTitle title="The National Training School" />
         <p>In 1909, Burroughs led the Women's Convention in the establishment of the National Training School for Women and Girls, which was the first vocational school for Black women and girls in the country. The boarding high school and junior college provided academic studies (including courses in Black history), religious instruction and technical training in trades ranging from home economics to printing to shoe repair in order to prepare Black women for the workforce. The National Training School advocated for racial uplift through self-help and was unique in that it was staffed, managed and funded by African Americans. Burroughs herself worked as a teacher at the school, and dedicated much of the rest of her life to the education of Black women.</p>
       </section>
 
@@ -44,7 +43,6 @@ const NannieHelenBurroughs = () => {
       </section>
 
       <section>
-        <SectionTitle title="Later Years" />
         <p>In her later years, she remained a popular and respected leader and continued to speak out on issues of Black pride and education. She developed a close friendship and working relationship with civil rights leader Martin Luther King, Jr., the son of her friends Martin Luther King, Sr. and his wife Alberta. This relationship was symbolic of the way in which Burroughs' work helped set a foundation for the Civil Rights Movement. Burroughs continued to lead the NBC Women's Auxiliary until her death in 1961. Several years later, the National Training School for Women and Girls that she founded was renamed the Nannie Helen Burroughs School.</p>
       </section>
 
