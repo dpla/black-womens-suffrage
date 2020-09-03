@@ -2,19 +2,21 @@
 
 .wrapper {
   width: 100%;
-  background-color: $warmerBackgroundColor;
+  background-color: $white;
   box-shadow: inset 0 -0.075rem 0.075rem 0 rgba(0, 0, 0, 0.03);
 }
 
 .resultsCount {
-  font-size: 0.875rem;
-  font-weight: 600;
-  text-transform: capitalize;
+  color: $dimmedTextColor;
+  font-family: $inter;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.17px;
+  line-height: 18px;
+  text-align: right;
 
   @media (min-width: $smallRem) {
-    font-size: 1.5rem;
-    text-transform: none;
-    font-weight: normal;
+    font-size: 1rem;
   }
 }
 
@@ -43,14 +45,14 @@
   }
   & select {
     appearance: none;
-    background: url(/static/dpla-icons/chevron-thick-black-down.svg) no-repeat white;
+    background: url(/static/icon/search/icon-search-dropdown.svg) no-repeat white;
     background-position: calc(100% - 0.5rem) center;
-    background-size: 0.9em;
     border: 0.075rem solid $formLabelColor;
     border-radius: 0.25rem;
     cursor: pointer;
     padding: 0.5rem 1.5rem 0.5rem 0.25rem;
     width: 100%;
+    font-size: 14px;
 
     &::-ms-expand {
       display: none;
@@ -74,13 +76,16 @@
 
 .options {
   display: flex;
+  justify-content: space-between;
 
   @media (min-width: $smallRem) {
   }
 }
 
 .optionWrapper {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-left: 0.5rem;
 
   &:first-child {
@@ -99,7 +104,6 @@
   font-size: 0.8125rem;
   font-weight: normal;
   line-height: 1.0625;
-  margin-bottom: 0.25rem;
   white-space: nowrap;
   box-sizing: border-box;
 }
@@ -126,20 +130,23 @@
 }
 
 .viewButtonInactive.gridViewButton {
-  box-shadow: 0 -0.075rem 0.15rem 0 $lightBorderColor;
+  // box-shadow: 0 -0.075rem 0.15rem 0 $lightBorderColor;
 }
 
 .viewButtonInactive.listViewButton {
-  box-shadow: 0 -0.075rem 0.15rem 0 $lightBorderColor;
+  // box-shadow: 0 -0.075rem 0.15rem 0 $lightBorderColor;
 }
 
 .viewButtonActive {
   cursor: default;
-  background-color: #ebe9e8;
+  // background-color: #ebe9e8;
+  border-radius: 8px 0 8px 0;
+  background-color: rgba(139,45,155,0.2);
+
 }
 
 .viewButtonActive .viewButtonIcon {
-  opacity: 0.45;
+  // opacity: 0.45;
 }
 
 .viewButtonIcon {
@@ -147,9 +154,13 @@
 }
 
 .pageNumber {
-  margin-left: 0.5rem;
-  font-size: 0.875rem;
-  color: $dimmedTextColor;
+  color: $nyPink;
+  font-family: $inter;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 1.25px;
+  line-height: 21px;
+  margin: .75em 1em;
 
   @media (min-width: $smallRem) {
     display: none;
@@ -162,6 +173,7 @@
   align-items: center;
   font-weight: 600;
   font-size: 0.875rem;
+  color: $vividViolet; 
 
   @media (min-width: $smallRem) {
     display: none;
@@ -172,11 +184,10 @@
   height: 1.5rem;
   width: 0.5rem;
   margin-left: 0.5rem;
-  transform: rotate(90deg);
 }
 
 .showFilters .filtersButtonChevron {
-  transform: rotate(-90deg);
+  transform: rotate(-180deg);
 }
 
 .activeFacetCount {

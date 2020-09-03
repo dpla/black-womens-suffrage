@@ -12,6 +12,11 @@
     padding: 0.5rem;
     font-size: 1rem;
     font-weight: 600;
+    color: $nyPink;
+    font-family: $inter;
+    font-weight: 800;
+    letter-spacing: 1.25px;
+    line-height: 21px;
 
     @media (min-width: $smallRem) {
       padding: 0.5rem;
@@ -71,4 +76,6 @@
 }
 
 .dateButton {
+  // background: $vividViolet;
+  color: white;
 }
