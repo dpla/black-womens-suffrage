@@ -64,6 +64,11 @@ $listPadding: 1.125rem;
     margin-left: $listPadding;
   }
 
+  @media ($lg-viewport) {
+    display: flex;
+    align-items: center;
+  }
+
   .search__item_intro {
     .item__intro_title {
       color: $jaguar;

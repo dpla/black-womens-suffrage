@@ -102,11 +102,11 @@ class MainMetadata extends React.Component {
         see: https://dp.la/item/7f2973c3c4429087b4874725f3bc67ad
         items should not have multiple rights but showing them in case a proper uri is present
          */}
-              {item.rights && Array.isArray(item.rights)
+              {/* {item.rights && Array.isArray(item.rights)
                 ? item.rights.map((theRight, index) => {
                   return <RightsBadge url={theRight} key={index} />;
                 })
-                : item.rights ? <RightsBadge url={item.rights} /> : null}
+                : item.rights ? <RightsBadge url={item.rights} /> : null} */}
             </dd>
           </div>
 
