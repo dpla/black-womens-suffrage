@@ -11,7 +11,7 @@ import { joinIfArray } from "lib";
 
 import css from "./FiltersList.module.scss";
 
-const closeIcon = "/static/assets/dpla-icons/close-white.svg";
+const closeIcon = "/static/icon/facet/icon-facet-delete.png";
 
 const clearAllFacets = query => {
   const duped = Object.assign({}, query);
@@ -53,7 +53,7 @@ const Filter = ({ name, queryKey, route }) => {
           aria-label={`Remove ${label} ${name} filter`}
         >
           {label}: <span className={css.filterText}>{name}</span>
-          <img src={closeIcon} className={css.closeIcon} alt="" />
+          <img src={closeIcon} alt={`clear ${name} filter`} />
         </a>
       </Link>
     </li>

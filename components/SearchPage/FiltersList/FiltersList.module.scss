@@ -76,7 +76,8 @@
 }
 
 .filterLink, .filterLink:visited {
-  display: inline-block;
+  display: flex;
+  align-items: center;
   padding: 4px 8px;
 
   &:hover {
@@ -87,11 +88,7 @@
 .filterText {
   font-weight: 600;
   margin-right: 0.5rem;
-}
-
-.closeIcon {
-  width: 9px;
-  height: 9px;
+  margin-left: 0.5rem;
 }
 
 .clearAll, .clearAll:visited {
