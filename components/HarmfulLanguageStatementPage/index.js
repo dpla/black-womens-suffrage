@@ -4,7 +4,7 @@ import scss from "./HarmfulLanguageStatementPage.module.scss"
 
 
 const HarmfulLanguageStatementPage = () => {
-    const title = "HARMFUL LANGUAGE DISCLAIMER",
+    const title = "HARMFUL LANGUAGE STATEMENT",
         text = "DPLA's statement on potentially harmful content.",
         graphic = "/static/graphic/hls-page/hls-graphic-hero.png";
 

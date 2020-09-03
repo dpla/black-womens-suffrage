@@ -68,7 +68,7 @@ class MobileNavbar extends Component {
               <div className={scss.navbar__links_secondary}>
                 <div className={scss.navbar__links_divider}></div>
                 <a href="https://dp.la" target="_blank">Visit DPLA</a>
-                <a href="https://dp.la" target="_blank">Harmful Language Disclaimer</a>
+                <a href="https://dp.la" target="_blank">Harmful Language Statement</a>
               </div>
 
             </div>

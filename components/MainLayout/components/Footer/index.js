@@ -44,8 +44,8 @@ const Footer = () => {
           <nav className={scss.footer__links_small}>
             <a href="http://dp.la/" className={scss.footer__a}> Visit DPLA</a>
 
-            <Link href="/harmful-language-disclaimer">
-              <a>Harmful Language Disclaimer</a>
+            <Link href="/harmful-language-statement">
+              <a>Harmful Language Statement</a>
             </Link>
           </nav>
 
