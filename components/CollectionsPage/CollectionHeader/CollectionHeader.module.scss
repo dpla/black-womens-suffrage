@@ -55,8 +55,8 @@
 
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+/* Medium plus devices (992px and up) */
+@media only screen and ($mdP-viewport) {
   .collection_header {
     display: flex;
     flex-direction: row-reverse;

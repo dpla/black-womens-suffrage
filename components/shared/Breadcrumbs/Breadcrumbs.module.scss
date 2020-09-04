@@ -14,7 +14,7 @@
   overflow: hidden;
   opacity: 0.5;
 
-  @media (max-width: $smallRem) {
+  @media (max-width: $smallEm) {
     display: inline;
     white-space: normal;
     max-width: none;
@@ -46,7 +46,7 @@
     top: 0;
     padding: 0 0.7rem;
 
-    @media (min-width: $smallRem) {
+    @media ($sm-viewport) {
     }
   }
 }
@@ -57,11 +57,11 @@
   text-overflow: ellipsis;
   overflow: hidden;
 
-  @media (min-width: $xSmallRem) {
+  @media ($xsm-viewport) {
     max-width: 9rem;
   }
 
-  @media (min-width: $smallRem) {
+  @media ($sm-viewport) {
     max-width: 13.5rem;
   }
 }

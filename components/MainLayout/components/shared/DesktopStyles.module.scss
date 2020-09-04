@@ -5,7 +5,7 @@
   background-color: $navColor;
 
   /* The SmallScreenGlobalHeader component handles the navigation on small screens */
-  @media (min-width: $mediumRem) {
+  @media ($md-viewport) {
     display: block;
   }
 
@@ -22,7 +22,7 @@
   font-size: 0.875rem;
   font-weight: 600;
 
-  @media (min-width: $largeRem) {
+  @media ($lg-viewport) {
     padding-left: 0;
     padding-right: 0;
   }
@@ -62,7 +62,7 @@
   background-color: rgba(255, 255, 255, 0.6);
   margin-right: 0.75rem;
 
-  @media (min-width: $largeRem) {
+  @media ($lg-viewport) {
     margin-right: 1rem;
   }
 }

@@ -18,7 +18,7 @@
   height: 100%;
   width: 60%;
 
-  @media (min-width: $smallRem) {
+  @media ($sm-viewport) {
     width: auto;
   }
 }
@@ -28,7 +28,7 @@
   width: 40%;
   height: 100%;
 
-  @media (min-width: $smallRem) {
+  @media ($sm-viewport) {
     width: auto;
   }
 }

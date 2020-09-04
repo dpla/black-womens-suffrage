@@ -1,16 +1,12 @@
-$xSmallRem: 30em;
-$smallRem: 40em;
-$mediumRem: 48em;
-$mediumPlusRem: 59.25em;
-$largeEm: 72em;
-$xLargeRem: 82em;
+$xSmallEm: 30em; // 480px
+$smallEm: 40em; // 640px
+$mediumEm: 48em; // 768px
+$mediumPlusEm: 62; //992px
+$largeEm: 72em; // 1152px
+$xLargeEm: 82em; //1312px
 
-$smallPx: 640;
-$mediumPx: 832;
-$mediumPlusPx: 948;
-$largePx: 1152;
-
-$sm-viewport: "min-width: " + $smallRem;
-$md-viewport: "min-width: " + $mediumRem;
-// $lg-viewport: "min-width: " + $mediumPlusRem;
+$xsm-viewport: "min-width: " + $xSmallEm;
+$sm-viewport: "min-width: " + $smallEm;
+$md-viewport: "min-width: " + $mediumEm;
+$mdP-viewport: "min-width: " + $mediumPlusEm;
 $lg-viewport: "min-width: " + $largeEm;

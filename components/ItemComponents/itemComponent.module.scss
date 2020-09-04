@@ -6,7 +6,7 @@
   width: 100%;
   margin-bottom: 1rem;
 
-  @media (min-width: $smallRem) {
+  @media ($sm-viewport) {
     width: 225px;
   }
 }
@@ -16,7 +16,7 @@
   display: flex;
   flex-direction: column;
 
-  @media (min-width: $smallRem) {
+  @media ($sm-viewport) {
     margin-top: 2rem;
     flex-direction: row;
   }

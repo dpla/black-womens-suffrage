@@ -5,7 +5,7 @@
   height: 28rem;
   cursor: pointer;
 
-  @media (max-width: $mediumRem) {
+  @media (max-width: $mediumEm) {
     height: 75vh; /* this is tied to the ContentAndMetadata.scss height */
   }
 

@@ -1,7 +1,7 @@
 @import "stylesheets/variables";
 
 .wrapper {
-  @media (min-width: $smallRem) {
+  @media ($sm-viewport) {
     padding-bottom: 10rem;
   }
 }
@@ -10,12 +10,12 @@
   display: flex;
   flex-direction: column;
 
-  @media (max-width: $smallRem) {
+  @media (max-width: $smallEm) {
     padding-right: 0;
     padding-left: 0;
   }
 
-  @media (min-width: $smallRem) {
+  @media ($sm-viewport) {
     margin-top: 2rem;
     flex-direction: row;
   }
@@ -24,11 +24,11 @@
 .resultsAndPagination {
   flex-basis: 66%;
 
-  @media (min-width: $mediumRem) {
+  @media ($md-viewport) {
     flex-basis: 75%;
   }
 
-  @media (max-width: $smallRem) {
+  @media (max-width: $smallEm) {
     margin-top: 1rem;
   }
 }
@@ -49,13 +49,13 @@
     max-height: 200rem;
   }
 
-  @media (min-width: $smallRem) {
+  @media ($sm-viewport) {
     margin-right: 1rem;
     max-height: none;
     visibility: visible;
     overflow: visible;
   }
 
-  @media (min-width: $mediumRem) {
+  @media ($md-viewport) {
   }
 }

@@ -4,21 +4,13 @@
   margin: 1em;
   flex-direction: column;
   position: relative;
+  display: flex;
+  justify-content: space-between;
 }
-
-// .collections__tile_container_background {
-//   height: 595px;
-//   width: 1400px;
-//   border-radius: 150px 0 150px 0;
-//   background-color: rgba(245,240,238,0.8)
-// }
 
 .collections__tile_container {
   display: flex;
   flex-direction: column;
-  // position: absolute;
-  // top: 10%;
-  // left: 15%;
 }
 
 .collections__tile {
@@ -128,6 +120,8 @@
   margin: 1em;
   padding-bottom: 3rem;
   flex-direction: column;
+  display: flex;
+  justify-content: space-between;
 }
 
 .pss__tile_container {

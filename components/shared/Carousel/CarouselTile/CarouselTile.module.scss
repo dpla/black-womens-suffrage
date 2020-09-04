@@ -2,12 +2,12 @@
   margin: auto;
   padding: 2rem 1rem;
 
-  // @media (min-width: $smallRem) {
+  // @media ($sm-viewport) {
   //   padding-top: 3rem;
   //   padding-bottom: 3rem;
   // }
 
-  // @media (min-width: $largeRem) {
+  // @media ($lg-viewport) {
   //   padding: 4rem 0;
   // }
 }
@@ -87,7 +87,7 @@
   font-weight: 600;
   line-height: 1.25;
 
-  // @media (min-width: $largeRem) {
+  // @media ($lg-viewport) {
   //   margin-top: 0.9rem;
   // }
 }

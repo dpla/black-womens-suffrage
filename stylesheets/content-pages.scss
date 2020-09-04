@@ -7,7 +7,7 @@ $borderColor: rgba(0, 0, 0, 0.75);
 }
 
 .sidebar {
-  @media (max-width: $mediumRem) {
+  @media (max-width: $mediumEm) {
     /* so the sidebar doesnt show up first in mobile views */
     margin-top: 1rem;
     order: 2;
@@ -21,7 +21,7 @@ $borderColor: rgba(0, 0, 0, 0.75);
   max-width: 100%;
   filter: grayscale(1) sepia(1) hue-rotate(160deg) brightness(1);
 
-  @media (max-width: $mediumRem) {
+  @media (max-width: $mediumEm) {
     margin-bottom: 0;
   }
 }
@@ -34,15 +34,15 @@ $borderColor: rgba(0, 0, 0, 0.75);
   padding-top: 1rem;
   padding-bottom: 4rem;
 
-  @media (min-width: $smallRem) {
+  @media ($sm-viewport) {
     padding-top: 2rem;
   }
 
-  @media (min-width: $mediumRem) {
+  @media ($md-viewport) {
     padding-bottom: 8rem;
   }
 
-  @media (min-width: $largeRem) {
+  @media ($lg-viewport) {
     padding-top: 3rem;
   }
 }
@@ -52,7 +52,7 @@ $borderColor: rgba(0, 0, 0, 0.75);
   line-height: 1.5;
   font-family: $serifFont;
 
-  @media (min-width: $largeRem) {
+  @media ($lg-viewport) {
     margin-top: 0;
   }
 
@@ -73,7 +73,7 @@ $borderColor: rgba(0, 0, 0, 0.75);
       font-weight: normal;
     }
 
-    @media (min-width: $mediumRem) {
+    @media ($md-viewport) {
       font-size: 3rem;
       margin-bottom: 1rem;
     }
@@ -131,10 +131,10 @@ $borderColor: rgba(0, 0, 0, 0.75);
   & p, & ul, & ol {
     font-weight: normal;
 
-    @media (min-width: $mediumRem) {
+    @media ($md-viewport) {
     }
 
-    @media (min-width: $largeRem) {
+    @media ($lg-viewport) {
     }
   }
 
@@ -145,7 +145,7 @@ $borderColor: rgba(0, 0, 0, 0.75);
     position: relative;
     counter-reset: start-from 0;
 
-    @media (max-width: $mediumRem) {
+    @media (max-width: $mediumEm) {
       padding-left: 1rem;
     }
   }
@@ -230,7 +230,7 @@ $borderColor: rgba(0, 0, 0, 0.75);
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
 
-    @media (min-width: $mediumRem) {
+    @media ($md-viewport) {
       margin-top: 2rem;
       margin-bottom: 2rem;
     }
@@ -321,7 +321,7 @@ $borderColor: rgba(0, 0, 0, 0.75);
     content: "";
   }
 
-  @media (max-width: $mediumRem) {
+  @media (max-width: $mediumEm) {
     &, & ul {
       padding-left: 0;
     }
@@ -346,13 +346,13 @@ $borderColor: rgba(0, 0, 0, 0.75);
     content: "";
   }
 
-  @media (max-width: $mediumRem) {
+  @media (max-width: $mediumEm) {
     &, & ul {
       padding-left: 0;
     }
   }
 
-  @media (max-width: $smallRem) {
+  @media (max-width: $smallEm) {
     column-count: 1;
   }
 }
@@ -371,7 +371,7 @@ $borderColor: rgba(0, 0, 0, 0.75);
     margin-right: 1rem;
   }
 
-  @media (max-width: $mediumRem) {
+  @media (max-width: $mediumEm) {
     padding-left: 0;
   }
 }
