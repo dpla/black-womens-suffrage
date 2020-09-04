@@ -9,6 +9,7 @@ import BorderedTextBox from "components/KeyFiguresPage/BorderedTextBox";
 import Sources from "components/KeyFiguresPage/Sources";
 import KeyFiguresPagination from "components/KeyFiguresPage/KeyFiguresPagination";
 import IntroAndPortrait from "components/KeyFiguresPage/IntroAndPortrait";
+import SearchPrompt from "components/KeyFiguresPage/SearchPrompt";
 
 const HarrietFortenPurvis = () => {
 
@@ -30,6 +31,8 @@ const HarrietFortenPurvis = () => {
 
         <p>Abolition, however, was not Forten Purvis's only cause—she was also a firm believer in equality for all and women's rights. Along with her sister Margaretta, she helped organize the fifth National Woman's Rights Convention in Philadelphia in 1854 and was active with the American Equal Rights Association (AERA), a biracial group that advocated for universal suffrage.  Forten Purvis also lectured on civil rights topics, speaking out against segregation in the years after the Civil War.</p>
       </section>
+
+      <SearchPrompt figure={harrietFortenPurvis} />
 
       <Sources sources={harrietFortenPurvis.sources}/>
     </>

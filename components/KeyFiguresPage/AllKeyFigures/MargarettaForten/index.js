@@ -9,6 +9,7 @@ import BorderedTextBox from "components/KeyFiguresPage/BorderedTextBox";
 import Sources from "components/KeyFiguresPage/Sources";
 import KeyFiguresPagination from "components/KeyFiguresPage/KeyFiguresPagination";
 import IntroAndPortrait from "components/KeyFiguresPage/IntroAndPortrait";
+import SearchPrompt from "components/KeyFiguresPage/SearchPrompt";
 
 const MargarettaForten = () => {
 
@@ -30,6 +31,8 @@ const MargarettaForten = () => {
         <SectionTitle title="Educator" />
         <p>In addition to her work as an abolitionist and suffragist, Forten worked as an educator for nearly four decades, teaching and then founding her own grammar school in 1850. Forten never married, and cared for her parents in their later years.</p>
       </section>
+
+      <SearchPrompt figure={margarettaForten} />
 
       <Sources sources={margarettaForten.sources}/>
     </>

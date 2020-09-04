@@ -9,6 +9,7 @@ import BorderedTextBox from "components/KeyFiguresPage/BorderedTextBox";
 import Sources from "components/KeyFiguresPage/Sources";
 import KeyFiguresPagination from "components/KeyFiguresPage/KeyFiguresPagination";
 import IntroAndPortrait from "components/KeyFiguresPage/IntroAndPortrait";
+import SearchPrompt from "components/KeyFiguresPage/SearchPrompt";
 
 const MaryAnnShaddCary = () => {
 
@@ -34,6 +35,8 @@ const MaryAnnShaddCary = () => {
         <SectionTitle title="First Black Woman J.D." />
         <p>In 1870, she became the first Black woman in U.S. history to earn a law degree and became active in the women's suffrage movement. Addressing the House of Representatives Judiciary Committee in 1874, she urged them to rectify the fact that although she paid equal taxes, she did not have equal rights. In 1880, Shadd Cary founded the Colored Women's Progressive Franchise Association, which urged Black women to fight for suffrage and equal rights, in Washington, D.C.</p>
       </section>
+
+      <SearchPrompt figure={maryAnnShaddCary} />
 
       <Sources sources={maryAnnShaddCary.sources}/>
     </>

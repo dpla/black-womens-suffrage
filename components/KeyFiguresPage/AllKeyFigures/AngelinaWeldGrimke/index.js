@@ -9,6 +9,7 @@ import BorderedTextBox from "components/KeyFiguresPage/BorderedTextBox";
 import Sources from "components/KeyFiguresPage/Sources";
 import KeyFiguresPagination from "components/KeyFiguresPage/KeyFiguresPagination";
 import IntroAndPortrait from "components/KeyFiguresPage/IntroAndPortrait";
+import SearchPrompt from "components/KeyFiguresPage/SearchPrompt";
 
 const AngelinaWeldGrimke = () => {
 
@@ -34,6 +35,8 @@ const AngelinaWeldGrimke = () => {
         <SectionTitle title="Legacy" />
         <p>Grimké died in 1958 in New York City. Her work is considered to have helped set the stage for the Harlem Renaissance.</p>
       </section>
+
+      <SearchPrompt figure={angelinaWeldGrimke} />
 
       <Sources sources={ angelinaWeldGrimke.sources }/>
     </>

@@ -9,6 +9,7 @@ import BorderedTextBox from "components/KeyFiguresPage/BorderedTextBox";
 import Sources from "components/KeyFiguresPage/Sources";
 import KeyFiguresPagination from "components/KeyFiguresPage/KeyFiguresPagination";
 import IntroAndPortrait from "components/KeyFiguresPage/IntroAndPortrait";
+import SearchPrompt from "components/KeyFiguresPage/SearchPrompt";
 
 const SarahRemond = () => {
 
@@ -29,6 +30,8 @@ const SarahRemond = () => {
         <SectionTitle title="The Expat Abolitionist" />
         <p>After the Civil War, she continued to live in London, where she became a member of the London Emancipation Society and the Freedmen's Aid Association, working to raise money and supplies for the newly emancipated. Remond left London for Florence in 1866, where she attended medical school and then practiced medicine for two decades.</p>
       </section>
+
+      <SearchPrompt figure={sarahRemond} />
 
       <Sources sources={sarahRemond.sources}/>
     </>

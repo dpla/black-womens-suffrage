@@ -9,6 +9,7 @@ import BorderedTextBox from "components/KeyFiguresPage/BorderedTextBox";
 import Sources from "components/KeyFiguresPage/Sources";
 import KeyFiguresPagination from "components/KeyFiguresPage/KeyFiguresPagination";
 import IntroAndPortrait from "components/KeyFiguresPage/IntroAndPortrait";
+import SearchPrompt from "components/KeyFiguresPage/SearchPrompt";
 
 const NannieHelenBurroughs = () => {
 
@@ -45,6 +46,8 @@ const NannieHelenBurroughs = () => {
       <section>
         <p>In her later years, she remained a popular and respected leader and continued to speak out on issues of Black pride and education. She developed a close friendship and working relationship with civil rights leader Martin Luther King, Jr., the son of her friends Martin Luther King, Sr. and his wife Alberta. This relationship was symbolic of the way in which Burroughs' work helped set a foundation for the Civil Rights Movement. Burroughs continued to lead the NBC Women's Auxiliary until her death in 1961. Several years later, the National Training School for Women and Girls that she founded was renamed the Nannie Helen Burroughs School.</p>
       </section>
+
+      <SearchPrompt figure={nannieHelenBurroughs} />
 
       <Sources sources={nannieHelenBurroughs.sources}/>
     </>

@@ -28,11 +28,11 @@ const HarrietPurvisJr = () => {
         <p>Purvis was also active in the temperance movement, joining the Woman's Christian Temperance Union (WCTU) and encouraging Black women to embrace the movement.</p>
       </section>
 
-      <Sources sources={harrietPurvisJr.sources}/>
-
       <section className={scss.key_figures__disclaimer}>
         <p>In the spirit of highlighting hidden voices, we share Harriet Purvis Jr.’s history here as she was a prominent figure in the Black Women’s Suffrage Movement. We regret that DPLA currently does not have any records documenting her life. If you have information about collections that uncover more of Harriet's voice, please email <a href="mailto:info@dp.la">info@dp.la</a>.</p>
       </section>
+
+      <Sources sources={harrietPurvisJr.sources}/>
     </>
   )
 }

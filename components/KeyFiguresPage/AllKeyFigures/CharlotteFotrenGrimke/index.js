@@ -9,6 +9,7 @@ import BorderedTextBox from "components/KeyFiguresPage/BorderedTextBox";
 import Sources from "components/KeyFiguresPage/Sources";
 import KeyFiguresPagination from "components/KeyFiguresPage/KeyFiguresPagination";
 import IntroAndPortrait from "components/KeyFiguresPage/IntroAndPortrait";
+import SearchPrompt from "components/KeyFiguresPage/SearchPrompt";
 
 const CharlotteFotrenGrimke = () => {
 
@@ -36,6 +37,8 @@ const CharlotteFotrenGrimke = () => {
         <p>When she was 41, Forten married the Reverend Francis Grimké, who was 13 years her junior. Grimké was the son of a white plantation owner named Henry Grimké and his Black enslaved worker Nancy Weston. He and his brother Archibald, who would become the executive director of the National Association for the Advancement of Colored People (NAACP), became free at the end of the Civil War. Grimké's education at Lincoln University was subsidized by his aunts, the white abolitionist and suffragist sisters Sarah and Angelina Grimké.</p>
         <p>After her marriage, Forten Grimké continued her activism, joining the National Association of Colored Women (NACW) and advocating for women's suffrage. She also continued to write poetry and essays calling for an end to racial injustice and violence.</p>
       </section>
+
+      <SearchPrompt figure={charlotteFotrenGrimke} />
       
       <Sources sources={charlotteFotrenGrimke.sources}/>
     </>
