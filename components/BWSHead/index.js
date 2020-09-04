@@ -15,7 +15,9 @@ class BWSHead extends React.Component {
 
     const defaultDescription = "The Black Women’s Suffrage Digital Collection is a collaborative project to provide digital access to materials documenting the roles and experiences of Black Women in the Women’s Suffrage Movement and, more broadly, women’s rights, voting rights, and civic activism between the 1850s and 1960."
 
-    const {defaultImageUrl} = "/static/logo/dpla_bws-logo-color-nav.png";
+    const defaultImageUrl = "/static/logo/dpla_bws-logo-color-nav.png"
+
+    const defaultPageImageCaption = "Black Women's Suffrage logo"
 
     return (
       <div>
@@ -49,8 +51,7 @@ class BWSHead extends React.Component {
           <meta name="twitter:site" content="@dpla" />
           <meta name="twitter:creator" content="@dpla" />
           <meta name="twitter:image" content={pageImage || defaultImageUrl} />
-          {pageImageCaption &&
-            <meta name="twitter:image:alt" content={pageImageCaption} />}
+          <meta name="twitter:image:alt" content={pageImageCaption || defaultPageImageCaption } />}
 
         </Head>
 
