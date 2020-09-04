@@ -1,7 +1,11 @@
 import React from "react"
 import Head from "next/head"
 
-class DPLAHead extends React.Component {
+const defaultDescription = "The Digital Public Library of America brings together the riches of America’s libraries, archives, and museums, and makes them freely available to the world."
+
+const defaultPageTitle = "Black Women's Suffrage"
+
+class BWSHead extends React.Component {
   render() {
     // const { defaultImageUrl } = "/static/dpla-icons/dpla-logo-square_250.png";
     const {
@@ -23,7 +27,12 @@ class DPLAHead extends React.Component {
 
           <meta name="referrer" content="origin-when-cross-origin" />
 
+        </Head>
+
       </div>
     )
   }
 }
+
+export default BWSHead;
+
