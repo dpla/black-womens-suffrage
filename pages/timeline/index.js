@@ -1,15 +1,17 @@
 import React from "react"
 import MainLayout from "components/MainLayout"
 import TimelinePage from "components/TimelinePage"
-import Head from "next/head";
+import BWSHead from "components/BWSHead"
 
 
 function Timeline() {
   return (
       <MainLayout className="main" role="main">
-          <Head>
-              <title>Black Women's Suffrage Timeline | DPLA</title>
-          </Head>
+          <BWSHead 
+          pageTitle="Black Women's Suffrage Timeline | DPLA"
+          pageDescription="Marching toward progress: the journey to Black women’s suffrage."
+          seoType="article"
+          />
         <TimelinePage />
       </MainLayout>
   );

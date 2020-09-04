@@ -7,6 +7,7 @@ import OptionsBar from "components/SearchPage/OptionsBar";
 import FiltersList from "components/SearchPage/FiltersList";
 import MainContent from "components/SearchPage/MainContent";
 import MaxPageError from "components/SearchPage/MaxPageError";
+import BWSHead from "components/BWSHead";
 
 import {
     getCurrentUrl,
@@ -46,6 +47,7 @@ class Search extends React.Component {
             pageCount,
             currentPage,
             pageSize,
+            query
         } = this.props;
 
         let itemCount = 0;
@@ -61,6 +63,14 @@ class Search extends React.Component {
 
         return (
             <MainLayout>
+                <BWSHead
+                    pageTitle={query === undefined ? 
+                        "Search Results | DPLA" :
+                        `${query} | Search Results | DPLA`}
+                    pageDescription={query === undefined ? 
+                        "Search results" :
+                        `Search results for "${query}"`}
+                />
                 <OptionsBar
                     showFilters={this.state.showSidebar}
                     currentPage={currentPage}
@@ -225,6 +235,7 @@ Search.getInitialProps = async context => {
             currentPage: page,
             pageCount,
             pageSize: page_size,
+            query: query.q
         };
     }
 };

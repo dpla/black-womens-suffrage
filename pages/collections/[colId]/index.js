@@ -4,7 +4,7 @@ import ItemList from "components/CollectionsPage/ItemList"
 import fs from 'fs'
 import path from 'path'
 import { collections } from "constants/collections"
-import Head from "next/head";
+import BWSHead from "components/BWSHead";
 import BreadcrumbsModule from "components/CollectionsPage/BreadcrumbsModule"
 
 function Collection({ collection, items }) {
@@ -14,9 +14,12 @@ function Collection({ collection, items }) {
         className="main"
         role="main"
       >
-        <Head>
-          <title>{collection.name} | DPLA</title>
-        </Head>
+        <BWSHead 
+          pageTitle={`${collection.name} | DPLA`}
+          pageDescription={collection.description}
+          pageImage={collection.image}
+          pageImageCaption={collection.name}
+        />
         <BreadcrumbsModule
             breadcrumbs={[
               {

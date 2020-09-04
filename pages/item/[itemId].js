@@ -2,7 +2,7 @@ import React from "react";
 
 import fetch from "isomorphic-fetch";
 
-import Head from "next/head";
+import BWSHead from "components/BWSHead";
 import MainLayout from "components/MainLayout";
 import CiteButton from "components/shared/CiteButton";
 import BreadcrumbsModule from "components/ItemComponents/BreadcrumbsModule";
@@ -21,12 +21,12 @@ import css from "components/ItemComponents/itemComponent.module.scss";
 
 const ItemDetail = ({url, item}) => {
   return (
-    <MainLayout
-      pageImage={item.thumbnailUrl}
-    >
-      <Head>
-        <title>{item.title} | DPLA</title>
-      </Head>
+    <MainLayout>
+      <BWSHead 
+        pageTitle={`${item.title} | DPLA`}
+        pageDescription={item.description}
+        pageImage={item.thumbnailUrl}
+      />
       <BreadcrumbsModule
         breadcrumbs={[
           {
