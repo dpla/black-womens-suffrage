@@ -15,7 +15,7 @@
   line-height: 18px;
   text-align: right;
 
-  @media (min-width: $smallRem) {
+  @media ($sm-viewport) {
     font-size: 1rem;
   }
 }
@@ -27,7 +27,7 @@
 .resultsCountQuery {
   display: none;
 
-  @media (min-width: $smallRem) {
+  @media ($sm-viewport) {
     display: inline-block;
   }
 }
@@ -38,7 +38,7 @@
   flex-direction: column-reverse;
   justify-content: space-between;
 
-  @media (min-width: $smallRem) {
+  @media ($sm-viewport) {
     flex-direction: row;
     align-items: center;
     padding: 0.75rem 1rem;
@@ -67,7 +67,7 @@
   padding-top: 0.5rem;
   border-top: 0.075rem solid rgba(0, 0, 0, 0.05);
 
-  @media (min-width: $smallRem) {
+  @media ($sm-viewport) {
     margin-top: 0;
     padding-top: 0;
     border-top: none;
@@ -78,7 +78,7 @@
   display: flex;
   justify-content: space-between;
 
-  @media (min-width: $smallRem) {
+  @media ($sm-viewport) {
   }
 }
 
@@ -116,7 +116,7 @@
   background-color: white;
   padding: 0.6rem 0.6rem 0.4rem;
 
-  @media (min-width: $smallRem) {
+  @media ($sm-viewport) {
     padding: 0.6rem 0.6rem 0.4rem;
   }
 }
@@ -162,7 +162,7 @@
   line-height: 21px;
   margin: .75em 1em;
 
-  @media (min-width: $smallRem) {
+  @media ($sm-viewport) {
     display: none;
   }
 }
@@ -175,7 +175,7 @@
   font-size: 0.875rem;
   color: $vividViolet; 
 
-  @media (min-width: $smallRem) {
+  @media ($sm-viewport) {
     display: none;
   }
 }
@@ -194,7 +194,7 @@
   display: none;
 }
 
-@media (max-width: $smallRem) {
+@media (max-width: $smallEm) {
   .withActiveFacets {
     color: $paginationLinkColor;
 

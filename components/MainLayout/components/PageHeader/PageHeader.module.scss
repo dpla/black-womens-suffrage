@@ -11,12 +11,12 @@
   padding: 0.5rem 1rem;
 
   &.pro {
-    @media (max-width: $mediumRem) {
+    @media (max-width: $mediumEm) {
       padding: 0;
     }
   }
 
-  @media (min-width: $largeRem) {
+  @media ($lg-viewport) {
     padding: 0;
   }
 }
@@ -29,11 +29,11 @@
   margin: auto 0 auto auto;
   width: 100%;
 
-  @media (min-width: $mediumRem) {
+  @media ($md-viewport) {
     padding-left: 1rem;
   }
 
-  @media (min-width: $largeRem) {
+  @media ($lg-viewport) {
     justify-self: flex-end;
     padding-left: 0;
     width: 50%;
@@ -50,7 +50,7 @@
   width: 65%;
   -webkit-appearance: none;
 
-  @media (min-width: $smallRem) {
+  @media ($sm-viewport) {
     width: auto;
   }
 
@@ -83,7 +83,7 @@
   transition: background-color 0.2s ease-out;
   width: 35%;
 
-  @media (min-width: $smallRem) {
+  @media ($sm-viewport) {
     width: auto;
   }
 
@@ -98,7 +98,7 @@
   padding: 0.5rem 0;
   text-decoration: none;
 
-  @media (min-width: $mediumRem) {
+  @media ($md-viewport) {
     display: block;
 
     &.local {
@@ -107,7 +107,7 @@
     }
   }
 
-  @media (min-width: $largeRem) {
+  @media ($lg-viewport) {
     padding: 1rem 0;
   }
 }
@@ -116,7 +116,7 @@
   height: 1.95rem;
   width: 16rem;
 
-  @media (min-width: $largeRem) {
+  @media ($lg-viewport) {
     height: 2.2rem;
     width: 18rem;
   }
@@ -126,7 +126,7 @@
   height: 2.5rem;
   max-width: 16rem;
 
-  @media (min-width: $largeRem) {
+  @media ($lg-viewport) {
     height: 2.5rem;
     max-width: 18rem;
   }

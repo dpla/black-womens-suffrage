@@ -8,7 +8,7 @@
   padding-top: 1rem;
   padding-bottom: 4rem;
 
-  @media (max-width: $smallRem) {
+  @media (max-width: $smallEm) {
     padding-top: 0;
     padding-bottom: 0;
   }
@@ -19,7 +19,7 @@
   margin: 1rem 0 4rem;
   box-shadow: 0 1rem 2rem gray;
 
-  @media (max-width: $smallRem) {
+  @media (max-width: $smallEm) {
     box-shadow: none;
     margin: 0 -1rem;
   }
@@ -46,7 +46,7 @@
 .byPaypal, .byMail {
   padding: 2.5rem 2rem;
 
-  @media (max-width: $smallRem) {
+  @media (max-width: $smallEm) {
     padding: 2.1rem 1rem;
   }
 
@@ -78,7 +78,7 @@
     width: 100%;
     font-size: 1rem;
 
-    @media (max-width: $mediumRem) {
+    @media (max-width: $mediumEm) {
       padding: 0.6rem 1rem;
     }
   }
@@ -131,7 +131,7 @@
     transform: rotateZ(-1.3deg);
   }
 
-  @media (max-width: $smallRem) {
+  @media (max-width: $smallEm) {
     margin-right: 0;
 
     & img {

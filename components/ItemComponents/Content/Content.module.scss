@@ -6,14 +6,14 @@ $listPadding: 1.125rem;
   padding-bottom: 1rem;
   flex: 1;
 
-  @media (min-width: $smallRem) {
+  @media ($sm-viewport) {
     margin-right: 3rem;
     padding-bottom: 3rem;
   }
 }
 
 .contentDL {
-  @media (max-width: $smallRem) {
+  @media (max-width: $smallEm) {
     width: 100%;
   }
 }
@@ -24,7 +24,7 @@ $listPadding: 1.125rem;
   flex-direction: column;
   padding-bottom: 0.5rem;
 
-  @media (min-width: $smallRem) {
+  @media ($sm-viewport) {
     flex-direction: row;
     padding-bottom: 1rem;
   }
@@ -32,7 +32,7 @@ $listPadding: 1.125rem;
   &:last-child {
     padding-bottom: 0.5rem;
 
-    @media (min-width: $smallRem) {
+    @media ($sm-viewport) {
       padding-bottom: 0;
     }
   }
@@ -48,7 +48,7 @@ $listPadding: 1.125rem;
   line-height: 28px;
   padding: .5em 0;
 
-  @media (min-width: $smallRem) {
+  @media ($sm-viewport) {
     width: 9rem;
   }
 }
@@ -60,7 +60,7 @@ $listPadding: 1.125rem;
   width: 100%;
   word-break: break-word;
 
-  @media (min-width: $smallRem) {
+  @media ($sm-viewport) {
     margin-left: $listPadding;
   }
 
@@ -215,7 +215,7 @@ $listPadding: 1.125rem;
 .mainMetadata {
   border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
 
-  @media (min-width: $smallRem) {
+  @media ($sm-viewport) {
     padding-bottom: $listPadding;
   }
 }
@@ -224,7 +224,7 @@ $listPadding: 1.125rem;
   font-size: 1rem;
   margin-bottom: 0;
 
-  @media (min-width: $smallRem) {
+  @media ($sm-viewport) {
     font-size: 1.25rem;
   }
 }
@@ -254,7 +254,7 @@ $listPadding: 1.125rem;
     text-decoration: none;
   }
 
-  @media (min-width: $smallRem) {
+  @media ($sm-viewport) {
     width: 242px;
   }
 }
@@ -271,7 +271,7 @@ $listPadding: 1.125rem;
 .otherMetadata {
   padding: 1rem 0 0;
 
-  @media (min-width: $smallRem) {
+  @media ($sm-viewport) {
     padding: $listPadding 0;
   }
 }
@@ -283,7 +283,7 @@ $listPadding: 1.125rem;
 .rightsMetadata {
   padding-top: 1rem;
 
-  @media (min-width: $smallRem) {
+  @media ($sm-viewport) {
     padding-top: $listPadding;
   }
 }

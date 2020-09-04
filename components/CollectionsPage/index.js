@@ -15,7 +15,7 @@ const CollectionsPage = () => {
     <>
       <PageBanner title={title} text={text} graphic={graphic} />
 
-      <section className={`section__default display__flex ${scss.collections__section}`}>
+      <section className={`section__default ${scss.collections__section}`}>
         <SectionTitle title="Featured Collections" />
 
         <div className={scss.collections__tile_container_background}></div>
@@ -57,7 +57,7 @@ const CollectionsPage = () => {
 
       </section>
 
-      <section className={`section__default display__flex ${scss.pss__section}`}>
+      <section className={`section__default ${scss.pss__section}`}>
         <SectionTitle title="Featured Primary Source Sets" />
 
         <div className={scss.pss__tile_container}>

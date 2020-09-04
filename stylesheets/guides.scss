@@ -3,7 +3,7 @@
 .wrapper {
   margin-top: 2rem;
 
-  @media (min-width: $mediumRem) {
+  @media ($md-viewport) {
     margin-top: 0;
   }
 }

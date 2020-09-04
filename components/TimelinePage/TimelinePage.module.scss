@@ -99,7 +99,7 @@
     }
 
     h1 {
-      color: $vividViolet;
+      color: $blueGem;
       font-family: $libre;
       font-size: 48px;
       font-weight: 900;
@@ -239,8 +239,8 @@
 }
 
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+/* Medium plus devices (992px and up) */
+@media only screen and ($mdP-viewport) {
   .timeline {
     display: flex;
 

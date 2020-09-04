@@ -151,7 +151,6 @@
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-// @media only screen and (min-width: 768px) {...}
 @media only screen and ($md-viewport) {
 
   .key_figures__left {
@@ -173,8 +172,8 @@
   }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+/* Medium plus devices (992px and up) */
+@media only screen and ($mdP-viewport) {
   .key_figures__right {
     width: 70%;
     margin-left: auto;
