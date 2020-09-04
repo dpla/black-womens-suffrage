@@ -9,6 +9,7 @@ import BorderedTextBox from "components/KeyFiguresPage/BorderedTextBox";
 import Sources from "components/KeyFiguresPage/Sources";
 import KeyFiguresPagination from "components/KeyFiguresPage/KeyFiguresPagination";
 import IntroAndPortrait from "components/KeyFiguresPage/IntroAndPortrait";
+import SearchPrompt from "components/KeyFiguresPage/SearchPrompt";
 
 const LugeniaBurnsHope = () => {
 
@@ -49,6 +50,8 @@ const LugeniaBurnsHope = () => {
       <section>
         <p>After her husband's 1936 death, Hope moved to New York City, where she worked for Mary McLeod Bethune, who was then heading Negro Affairs for the National Youth Administration, and later lived in Chicago and Nashville. She died in Nashville in 1947.</p>
       </section>
+
+      <SearchPrompt figure={lugeniaBurnsHope} />
 
       <Sources sources={lugeniaBurnsHope.sources}/>
     </>

@@ -9,6 +9,7 @@ import BorderedTextBox from "components/KeyFiguresPage/BorderedTextBox";
 import Sources from "components/KeyFiguresPage/Sources";
 import KeyFiguresPagination from "components/KeyFiguresPage/KeyFiguresPagination";
 import IntroAndPortrait from "components/KeyFiguresPage/IntroAndPortrait";
+import SearchPrompt from "components/KeyFiguresPage/SearchPrompt";
 
 const JosephineStPierreRuffin = () => {
 
@@ -43,6 +44,8 @@ const JosephineStPierreRuffin = () => {
           <p>In 1910, Ruffin helped to found the Boston chapter of the National Association for the Advancement of Colored People (NAACP).</p>
         <p>She died in Boston in 1924.</p>
       </section>
+
+      <SearchPrompt figure={josephineStPierreRuffin} />
       
       <Sources sources={josephineStPierreRuffin.sources}/>
     </>

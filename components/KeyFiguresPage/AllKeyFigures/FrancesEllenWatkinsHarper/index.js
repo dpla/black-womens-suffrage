@@ -9,6 +9,7 @@ import BorderedTextBox from "components/KeyFiguresPage/BorderedTextBox";
 import Sources from "components/KeyFiguresPage/Sources";
 import KeyFiguresPagination from "components/KeyFiguresPage/KeyFiguresPagination";
 import IntroAndPortrait from "components/KeyFiguresPage/IntroAndPortrait";
+import SearchPrompt from "components/KeyFiguresPage/SearchPrompt";
 
 const FrancesEllenWatkinsHarper = () => {
 
@@ -40,6 +41,8 @@ const FrancesEllenWatkinsHarper = () => {
         <p>During the course of her career, she experimented with new literary styles; published more than a dozen books and countless articles and essays; and was the most popular Black poet of her time, earning her the nickname "bronze muse."</p>
         <p>Harper died in 1911 in her adopted home of Philadelphia.</p>
       </section>
+
+      <SearchPrompt figure={francesEllenWatkinsHarper} />
 
       <Sources sources={francesEllenWatkinsHarper.sources}/>
     </>

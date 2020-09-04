@@ -9,6 +9,7 @@ import BorderedTextBox from "components/KeyFiguresPage/BorderedTextBox";
 import Sources from "components/KeyFiguresPage/Sources";
 import KeyFiguresPagination from "components/KeyFiguresPage/KeyFiguresPagination";
 import IntroAndPortrait from "components/KeyFiguresPage/IntroAndPortrait";
+import SearchPrompt from "components/KeyFiguresPage/SearchPrompt";
 
 const FannieBarrierWilliams = () => {
 
@@ -47,6 +48,8 @@ const FannieBarrierWilliams = () => {
         <p>After the death of white suffragist leader Susan B. Anthony in 1907, Williams was the only Black woman asked to speak at Anthony's funeral. In 1909, Williams was active in the creation of the National Association for the Advancement of Colored People (NAACP). In 1924, after the death of her husband, she became the first Black woman to sit on the Chicago Library Board.</p>
         <p>Williams returned to Brockport, New York, in 1926 and died there in 1944 at the age of 89.</p>
       </section>
+
+      <SearchPrompt figure={fannieBarrierWilliams} />
 
       <Sources sources={fannieBarrierWilliams.sources}/>
     </>

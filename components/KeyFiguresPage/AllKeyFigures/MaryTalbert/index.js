@@ -9,6 +9,7 @@ import BorderedTextBox from "components/KeyFiguresPage/BorderedTextBox";
 import Sources from "components/KeyFiguresPage/Sources";
 import KeyFiguresPagination from "components/KeyFiguresPage/KeyFiguresPagination";
 import IntroAndPortrait from "components/KeyFiguresPage/IntroAndPortrait";
+import SearchPrompt from "components/KeyFiguresPage/SearchPrompt";
 
 const MaryTalbert = () => {
 
@@ -32,6 +33,8 @@ const MaryTalbert = () => {
         <p>She also served as NACW president from 1916 to 1920, and it was under her leadership that the NACW was accepted as a full member of the International Council of Women (ICW). In 1920, at the ICW's annual conference, Talbert argued that white women were "duty bound to lift [their] voices against the ills that afflict [their] sisters of color."</p>
         <p>A year before her death, Talbert became the first female recipient of the NAACP's prestigious Springarn Medal for her lifetime of work on behalf of women of color.</p>
       </section>
+
+      <SearchPrompt figure={maryTalbert} />
 
       <Sources sources={maryTalbert.sources}/>
     </>

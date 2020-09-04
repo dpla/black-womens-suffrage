@@ -8,6 +8,7 @@ import LeftBorderTextBox from "components/KeyFiguresPage/LeftBorderTextBox";
 import BorderedTextBox from "components/KeyFiguresPage/BorderedTextBox";
 import Sources from "components/KeyFiguresPage/Sources";
 import IntroAndPortrait from "components/KeyFiguresPage/IntroAndPortrait";
+import SearchPrompt from "components/KeyFiguresPage/SearchPrompt";
 
 const SojournerTruth = () => {
 
@@ -50,6 +51,8 @@ const SojournerTruth = () => {
 
         <p>When the war ended, Truth lobbied Congress to award western lands to the formerly enslaved, helping them achieve financial independence, but was unsuccessful. She continued to speak out about a variety of issues, including women's rights, prison reform and universal suffrage, until her death in Michigan in 1883.</p>
       </section>
+
+      <SearchPrompt figure={sojournerTruth} />
 
       <Sources sources={sojournerTruth.sources}/>
     </>

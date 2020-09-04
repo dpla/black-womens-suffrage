@@ -9,6 +9,7 @@ import BorderedTextBox from "components/KeyFiguresPage/BorderedTextBox";
 import Sources from "components/KeyFiguresPage/Sources";
 import KeyFiguresPagination from "components/KeyFiguresPage/KeyFiguresPagination";
 import IntroAndPortrait from "components/KeyFiguresPage/IntroAndPortrait";
+import SearchPrompt from "components/KeyFiguresPage/SearchPrompt";
 
 const FannieLouHamer = () => {
 
@@ -41,6 +42,8 @@ const FannieLouHamer = () => {
       <section>
         <p>She continued to speak out for civil rights in her later years, even while battling cancer. Hamer died in 1977.</p>
       </section>
+
+      <SearchPrompt figure={fannieLouHamer} />
 
       <Sources sources={fannieLouHamer.sources}/>
     </>
