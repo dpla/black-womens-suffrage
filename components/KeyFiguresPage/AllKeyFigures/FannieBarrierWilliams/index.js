@@ -9,6 +9,7 @@ import BorderedTextBox from "components/KeyFiguresPage/BorderedTextBox";
 import Sources from "components/KeyFiguresPage/Sources";
 import KeyFiguresPagination from "components/KeyFiguresPage/KeyFiguresPagination";
 import IntroAndPortrait from "components/KeyFiguresPage/IntroAndPortrait";
+import SearchPrompt from "components/KeyFiguresPage/SearchPrompt";
 
 const FannieBarrierWilliams = () => {
 
@@ -35,23 +36,20 @@ const FannieBarrierWilliams = () => {
       </section>
 
       <section>
-        <SectionTitle title="Women's Clubs" />
+        <SectionTitle title="Historian of the Black Women's Club Movement" />
         <p>She was nominated for membership in the exclusive Chicago Women's Club, setting off a long debate within the all-white club about granting membership to a Black woman and prompting several resignations when she was accepted in 1895.</p>
         <p>Her history of the Black women's club movement was published in 1902, which, she wrote, had grown to 400 clubs with a total membership of more than 150,000.</p>
       </section>
 
       <section>
-        <SectionTitle title="Continued Activism" />
+        <SectionTitle title="There at the End" />
         <p>In 1905, Williams and her husband, along with several other families, founded the Frederick Douglass Center settlement project.</p>
         <p>She also served as a reporter for Woman's Era, a newspaper published by fellow suffragist Josephine St. Pierre Ruffin and her daughter, to provide news reports for and by Black women, while also writing for the Chicago Record-Herald and the New York Age.</p>
         <p>After the death of white suffragist leader Susan B. Anthony in 1907, Williams was the only Black woman asked to speak at Anthony's funeral. In 1909, Williams was active in the creation of the National Association for the Advancement of Colored People (NAACP). In 1924, after the death of her husband, she became the first Black woman to sit on the Chicago Library Board.</p>
         <p>Williams returned to Brockport, New York, in 1926 and died there in 1944 at the age of 89.</p>
       </section>
 
-      <section>
-        <SectionTitle title="   SUBHEADING   " />
-        <p></p>
-      </section>
+      <SearchPrompt figure={fannieBarrierWilliams} />
 
       <Sources sources={fannieBarrierWilliams.sources}/>
     </>

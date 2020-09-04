@@ -8,6 +8,7 @@ import LeftBorderTextBox from "components/KeyFiguresPage/LeftBorderTextBox";
 import BorderedTextBox from "components/KeyFiguresPage/BorderedTextBox";
 import Sources from "components/KeyFiguresPage/Sources";
 import IntroAndPortrait from "components/KeyFiguresPage/IntroAndPortrait";
+import SearchPrompt from "components/KeyFiguresPage/SearchPrompt";
 
 const SojournerTruth = () => {
 
@@ -20,7 +21,7 @@ const SojournerTruth = () => {
       </section>
 
       <section>
-        <SectionTitle title="Early Years" />
+        <SectionTitle title="Answering the Call" />
         <p>At just nine years old, Truth was sold at auction to a farmer whom she remembered as cruel and violent. While still a child, she was sold several more times, suffering under a series of owners who beat her regularly. Eventually, Truth was sold to John and Elizabeth Dumont of West Park, New York. Truth learned to speak English while enslaved by the Dumonts. At around the age of 14, Truth was forced to marry an older man named Thomas who was also enslaved by the Dumonts. She is believed to have given birth to five children.</p>
         <p>As New York began to move toward abolition, Dumont promised Truth that he would grant her freedom on July 4, 1826, though when the date came, he reneged.</p>
       
@@ -33,7 +34,7 @@ const SojournerTruth = () => {
          
 
       <section>
-        <SectionTitle title="Freedom" />
+        <SectionTitle title="&quot;Ain't I a Woman&quot;" />
         <p>In the early years of her freedom, Truth became a devoted Methodist, and in 1829, she moved to New York City, finding work as a housekeeper for two evangelist ministers; through them she was exposed to the state's religious revivalist movement, even living for a time in a religious commune.</p>
 
         <BorderedTextBox text={`In 1843, believing she was called by God to travel around the country (or "sojourn") and preach truth, she changed her name to Sojourner Truth, moved to a Massachusetts utopian community and began working as an itinerant Methodist preacher, devoting herself to spreading Christianity and calling for the abolition of slavery. In her travels, she became acquainted with prominent abolitionists William Lloyd Garrison and Frederick Douglass, among others, who encouraged her to give speeches denouncing slavery. She also met temperance advocates and women's rights pioneers like Susan B. Anthony and Elizabeth Cady Stanton, becoming increasingly involved in both causes and advocating for the then-radical idea of political equality for both Black and white women.`} />
@@ -50,6 +51,8 @@ const SojournerTruth = () => {
 
         <p>When the war ended, Truth lobbied Congress to award western lands to the formerly enslaved, helping them achieve financial independence, but was unsuccessful. She continued to speak out about a variety of issues, including women's rights, prison reform and universal suffrage, until her death in Michigan in 1883.</p>
       </section>
+
+      <SearchPrompt figure={sojournerTruth} />
 
       <Sources sources={sojournerTruth.sources}/>
     </>

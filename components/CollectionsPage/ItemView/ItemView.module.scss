@@ -1,0 +1,176 @@
+@import "stylesheets/variables";
+
+.item_view {
+  color: #282830;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.15px;
+  line-height: 28px;
+}
+
+.item_view__main {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  margin-left: 3em;
+  margin-right: 3em;
+  justify-content: center;
+  border-bottom: 1px solid #DDD;
+}
+
+.item_view__main_details {
+  padding-top: 3em;
+
+  h1 {
+      color: #282830;
+      font-family: "Frank Ruhl Libre";
+      font-size: 34px;
+      font-weight: 900;
+      letter-spacing: 0.85px;
+      line-height: 47px;
+    }
+
+  .item_view__main_date {
+    opacity: 0.55;
+    color: #282830;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.19px;
+    line-height: 28px;
+    padding-top: 1.5em;
+  }
+
+  .item_view__main_creator {
+    color: #282830;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.15px;
+    line-height: 28px;
+    padding-top: .7em;
+  }
+
+  .item_view__main_description {
+    padding-top: 2em;
+  }
+}
+
+.item_view__metadata {
+  padding: 3em;
+  padding-bottom: 5em;
+
+  h2 {
+    color: #282830;
+    font-family: "Frank Ruhl Libre";
+    font-size: 34px;
+    font-weight: 900;
+    letter-spacing: 0.85px;
+    line-height: 47px;
+    text-align: center;
+  }
+
+  .item_view__line {
+    height: 2px;
+    width: 25px;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 1em;
+    background: #8B2D9B;
+  }
+
+  ul {
+    margin-top: 1em;
+    border-bottom: 1px solid #DDDDDD;
+  }
+
+  ul:last-of-type {
+    border-bottom: none;
+  }
+
+  li {
+    padding-bottom: 1em;
+    padding-top: 1em;
+  }
+
+  .item_view__label {
+    opacity: 0.55;
+    color: #282830;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.15px;
+    line-height: 28px;
+    display: block;
+  }
+
+  .item_view__value {
+    color: #282830;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.15px;
+    line-height: 28px;
+    display: block;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and ($md-viewport) {
+
+  .item_view__metadata {
+
+    ul {
+      display: table;
+      padding-right: 2em;
+      padding-left: 2em;
+      padding-bottom: 2em;
+    }
+
+    li {
+      display: table-row;
+    }
+
+    .item_view__label {
+      padding-right: 1em;
+      display: table-cell;
+      width: 33%;
+      padding-bottom: 1em;
+      padding-top: 1em;
+    }
+
+    .item_view__value {
+      display: table-cell;
+      padding-bottom: 1em;
+      padding-top: 1em;
+    }
+  }
+
+  .item_view__metadata {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  
+  .item_view__main {
+    flex-direction: row;
+
+    .item_view__main_details {
+      padding: 3em;
+      width: 70%;
+    }
+  }
+
+  .item_view__metadata {
+    width: 67%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

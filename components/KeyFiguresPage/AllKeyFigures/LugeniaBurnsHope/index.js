@@ -9,6 +9,7 @@ import BorderedTextBox from "components/KeyFiguresPage/BorderedTextBox";
 import Sources from "components/KeyFiguresPage/Sources";
 import KeyFiguresPagination from "components/KeyFiguresPage/KeyFiguresPagination";
 import IntroAndPortrait from "components/KeyFiguresPage/IntroAndPortrait";
+import SearchPrompt from "components/KeyFiguresPage/SearchPrompt";
 
 const LugeniaBurnsHope = () => {
 
@@ -17,12 +18,11 @@ const LugeniaBurnsHope = () => {
       <IntroAndPortrait figure={ lugeniaBurnsHope } />
 
       <section>
-        <SectionTitle title="Early Years" />
         <p>Suffragist, activist and community organizer Lugenia Burns Hope was born in St. Louis, Missouri, in 1871, and grew up in St. Louis and Chicago, Illinois. One of seven children, economic hardship forced her to leave school early. Her interest in activism and social work was sparked by her first jobs working at several settlement houses in the Chicago area, including Hull House. In the early 1890s she furthered her education, studying at the Chicago Art Institute, Chicago School of Design and Chicago Business College.</p>
       </section>
 
       <section>
-        <SectionTitle title="Marriage and motherhood" />
+        <SectionTitle title="Building Black Community in Atlanta" />
         <p>At the 1893 World's Columbian Exposition in Chicago, she met John Hope, who was then a theology student at Brown University, and the two married in 1897, moving first to Nashville, where they both taught at Roger Williams University, and then to Hope's native Georgia. In Atlanta, Hope initially worked to provide childcare and access to kindergarten for working mothers in the Atlanta Baptist College (now Morehouse College) community, where her husband worked. John Hope became the college's president in 1906. The couple went on to have two sons, and she was an active mother, despite her many and growing responsibilities, and even sewed most of her children's clothes herself.</p>
       </section>
 
@@ -48,9 +48,10 @@ const LugeniaBurnsHope = () => {
       </section>
 
       <section>
-        <SectionTitle title="Later Years" />
         <p>After her husband's 1936 death, Hope moved to New York City, where she worked for Mary McLeod Bethune, who was then heading Negro Affairs for the National Youth Administration, and later lived in Chicago and Nashville. She died in Nashville in 1947.</p>
       </section>
+
+      <SearchPrompt figure={lugeniaBurnsHope} />
 
       <Sources sources={lugeniaBurnsHope.sources}/>
     </>

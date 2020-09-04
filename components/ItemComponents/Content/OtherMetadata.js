@@ -3,7 +3,7 @@ import React from "react";
 import ItemTermValuePair from "./ItemTermValuePair";
 import FacetLink from "./FacetLink";
 
-import { joinIfArray, readMyRights } from "lib";
+import { joinIfArray } from "lib";
 
 import css from "./Content.module.scss";
 
@@ -13,6 +13,7 @@ const OtherMetadata = ({ item }) =>
       <ItemTermValuePair heading="Partner">
         <FacetLink facet="partner" value={item.partner} />
       </ItemTermValuePair>
+
       <ItemTermValuePair heading="Contributing Institution">
         <FacetLink
           facet="provider"
@@ -34,16 +35,7 @@ const OtherMetadata = ({ item }) =>
             </span>
           )}
         </ItemTermValuePair>}
-      {item.spatial &&
-        <ItemTermValuePair heading="Location">
-          {Array.isArray(item.spatial)
-            ? item.spatial.map((spatial, i, spatials) =>
-                <span key={i}>
-                  <FacetLink facet="location" value={spatial.name} /><br />
-                </span>
-              )
-            : <FacetLink facet="location" value={item.spatial.name} />}
-        </ItemTermValuePair>}
+
       {item.type &&
         <ItemTermValuePair heading="Type">
           {Array.isArray(item.type)
@@ -54,6 +46,7 @@ const OtherMetadata = ({ item }) =>
               )
             : <FacetLink facet="type" value={item.type} />}
         </ItemTermValuePair>}
+
       {item.format &&
         <ItemTermValuePair heading="Format">
           {!Array.isArray(item.format)
@@ -89,6 +82,7 @@ const OtherMetadata = ({ item }) =>
             {item.edmRights}
           </a>
         </ItemTermValuePair>}
+
       {item.rights &&
         <ItemTermValuePair heading="Rights">
           <div
@@ -98,7 +92,7 @@ const OtherMetadata = ({ item }) =>
           />
         </ItemTermValuePair>}
 
-              {item.publisher &&
+      {item.publisher &&
         <ItemTermValuePair heading="Publisher">
           {joinIfArray(item.publisher)}
         </ItemTermValuePair>}

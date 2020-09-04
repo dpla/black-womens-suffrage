@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="6px" height="10px" viewBox="0 0 6 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon/breadcrumb-arrow</title>
+    <g id="DPLA" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="5.0.2---Collections---IBW-Papers---Artifact" transform="translate(-324.000000, -95.000000)" fill="#8B2D9B" fill-rule="nonzero" stroke="#8B2D9B">
+            <g id="breadcrumbs" transform="translate(0.000000, 75.000000)">
+                <path d="M329.123162,24.8769198 L325.297127,21.050869 C325.229302,20.9830437 325.119037,20.9830437 325.051211,21.050869 C324.983386,21.1186944 324.983386,21.2289595 325.051211,21.2967848 L328.754133,25.0000489 L325.050869,28.7029543 C324.983044,28.7707797 324.983044,28.8810448 325.050869,28.9488701 C325.084961,28.9829621 325.129471,29 325.173998,29 C325.218525,29 325.263035,28.9829621 325.297127,28.9492125 L329.123178,25.1231617 C329.190987,25.054994 329.190987,24.9450876 329.123162,24.8769198 Z" id="icon/breadcrumb-arrow"></path>
+            </g>
+        </g>
+    </g>
+</svg>

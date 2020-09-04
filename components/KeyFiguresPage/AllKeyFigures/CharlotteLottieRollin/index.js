@@ -23,20 +23,19 @@ const CharlotteLottieRollin = () => {
       </section>
          
       <section>
-        <SectionTitle title="Suffrage" />
+        <SectionTitle title="Push for Progress in the Palmetto State" />
         <p>In 1869, Rollin gave a speech on the floor of the South Carolina House of Representatives in favor of universal suffrage. The next year, she was the chair and founder of the South Carolina Woman's Rights Association, and in 1871, she led a meeting at the state capitol pushing for women's suffrage. A member of the American Woman Suffrage Association (AWSA) and the organizer of its South Carolina chapter, Rollin wrote in an 1871 article in the AWSA's Woman's Journal: "We ask suffrage not as a favor, not as a privilege, but as a right based on the grounds that we are human beings and as such entitled to all human rights." In 1872, Rollin worked alongside her sisters, as well as AWSA leader Lucy Stone, to push for an ultimately unsuccessful constitutional amendment granting women's suffrage in South Carolina.</p>
       </section>
 
       <section>
-        <SectionTitle title="Later Years" />
         <p>As Reconstruction came to an end, and Blacks began to lose their hard-won political power, Rollin feared persecution from the Ku Klux Klan and left South Carolina for Brooklyn.</p>
       </section>
-
-      <Sources sources={charlotteLottieRollin.sources}/>
 
       <section className={scss.key_figures__disclaimer}>
         <p>In the spirit of highlighting hidden voices, we share Charlotte Rollin’s history here as she and her sisters were prominent figures in the Black Women’s Suffrage Movement. We regret that DPLA currently does not have any records documenting her life. If you have information about collections that uncover more of Charlotte’s voice, please email <a href="mailto:info@dp.la">info@dp.la</a>.</p>
       </section>
+
+      <Sources sources={charlotteLottieRollin.sources}/>
     </>
   )
 }

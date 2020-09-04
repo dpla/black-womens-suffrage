@@ -9,6 +9,7 @@ import BorderedTextBox from "components/KeyFiguresPage/BorderedTextBox";
 import Sources from "components/KeyFiguresPage/Sources";
 import KeyFiguresPagination from "components/KeyFiguresPage/KeyFiguresPagination";
 import IntroAndPortrait from "components/KeyFiguresPage/IntroAndPortrait";
+import SearchPrompt from "components/KeyFiguresPage/SearchPrompt";
 
 const IdaBWellsBarnett = () => {
 
@@ -63,6 +64,8 @@ const IdaBWellsBarnett = () => {
         <CurvedTextBox text="In 1915, Wells-Barnett and the Alpha Suffrage Club were instrumental in successfully registering and organizing Black voters to help elect Oscar DePriest as Chicago’s first Black alderman."/>
         <p>Wells believed that electing Republicans in the North might help to counterbalance Democratic gains in the South as Black men were increasingly disenfranchised and she worked to that end, supporting various Republican candidates and campaigning for Warren Harding in the presidential election of 1920. She also continued her journalism career alongside her activism, including covering the 1917-1919 race riots. In 1922, Wells-Barnett traveled to Arkansas to investigate Black farmers accused of murder and published a pamphlet about the case entitled the “The Arkansas Race Riot.” In 1928, she began writing her autobiography, which was completed and edited by her daughter and published after her death. She also ran, unsuccessfully, for the Illinois state senate in 1930. Wells-Barnett died of kidney disease in 1931. In 2020, Ida B. Wells-Barnett was awarded a posthumous Pulitzer Price special citation "[f]or her outstanding and courageous reporting on the horrific and vicious violence against African Americans during the era of lynching."</p>
       </section>
+
+      <SearchPrompt figure={idaBWellsBarnett} />
 
       <Sources sources={idaBWellsBarnett.sources}/>
     </>
