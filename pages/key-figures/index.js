@@ -3,7 +3,6 @@ import Router from "next/router"
 import MainLayout from "components/MainLayout"
 import KeyFiguresPage from "components/KeyFiguresPage"
 import { keyFigures } from "constants/key-figures"
-import Head from "next/head";
 
 
 function KeyFiguresIndex({ figId }) {

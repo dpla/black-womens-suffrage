@@ -1,5 +1,6 @@
 import React from "react"
 import scss from "components/KeyFiguresPage/KeyFiguresPage.module.scss"
+import BWSHead from "components/BWSHead"
 
 const IntroAndPortrait = ({ figure }) => {
 
@@ -9,6 +10,12 @@ const IntroAndPortrait = ({ figure }) => {
 
   return (
     <>
+      <BWSHead 
+        pageTitle={`${figure.name} | DPLA`}
+        pageDescription={`Biography of ${figure.name}`}
+        pageImage={figure.image}
+        seoType="article"
+      />
       <div className={container_class}>
         <div className={scss.key_figures__intro}>
           <div className={scss.key_figures__info}>

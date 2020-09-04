@@ -17,8 +17,6 @@ class BWSHead extends React.Component {
 
     const defaultImageUrl = "/static/logo/dpla_bws-logo-color-nav.png"
 
-    const defaultPageImageCaption = "Black Women's Suffrage logo"
-
     return (
       <div>
         <Head>
@@ -51,7 +49,8 @@ class BWSHead extends React.Component {
           <meta name="twitter:site" content="@dpla" />
           <meta name="twitter:creator" content="@dpla" />
           <meta name="twitter:image" content={pageImage || defaultImageUrl} />
-          <meta name="twitter:image:alt" content={pageImageCaption || defaultPageImageCaption } />}
+          {pageImageCaption &&
+            <meta name="twitter:image:alt" content={pageImageCaption} />}
 
         </Head>
 
