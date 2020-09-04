@@ -1,15 +1,16 @@
 import React from "react"
 import MainLayout from "components/MainLayout"
 import PartnersPage from "components/PartnersPage"
-import Head from "next/head";
+import BWSHead from "components/BWSHead"
 
 
 function Partners() {
   return (
       <MainLayout className="main" role="main">
-          <Head>
-              <title>Black Women's Suffrage: Partners | DPLA</title>
-          </Head>
+          <BWSHead 
+          pageTitle="Black Women's Suffrage: Partners | DPLA" 
+          pageDescription="DPLA's parters in the creation of the Black Women's Suffrage collection."
+          />
         <PartnersPage />
       </MainLayout>
   );
