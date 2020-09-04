@@ -133,6 +133,7 @@ const HomePage = () => {
       <SponsorPreFooter
         text="The grant for this collection is made possible through funding from "
         sponsor="Pivotal Ventures, A Melinda Gates Company."
+        sponsorLink="https://www.pivotalventures.org/"
         buttonText="SEARCH THE COLLECTION"
         buttonIcon="/static/icon/button-arrow.svg" />
     </>
