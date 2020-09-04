@@ -19,7 +19,6 @@ function Collection({ collection, items }) {
           pageDescription={collection.description}
           pageImage={collection.image}
           pageImageCaption={collection.name}
-          seoType="article"
         />
         <BreadcrumbsModule
             breadcrumbs={[

@@ -14,13 +14,6 @@ class MainLayout extends React.Component {
       <main className="container">
         <GoogleAnalytics>
         <Helmet htmlAttributes={{ lang: "en" }} />
-        {/* <DPLAHead
-          additionalLinks={headLinks}
-          pageTitle={pageTitle}
-          pageImage={pageImage}
-          seoType={seoType}
-          pageDescription={pageDescription}
-        /> */}
         <Navbar />
         <MobileNavbar />
         <div className="container__curve">
