@@ -64,8 +64,12 @@ class Search extends React.Component {
         return (
             <MainLayout>
                 <BWSHead
-                    pageTitle={`${query} | Search Results | DPLA`}
-                    pageDescription={`Search results for "${query}"`}
+                    pageTitle={query === undefined ? 
+                        "Search Results | DPLA" :
+                        `${query} | Search Results | DPLA`}
+                    pageDescription={query === undefined ? 
+                        "Search results" :
+                        `Search results for "${query}"`}
                 />
                 <OptionsBar
                     showFilters={this.state.showSidebar}
