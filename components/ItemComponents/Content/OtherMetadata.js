@@ -3,7 +3,7 @@ import React from "react";
 import ItemTermValuePair from "./ItemTermValuePair";
 import FacetLink from "./FacetLink";
 
-import { joinIfArray } from "lib";
+import { joinIfArray, readMyRights } from "lib";
 
 import css from "./Content.module.scss";
 
