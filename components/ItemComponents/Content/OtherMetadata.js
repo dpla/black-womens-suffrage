@@ -10,6 +10,22 @@ import css from "./Content.module.scss";
 const OtherMetadata = ({ item }) =>
   <div className={css.otherMetadata}>
     <dl className={css.contentDL}>
+      <ItemTermValuePair heading="Partner">
+        <FacetLink facet="partner" value={item.partner} />
+      </ItemTermValuePair>
+
+      <ItemTermValuePair heading="Contributing Institution">
+        <FacetLink
+          facet="provider"
+          value={item.contributor}
+          facetLabel="contributing institution"
+        />
+      </ItemTermValuePair>
+      {item.intermediateProvider &&
+        <ItemTermValuePair heading="Supporting Institution">
+          <FacetLink facet="provider" value={item.intermediateProvider} />
+        </ItemTermValuePair>}
+
       {item.subject &&
         <ItemTermValuePair className={css.subjects} heading="Subjects">
           {item.subject.map((subj, i, subjects) =>
@@ -53,6 +69,20 @@ const OtherMetadata = ({ item }) =>
           </a>
         </ItemTermValuePair>}
 
+      {item.edmRights &&
+        readMyRights(item.edmRights) &&
+        <ItemTermValuePair heading="Standardized Rights Statement">
+          {readMyRights(item.edmRights).description}
+          {readMyRights(item.edmRights).description !== "" && <br />}
+          <a
+            href={item.edmRights}
+            className="link external"
+            rel="noopener noreferrer"
+          >
+            {item.edmRights}
+          </a>
+        </ItemTermValuePair>}
+
       {item.rights &&
         <ItemTermValuePair heading="Rights">
           <div
@@ -62,9 +92,9 @@ const OtherMetadata = ({ item }) =>
           />
         </ItemTermValuePair>}
 
-        {item.contributor &&
+      {item.publisher &&
         <ItemTermValuePair heading="Publisher">
-          {joinIfArray(item.contributor)}
+          {joinIfArray(item.publisher)}
         </ItemTermValuePair>}
     </dl>
   </div>;
