@@ -5,7 +5,7 @@
   z-index: 1;
 
   .banner__background {
-    background-image: url("/static/image/home-page/home-image-hero.png");
+    background-image: url("/static/image/home-page/home-image-hero.jpg");
     background-color: $geraldine;
     opacity: 0.6;
     position: absolute;
@@ -75,6 +75,14 @@
   .section_2__div_right {
     margin: auto;
     padding: 3em 1em;    
+  }
+
+  .section_2__div_left {
+    position: relative;
+
+    .section_2__div_left_desktop {
+      display: none;
+    }
   }
 }
 
@@ -177,7 +185,7 @@
 
   .section_5__div_right {
     background-color: $blueGem;
-    background-image: url("/static/image/home-page/home-image-body-2-mobile.png");
+    background-image: url("/static/image/home-page/home-image-body-2-mobile.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -301,6 +309,18 @@
       justify-content: center;
       align-items: center;
       width: 50%;
+
+      img {
+        width: 100%;
+      }
+
+      .section_2__div_left_mobile {
+        display: none;
+      }
+
+      .section_2__div_left_desktop {
+        display: inline;
+      }
     }
     
     .section_2__div_right {

@@ -46,7 +46,13 @@ const HomePage = () => {
 
       <section className={`section__default ${scss.home__section_2}`}>
         <div className={scss.section_2__div_left}>
-          <img src="/static/image/home-page/home-image-body-1.png" />
+          <div className={scss.section_2__div_left_mobile}>
+            <img className={scss.section_2__div_left} src="/static/image/home-page/home-image-body-1-mobile.jpg" />
+          </div>
+
+          <div className={scss.section_2__div_left_desktop}>
+            <img className={scss.section_2__div_left} src="/static/image/home-page/home-image-body-1.jpg" />
+          </div>
         </div>
         <div className={scss.section_2__div_right}>
           <StyledTextWithButtons
@@ -73,7 +79,7 @@ const HomePage = () => {
         <h3 className="title">FEATURED COLLECTIONS</h3>
         <div className={scss.home__section_4_collections}>
           <div className={scss.home__section_4_tile}>
-            <img className={scss.home__section_4_tile_img} src="/static/image/home-page/home-carousel-ida.png" />
+            <img className={scss.home__section_4_tile_img} src="/static/image/home-page/home-carousel-ida.jpg" />
             <div className={scss.home__section_4_tile_title}>
               <h3>Ida B. Wells Barnett Papers</h3>
               <Link href="/collections/ida-b-wells">
@@ -85,14 +91,14 @@ const HomePage = () => {
             </div>
           </div>
           <div className={scss.home__section_4_tile}>
-            <img className={scss.home__section_4_tile_img} src="/static/image/home-page/home-carousel-mary.png" />
+            <img className={scss.home__section_4_tile_img} src="/static/image/home-page/home-carousel-mary.jpg" />
             <div className={scss.home__section_4_tile_title}>
               <h3>Mary Church Terrell Exhibit</h3>
               <p>COMING SOON</p>
             </div>
           </div>
           <div className={scss.home__section_4_tile}>
-            <img className={scss.home__section_4_tile_img} src="/static/image/home-page/home-carousel-charlotta.png" />
+            <img className={scss.home__section_4_tile_img} src="/static/image/home-page/home-carousel-charlotta.jpg" />
             <div className={scss.home__section_4_tile_title}>
               <h3>Charlotta Bass Papers</h3>
               <p>COMING SOON</p>
@@ -118,9 +124,9 @@ const HomePage = () => {
               image={<img src="/static/graphic/home-page/partner/home-graphic-partner-1-amistad.png" />} />
             <Offlink url={"https://www.auctr.edu/"}
               image={<img src="/static/graphic/home-page/partner/home-graphic-partner-2-auc-woodriff.png" />} />
-            <Offlink url={"http://www.socallib.org/"} 
+            <Offlink url={"http://www.socallib.org/"}
               image={<img src="/static/graphic/home-page/partner/home-graphic-partner-3-scl.png" />} />
-            <Offlink url={"https://cmlibrary.org"} 
+            <Offlink url={"https://cmlibrary.org"}
               image={<img src="/static/graphic/home-page/partner/home-graphic-partner-4-charlotte-mecklenberg.png" />} />
             <Offlink url={"https://avery.cofc.edu/"}
               image={<img src="/static/graphic/home-page/partner/home-graphic-partner-5-avery.png" />} />
