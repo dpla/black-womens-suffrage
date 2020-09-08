@@ -159,7 +159,7 @@ class DateFacet extends React.Component {
         className={css.dateRangeFacet}
         onSubmit={e => this.handleDateSubmit(e)}
       >
-        <label className={css.dateFacet} htmlFor="after-date">
+        <label className={css.dateFacet} htmlFor="after-date" for="after-date">
           <input
             id="after-date"
             type="numeric"
@@ -171,7 +171,7 @@ class DateFacet extends React.Component {
             placeholder="Start Year"
           />
         </label>
-        <label className={css.dateFacet} htmlFor="before-date">
+        <label className={css.dateFacet} htmlFor="before-date" for="before-date">
           <input
             id="before-date"
             type="numeric"
