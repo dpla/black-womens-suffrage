@@ -5,7 +5,7 @@ const Sources = ({ sources }) => {
   return (
     <section className={scss.sources__container}>
       <div>
-        <h6>SOURCES</h6>
+        <p>SOURCES</p>
         <ul>
           { sources.map((source) =>
             <li>

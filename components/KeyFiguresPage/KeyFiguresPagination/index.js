@@ -12,10 +12,10 @@ const KeyFiguresPagination = ({ prevFigure, nextFigure }) => {
         <Link href="/key-figures/[key]" as={`/key-figures/${ prevFigure }`}>
           <div className={scss.pagination__prev}>
             <div>
-              <h5>PREVIOUS</h5>
-              <img src="/static/icon/button-arrow.svg"/>
+              <h4>PREVIOUS</h4>
+              <img src="/static/icon/button-arrow.svg" alt={`Previous: ${prevFigure}`}/>
             </div>
-            <h4>{ keyFigures[prevFigure]["name"] }</h4>
+            <h5>{ keyFigures[prevFigure]["name"] }</h5>
           </div>
         </Link>
       }
@@ -25,10 +25,10 @@ const KeyFiguresPagination = ({ prevFigure, nextFigure }) => {
         <Link href="/key-figures/[key]" as={`/key-figures/${ nextFigure }`}>
           <div className={scss.pagination__next}>
             <div>
-              <h5>NEXT</h5>
-              <img src="/static/icon/button-arrow.svg"/>
+              <h4>NEXT</h4>
+              <img src="/static/icon/button-arrow.svg" alt={`Next: ${nextFigure}`}/>
             </div>
-           <h4>{ keyFigures[nextFigure]["name"] }</h4>
+           <h5>{ keyFigures[nextFigure]["name"] }</h5>
           </div>
         </Link>
       }

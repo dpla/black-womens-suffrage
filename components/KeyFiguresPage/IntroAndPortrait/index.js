@@ -27,7 +27,7 @@ const IntroAndPortrait = ({ figure }) => {
 
       { figure.image &&
         <div className={scss.key_figures__portrait}>
-          <img src={ figure.image } />
+          <img src={ figure.image } alt={`Portrait of ${figure.name}`}/>
         </div>
       }
     </>

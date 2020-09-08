@@ -110,10 +110,10 @@ class TimelinePage extends React.Component {
               id={this.state.activeLink-1}
               onClick={this.handleClick}>
                 <div>
-                  <h5>PREVIOUS</h5>
-                  <img src="/static/icon/button-arrow.svg" />
+                  <h4>PREVIOUS</h4>
+                  <img src="/static/icon/button-arrow.svg" alt="Previous Era"/>
                 </div>
-                <h4>{this.state.prevYear}</h4>
+                <h5>{this.state.prevYear}</h5>
               </div>
             }
 
@@ -124,10 +124,10 @@ class TimelinePage extends React.Component {
               id={this.state.activeLink+1}
               onClick={this.handleClick}>
                 <div>
-                  <h5>NEXT</h5>
-                  <img src="/static/icon/button-arrow.svg" />
+                  <h4>NEXT</h4>
+                  <img src="/static/icon/button-arrow.svg" alt="Next Era"/>
                 </div>
-                <h4>{this.state.nextYear}</h4>
+                <h5>{this.state.nextYear}</h5>
               </div>
             }
           </section>
