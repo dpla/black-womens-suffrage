@@ -33,7 +33,7 @@ const CollectionsPage = () => {
                     <p>{collection.description}</p>
                     <button className={scss.collections_button__active}>
                       <a>VIEW COLLECTION</a>
-                      <img src="static/icon/collections-page/button-arrow.svg" alt="View Collection"/>
+                      <img src="static/icon/collections-page/button-arrow.svg" alt=""/>
                       <div className={scss.collections_button__active_underline}></div>
                     </button>
                   </div>

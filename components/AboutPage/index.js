@@ -46,11 +46,11 @@ const AboutPage = () => {
 
         <div className={scss.about__section_3_right}>
           <div className={scss.about__section_3_right_mobile}>
-            <img className={scss.about__section_3_right} src="/static/image/about-page/about-image-body-1-mobile.png" alt="Group of Suffraggettes"/>
+            <img className={scss.about__section_3_right} src="/static/image/about-page/about-image-body-1-mobile.png" alt="Group of Suffragists"/>
           </div>
 
           <div className={scss.about__section_3_right_desktop}>
-            <img className={scss.about__section_3_right} src="/static/image/about-page/about-image-body-1.png" alt="Group of Suffraggettes"/>
+            <img className={scss.about__section_3_right} src="/static/image/about-page/about-image-body-1.png" alt="Group of Suffragists"/>
           </div>
         </div>
       </div>
