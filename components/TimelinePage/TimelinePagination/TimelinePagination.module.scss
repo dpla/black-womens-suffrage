@@ -1,0 +1,82 @@
+@import "stylesheets/variables";
+
+.pagination__container {  
+  h4, h5 {
+    margin: 0;
+  }
+
+  h5 {
+    color: #FFF7F7;
+    font-family: $libre;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 0.5px;
+    line-height: 28px;
+    padding-top: .5em;
+  }
+
+  .pagination__prev {
+    border-radius: 29.5px 0 0 0;
+    background-color: $cinnabar;
+    padding: 1.5em;
+    cursor: pointer;
+
+    h4 {
+      color: #FFFEFE;
+      font-family: $inter;
+      font-size: 14px;
+      font-weight: $xBold;
+      letter-spacing: 1.2px;
+      line-height: 17px;
+    }
+
+    div {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    img {
+      transform: rotate(180deg);
+    }
+  }
+
+  .pagination__next {
+    border-radius: 0 0 29.5px 0;
+    background-color: #8B2D9B;
+    padding: 1.5em;
+    cursor: pointer;
+
+    h4 {
+      color: $lightCoral;
+      font-family: $inter;
+      font-size: 14px;
+      font-weight: $xBold;
+      letter-spacing: 1.2px;
+      line-height: 17px;
+    }
+
+    div {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+// @media only screen and ($md-viewport) {...}
+@media only screen and ($md-viewport) {
+
+  .pagination__container {
+    padding-bottom: 5em;
+
+    .pagination__next {
+      width: 50%;
+      float: right;
+    }
+
+    .pagination__prev {
+      width: 50%;
+      float: left;
+    }
+  }
+}

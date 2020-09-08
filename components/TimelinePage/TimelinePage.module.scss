@@ -118,6 +118,7 @@
     }
   }
 
+<<<<<<< HEAD
   .pagination__container {  
     margin-top: 75px;
 
@@ -183,6 +184,8 @@
     }
   }
 
+=======
+>>>>>>> create dedicated routes for timeline pages
   .sources__container {
     box-sizing: border-box;
     border: 2px solid $wePeep;
@@ -224,21 +227,6 @@
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and ($md-viewport) {
-  .timeline {
-    .pagination__next {
-      width: 50%;
-      float: right;
-    }
-
-    .pagination__prev {
-      width: 50%;
-      float: left;
-    }
-  }
-}
-
 
 /* Medium plus devices (992px and up) */
 @media only screen and ($mdP-viewport) {
@@ -267,8 +255,4 @@
       }
     }
   }
-
-
-
-
 }
