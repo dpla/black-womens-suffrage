@@ -8,8 +8,7 @@ class Navbar extends Component {
     super()
 
     this.state = {
-      showSearchbar: false,
-      path: null
+      showSearchbar: false
     }
 
   }
