@@ -1,6 +1,10 @@
 const path = require('path')
+const withPWA = require('next-pwa')
 
-module.exports = {
+module.exports = withPWA({
+  pwa: {
+    dest: 'public'
+  },
   webpack: (config, { isServer }) => {
     // Fixes npm packages that depend on `fs` module
     if (!isServer) {
@@ -11,4 +15,4 @@ module.exports = {
 
     return config
   }
-}
+})
