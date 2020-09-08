@@ -10,26 +10,30 @@ const KeyFiguresPagination = ({ prevFigure, nextFigure }) => {
 
       { prevFigure &&
         <Link href="/key-figures/[key]" as={`/key-figures/${ prevFigure }`}>
-          <div className={scss.pagination__prev}>
-            <div>
-              <h4>PREVIOUS</h4>
-              <img src="/static/icon/button-arrow.svg" alt={`Previous: ${prevFigure}`}/>
+          <a>
+            <div className={scss.pagination__prev}>
+              <div>
+                <h4>PREVIOUS</h4>
+                <img src="/static/icon/button-arrow.svg" alt={`Previous: ${prevFigure}`}/>
+              </div>
+              <h5>{ keyFigures[prevFigure]["name"] }</h5>
             </div>
-            <h5>{ keyFigures[prevFigure]["name"] }</h5>
-          </div>
+          </a>
         </Link>
       }
         
 
       { nextFigure &&
         <Link href="/key-figures/[key]" as={`/key-figures/${ nextFigure }`}>
-          <div className={scss.pagination__next}>
-            <div>
-              <h4>NEXT</h4>
-              <img src="/static/icon/button-arrow.svg" alt={`Next: ${nextFigure}`}/>
+          <a>
+            <div className={scss.pagination__next}>
+              <div>
+                <h4>NEXT</h4>
+                <img src="/static/icon/button-arrow.svg" alt={`Next: ${nextFigure}`}/>
+              </div>
+            <h5>{ keyFigures[nextFigure]["name"] }</h5>
             </div>
-           <h5>{ keyFigures[nextFigure]["name"] }</h5>
-          </div>
+          </a>   
         </Link>
       }
         
