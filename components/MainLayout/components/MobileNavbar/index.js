@@ -33,10 +33,10 @@ class MobileNavbar extends Component {
         <div className={scss.navbar__graphic}>
           <Link href="/">
             <a>
-              <img src="/static/mobile/logo/dpla_bws-logo-color-nav-mobile.png" />
+              <img src="/static/mobile/logo/dpla_bws-logo-color-nav-mobile.png" alt="Black Women's Suffrage Logo"/>
             </a>
           </Link>
-          <img src={menuIcon} onClick={this.showMenu} name="menuDisplayed" id={scss.menuIcon} />
+          <img src={menuIcon} onClick={this.showMenu} name="menuDisplayed" id={scss.menuIcon} alt=""/>
         </div>
 
         {/* nav links */}

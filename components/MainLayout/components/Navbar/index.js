@@ -29,7 +29,7 @@ class Navbar extends Component {
           <div className={scss.nav__logo}>
             <Link href="/">
               <a>
-                <img src="/static/logo/dpla_bws-logo-color-nav.png" />
+                <img src="/static/logo/dpla_bws-logo-color-nav.png" alt="Black Women's Suffrage Logo"/>
               </a>
             </Link>
           </div>
