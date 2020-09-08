@@ -17,7 +17,7 @@ function CollectionItem({ item }) {
         <BWSHead 
           pageTitle={`${item.title} | DPLA`}
           pageDescription={item.description}
-          pageImage={item.href}
+          pageImage={`/static/thumbnails/ibw/${item.itemId}.jpg`}
           pageImageCaption={item.title}
         />
         <BreadcrumbsModule
