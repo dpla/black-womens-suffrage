@@ -6,7 +6,7 @@ import SponsorPreFooter from "components/shared/SponsorPreFooter"
 import Link from "next/link"
 import HomeSearchBar from "components/HomePage/HomeSearchBar"
 
-const Offlink = ({ url, image }) => <a href={url} target={"_blank"}>{image}</a>
+const Offlink = ({ url, image }) => <a href={url} target={"_blank"} rel="noopener">{image}</a>
 
 
 const HomePage = () => {

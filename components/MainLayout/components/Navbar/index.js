@@ -56,7 +56,7 @@ class Navbar extends Component {
               <a>Partners</a>
             </Link></li>
           <li><div className={scss.divider}/></li>
-          <li><a href="https://dp.la" target="_blank">Visit DPLA</a></li>
+          <li><a href="https://dp.la" target="_blank" rel="noopener">Visit DPLA</a></li>
           <li><div className={scss.divider}/></li>
           <li><img src={"/static/icon/search/search-bar.svg"} alt="Search Bar" className={scss.searchIcon} onClick={this.triggerSearchbar} /></li>
           </ul>

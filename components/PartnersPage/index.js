@@ -4,7 +4,7 @@ import PageBanner from "components/shared/PageBanner"
 
 import scss from "./PartnersPage.module.scss";
 
-const Offlink = ({url, text}) => <a href={url} target={"_blank"}>{text}</a>
+const Offlink = ({url, text}) => <a href={url} target={"_blank"} rel="noopener">{text}</a>
 
 function PartnersPage() {
     const title = "PARTNERS",
