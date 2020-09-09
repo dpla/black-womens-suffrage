@@ -14,7 +14,7 @@ const TimelinePagination = ({ prevTime, nextTime }) => {
             <div className={scss.pagination__prev}>
               <div>
                 <h4>PREVIOUS</h4>
-                <img src="/static/icon/button-arrow.svg"/ alt={`Previous: ${prevTime}`} /?
+                <img src="/static/icon/button-arrow.svg" alt={`Previous: ${prevTime}`} />
               </div>
               <h5>{ prevTime }</h5>
             </div>
