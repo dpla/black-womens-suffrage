@@ -13,6 +13,15 @@ class Navbar extends Component {
 
   }
 
+  componentDidMount = () => {
+    let path = window.location.pathname
+    if(path === '/search') {
+      this.setState({
+        showSearchbar: true
+      })
+    }
+  }
+
   triggerSearchbar = () => {
     this.setState({
       showSearchbar: !this.state.showSearchbar
@@ -21,10 +30,8 @@ class Navbar extends Component {
 
 
   render() {
-
     return (
       <>
-
         <nav className={scss.navbar}>
           <div className={scss.nav__logo}>
             <Link href="/">
@@ -58,7 +65,11 @@ class Navbar extends Component {
           <li><div className={scss.divider}/></li>
           <li><a href="https://dp.la" target="_blank">Visit DPLA</a></li>
           <li><div className={scss.divider}/></li>
-          <li><img src={"/static/icon/search/search-bar.svg"} alt="Search Bar" className={scss.searchIcon} onClick={this.triggerSearchbar} /></li>
+          <li>
+            <button onClick={this.triggerSearchbar}>
+            <img src={"/static/icon/search/search-bar.svg"} alt="Search Bar" className={scss.searchIcon} />
+            </button>
+          </li>
           </ul>
         </nav>
 
