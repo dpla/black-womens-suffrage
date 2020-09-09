@@ -1,7 +1,7 @@
 @import "stylesheets/variables";
 
 .key_figures {
-  display: flex;
+  // display: flex;
   padding-bottom: 5em;
 }
 
@@ -50,6 +50,7 @@
 
   img {
     border-radius: 150px 0 150px 150px;
+    width: 80%;
   }
 }
 
@@ -59,6 +60,10 @@
   align-items: center;
   margin: 2em 0;
   flex-direction: column;
+
+  img {
+    width: 80%;
+  }
 }
 
 .key_figures__left {
@@ -174,6 +179,10 @@
 
 /* Medium plus devices (992px and up) */
 @media only screen and ($mdP-viewport) {
+  .key_figures {
+    display: flex;
+  }
+
   .key_figures__right {
     width: 70%;
     margin-left: auto;
