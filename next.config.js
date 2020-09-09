@@ -1,9 +1,11 @@
 const path = require('path')
 const withPWA = require('next-pwa')
+// const prod = process.env.NODE_ENV === 'production'
 
 module.exports = withPWA({
   pwa: {
-    dest: 'public'
+    dest: 'public',
+    // disable: prod ? false : true,
   },
   webpack: (config, { isServer }) => {
     // Fixes npm packages that depend on `fs` module
