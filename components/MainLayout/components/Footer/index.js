@@ -8,7 +8,11 @@ const Footer = () => {
 
       <div className={scss.footer__container}>
         <section className={scss.footer__section_top}>
-          <img src="/static/logo/dpla_bws-logo-white-footer.svg" />
+          <Link href="/">
+            <a>
+              <img src="/static/logo/dpla_bws-logo-white-footer.svg" alt="Black Women's Suffrage Logo"/>
+            </a>
+          </Link>
 
           <nav className={scss.footer__links}>
             <Link href="/about">
@@ -36,7 +40,9 @@ const Footer = () => {
             </Link>
           </nav>
 
-          <img src="/static/logo/dpla-logo-footer.svg" />
+          <a href="http://dp.la/"> 
+            <img src="/static/logo/dpla-logo-footer.svg" alt="Digital Public Library of America Logo"/>
+          </a>
         </section>
 
         <section className={scss.footer__divider}></section>

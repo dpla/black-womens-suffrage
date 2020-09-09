@@ -17,7 +17,7 @@ const AboutPage = () => {
       <PageBanner title={title} text={text} graphic={graphic} />
       <div className={scss.about__section_1}>
         <div className={`${scss.about__section_1_left}`}>
-          <img src="/static/graphic/about-page/about-graphic-body-1.svg" />
+          <img src="/static/graphic/about-page/about-graphic-body-1.svg" alt=""/>
           <div className={scss.about__section_1_left_content}>
             <p>Mary Church Terrell.</p>
             <p>Frances Ellen Watkins Harper.</p>
@@ -46,18 +46,18 @@ const AboutPage = () => {
 
         <div className={scss.about__section_3_right}>
           <div className={scss.about__section_3_right_mobile}>
-            <img className={scss.about__section_3_right} src="/static/image/about-page/about-image-body-1-mobile.png" />
+            <img className={scss.about__section_3_right} src="/static/image/about-page/about-image-body-1-mobile.png" alt="Group of Suffragists"/>
           </div>
 
           <div className={scss.about__section_3_right_desktop}>
-            <img className={scss.about__section_3_right} src="/static/image/about-page/about-image-body-1.png" />
+            <img className={scss.about__section_3_right} src="/static/image/about-page/about-image-body-1.png" alt="Group of Suffragists"/>
           </div>
         </div>
       </div>
 
       <div className={scss.about__section_4_mobile}>
         <div className={scss.about__section_4_div}>
-          <img src="/static/graphic/about-page/mobile/about-graphic-body-3-mobile.svg" />
+          <img src="/static/graphic/about-page/mobile/about-graphic-body-3-mobile.svg" alt=""/>
           <h3 className="title">DIGITAL PUBLIC LIBRARY OF AMERICA (DPLA)</h3>
         </div>
 
@@ -69,7 +69,7 @@ const AboutPage = () => {
 
       <div className={scss.about__section_4_desktop}>
         <div className={scss.about__section_4_div}>
-          <img src="/static/graphic/about-page/about-graphic-body-3.svg" />
+          <img src="/static/graphic/about-page/about-graphic-body-3.svg" alt=""/>
 
           <div className={scss.about__section_4_header}>
             <h3 className="title">DIGITAL PUBLIC LIBRARY OF AMERICA (DPLA)</h3>
@@ -93,7 +93,7 @@ const AboutPage = () => {
           </div>
 
           <div className={scss.about__section_5_right}>
-            <img className={scss.about__section_5_img} src="/static/graphic/about-page/about-graphic-body-4.svg" />
+            <img className={scss.about__section_5_img} src="/static/graphic/about-page/about-graphic-body-4.svg" alt=""/>
           </div>
         </div>
       </div>

@@ -55,7 +55,7 @@ class TimelinePage extends React.Component {
     })
 
     // scroll to top of page
-    if(typeof window !== 'undefined') window.scrollTo(0, 0)
+    if (typeof window !== 'undefined') window.scrollTo(0, 0)
   }
 
   render() {
@@ -67,34 +67,34 @@ class TimelinePage extends React.Component {
     const templateName = this.state.selected == "Sources" ? "TimelineSources" :
       "Year" + this.state.selected.replace("-", "to")
 
-    const DynamicComponent = dynamic(import(`./${ templateName }`))
+    const DynamicComponent = dynamic(import(`./${templateName}`))
 
     return (
       <>
         <PageBanner title={title} text={text} graphic={graphic} />
 
         <section className={`section__default ${scss.timeline}`}>
-          <Dropdown 
-          options={this.state.dropdownOptions} 
-          onChange={this._onSelect} 
-          value={this.state.selected} 
-          className={scss.timeline__dropdown}/>
+          <Dropdown
+            options={this.state.dropdownOptions}
+            onChange={this._onSelect}
+            value={this.state.selected}
+            className={scss.timeline__dropdown} />
 
           <div className={scss.timeline__left}>
             <ul>
               {this.state.dropdownOptions.map((years, index) => {
                 return (
-                  <li 
-                  key={`timeline-years-${index+1}`} 
-                  id={index}
-                  onClick={this.handleClick} 
-                  value={years} 
-                  className={
-                    (index === this.state.activeLink ? scss.timeline__active_item : scss.timeline__li)
-                  }>
-                  <span></span>
+                  <li
+                    key={`timeline-years-${index + 1}`}
+                    id={index}
+                    onClick={this.handleClick}
+                    value={years}
+                    className={
+                      (index === this.state.activeLink ? scss.timeline__active_item : scss.timeline__li)
+                    }>
+                    <span></span>
                     {years}
-                  </li>                  
+                  </li>
                 )
               })}
             </ul>
@@ -103,35 +103,34 @@ class TimelinePage extends React.Component {
             {<DynamicComponent />}
 
             <section className={scss.pagination__container}>
-            {this.state.prevYear &&
-              <div 
-              className={scss.pagination__prev}
-              value={this.state.prevYear}
-              id={this.state.activeLink-1}
-              onClick={this.handleClick}>
-                <div>
-                  <h5>PREVIOUS</h5>
-                  <img src="/static/icon/button-arrow.svg" />
-                </div>
-                <h4>{this.state.prevYear}</h4>
-              </div>
-            }
+              {this.state.prevYear &&
+                <button onClick={this.handleClick}
+                  className={scss.pagination__prev}
+                  value={this.state.prevYear}
+                  id={this.state.activeLink - 1}>
+                  <div>
+                    <h4>PREVIOUS</h4>
+                    <img src="/static/icon/button-arrow.svg" alt="Previous Era" />
+                  </div>
+                  <h5>{this.state.prevYear}</h5>
+                </button>
+              }
 
-            {this.state.nextYear &&
-              <div
-              className={scss.pagination__next}
-              value={this.state.nextYear}
-              id={this.state.activeLink+1}
-              onClick={this.handleClick}>
-                <div>
-                  <h5>NEXT</h5>
-                  <img src="/static/icon/button-arrow.svg" />
-                </div>
-                <h4>{this.state.nextYear}</h4>
-              </div>
-            }
-          </section>
-          </div>     
+              {this.state.nextYear &&
+                <button
+                  className={scss.pagination__next}
+                  value={this.state.nextYear}
+                  id={this.state.activeLink + 1}
+                  onClick={this.handleClick}>
+                  <div>
+                    <h4>NEXT</h4>
+                    <img src="/static/icon/button-arrow.svg" alt="Next Era" />
+                  </div>
+                  <h5>{this.state.nextYear}</h5>
+                </button>
+              }
+            </section>
+          </div>
         </section>
       </>
     )

@@ -9,7 +9,8 @@ class MobileNavbar extends Component {
 
     this.state = {
       menuDisplayed: false,
-      menuIcon: "/static/dpla-icons/menu-black.svg"
+      menuIcon: "/static/dpla-icons/menu-black.svg",
+      menuAlt: 'Open Menu'
     }
   }
 
@@ -24,8 +25,13 @@ class MobileNavbar extends Component {
     return this.state.menuDisplayed ? "/static/dpla-icons/close.svg" : "/static/mobile/icon/menu/menu-mobile.png"
   }
 
+  getMenuAlt = () => {
+    return this.state.menuDisplayed ? "Close Menu" : "Open Menu"
+  }
+
   render() {
     const menuIcon = this.getMenuIcon();
+    const menuAlt = this.getMenuAlt()
 
     return (
       <nav className={scss.navbar}>
@@ -33,10 +39,13 @@ class MobileNavbar extends Component {
         <div className={scss.navbar__graphic}>
           <Link href="/">
             <a>
-              <img src="/static/mobile/logo/dpla_bws-logo-color-nav-mobile.png" />
+              <img src="/static/mobile/logo/dpla_bws-logo-color-nav-mobile.png" alt="Black Women's Suffrage Logo"/>
             </a>
           </Link>
-          <img src={menuIcon} onClick={this.showMenu} name="menuDisplayed" id={scss.menuIcon} />
+
+          <button onClick={this.showMenu} name="menuDisplayed">
+            <img src={menuIcon} id={scss.menuIcon} alt={menuAlt}/>
+          </button>
         </div>
 
         {/* nav links */}

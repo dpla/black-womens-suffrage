@@ -26,21 +26,21 @@ const CollectionsPage = () => {
 
             return (
               collection.publish ?
-                <Link href="/collections/[colId]" as={`/collections/${key}`}>
-                  <div className={scss.collections__tile} key={`collections-tile-${index + 1}`}>
-                    <img src={collection.image} />
+                <Link href="/collections/[colId]" as={`/collections/${key}`} key={`collections-tile-${index + 1}`}>
+                  <div className={scss.collections__tile}>
+                    <img src={collection.image} alt={`Collection ${collection.name}`}/>
                     <h2>{collection.name}</h2>
                     <p>{collection.description}</p>
                     <button className={scss.collections_button__active}>
                       <a>VIEW COLLECTION</a>
-                      <img src="static/icon/collections-page/button-arrow.svg" />
+                      <img src="static/icon/collections-page/button-arrow.svg" alt=""/>
                       <div className={scss.collections_button__active_underline}></div>
                     </button>
                   </div>
                 </Link>
                 :
                 <div className={scss.collections__tile} key={`collections-tile-${index + 1}`}>
-                  <img src={collection.image} />
+                  <img src={collection.image} alt={`Collection ${collection.name}`}/>
                   <h2>{collection.name}</h2>
                   <p>{collection.description}</p>
 
@@ -59,40 +59,32 @@ const CollectionsPage = () => {
 
       <section className={`section__default ${scss.pss__section}`}>
         <SectionTitle title="Featured Primary Source Sets" />
-
         <div className={scss.pss__tile_container}>
-
-          {primarySourceSets.slice(0, 3).map((pss) => {
-
+          {primarySourceSets.slice(0, 3).map((pss, index) => {
             return (
-              <a href={pss.href} target="_blank">
+              <a href={pss.href} target="_blank" key={`primary-source-set-tile-${index + 1}`}>
                 <div className={scss.pss__tile}>
-                  <img src={pss.image} />
+                  <img src={pss.image} alt={`${pss.title}`}/>
                   <h2>{pss.title}</h2>
                   <h3>{pss.subtitle}</h3>
                 </div>
               </a>
             )
           })}
-
         </div>
 
         <div className={scss.pss__tile_container}>
-
-          {primarySourceSets.slice(3, 6).map((pss) => {
-
+          {primarySourceSets.slice(3, 6).map((pss, index) => {
             return (
-
-              <div className={scss.pss__tile}>
+              <div className={scss.pss__tile} key={`primary-source-set-tile-${index + 1}`}>
                 <a href={pss.href} target="_blank">
-                  <img src={pss.image} />
+                  <img src={pss.image} alt={`${pss.title}`}/>
                   <h2>{pss.title}</h2>
                   <h3>{pss.subtitle}</h3>
                 </a>
               </div>
             )
           })}
-
         </div>
       </section>
     </>
