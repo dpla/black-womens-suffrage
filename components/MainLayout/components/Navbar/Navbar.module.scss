@@ -7,17 +7,17 @@
   justify-content: space-between;
   align-items: center;
 
-  & ul {
+  ul {
     display: inline-flex;
 
-    & li {
+    li {
       list-style: none;
 
       .searchIcon {
         padding-top: 8px;
       }
 
-      & a {
+      a {
         text-decoration: none;
         color: #282830;
         font-family: $inter;
@@ -28,7 +28,12 @@
         line-height: 35px;
       }
 
-      & .divider {
+      .active {
+        color: $vividViolet;
+        font-weight: bold;
+      }
+
+      .divider {
         height: 35px;
         width: 1px;
         background-color: #D8D8D8;
