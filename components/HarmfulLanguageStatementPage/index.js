@@ -26,9 +26,12 @@ const HarmfulLanguageStatementPage = () => {
                 </div>
             </div>
 
-            {/* <div className={`site-max-width container large_page_section ${scss.harmful__faq}`}>
+            <div className={`site-max-width container ${scss.harmful__faq}`}>
 
-                <h2>Frequently asked questions</h2>
+              <section className={scss.harmful__faq_title}>
+                <span></span>
+                <h1>Frequently asked questions</h1>
+              </section>
 
                 <dl>
                     <div>
@@ -132,7 +135,7 @@ const HarmfulLanguageStatementPage = () => {
 
             <br clear={"all"}/>
 
-            <div className={`site-max-width container large_page_section ${scss.harmful__section_3}`}>
+            {/* <div className={`site-max-width container large_page_section ${scss.harmful__section_3}`}>
                 <div>
 
                     <h2>Curating the Black Women’s Suffrage Digital Collection</h2>

@@ -40,6 +40,7 @@
   .harmful__section_1_img {
     display: flex;
     justify-content: center;
+    margin-bottom: 2em;
 
     img {
       width: 90%;
@@ -48,37 +49,48 @@
 }
 
 .harmful__faq {
+  // margin-top: 84px;
+  margin: 3em 1em;
 
-  width: 1180px;
-  margin-top: 84px;
+  .harmful__faq_title {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    display: flex;
 
-  h2 {
-    color: $blueGem;
-    font-size: 35px;
-    font-weight: 900;
-    letter-spacing: 0.88px;
-    line-height: 47px;
-    font-family: $serifFont;
+    span {
+      height: 2px;
+      width: 25px;
+      display: inline-block;
+      margin-top: 20px;
+      background: $nyPink;
+    }
+  
+    h1 {
+      color: $blueGem;
+      font-family: $libre;
+      font-size: 2em;
+      font-weight: $xBold;
+      letter-spacing: 0.85px;
+      line-height: 47px;
+      background: #fff;
+      margin-left: 10px;
+      display: inline;
+    }
   }
 
   div {
     clear: both;
     border-top: 2px solid #FFD2D2;
+    padding: 2em 0;
 
     dt {
-      padding-top: 32px;
-
       color: $cinnabar;
       font-family: $serifFont;
       font-size: 28px;
       font-weight: bold;
       letter-spacing: 0.7px;
       line-height: 47px;
-      display: block;
-      float: left;
-      padding-right: 60px;
-      width: 560px;
-      height: 100%;
+      margin-bottom: 1em;
 
     }
     dd {
@@ -88,14 +100,11 @@
       font-weight: 500;
       letter-spacing: 0.35px;
       line-height: 28px;
-      display: block;
-      padding-bottom: 32px;
-      padding-top: 32px;
-      width: 560px;
-      float: right;
+      margin: 0;
 
       ul {
         list-style: disc;
+        margin-left: 2em;
          li {
            margin-bottom: 24px;
          }
@@ -167,6 +176,27 @@
 
     h3 {
       text-align: left;
+    }
+  }
+
+  .harmful__faq {
+    margin: 0 auto;
+    width: 90%;
+
+    div {
+      display: flex;
+      justify-content: space-between;
+
+      dt {
+        width: 45%;
+      }
+      dd {
+        width: 45%;
+
+        ul {
+          margin: 0;
+        }
+      }
     }
   }
 }
