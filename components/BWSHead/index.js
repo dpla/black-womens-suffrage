@@ -33,7 +33,7 @@ class BWSHead extends React.Component {
           <meta name='description' content={pageDescription || defaultDescription}/>
           <meta name='format-detection' content='telephone=no' />
           <meta name='mobile-web-app-capable' content='yes' />
-          {/* <meta name='msapplication-config' content='/static/icons/browserconfig.xml' /> */}
+
           <meta name='msapplication-TileColor' content='#4E4294' />
           <meta name='msapplication-tap-highlight' content='no' />
           <meta name='theme-color' content='#000000' />
@@ -47,18 +47,19 @@ class BWSHead extends React.Component {
           <link rel='shortcut icon' href='/static/favicons/favicon.ico' />
               
           <meta name='twitter:card' content='summary' />
-          <meta name='twitter:url' content='https://yourdomain.com' />
+          <meta name='twitter:url' content='https://blackwomenssuffrage.dp.la' />
           <meta name='twitter:title' content='BWS Collection' />
           <meta name='twitter:description' content={pageDescription || defaultDescription}/>
           <meta name='twitter:image' content={pageImage || defaultImageUrl}/>
           {pageImageCaption &&
             <meta name="twitter:image:alt" content={pageImageCaption} />} 
           <meta name='twitter:creator' content='@dpla' />
+          <meta name='twitter:site' content='@dpla' />
           <meta property='og:type' content={seoType || "website"} />
           <meta property='og:title' content={pageTitle || defaultPageTitle} />
           <meta property='og:description' content={pageDescription || defaultDescription}/>
           <meta property='og:site_name' content={defaultPageTitle} />
-          {/* <meta property='og:url' content='https://yourdomain.com' /> */}
+          <meta property='og:url' content='https://blackwomenssuffrage.dp.la' />
           <meta property='og:image' content={pageImage || defaultImageUrl} />
 
         </Head>
