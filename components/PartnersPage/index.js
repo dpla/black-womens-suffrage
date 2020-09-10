@@ -16,13 +16,22 @@ function PartnersPage() {
         <>
             <PageBanner title={title} text={text} graphic={graphic}/>
             <div className={`site-max-width container ${scss.partners__wrapper}`}>
-                <p>Digital Public Library of America (DPLA) is proud to partner with the following institutions in the
+              <section className={scss.partners__section_1}>
+                <div className={scss.partners__section_1_intro}>
+                  <p className={scss.partners__section_1_intro_title}>PARTNERSHIP</p>
+                  <p className={scss.partners__section_1_intro_text}>Digital Public Library of America (DPLA) is proud to partner with the following institutions in the creation of a national digital collection that highlights the roles and experiences of Black women in the women’s suffrage movement, as well as Black women’s history of activism, as part of the centennial celebration of the passage of the 19th Amendment:</p>
+                </div>
+                <div className={scss.partners__section_1_logos}>
+
+                </div>
+              </section>
+                {/* <p>Digital Public Library of America (DPLA) is proud to partner with the following institutions in the
                     creation of a national digital collection that highlights the roles and experiences of Black women
                     in
                     the women’s suffrage movement, as well as Black women’s history of activism, as part of the
                     centennial
-                    celebration of the passage of the 19th Amendment:</p>
-                <ul>
+                    celebration of the passage of the 19th Amendment:</p> */}
+                {/* <ul>
                     <li><Offlink url={"https://www.auctr.edu/"}
                                  text="Atlanta University Center Robert W. Woodruff Library"/></li>
                     <li><Offlink url={"https://avery.cofc.edu/"}
@@ -33,8 +42,8 @@ function PartnersPage() {
                     <li><Offlink url={"https://www.amistadresearchcenter.org/"}
                                  text={"Amistad Research Center at Tulane University"}/></li>
                     <li><Offlink url={"http://www.socallib.org/"} text={"Southern California Library"}/></li>
-                </ul>
-                <p>
+                </ul> */}
+                {/* <p>
                     Atlanta University Center and Tuskegee University are both HBCUs with collections documenting
                     women’s history of organizing for political action in the American South. The Avery Research Center
                     and Amistad Research Center are institutions committed to collecting, preserving and providing open
@@ -90,7 +99,7 @@ function PartnersPage() {
                     collections that they are digitizing as part of the Black Women’s Suffrage collection and provided
                     perspective about how these artifacts can help us better understand Black women suffragists and the
                     historical and continuing activism of Black women. <Offlink url={"https://dpla.zoom.us/rec/play/75Z8Ie6h_DI3T9PEtgSDVPEoW9TuJqis13BN_qIKzxmyVHMKNgamYLsWZeMsg3xlnOgP_huLHvi6gzs5?autoplay=true&startTime=1594918908000"} text={"A recording of this event is available here"}/>.</p>
-                    <p>For more information about this work, please contact DPLA community manager Shaneé Yvette Murrain at <a href={"mailto:shanee@dp.la"}>shanee@dp.la</a></p>
+                    <p>For more information about this work, please contact DPLA community manager Shaneé Yvette Murrain at <a href={"mailto:shanee@dp.la"}>shanee@dp.la</a></p> */}
 
                 {/*Potential Images for Homepage*/}
                 {/*(will need to check permissions)*/}
