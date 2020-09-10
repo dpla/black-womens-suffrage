@@ -27,7 +27,7 @@ const CollectionsPage = () => {
             return (
               collection.publish ?
                 <Link href="/collections/[colId]" as={`/collections/${key}`} key={`collections-tile-${index + 1}`}>
-                  <div className={scss.collections__tile}>
+                  <div className={`${scss.collections__tile} ${scss.collections__tile_active}`}>
                     <img src={collection.image} alt={`Collection ${collection.name}`}/>
                     <h2>{collection.name}</h2>
                     <p>{collection.description}</p>
