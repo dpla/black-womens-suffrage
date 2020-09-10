@@ -79,7 +79,8 @@
   }
 
   a:focus {
-    outline: none;
+    text-decoration: none;
+    opacity: 1;
   }
 
   a:active {
@@ -90,6 +91,7 @@
   .key_figures__active_item {
     color: $vividViolet;
     display: flex;
+    outline: none;
 
     span {
       height: 2px;

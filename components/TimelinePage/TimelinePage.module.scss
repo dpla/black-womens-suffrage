@@ -22,7 +22,8 @@
     }
 
     a:focus {
-      outline: none;
+      text-decoration: none;
+      opacity: 1;
     }
 
     a:active {
@@ -33,6 +34,7 @@
     .timeline__active_item {
       color: $vividViolet;
       display: flex;
+      outline: none;
 
       span {
         height: 2px;
