@@ -15,6 +15,20 @@
     ul {
       list-style: none;
     }
+
+    a:hover {
+      text-decoration: none;
+      opacity: 1;
+    }
+
+    a:focus {
+      outline: none;
+    }
+
+    a:active {
+      outline: 0.25rem solid $outlineColor;
+      opacity: 1;
+    }
   
     .timeline__active_item {
       color: $vividViolet;
