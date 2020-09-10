@@ -49,7 +49,6 @@
 }
 
 .harmful__faq {
-  // margin-top: 84px;
   margin: 3em 1em;
 
   .harmful__faq_title {
@@ -116,22 +115,24 @@
   }
 }
 
+
+.harmful__section_3_container {
+  padding-bottom: 5em;
+}
+
 .harmful__section_3 {
-  margin-top: 84px;
-  height: 394px;
-  width: 875px;
   border-radius: 0 150px 0 150px;
   background-color: rgba(255, 210, 210, 0.2);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   position: relative;
+  margin: 1em;
 
   div {
+    margin: 1em;  
       h2 {
-        height: 94px;
-        width: 610px;
-        color: #F18787;
+        color: $nyPink;
         font-family: $serifFont;
         font-size: 35px;
         font-weight: 900;
@@ -142,8 +143,7 @@
         margin-top: 1.5em;
       }
     p {
-      width: 590px;
-      color: #282830;
+      color: $jaguar;
       font-family: $sansFont;
       font-size: 1rem;
       font-weight: 500;
@@ -155,11 +155,7 @@
         font-weight: $xBold;
       }
     }
-
-
   }
-
-
 }
 
 /* Medium plus devices (992px and up) */
@@ -199,4 +195,15 @@
       }
     }
   }
+
+  .harmful__section_3_container {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .harmful__section_3 {
+    padding: 2em 3em;
+
+  }
+
 }
