@@ -13,17 +13,20 @@ const HarmfulLanguageStatementPage = () => {
         <>
             <PageBanner title={title} text={text} graphic={graphic}/>
 
-            <div className={`site-max-width container large_page_section ${scss.harmful__section_1}`}>
-                <div>
-                    <h3 className={"title"}>CURATING THE BLACK WOMEN'S SUFFRAGE DIGITAL COLLECTION</h3>
+            <div className={`site-max-width container ${scss.harmful__section_1}`}>
+                <div className={scss.harmful__section_1_intro}>
+                    <h3>CURATING THE BLACK WOMEN'S SUFFRAGE DIGITAL COLLECTION</h3>
                     <h2>Materials in this collection and the language that describes them may be harmful.</h2>
                     <p>Libraries and archives collect materials from different cultures and time periods to preserve and make available the historical record. As a result, library materials, such as those presented here, may reflect racist and misogynoir views that may be harmful and difficult to view.</p>
                     <p>The content featured in this collection explores linkages between Black women’s suffrage and other social causes of the nineteenth and early twentieth centuries (anti-slavery, anti-lynching, education reform and civil rights) as well as racism within the Suffrage Movement. These materials are presented here to recognize and celebrate the important contributions of Black women and their resiliency in the face of ongoing racism and exclusion.</p>
                 </div>
-                <img src={"/static/graphic/hls-page/hls-graphic-body-1.png"} alt=""/>
+
+                <div className={scss.harmful__section_1_img}>
+                  <img src={"/static/graphic/hls-page/hls-graphic-body-1.png"} alt=""/>
+                </div>
             </div>
 
-            <div className={`site-max-width container large_page_section ${scss.harmful__faq}`}>
+            {/* <div className={`site-max-width container large_page_section ${scss.harmful__faq}`}>
 
                 <h2>Frequently asked questions</h2>
 
@@ -140,7 +143,7 @@ const HarmfulLanguageStatementPage = () => {
                         please contact us at <a href={"mailto:info@dp.la"}>info@dp.la</a> or visit the {" "}
                         <a href={"https://dp.la"}>DPLA main site</a> for more frequently asked questions.</p>
                 </div>
-            </div>
+            </div> */}
 
         </>
     );
