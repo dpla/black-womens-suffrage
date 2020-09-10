@@ -24,12 +24,12 @@ class BWSHead extends React.Component {
           <title>{pageTitle}</title>
 
           <meta charSet="utf-8" />
-          <meta name='application-name' content='BWS Collection' />
+          <meta name='application-name' content="Black Women's Suffrage Collection" />
           <meta name="referrer" content="origin-when-cross-origin" />
 
           <meta name='apple-mobile-web-app-capable' content='yes' />
           <meta name='apple-mobile-web-app-status-bar-style' content='default' />
-          <meta name='apple-mobile-web-app-title' content='BWS Collection' />
+          <meta name='apple-mobile-web-app-title' content="Black Women's Suffrage Collection" />
           <meta name='description' content={pageDescription || defaultDescription}/>
           <meta name='format-detection' content='telephone=no' />
           <meta name='mobile-web-app-capable' content='yes' />
@@ -48,7 +48,7 @@ class BWSHead extends React.Component {
               
           <meta name='twitter:card' content='summary' />
           <meta name='twitter:url' content='https://blackwomenssuffrage.dp.la' />
-          <meta name='twitter:title' content='BWS Collection' />
+          <meta name='twitter:title' content="Black Women's Suffrage Collection" />
           <meta name='twitter:description' content={pageDescription || defaultDescription}/>
           <meta name='twitter:image' content={pageImage || defaultImageUrl}/>
           {pageImageCaption &&
