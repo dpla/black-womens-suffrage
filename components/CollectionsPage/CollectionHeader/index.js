@@ -4,7 +4,7 @@ import scss from "components/CollectionsPage/CollectionHeader/CollectionHeader.m
 const CollectionHeader = ({ image, years, name, styledText, description }) => {
   return (
     <section className={scss.collection_header}>
-      <img src={image} />
+      <img src={image} alt={name} />
 
       <div className={scss.collection_header__intro}>
         <h3>{years}</h3>
