@@ -1,4 +1,4 @@
-Sitemap: https://blackwomenssuffrage.dp.la/sitemap.xml
+Sitemap: https://blackwomenssuffrage.dp.la/api/sitemap
 
 User-agent: *
 Allow: /*
