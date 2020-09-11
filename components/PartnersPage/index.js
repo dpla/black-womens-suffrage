@@ -57,6 +57,16 @@ function PartnersPage() {
             <p>For more detailed information about these partnerships, <TextOfflink url="" text="please click here." /></p>
           </div>
         </section>
+
+        <section className={scss.partners__section_3}>
+          <div className={scss.partners__section_3_left}>
+            <p className={scss.partners__section_3_bold}>The collaboration is powered by funding from <TextOfflink url="" text="Pivotal Ventures" />, an investment and incubation company created by Melinda Gates.</p>
+            <p>Funds will enable the partner institutions to digitize artifacts related to the history of Black women in the suffrage movement, and, more broadly, women’s rights, voting rights and civic activism between the 1850s and the 1960s, in order to make these important collections more widely accessible.</p>
+          </div>
+          <div className={scss.partners__section_3_right}>
+            <img src="/static/image/partners-page/partners-image-body-1.png" />
+          </div>
+        </section>
         {/* <p>Digital Public Library of America (DPLA) is proud to partner with the following institutions in the
                     creation of a national digital collection that highlights the roles and experiences of Black women
                     in

@@ -80,7 +80,7 @@
       display: flex;
       align-items: center;
       padding: 1em;
-      
+
       p {
         color: $jaguar;
         font-family: $sansFont;
@@ -90,7 +90,49 @@
         line-height: 28px;
         text-align: center;
       }
+    }
+  }
 
+  .partners__section_3 {
+    .partners__section_3_left {
+      border-radius: 150px 0 0 0;
+      background-color: rgba(245,240,238,0.8);
+      padding: 1em;
+
+      .partners__section_3_bold {
+        margin-top: 1em;
+        color: $nyPink;
+        font-family: $serifFont;
+        font-size: 35px;
+        font-weight: 900;
+        letter-spacing: 0.88px;
+        line-height: 47px;
+        padding: 1em 0;
+
+        a {
+          color: $vividViolet;
+        }
+      }
+
+      p {
+        // margin: 1em;
+        color: $jaguar;
+        font-family: $sansFont;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.35px;
+        line-height: 28px;
+      }
+    }
+
+    .partners__section_3_right {
+      background-color: $blueGem;
+      display: flex;
+
+      img {
+        width: 100%;
+        opacity: 0.5;
+      }
     }
   }
 }
