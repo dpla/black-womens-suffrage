@@ -21,7 +21,8 @@ const sitemap = (req, res) => {
         '/timeline',
         '/collections',
         '/collections/ida-b-wells',
-        '/partners'
+        '/partners',
+        '/harmful-language-statement'
     ].map(absoluteLink);
 
     const keyFiguresLinks = Object.keys(keyFigures)
