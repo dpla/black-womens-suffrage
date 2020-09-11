@@ -136,7 +136,8 @@ class OptionsBar extends React.Component {
                   <span className={css.activeFacetCount}>
                     ({numberOfActiveFacets})
                 </span>}
-                <img className={css.filtersButtonChevron} src="static/icon/search/icon-search-dropdown.svg" />
+                <img className={css.filtersButtonChevron} src="static/icon/search/icon-search-dropdown.svg"
+                  alt="Dropdown menu icon" />
               </button>
             </div>
 
