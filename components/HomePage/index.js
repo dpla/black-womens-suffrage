@@ -79,7 +79,7 @@ const HomePage = () => {
         <h3 className="title">FEATURED COLLECTIONS</h3>
         <div className={scss.home__section_4_collections}>
           <div className={scss.home__section_4_tile}>
-            <img className={scss.home__section_4_tile_img} src="/static/image/home-page/home-carousel-ida.png" alt="Portrait of Ida B Wells Barnett"/>
+            <img className={scss.home__section_4_tile_img} src="/static/image/home-page/home-carousel-ida.jpg" alt="Portrait of Ida B Wells Barnett"/>
             <div className={scss.home__section_4_tile_title}>
               <h3>Ida B. Wells Barnett Papers</h3>
               <Link href="/collections/ida-b-wells">
@@ -91,14 +91,14 @@ const HomePage = () => {
             </div>
           </div>
           <div className={scss.home__section_4_tile}>
-            <img className={scss.home__section_4_tile_img} src="/static/image/home-page/home-carousel-mary.png" alt="Portrait of Mary Church Terrell"/>
+            <img className={scss.home__section_4_tile_img} src="/static/image/home-page/home-carousel-mary.jpg" alt="Portrait of Mary Church Terrell"/>
             <div className={scss.home__section_4_tile_title}>
               <h3>Mary Church Terrell Exhibit</h3>
               <p>COMING SOON</p>
             </div>
           </div>
           <div className={scss.home__section_4_tile}>
-            <img className={scss.home__section_4_tile_img} src="/static/image/home-page/home-carousel-charlotta.png" alt="Portrait of Charlotta Bass"/>
+            <img className={scss.home__section_4_tile_img} src="/static/image/home-page/home-carousel-charlotta.jpg" alt="Portrait of Charlotta Bass"/>
             <div className={scss.home__section_4_tile_title}>
               <h3>Charlotta Bass Papers</h3>
               <p>COMING SOON</p>
