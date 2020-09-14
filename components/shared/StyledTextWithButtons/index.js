@@ -6,7 +6,7 @@ const StyledTextWithButtons = ({ title, subtitle, text, buttonText1, buttonIcon1
   return (
     <>
       <section className={scss.section__container}>
-        <h6 className={scss.title}>{title}</h6>
+        <p className={scss.title}>{title}</p>
         <p className={scss.section__text_large}>{subtitle}</p>
         <p className={scss.section__text_small}>{text}</p>
 

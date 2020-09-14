@@ -1,20 +1,24 @@
 import React from "react"
-import MainLayout from "components/MainLayout"
-import TimelinePage from "components/TimelinePage"
-import BWSHead from "components/BWSHead"
+import Router from "next/router"
+import { timelineOptions } from "constants/timeline-options"
 
+function Timeline({ timeId }) {
 
-function Timeline() {
-  return (
-      <MainLayout className="main" role="main">
-          <BWSHead 
-          pageTitle="Black Women's Suffrage Timeline | DPLA"
-          pageDescription="Marching toward progress: the journey to Black women’s suffrage."
-          seoType="article"
-          />
-        <TimelinePage />
-      </MainLayout>
-  );
+  // Redirect to the first timeline page.
+  React.useEffect(() => {
+    Router.push("/timeline/[timeId]", `/timeline/${ timeId }`)
+  });
+  return null;
+
+};
+
+export async function getStaticProps({ params }) {
+
+  return {
+    props: {
+      timeId: timelineOptions[0]
+    }
+  }
 }
 
 export default Timeline;

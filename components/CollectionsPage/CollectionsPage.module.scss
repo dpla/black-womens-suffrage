@@ -13,6 +13,10 @@
   flex-direction: column;
 }
 
+.collections__tile_active {
+  cursor: pointer;
+}
+
 .collections__tile {
   width: 350px;
 

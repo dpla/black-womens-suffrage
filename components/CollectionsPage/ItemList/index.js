@@ -25,7 +25,7 @@ const ItemList = ({ collection, items }) => {
             <Link href="/collections/[colId]/[colItemId]"
               as={`/collections/${collection.colId}/${item.colItemId}`}>
               <a>
-                <img src={item.thumb} />
+                <img src={item.thumb} alt={item.title} />
                 <p className={scss.item__title}>{item.title}</p>
                 <p className={scss.item__date}>{item.date}</p>
               </a>

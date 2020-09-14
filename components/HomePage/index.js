@@ -21,7 +21,7 @@ const HomePage = () => {
           <RoundButton text="LEARN MORE" icon={"/static/icon/button-arrow.svg"} url={"/about"} />
         </div>
         <div className={scss.banner_right__div}>
-          <img src="/static/graphic/home-page/home-graphic-hero.svg" />
+          <img src="/static/graphic/home-page/home-graphic-hero.svg" alt="Landing page banner"/>
         </div>
       </section>
 
@@ -40,7 +40,7 @@ const HomePage = () => {
           />
         </div>
         <div className={scss.home__section_1__right}>
-          <img src={"/static/graphic/home-page/home-graphic-body-1-mobile.png"} />
+          <img src={"/static/graphic/home-page/home-graphic-body-1-mobile.png"} alt="Collage of suffragettes"/>
         </div>
       </section>
 
@@ -79,26 +79,26 @@ const HomePage = () => {
         <h3 className="title">FEATURED COLLECTIONS</h3>
         <div className={scss.home__section_4_collections}>
           <div className={scss.home__section_4_tile}>
-            <img className={scss.home__section_4_tile_img} src="/static/image/home-page/home-carousel-ida.jpg" />
+            <img className={scss.home__section_4_tile_img} src="/static/image/home-page/home-carousel-ida.png" alt="Portrait of Ida B Wells Barnett"/>
             <div className={scss.home__section_4_tile_title}>
               <h3>Ida B. Wells Barnett Papers</h3>
               <Link href="/collections/ida-b-wells">
                 <a>
                   VIEW COLLECTION
-                  <img src="/static/icon/button-arrow-purple.svg" />
+                  <img src="/static/icon/button-arrow-purple.svg" alt="View collection button icon"/>
                 </a>
               </Link>
             </div>
           </div>
           <div className={scss.home__section_4_tile}>
-            <img className={scss.home__section_4_tile_img} src="/static/image/home-page/home-carousel-mary.jpg" />
+            <img className={scss.home__section_4_tile_img} src="/static/image/home-page/home-carousel-mary.png" alt="Portrait of Mary Church Terrell"/>
             <div className={scss.home__section_4_tile_title}>
               <h3>Mary Church Terrell Exhibit</h3>
               <p>COMING SOON</p>
             </div>
           </div>
           <div className={scss.home__section_4_tile}>
-            <img className={scss.home__section_4_tile_img} src="/static/image/home-page/home-carousel-charlotta.jpg" />
+            <img className={scss.home__section_4_tile_img} src="/static/image/home-page/home-carousel-charlotta.png" alt="Portrait of Charlotta Bass"/>
             <div className={scss.home__section_4_tile_title}>
               <h3>Charlotta Bass Papers</h3>
               <p>COMING SOON</p>
@@ -121,17 +121,17 @@ const HomePage = () => {
         <div className={scss.section_5__div_right}>
           <div className={scss.section_5__div_right_imgs}>
             <Offlink url={"https://www.amistadresearchcenter.org/"}
-              image={<img src="/static/graphic/home-page/partner/home-graphic-partner-1-amistad.png" />} />
+              image={<img src="/static/graphic/home-page/partner/home-graphic-partner-1-amistad.png" alt="Amistad Research Center"/>} />
             <Offlink url={"https://www.auctr.edu/"}
-              image={<img src="/static/graphic/home-page/partner/home-graphic-partner-2-auc-woodriff.png" />} />
-            <Offlink url={"http://www.socallib.org/"}
-              image={<img src="/static/graphic/home-page/partner/home-graphic-partner-3-scl.png" />} />
-            <Offlink url={"https://cmlibrary.org"}
-              image={<img src="/static/graphic/home-page/partner/home-graphic-partner-4-charlotte-mecklenberg.png" />} />
+              image={<img src="/static/graphic/home-page/partner/home-graphic-partner-2-auc-woodriff.png" alt="Atlanta University Center Robert W. Woodruff Library"/>} />
+            <Offlink url={"http://www.socallib.org/"} 
+              image={<img src="/static/graphic/home-page/partner/home-graphic-partner-3-scl.png" alt="Southern California Library"/>} />
+            <Offlink url={"https://cmlibrary.org"} 
+              image={<img src="/static/graphic/home-page/partner/home-graphic-partner-4-charlotte-mecklenberg.png" alt="Charlotte Mecklenberg"/>} />
             <Offlink url={"https://avery.cofc.edu/"}
-              image={<img src="/static/graphic/home-page/partner/home-graphic-partner-5-avery.png" />} />
+              image={<img src="/static/graphic/home-page/partner/home-graphic-partner-5-avery.png" alt="Avery Research Center for African American History and Culture"/>} />
             <Offlink url={"https://www.tuskegee.edu/libraries"}
-              image={<img src="/static/graphic/home-page/partner/home-graphic-partner-6-tuskegee.png" />} />
+              image={<img src="/static/graphic/home-page/partner/home-graphic-partner-6-tuskegee.png" alt="Tuskegee University Library"/>} />
           </div>
         </div>
       </section>

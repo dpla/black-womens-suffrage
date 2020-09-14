@@ -1,119 +1,139 @@
 @import "stylesheets/variables";
 
 .harmful__section_1 {
-  height: 759px;
-  margin-top: 22px;
-  border-radius: 150px 0 150px 0;
-  background-color: rgba(255,210,210,0.2);
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  position: relative;
+  box-sizing: border-box;
+  border: 2px solid #FEDFDF;
+  border-radius: 115px 0 0 0;
+  margin: 1em;
 
-  & h3 {
-
-    color: #4E4294;
+  .harmful__section_1_intro {
+    margin: 3em 2em;
   }
 
-  & h2 {
-    height: 141px;
-    width: 610px;
-    color: #F18787;
-    font-family: $libre;
+  h3 {
+    color: $blueGem;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    line-height: 20px;
+  }
+
+  h2 {
+    color: $nyPink;
+    font-family: $serifFont;
     font-size: 35px;
     font-weight: 900;
     letter-spacing: 0.88px;
     line-height: 47px;
     margin:28px 0 28px 0;
   }
-  & p {
-    width: 590px;
-    color: #282830;
-    font-family: $inter;
+  p {
+    color: $jaguar;
+    font-family: $sansFont;
     font-size: 1rem;
     font-weight: 500;
     letter-spacing: 0.35px;
     line-height: 28px;
   }
+
+  .harmful__section_1_img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+
+    img {
+      width: 90%;
+    }
+  }
 }
 
 .harmful__faq {
+  margin: 3em 1em;
 
-  width: 1180px;
-  margin-top: 84px;
+  .harmful__faq_title {
+    margin-top: 2em;
+    margin-bottom: 1em;
+    display: flex;
 
-  & h2 {
-    color: #4E4294;
-    font-size: 35px;
-    font-weight: 900;
-    letter-spacing: 0.88px;
-    line-height: 47px;
-    font-family: $libre;
+    span {
+      height: 2px;
+      width: 25px;
+      display: inline-block;
+      margin-top: 20px;
+      background: $nyPink;
+    }
+  
+    h1 {
+      color: $blueGem;
+      font-family: $libre;
+      font-size: 2em;
+      font-weight: $xBold;
+      letter-spacing: 0.85px;
+      line-height: 47px;
+      background: #fff;
+      margin-left: 10px;
+      display: inline;
+    }
   }
 
-  & div {
+  div {
     clear: both;
     border-top: 2px solid #FFD2D2;
+    padding: 2em 0;
 
-    & dt {
-      padding-top: 32px;
-
-      color: #EC5938;
-      font-family: $libre;
+    dt {
+      color: $cinnabar;
+      font-family: $serifFont;
       font-size: 28px;
       font-weight: bold;
       letter-spacing: 0.7px;
       line-height: 47px;
-      display: block;
-      float: left;
-      padding-right: 60px;
-      width: 560px;
-      height: 100%;
+      margin-bottom: 1em;
 
     }
-    & dd {
-      color: #282830;
-      font-family: $inter;
+    dd {
+      color: $jaguar;
+      font-family: $sansFont;
       font-size: 1rem;
       font-weight: 500;
       letter-spacing: 0.35px;
       line-height: 28px;
-      display: block;
-      padding-bottom: 32px;
-      padding-top: 32px;
-      width: 560px;
-      float: right;
+      margin: 0;
 
-      & ul {
+      ul {
         list-style: disc;
-         & li {
+        margin-left: 2em;
+         li {
            margin-bottom: 24px;
          }
-        & li.highlight {
-          color: #EC5938;
+        li.highlight {
+          color: $cinnabar;
         }
       }
     }
   }
 }
 
+
+.harmful__section_3_container {
+  padding-bottom: 5em;
+}
+
 .harmful__section_3 {
-  margin-top: 84px;
-  height: 394px;
-  width: 875px;
   border-radius: 0 150px 0 150px;
   background-color: rgba(255, 210, 210, 0.2);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   position: relative;
+  margin: 1em;
 
-  & div {
-      & h2 {
-        height: 94px;
-        width: 610px;
-        color: #F18787;
-        font-family: $libre;
+  div {
+    margin: 1em;  
+      h2 {
+        color: $nyPink;
+        font-family: $serifFont;
         font-size: 35px;
         font-weight: 900;
         letter-spacing: 0.88px;
@@ -122,23 +142,68 @@
         margin-bottom: 1em;
         margin-top: 1.5em;
       }
-    & p {
-      width: 590px;
-      color: #282830;
-      font-family: $inter;
+    p {
+      color: $jaguar;
+      font-family: $sansFont;
       font-size: 1rem;
       font-weight: 500;
       letter-spacing: 0.35px;
       line-height: 28px;
       text-align: center;
       margin-bottom: 1em;
-      & a {
+      a {
         font-weight: $xBold;
       }
     }
+  }
+}
 
+/* Medium plus devices (992px and up) */
+@media only screen and ($mdP-viewport) {
+  .harmful__section_1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
 
+    .harmful__section_1_intro {
+      width: 50%;
+    }
+
+    h3 {
+      text-align: left;
+    }
   }
 
+  .harmful__faq {
+    margin: 0 auto;
+    width: 90%;
+
+    div {
+      display: flex;
+      justify-content: space-between;
+
+      dt {
+        width: 45%;
+      }
+      dd {
+        width: 45%;
+
+        ul {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  .harmful__section_3_container {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .harmful__section_3 {
+    padding: 2em 3em;
+
+  }
 
 }
