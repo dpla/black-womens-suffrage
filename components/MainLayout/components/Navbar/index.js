@@ -43,40 +43,6 @@ class Navbar extends Component {
           </div>
 
           <ul className={scss.nav__links}>
-
-            <li>
-              <ActiveLink activeClassName={scss.active} href="/about">
-                <a>About</a>
-              </ActiveLink>
-            </li>
-
-            <li>
-              <ActiveLink activeClassName={scss.active} href="/timeline">
-                <a>Timeline</a>
-              </ActiveLink>
-            </li>
-
-            <li>
-              <ActiveLink activeClassName={scss.active} href="/key-figures">
-                <a>Key Figures</a>
-              </ActiveLink>
-            </li>
-
-            <li>
-              <ActiveLink activeClassName={scss.active} href="/collections">
-                <a>Collections</a>
-              </ActiveLink>
-            </li>
-
-            <li>
-              <ActiveLink activeClassName={scss.active} href="/partners">
-                <a>Partners</a>
-              </ActiveLink>
-            </li>
-
-            <li><div className={scss.divider} /></li>
-            <li><a href="https://dp.la" target="_blank">Visit DPLA</a></li>
-            <li><div className={scss.divider} /></li>
             <li>
             <Link href="/about">
               <a>About</a>
