@@ -16,7 +16,7 @@ class Navbar extends Component {
 
   componentDidMount = () => {
     let path = window.location.pathname
-    if(path === '/search') {
+    if (path === '/search') {
       this.setState({
         showSearchbar: true
       })
@@ -37,40 +37,51 @@ class Navbar extends Component {
           <div className={scss.nav__logo}>
             <Link href="/">
               <a>
-                <img src="/static/logo/dpla_bws-logo-color-nav.png" alt="Black Women's Suffrage Logo"/>
+                <img src="/static/logo/dpla_bws-logo-color-nav.png" alt="Black Women's Suffrage Logo" />
               </a>
             </Link>
           </div>
 
           <ul className={scss.nav__links}>
+
             <li>
-            <Link href="/about">
-              <a>About</a>
-            </Link></li>
+              <ActiveLink activeClassName={scss.active} href="/about">
+                <a>About</a>
+              </ActiveLink>
+            </li>
 
-            <li><Link href="/timeline">
-              <a>Timeline</a>
-            </Link></li>
+            <li>
+              <ActiveLink activeClassName={scss.active} href="/timeline">
+                <a>Timeline</a>
+              </ActiveLink>
+            </li>
 
-            <li><Link href="/key-figures">
-              <a>Key Figures</a>
-            </Link></li>
+            <li>
+              <ActiveLink activeClassName={scss.active} href="/key-figures">
+                <a>Key Figures</a>
+              </ActiveLink>
+            </li>
 
-            <li><Link href="/collections">
-              <a>Collections</a>
-            </Link></li>
+            <li>
+              <ActiveLink activeClassName={scss.active} href="/collections">
+                <a>Collections</a>
+              </ActiveLink>
+            </li>
 
-            <li><Link href="/partners">
-              <a>Partners</a>
-            </Link></li>
-          <li><div className={scss.divider}/></li>
-          <li><a href="https://dp.la" target="_blank" rel="noopener">Visit DPLA</a></li>
-          <li><div className={scss.divider}/></li>
-          <li>
-             <button onClick={this.triggerSearchbar}>
-              <img src={"/static/icon/search/search-bar.svg"} alt="Search Bar" className={scss.searchIcon} />
-             </button>
-           </li>
+            <li>
+              <ActiveLink activeClassName={scss.active} href="/partners">
+                <a>Partners</a>
+              </ActiveLink>
+            </li>
+
+            <li><div className={scss.divider} /></li>
+            <li><a href="https://dp.la" target="_blank">Visit DPLA</a></li>
+            <li><div className={scss.divider} /></li>
+            <li>
+              <button onClick={this.triggerSearchbar}>
+                <img src={"/static/icon/search/search-bar.svg"} alt="Search Bar" className={scss.searchIcon} />
+              </button>
+            </li>
           </ul>
         </nav>
 
