@@ -67,6 +67,68 @@ function PartnersPage() {
             <div></div>
           </div>
         </section>
+
+        <section className={scss.partners__section_4}>
+          <div className={scss.partners__section_4_intro}>
+            <h3>SPECIAL THANKS</h3>
+            <p>We are especially proud to center our partners’ expertise as subject specialists in this work and extend a heartfelt thank you to the project coordinators for their insightful curation:</p>
+          </div>
+          <div className={scss.partners__section_4_tiles}>
+
+            <div className={scss.partners__section_4_tile_group}>
+              <div className={scss.partners__section_4_tile}>
+                <p className={scss.partners__section_4_name}>Dana Chandler</p>
+                <p className={scss.partners__section_4_role}>University Archivist and Associate Professor, Tuskegee University Archives</p>
+              </div>
+
+              <div className={scss.divider}></div>
+
+              <div className={scss.partners__section_4_tile}>
+                <p className={scss.partners__section_4_name}>Christopher Harter</p>
+                <p className={scss.partners__section_4_role}>Deputy Director, Amistad Research Center</p>
+              </div>
+
+              <div className={scss.divider}></div>
+
+              <div className={scss.partners__section_4_tile}>
+                <p className={scss.partners__section_4_name}>Aaisha Haykal</p>
+                <p className={scss.partners__section_4_role}>Manager of Archival Services, Avery Research Center for African American History & Culture at the College of Charlesto</p>
+              </div>
+
+              <div className={scss.divider}></div>
+
+              <div className={scss.partners__section_4_tile}>
+                <p className={scss.partners__section_4_name}>Yusef Omowale</p>
+                <p className={scss.partners__section_4_role}>Director, Southern California Library</p>
+              </div>
+
+              <div className={scss.divider}></div>
+            </div>
+            
+
+            <div className={scss.partners__section_4_tile_group}>
+              <div className={scss.partners__section_4_tile}>
+                <p className={scss.partners__section_4_name}>Sarah Tanner</p>
+                <p className={scss.partners__section_4_role}>Head, Archives Research Center, Atlanta University Center Robert W. Woodruff Library</p>
+              </div>
+
+              <div className={scss.divider}></div>
+
+              <div className={scss.partners__section_4_tile}>
+                <p className={scss.partners__section_4_name}>Hannah Terrell</p>
+                <p className={scss.partners__section_4_role}>Branch Leader, Allegra Westbrooks Regional Library, Charlotte Mecklenburg Library</p>
+              </div>
+
+              <div className={scss.divider}></div>
+
+              <div className={scss.partners__section_4_tile}>
+                <p className={scss.partners__section_4_name}>Martha Yesowitch</p>
+                <p className={scss.partners__section_4_role}>Community Partnerships Leader, Charlotte Mecklenburg Library</p>
+              </div>
+            </div>
+
+          </div>
+        </section>
         {/* <p>Digital Public Library of America (DPLA) is proud to partner with the following institutions in the
                     creation of a national digital collection that highlights the roles and experiences of Black women
                     in

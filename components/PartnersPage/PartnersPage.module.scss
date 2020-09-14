@@ -139,6 +139,74 @@
       }
     }
   }
+
+  .partners__section_4 {
+    border-radius: 0 150px 0 0;
+    background-color: rgba(255,210,210,0.2);
+    margin: 1em;
+    padding: 2em 0;
+
+    .partners__section_4_intro {
+      width: 75%;
+      margin: auto;
+
+      h3 {
+        color:$blueGem;
+        font-family: $sansFont;
+        font-size: 14px;
+        font-weight: 800;
+        letter-spacing: 1.2px;
+        line-height: 20px;
+        text-align: center;
+        margin: 1em 0;
+      }
+
+      p {
+        color: $cinnabar;
+        font-family: $serifFont;
+        font-size: 28px;
+        font-weight: bold;
+        letter-spacing: 0.7px;
+        line-height: 47px;
+        text-align: center;
+        margin: 1em 0;
+
+      }
+    }
+
+    .partners__section_4_tiles {
+      margin: 0 2em;
+
+      .partners__section_4_tile_group {
+        .divider {
+          height: 1px;
+          background-color: #DDDDDD;
+          margin: 1em;
+        }
+  
+        .partners__section_4_tile {
+          color: $jaguar;
+          font-family: $sansFont;
+  
+          .partners__section_4_name {
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 0.15px;
+            line-height: 28px;
+          }
+  
+          .partners__section_4_role {
+            opacity: 0.55;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 0.15px;
+            line-height: 28px;
+          }
+        }
+      }
+      }
+      
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -167,6 +235,26 @@
 
         div {
           height: 100%;
+        }
+      }
+    }
+
+    .partners__section_4 {
+      border-radius: 0 150px 0 0;
+      background-color: rgba(255,210,210,0.2);
+      margin: 1em;
+      padding: 2em 0;
+  
+      .partners__section_4_intro {
+
+      }
+  
+      .partners__section_4_tiles {
+        display: flex;
+        justify-content: space-evenly;
+
+        .partners__section_4_tile_group {
+          width: 45%;
         }
       }
     }
@@ -223,5 +311,10 @@
         }
       }
     }  
+
+    .partners__section_4 {
+      margin: 3em auto;
+      width: 80%;
+    }
   }
 }
