@@ -5,7 +5,7 @@ import PageBanner from "components/shared/PageBanner"
 import scss from "./PartnersPage.module.scss";
 
 const ImgOfflink = ({ url, image }) => <a href={url} target={"_blank"}>{image}</a>
-const TextOfflink = ({ url, text }) => <a href={url} target={"_blank"}>{text}</a>
+const TextOfflink = ({ url, text }) => <a href={url} target={"_blank"} rel="noopener">{text}</a>
 
 function PartnersPage() {
   const title = "PARTNERS",
@@ -140,7 +140,7 @@ function PartnersPage() {
           <div className={scss.partners__section_5_right}>
             <p>This webinar featured a keynote by Allison Robinson, doctoral candidate in American History and American Material Culture at the University of Chicago, discussing teaching with digital exhibits, her experience working with the university’s Ida B. Wells collection, and how digital artifacts can help reconstruct visibility.</p>
             <p>Representatives from our partner institutions also introduced the collections that they are digitizing as part of the Black Women’s Suffrage collection and provided perspective about how these artifacts can help us better understand Black women suffragists and the historical and continuing activism of Black women.</p>
-            <a className={scss.roundButton} href="https://dpla.zoom.us/rec/play/75Z8Ie6h_DI3T9PEtgSDVPEoW9TuJqis13BN_qIKzxmyVHMKNgamYLsWZeMsg3xlnOgP_huLHvi6gzs5?autoplay=true&startTime=1594918908000" target="_blank" >
+            <a className={scss.roundButton} href="https://dpla.zoom.us/rec/play/75Z8Ie6h_DI3T9PEtgSDVPEoW9TuJqis13BN_qIKzxmyVHMKNgamYLsWZeMsg3xlnOgP_huLHvi6gzs5?autoplay=true&startTime=1594918908000" target="_blank"  rel="noopener">
               SEE LIVE RECORDING
               <img src="/static/icon/button-arrow.svg" alt={""} />
             </a>
