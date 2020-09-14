@@ -77,8 +77,6 @@
       box-sizing: border-box;
       border: 2px solid $wePeep;
       border-radius: 0 29.5px 0 29.5px;
-      display: flex;
-      align-items: center;
       padding: 1em;
 
       p {
@@ -204,9 +202,102 @@
           }
         }
       }
-      }
-      
+    }   
   }
+
+  .partners__section_5 {
+    margin: 1em;
+
+    .partners__section_5_left {
+      background-image: url('/static/graphic/about-page/about-graphic-body-1.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      height: 400px;    
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 3em 0;
+
+      div {
+        margin-left: 1em;
+
+        h4 {
+          color: $blueGem;
+          font-family: $sansFont;
+          font-size: 14px;
+          font-weight: 800;
+          letter-spacing: 1.2px;
+          line-height: 17px;  
+          margin: 1em 0;
+        }
+  
+        p {
+          color: $nyPink;
+          font-family: $serifFont;
+          font-size: 27px;
+          font-weight: 900;
+          letter-spacing: 0.6px;
+          line-height: 46px;
+        }
+      }
+    }
+
+    .partners__section_5_right {
+      p {
+        color: $jaguar;
+        font-family: $sansFont;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.35px;
+        line-height: 28px;
+        margin: 1em 0;
+      }
+
+      .roundButton, .roundButton:visited {
+        color: white;
+        background: purple;
+        border-radius: 1.5rem;
+        border: none;
+        padding: 1rem;
+        margin-top: 1em;
+        display: inline-block;
+        cursor: pointer;
+        text-align:center;
+        width: auto;
+        min-width: 0;
+        font-weight: 800;
+      
+        & img {
+          padding-left: 1rem;
+        }
+      }
+    }
+  }
+
+  .partners__section_6 {
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      box-sizing: border-box;
+      border: 2px solid $wePeep;
+      border-radius: 0 29.5px 0 29.5px;
+      padding: 1em;
+      margin: 1em;
+  
+      p {
+        color: $jaguar;
+        font-family: $sansFont;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.35px;
+        line-height: 28px;
+        text-align: center;
+      }
+    }
+  } 
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -224,18 +315,8 @@
     }
 
     .partners__section_3 {
-      display: flex;
       .partners__section_3_left {
-        width: 50%;
-        padding: 3em;
-      }
-
-      .partners__section_3_right {
-        width: 50%;
-
-        div {
-          height: 100%;
-        }
+        padding: 2em 1em;
       }
     }
 
@@ -258,14 +339,30 @@
         }
       }
     }
+
+    .partners__section_5 {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+  
+      .partners__section_5_left {
+        width: 48%;
+      }
+      
+      .partners__section_5_right {
+        width: 48%;
+      }
+    }
+
+    .partners__section_6 {
+      height: 300px;
+    }
   }
 }
 
 /* Medium plus devices (992px and up) */
 @media only screen and ($mdP-viewport) {
   .partners__wrapper {
-    // margin: 2em;
-
     .partners__section_1 {
       border-radius: 150px 0 150px 0;
 
@@ -312,9 +409,47 @@
       }
     }  
 
+    .partners__section_2 {
+      width: 80%;
+      margin: 3em auto;
+    }
+
+    .partners__section_3 {
+      display: flex;
+      .partners__section_3_left {
+        width: 50%;
+        padding: 3em;
+      }
+
+      .partners__section_3_right {
+        width: 50%;
+
+        div {
+          height: 100%;
+        }
+      }
+    }
+
     .partners__section_4 {
       margin: 3em auto;
       width: 80%;
     }
-  }
+
+    .partners__section_5 {
+      width: 80%;
+      margin: 3em auto;
+
+      .partners__section_5_right {
+        .roundButton, .roundButton:visited {
+          margin-top: 1.5rem;
+          margin-right: 1rem;
+        }
+      }
+    }
+
+    .partners__section_6 {
+      width: 80%;
+      margin: 3em auto;
+    }
+  }  
 }
