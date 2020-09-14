@@ -6,7 +6,7 @@ import SponsorPreFooter from "components/shared/SponsorPreFooter"
 import Link from "next/link"
 import HomeSearchBar from "components/HomePage/HomeSearchBar"
 
-const Offlink = ({ url, image }) => <a href={url} target={"_blank"}>{image}</a>
+const Offlink = ({ url, image }) => <a href={url} target={"_blank"} rel="noopener">{image}</a>
 
 
 const HomePage = () => {
@@ -46,7 +46,13 @@ const HomePage = () => {
 
       <section className={`section__default ${scss.home__section_2}`}>
         <div className={scss.section_2__div_left}>
-          <img src="/static/image/home-page/home-image-body-1.png" alt="Group of young women together"/>
+          <div className={scss.section_2__div_left_mobile}>
+            <img className={scss.section_2__div_left} src="/static/image/home-page/home-image-body-1-mobile.jpg" />
+          </div>
+
+          <div className={scss.section_2__div_left_desktop}>
+            <img className={scss.section_2__div_left} src="/static/image/home-page/home-image-body-1.jpg" />
+          </div>
         </div>
         <div className={scss.section_2__div_right}>
           <StyledTextWithButtons
