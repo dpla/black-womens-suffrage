@@ -48,7 +48,7 @@ const Footer = () => {
         <section className={scss.footer__divider}></section>
         <div className={scss.footer__links_small_container}>
           <nav className={scss.footer__links_small}>
-            <a href="http://dp.la/" className={scss.footer__a}> Visit DPLA</a>
+            <a href="http://dp.la/" rel="noopener" target="_blank" className={scss.footer__a}> Visit DPLA</a>
 
             <Link href="/harmful-language-statement">
               <a>Harmful Language Statement</a>

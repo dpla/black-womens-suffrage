@@ -78,10 +78,33 @@ class Navbar extends Component {
             <li><a href="https://dp.la" target="_blank">Visit DPLA</a></li>
             <li><div className={scss.divider} /></li>
             <li>
-              <button onClick={this.triggerSearchbar}>
+            <Link href="/about">
+              <a>About</a>
+            </Link></li>
+
+            <li><Link href="/timeline">
+              <a>Timeline</a>
+            </Link></li>
+
+            <li><Link href="/key-figures">
+              <a>Key Figures</a>
+            </Link></li>
+
+            <li><Link href="/collections">
+              <a>Collections</a>
+            </Link></li>
+
+            <li><Link href="/partners">
+              <a>Partners</a>
+            </Link></li>
+          <li><div className={scss.divider}/></li>
+          <li><a href="https://dp.la" target="_blank" rel="noopener">Visit DPLA</a></li>
+          <li><div className={scss.divider}/></li>
+          <li>
+             <button onClick={this.triggerSearchbar}>
               <img src={"/static/icon/search/search-bar.svg"} alt="Search Bar" className={scss.searchIcon} />
-              </button>
-            </li>
+             </button>
+           </li>
           </ul>
         </nav>
 

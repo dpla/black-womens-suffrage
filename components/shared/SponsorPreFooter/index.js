@@ -9,7 +9,7 @@ const SponsorPreFooter = ({text, sponsor, sponsorLink, buttonText, buttonIcon}) 
       <div className={scss.pre_footer}>
         <div className={scss.pre_footer_container}>
           <div className={scss.pre_footer_pink}>
-            <p>{text}<span><a href={sponsorLink} target={"_blank"}>{sponsor}</a></span></p>
+            <p>{text}<span><a href={sponsorLink} target={"_blank"} rel="noopener">{sponsor}</a></span></p>
           </div>
           <div className={scss.pre_footer_button}>
             <RoundButton text={buttonText} icon={buttonIcon} url="/search"/>

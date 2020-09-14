@@ -10,7 +10,7 @@ const AboutPage = () => {
     text = "For Black women, the fight wasn't over in 1920. Their movement for gender and racial equality continues.",
     graphic = "/static/graphic/about-page/about-graphic-hero.svg";
 
-  const Offlink = ({url, text}) => <a href={url} target={"_blank"}>{text}</a>
+  const Offlink = ({url, text}) => <a href={url} target={"_blank"} rel="noopener">{text}</a>
 
   return (
     <>

@@ -31,7 +31,7 @@ class SearchBar extends React.Component {
             <Link href="/search">
               <a>
                 ADVANCED SEARCH
-              <img src="/static/icon/button-arrow-purple.png" />
+              <img src="/static/icon/button-arrow-purple.png" alt="Arrow icon" />
               </a>
             </Link>
           </div>
