@@ -64,7 +64,7 @@ function PartnersPage() {
             <p>Funds will enable the partner institutions to digitize artifacts related to the history of Black women in the suffrage movement, and, more broadly, women’s rights, voting rights and civic activism between the 1850s and the 1960s, in order to make these important collections more widely accessible.</p>
           </div>
           <div className={scss.partners__section_3_right}>
-            <img src="/static/image/partners-page/partners-image-body-1.png" />
+            <div></div>
           </div>
         </section>
         {/* <p>Digital Public Library of America (DPLA) is proud to partner with the following institutions in the
