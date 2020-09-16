@@ -2,13 +2,13 @@ beforeEach(() => {
   cy.visit('/')
 })
 
-it('Checks that when clicked logo navigates Home', () => {
+it('Checks that BWS logo navigates Home when clicked ', () => {
   cy.get('[data-cy=nav__logo]')
     .find('a')
     .should('have.attr', 'href', '/')
 })
 
-it('gets and checks navigation links', () => {
+it('Gets and checks navigation links', () => {
   const navText = ['About', 'Timeline', 'Key Figures', 'Collections', 'Partners', 'Visit DPLA']
   const navLinks = ['/about', '/timeline', '/key-figures', '/collections', '/partners', 'https://dp.la']
 
@@ -22,7 +22,7 @@ it('gets and checks navigation links', () => {
   })
 })
 
-it('Checks that when clicked searchbar appears', () => {
+it('Checks that searchbar appears when icon is clicked ', () => {
   cy.get('[data-cy=searchbar__icon]')
     .click()
 
