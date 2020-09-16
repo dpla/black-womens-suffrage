@@ -34,7 +34,7 @@ class Navbar extends Component {
     return (
       <>
         <nav className={scss.navbar}>
-          <div className={scss.nav__logo}>
+          <div className={scss.nav__logo} data-cy="nav__logo">
             <Link href="/">
               <a>
                 <img src="/static/logo/dpla_bws-logo-color-nav.png" alt="Black Women's Suffrage Logo" />
@@ -42,7 +42,7 @@ class Navbar extends Component {
             </Link>
           </div>
 
-          <ul className={scss.nav__links}>
+          <ul className={scss.nav__links} data-cy="nav__links">
 
             <li>
               <ActiveLink activeClassName={scss.active} href="/about">
@@ -78,7 +78,7 @@ class Navbar extends Component {
             <li><a href="https://dp.la" target="_blank">Visit DPLA</a></li>
             <li><div className={scss.divider} /></li>
             <li>
-              <button onClick={this.triggerSearchbar}>
+              <button onClick={this.triggerSearchbar} data-cy="searchbar__icon">
                 <img src={"/static/icon/search/search-bar.svg"} alt="Search Bar" className={scss.searchIcon} />
               </button>
             </li>

@@ -12,7 +12,7 @@ const Offlink = ({ url, image }) => <a href={url} target={"_blank"} rel="noopene
 const HomePage = () => {
   return (
     <>
-      <section className={scss.banner}>
+      <section className={scss.banner} data-cy="home__banner">
         <div className={scss.banner__background}></div>
         <div className={scss.banner_left__div}>
           <p className={scss.banner__text}>Black women’s suffrage.</p>

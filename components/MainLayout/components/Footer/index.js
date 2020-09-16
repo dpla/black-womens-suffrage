@@ -14,7 +14,7 @@ const Footer = () => {
             </a>
           </Link>
 
-          <nav className={scss.footer__links}>
+          <nav className={scss.footer__links} data-cy="footer__links">
             <Link href="/about">
               <a>About</a>
             </Link>
@@ -29,10 +29,6 @@ const Footer = () => {
 
             <Link href="/collections">
               <a>Collections</a>
-            </Link>
-
-            <Link href="/topics">
-              <a>Topics</a>
             </Link>
 
             <Link href="/partners">

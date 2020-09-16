@@ -91,6 +91,7 @@ class ListView extends React.Component {
               return (
                   <li
                       key={index}
+                      data-cy="list__item"
                       className={`${css.listItem} ${readOnly &&
                       selectedHash[realId] === undefined
                           ? css.deleted

@@ -1,57 +1,28 @@
-// describe('Visit home page', () => {
-//   it('visits the home page', () => {
-//     cy.visit('http://localhost:3000/')
-
-//     cy.contains('About').click()
-//   })
-// })
-
 // if (Cypress.config('SITE_ENV') == 'pro') {
 
   beforeEach(() => {
     cy.visit('/')
   })
 
-  it('successfully loads homepage', () => {
-    cy.title().should('eq', "Black Women's Suffrage | DPLA")
-  })
-
-
-  it('checks that hero banner has background image and is visible', () => {
-    cy.get('.banner')
-      .find('div')
-      .contains('Black women’s suffrage.')
-
-    // cy.get('[data-cy=home__banner]')
-    //   .should('be.visible')
-    //   .should('have.css', 'background-image')
-    //   .and('eq', `url("${Cypress.config('baseUrl')}/static/images/pro/home-hero-bg.png")`)
-  })
-
-  // it('gets and checks tile links', () => {
-  //   cy.get('[data-cy=hubsLink]').click()
-  //   cy.location('href').should('eq', `${Cypress.config('baseUrl')}/hubs`);
-
-  //   cy.go('back')
-  //   cy.get('[data-cy=prospectiveHubsLink]').click()
-  //   cy.location('href').should('eq', `${Cypress.config('baseUrl')}/prospective-hubs`);
-
-  //   cy.go('back')
-  //   cy.get('[data-cy=devsLink]').click()
-  //   cy.location('href').should('eq', `${Cypress.config('baseUrl')}/developers`);
-
-  //   cy.go('back')
-  //   cy.get('[data-cy=edLink]').click()
-  //   cy.location('href').should('eq', `${Cypress.config('baseUrl')}/education`);
-
-  //   cy.go('back')
-  //   cy.get('[data-cy=eventsLink]').click()
-  //   cy.location('href').should('eq', `${Cypress.config('baseUrl')}/events`);
-
-  //   cy.go('back')
-  //   cy.get('[data-cy=ebooksLink]').click()
-  //   cy.location('href').should('eq', `${Cypress.config('baseUrl')}/ebooks`);
+  // it('successfully loads homepage', () => {
+  //   cy.title().should('eq', "Black Women's Suffrage | DPLA")
   // })
+
+
+  // it('checks that hero banner is visible', () => {
+  //   cy.get('[data-cy=home__banner]')
+  //     .contains('Black women’s suffrage.')
+  //     .should('be.visible')
+  // })
+
+  // it('checks that search input works and returns results', () => {
+  //   cy.get('[type="search"]').type('truth')
+  //   cy.get('[type="submit"]').click()
+  //   cy.location('href').should('eq', `${Cypress.config('baseUrl')}/search?q=truth`)
+  //   cy.get('[data-cy=list__item]')
+  // })
+
+
 
   // it('checks that NewsLane component is visible', () => {
   //   cy.get('[data-cy=NewsLane]')
