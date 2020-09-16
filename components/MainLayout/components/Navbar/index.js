@@ -33,7 +33,7 @@ class Navbar extends Component {
   render() {
     return (
       <>
-        <nav className={scss.navbar}>
+        <nav className={scss.navbar} data-cy="navbar">
           <div className={scss.nav__logo} data-cy="nav__logo">
             <Link href="/">
               <a>

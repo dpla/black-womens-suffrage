@@ -11,7 +11,7 @@ class MobileSearchBar extends React.Component {
 
     return (
       <>
-        <form action="/search" className={scss.searchbar}>
+        <form action="/search" className={scss.searchbar} data-cy="searchbar__mobile">
           <div className={scss.searchbar__input_container}>
             <img src={"/static/icon/search/search-bar.svg"} alt="search-bar" />
             <input

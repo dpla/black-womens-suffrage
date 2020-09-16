@@ -2,6 +2,11 @@ beforeEach(() => {
   cy.visit('/')
 })
 
+it('Check that desktop navbar is visible', () => {
+  cy.get('[data-cy=navbar]').should('be.visible')
+  cy.get('[data-cy=navbar__mobile]').should('not.be.visible')
+})
+
 it('Checks that BWS logo navigates Home when clicked ', () => {
   cy.get('[data-cy=nav__logo]')
     .find('a')
