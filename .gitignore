@@ -39,4 +39,4 @@ yarn-error.log*
 
 
 cypress.json
-/cypress/integration/examples
+cypress/integration/examples
