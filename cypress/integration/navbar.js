@@ -37,7 +37,7 @@ it('Checks that searchbar appears when icon is clicked ', () => {
 
   cy.get('[data-cy=searchbar]').within(() => {
     cy.get('[type="search"]').type('truth')
-    cy.get('[data-cy=curved_button__submit]').click()
+    cy.get('[data-cy=curved_button]').click()
   })
   
   cy.location('href').should('eq', `${Cypress.config('baseUrl')}/search?q=truth`)

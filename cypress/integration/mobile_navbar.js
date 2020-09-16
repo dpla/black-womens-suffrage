@@ -14,7 +14,6 @@ it('Checks that mobile navbar toggles visibility on icon click', () => {
   cy.get('[data-cy=nav__links_mobile]').should('be.visible')
 })
 
-
 it('Checks that mobile BWS logo navigates Home when clicked ', () => {
   cy.get('[data-cy=nav__logo_mobile]')
     .find('a')
@@ -45,7 +44,7 @@ it('Checks that using mobile searchbar in menu returns data', () => {
 
   cy.get('[data-cy=searchbar__mobile]').within(() => {
     cy.get('[type="search"]').type('truth')
-    cy.get('[data-cy=curved_button__submit]').click()
+    cy.get('[data-cy=curved_button]').click()
   })
   
   cy.location('href').should('eq', `${Cypress.config('baseUrl')}/search?q=truth`)

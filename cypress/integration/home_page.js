@@ -21,33 +21,16 @@
     cy.get('[data-cy=list__item]')
   })
 
-  it('checks that NewsLane component is visible', () => {
-    cy.get('[data-cy=NewsLane]')
-      .should('be.visible')
-  })
+  it('Checks that all Round Buttons', () => {
+    const buttonText = ['LEARN MORE', 'SEARCH THE COLLECTION', 'SEE TIMELINE', 'SEE KEY FIGURES', 'SEE ALL COLLECTIONS','LEARN MORE ABOUT PARTNERS', 'SEARCH THE COLLECTION']
+    const buttonLinks = ['/about', '/search', '/timeline', '/key-figures', '/collections','/partners', '/search']
 
-  it('checks that StayInformed component is visible', () => {
-    cy.get('[data-cy=StayInformed]')
-      .should('be.visible')
-  })
-
-  it('checks that user can signup for emails successfully', () => {
-    cy.get('form').within(($form) => {
-      cy.get('input[type=email]')
-        .type('fake@email.com').should('have.value', 'fake@email.com')
-      cy.root().submit()
-    })
-
-    cy.get('[data-cy=subscriptionConfirmation]').should('contain', "You have successfully subscribed to DPLA's general email list! We'll send you announcements about our projects and events.") 
-  })
-
-  it('checks that user can signup for emails successfully', () => {
-    cy.get('input:invalid').should('have.length', 0)
-    cy.get('[type="email"]').type('not_an_email')
-    cy.get('[type="submit"]').click()
-    cy.get('input:invalid').should('have.length', 1)
-    cy.get('[type="email"]').then(($input) => {
-      expect($input[0].validationMessage).to.eq("Please include an '@' in the email address. 'not_an_email' is missing an '@'.")
+    cy.get('[data-cy=round_button]')
+    .should('have.length', 7)
+    .each((elem, index) => {
+      cy.wrap(elem)
+      .should('contain.text', buttonText[index])
+      .should('have.attr', 'href', buttonLinks[index])
     })
   })
 // }
