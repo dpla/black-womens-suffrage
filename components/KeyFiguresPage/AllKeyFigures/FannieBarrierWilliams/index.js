@@ -47,7 +47,7 @@ const FannieBarrierWilliams = () => {
         <SectionTitle title="There at the End" />
         <p>In 1905, Williams and her husband, along with several other families, founded the Frederick Douglass Center settlement project.</p>
         <p>She also served as a reporter for <SearchTag label="Woman's Era" tag="blackwomensuffrage_womans_era_newspaper"/>, a newspaper published by fellow suffragist <SearchTag label="Josephine St. Pierre Ruffin" tag="blackwomensuffrage_josephine_st_pierre_ruffin"/> and her daughter, to provide news reports for and by Black women, while also writing for the Chicago Record-Herald and the New York Age.</p>
-        <p>After the death of white suffragist leader Susan B. Anthony in 1907, Williams was the only Black woman asked to speak at Anthony's funeral. In 1909, Williams was active in the creation of the <SearchTag label="National Association for the Advancement of Colored People (NAACP)" tag="blackwomensuffrage_naacp"/>. In 1924, after the death of her husband, she became the first Black woman to sit on the Chicago Library Board.</p>
+        <p>After the death of white suffragist leader <Link href="/search?q=susan+b+anthony"><a>Susan B. Anthony</a></Link> in 1907, Williams was the only Black woman asked to speak at Anthony's funeral. In 1909, Williams was active in the creation of the <SearchTag label="National Association for the Advancement of Colored People (NAACP)" tag="blackwomensuffrage_naacp"/>. In 1924, after the death of her husband, she became the first Black woman to sit on the Chicago Library Board.</p>
         <p>Williams returned to Brockport, New York, in 1926 and died there in 1944 at the age of 89.</p>
       </section>
 

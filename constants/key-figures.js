@@ -114,7 +114,7 @@ export const angelinaWeldGrimke = {
   ]
 }
 
-export const charlotteFotrenGrimke = {
+export const charlotteFortenGrimke = {
   "name": "Charlotte Forten Grimké",
   "date": "1837-1914",
   "image": "/static/image/key-figures/charlotteFortenGrimke.jpg",
