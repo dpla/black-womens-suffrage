@@ -10,7 +10,7 @@ const TimelinePagination = ({ prevTime, nextTime }) => {
 
       { prevTime &&
         <Link href="/timeline/[timeId]" as={`/timeline/${ prevTime }`}>
-          <a>
+          <a data-cy="pagination__prev">
             <div className={scss.pagination__prev}>
               <div>
                 <h4>PREVIOUS</h4>
@@ -25,7 +25,7 @@ const TimelinePagination = ({ prevTime, nextTime }) => {
 
       { nextTime &&
         <Link href="/timeline/[timeId]" as={`/timeline/${ nextTime }`}>
-          <a>
+          <a data-cy="pagination__next">
             <div className={scss.pagination__next}>
               <div>
                 <h4>NEXT</h4>
