@@ -321,3 +321,30 @@ $listPadding: 1.125rem;
     margin-bottom: 0;
   }
 }
+
+.roundButton, .roundButton:visited {
+  color: white;
+  background: purple;
+  border-radius: 1.5rem;
+  border: none;
+  padding: 1rem;
+  margin-top: 1em;
+  display: inline-block;
+  cursor: pointer;
+  text-align:center;
+  width: auto;
+  min-width: 0;
+  font-weight: 800;
+
+  & img {
+    padding-left: 1rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 1152px and up) */
+@media only screen and ($lg-viewport) {
+  .roundButton, .roundButton:visited {
+    margin-top: 1.5rem;
+    margin-right: 1rem;
+  }
+}

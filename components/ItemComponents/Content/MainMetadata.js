@@ -76,7 +76,10 @@ class MainMetadata extends React.Component {
                   target="_blank"
                   onClick={getOnClickForExternalLink(item)}
                   href={item.sourceUrl}
+                  className={css.roundButton}
                 >
+                  View Item                  
+                  <img src="/static/icon/button-arrow.svg" alt={""}/>
                 </a>
               }
 
