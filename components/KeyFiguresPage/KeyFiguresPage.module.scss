@@ -161,6 +161,41 @@
   font-style: italic;
 }
 
+.bordered_text_box__container {
+  border: 2px solid $wePeep;
+
+  p {
+    font-family: $inter;
+    color: #282830;
+    font-size: 1em;
+    font-weight: 500;
+    letter-spacing: 1.18px;
+    line-height: 28px;
+    padding: 1.5em;
+  }
+
+  p::first-letter {
+    color: #4E4294;
+    font-family: $libre;
+    font-size: 3em;
+    font-weight: $bold;
+  }
+}
+
+.left_border_text_box__container {
+  border-left: 4px solid $wePeep;
+
+  p {
+    color: $cinnabar;
+    font-family: $libre;
+    font-size: 1.375em;
+    font-weight: $bold;
+    letter-spacing: 0.55px;
+    line-height: 40px;
+    padding-left: 1.773em;
+  }
+}
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and ($md-viewport) {
 
