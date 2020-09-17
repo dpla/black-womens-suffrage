@@ -10,6 +10,8 @@ import Sources from "components/KeyFiguresPage/Sources";
 import KeyFiguresPagination from "components/KeyFiguresPage/KeyFiguresPagination";
 import IntroAndPortrait from "components/KeyFiguresPage/IntroAndPortrait";
 import SearchPrompt from "components/KeyFiguresPage/SearchPrompt";
+import SearchTag from "shared/SearchTag";
+import Link from "next/link";
 
 const HarrietFortenPurvis = () => {
 
@@ -19,7 +21,7 @@ const HarrietFortenPurvis = () => {
 
       <section>
           <SectionTitle title="A Family Affair" />
-        <p>One of the well-known "Forten Sisters," Harriet Forten Purvis was the daughter of Charlotte Vandine Forten and James Forten, prominent Black abolitionists from Philadelphia, Pennsylvania. Like her sisters, she was an active abolitionist and suffragist.</p>
+        <p>One of the well-known "Forten Sisters," <Link href="/search?q=harriet+forten+purvis"><a>Harriet Forten Purvis</a></Link> was the daughter of Charlotte Vandine Forten and James Forten, prominent Black abolitionists from Philadelphia, Pennsylvania. Like her sisters, she was an active abolitionist and suffragist.</p>
       </section>
 
       <section>

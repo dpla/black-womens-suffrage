@@ -9,6 +9,8 @@ import BorderedTextBox from "components/KeyFiguresPage/BorderedTextBox";
 import Sources from "components/KeyFiguresPage/Sources";
 import KeyFiguresPagination from "components/KeyFiguresPage/KeyFiguresPagination";
 import IntroAndPortrait from "components/KeyFiguresPage/IntroAndPortrait";
+import SearchTag from "shared/SearchTag";
+import Link from "next/link";
 
 const HarrietPurvisJr = () => {
 
@@ -18,7 +20,7 @@ const HarrietPurvisJr = () => {
 
       <section>
 
-        <p>The daughter of prominent abolitionists and equal rights activists Harriet Forten Purvis and Robert Purvis, Harriet Purvis, Jr., known as Hattie, grew up in a household that was at the center of the abolitionist movement in Pennsylvania, as well as a stop on the Underground Railroad. Her parents associated with a variety of well-known social reformers including Susan B. Anthony and Lucretia Mott. She attended the highly progressive Friends Eagleswood School, a coeducational and biracial institution in Perth Amboy, New Jersey, founded by abolitionist Theodore Weld.</p>
+        <p>The daughter of prominent abolitionists and equal rights activists <Link href="/search?q=harriet+forten+purvis"><a>Harriet Forten Purvis</a></Link> and Robert Purvis, Harriet Purvis, Jr., known as Hattie, grew up in a household that was at the center of the abolitionist movement in Pennsylvania, as well as a stop on the Underground Railroad. Her parents associated with a variety of well-known social reformers including Susan B. Anthony and Lucretia Mott. She attended the highly progressive Friends Eagleswood School, a coeducational and biracial institution in Perth Amboy, New Jersey, founded by abolitionist Theodore Weld.</p>
       </section>
 
       <section>

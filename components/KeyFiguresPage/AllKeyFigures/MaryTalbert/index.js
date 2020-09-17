@@ -10,6 +10,8 @@ import Sources from "components/KeyFiguresPage/Sources";
 import KeyFiguresPagination from "components/KeyFiguresPage/KeyFiguresPagination";
 import IntroAndPortrait from "components/KeyFiguresPage/IntroAndPortrait";
 import SearchPrompt from "components/KeyFiguresPage/SearchPrompt";
+import SearchTag from "shared/SearchTag";
+import Link from "next/link";
 
 const MaryTalbert = () => {
 

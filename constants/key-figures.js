@@ -27,9 +27,9 @@ export const keyFigures = {
     "name" : "Sarah Remond",
     "value": "SarahRemond"
   },
-  "charlotteFotrenGrimke": {
+  "charlotteFortenGrimke": {
     "name" : "Charlotte Forten Grimké",
-    "value": "CharlotteFotrenGrimke"
+    "value": "CharlotteFortenGrimke"
   },
   "harrietPurvisJr": {
     "name" : "Harriet Purvis, Jr.",

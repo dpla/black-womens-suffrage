@@ -9,6 +9,8 @@ import BorderedTextBox from "components/KeyFiguresPage/BorderedTextBox";
 import Sources from "components/KeyFiguresPage/Sources";
 import IntroAndPortrait from "components/KeyFiguresPage/IntroAndPortrait";
 import SearchPrompt from "components/KeyFiguresPage/SearchPrompt";
+import SearchTag from "shared/SearchTag";
+import Link from "next/link";
 
 const SojournerTruth = () => {
 
