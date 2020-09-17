@@ -81,7 +81,7 @@ export const angelinaWeldGrimke = {
   "image": "/static/image/key-figures/angelinaWeldGrimke.jpg",
   "name" : "Angelina Weld Grimké",
   "date": "1880-1958",
-  "search": "/search?q=angelina+weld+grimke+-emily",
+  "search": "/search?tags=blackwomensuffrage_angelina_weld_grimke",
   "sources": [
     {
       "description": "Britannica: Angelina Weld Grimké",
@@ -118,7 +118,7 @@ export const charlotteFotrenGrimke = {
   "name": "Charlotte Forten Grimké",
   "date": "1837-1914",
   "image": "/static/image/key-figures/charlotteFortenGrimke.jpg",
-  "search": "/search?q=charlotte+forten",
+  "search": "/search?tags=blackwomensuffrage_charlotte_forten_grimke",
   "sources": [
     {
       "description": "U.S. National Park Service: Charlotte Forten Grimké",
@@ -186,7 +186,7 @@ export const fannieBarrierWilliams = {
   "name": "Fannie Barrier Williams",
   "date": "1855-1944",
   "image": "/static/image/key-figures/fannieBarrierWilliams.jpg",
-  "search": "/search?q=fannie+barrier+williams",
+  "search": "/search?tags=blackwomensuffrage_fannie_barrier_williams",
   "sources": [
     {
       "description": "Rochester Regional Library Council: Fannie Barrier Williams",
@@ -219,7 +219,7 @@ export const fannieLouHamer = {
   "name": "Fannie Lou Hamer",
   "date": "1917-1977",
   "image": "/static/image/key-figures/fannieLouHamer.jpg",
-  "search": "/search?q=fannie+lou+hamer",
+  "search": "/search?tags=blackwomensuffrage_fannie_lou_hamer",
   "sources": [
     {
       "description": "National Women's History Museum: Fannie Lou Hamer",
@@ -260,7 +260,7 @@ export const francesEllenWatkinsHarper = {
   "name": "Frances Ellen Watkins Harper",
   "date": "1825-1911",
   "image": "/static/image/key-figures/francesEllenWatkinsHarper.jpg",
-  "search": "/search?q=frances+harper",
+  "search": "/search?tags=blackwomensuffrage_frances_ellen_watkins_harper",
   "sources": [
     {
       "description": "Poetry Foundation: Frances Ellen Watkins Harper",
@@ -356,7 +356,7 @@ export const josephineStPierreRuffin = {
   "name": "Josephine St. Pierre Ruffin",
   "date": "1842-1924",
   "image": "/static/image/key-figures/josephineRuffin.jpg",
-  "search": "/search?q=josephine+ruffin",
+  "search": "/search?tags=blackwomensuffrage_josephine_st_pierre_ruffin",
   "sources": [
     {
       "description": "National Women's Hall of Fame: Ruffin, Josephine St. Pierre",
@@ -408,7 +408,7 @@ export const josephineStPierreRuffin = {
 export const lugeniaBurnsHope = {
   "name": "Lugenia Burns Hope",
   "date": "1871-1947",
-  "search": "/search?q=lugenia+hope",
+  "search": "/search?tags=blackwomensuffrage_lugenia_burns_hope",
   "sources": [
     {
       "description": "Britannica: Lugenia Burns Hope",
@@ -441,7 +441,7 @@ export const margarettaForten = {
   "name": "Margaretta Forten",
   "date": "c.1815–1875",
   "image": "/static/image/key-figures/margarettaForten.jpg",
-  "search": "/search?q=margaretta+forten",
+  "search": "/search?tags=blackwomensuffrage_margaretta_forten",
   "sources": [
     {
       "description": "History of American Women: The Forten Sisters",
@@ -462,7 +462,7 @@ export const maryAnnShaddCary = {
   "name": "Mary Ann Shadd Cary",
   "date": "1823–1893",
   "image": "/static/image/key-figures/maryAnnShaddCary.jpg",
-  "search": "/search?q=mary+shadd+-ellen",
+  "search": "/search?tags=blackwomensuffrage_marry_ann_shadd_cary",
   "sources": [
     {
       "description": "Biography.com: Mary Ann Shadd Cary - Lawyer, Editor",
@@ -499,7 +499,7 @@ export const idaBWellsBarnett = {
   "name": "Ida B. Wells Barnett",
   "date": "1862-1931",
   "image": "/static/image/key-figures/idaBWellsBarnett.jpg",
-  "search": "/search?q=ida+wells",
+  "search": "/search?tags=blackwomensuffrage_ida_b_wells",
   "sources": [
     {
       "description": "Ida B. Wells-Barnett, National Women’s History Museum",
@@ -556,7 +556,7 @@ export const maryChurchTerrell = {
   "name": "Mary Church Terrell",
   "date": "1863–1954",
   "image": "/static/image/key-figures/maryChurchTerrell.jpg",
-  "search": "/search?q=mary+church+terrell",
+  "search": "/search?tags=blackwomensuffrage_mary_church_terrell",
   "sources": [
     {
       "description": "National Women's History Museum: Mary Church Terrell",
@@ -585,7 +585,7 @@ export const maryTalbert = {
   "name": "Mary Talbert",
   "date": "1866–1923",
   "image": "/static/image/key-figures/maryTalbert.jpg",
-  "search": "/search?q=mary+talbert",
+  "search": "/search?tags=blackwomensuffrage_mary_burnett_talbert",
   "sources": [
     {
       "description": "National Women’s Hall of Fame: Talbert, Mary Burnett",
@@ -622,7 +622,7 @@ export const nannieHelenBurroughs = {
   "name": "Nannie Helen Burroughs",
   "date": "1879–1961",
   "image": "/static/image/key-figures/nannieHelenBurroughs.jpg",
-  "search": "/search?q=nannie+burroughs",
+  "search": "/search?tags=blackwomensuffrage_nannie_helen_burroughs",
   "sources": [
     {
       "description": "Turning Point Suffragist Memorial: African American Women Leaders in the Suffrage Movement",
@@ -651,7 +651,7 @@ export const sarahRemond = {
   "name": "Sarah Remond",
   "date": "c.1826–1894",
   "image": "/static/image/key-figures/sarahRemond.png",
-  "search": "/search?q=sarah+remond",
+  "search": "/search?tags=blackwomensuffrage_sarah_parker_remond",
   "sources": [
     {
       "description": "The Wellesley Centers for Women: Sarah Parker Remond: An African American Woman in Nineteenth-Century Europe",
@@ -676,7 +676,7 @@ export const sojournerTruth = {
   "name": "Sojourner Truth",
   "date": "c. 1797-1893",
   "image": "/static/image/key-figures/sojournerTruth.jpg",
-  "search": "/search?q=sojourner+truth",
+  "search": "/search?tags=blackwomensuffrage_sojourner_truth",
   "sources": [
     {
       "description": "Biography.com: Sojourner Truth - Quotes, Speech & Facts",
