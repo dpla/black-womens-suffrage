@@ -30,6 +30,7 @@
     "sass": "^1.26.10"
   },
   "devDependencies": {
+    "@cypress/snapshot": "^2.1.7",
     "cypress": "^5.1.0"
   }
 }

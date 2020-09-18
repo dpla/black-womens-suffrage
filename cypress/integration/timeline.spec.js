@@ -15,15 +15,15 @@ const timelineOptions = [
   "Sources"
 ]
 
-// it('successfully loads homepage', () => {
-//   cy.title().should('eq', "1820-1859 | Black Women's Suffrage Timeline | DPLA")
-// })
+it('successfully loads homepage', () => {
+  cy.title().should('eq', "1820-1859 | Black Women's Suffrage Timeline | DPLA").snapshot({name: 'Banner Title'})
+})
 
-// it('checks that hero banner is visible', () => {
-//   cy.get('[data-cy=banner]').should('be.visible')
-//   cy.get('[data-cy=banner]').contains('TIMELINE')
-//   cy.get('[data-cy=banner]').contains("Marching toward progress: the journey to Black women’s suffrage.") 
-// })
+it('checks that hero banner is visible', () => {
+  cy.get('[data-cy=banner]').should('be.visible').snapshot()
+  cy.get('[data-cy=banner]').contains('TIMELINE')
+  cy.get('[data-cy=banner]').contains("Marching toward progress: the journey to Black women’s suffrage.").snapshot() 
+})
 
 // it('Checks that left navigation has correct href', () => {
 //   cy.get('[data-cy=timeline__left]')
@@ -56,3 +56,7 @@ const timelineOptions = [
 //     .should('contain.text', timelineOptions[index])
 //    })
 //  })
+
+// it('Tests pagination', () => {
+
+// })
