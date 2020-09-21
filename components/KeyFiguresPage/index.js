@@ -34,7 +34,7 @@ function KeyFiguresPage({ figure }) {
 
       <section className={`${scss.key_figures} section__default`}>
 
-        <div className={scss.key_figures__left}>
+        <div className={scss.key_figures__left} data-cy="key_figures__left">
 
           <ul>
             { figIds.map((key, index) => {

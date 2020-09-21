@@ -15,6 +15,19 @@ const timelineOptions = [
   "Sources"
 ]
 
+const timelineLinks = [
+  "/timeline/1820-1859",
+  "/timeline/1860-1869",
+  "/timeline/1870-1889",
+  "/timeline/1890-1899",
+  "/timeline/1900-1909",
+  "/timeline/1910-1919",
+  "/timeline/1920-1929",
+  "/timeline/1930-1959",
+  "/timeline/1960-present",
+  "/timeline/Sources"
+]
+
 it('successfully loads homepage', () => {
   cy.checkTitle("1820-1859 | Black Women's Suffrage Timeline | DPLA")
 })
@@ -24,12 +37,7 @@ it('checks that hero banner is visible', () => {
 })
 
 it('Checks that left navigation has correct href', () => {
-  cy.getTimelineNav().should('have.length', 10)
-    .each((elem, index) => {
-      cy.wrap(elem)
-        .should('contain.text', timelineOptions[index])
-        .should('have.attr', 'href', `/timeline/${timelineOptions[index]}`)
-    })
+  cy.checkNavigationLinks('[data-cy=timeline__left]', 10, timelineOptions, timelineLinks)
 })
 
 it('Checks that left navigation changes route when clicked', () => {
