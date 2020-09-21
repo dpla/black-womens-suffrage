@@ -16,28 +16,24 @@ const timelineOptions = [
 ]
 
 it('successfully loads homepage', () => {
-  cy.title().should('eq', "1820-1859 | Black Women's Suffrage Timeline | DPLA").snapshot({name: 'Banner Title'})
+  cy.checkTitle("1820-1859 | Black Women's Suffrage Timeline | DPLA")
 })
 
 it('checks that hero banner is visible', () => {
-  cy.get('[data-cy=banner]').should('be.visible').snapshot()
-  cy.get('[data-cy=banner]').contains('TIMELINE')
-  cy.get('[data-cy=banner]').contains("Marching toward progress: the journey to Black women’s suffrage.").snapshot() 
+  cy.checkBannerIsVisible('TIMELINE', "Marching toward progress: the journey to Black women’s suffrage.")
 })
 
-// it('Checks that left navigation has correct href', () => {
-//   cy.get('[data-cy=timeline__left]')
-//   .find('li > a').should('have.length', 10)
-//   .each((elem, index) => {
-//     cy.wrap(elem)
-//     .should('contain.text', timelineOptions[index])
-//     .should('have.attr', 'href', `/timeline/${timelineOptions[index]}`)
-//   })
-// })
+it('Checks that left navigation has correct href', () => {
+  cy.getTimelineNav().should('have.length', 10)
+  .each((elem, index) => {
+    cy.wrap(elem)
+    .should('contain.text', timelineOptions[index])
+    .should('have.attr', 'href', `/timeline/${timelineOptions[index]}`)
+  })
+})
 
 // it('Checks that left navigation changes route when clicked', () => {
-//  cy.get('[data-cy=timeline__left]')
-//  .find('li > a')
+  // cy.getTimelineNav()
 //  .each((elem, index) => {
 //    cy.wrap(elem)
 //    .click()
@@ -46,8 +42,7 @@ it('checks that hero banner is visible', () => {
 // })
 
 // it('Checks that left navigation changes main component when clicked', () => {
-//   cy.get('[data-cy=timeline__left]')
-//   .find('li > a')
+  // cy.getTimelineNav()
 //   .each((elem, index) => {
 //     cy.wrap(elem)
 //     .click()

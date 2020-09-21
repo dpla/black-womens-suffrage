@@ -5,7 +5,7 @@
   })
 
   it('successfully loads homepage', () => {
-    cy.title().should('eq', "Black Women's Suffrage | DPLA")
+    cy.checkTitle("Black Women's Suffrage | DPLA")
   })
 
   it('checks that hero banner is visible', () => {
@@ -25,12 +25,6 @@
     const buttonText = ['LEARN MORE', 'SEARCH THE COLLECTION', 'SEE TIMELINE', 'SEE KEY FIGURES', 'SEE ALL COLLECTIONS','LEARN MORE ABOUT PARTNERS', 'SEARCH THE COLLECTION']
     const buttonLinks = ['/about', '/search', '/timeline', '/key-figures', '/collections','/partners', '/search']
 
-    cy.get('[data-cy=round_button]')
-    .should('have.length', 7)
-    .each((elem, index) => {
-      cy.wrap(elem)
-      .should('contain.text', buttonText[index])
-      .should('have.attr', 'href', buttonLinks[index])
-    })
+    cy.checkRoundButtonLinks(7, buttonText, buttonLinks)
   })
 // }

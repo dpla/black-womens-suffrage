@@ -42,47 +42,37 @@ class Navbar extends Component {
             </Link>
           </div>
 
-          <ul className={scss.nav__links} data-cy="nav__links">
+          <div className={scss.nav__links} data-cy="nav__links">
 
-            <li>
-              <ActiveLink activeClassName={scss.active} href="/about">
-                <a>About</a>
-              </ActiveLink>
-            </li>
+            <ActiveLink activeClassName={scss.active} href="/about">
+              <a>About</a>
+            </ActiveLink>
 
-            <li>
-              <ActiveLink activeClassName={scss.active} href="/timeline">
-                <a>Timeline</a>
-              </ActiveLink>
-            </li>
+            <ActiveLink activeClassName={scss.active} href="/timeline">
+              <a>Timeline</a>
+            </ActiveLink>
 
-            <li>
-              <ActiveLink activeClassName={scss.active} href="/key-figures">
-                <a>Key Figures</a>
-              </ActiveLink>
-            </li>
+            <ActiveLink activeClassName={scss.active} href="/key-figures">
+              <a>Key Figures</a>
+            </ActiveLink>
 
-            <li>
-              <ActiveLink activeClassName={scss.active} href="/collections">
-                <a>Collections</a>
-              </ActiveLink>
-            </li>
+            <ActiveLink activeClassName={scss.active} href="/collections">
+              <a>Collections</a>
+            </ActiveLink>
 
-            <li>
-              <ActiveLink activeClassName={scss.active} href="/partners">
-                <a>Partners</a>
-              </ActiveLink>
-            </li>
+            <ActiveLink activeClassName={scss.active} href="/partners">
+              <a>Partners</a>
+            </ActiveLink>
 
-            <li><div className={scss.divider} /></li>
-            <li><a href="https://dp.la" target="_blank">Visit DPLA</a></li>
-            <li><div className={scss.divider} /></li>
-            <li>
-              <button onClick={this.triggerSearchbar} data-cy="searchbar__icon">
-                <img src={"/static/icon/search/search-bar.svg"} alt="Search Bar" className={scss.searchIcon} />
-              </button>
-            </li>
-          </ul>
+            <div className={scss.divider} />
+            <a href="https://dp.la" target="_blank">Visit DPLA</a>
+            <div className={scss.divider} />
+
+            <button onClick={this.triggerSearchbar} data-cy="searchbar__icon">
+              <img src={"/static/icon/search/search-bar.svg"} alt="Search Bar" className={scss.searchIcon} />
+            </button>
+
+          </div>
         </nav>
 
         {this.state.showSearchbar &&

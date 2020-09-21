@@ -17,14 +17,7 @@ it('Gets and checks navigation links', () => {
   const navText = ['About', 'Timeline', 'Key Figures', 'Collections', 'Partners', 'Visit DPLA']
   const navLinks = ['/about', '/timeline', '/key-figures', '/collections', '/partners', 'https://dp.la']
 
-  cy.get('[data-cy=nav__links]')
-    .find('li').find('a')
-    .should('have.length', 6)
-    .each((elem, index) => {
-      cy.wrap(elem)
-      .should('contain.text', navText[index])
-      .should('have.attr', 'href', navLinks[index])
-  })
+  cy.checkNavigationLinks('[data-cy=nav__links]', 6, navText, navLinks)
 })
 
 it('Checks that searchbar appears when icon is clicked ', () => {
