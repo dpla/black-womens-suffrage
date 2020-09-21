@@ -21,25 +21,25 @@ const MaryChurchTerrell = () => {
 
       <section>
         <SectionTitle title="One of the First to Earn a College Degree" />
-        <p>Racial justice and women's suffrage activist Mary Church Terrell was born in 1863 in Memphis, Tennessee, to formerly enslaved parents. Her family was affluent: Her mother, Louisa Ayres Church, owned a hair salon, and her father, Robert Reed Church, was an entrepreneur who owned several businesses and became one of the first African-American millionaires in the American South.</p>
+        <p>Racial justice and women's suffrage activist <SearchTag label="Mary Church Terrell" tag="blackwomensuffrage_mary_church_terrell"/> was born in 1863 in Memphis, Tennessee, to formerly enslaved parents. Her family was affluent: Her mother, Louisa Ayres Church, owned a hair salon, and her father, <Link href='/search?subject="Church%2C Robert Reed%2C 1885-1952"'><a>Robert Reed Church</a></Link>, was an entrepreneur who owned several businesses and became one of the first African-American millionaires in the American South.</p>
         <p>Church's parents valued education, and, though her parents divorced, she studied at Antioch College and earned a degree from Oberlin College in Ohio in 1884. Church, who was fluent in three languages, then worked as a teacher at Ohio's Wilberforce College. In 1887, she moved to Washington, D.C., where she was a teacher at M Street Colored High School and met her husband, fellow teacher Robert Heberton Terrell.</p>
       </section>
 
       <section>
         <SectionTitle title="Crusader" />
-        <p>At the 1890 National Woman Suffrage Assocation Convention, Terrell called attention to the "dual burden" faced by Black women, saying, "A White Woman has only one handicap to overcome—a great one, true, her sex; a colored woman faces two—her sex and her race. A colored man has only one—that of race." In 1892, after a friend of hers was lynched in Memphis by whites, Terrell became involved with anti-lynching activism along with Ida B. Wells-Barnett.</p>
+        <p>At the 1890 National Woman Suffrage Assocation Convention, Terrell called attention to the "dual burden" faced by Black women, saying, "A White Woman has only one handicap to overcome—a great one, true, her sex; a colored woman faces two—her sex and her race. A colored man has only one—that of race." In 1892, after a friend of hers was lynched in Memphis by whites, Terrell became involved with anti-lynching activism along with <SearchTag label="Ida B. Wells-Barnett" tag="blackwomensuffrage_ida_b_wells"/>.</p>
       </section>
 
       <section>
         <SectionTitle title="&quot;Lifting as We Climb&quot;" />
-        <p>She helped to found the National Association of Colored Women (NACW) in 1896, and served as its first president until 1901. Terrell believed in the philosophy of "racial uplift," arguing that Black people could advance the cause of racial equality through self-help, including education, hard work and community involvement. She captured this idea in the phrase "Lifting as we climb," which was adopted by NACW as its motto.</p>
+        <p>She helped to found the <SearchTag label="National Association of Colored Women (NACW)" tag="blackwomensuffrage_national_association_of_colored_women"/> in 1896, and served as its first president until 1901. Terrell believed in the philosophy of "racial uplift," arguing that Black people could advance the cause of racial equality through self-help, including education, hard work and community involvement. She captured this idea in the phrase "Lifting as we climb," which was adopted by NACW as its motto.</p>
         <p>She led the NACW in creating kindergartens, child care and Mother Clubs to help support working Black women. According to historian Beverly Johnson, she also began to espouse the idea of interracial understanding, believing that education would lead to improved cooperation between races.</p>
-        <p>In 1909, Terrell helped to found the National Association for the Advancement of Colored People (NAACP), and the next year, co-founded the College Alumnae Club, which later became the National Association of University Women.</p>
+        <p>In 1909, Terrell helped to found the <SearchTag label="National Association for the Advancement of Colored People (NAACP)" tag="blackwomensuffrage_naacp"/>, and the next year, co-founded the <SearchTag label="College Alumnae Club" tag="blackwomensuffrage_college_alumnae_club"/>, which later became the National Association of University Women.</p>
       </section>
 
       <section>
         <SectionTitle title="Suffragist" />
-        <p>Terrell believed that women's suffrage was essential to progress for Black women, and worked extensively with both Black and white women's suffrage groups, even picketing the White House with the National Woman's Party.</p>
+        <p>Terrell believed that women's suffrage was essential to progress for Black women, and worked extensively with both Black and white women's suffrage groups, even picketing the White House with the <SearchTag label="National Woman's Party" tag="blackwomensuffrage_national_womans_party"/>.</p>
       </section>
 
       <section>
