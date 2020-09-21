@@ -13,14 +13,7 @@ it('Gets and checks navigation links', () => {
   const navText = ['About', 'Timeline', 'Key Figures', 'Collections', 'Partners']
   const navLinks = ['/about', '/timeline', '/key-figures', '/collections', '/partners']
   
-  cy.get('[data-cy=footer__links]')
-    .find('a')
-    .should('have.length', 5)
-    .each((elem, index) => {
-      cy.wrap(elem)
-      .should('contain.text', navText[index])
-      .should('have.attr', 'href', navLinks[index])
-  })
+  cy.checkNavigationLinks('[data-cy=footer__links]', 5, navText, navLinks)
 })
 
 it('Checks that DPLA footer logo navigates Home when clicked ', () => {
@@ -32,12 +25,5 @@ it('Gets and checks small footer navigation links', () => {
   const navText = ['Visit DPLA', 'Harmful Language Statement']
   const navLinks = ['http://dp.la/', '/harmful-language-statement']
   
-  cy.get('[data-cy=footer__links_small]')
-    .find('a')
-    .should('have.length', 2)
-    .each((elem, index) => {
-      cy.wrap(elem)
-      .should('contain.text', navText[index])
-      .should('have.attr', 'href', navLinks[index])
-  })
+  cy.checkNavigationLinks('[data-cy=footer__links_small]', 2, navText, navLinks)
 })

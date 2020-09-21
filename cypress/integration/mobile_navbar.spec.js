@@ -25,14 +25,7 @@ it('Gets and checks mobile navigation links', () => {
   const navLinks = ['/about', '/timeline', '/key-figures', '/collections', '/partners', 'https://dp.la', '/harmful-language-statement']
   cy.get('[data-cy=menuDisplayed]').click()
 
-  cy.get('[data-cy=nav__links_mobile]')
-    .find('a')
-    .should('have.length', 7)
-    .each((elem, index) => {
-      cy.wrap(elem)
-      .should('contain.text', navText[index])
-      .should('have.attr', 'href', navLinks[index])
-  })
+  cy.checkNavigationLinks('[data-cy=nav__links_mobile]', 7, navText, navLinks)
 })
 
 it('Checks that using mobile searchbar in menu returns data', () => {
