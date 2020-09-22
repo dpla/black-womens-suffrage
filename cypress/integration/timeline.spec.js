@@ -28,7 +28,7 @@ const timelineLinks = [
   "/timeline/Sources"
 ]
 
-it('successfully loads homepage', () => {
+it('successfully loads timeline page', () => {
   cy.checkTitle("1820-1859 | Black Women's Suffrage Timeline | DPLA")
 })
 

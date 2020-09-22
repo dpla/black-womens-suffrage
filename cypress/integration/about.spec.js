@@ -2,7 +2,7 @@ beforeEach(() => {
   cy.visit('/about')
 })
 
-it('successfully loads homepage', () => {
+it('successfully loads about page', () => {
   cy.checkTitle("About Black Women's Suffrage | DPLA")
 })
 

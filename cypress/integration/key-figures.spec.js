@@ -32,7 +32,7 @@ const keyFiguresLinks = [
   '/key-figures/maryAnnShaddCary',
   '/key-figures/francesEllenWatkinsHarper',
   '/key-figures/sarahRemond',
-  '/key-figures/charlotteFotrenGrimke',
+  '/key-figures/charlotteFortenGrimke',
   '/key-figures/harrietPurvisJr',
   '/key-figures/josephineStPierreRuffin',
   '/key-figures/charlotteLottieRollin',
@@ -46,7 +46,7 @@ const keyFiguresLinks = [
   '/key-figures/fannieLouHamer'
 ]
 
-it('successfully loads homepage', () => {
+it('successfully loads key figures page', () => {
   cy.checkTitle("Charlotte Vandine Forten | DPLA")
 })
 

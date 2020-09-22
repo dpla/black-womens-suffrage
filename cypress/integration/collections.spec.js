@@ -2,7 +2,7 @@ beforeEach(() => {
   cy.visit('/collections')
 })
 
-it('successfully loads homepage', () => {
+it('successfully loads collections page', () => {
   cy.checkTitle("Black Women's Suffrage: Collections | DPLA")
 })
 
@@ -10,12 +10,19 @@ it('checks that hero banner is visible', () => {
   cy.checkBannerIsVisible('COLLECTIONS', 'Telling the story of Black women’s suffrage, one artifact at a time.')
 })
 
-// it('checks that VIEW COLLECTION button leads to collection', () => {
-//   const collectionButtonText = ['VIEW COLLECTION']
-//   const collectionLinks = ['/collections/ida-b-wells']
+it('checks that VIEW COLLECTION button leads to collection', () => {
+  const collectionButtonText = ['VIEW COLLECTION']
+  const collectionLinks = ['/collections/ida-b-wells']
 
-//   cy.checkNavigationLinks('[data-cy=collection__active]', 1, collectionButtonText, collectionLinks)
-// })
+  cy.get('[data-cy=collection__active]')
+    .should('have.length', 1)
+    .each((elem, index) => {
+      cy.wrap(elem)
+      .should('contain.text', collectionButtonText[index])
+      .click()
+      .location('href').should('eq', `${Cypress.config('baseUrl')}${collectionLinks[index]}`)
+  })
+})
 
 it("checks that COMING SOON button doesn't lead to collection", () => {
   cy.get('[data-cy=collection__inactive] > a')
