@@ -85,7 +85,7 @@ const Year1900to1909 = () => {
         <div className={scss.tile__p}>
           <p><SearchTag label="Lugenia Burns Hope" tag="blackwomensuffrage_lugenia_burns_hope"/> founds the Atlanta <SearchTag label="Neighborhood Union" tag="blackwomensuffrage_neighborhood_union"/>. The Union was a pioneer at organizing: The women divided the city into zones, districts and neighborhoods, with each assigned to a Union member. In this way, they were able to reach nearly every Black Atlantan.</p>
           <p>Mary Church Terrell challenges the idea of "educated suffrage" that was used to bar not only Blacks but immigrants from voting (Terborg-Penn, 68).</p>
-          <p><SearchTag label="Alpha Kappa Alpha" tag="blackwomensuffrage_alpha_kappa_alpha"/> sorority is founded at Howard University.</p>
+          <p><SearchTag label="Alpha Kappa Alpha" tag="blackwomensuffrage_alpha_kappa_alpha"/> sorority is founded at <Link href='/search?q="howard+university"'><a>Howard University</a></Link>.</p>
           <p><SearchTag label="The Equal Suffrage League" tag="blackwomensuffrage_equal_suffrage_league"/>, led by <SearchTag label="Sarah Garnet" tag="blackwomensuffrage_sarah_j_tompkins_garnet"/>, collects petition signatures in favor of women's suffrage legislation. The petition read, in part, "[W]e, the members of The Equal Suffrage League, representing the National Association of Colored Women through its Suffrage Department…ask to have enacted such legislation as will enforce the 14th and 15th Amendments of the Constitution of our country, the United States of America, throughout all its sections." (Terborg-Penn, 88, 95)</p>
         </div>
       </div>
