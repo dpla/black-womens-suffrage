@@ -1,7 +1,7 @@
 import React from "react"
 import Link from "next/link"
 import scss from "components/TimelinePage/TimelinePage.module.scss"
-import SearchTag from "shared/SearchTag";
+import SearchTag from "shared/SearchTag"
 
 const Year1860to1869 = () => {
   return (
