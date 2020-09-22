@@ -20,7 +20,7 @@ const IntroAndPortrait = ({ figure }) => {
         <div className={scss.key_figures__intro}>
           <div className={scss.key_figures__info}>
             <h6 className={scss.key_figures__dates}>{ figure.date }</h6>
-            <h2 className={scss.key_figures__name}>{ figure.name }</h2>
+            <h2 className={scss.key_figures__name} data-cy="key_figures__name">{ figure.name }</h2>
           </div>
         </div>
       </div>

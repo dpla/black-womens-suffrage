@@ -57,3 +57,17 @@ it('checks that hero banner is visible', () => {
 it('Checks that left navigation has correct href', () => {
   cy.checkNavigationLinks('[data-cy=key_figures__left]', 19, keyFigures, keyFiguresLinks)
 })
+
+it('Checks that left navigation changes route and component when clicked', () => {
+  cy.get('[data-cy=key_figures__left]')
+    .find('a')
+    .should('have.length', keyFigures.length)
+    .each((elem, index) => {
+      cy.wrap(elem)
+        .click()
+        .location('href').should('eq', `${Cypress.config('baseUrl')}${keyFiguresLinks[index]}`)
+      
+        cy.get('[data-cy=key_figures__name]')
+        .should('contain.text', keyFigures[index])
+    })
+})
