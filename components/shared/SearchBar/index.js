@@ -27,14 +27,16 @@ class SearchBar extends React.Component {
             <CurvedButton text="SEARCH" type="submit" />
           </div>
 
-          <div className={scss.searchbar__button_advanced}>
-            <Link href="/search">
-              <a>
-                ADVANCED SEARCH
-              <img src="/static/icon/button-arrow-purple.png" alt="Arrow icon" />
-              </a>
-            </Link>
-          </div>
+          {router.route !== '/search' &&
+            <div className={scss.searchbar__button_advanced}>
+              <Link href="/search">
+                <a>
+                  ADVANCED SEARCH
+                  <img src="/static/icon/button-arrow-purple.png" alt="Arrow icon" />
+                </a>
+              </Link>
+            </div>
+          }
         </form>
       </>
     );

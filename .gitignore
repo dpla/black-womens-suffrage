@@ -37,6 +37,5 @@ yarn-error.log*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
 
-
 cypress.json
 cypress/integration/examples
