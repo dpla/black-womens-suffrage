@@ -8,7 +8,7 @@ const CollectionHeader = ({ image, years, name, styledText, description }) => {
 
       <div className={scss.collection_header__intro}>
         <h3>{years}</h3>
-        <h2>{name}</h2>
+        <h2 data-cy="collection_header__name">{name}</h2>
 
         <div className={scss.left_border_text_box__container}>
           <p>

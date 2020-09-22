@@ -21,7 +21,7 @@ const ItemList = ({ collection, items }) => {
 
       <ul className={scss.item__ul}>
         {items.map((item) => (
-          <li className={scss.item__li} key={`collections-${collection.colId}-${item.colItemId}`}>
+          <li className={scss.item__li} key={`collections-${collection.colId}-${item.colItemId}`} data-cy="collection_item">
             <Link href="/collections/[colId]/[colItemId]"
               as={`/collections/${collection.colId}/${item.colItemId}`}>
               <a>
