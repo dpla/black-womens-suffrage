@@ -20,15 +20,13 @@ Run `$ git clone https://github.com/dpla/black-womens-suffrage.git`
 
 ### Install Dependencies 
 
-Once the project is saved, `cd` to `black-womens-suffrage` and run `npm install`
+Once the project is saved, `cd` to your local `black-womens-suffrage` folder and run `npm install`
 
 ### Start Server
 
-Then, run the development server: `npm run dev`
+While in your local `black-womens-suffrage` folder run `npm run dev`
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
 ## Cypress Testing
 
