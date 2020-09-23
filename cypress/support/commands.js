@@ -11,18 +11,18 @@ Cypress.Commands.add('checkRoundButtonLinks', (length, text, links) => {
   .each((elem, index) => {
     cy.wrap(elem)
     .should('contain.text', text[index])
-    .should('have.attr', 'href', links[index])
+    .should('have.attr', 'href', links[index]).snapshot({name: `Round Button ${index + 1}`})
   })
 })
 
 Cypress.Commands.add('checkTitle', (title) => {
-  cy.title().should('eq', title)
+  cy.title().should('eq', title).snapshot({name: "Page title"})
 })
 
 Cypress.Commands.add('checkBannerIsVisible', (title, text) => {
   cy.get('[data-cy=banner]').should('be.visible')
   cy.get('[data-cy=banner]').contains(title)
-  cy.get('[data-cy=banner]').contains(text)
+  cy.get('[data-cy=banner]').contains(text).snapshot({name: "Page banner"})
 })
 
 Cypress.Commands.add('checkNavigationLinks', (element, length, text, links) => {
@@ -32,6 +32,6 @@ Cypress.Commands.add('checkNavigationLinks', (element, length, text, links) => {
     .each((elem, index) => {
       cy.wrap(elem)
       .should('contain.text', text[index])
-      .should('have.attr', 'href', links[index])
+      .should('have.attr', 'href', links[index]).snapshot({name: `Nav Link ${index + 1}`})
   })
 })

@@ -8,7 +8,8 @@
     "start": "next start",
     "clean": "rm -rf .next ./build ./coverage ./node_modules",
     "nuke": "npm run clean && npm i && npm run build && npm run start",
-    "cypress": "./node_modules/.bin/cypress open"
+    "cy:open": "./node_modules/.bin/cypress open",
+    "cy:run": "./node_modules/.bin/cypress run"
   },
   "dependencies": {
     "babel-plugin-inline-react-svg": "^1.1.1",

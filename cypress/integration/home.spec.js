@@ -1,20 +1,20 @@
 // if (Cypress.config('SITE_ENV') == 'pro') {
-
+describe('Home Page', () => {
   beforeEach(() => {
     cy.visit('/')
   })
 
-  it('successfully loads homepage', () => {
+  it('Successfully loads homepage', () => {
     cy.checkTitle("Black Women's Suffrage | DPLA")
   })
 
-  it('checks that hero banner is visible', () => {
+  it('Checks that hero banner is visible', () => {
     cy.get('[data-cy=home__banner]')
       .contains('Black women’s suffrage.')
-      .should('be.visible')
+      .should('be.visible').snapshot({name: "Home Hero Banner"})
   })
 
-  it('checks that search input works and returns results', () => {
+  it('Checks that search input works and returns results', () => {
     cy.get('[type="search"]').type('truth')
     cy.get('[type="submit"]').click()
     cy.location('href').should('eq', `${Cypress.config('baseUrl')}/search?q=truth`)
@@ -27,4 +27,6 @@
 
     cy.checkRoundButtonLinks(7, buttonText, buttonLinks)
   })
+})
+  
 // }
