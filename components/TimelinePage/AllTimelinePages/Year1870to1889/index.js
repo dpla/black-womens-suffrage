@@ -93,7 +93,7 @@ const Year1870to1889 = () => {
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
-          <p>Frances E.W. Harper addresses the <Link href='/search?q="Association+for+the+Advancement+of+Women"'><a>Association for the Advancement of Women (AAW)</a></Link> Woman's Congress. Her talk, entitled, "The Colored Women of America," sets out the issues that would be taken up by <SearchTag label="Mary Church Terrell" tag="blackwomensuffrage_mary_church_terrell"/> and others in the NACW in 1890s (Collier-Thomas, 54).</p>
+          <p>Frances E.W. Harper addresses the <Link href='/search?q="Association+for+the+Advancement+of+Women"'><a>Association for the Advancement of Women (AAW)</a></Link> Woman's Congress. Her talk, entitled, "The Colored Women of America," sets out the issues that would be taken up by <SearchTag label="Mary Church Terrell" tag="blackwomensuffrage_mary_church_terrell"/> and others in the <SearchTag label="National Association of Colored Women's Clubs (NACW)" tag="blackwomensuffrage_national_association_of_colored_women"/> in 1890s (Collier-Thomas, 54).</p>
         </div>
       </div>
 
@@ -124,7 +124,7 @@ const Year1870to1889 = () => {
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
-          <p>Mary Ann Shadd Cary founds the Colored Women's Franchise Association in Washington, D.C. to advocate for Black women's suffrage, political rights, expanded access to education and improved employment opportunities and working conditions. The group's tenure is short-lived, perhaps because of the radical nature of Cary's positions (Terborg-Penn, 84) or because she organized before Black women formed their own national organization, with the 1896 founding of the <SearchTag label="National Association of Colored Women (NACW)" tag="blackwomensuffrage_national_association_of_colored_women"/>.</p>
+          <p>Mary Ann Shadd Cary founds the Colored Women's Franchise Association in Washington, D.C. to advocate for Black women's suffrage, political rights, expanded access to education and improved employment opportunities and working conditions. The group's tenure is short-lived, perhaps because of the radical nature of Cary's positions (Terborg-Penn, 84) or because she organized before Black women formed their own national organization, with the 1896 founding of the NACW.</p>
         </div>
       </div>
 

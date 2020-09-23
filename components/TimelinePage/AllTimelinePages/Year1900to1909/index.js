@@ -42,7 +42,7 @@ const Year1900to1909 = () => {
         </div>
         <div className={scss.tile__p}>
           <p>During the annual NAWSA meeting in New Orleans, the organization is criticized by the Times Democrat for using an anti-Black states' rights strategy, in which it turns its back on Black women in order to attract southern support.</p>
-          <p><Link href="/search?q=Sylvanie+Williams"><a>Sylvanie Williams</a></Link> of the Phyllis Wheatley Club of New Orleans calls attention to racial segregation at the NAWSA convention in a letter to Woman's Journal. Williams, who was set to represent NACW, was denied entry. It is believed that one or more NACW members who could pass as white did attend the convention (Terborg-Penn, 92).</p>
+          <p><Link href="/search?q=Sylvanie+Williams"><a>Sylvanie Williams</a></Link> of the Phyllis Wheatley Club of New Orleans calls attention to racial segregation at the NAWSA convention in a letter to Woman's Journal. Williams, who was set to represent <SearchTag label="National Association of Colored Women's Clubs (NACW)" tag="blackwomensuffrage_national_association_of_colored_women"/>, was denied entry. It is believed that one or more NACW members who could pass as white did attend the convention (Terborg-Penn, 92).</p>
         </div>
       </div>
 

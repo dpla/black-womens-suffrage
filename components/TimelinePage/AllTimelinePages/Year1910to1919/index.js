@@ -62,7 +62,7 @@ const Year1910to1919 = () => {
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
-          <p>NACW holds its ninth biennial meeting. At this point, the NACW represents 50,000 Black women in 28 state federations and more than 1,000 local groups.</p>
+          <p><SearchTag label="National Association of Colored Women's Clubs (NACW)" tag="blackwomensuffrage_national_association_of_colored_women"/> holds its ninth biennial meeting. At this point, the NACW represents 50,000 Black women in 28 state federations and more than 1,000 local groups.</p>
         </div>
       </div>
 
