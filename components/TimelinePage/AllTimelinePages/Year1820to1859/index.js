@@ -70,7 +70,7 @@ const Year1820to1859 = () => {
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
-          <p><Link href="/search?q=uncle+tom's+cabin"><a>Uncle Tom’s Cabin</a></Link> by Harriet Beecher Stowe is published.</p>
+          <p><Link href="/search?q=uncle+tom's+cabin"><a><em>Uncle Tom’s Cabin</em></a></Link> by Harriet Beecher Stowe is published.</p>
         </div>
       </div>
 
@@ -101,7 +101,7 @@ const Year1820to1859 = () => {
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
-          <p><SearchTag label="Mary Ann Shadd Cary" tag="blackwomensuffrage_marry_ann_shadd_cary"/> edits <SearchTag label="The Provincial Freeman" tag="blackwomensuffrage_provincial_freeman"/>. She is the first Black woman newspaper editor in North America. In 1854 and 1855, she gives a series of lectures across the U.S. and Canada, advocating for abolition and women’s rights.</p>
+          <p><SearchTag label="Mary Ann Shadd Cary" tag="blackwomensuffrage_marry_ann_shadd_cary"/> edits <SearchTag label={<em>The Provincial Freeman</em>} tag="blackwomensuffrage_provincial_freeman"/>. She is the first Black woman newspaper editor in North America. In 1854 and 1855, she gives a series of lectures across the U.S. and Canada, advocating for abolition and women’s rights.</p>
         </div>
       </div>
 
