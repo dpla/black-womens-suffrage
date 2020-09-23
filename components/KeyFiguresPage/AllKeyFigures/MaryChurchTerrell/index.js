@@ -45,7 +45,7 @@ const MaryChurchTerrell = () => {
       <section>
         <SectionTitle title="Fighting Discrimination and Segregation" />
           <p>After the passage of the 19th Amendment, she continued to advocate for civil rights and and end to racial discrimination, and her activism continued unabated in her later years. In 1940, she published an autobiography detailing her experience with discrimination, <em>A Colored Woman in a White World.</em> During World War II, she spoke out about the injustice of Black soldiers fighting for freedom abroad while being discriminated against at home. She filed a successful discrimination lawsuit against the American Association of University Women after they denied her entry, and became its first Black member in 1948. She challenged segregation in Washington, D.C. using techniques like boycotts, pickets and sit-ins that would become more popular as the civil rights movement wore on. Perhaps most famously, she and other activists filed a lawsuit—when she was in her 80s—challenging segregation in a Washington, D.C., restaurant. This led to a landmark 1953 Supreme Court ruling that outlawed segregation in dining facilities.</p>
-          <p>Terrell died in Maryland in 1954, ending her more than 65-year-long career or activism.</p>
+          <p>Terrell died in Maryland in 1954, ending her more than 65-year-long career of activism.</p>
       </section>
 
       <SearchPrompt figure={maryChurchTerrell} />
