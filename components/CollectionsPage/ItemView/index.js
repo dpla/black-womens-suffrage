@@ -7,7 +7,7 @@ const ItemView = ({ item }) => {
 
   return (
     <section className={scss.item_view}>
-      <section className={scss.item_view__main}>
+      <section className={scss.item_view__main} data-cy="item_view__main">
         <PDFViewer pathToFile={`/api/dpla/pdf/${item.colId}/${item.itemId}`}/>
         <div className={scss.item_view__main_details}>
           <h1>{ item.title.join(": ") }</h1>
