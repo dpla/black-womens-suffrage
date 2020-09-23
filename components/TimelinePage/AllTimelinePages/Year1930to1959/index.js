@@ -1,6 +1,7 @@
 import React from "react"
 import Link from "next/link"
 import scss from "components/TimelinePage/TimelinePage.module.scss"
+import SearchTag from "shared/SearchTag"
 
 const Year1930to1959 = () => {
   return (
@@ -57,7 +58,7 @@ const Year1930to1959 = () => {
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
-          <p>President Harry Truman issues Executive Order 9981, prohibiting racial discrimination in the U.S. military.</p>
+          <p>President Harry Truman issues <Link href='/search?q="Executive+Order+9981"'><a>Executive Order 9981</a></Link>, prohibiting racial discrimination in the U.S. military.</p>
         </div>
       </div>
 
@@ -67,7 +68,7 @@ const Year1930to1959 = () => {
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
-          <p>Charlotta Bass runs for U.S. vice president as the Progressive Party nominee, becoming the first Black woman to run for national office.</p>
+          <p><SearchTag label="Charlotta Bass" tag="blackwomensuffrage_charlotta_bass"/> runs for U.S. vice president as the Progressive Party nominee, becoming the first Black woman to run for national office.</p>
         </div>
       </div>
 
@@ -77,7 +78,7 @@ const Year1930to1959 = () => {
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
-          <p>In Brown v. Board of Education, the Supreme Court reverses Plessy v. Ferguson (1898), ruling that separate is inherently unequal.</p>
+          <p>In <Link href='/search?q="brown+v+board+of+education"'><a>Brown v. Board of Education</a></Link>, the Supreme Court reverses Plessy v. Ferguson (1898), ruling that separate is inherently unequal.</p>
         </div>
       </div>
 
@@ -87,7 +88,7 @@ const Year1930to1959 = () => {
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
-          <p>Montgomery Bus Boycott protesting segregation begins after NAACP activist Rosa Parks refuses to give up her seat on a city bus to a white man.</p>
+          <p><Link href='/search?q="montgomery+bus+boycott"'><a>Montgomery Bus Boycott</a></Link> protesting segregation begins after <SearchTag label="National Association for the Advancement of Colored People (NAACP)" tag="blackwomensuffrage_naacp"/> activist <SearchTag label="Rosa Parks" tag="blackwomensuffrage_rosa_parks"/> refuses to give up her seat on a city bus to a white man.</p>
         </div>
       </div>
 

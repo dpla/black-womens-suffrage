@@ -1,6 +1,7 @@
 import React from "react"
 import Link from "next/link"
 import scss from "components/TimelinePage/TimelinePage.module.scss"
+import SearchTag from "shared/SearchTag"
 
 const Year1870to1889 = () => {
   return (
@@ -17,8 +18,8 @@ const Year1870to1889 = () => {
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
-          <p>The Fifteenth Amendment is passed, giving African-American men the right to vote.</p>
-          <p>Charlotte Rollin is elected secretary of the integrated South Carolina Woman's Rights Association and at that years convention, says, "We ask suffrage not as a favor, not as a privilege, but as a right based on the grounds that we are human beings, and as such entitled to all human rights." According to historian Rosalyn Terborg-Penn, Rollin's speech is the first by an African-American woman other than Sojourner Truth to be preserved by white suffrage leaders in their history of the suffrage movement. (Terborg-Penn, 45)</p>
+          <p>The <SearchTag label="Fifteenth Amendment" tag="blackwomensuffrage_fifteenth_amendment"/> is passed, giving African-American men the right to vote.</p>
+          <p>Charlotte Rollin is elected secretary of the integrated South Carolina Woman's Rights Association and at that years convention, says, "We ask suffrage not as a favor, not as a privilege, but as a right based on the grounds that we are human beings, and as such entitled to all human rights." According to historian Rosalyn Terborg-Penn, Rollin's speech is the first by an African-American woman other than <SearchTag label="Sojourner Truth" tag="blackwomensuffrage_sojourner_truth"/> to be preserved by white suffrage leaders in their history of the suffrage movement. (Terborg-Penn, 45)</p>
         </div>
       </div>
 
@@ -28,7 +29,7 @@ const Year1870to1889 = () => {
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
-          <p>Charlotte Rollin writes in an 1871 article in AWSA's Woman's Journal: "We ask suffrage not as a favor, not as a privilege, but as a right based on the grounds that we are human beings and as such entitled to all human rights."</p>
+          <p>Charlotte Rollin writes in an 1871 article in <SearchTag label="American Woman Suffrage Association (AWSA)" tag="blackwomensuffrage_american_woman_suffrage_association"/>'s Woman's Journal: "We ask suffrage not as a favor, not as a privilege, but as a right based on the grounds that we are human beings and as such entitled to all human rights."</p>
           <p>Charlotte Rollin leads a meeting at the South Carolina state capitol to advocate for women's suffrage.</p>
         </div>
       </div>
@@ -39,7 +40,7 @@ const Year1870to1889 = () => {
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
-          <p>Mary Ann Shadd Cary unsuccessfully attempts to register to vote in Washington, D.C., challenging the language of the Fourteenth and Fifteenth Amendments. Using her legal training, Cary unsuccessfully argues that as a taxpayer in the District of Columbia, she should have the same rights as male taxpayers. (Terborg-Penn, 38,39)</p>
+          <p><SearchTag label="Mary Ann Shadd Cary" tag="blackwomensuffrage_marry_ann_shadd_cary"/> unsuccessfully attempts to register to vote in Washington, D.C., challenging the language of the Fourteenth and Fifteenth Amendments. Using her legal training, Cary unsuccessfully argues that as a taxpayer in the District of Columbia, she should have the same rights as male taxpayers. (Terborg-Penn, 38,39)</p>
         </div>
       </div>
 
@@ -60,8 +61,8 @@ const Year1870to1889 = () => {
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
-          <p>Frances E.W. Harper delivers the closing speech at the AWSA convention in New York City, saying, "much as white women need the ballot, colored women need it more." Harper also called for more intersectional demands like equal rights and equal access to education for Black women, which, according to historian Rosalyn Terborg-Penn, was likely a radical position to take in a single-issue organization like AWSA (Terborg-Penn, 47).</p>
-          <p>Mrs. Beatty attends the inaugural convention of the NWSA-affiliated Oregon State Woman Suffrage Association, showing that Black women were active in the western women's suffrage movement (Terborg-Penn, 50).</p>
+          <p><SearchTag label="Frances E.W. Harper" tag="blackwomensuffrage_frances_ellen_watkins_harper"/> delivers the closing speech at the AWSA convention in New York City, saying, "much as white women need the ballot, colored women need it more." Harper also called for more intersectional demands like equal rights and equal access to education for Black women, which, according to historian Rosalyn Terborg-Penn, was likely a radical position to take in a single-issue organization like AWSA (Terborg-Penn, 47).</p>
+          <p>Mrs. Beatty attends the inaugural convention of the <Link href='/search?q="National+Woman+Suffrage+Association"'><a>National Woman Suffrage Association (NWSA)</a></Link>-affiliated Oregon State Woman Suffrage Association, showing that Black women were active in the western women's suffrage movement (Terborg-Penn, 50).</p>
         </div>
       </div>
 
@@ -71,7 +72,7 @@ const Year1870to1889 = () => {
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
-          <p>The Woman's Christian Temperance Union (WCTU) is founded. Both Black and white women favor temperance because men's drinking led to increased incidents of domestic violence and to men spending the wages their families needed.The temperance and women's suffrage movements become allied, leading the liquor industry to become one of the suffragists' strongest opponents, as they believed that if women could vote, they'd outlaw liquor. Frances E.W. Harper was affiliated with the Philadelphia WCTU in the late 1870s and was appointed the national superintendent of the Department of Work Among Colored People, serving from 1883 to 1890. She was succeeded by Lucy Thurman of Michigan.</p>
+          <p><SearchTag label="The Woman's Christian Temperance Union (WCTU)" tag="blackwomensuffrage_womens_christian_temperance_union"/> is founded. Both Black and white women favor temperance because men's drinking led to increased incidents of domestic violence and to men spending the wages their families needed.The temperance and women's suffrage movements become allied, leading the liquor industry to become one of the suffragists' strongest opponents, as they believed that if women could vote, they'd outlaw liquor. Frances E.W. Harper was affiliated with the Philadelphia WCTU in the late 1870s and was appointed the national superintendent of the Department of Work Among Colored People, serving from 1883 to 1890. She was succeeded by Lucy Thurman of Michigan.</p>
           <p>Mary Ann Shadd Cary addresses the House of Representatives Judiciary Committee, calling out the hypocrisy that although she paid equal taxes to any man in Washington, D.C., she did not have equal rights, as she is not permitted to vote.</p>
         </div>
       </div>
@@ -92,7 +93,7 @@ const Year1870to1889 = () => {
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
-          <p>Frances E.W. Harper addresses the Association for the Advancement of Women (AAW) Woman's Congress. Her talk, entitled, "The Colored Women of America," sets out the issues that would be taken up by Mary Church Terrell and others in the NACW in 1890s (Collier-Thomas, 54).</p>
+          <p>Frances E.W. Harper addresses the <Link href='/search?q="Association+for+the+Advancement+of+Women"'><a>Association for the Advancement of Women (AAW)</a></Link> Woman's Congress. Her talk, entitled, "The Colored Women of America," sets out the issues that would be taken up by <SearchTag label="Mary Church Terrell" tag="blackwomensuffrage_mary_church_terrell"/> and others in the <SearchTag label="National Association of Colored Women's Clubs (NACW)" tag="blackwomensuffrage_national_association_of_colored_women"/> in 1890s (Collier-Thomas, 54).</p>
         </div>
       </div>
 
@@ -102,7 +103,7 @@ const Year1870to1889 = () => {
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
-          <p>The Woman Suffrage amendment, written by Susan B. Anthony, is raised in Congress by California Senator A.A. Sargent. Although it ultimately fails, it includes the language that some 40 years later forms the basis for the 19th Amendment.</p>
+          <p>The Woman Suffrage amendment, written by <Link href="/search?q=susan+b+anthony"><a>Susan B. Anthony</a></Link>, is raised in Congress by California Senator A.A. Sargent. Although it ultimately fails, it includes the language that some 40 years later forms the basis for the 19th Amendment.</p>
           <p>Mary Ann Shadd Cary announces that Black women, determined to win suffrage, "would support whatever party would allow them their rights, be it Republican or Democratic."</p>
         </div>
       </div>
@@ -123,7 +124,7 @@ const Year1870to1889 = () => {
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
-          <p>Mary Ann Shadd Cary founds the Colored Women's Franchise Association in Washington, D.C. to advocate for Black women's suffrage, political rights, expanded access to education and improved employment opportunities and working conditions. The group's tenure is short-lived, perhaps because of the radical nature of Cary's positions (Terborg-Penn, 84) or because she organized before Black women formed their own national organization, with the 1896 founding of the National Association of Colored Women (NACW).</p>
+          <p>Mary Ann Shadd Cary founds the Colored Women's Franchise Association in Washington, D.C. to advocate for Black women's suffrage, political rights, expanded access to education and improved employment opportunities and working conditions. The group's tenure is short-lived, perhaps because of the radical nature of Cary's positions (Terborg-Penn, 84) or because she organized before Black women formed their own national organization, with the 1896 founding of the NACW.</p>
         </div>
       </div>
 
@@ -133,7 +134,7 @@ const Year1870to1889 = () => {
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
-          <p>Gertrude Bustill Mossell writes an article entitled "Woman's Suffrage," in which she calls for readers to become better informed about the history of the suffrage movement and women's rights. The article is reprinted in the New York Freeman in 1885.</p>
+          <p><SearchTag label="Gertrude Bustill Mossell" tag="blackwomensuffrage_gertrude_bustill_mossell"/> writes an article entitled "Woman's Suffrage," in which she calls for readers to become better informed about the history of the suffrage movement and women's rights. The article is reprinted in the New York Freeman in 1885.</p>
         </div>
       </div>
 
