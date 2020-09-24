@@ -2,13 +2,17 @@ import React from "react"
 import Link from "next/link"
 import scss from "./ItemView.module.scss"
 import PDFViewer from "../PDFViewer";
+import CollectionItemPagination from "../CollectionItemPagination"
+import { useRouter } from 'next/router'
 
-const ItemView = ({ item }) => {
-
+const ItemView = ({ item, nextItem, prevItem }) => {
+  const router = useRouter()
+  
   return (
     <section className={scss.item_view}>
       <section className={scss.item_view__main}>
         <PDFViewer pathToFile={`/api/dpla/pdf/${item.colId}/${item.itemId}`}/>
+        <CollectionItemPagination next={nextItem} prev={prevItem} router={router}/>
         <div className={scss.item_view__main_details}>
           <h1>{ item.title.join(": ") }</h1>
           { item.date.length != 0 && <div className={scss.item_view__main_date}>
@@ -52,9 +56,9 @@ const ItemView = ({ item }) => {
           { item.subject.length != 0 && <li>
             <span className={scss.item_view__label}>Subject: </span>
             <span className={scss.item_view__value}>
-              { item.subject.map((subject) => {
+              { item.subject.map((subject, index) => {
                 return(
-                  <p>{ subject }</p>
+                  <p key={subject}>{ subject }</p>
                 )
              })}
             </span>
@@ -79,7 +83,7 @@ const ItemView = ({ item }) => {
             <span className={scss.item_view__value}>
              { item.identifier.map((id) => {
                 return(
-                  <a href={ id }>
+                  <a key={id} href={ id }>
                     { id }
                   </a>
                 )
@@ -91,7 +95,7 @@ const ItemView = ({ item }) => {
             <span className={scss.item_view__value}>
             { item.rights.map((rights) => {
                 return(
-                  <a href={ rights }>
+                  <a key={rights} href={ rights }>
                     { rights }
                   </a>
                 )

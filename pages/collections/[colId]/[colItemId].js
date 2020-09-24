@@ -84,6 +84,10 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params }) {
   const items = getItems(params.colId);
   const item = items[params.colItemId];
+  const itemIds = Object.keys(items)
+  const currentIndex = itemIds.indexOf(params.colItemId)
+  const nextItem = itemIds[currentIndex + 1]
+  // const prevItem = itemIds[currentIndex - 1]
 
   item.colId = params.colId;
   item.colName = collections[params.colId]["name"]
@@ -91,7 +95,9 @@ export async function getStaticProps({ params }) {
 
   return {
     props: {
-      item: item
+      item: item,
+      nextItem: nextItem,
+      // prevItem: prevItem
     }
   }
 }
