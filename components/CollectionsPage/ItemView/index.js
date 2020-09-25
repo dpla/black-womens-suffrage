@@ -5,13 +5,22 @@ import PDFViewer from "../PDFViewer";
 import CollectionItemPagination from "../CollectionItemPagination"
 import { useRouter } from 'next/router'
 
-const ItemView = ({ item, next, prev }) => {
+const ItemView = ({ item, next, prev, amountOfItems, currentItemNumber }) => {
   const router = useRouter()
   return (
     <section className={scss.item_view}>
       <section className={scss.item_view__main}>
-        <PDFViewer pathToFile={`/api/dpla/pdf/${item.colId}/${item.itemId}`}/>
-        <CollectionItemPagination next={next} prev={prev} router={router} collection={item.colId}/>
+        <div className={scss.item_view__main_pdf}>
+          <PDFViewer pathToFile={`/api/dpla/pdf/${item.colId}/${item.itemId}`}/>
+          <CollectionItemPagination 
+            next={next} 
+            prev={prev} 
+            router={router} 
+            collection={item.colId} 
+            amountOfItems={amountOfItems} 
+            currentItemNumber={currentItemNumber}
+          />
+        </div>
         <div className={scss.item_view__main_details}>
           <h1>{ item.title.join(": ") }</h1>
           { item.date.length != 0 && <div className={scss.item_view__main_date}>

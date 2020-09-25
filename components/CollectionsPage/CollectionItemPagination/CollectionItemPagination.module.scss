@@ -1,12 +1,17 @@
-.iconButton {
-  color: white;
-  background: purple;
-  border-radius: 50%;
-  border: none;
-  height: 3.75rem;
-  width: 3.75rem;
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  & img {
-    // padding-left: 1rem;
+  .button__prev {
+    transform: rotate(180deg);
+  }
+  .iconButton {
+    // border: none;
+    height: 3.75rem;
+    width: 3.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
