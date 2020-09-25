@@ -18,16 +18,14 @@ class CollectionItemPagination extends React.Component {
   }
 
   handleChange = (event) => {
-    // console.log('hi')
-    console.log(event.target.value)
-    // event.target.value === 'next' ? console.log('true') : console.log('nope')
-    // event.target.value === 'next' ?? this.props.router.push(`/collections/${this.props.next}`)
+    const { value } = event.target
+    value === 'next' ? this.props.router.push(`/collections/${this.props.collection}/${this.props.next}`) : this.props.router.push(`/collections/${this.props.collection}/${this.props.prev}`)
   }
 
   render() {
     return (
       <>
-        <button value="prev" onClick={(e) => {this.handleChange(e)}} className={scss.iconButton}>
+        <button value="prev" onClick={this.handleChange} className={scss.iconButton}>
           <img src="/static/icon/carousel/corousel-arrow-left.png"/>
         </button>
         <button value="next" onClick={this.handleChange} className={scss.iconButton}>

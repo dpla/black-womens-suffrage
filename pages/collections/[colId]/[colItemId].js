@@ -8,7 +8,7 @@ import { collections } from "constants/collections"
 import BWSHead from "components/BWSHead"
 import BreadcrumbsModule from "components/CollectionsPage/BreadcrumbsModule"
 
-function CollectionItem({ item }) {
+function CollectionItem({ item, nextItem, prevItem }) {
   return (
       <MainLayout 
         className="main" 
@@ -36,7 +36,7 @@ function CollectionItem({ item }) {
               }
             ]}
           />
-        <ItemView item={ item } />
+        <ItemView item={ item } next={nextItem} prev={prevItem}/>
       </MainLayout>
   );
 }
@@ -87,7 +87,7 @@ export async function getStaticProps({ params }) {
   const itemIds = Object.keys(items)
   const currentIndex = itemIds.indexOf(params.colItemId)
   const nextItem = itemIds[currentIndex + 1]
-  // const prevItem = itemIds[currentIndex - 1]
+  const prevItem = currentIndex == 0 ? null : itemIds[currentIndex - 1]
 
   item.colId = params.colId;
   item.colName = collections[params.colId]["name"]
@@ -97,7 +97,7 @@ export async function getStaticProps({ params }) {
     props: {
       item: item,
       nextItem: nextItem,
-      // prevItem: prevItem
+      prevItem: prevItem
     }
   }
 }
