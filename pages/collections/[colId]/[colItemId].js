@@ -92,8 +92,8 @@ export async function getStaticProps({ params }) {
     item = items[params.colItemId],
     itemIds = Object.keys(items),
     currentIndex = itemIds.indexOf(params.colItemId),
-    nextItem = itemIds[currentIndex + 1],
-    prevItem = currentIndex == 0 ? null : itemIds[currentIndex - 1],
+    nextItem = currentIndex == itemIds.length - 1 ? itemIds[0] : itemIds[currentIndex + 1],
+    prevItem = currentIndex == 0 ? itemIds[itemIds.length - 1] : itemIds[currentIndex - 1],
     amountOfItems = itemIds.length;
 
   item.colId = params.colId;

@@ -5,13 +5,17 @@
 
   .button__prev {
     transform: rotate(180deg);
-  }
+    background: url("/static/dpla-icons/chevron-thick-black.svg") no-repeat;
+    background-position: center;
+}
+
+  .button__next {
+    background: url("/static/dpla-icons/chevron-thick-black.svg") no-repeat;
+    background-position: center;
+}
+  
   .iconButton {
-    // border: none;
     height: 3.75rem;
     width: 3.75rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 }
