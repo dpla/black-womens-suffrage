@@ -8,43 +8,49 @@ import { collections } from "constants/collections"
 import BWSHead from "components/BWSHead"
 import BreadcrumbsModule from "components/CollectionsPage/BreadcrumbsModule"
 
-function CollectionItem({ item }) {
+function CollectionItem({ item, nextItem, prevItem, amountOfItems, currentItemNumber }) {
   return (
-      <MainLayout 
-        className="main" 
-        role="main"
-      >
-        <BWSHead 
-          pageTitle={`${item.title} | DPLA`}
-          pageDescription={item.description}
-          pageImage={`/static/thumbnails/ibw/${item.itemId}.jpg`}
-          pageImageCaption={item.title}
-        />
-        <BreadcrumbsModule
-            breadcrumbs={[
-              {
-                title: "Collections",
-                url: "/collections"
-              },
-              { 
-                title: item.colName,
-                url: "/collections/[colId]",
-                as: "/collections/" + item.colId
-              },
-              {
-                title: item.title.join(", ")
-              }
-            ]}
-          />
-        <ItemView item={ item } />
-      </MainLayout>
+    <MainLayout
+      className="main"
+      role="main"
+    >
+      <BWSHead
+        pageTitle={`${item.title} | DPLA`}
+        pageDescription={item.description}
+        pageImage={`/static/thumbnails/ibw/${item.itemId}.jpg`}
+        pageImageCaption={item.title}
+      />
+      <BreadcrumbsModule
+        breadcrumbs={[
+          {
+            title: "Collections",
+            url: "/collections"
+          },
+          {
+            title: item.colName,
+            url: "/collections/[colId]",
+            as: "/collections/" + item.colId
+          },
+          {
+            title: item.title.join(", ")
+          }
+        ]}
+      />
+      <ItemView 
+        item={item} 
+        next={nextItem} 
+        prev={prevItem} 
+        amountOfItems={amountOfItems} 
+        currentItemNumber={currentItemNumber}
+      />
+    </MainLayout>
   );
 }
 
 // File containing items is expected in constants/[colId].js
 function getItems(colId) {
   const directory = path.join(process.cwd(), 'constants');
-  const fileName = `${ colId }.js`;
+  const fileName = `${colId}.js`;
   const filePath = path.join(directory, fileName);
   let json = {};
   try {
@@ -82,8 +88,13 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const items = getItems(params.colId);
-  const item = items[params.colItemId];
+  const items = getItems(params.colId),
+    item = items[params.colItemId],
+    itemIds = Object.keys(items),
+    currentIndex = itemIds.indexOf(params.colItemId),
+    nextItem = currentIndex == itemIds.length - 1 ? itemIds[0] : itemIds[currentIndex + 1],
+    prevItem = currentIndex == 0 ? itemIds[itemIds.length - 1] : itemIds[currentIndex - 1],
+    amountOfItems = itemIds.length;
 
   item.colId = params.colId;
   item.colName = collections[params.colId]["name"]
@@ -91,7 +102,11 @@ export async function getStaticProps({ params }) {
 
   return {
     props: {
-      item: item
+      item: item,
+      nextItem: nextItem,
+      prevItem: prevItem,
+      amountOfItems: amountOfItems,
+      currentItemNumber: currentIndex + 1
     }
   }
 }
