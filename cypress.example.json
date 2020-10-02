@@ -1,0 +1,6 @@
+{
+  "baseUrl": "http://localhost:XXXX",
+  "SITE_ENV": "local",
+  "projectId": "xxxxxx",
+  "ignoreTestFiles": "**/examples/*.spec.js"
+}

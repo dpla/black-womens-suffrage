@@ -46,8 +46,8 @@ function TimelinePage({ timeId }) {
           value={timeId} 
           className={scss.timeline__dropdown} />
 
-        <div className={scss.timeline__left}>
-          <ul>
+        <nav className={scss.timeline__left}>
+          <ul data-cy="timeline__left">
             {timelineOptions.map((years, index) => {
               return (
                 <li 
@@ -66,7 +66,7 @@ function TimelinePage({ timeId }) {
               )
             })}
           </ul>
-        </div>
+        </nav>
         <div className={scss.timeline__right}>
           <DynamicComponent />
           <TimelinePagination prevTime={ prevTime } nextTime={ nextTime } />

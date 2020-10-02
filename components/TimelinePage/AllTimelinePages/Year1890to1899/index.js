@@ -6,7 +6,7 @@ import SearchTag from "shared/SearchTag"
 const Year1890to1899 = () => {
   return (
     <>
-      <div className={scss.timeline__title}>
+      <div className={scss.timeline__title} data-cy="timeline__title">
         <div className={scss.timeline__title_background}></div>
         <h1>1890-1899</h1>
         <div className={scss.timeline__title_line}></div>

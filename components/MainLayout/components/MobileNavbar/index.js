@@ -33,25 +33,25 @@ class MobileNavbar extends Component {
     const menuAlt = this.getMenuAlt()
 
     return (
-      <nav className={scss.navbar}>
+      <nav className={scss.navbar} data-cy="navbar__mobile">
         {/* logo and mobile menu icon*/}
-        <div className={scss.navbar__graphic}>
+        <div className={scss.navbar__graphic}data-cy="nav__logo_mobile">
           <Link href="/">
             <a>
               <img src="/static/mobile/logo/dpla_bws-logo-color-nav-mobile.png" alt="Black Women's Suffrage Logo"/>
             </a>
           </Link>
 
-          <button onClick={this.showMenu} name="menuDisplayed">
+          <button onClick={this.showMenu} name="menuDisplayed" data-cy="menuDisplayed">
             <img src={menuIcon} id={scss.menuIcon} alt={menuAlt}/>
           </button>
         </div>
 
         {/* nav links */}
         {this.state.menuDisplayed &&
-          <>
+          <div>
             <MobileSearchBar />
-            <div className={scss.navbar__links}>
+            <div className={scss.navbar__links} data-cy="nav__links_mobile">
               <Link href="/about">
                 <a>About</a>
               </Link>
@@ -82,7 +82,7 @@ class MobileNavbar extends Component {
               </div>
 
             </div>
-          </>
+          </div>
         }
       </nav>
     )

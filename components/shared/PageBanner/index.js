@@ -8,7 +8,7 @@ const PageBanner = ({
 }) => {
   return (
     <>
-      <section className={scss.banner}>
+      <section className={scss.banner} data-cy="banner">
         <div className={scss.banner_left__div}>
           <h6>{title}</h6>
           <p>{text}</p>

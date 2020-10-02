@@ -6,7 +6,7 @@ import Link from "next/link";
 const Year1820to1859 = () => {
   return (
     <>
-      <div className={scss.timeline__title}>
+      <div className={scss.timeline__title} data-cy="timeline__title">
         <div className={scss.timeline__title_background}></div>
         <h1>1820-1859</h1>
         <div className={scss.timeline__title_line}></div>
