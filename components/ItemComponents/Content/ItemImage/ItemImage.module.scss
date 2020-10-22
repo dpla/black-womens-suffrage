@@ -16,7 +16,7 @@
   }
 
   @media ($sm-viewport) {
-    max-width: 20rem;
+    // max-width: 20rem;
   }
 }
 
@@ -31,5 +31,14 @@
 
 .image {
   height: 100%;
+  max-height: 350px;
   border-radius: .5em;
+
+  @media ($md-viewport){
+    max-height: 400px;
+  }
+
+  @media ($lg-viewport){
+    max-height: 600px;
+  }
 }
