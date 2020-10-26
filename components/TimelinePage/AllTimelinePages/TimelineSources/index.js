@@ -24,7 +24,7 @@ const TimelineSources = () => {
             <a href="https://www.nps.gov/articles/african-american-women-and-the-nineteenth-amendment.htm">African American Women and the Nineteenth Amendment</a>
           </li>
           <li>
-            <a href="https://www.americanbar.org/groups/public_education/Programs/19th-amendment-centennial/toolkit/women-s-suffrage-timeline/">Women's Suffrage Timeline</a>
+            <a href="https://www.americanbar.org/groups/public_education/programs/19th-amendment-centennial/toolkit/women-s-suffrage-timeline/">Women's Suffrage Timeline</a>
           </li>
           <li>
             <a href="https://www.senate.gov/artandhistory/history/People/Women/Nineteenth_Amendment_Vertical_Timeline.htm">Timeline: The Senate and the 19th Amendment</a>
