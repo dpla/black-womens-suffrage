@@ -960,7 +960,7 @@
     "href" : "https://dpla-bws.s3-website-us-east-1.amazonaws.com/IBW-20200818/ibwells-0010-004-04.pdf"
   },
   "ibwells-0008-009-04" : {
-    "title" : [ "Letter, Ida B. Wells to Charles W. Chesnutt, June 4, 2010" ],
+    "title" : [ "Letter, Ida B. Wells to Charles W. Chesnutt, June 4, 1910" ],
     "creator" : [ "Wells-Barnett, Ida B., 1862-1931" ],
     "subject" : [ "Wells-Barnett, Ida B., 1862-1931", "African American women civil rights workers", "Chesnutt, Charles W, (Charles Waddell), 1858-1932" ],
     "isPartOf" : [ "Ida B. Wells. Papers" ],
