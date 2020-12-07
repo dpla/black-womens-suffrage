@@ -122,7 +122,7 @@ Search.getInitialProps = async context => {
     const currentUrl = getCurrentUrl(context.req);
 
     const q = query.q
-        ? encodeURIComponent(query.q)
+        ? encodeURIComponent(query.q.trim())
             .replace(/'/g, "%27")
             .replace(/"/g, "%22")
         : "";
