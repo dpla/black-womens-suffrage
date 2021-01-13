@@ -57,9 +57,7 @@ export async function getStaticProps({ params }) {
   const items = Object.keys(json).map((key) => {
     const title = json[key]["title"].join(": ");
     const creator = json[key]["creator"].join("; ");
-
-    // figure out why there's an issue with the description
-    const description = json[key]["description"] == undefined ?? '';
+    const description = json[key]["description"];
     const date = json[key]["date"].join(": ");
 
     let thumbPath;
