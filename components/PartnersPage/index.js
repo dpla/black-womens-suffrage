@@ -149,7 +149,7 @@ function PartnersPage() {
 
         <section className={scss.partners__section_6}>
           <div>
-            <p>For more information about this work, please contact DPLA Director of Community Engagement Shaneé Yvette Murrain at <TextOfflink url="mailto:shanee@dp.la" text="shanee@dp.la" /></p>
+            <p>For more information about this work, please contact DPLA community manager Shaneé Yvette Murrain at <TextOfflink url="mailto:shanee@dp.la" text="shanee@dp.la" /></p>
           </div>
         </section>
 

@@ -48,26 +48,20 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const constantFile = `${params.colId}.js`
-  const directory = path.join(process.cwd(), 'constants');
-  const filePath = path.join(directory, constantFile);
+
+  const ibwDirectory = path.join(process.cwd(), 'constants');
+  const filePath = path.join(ibwDirectory, 'ida-b-wells.js');
   const itemsString = fs.readFileSync(filePath, 'utf8');
   const json = JSON.parse(itemsString);
 
   const items = Object.keys(json).map((key) => {
+
     const title = json[key]["title"].join(": ");
     const creator = json[key]["creator"].join("; ");
-    const description = json[key]["description"];
+    const description = json[key]["description"].join(" ");
     const date = json[key]["date"].join(": ");
 
-    let thumbPath;
-
-    if (params.colId == 'ida-b-wells') {
-      thumbPath = 'ibw'
-    } else if (params.colId == 'charlotta-bass') {
-      thumbPath = 'cb'
-    }
-    const thumb = `/static/thumbnails/${thumbPath}/${key}.jpg`;
+    const thumb = "/static/thumbnails/ibw/" + key + ".jpg";
 
     return {
       colItemId: key,

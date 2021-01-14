@@ -137,7 +137,7 @@ const HomePage = () => {
       </section>
 
       <SponsorPreFooter
-        text="This collection is made possible through funding from "
+        text="The grant for this collection is made possible through funding from "
         sponsor="Pivotal Ventures, A Melinda Gates Company."
         sponsorLink="https://www.pivotalventures.org/"
         buttonText="SEARCH THE COLLECTION"
