@@ -3191,7 +3191,7 @@
     "language": [],
     "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Press-Release_1952-10-16.pdf"
   },
-  "DPLA_Bass-Progressive- Party-Platform_1952": {
+  "DPLA_Bass-Progressive-Party-Platform_1952": {
     "title": [
       "Bass Answers to Questions About the Progressive Party Platform"
     ],
