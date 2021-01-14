@@ -30,16 +30,12 @@
     "description": [
       "Speech by Charlotta Bass, accepting the nomination as the U.S. Vice Presidential Candidate for the Progressive Party in Chicago, Illinois, dated March 30, 1952. Transcript available."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Acceptance-Speech_1952-03-30.pdf"
   },
   "DPLA_Bass-Acceptance-Speech_1952-07-04": {
     "title": [
@@ -72,16 +68,12 @@
     "description": [
       "Acceptance speech by Charlotta Bass, U.S. Vice Presidential Candidate, Progressive Party, at the Progressive Party Convention, Chicago, Illinois, for radio broadcast, dated July 4–6, 1952. Transcript available."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Acceptance-Speech_1952-07-04.pdf"
   },
   "DPLA_Bass-Acceptance-Speech_1952-09-06": {
     "title": [
@@ -114,16 +106,12 @@
     "description": [
       "Speech by Charlotta Bass, accepting the nomination as the U.S. Vice Presidential Candidate for the Progressive Party, dated September 6, 1952."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Acceptance-Speech_1952-09-06.pdf"
   },
   "DPLA_Bass-Acceptance-Speech-Draft_1952": {
     "title": [
@@ -156,16 +144,12 @@
     "description": [
       "Draft of speech by Charlotta Bass in 1952, accepting the nomination as the U.S. Vice Presidential Candidate for the Progressive Party with handwritten edits. Transcript available."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Acceptance-Speech-Draft_1952.pdf"
   },
   "DPLA_Bass-Acceptance-Speech-Fragment_1952": {
     "title": [
@@ -198,16 +182,12 @@
     "description": [
       "Fragment of speech by by Charlotta Bass in 1952, accepting the nomination as the U.S. Vice Presidential Candidate for the Progressive Party."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Acceptance-Speech-Fragment_1952.pdf"
   },
   "DPLA_Bass-Address_1952-08-08": {
     "title": [
@@ -240,16 +220,12 @@
     "description": [
       "Statement by Charlotta Bass, U.S. Vice Presidential Candidate, Progressive Party, at a press conference in the Hollenden Hotel, dated August 8, 1952."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Address_1952-08-08.pdf"
   },
   "DPLA_Bass-Address_1952-10-27": {
     "title": [
@@ -282,16 +258,12 @@
     "description": [
       "Address by Charlotta Bass, U.S. Vice Presidential Candidate, Progressive Party, at an American Labor Party Rally in Madison Square Garden in the closing days of the campaign, dated October 27, 1952. "
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Address_1952-10-27.pdf"
   },
   "DPLA_Bass-American-Democracy_1945": {
     "title": [
@@ -324,16 +296,12 @@
     "description": [
       "Fragment of a speech by Charlotta Bass in 1945 that calls for an examination into the weaknesses of American democracy."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-American-Democracy_1945.pdf"
   },
   "DPLA_Bass-Anti-Poll-Tax_1949": {
     "title": [
@@ -366,16 +334,12 @@
     "description": [
       "Content intended for use by media, particularly by the Negro Press on H.R. 7, an anti-poll tax bill introduced in 1949 for the purpose of ensuring that all Americans have access to a free ballot."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Anti-Poll-Tax_1949.pdf"
   },
   "DPLA_Bass-Armed-Forces-Jim-Crow_1945-03-18": {
     "title": [
@@ -408,16 +372,12 @@
     "description": [
       "Includes a press release on Congressman Adam Clayton Powell's bill to abolish Jim Crow segregation in the U.S. Armed Forces, dated March 18, 1945."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Armed-Forces-Jim-Crow_1945-03-18.pdf"
   },
   "DPLA_Bass-Baptist-Church-Speech_1952": {
     "title": [
@@ -450,16 +410,12 @@
     "description": [
       "Speech by Charlotta Bass to the Second Baptist Church in Los Angeles in 1952 on her nomination for U.S. Vice President on the Progressive Party ticket, with handwritten edits."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Baptist-Church-Speech_1952.pdf"
   },
   "DPLA_Bass-Baptist-Church-Speech-Fragment_1952": {
     "title": [
@@ -492,16 +448,12 @@
     "description": [
       "Fragment of draft speech by Charlotta Bass in 1952 on her nomination for U.S. Vice President on the Progressive Party ticket."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Baptist-Church-Speech-Fragment_1952.pdf"
   },
   "DPLA_Bass-Broadcast_1952-09-29": {
     "title": [
@@ -534,16 +486,12 @@
     "description": [
       "First and last pages of a radio broadcast script by Charlotta Bass, U.S. Vice Presidential Candidate, Progressive Party, on her nomination, dated September 29, 1952."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Broadcast_1952-09-29.pdf"
   },
   "DPLA_Bass-Brooklyn_1952-04-18": {
     "title": [
@@ -576,16 +524,12 @@
     "description": [
       "Draft speech by Charlotta Bass, U.S. Vice Presidential Candidate, Progressive Party, at an American Labor Party Dinner in Brooklyn on why she is in this fight, dated April 18, 1952. Transcript available."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Brooklyn_1952-04-18.pdf"
   },
   "DPLA_Bass-Buckley-Bill_1947": {
     "title": [
@@ -618,16 +562,12 @@
     "description": [
       "Fact sheet in 1947 outlining the Buckley Bill, with background on anti-semitism as a political weapon, and perspectives from community groups and organized labor."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Buckley-Bill_1947.pdf"
   },
   "DPLA_Bass-Business-Card_1952": {
     "title": [
@@ -660,16 +600,12 @@
     "description": [
       "Business card for Charlotta Bass as Progressive Party U.S. Vice Presidential Candidate, including contact information and key tenets of the 1952 Progressive Party platform."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Business-Card_1952.pdf"
   },
   "DPLA_Bass-California-Hallinan-Bass_1952": {
     "title": [
@@ -702,16 +638,12 @@
     "description": [
       "Promotional coaster for the Progressive Party's 1952 ticket of Vince Hallinan and Charlotta Bass, with handwritten note."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-California-Hallinan-Bass_1952.pdf"
   },
   "DPLA_Bass-Campaign-Platform_1945": {
     "title": [
@@ -744,16 +676,12 @@
     "description": [
       "Fragment of a speech that outlines Charlotta Bass's campaign platform for Los Angeles City Council, District 7, in 1945 including jobs and housing. Starts on page 2. "
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Campaign-Platform_1945.pdf"
   },
   "DPLA_Bass-Candidate-Positions_1952": {
     "title": [
@@ -786,16 +714,12 @@
     "description": [
       "Speech by Charlotta Bass, U.S. Vice Presidential Candidate, Progressive Party, in 1952  on the civil rights positions of the Republican and Democrat Party candidates for the Presidency. Starts on page 2."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Candidate-Positions_1952.pdf"
   },
   "DPLA_Bass-CBB-Report_1952": {
     "title": [
@@ -828,16 +752,12 @@
     "description": [
       "Draft of report by Charlotta Bass in 1952 on the Progressive Party's efforts to form a peace coalition and the war politics of the Democrat and Republican parties, with handwritten notes."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-CBB-Report_1952.pdf"
   },
   "DPLA_Bass-Civil-Rights_1952": {
     "title": [
@@ -870,16 +790,12 @@
     "description": [
       "Fragment of a speech by Charlotta Bass, Vice Presidential Candidate, Progressive Party, in Harlem in 1952, discussing concerns about civil rights. Transcript available."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Civil-Rights_1952.pdf"
   },
   "DPLA_Bass-Congressman-Marcantonio_1952-05-13": {
     "title": [
@@ -912,16 +828,12 @@
     "description": [
       "Advance text of an address by former Congressman Vito Marcantonio, State Chairman, at Madison Square Garden Rally on the disintegration of the Democratic Party, dated May 13, 1952."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Congressman-Marcantonio_1952-05-13.pdf"
   },
   "DPLA_Bass-Date-Book_1952": {
     "title": [
@@ -954,16 +866,12 @@
     "description": [
       "Typed date book listing scheduled stops, appointments, and events for Charlotta Bass during her run as the Progressive Party's candidate for U.S. Vice President in 1952."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Date-Book_1952.pdf"
   },
   "DPLA_Bass-Defeat-Facism_1952": {
     "title": [
@@ -996,16 +904,12 @@
     "description": [
       "Fragment of a speech by Charlotta Bass in 1952 on defeating facism."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Defeat-Facism_1952.pdf"
   },
   "DPLA_Bass-Discrimination-Armed-Services_00": {
     "title": [
@@ -1038,16 +942,12 @@
     "description": [
       "Fragment with responses by Senators Russell and Douglas on discrimination in the armed services."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Discrimination-Armed-Services_00.pdf"
   },
   "DPLA_Bass-Don’t-Fence-Me-In_1945": {
     "title": [
@@ -1080,16 +980,12 @@
     "description": [
       "Platform of Charlotta Bass's Campaign for Los Angeles City Council, District 7, in 1945 including illustrated highlights of achievements and Don't Fence Me In poster."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Don’t-Fence-Me-In_1945.pdf"
   },
   "DPLA_Bass-Donors_1945-02-24": {
     "title": [
@@ -1122,16 +1018,12 @@
     "description": [
       "Lists names of donors, including Paul Robeson, and amount donated, to Charlotta Bass's Campaign for Los Angeles City Council, District 7, dated February 24, 1945."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Donors_1945-02-24.pdf"
   },
   "DPLA_Bass-Education-Bill_1948": {
     "title": [
@@ -1164,16 +1056,12 @@
     "description": [
       "Article by Charlotta Bass in 1948 outlining the deficiencies in spending for public education, particularly in the Southern states and for Black children, and supporting a bill pending in Congress, the Taft-McCowan federal education bill."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Education-Bill_1948.pdf"
   },
   "DPLA_Bass-Election-Certificate_1938-08-30": {
     "title": [
@@ -1206,16 +1094,12 @@
     "description": [
       "Certificate of Election certifying that Charlotta Bass was elected a member of the County Central Committee of the Republican Party as a representative of the 62nd Assembly District at the Primary Election dated August 30, 1938."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Election-Certificate_1938-08-30.pdf"
   },
   "DPLA_Bass-Election-Returns_1950": {
     "title": [
@@ -1248,16 +1132,12 @@
     "description": [
       "Election return tallies by precinct for 1950 Congressional Election, 14th Congressional District, with Charlotta Bass in the running."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Election-Returns_1950.pdf"
   },
   "DPLA_Bass-Ellis-Spears_1943-05-19": {
     "title": [
@@ -1290,16 +1170,12 @@
     "description": [
       "Letter sent from Sgt. Ellis E. Spears, stationed at Camp Van Dorn, in Mississippi, to his aunt, Charlotta Bass, about his terrible experiences as a Colored Noncommissioned Officer, dated May 15, 1943."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Ellis-Spears_1943-05-19.pdf"
   },
   "DPLA_Bass-Event_1952-09-25": {
     "title": [
@@ -1332,16 +1208,12 @@
     "description": [
       "Flyer promoting an appearance by Charlotta Bass, U.S. Vice Presidential Candidate, Progressive Party, at an event in South Los Angeles, dated September 25, 1952."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Event_1952-09-25.pdf"
   },
   "DPLA_Bass-Event-Program_1945": {
     "title": [
@@ -1374,16 +1246,12 @@
     "description": [
       "Program outlining the activities of a fundraising event for Charlotta Bass's Campaign Fund for Los Angeles City Council, District 7, in 1945."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Event-Program_1945.pdf"
   },
   "DPLA_Bass-Finance-Agenda_1945": {
     "title": [
@@ -1416,16 +1284,12 @@
     "description": [
       "Meeting agenda from the Finance Committee for Charlotta Bass's Campaign for Los Angeles City Council, District 7, in 1945 including names of committee members, immediate cash needs, other business items, and campaign theme."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Finance-Agenda_1945.pdf"
   },
   "DPLA_Bass-Finance-Budget_1945": {
     "title": [
@@ -1458,16 +1322,12 @@
     "description": [
       "Handwritten budget for Charlotta Bass's Campaign for Los Angeles City Council, District 7, in 1945 listing expenses such as rent, telephone, and publicity."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Finance-Budget_1945.pdf"
   },
   "DPLA_Bass-Finance-Meeting_1945-02-09": {
     "title": [
@@ -1500,16 +1360,12 @@
     "description": [
       "Meeting minutes from the Finance Committee for Charlotta Bass's Campaign for Los Angeles City Council, District 7, outlining projects to raise funds for the campaign, dated February 9, 1945."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Finance-Meeting_1945-02-09.pdf"
   },
   "DPLA_Bass-Finance-Meeting_1945-02-15": {
     "title": [
@@ -1542,16 +1398,12 @@
     "description": [
       "Meeting minutes from the Finance Committee for Charlotta Bass's Campaign for Los Angeles City Council, District 7, outlining progess on projects to raise funds for the campaign, dated February 15, 1945."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Finance-Meeting_1945-02-15.pdf"
   },
   "DPLA_Bass-Finance-Meeting_1945-02-20": {
     "title": [
@@ -1584,16 +1436,12 @@
     "description": [
       "Meeting minutes from the Finance Committee for Charlotta Bass's Campaign for Los Angeles City Council, District 7, outlining current financial status and progess on projects to raise funds for the campaign, date February 20, 1945."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Finance-Meeting_1945-02-20.pdf"
   },
   "DPLA_Bass-Finance-Meeting_1945-03-12": {
     "title": [
@@ -1626,16 +1474,12 @@
     "description": [
       "Meeting minutes from the Finance Committee for Charlotta Bass's Campaign for Los Angeles City Council, District 7, including a financial report, dated March 12, 1945."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Finance-Meeting_1945-03-12.pdf"
   },
   "DPLA_Bass-Finance-Note_1945-02-24": {
     "title": [
@@ -1668,16 +1512,12 @@
     "description": [
       "Handwritten note on celebrity fundraiser featuring Billie Eckstine and Billie Holiday at the Plantation Club, for Charlotta Bass's Campaign Fund for Los Angeles City Council, District 7, dated February 24, 1945. Text: Billie Eckstine and his orchestra with Billie Holiday, Esquire Award Dinner, Planation Club, 108 and Central Ave. Admission $1.05 [illegible]. 408 1/2 E. 20 Maple [illegible]. Rex Ingrain presents Billie Eckstine and Billie Holiday with a Gala floor show for Chalotta Bass's Campaign Fund, City Council 7th Dist. Plantation Club 108 and Central Ave. Admission $1.25 Tax inc."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Finance-Note_1945-02-24.pdf"
   },
   "DPLA_Bass-Finance-Projects_1945-02-09": {
     "title": [
@@ -1710,16 +1550,12 @@
     "description": [
       "Outline of potential fundraising projects for Charlotta Bass's Campaign Fund for Los Angeles City Council, District 7, dated February 9, 1945."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Finance-Projects_1945-02-09.pdf"
   },
   "DPLA_Bass-Fund-Pledges_1945-02-12": {
     "title": [
@@ -1752,16 +1588,12 @@
     "description": [
       "Lists names of those making pledges to Charlotta Bass's Campaign for Los Angeles City Council, District 7, at the dinner at the Villa Arlington on February 7, 1945, and amount pledged, with handwritten notes; dated February 12, 1945."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Fund-Pledges_1945-02-12.pdf"
   },
   "DPLA_Bass-Gov-Warren_1945-11-06": {
     "title": [
@@ -1794,16 +1626,12 @@
     "description": [
       "Letter to the governor of California outlining complaints in practices of the California Board of Cosmetology by a member of the Board, dated November 6, 1945."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Gov-Warren_1945-11-06.pdf"
   },
   "DPLA_Bass-Harriette-Moore-Case_1952": {
     "title": [
@@ -1836,16 +1664,12 @@
     "description": [
       "Fragment of a response by Charlotta Bass in 1952 to a question about a meeting between the governor of Florida and a delegation demanding a response  to the murder of Harriette Moore, wife of a Florida NAACP official."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Harriette-Moore-Case_1952.pdf"
   },
   "DPLA_Bass-Harriette-Moore-Speech_1952": {
     "title": [
@@ -1878,16 +1702,12 @@
     "description": [
       "Speech by Charlotta Bass at a meeting in New York in 1952, reporting on a delegation she was part of demanding a response to the murder of Harriette Moore, wife of a NAACP official in Florida. Transcript available."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Harriette-Moore-Speech_1952.pdf"
   },
   "DPLA_Bass-Housing_1945": {
     "title": [
@@ -1920,16 +1740,12 @@
     "description": [
       "Fragment of a speech that outlines Charlotta Bass's campaign platform position on housing, in her run for Los Angeles City Council, District 7, in 1945."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Housing_1945.pdf"
   },
   "DPLA_Bass-James-Roosevelt_1940": {
     "title": [
@@ -1962,16 +1778,12 @@
     "description": [
       "Speech by James Roosevelt, a Democratic Party official and grandson of Franklin D. Roosevelt, in the 1940s on supporting the Democratic Party in Southern California."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-James-Roosevelt_1940.pdf"
   },
   "DPLA_Bass-Jewish-Cultural-Club_1952": {
     "title": [
@@ -2004,16 +1816,12 @@
     "description": [
       "Speech by Charlotta Bass in 1952 to the Westside Jewish Cultural Club on the international struggle against racial bias and the role played by Black people."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Jewish-Cultural-Club_1952.pdf"
   },
   "DPLA_Bass-Jobs-Discrimination_1940": {
     "title": [
@@ -2046,16 +1854,12 @@
     "description": [
       "Statement by Elizabeth Hickmon Williams in the 1940s on the need for stronger legislation outlawing racial discrimination in employment, with particular emphasis on discrimination revealed by wartime employment."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Jobs-Discrimination_1940.pdf"
   },
   "DPLA_Bass-John-Sparkman_1952": {
     "title": [
@@ -2088,16 +1892,12 @@
     "description": [
       "A biography of liberal Southerner Senator John Sparkman, the Democratic U.S. Vice Presidential candidate for the 1952 election, and his voting record on labor and civil rights measures."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-John-Sparkman_1952.pdf"
   },
   "DPLA_Bass-Julia-Brown_1962-05": {
     "title": [
@@ -2130,16 +1930,12 @@
     "description": [
       "Newspaper clipping on Julia Brown, an FBI agent within the Communist Party, who accused Charlotta Bass, recently retired to Elsinore, of being a communist sympathizer, dated May 1962."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Julia-Brown_1962-05.pdf"
   },
   "DPLA_Bass-KKK_1952": {
     "title": [
@@ -2172,16 +1968,12 @@
     "description": [
       "Speech by Charlotta Bass in 1952 discussing the endorsement of the Republican Party by the KKK, with the help of the Dixiecrats. Format change in pages."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-KKK_1952.pdf"
   },
   "DPLA_Bass-KKK-Draft-Speech_1952": {
     "title": [
@@ -2214,16 +2006,12 @@
     "description": [
       "Draft of a speech by Charlotta Bass in 1952 discussing the endorsement of the Republican Party by the KKK, with the help of the Dixiecrats. Transcript available."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-KKK-Draft-Speech_1952.pdf"
   },
   "DPLA_Bass-KKK-GOP_1952": {
     "title": [
@@ -2256,16 +2044,12 @@
     "description": [
       "Fragment of a speech by Charlotta Bass in 1952 discussing the endorsement of the Republican Party by the KKK."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-KKK-GOP_1952.pdf"
   },
   "DPLA_Bass-Labor-Address_1952-04-18": {
     "title": [
@@ -2298,16 +2082,12 @@
     "description": [
       "Fragment of an address by Charlotta Bass, U.S. Vice Presidential Candidate, Progressive Party, at an American Labor Party Dinner on why she is in this fight, dated April 18, 1952."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Labor-Address_1952-04-18.pdf"
   },
   "DPLA_Bass-Labor-Address_1952-10-27": {
     "title": [
@@ -2340,16 +2120,12 @@
     "description": [
       "Address by Charlotta Bass, U.S. Vice Presidential Candidate, Progressive Party, at an American Labor Party Rally in Madison Square Garden, in the closing days of the campaign, dated October 27, 1952."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Labor-Address_1952-10-27.pdf"
   },
   "DPLA_Bass-Letter-to-Chronicle_1952": {
     "title": [
@@ -2382,16 +2158,12 @@
     "description": [
       "Letter to the editor refuting the San Francisco Chronicle editorial from Sunday, August 17, 1952, Fallacy Underlies Vote Boycott Call, in support of the boycott to protest discrimination against Black Americans."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Letter-to-Chronicle_1952.pdf"
   },
   "DPLA_Bass-Letter-to-Pastors_1942-10-23": {
     "title": [
@@ -2424,16 +2196,12 @@
     "description": [
       "Letter asking pastors to take action in the fight to pass an anti-poll tax bill, and listing steps they can take, dated October 23, 1942."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Letter-to-Pastors_1942-10-23.pdf"
   },
   "DPLA_Bass-Letters-to-Editor_1962-05": {
     "title": [
@@ -2466,16 +2234,12 @@
     "description": [
       "Letters to the Editor, both for and against,  responding to Julia Brown's accusations of Charlotta Bass being a communist sympathizer, dated May 1962."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Letters-to-Editor_1962-05.pdf"
   },
   "DPLA_Bass-Map-14th-District-Congress_1950": {
     "title": [
@@ -2508,16 +2272,12 @@
     "description": [
       "Map showing neighborhoods in the 14th Congressional District of Los Angeles, including total registered votes, breakdowns by Democratic and Republican voters, and total registered Black voters in the 62nd Assembly District, in 1950."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Map-14th-District-Congress_1950.pdf"
   },
   "DPLA_Bass-Mississippi-Freedom-Project_1964-11-01": {
     "title": [
@@ -2550,16 +2310,12 @@
     "description": [
       "Letter from the staff of the Mississippi Freedom Project asking for help in combatting violence against Black civil rights activists in Mississippi, including handwritten notes presumably by Bass on follow-up actions, dated November 1, 1964, and a newsletter, Freedom WorkshopNews, published by the Highlander Center, dated April 1965."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Mississippi-Freedom-Project_1964-11-01.pdf"
   },
   "DPLA_Bass-Negro-History-Week_1961-02-12": {
     "title": [
@@ -2592,16 +2348,12 @@
     "description": [
       "A Pulpit Editorial delivered by Charlotta Bass  in celebration of Negro History Week at the First Unitarian Church of Los Angeles on February 12, 1961."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Negro-History-Week_1961-02-12.pdf"
   },
   "DPLA_Bass-Negro-History-Week_1962-09-15": {
     "title": [
@@ -2634,16 +2386,12 @@
     "description": [
       "Speech delivered by Charlotta Bass to the New Horizons Senior Citizens Club, Los Angeles, California, on September 15, 1962."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Negro-History-Week_1962-09-15.pdf"
   },
   "DPLA_Bass-Negro-World-Crisis_00": {
     "title": [
@@ -2676,16 +2424,12 @@
     "description": [
       "Speech by Charlotta Bass arguing for international solidarity among people of color and against white supremacy."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Negro-World-Crisis_00.pdf"
   },
   "DPLA_Bass-Negro-World-Crisis_1945": {
     "title": [
@@ -2718,16 +2462,12 @@
     "description": [
       "Fragment of draft of speech by Charlotta Bass in 1945 on the world crisis and its relation to Black people, with handwritten notes. Starts on page 2."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Negro-World-Crisis_1945.pdf"
   },
   "DPLA_Bass-News_1945-03-01": {
     "title": [
@@ -2760,16 +2500,12 @@
     "description": [
       "Brief notes reporting updates on Charlotta Bass's Campaign for Los Angeles City Council, District 7, and other news. Covers news from March 1—May 10, 1945. Excerpts; non-consecutive pages."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-News_1945-03-01.pdf"
   },
   "DPLA_Bass-Not-Ready-Yet_1952": {
     "title": [
@@ -2802,16 +2538,12 @@
     "description": [
       "Speech by Charlotta Bass in 1952 refuting an argument that the struggle for freedom and civil rights should wait. Transcript available."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Not-Ready-Yet_1952.pdf"
   },
   "DPLA_Bass-Pamphlet_1950": {
     "title": [
@@ -2844,16 +2576,12 @@
     "description": [
       "Pamphlet with information on the platform for Charlotta Bass's Campaign for Congress, 14th Congressional District, in 1950 and sample ballot."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Pamphlet_1950.pdf"
   },
   "DPLA_Bass-Peace-Jewelers-Fan_00": {
     "title": [
@@ -2886,16 +2614,12 @@
     "description": [
       "Fan with depiction of Black children in prayer, advertising the Peace Jewelers Co-Optive, Moses B. Clark, Proprieter, New York, New York."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Peace-Jewelers-Fan_00.pdf"
   },
   "DPLA_Bass-Petition-President_00": {
     "title": [
@@ -2928,16 +2652,12 @@
     "description": [
       "Petition to the U.S. President on a case before the Supreme Court  requiring the Communist Party and Communist Front organizations to register the names of all officers and members with the Attorney General"
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Petition-President_00.pdf"
   },
   "DPLA_Bass-Pittsburgh-Ministerial-Alliance_1952": {
     "title": [
@@ -2970,16 +2690,12 @@
     "description": [
       "Fragment of a speech by Charlotta Bass in 1952  on the role of Black people in America, before the Pittsburgh Ministerial Alliance."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Pittsburgh-Ministerial-Alliance_1952.pdf"
   },
   "DPLA_Bass-Pledge-Program_1952": {
     "title": [
@@ -3012,16 +2728,12 @@
     "description": [
       "Fragment of a list of pledges by Charlotta Bass in 1952 for the city of Los Angeles in public health, education, and infrastructure."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Pledge-Program_1952.pdf"
   },
   "DPLA_Bass-Political-Rally_1952-10-19": {
     "title": [
@@ -3054,16 +2766,12 @@
     "description": [
       "Program for a fundraising rally in Virginia featuring a speech by Charlotta Bass, U.S. Vice Presidential Candidate, Progressive Party, with music by the Virginia Union University Choir, dated October 19, 1952."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Political-Rally_1952-10-19.pdf"
   },
   "DPLA_Bass-Polling-Places_1950": {
     "title": [
@@ -3096,16 +2804,12 @@
     "description": [
       "Lists polling places, inspectors, judges and clerks in Los Angeles's Assembly District No. 62."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Polling-Places_1950.pdf"
   },
   "DPLA_Bass-Poster-Korean-War_1952": {
     "title": [
@@ -3138,16 +2842,12 @@
     "description": [
       "Poster from 1952 that depicts a letter to the American public calling for an end to the Korean War."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Poster-Korean-War_1952.pdf"
   },
   "DPLA_Bass-Presidential-Ballot_1952-11-04": {
     "title": [
@@ -3180,16 +2880,12 @@
     "description": [
       "Printer's proof of the official presidential ballot for the general 1952 election for Washtenaw County, Michigan, including the Progressive Party ticket of Vince Hallinan and Charlotta Bass, dated November 4, 1952."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Presidential-Ballot_1952-11-04.pdf"
   },
   "DPLA_Bass-Presidential-Campaign_1952-10-18": {
     "title": [
@@ -3222,16 +2918,12 @@
     "description": [
       "Excerpts from a radio address in Richmond, Virginia, on the Korean War, dated October 18, 1952."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Presidential-Campaign_1952-10-18.pdf"
   },
   "DPLA_Bass-Press-Release_1952-03-07": {
     "title": [
@@ -3264,16 +2956,12 @@
     "description": [
       "Press release announcing Vince Hallinan as the U.S. Presidential Candidate and Charlotta Bass as the U.S. Vice Presidential Candidate for the Progressive Party in the 1952 elections, dated March 7, 1952."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Press-Release_1952-03-07.pdf"
   },
   "DPLA_Bass-Press-Release_1952-04-01": {
     "title": [
@@ -3306,16 +2994,12 @@
     "description": [
       "Press release with text of Charlotta Bass's telegram asking for a commutation of sentence for Vince Hallinan, U.S. Presidential Candidate of the Progressive Party, for contempt of court during the trial of labor leader Harry Bridges, dated April 1, 1952."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Press-Release_1952-04-01.pdf"
   },
   "DPLA_Bass-Press-Release_1952-06-13": {
     "title": [
@@ -3348,16 +3032,12 @@
     "description": [
       "Press release urging full support of striking steel workers and condemning Eisenhower's endorsement of using the Taft-Hartley Act against the workers, dated June 13, 1952."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Press-Release_1952-06-13.pdf"
   },
   "DPLA_Bass-Press-Release_1952-06-14": {
     "title": [
@@ -3390,16 +3070,12 @@
     "description": [
       "Press release on the Progressive Party's filing of an official complaint to the Federal Communications Commission against 4 major radio-tv networks for denial of air time for the party, dated June 14, 1952."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Press-Release_1952-06-14.pdf"
   },
   "DPLA_Bass-Press-Release_1952-06-16": {
     "title": [
@@ -3432,16 +3108,12 @@
     "description": [
       "Press release on the need to defeat a peace contract with Germany before the Senate Foreign Relations Committee that they said would lead to a re-armed Germany and a restored Wehrmarcht, dated June 16, 1952."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Press-Release_1952-06-16.pdf"
   },
   "DPLA_Bass-Press-Release_1952-06-25": {
     "title": [
@@ -3474,16 +3146,12 @@
     "description": [
       "Press release with joint statement by Charlotta Bass and Vivian Hallinan on the second anniversary of the Korean War voicing a demand to stop the fighting, dated June 25, 1952."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Press-Release_1952-06-25.pdf"
   },
   "DPLA_Bass-Press-Release_1952-10-16": {
     "title": [
@@ -3516,16 +3184,12 @@
     "description": [
       "Press release covering Charlotta Bass's speech to a Washington D.C. audience on her campaign for peace and the rights of Black people, dated October 16, 1952."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Press-Release_1952-10-16.pdf"
   },
   "DPLA_Bass-Progressive- Party-Platform_1952": {
     "title": [
@@ -3558,16 +3222,12 @@
     "description": [
       "Responses by Charlotta Bass in 1952 to questions on the positions of the Progressive Party, including about the Communist Party and the two-party system. Transcript available."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Progressive- Party-Platform_1952.pdf"
   },
   "DPLA_Bass-Progressive-Party_1948": {
     "title": [
@@ -3600,16 +3260,12 @@
     "description": [
       "Fragment of an article presumbably by Charlotta Bass on Henry Wallace as the Progressive Party's Presidential Candidate in 1948."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Progressive-Party_1948.pdf"
   },
   "DPLA_Bass-Progressive-Party_1952": {
     "title": [
@@ -3642,16 +3298,12 @@
     "description": [
       "Speech by Charlotta Bass in California in 1952 arguing that there is little difference between the Democrat and Republican parties, and pressing the cause for a new party, the Progressive Party. Transcript available. "
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Progressive-Party_1952.pdf"
   },
   "DPLA_Bass-Radical-Press_00": {
     "title": [
@@ -3684,16 +3336,12 @@
     "description": [
       "Draft article by Charlotta Bass decrying the intolerance of the radical Left press and the refusal by some on the Left to compromise on ideological grounds."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Radical-Press_00.pdf"
   },
   "DPLA_Bass-Religious-Freedom_1943": {
     "title": [
@@ -3726,16 +3374,12 @@
     "description": [
       "Address of Utah Representative Elbert D. Thomas, at the Jewish Theological Seminary in New York in 1943, arguing for American leadership in promoting religious freedom worldwide."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Religious-Freedom_1943.pdf"
   },
   "DPLA_Bass-Repatriation-Bill_1939": {
     "title": [
@@ -3768,16 +3412,12 @@
     "description": [
       "Advance text of a 1939 bill, to be cited as the Greater Liberia Act, creating a Bureau of Colonization and providing aid to U.S. citizens who want to migrate to the Republic of Liberia."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Repatriation-Bill_1939.pdf"
   },
   "DPLA_Bass-Republican-Party_1952": {
     "title": [
@@ -3810,16 +3450,12 @@
     "description": [
       "Fragment of a speech by Charlotta Bass, U.S. Vice Presidential Candidate, Progressive Party, in 1952 on why she left the Republican Party and joined the Progressive Party. Starts on page 3."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Republican-Party_1952.pdf"
   },
   "DPLA_Bass-Resolution-Committee_1952": {
     "title": [
@@ -3852,16 +3488,12 @@
     "description": [
       "Report by Charlotta Bass in 1952 to the Resolution Committee regarding positions on foreign policy, inflation, housing, labor, and taxes."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Resolution-Committee_1952.pdf"
   },
   "DPLA_Bass-Richmond-Speech_1952": {
     "title": [
@@ -3894,16 +3526,12 @@
     "description": [
       "Fragment of a speech by Charlotta Bass, U.S. Vice Presidential Candidate, Progressive Party, in 1952 on the shortcomings of the Republican and Democrat Parties."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Richmond-Speech_1952.pdf"
   },
   "DPLA_Bass-Robeson_1957": {
     "title": [
@@ -3936,16 +3564,12 @@
     "description": [
       "Article by Charlotta Bass in 1957 about the significance of Paul Robeson in struggles against segregation and discrimination, in contrast with Arkansas governor Orval Faubus, who called out the National Guard on the 9 Black students integrating  Little Rock High School. Starts on page 3."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Robeson_1957.pdf"
   },
   "DPLA_Bass-Schedule-Cleveland_1952-08": {
     "title": [
@@ -3978,16 +3602,12 @@
     "description": [
       "Listing of scheduled events for Charlotta Bass in Ohio in August 1952 during her run as the Progressive Party's candidate for U.S. Vice President."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Schedule-Cleveland_1952-08.pdf"
   },
   "DPLA_Bass-Second-Class-Citizenship_1952": {
     "title": [
@@ -4020,16 +3640,12 @@
     "description": [
       "Speech by Charlotta Bass in 1952 on the fight for first class citizenship for Black Americans and the need for the Progressive Party."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Second-Class-Citizenship_1952.pdf"
   },
   "DPLA_Bass-SenatorWhite_1947-02-07": {
     "title": [
@@ -4062,16 +3678,12 @@
     "description": [
       "Letter from a court martialed soldier appealing his case to Senator Wallace Humphrey White sent  from Salinas, California, on February 7, 1942."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-SenatorWhite_1947-02-07.pdf"
   },
   "DPLA_Bass-Smoke-Filled-Room_1952-04-04": {
     "title": [
@@ -4104,16 +3716,12 @@
     "description": [
       "Newspaper article by Pierre Courtade on the sham of democracy in America with the Democrat and Republican parties beholden to the same interests, dated April 4, 1952. Original article in French and English translation."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Smoke-Filled-Room_1952-04-04.pdf"
   },
   "DPLA_Bass-Socialism_00": {
     "title": [
@@ -4146,16 +3754,12 @@
     "description": [
       "Article by Charlotta Bass in support of international movements advocating for the equitable distribution of wealth."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Socialism_00.pdf"
   },
   "DPLA_Bass-Stride-Toward-Freedom_1958-05": {
     "title": [
@@ -4188,16 +3792,12 @@
     "description": [
       "Notes by Charlotta Bass highlighting key points of Martin Luther King, Jr.'s memoir, Stride Toward Freedom, including conditions to overcome, why non-violence as a technique, and methods of the opposition, dated May 1958."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Stride-Toward-Freedom_1958-05.pdf"
   },
   "DPLA_Bass-Testimonial-Committee_1959-10-26": {
     "title": [
@@ -4230,16 +3830,12 @@
     "description": [
       "Speech by Charlotta Bass before a testimonial committee in response to a commendation for community activities received by Bass and Reuben W. Borough, dated October 26, 1959."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Testimonial-Committee_1959-10-26.pdf"
   },
   "DPLA_Bass-Texas-Speech_1952": {
     "title": [
@@ -4272,16 +3868,12 @@
     "description": [
       "Speech by Charlotta Bass, U.S. Vice Presidential Candidate, Progressive Party, to the voters of Texas in 1952."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Texas-Speech_1952.pdf"
   },
   "DPLA_Bass-Threats_1952": {
     "title": [
@@ -4314,16 +3906,12 @@
     "description": [
       "Response by Charlotta Bass in 1952 to threats against the lives of the family of Progressive Party U.S. Presidential Candidate Vince Hallinan."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Threats_1952.pdf"
   },
   "DPLA_Bass-Two-Party-System_1952": {
     "title": [
@@ -4356,16 +3944,12 @@
     "description": [
       "Fragment of a speech by Charlotta Bass in 1952 on how the Democrat and Republican Parties have betrayed the American people."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Two-Party-System_1952.pdf"
   },
   "DPLA_Bass-Vote-Results_1945-04-03": {
     "title": [
@@ -4398,16 +3982,12 @@
     "description": [
       "Official results of votes cast in election for Los Angeles City Council, District 7, with Charlotta Bass in the running, dated April 3, 1945."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-Vote-Results_1945-04-03.pdf"
   },
   "DPLA_Bass-VP-Candidate_1952-05-13": {
     "title": [
@@ -4440,15 +4020,11 @@
     "description": [
       "Fragment of a speech by Charlotta Bass at the Madison Square Garden, New York, about the founding of the Progressive Party, dated May 13, 1952."
     ],
-    "spatial": [
-      ""
-    ],
+    "spatial": [],
     "publisher": [
       "Southern California Library"
     ],
-    "language": [
-      ""
-    ],
-    "href": ""
+    "language": [],
+    "href": "https://dpla-bws.s3.amazonaws.com/bass/DPLA_Bass-VP-Candidate_1952-05-13.pdf"
   }
 }
