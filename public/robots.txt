@@ -5,3 +5,4 @@ Allow: /*
 Allow: /api/sitemap
 Disallow: /api/health
 Disallow: /api/dpla/*
+Disallow: /search
