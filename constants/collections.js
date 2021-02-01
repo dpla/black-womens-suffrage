@@ -5,7 +5,8 @@ export const collections = {
     "image": "/static/image/collections-page/collections-image-ida.png",
     "name": "Ida B. Wells Barnett Papers",
     "description": "Contains correspondence, manuscript of Crusade for Justice: the Autobiography of Ida B. Wells, diaries, copies of articles and speeches by Wells, articles, and accounts about Wells, newspaper clippings, and photographs.",
-    "publish": true
+    "publish": true,
+    "external": false 
   },
   "charlotta-bass": {
     "lived": "1879/80-1969",
@@ -13,7 +14,8 @@ export const collections = {
     "image": "/static/image/collections-page/collections-image-charlotta.png",
     "name": "Charlotta Bass Papers",
     "description": "Contains articles, speeches, and campaign materials that document Bass’s political life and activism.",
-    "publish": true
+    "publish": true,
+    "external": false 
   },
   "mary-church-terrell": {
     "lived": "1863-1954",
@@ -21,6 +23,8 @@ export const collections = {
     "image": "/static/image/collections-page/collections-image-mary.png",
     "name": "Mary Church Terrell Exhibit",
     "description": "Contains materials from Oberlin College Archives exhibit exploring Terrell’s life and work through four lenses: learning, labor, leadership, and legacy.",
-    "publish": false 
+    "publish": true,
+    "external": true,
+    "external_link": "https://terrell.oberlincollegelibrary.org/scalar/mct/index"
   }
 }
