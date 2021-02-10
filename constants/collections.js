@@ -21,6 +21,7 @@ export const collections = {
     "image": "/static/image/collections-page/collections-image-mary.png",
     "name": "Mary Church Terrell Exhibit",
     "description": "Contains materials from Oberlin College Archives exhibit exploring Terrell’s life and work through four lenses: learning, labor, leadership, and legacy.",
-    "publish": false 
+    "publish": true,
+    "external_link": "https://terrell.oberlincollegelibrary.org/scalar/mct/index"
   }
 }

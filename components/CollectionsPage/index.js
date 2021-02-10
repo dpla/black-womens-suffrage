@@ -24,34 +24,51 @@ const CollectionsPage = () => {
           {Object.keys(collections).map((key, index) => {
             const collection = collections[key];
 
-            return (
-              collection.publish ?
-                <div data-cy="collection__active" key={`collections-tile-${index + 1}`}>
-                  <Link href="/collections/[colId]" as={`/collections/${key}`}>
-                    <div className={`${scss.collections__tile} ${scss.collections__tile_active}`}>
-                      <img src={collection.image} alt={`Collection ${collection.name}`} />
-                      <h2>{collection.name}</h2>
-                      <p>{collection.description}</p>
-                      <button className={scss.collections_button__active}>
-                        <a>VIEW COLLECTION</a>
-                        <img src="static/icon/collections-page/button-arrow.svg" alt="" />
-                        <div className={scss.collections_button__active_underline}></div>
-                      </button>
-                    </div>
-                  </Link>
-                </div>
-                :
-                <div className={scss.collections__tile} key={`collections-tile-${index + 1}`} data-cy="collection__inactive">
-                  <img src={collection.image} alt={`Collection ${collection.name}`} />
-                  <h2>{collection.name}</h2>
-                  <p>{collection.description}</p>
+            if (!collection.external_link) {
+              return (
+                collection.publish ?
+                  <div data-cy="collection__active" key={`collections-tile-${index + 1}`}>
+                    <Link href="/collections/[colId]" as={`/collections/${key}`}>
+                      <div className={`${scss.collections__tile} ${scss.collections__tile_active}`}>
+                        <img src={collection.image} alt={`Collection ${collection.name}`} />
+                        <h2>{collection.name}</h2>
+                        <p>{collection.description}</p>
+                        <button className={scss.collections_button__active}>
+                          <a>VIEW COLLECTION</a>
+                          <img src="static/icon/collections-page/button-arrow.svg" alt="" />
+                          <div className={scss.collections_button__active_underline}></div>
+                        </button>
+                      </div>
+                    </Link>
+                  </div>
+                  :
+                  <div className={scss.collections__tile} key={`collections-tile-${index + 1}`} data-cy="collection__inactive">
+                    <img src={collection.image} alt={`Collection ${collection.name}`} />
+                    <h2>{collection.name}</h2>
+                    <p>{collection.description}</p>
 
-                  <button className={scss.collections_button__inactive}>
-                    <p>COMING SOON</p>
-                    <div className={scss.collections_button__inactive_underline}></div>
-                  </button>
+                    <button className={scss.collections_button__inactive}>
+                      <p>COMING SOON</p>
+                      <div className={scss.collections_button__inactive_underline}></div>
+                    </button>
+                  </div>
+              )
+            } else {
+              return (
+                <div data-cy="collection__active" key={`collections-tile-${index + 1}`}>
+                  <div className={`${scss.collections__tile} ${scss.collections__tile_active}`}>
+                    <img src={collection.image} alt={`Collection ${collection.name}`} />
+                    <h2>{collection.name}</h2>
+                    <p>{collection.description}</p>
+                    <button className={scss.collections_button__active}>
+                      <a href={collection.external_link} target="_blank" alt={`Link to ${collection.name}`}>VIEW COLLECTION</a>
+                      <img src="static/icon/collections-page/button-arrow.svg" alt="" />
+                      <div className={scss.collections_button__active_underline}></div>
+                    </button>
+                  </div>
                 </div>
-            )
+              )
+            }
           })}
         </div>
 
