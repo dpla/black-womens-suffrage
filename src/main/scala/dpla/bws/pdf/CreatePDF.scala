@@ -10,17 +10,16 @@ import org.apache.pdfbox.pdmodel.graphics.image.JPEGFactory
 import org.apache.pdfbox.pdmodel.{PDDocument, PDPage, PDPageContentStream}
 import org.apache.xmpbox.XMPMetadata
 import org.apache.xmpbox.xml.XmpSerializer
-import org.json4s.JsonAST._
+import org.json4s.JArray
 import org.json4s.JsonDSL._
-import org.json4s.jackson.{Json, JsonMethods}
-import org.json4s.jackson.JsonMethods._
+import org.json4s.jackson.JsonMethods
 
-import java.awt.color.{ColorSpace, ICC_Profile}
-import java.awt.image.{BufferedImage, ColorConvertOp, ColorModel}
+import java.awt.color.ICC_Profile
+import java.awt.image.{ColorConvertOp, ColorModel}
 import java.io.{ByteArrayOutputStream, File, InputStream}
 import java.nio.charset.StandardCharsets
 import java.nio.file.{Files, Paths}
-import scala.collection.JavaConversions._
+import scala.collection.JavaConverters._
 
 /*
   post-conversion compression with Ghostscript:
@@ -56,12 +55,12 @@ object CreatePDF extends App {
     case (Some(filename), metadatas) =>
 
       createPDF(
-        new File(pdfsDir, s"${filename}.pdf"),
+        new File(pdfsDir, s"$filename.pdf"),
         metadatas
       )
 
       createThumbnail(
-        new File(thumbnailDir, s"${filename}.jpg"),
+        new File(thumbnailDir, s"$filename.jpg"),
         metadatas
       )
 
@@ -86,17 +85,17 @@ object CreatePDF extends App {
           ( "subject" -> Seq( metadata.subject ) ) ~
           ( "isPartOf" -> Seq("Clarie Collins Harvey Papers") ) ~
           ( "type" -> Seq( metadata.`type` ) ) ~
-          //( "format" -> Seq() ) ~
+          ( "format" -> JArray(Nil) ) ~
           ( "date" -> Seq( metadata.created ) ) ~
-          //( "identifier" -> Seq() ) ~
+          ( "identifier" -> JArray(Nil) ) ~
           ( "rights" -> Seq( metadata.edmRights ) ) ~
           ( "description" -> Seq( metadata.description ) ) ~
-          //( "spatial" -> Seq(metadata.) ) ~
+          ( "spatial" -> JArray(Nil) ) ~
           ( "publisher" -> Seq( "Clarie Collins Harvey Papers, Amistad Research Center, New Orleans, LA" ) ) ~
           ( "language" -> Seq( metadata.language ) ) ~
-          ( "href " -> s"https://dpla-bws.s3.amazonaws.com/arc/$filename.pdf" )
+          ( "href" -> s"https://dpla-bws.s3.amazonaws.com/arc/$filename.pdf" )
 
-      ( filename -> fields )
+      filename -> fields
     }
 
     val jsonString: String = JsonMethods.compact(json)
@@ -181,7 +180,7 @@ object CreatePDF extends App {
     val sRgbBufferedImage = colorConvertOp.createCompatibleDestImage(inputBufferedImage, ColorModel.getRGBdefault)//new BufferedImage(inputBufferedImage.getWidth, inputBufferedImage.getHeight, BufferedImage.TYPE_INT_RGB)
     colorConvertOp.filter(inputBufferedImage, sRgbBufferedImage)
 
-    val floatQuality = (JPEG_QUALITY / 100.0f)
+    val floatQuality = JPEG_QUALITY / 100.0f
     val pdImage = JPEGFactory.createFromImage(doc, sRgbBufferedImage, floatQuality)
 
     val contentStream = new PDPageContentStream(doc, page, AppendMode.APPEND, true, true)
@@ -256,7 +255,7 @@ object CreatePDF extends App {
     val reader = Files.newBufferedReader(Paths.get("/home/michael/arc/metadata.csv"))
     val csv = CSVFormat.DEFAULT.parse(reader)
 
-    val records = csv.getRecords
+    val records = csv.getRecords.asScala
     val metadatas = records.map(row => rowToMetadata(row))
 
     val filenameRegexp = "(hacc\\d{4})".r
