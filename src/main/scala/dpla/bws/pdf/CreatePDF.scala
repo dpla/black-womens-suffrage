@@ -10,10 +10,15 @@ import org.apache.pdfbox.pdmodel.graphics.image.JPEGFactory
 import org.apache.pdfbox.pdmodel.{PDDocument, PDPage, PDPageContentStream}
 import org.apache.xmpbox.XMPMetadata
 import org.apache.xmpbox.xml.XmpSerializer
+import org.json4s.JsonAST._
+import org.json4s.JsonDSL._
+import org.json4s.jackson.{Json, JsonMethods}
+import org.json4s.jackson.JsonMethods._
 
 import java.awt.color.{ColorSpace, ICC_Profile}
 import java.awt.image.{BufferedImage, ColorConvertOp, ColorModel}
 import java.io.{ByteArrayOutputStream, File, InputStream}
+import java.nio.charset.StandardCharsets
 import java.nio.file.{Files, Paths}
 import scala.collection.JavaConversions._
 
@@ -70,7 +75,35 @@ object CreatePDF extends App {
   println("Done")
 
   private def createMetadataJson(pages: Map[Option[String], Seq[CreatePDF.Metadata]]): Unit = {
-    // TODO
+    val json = for {
+      page <- pages
+      filename <- page._1
+    } yield {
+      val metadata = page._2.head
+      val fields =
+        ( "title" -> Seq( metadata.title, metadata.altTitle) ) ~
+          ( "creator" -> Seq( metadata.creator ) )  ~
+          ( "subject" -> Seq( metadata.subject ) ) ~
+          ( "isPartOf" -> Seq("Clarie Collins Harvey Papers") ) ~
+          ( "type" -> Seq( metadata.`type` ) ) ~
+          //( "format" -> Seq() ) ~
+          ( "date" -> Seq( metadata.created ) ) ~
+          //( "identifier" -> Seq() ) ~
+          ( "rights" -> Seq( metadata.edmRights ) ) ~
+          ( "description" -> Seq( metadata.description ) ) ~
+          //( "spatial" -> Seq(metadata.) ) ~
+          ( "publisher" -> Seq( "Clarie Collins Harvey Papers, Amistad Research Center, New Orleans, LA" ) ) ~
+          ( "language" -> Seq( metadata.language ) ) ~
+          ( "href " -> s"https://dpla-bws.s3.amazonaws.com/arc/$filename.pdf" )
+
+      ( filename -> fields )
+    }
+
+    val jsonString: String = JsonMethods.compact(json)
+    Files.write(
+      Paths.get(inputDir.getPath, "arc.json"),
+      jsonString.getBytes(StandardCharsets.UTF_8)
+    )
   }
 
   private def createThumbnail(outputFile: File, metadatas: Seq[Metadata]): Unit = {
