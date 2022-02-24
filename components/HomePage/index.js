@@ -91,18 +91,6 @@ const HomePage = () => {
             </div>
           </div>
           <div className={scss.home__section_4_tile}>
-            <img className={scss.home__section_4_tile_img} src="/static/image/home-page/home-carousel-charlotta.jpg" alt="Portrait of Charlotta Bass"/>
-            <div className={scss.home__section_4_tile_title}>
-              <h3>Charlotta Bass Papers</h3>
-              <Link href="/collections/charlotta-bass">
-                <a>
-                  VIEW COLLECTION
-                  <img src="/static/icon/button-arrow-purple.svg" alt="View collection button icon"/>
-                </a>
-              </Link>
-            </div>
-          </div>
-          <div className={scss.home__section_4_tile}>
             <img className={scss.home__section_4_tile_img} src="/static/image/home-page/home-carousel-mary.jpg" alt="Portrait of Mary Church Terrell"/>
             <div className={scss.home__section_4_tile_title}>
               <h3>Mary Church Terrell Exhibit</h3>
