@@ -3,7 +3,7 @@ import fs from "fs";
 const pdfSender = async (req, res) => {
     const { query: {collectionId, pdfId}} = req;
 
-    if (collectionId !== 'ida-b-wells' && collectionId !== 'charlotta-bass') {
+    if (collectionId !== 'ida-b-wells') {
         res.statusCode = 404;
         res.end("Unknown Collection ID.");
         return;
