@@ -42,3 +42,4 @@ cypress.json
 cypress/integration/examples
 cypress/videos
 /target/
+/project/target/
