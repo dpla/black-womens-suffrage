@@ -24,8 +24,6 @@ const pdfSender = async (req, res) => {
     const url = new URL(item.href);
     url.protocol = "http";
     const pdf = await fetch(url.toString());
-    //console.log(JSON.stringify(pdf));
-    //res.statusCode = pdf.status;
     const pdfStream = pdf.body
     pdfStream.on('close', () => { res.end() });
     pdfStream.pipe(res);
