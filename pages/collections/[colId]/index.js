@@ -62,11 +62,14 @@ export async function getStaticProps({ params }) {
 
     let thumbPath;
 
-    if (params.colId == 'ida-b-wells') {
+    if (params.colId === 'ida-b-wells') {
       thumbPath = 'ibw'
-    } else if (params.colId == 'charlotta-bass') {
+    } else if (params.colId === 'charlotta-bass') {
       thumbPath = 'cb'
+    } else if (params.colId === 'claire-collins-harvey') {
+      thumbPath = 'arc'
     }
+
     const thumb = `/static/thumbnails/${thumbPath}/${key}.jpg`;
 
     return {

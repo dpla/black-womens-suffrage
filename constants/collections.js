@@ -1,4 +1,12 @@
 export const collections = {
+  "claire-collins-harvey": {
+    "lived": "1916-1995",
+    "intro": "Clarie Collins Harvey (1916-1995) was a church leader and businesswoman in Mississippi, who was active in civil rights, the women's movement, and the international peace movement.",
+    "image": "/static/image/collections-page/XXXXXXX.jpg",
+    "name": "Claire Collins Harvey Papers",
+    "description": "Contains materials from the Clarie Collins Harvey Papers collection at the Amistad Research Center in New Orleans, Louisiana.",
+    "publish": true,
+  },
   "ida-b-wells": {
     "lived": "1862-1931",
     "intro": "Ida B. Wells, (1862-1931) teacher, journalist and anti-lynching activist. ", 
