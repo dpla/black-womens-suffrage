@@ -38,7 +38,7 @@ object CreatePDF extends App {
   val JPEG_QUALITY = 81
   val COLOR_PROFILE = ICC_Profile.getInstance(loadColorProfile)
 
-  val inputDir = new File("/home/michael/arc/")
+  val inputDir = new File(args(0))
   val tiffsDir = new File(inputDir, "tiffs")
   val pdfsDir = new File(inputDir, "pdfs")
   val thumbnailDir = new File(inputDir, "thumbs")
@@ -49,7 +49,7 @@ object CreatePDF extends App {
 
   val imageLoader = ImmutableImage.loader()
   val colorConvertOp = new ColorConvertOp(null)
-  val pages = loadPages
+  val pages = loadPages(args(1))
   pages.foreach {
 
     case (Some(filename), metadatas) =>
@@ -251,8 +251,8 @@ object CreatePDF extends App {
                        edmRights: String
                      )
 
-  private def loadPages: Map[Option[String], Seq[Metadata]] = {
-    val reader = Files.newBufferedReader(Paths.get("/home/michael/arc/metadata.csv"))
+  private def loadPages(metadataCsvPath: String): Map[Option[String], Seq[Metadata]] = {
+    val reader = Files.newBufferedReader(Paths.get(metadataCsvPath))
     val csv = CSVFormat.DEFAULT.parse(reader)
 
     val records = csv.getRecords.asScala
