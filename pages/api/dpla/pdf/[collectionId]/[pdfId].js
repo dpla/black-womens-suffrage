@@ -3,7 +3,8 @@ import fs from "fs";
 const pdfSender = async (req, res) => {
     const { query: {collectionId, pdfId}} = req;
 
-    if (collectionId !== 'ida-b-wells') {
+    if (collectionId !== 'ida-b-wells' &&
+        collectionId !== 'claire-collins-harvey') {
         res.statusCode = 404;
         res.end("Unknown Collection ID.");
         return;
@@ -23,8 +24,6 @@ const pdfSender = async (req, res) => {
     const url = new URL(item.href);
     url.protocol = "http";
     const pdf = await fetch(url.toString());
-    //console.log(JSON.stringify(pdf));
-    //res.statusCode = pdf.status;
     const pdfStream = pdf.body
     pdfStream.on('close', () => { res.end() });
     pdfStream.pipe(res);
