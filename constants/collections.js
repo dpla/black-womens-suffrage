@@ -1,11 +1,20 @@
 export const collections = {
   "claire-collins-harvey": {
     "lived": "1916-1995",
-    "intro": "Clarie Collins Harvey (1916-1995) was a church leader and businesswoman in Mississippi, who was active in civil rights, the women's movement, and the international peace movement.",
+    "intro": "Clarie Collins Harvey (1916-1995) was a church leader and businesswoman in Mississippi, who was active in civil rights, the women's movement, and the international peace movement. ",
     "image": "/static/image/collections-page/collections-image-claire.png",
     "name": "Claire Collins Harvey Papers",
     "description": "Contains correspondence, photographs, writings, minutes and agendas, and collected materials documenting her involvement with Womanpower Unlimited in the areas of civil rights, international peace activism and women's issues.",
     "publish": true,
+  },
+  "womans-era": {
+    "lived": "1894-1897",
+    "intro": "",
+    "image": "/static/image/collections-page/collections-image-era.png",
+    "name": "The Woman's Era",
+    "description": "Contains facsimiles and transcriptions for each of the twenty-two extant issues of The Woman’s Era, published by Josephine St. Pierre Ruffin in Boston, Massachusetts and distributed nationally between 1894 and 1897",
+    "publish": true,
+    "external_link": "https://womansera.digitalscholarship.emory.edu/"
   },
   "ida-b-wells": {
     "lived": "1862-1931",
