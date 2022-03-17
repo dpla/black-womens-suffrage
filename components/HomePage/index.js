@@ -77,29 +77,48 @@ const HomePage = () => {
 
       <section className={scss.home__section_4}>
         <h3 className="title">FEATURED COLLECTIONS</h3>
+
         <div className={scss.home__section_4_collections}>
           <div className={scss.home__section_4_tile}>
-            <img className={scss.home__section_4_tile_img} src="/static/image/home-page/home-carousel-ida.jpg" alt="Portrait of Ida B Wells Barnett"/>
+            <img
+                className={scss.home__section_4_tile_img}
+                src="/static/image/home-page/home-carousel-claire.png"
+                alt=""/>
             <div className={scss.home__section_4_tile_title}>
-              <h3>Ida B. Wells Barnett Papers</h3>
-              <Link href="/collections/ida-b-wells">
+              <h3>Claire Collins Harvey</h3>
+              <Link href="/collections/claire-collins-harvey">
                 <a>
                   VIEW COLLECTION
-                  <img src="/static/icon/button-arrow-purple.svg" alt="View collection button icon"/>
+                  <img src="/static/icon/button-arrow-purple.svg" alt=""/>
                 </a>
               </Link>
             </div>
           </div>
           <div className={scss.home__section_4_tile}>
-            <img className={scss.home__section_4_tile_img} src="/static/image/home-page/home-carousel-mary.jpg" alt="Portrait of Mary Church Terrell"/>
+            <img className={scss.home__section_4_tile_img} src="/static/image/home-page/home-carousel-era.png" alt=""/>
             <div className={scss.home__section_4_tile_title}>
-              <h3>Mary Church Terrell Exhibit</h3>
-                <a href="https://terrell.oberlincollegelibrary.org/scalar/mct/index" target="_blank">
-                  VIEW COLLECTION
-                  <img src="/static/icon/button-arrow-purple.svg" alt="View collection button icon"/>
-                </a>
+              <h3>The Woman's Era</h3>
+              <a href={"https://womansera.digitalscholarship.emory.edu/"} target="_blank">
+                VIEW COLLECTION
+                <img src="/static/icon/button-arrow-purple.svg" alt=""/>
+              </a>
             </div>
-          </div> 
+          </div>
+          <div className={scss.home__section_4_tile}>
+              <img
+                className={scss.home__section_4_tile_img}
+                src="/static/image/home-page/home-carousel-ida.jpg"
+                alt=""/>
+            <div className={scss.home__section_4_tile_title}>
+              <h3>Ida B. Wells Barnett</h3>
+              <Link href="/collections/ida-b-wells">
+                <a>
+                  VIEW COLLECTION
+                  <img src="/static/icon/button-arrow-purple.svg" alt=""/>
+                </a>
+              </Link>
+            </div>
+          </div>
         </div>
         <RoundButton text="SEE ALL COLLECTIONS" icon={"/static/icon/button-arrow.svg"} url={"/collections"} />
       </section>
@@ -120,9 +139,9 @@ const HomePage = () => {
               image={<img src="/static/graphic/home-page/partner/home-graphic-partner-1-amistad.png" alt="Amistad Research Center"/>} />
             <Offlink url={"https://www.auctr.edu/"}
               image={<img src="/static/graphic/home-page/partner/home-graphic-partner-2-auc-woodriff.png" alt="Atlanta University Center Robert W. Woodruff Library"/>} />
-            <Offlink url={"http://www.socallib.org/"} 
+            <Offlink url={"http://www.socallib.org/"}
               image={<img src="/static/graphic/home-page/partner/home-graphic-partner-3-scl.png" alt="Southern California Library"/>} />
-            <Offlink url={"https://cmlibrary.org"} 
+            <Offlink url={"https://cmlibrary.org"}
               image={<img src="/static/graphic/home-page/partner/home-graphic-partner-4-charlotte-mecklenberg.png" alt="Charlotte Mecklenberg"/>} />
             <Offlink url={"https://avery.cofc.edu/"}
               image={<img src="/static/graphic/home-page/partner/home-graphic-partner-5-avery.png" alt="Avery Research Center for African American History and Culture"/>} />
