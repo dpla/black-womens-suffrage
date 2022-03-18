@@ -3,7 +3,7 @@
     "title" : [ ],
         "creator" : [ "unknown" ],
         "subject" : [ ],
-        "isPartOf" : [ "Mary Church Terrell" ],
+        "isPartOf" : [ "Womans Era" ],
         "type" : [  ],
         "format" : [  ],
         "date" : [ ],
