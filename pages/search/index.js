@@ -128,12 +128,12 @@ Search.getInitialProps = async context => {
         : "";
 
     // filters + tags
-    let filters = [ SITE_TAG ];
-    let tags = [];
+    let filters = [];
+    let tags = [ SITE_TAG ];
 
     if (query.tags) {
-        tags = Array.isArray(query.tags) ? query.tags : new Array(query.tags);
-        filters = filters.concat(tags.map(tag => `tags:${tag}`));
+        const queryTags = Array.isArray(query.tags) ? query.tags : new Array(query.tags);
+        tags = tags.concat(queryTags);
     }
 
     // facets
@@ -195,7 +195,18 @@ Search.getInitialProps = async context => {
 
         const facetsParam = `&facets=${possibleFacets.join(",")}&${facetQueries}`;
         const filtersParam = filters.map(x => `&filter=${x}`).join("");
-        const url = `${currentUrl}/api/dpla/items?exact_field_match=true&q=${q}&page=${page}&page_size=${page_size}&sort_order=${sort_order}&sort_by=${sort_by}${facetsParam}${filtersParam}`;
+        const tagsParam = tags.map(x => `&tags=${x}`).join("");
+        const url =
+            currentUrl +
+            "/api/dpla/items?exact_field_match=true" +
+            `&q=${q}` +
+            `&page=${page}` +
+            `&page_size=${page_size}` +
+            `&sort_order=${sort_order}` +
+            `&sort_by=${sort_by}` +
+            facetsParam +
+            filtersParam +
+            tagsParam;
         const res = await fetch(url);
         let json = await res.json();
 

@@ -1,5 +1,5 @@
 export const GA_TRACKING_ID = "UA-28197764-11";
-export const SITE_TAG = "tags:blackwomensuffrage";
+export const SITE_TAG = "blackwomensuffrage";
 
 export const UNTITLED_TEXT = "Untitled";
 
