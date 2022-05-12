@@ -154,7 +154,7 @@ class ListView extends React.Component {
                       </a>
                       {item.dataProvider &&
                       <span className={`${css.itemProvider}`}>
-                      &nbsp; in {item.dataProvider}
+                      &nbsp; in {item.dataProvider.name}
                     </span>}
                     </div>
                   </li>
