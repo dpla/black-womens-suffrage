@@ -17,7 +17,7 @@ const OtherMetadata = ({ item }) =>
       <ItemTermValuePair heading="Contributing Institution">
         <FacetLink
           facet="provider"
-          value={item.contributor}
+          value={item.contributor.name}
           facetLabel="contributing institution"
         />
       </ItemTermValuePair>
