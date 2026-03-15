@@ -8,10 +8,7 @@ import CiteButton from "components/shared/CiteButton";
 import BreadcrumbsModule from "components/ItemComponents/BreadcrumbsModule";
 import Content from "components/ItemComponents/Content";
 
-import { API_ENDPOINT } from "constants/items";
-
 import {
-  getCurrentUrl,
   getCurrentFullUrl,
   joinIfArray,
   getItemThumbnail,
@@ -56,10 +53,12 @@ export async function getServerSideProps(context) {
   const itemId = context.params.itemId;
   const req = context.req;
   const res = context.res;
-  const currentFullUrl = getCurrentFullUrl(req);
-  const currentUrl = getCurrentUrl(req);
+  const url = getCurrentFullUrl(req);
   try {
-    const res = await fetch(`${currentUrl}${API_ENDPOINT}/${itemId}`);
+    const apiVersion = process.env.API_VERSION || "v2";
+    const res = await fetch(
+      `${process.env.API_URL}/${apiVersion}/items/${itemId}?api_key=${process.env.API_KEY}`
+    );
     const json = await res.json();
 
     const doc = json.docs[0];
@@ -77,7 +76,7 @@ export async function getServerSideProps(context) {
     const strippedDoc = Object.assign({}, doc, { originalRecord: "" });
     delete strippedDoc.originalRecord;
     return { props : {
-      currentFullUrl,
+      url,
       item: Object.assign({}, doc.sourceResource, {
         id: doc.id,
         thumbnailUrl,
