@@ -1,0 +1,31 @@
+{
+  "allowedTools": [
+    "Bash(gh pr view*)",
+    "Bash(gh pr merge*)",
+    "Bash(gh pr create*)",
+    "Bash(gh pr checks*)",
+    "Bash(gh pr list*)",
+    "Bash(gh run list*)",
+    "Bash(gh run watch*)",
+    "Bash(gh run view*)",
+    "Bash(gh api*)",
+    "Bash(gh workflow run*)",
+    "Bash(gh workflow list*)",
+    "Bash(aws codepipeline *)",
+    "Bash(aws ecs *)",
+    "Bash(aws ecr *)",
+    "Bash(aws logs *)",
+    "Bash(aws cloudfront *)",
+    "Bash(aws cloudwatch *)",
+    "Bash(curl*)",
+    "Bash(sleep*)",
+    "Bash(while true*)",
+    "Bash(echo*)",
+    "Bash(git fetch*)",
+    "Bash(git log*)",
+    "Bash(git show*)",
+    "Bash(git pull*)",
+    "Bash(git diff*)",
+    "Bash(git status*)"
+  ]
+}
