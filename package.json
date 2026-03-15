@@ -35,6 +35,7 @@
     "cypress": "^5.1.0"
   },
   "overrides": {
+    "@babel/runtime": "^7.26.10",
     "@babel/traverse": "^7.23.2",
     "ajv": "^6.14.0",
     "ansi-regex": "^5.0.1",
@@ -74,7 +75,7 @@
     "qs": "^6.11.0",
     "rollup": "^2.80.0",
     "semver": "^7.5.4",
-    "serialize-javascript": "^6.0.2",
+    "serialize-javascript": "^7.0.3",
     "sha.js": "^2.4.12",
     "shell-quote": "^1.7.4",
     "ssri": "^8.0.1",
