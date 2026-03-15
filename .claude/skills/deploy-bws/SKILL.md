@@ -72,7 +72,7 @@ gh api repos/dpla/black-womens-suffrage/commits/main \
 ```
 
 Print a clear summary:
-```
+```text
 📦 Currently deployed: <sha> (pushed <date>)
 🔜 Will deploy:        <sha> — <commit message> (<date>)
 ```
@@ -109,7 +109,7 @@ Print: `🔍 Pre-flight checks complete — proceeding with deployment`
 gh api \
   --method POST \
   -H "Accept: application/vnd.github+json" \
-  /repos/dpla/black-womens-suffrage/actions/workflows/35394265/dispatches \
+  /repos/dpla/black-womens-suffrage/actions/workflows/docker-ecr.yml/dispatches \
   -f ref=main
 ```
 
@@ -242,7 +242,7 @@ Print: `✅ Site is live — https://blackwomenssuffrage.dp.la returned <status>
 
 ## Summary
 
-```
+```text
 🎉 Deployment complete!
    Commit:   <sha> (main)
    Pipeline: <execution-id>
@@ -258,8 +258,7 @@ Print: `✅ Site is live — https://blackwomenssuffrage.dp.la returned <status>
 | Resource | Value |
 |---|---|
 | GitHub repo | `dpla/black-womens-suffrage` |
-| Local path | `/Users/dominic/Documents/GitHub/black-womens-suffrage` |
-| GH Action | `Build ECR` (workflow ID `35394265`) |
+| GH Action | `Build ECR` (`docker-ecr.yml`) |
 | GH Action ref | `main` |
 | ECR repo | `283408157088.dkr.ecr.us-east-1.amazonaws.com/dpla-bws` |
 | CodePipeline | `bws-pipeline` |
