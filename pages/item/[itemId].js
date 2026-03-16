@@ -57,7 +57,7 @@ export async function getServerSideProps(context) {
   try {
     const apiVersion = process.env.API_VERSION || "v2";
     const res = await fetch(
-      `${process.env.API_URL}/${apiVersion}/items/${itemId}?api_key=${process.env.API_KEY}`
+      `${process.env.API_URL}/${apiVersion}/items/${encodeURIComponent(itemId)}?api_key=${process.env.API_KEY}`
     );
     const json = await res.json();
 
