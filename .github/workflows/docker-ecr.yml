@@ -6,6 +6,9 @@ on:
 env:
   ECR_REPOSITORY: "dpla-bws"
 
+permissions:
+  contents: read
+
 jobs:
   ecr:
     runs-on: ubuntu-latest
