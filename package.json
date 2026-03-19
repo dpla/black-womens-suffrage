@@ -44,6 +44,7 @@
     "debug": "^4.3.1",
     "decode-uri-component": "^0.2.2",
     "elliptic": "^6.6.1",
+    "fast-xml-parser": "^5.5.6",
     "es5-ext": "^0.10.63",
     "follow-redirects": "^1.15.6",
     "form-data": "^4.0.0",
