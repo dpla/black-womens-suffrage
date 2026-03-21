@@ -114,16 +114,15 @@ const ExternalCollection = ({collection}) => {
                     <h2>{collection.name}</h2>
                 </a>
                 <p>{collection.description}</p>
-                <button className={scss.collections_button__active}>
-                    <a
-                        href={collection.external_link}
-                        target="_blank"
-                    >
-                        VIEW COLLECTION
-                        <img src="/static/icon/collections-page/button-arrow.svg" alt=""/>
-                        <div className={scss.collections_button__active_underline}/>
-                    </a>
-                </button>
+                <a
+                    href={collection.external_link}
+                    target="_blank"
+                    className={scss.collections_button__active}
+                >
+                    VIEW COLLECTION
+                    <img src="/static/icon/collections-page/button-arrow.svg" alt=""/>
+                    <div className={scss.collections_button__active_underline}/>
+                </a>
             </div>
         </div>
     );
@@ -136,24 +135,18 @@ const InternalCollection = ({slug, collection, index}) => {
             key={`collections-tile-${index + 1}`}
         >
             <div className={`${scss.collections__tile} ${scss.collections__tile_active}`}>
-                <Link href="/collections/[colId]" as={`/collections/${slug}`}>
-                    <a>
-                        <img
+                <Link href={`/collections/${slug}`}>
+                    <img
                             src={collection.image}
                             alt={`Collection ${collection.name}`}/>
                         <h2>{collection.name}</h2>
-                    </a>
                 </Link>
                 <p>{collection.description}</p>
-                <button className={scss.collections_button__active}>
-                    <Link href="/collections/[colId]" as={`/collections/${slug}`}>
-                        <a>
-                            VIEW COLLECTION
-                            <img src="/static/icon/collections-page/button-arrow.svg" alt=""/>
-                            <div className={scss.collections_button__active_underline}/>
-                        </a>
-                    </Link>
-                </button>
+                <Link href={`/collections/${slug}`} className={scss.collections_button__active}>
+                    VIEW COLLECTION
+                    <img src="/static/icon/collections-page/button-arrow.svg" alt=""/>
+                    <div className={scss.collections_button__active_underline}/>
+                </Link>
             </div>
         </div>
     );

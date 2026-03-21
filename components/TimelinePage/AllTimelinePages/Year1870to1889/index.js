@@ -62,7 +62,7 @@ const Year1870to1889 = () => {
         </div>
         <div className={scss.tile__p}>
           <p><SearchTag label="Frances E.W. Harper" tag="blackwomensuffrage_frances_ellen_watkins_harper"/> delivers the closing speech at the AWSA convention in New York City, saying, "much as white women need the ballot, colored women need it more." Harper also called for more intersectional demands like equal rights and equal access to education for Black women, which, according to historian Rosalyn Terborg-Penn, was likely a radical position to take in a single-issue organization like AWSA (Terborg-Penn, 47).</p>
-          <p>Mrs. Beatty attends the inaugural convention of the <Link href='/search?q="National+Woman+Suffrage+Association"'><a>National Woman Suffrage Association (NWSA)</a></Link>-affiliated Oregon State Woman Suffrage Association, showing that Black women were active in the western women's suffrage movement (Terborg-Penn, 50).</p>
+          <p>Mrs. Beatty attends the inaugural convention of the <Link href='/search?q="National+Woman+Suffrage+Association"'>National Woman Suffrage Association (NWSA)</Link>-affiliated Oregon State Woman Suffrage Association, showing that Black women were active in the western women's suffrage movement (Terborg-Penn, 50).</p>
         </div>
       </div>
 
@@ -93,7 +93,7 @@ const Year1870to1889 = () => {
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
-          <p>Frances E.W. Harper addresses the <Link href='/search?q="Association+for+the+Advancement+of+Women"'><a>Association for the Advancement of Women (AAW)</a></Link> Woman's Congress. Her talk, entitled, "The Colored Women of America," sets out the issues that would be taken up by <SearchTag label="Mary Church Terrell" tag="blackwomensuffrage_mary_church_terrell"/> and others in the <SearchTag label="National Association of Colored Women's Clubs (NACW)" tag="blackwomensuffrage_national_association_of_colored_women"/> in 1890s (Collier-Thomas, 54).</p>
+          <p>Frances E.W. Harper addresses the <Link href='/search?q="Association+for+the+Advancement+of+Women"'>Association for the Advancement of Women (AAW)</Link> Woman's Congress. Her talk, entitled, "The Colored Women of America," sets out the issues that would be taken up by <SearchTag label="Mary Church Terrell" tag="blackwomensuffrage_mary_church_terrell"/> and others in the <SearchTag label="National Association of Colored Women's Clubs (NACW)" tag="blackwomensuffrage_national_association_of_colored_women"/> in 1890s (Collier-Thomas, 54).</p>
         </div>
       </div>
 
@@ -103,7 +103,7 @@ const Year1870to1889 = () => {
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
-          <p>The Woman Suffrage amendment, written by <Link href="/search?q=susan+b+anthony"><a>Susan B. Anthony</a></Link>, is raised in Congress by California Senator A.A. Sargent. Although it ultimately fails, it includes the language that some 40 years later forms the basis for the 19th Amendment.</p>
+          <p>The Woman Suffrage amendment, written by <Link href="/search?q=susan+b+anthony">Susan B. Anthony</Link>, is raised in Congress by California Senator A.A. Sargent. Although it ultimately fails, it includes the language that some 40 years later forms the basis for the 19th Amendment.</p>
           <p>Mary Ann Shadd Cary announces that Black women, determined to win suffrage, "would support whatever party would allow them their rights, be it Republican or Democratic."</p>
         </div>
       </div>

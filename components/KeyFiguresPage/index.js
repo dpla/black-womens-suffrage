@@ -46,13 +46,11 @@ function KeyFiguresPage({ figure }) {
                 id={index}
                 value={fig.value} 
                 >
-                  <Link href="/key-figures/[figId]" as={`/key-figures/${ key }`}>
-                    <a className={
-                      (key == figure.figId ? scss.key_figures__active_item : scss.key_figures__li)
+                  <Link href={`/key-figures/${key}`} className={
+                      key == figure.figId ? scss.key_figures__active_item : scss.key_figures__li
                     }>
                       <span></span>
                       { fig.name }
-                    </a>
                   </Link>
                 </li> 
               )

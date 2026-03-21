@@ -58,7 +58,7 @@ const Year1930to1959 = () => {
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
-          <p>President Harry Truman issues <Link href='/search?q="Executive+Order+9981"'><a>Executive Order 9981</a></Link>, prohibiting racial discrimination in the U.S. military.</p>
+          <p>President Harry Truman issues <Link href='/search?q="Executive+Order+9981"'>Executive Order 9981</Link>, prohibiting racial discrimination in the U.S. military.</p>
         </div>
       </div>
 
@@ -78,7 +78,7 @@ const Year1930to1959 = () => {
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
-          <p>In <Link href='/search?q="brown+v+board+of+education"'><a>Brown v. Board of Education</a></Link>, the Supreme Court reverses Plessy v. Ferguson (1898), ruling that separate is inherently unequal.</p>
+          <p>In <Link href='/search?q="brown+v+board+of+education"'>Brown v. Board of Education</Link>, the Supreme Court reverses Plessy v. Ferguson (1898), ruling that separate is inherently unequal.</p>
         </div>
       </div>
 
@@ -88,7 +88,7 @@ const Year1930to1959 = () => {
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
-          <p><Link href='/search?q="montgomery+bus+boycott"'><a>Montgomery Bus Boycott</a></Link> protesting segregation begins after <SearchTag label="National Association for the Advancement of Colored People (NAACP)" tag="blackwomensuffrage_naacp"/> activist <SearchTag label="Rosa Parks" tag="blackwomensuffrage_rosa_parks"/> refuses to give up her seat on a city bus to a white man.</p>
+          <p><Link href='/search?q="montgomery+bus+boycott"'>Montgomery Bus Boycott</Link> protesting segregation begins after <SearchTag label="National Association for the Advancement of Colored People (NAACP)" tag="blackwomensuffrage_naacp"/> activist <SearchTag label="Rosa Parks" tag="blackwomensuffrage_rosa_parks"/> refuses to give up her seat on a city bus to a white man.</p>
         </div>
       </div>
 

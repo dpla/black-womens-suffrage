@@ -54,13 +54,11 @@ function TimelinePage({ timeId }) {
                   key={`timeline-years-${index+1}`} 
                   id={index}
                   value={years}>
-                <Link href="/timeline/[timeId]" as={`/timeline/${ years }`}>
-                    <a className={
-                      (years == timeId ? scss.timeline__active_item : scss.timeline__li)
+                <Link href={`/timeline/${years}`} className={
+                      years == timeId ? scss.timeline__active_item : scss.timeline__li
                     }>
                       <span></span>
                       { years }
-                    </a>
                   </Link>  
                 </li>
               )

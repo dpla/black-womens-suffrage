@@ -18,7 +18,7 @@ const Year1820to1859 = () => {
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
-          <p>The <SearchTag label="Philadelphia Female Anti-Slavery Society" tag="blackwomensuffrage_philadelphia_female_anti_slavery_society"/> is founded. Among its founding members are <Link href="/search?q=Charlotte+Vandine+Forten"><a>Charlotte Vandine Forten</a></Link> and several of her daughters. This was the first biracial organization of female abolitionists in the United States, and one of six abolitionist groups the Forten family helped to found and finance.</p>
+          <p>The <SearchTag label="Philadelphia Female Anti-Slavery Society" tag="blackwomensuffrage_philadelphia_female_anti_slavery_society"/> is founded. Among its founding members are <Link href="/search?q=Charlotte+Vandine+Forten">Charlotte Vandine Forten</Link> and several of her daughters. This was the first biracial organization of female abolitionists in the United States, and one of six abolitionist groups the Forten family helped to found and finance.</p>
         </div>
       </div>
 
@@ -28,7 +28,7 @@ const Year1820to1859 = () => {
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
-          <p><Link href='/search?q="Anti-Slavery+Convention+of+American+Women"'><a>Anti-Slavery Convention of American Women</a></Link>, an interracial meeting of women dedicated to ending slavery and racial discrimination, meets in New York City.</p>
+          <p><Link href='/search?q="Anti-Slavery+Convention+of+American+Women"'>Anti-Slavery Convention of American Women</Link>, an interracial meeting of women dedicated to ending slavery and racial discrimination, meets in New York City.</p>
         </div>
       </div>
 
@@ -70,7 +70,7 @@ const Year1820to1859 = () => {
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
-          <p><Link href="/search?q=uncle+tom's+cabin"><a><em>Uncle Tom’s Cabin</em></a></Link> by Harriet Beecher Stowe is published.</p>
+          <p><Link href="/search?q=uncle+tom's+cabin"><em>Uncle Tom’s Cabin</em></Link> by Harriet Beecher Stowe is published.</p>
         </div>
       </div>
 
@@ -90,8 +90,8 @@ const Year1820to1859 = () => {
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
-          <p><Link href="/search?q=harriet+forten+purvis"><a>Harriet Forten Purvis</a></Link> and <SearchTag label="Margaretta Forten" tag="blackwomensuffrage_margaretta_forten"/> play key roles in organizing the Fifth National Woman’s Rights Convention in Philadelphia.</p>
-          <p><SearchTag label="Frances Ellen Watkins Harper" tag="blackwomensuffrage_frances_ellen_watkins_harper"/> becomes a lecturer for the <Link href='/search?q="maine+anti-slavery+society"'><a>Maine Anti-Slavery Society</a></Link>. Over the course of the next six years, she travels extensively in the East and Midwest, lecturing about abolition. She earns a national reputation for her oratory and writing. (Gordon, Collier Thomas, p 45)</p>
+          <p><Link href="/search?q=harriet+forten+purvis">Harriet Forten Purvis</Link> and <SearchTag label="Margaretta Forten" tag="blackwomensuffrage_margaretta_forten"/> play key roles in organizing the Fifth National Woman’s Rights Convention in Philadelphia.</p>
+          <p><SearchTag label="Frances Ellen Watkins Harper" tag="blackwomensuffrage_frances_ellen_watkins_harper"/> becomes a lecturer for the <Link href='/search?q="maine+anti-slavery+society"'>Maine Anti-Slavery Society</Link>. Over the course of the next six years, she travels extensively in the East and Midwest, lecturing about abolition. She earns a national reputation for her oratory and writing. (Gordon, Collier Thomas, p 45)</p>
         </div>
       </div>
 

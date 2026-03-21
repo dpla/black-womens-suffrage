@@ -37,9 +37,7 @@ class HomeSearchBar extends React.Component {
 
             <div className={scss.searchbar__button_advanced}>
               <Link href="/search">
-                <a>
-                  ADVANCED SEARCH
-                </a>
+                ADVANCED SEARCH
               </Link>
             </div>
           </form>

@@ -18,7 +18,7 @@ const Year1920to1929 = () => {
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
-          <p>The 19th Amendment becomes law, giving women the right to vote. <SearchTag label="National American Woman Suffrage Association (NAWSA)" tag="blackwomensuffrage_national_american_women_suffrage_association"/> disbands and many white women join the new nonpartisan <Link href='/search?q="league+of+women+voters"'><a>League of Women Voters</a></Link>. However, many Black women in the South continued to face significant obstacles, already put in place by racist white officials to limit Black men's voting rights, to actually casting their ballots.</p>
+          <p>The 19th Amendment becomes law, giving women the right to vote. <SearchTag label="National American Woman Suffrage Association (NAWSA)" tag="blackwomensuffrage_national_american_women_suffrage_association"/> disbands and many white women join the new nonpartisan <Link href='/search?q="league+of+women+voters"'>League of Women Voters</Link>. However, many Black women in the South continued to face significant obstacles, already put in place by racist white officials to limit Black men's voting rights, to actually casting their ballots.</p>
           <p>Presidential candidate Warren Harding solicits the support of Black women through northern Black women's groups and national Black women's organizations. Black women, including <SearchTag label="Lethia C. Fleming" tag="blackwomensuffrage_lethia_cousins_fleming"/>, <SearchTag label="Mary Church Terrell" tag="blackwomensuffrage_mary_church_terrell"/> and Bertha Higgins, are employed by the Republican National Committee to join his campaign on the national, state and local levels. Fleming wrote an open letter to Black women urging them to vote for Harding. He was not, however, endorsed by the <SearchTag label="National Association of Colored Women's Clubs (NACW)" tag="blackwomensuffrage_national_association_of_colored_women"/>, the largest Black women's organization in the United States. Although an endorsement elicited fierce debate, many NACW members chose to withhold support due to the Republican party's failure to take a strong position against lynching.</p>
           <p>Mrs. Edward Washington runs for a seat on the Haddonfield, New Jersey, school board (Terborg-Penn, 148).</p>
           <p>Annie Simms Banks is appointed to Kentucky's Republican convention; she is the first southern Black woman to be selected for a political party convention (Terborg-Penn, 150).</p>
@@ -103,7 +103,7 @@ const Year1920to1929 = () => {
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
-          <p><Link href="/search?q=oscar+depriest"><a>Oscar DePriest</a></Link> is elected to the U.S. House of Representatives, becoming the first African-American congressman since Reconstruction. Black women, particularly members of Chicago's Alpha Suffrage Club, play an important role in his victory.</p>
+          <p><Link href="/search?q=oscar+depriest">Oscar DePriest</Link> is elected to the U.S. House of Representatives, becoming the first African-American congressman since Reconstruction. Black women, particularly members of Chicago's Alpha Suffrage Club, play an important role in his victory.</p>
         </div>
       </div>
 

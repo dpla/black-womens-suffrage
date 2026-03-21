@@ -87,10 +87,8 @@ const HomePage = () => {
             <div className={scss.home__section_4_tile_title}>
               <h3>Claire Collins Harvey</h3>
               <Link href="/collections/claire-collins-harvey">
-                <a>
-                  VIEW COLLECTION
+                VIEW COLLECTION
                   <img src="/static/icon/button-arrow-purple.svg" alt=""/>
-                </a>
               </Link>
             </div>
           </div>
@@ -112,10 +110,8 @@ const HomePage = () => {
             <div className={scss.home__section_4_tile_title}>
               <h3>Ida B. Wells Barnett</h3>
               <Link href="/collections/ida-b-wells">
-                <a>
-                  VIEW COLLECTION
+                VIEW COLLECTION
                   <img src="/static/icon/button-arrow-purple.svg" alt=""/>
-                </a>
               </Link>
             </div>
           </div>

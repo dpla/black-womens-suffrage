@@ -29,10 +29,8 @@ class MobileSearchBar extends React.Component {
 
           <div className={scss.searchbar__button_advanced}>
             <Link href="/search">
-              <a>
-                ADVANCED SEARCH
+              ADVANCED SEARCH
               <img src="/static/icon/button-arrow-purple.png" />
-              </a>
             </Link>
           </div>
         </form>

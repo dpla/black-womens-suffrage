@@ -10,15 +10,13 @@ const Breadcrumbs = ({ breadcrumbs }) => (
       if (idx < breadcrumbs.length - 1) {
         return (
           <div className={css.breadcrumbLinkWrapper} key={`${idx}`}>
-            <Link href={breadcrumb.url} as={breadcrumb.as}>
-              <a>
-                <ReactMarkdown
+            <Link href={breadcrumb.url}>
+              <ReactMarkdown
                   className={`${css.breadcrumbLink}`}
                   source={breadcrumb.title}
                   allowedTypes={["emphasis", "text"]}
                   unwrapDisallowed
                 />
-              </a>
             </Link>
           </div>
         );

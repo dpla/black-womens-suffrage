@@ -28,8 +28,7 @@ function CollectionItem({ item, nextItem, prevItem, amountOfItems, currentItemNu
           },
           {
             title: item.colName,
-            url: "/collections/[colId]",
-            as: "/collections/" + item.colId
+            url: "/collections/" + item.colId
           },
           {
             title: item.title.join(", ")

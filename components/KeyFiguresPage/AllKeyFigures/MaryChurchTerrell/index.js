@@ -21,7 +21,7 @@ const MaryChurchTerrell = () => {
 
       <section>
         <SectionTitle title="One of the First to Earn a College Degree" />
-        <p>Racial justice and women's suffrage activist <SearchTag label="Mary Church Terrell" tag="blackwomensuffrage_mary_church_terrell"/> was born in 1863 in Memphis, Tennessee, to formerly enslaved parents. Her family was affluent: Her mother, Louisa Ayres Church, owned a hair salon, and her father, <Link href='/search?subject="Church%2C Robert Reed%2C 1885-1952"'><a>Robert Reed Church</a></Link>, was an entrepreneur who owned several businesses and became one of the first African-American millionaires in the American South.</p>
+        <p>Racial justice and women's suffrage activist <SearchTag label="Mary Church Terrell" tag="blackwomensuffrage_mary_church_terrell"/> was born in 1863 in Memphis, Tennessee, to formerly enslaved parents. Her family was affluent: Her mother, Louisa Ayres Church, owned a hair salon, and her father, <Link href='/search?subject="Church%2C Robert Reed%2C 1885-1952"'>Robert Reed Church</Link>, was an entrepreneur who owned several businesses and became one of the first African-American millionaires in the American South.</p>
         <p>Church's parents valued education, and, though her parents divorced, she studied at Antioch College and earned a degree from Oberlin College in Ohio in 1884. Church, who was fluent in three languages, then worked as a teacher at Ohio's Wilberforce College. In 1887, she moved to Washington, D.C., where she was a teacher at M Street Colored High School and met her husband, fellow teacher Robert Heberton Terrell.</p>
       </section>
 

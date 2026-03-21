@@ -22,13 +22,10 @@ const ItemList = ({ collection, items }) => {
       <ul className={scss.item__ul}>
         {items.map((item) => (
           <li className={scss.item__li} key={`collections-${collection.colId}-${item.colItemId}`} data-cy="collection_item">
-            <Link href="/collections/[colId]/[colItemId]"
-              as={`/collections/${collection.colId}/${item.colItemId}`}>
-              <a>
-                <img src={item.thumb} alt={item.title} />
+            <Link href={`/collections/${collection.colId}/${item.colItemId}`}>
+              <img src={item.thumb} alt={item.title} />
                 <p className={scss.item__title}>{item.title}</p>
                 <p className={scss.item__date}>{item.date}</p>
-              </a>
             </Link>
           </li>
         ))}

@@ -1,23 +1,19 @@
 import { useRouter } from 'next/router'
 import PropTypes from 'prop-types'
 import Link from 'next/link'
-import React, { Children } from 'react'
+import React from 'react'
 
-const ActiveLink = ({ children, activeClassName, ...props }) => {
+const ActiveLink = ({ children, activeClassName, href, className = '', ...props }) => {
   const { pathname } = useRouter()
-  const child = Children.only(children)
-  const childClassName = child.props.className || ''
 
-  const className =
-    pathname.split("/")[1] === props.href.split("/")[1]
-      ? `${childClassName} ${activeClassName}`.trim()
-      : childClassName
+  const isActive = pathname.split("/")[1] === href.split("/")[1]
+  const combinedClassName = isActive
+    ? `${className} ${activeClassName}`.trim()
+    : className || null
 
   return (
-    <Link {...props}>
-      {React.cloneElement(child, {
-        className: className || null,
-      })}
+    <Link href={href} className={combinedClassName} {...props}>
+      {children}
     </Link>
   )
 }

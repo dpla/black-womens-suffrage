@@ -21,12 +21,12 @@ const HarrietFortenPurvis = () => {
 
       <section>
           <SectionTitle title="A Family Affair" />
-        <p>One of the well-known "Forten Sisters," <Link href="/search?q=harriet+forten+purvis"><a>Harriet Forten Purvis</a></Link> was the daughter of <Link href="/search?q=Charlotte+Vandine+Forten"><a>Charlotte Vandine Forten</a></Link> and <SearchTag label="James Forten" tag="blackwomensuffrage_james_forten"/>, prominent Black abolitionists from Philadelphia, Pennsylvania. Like her sisters, she was an active abolitionist and suffragist.</p>
+        <p>One of the well-known "Forten Sisters," <Link href="/search?q=harriet+forten+purvis">Harriet Forten Purvis</Link> was the daughter of <Link href="/search?q=Charlotte+Vandine+Forten">Charlotte Vandine Forten</Link> and <SearchTag label="James Forten" tag="blackwomensuffrage_james_forten"/>, prominent Black abolitionists from Philadelphia, Pennsylvania. Like her sisters, she was an active abolitionist and suffragist.</p>
       </section>
 
       <section>
         <p>She helped establish the <SearchTag tag="blackwomensuffrage_philadelphia_female_anti_slavery_society" label="Philadelphia Female Anti-Slavery Society"/> along with her mother and sisters; it was the first biracial women's abolitionist group in the United States. Forten served as a co-chair of the society's fairs, which raised money for the group's anti-slavery work. She also served on the society's sewing committee, which established a sewing school in a poor area of Philadelphia. She was active in the group's boycott of goods, including cotton and fruits and vegetables, that were produced with slave labor. </p>
-        <p>In 1832, Forten married <SearchTag label="Robert Purvis" tag="blackwomensuffrage_robert_purvis"/>, with whom she had five children. Purvis, who was of mixed race, was the scion of another prominent abolitionist family from Philadelphia, and the two were at the center of Philadelphia's abolitionist community. They welcomed fugitive slaves into their Byberry, Pennsylvania, home, which became a major station on the <Link href="/search?q=underground+railroad"><a>Underground Railroad</a></Link>.</p>
+        <p>In 1832, Forten married <SearchTag label="Robert Purvis" tag="blackwomensuffrage_robert_purvis"/>, with whom she had five children. Purvis, who was of mixed race, was the scion of another prominent abolitionist family from Philadelphia, and the two were at the center of Philadelphia's abolitionist community. They welcomed fugitive slaves into their Byberry, Pennsylvania, home, which became a major station on the <Link href="/search?q=underground+railroad">Underground Railroad</Link>.</p>
       </section>
 
       <section>

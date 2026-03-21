@@ -1,6 +1,5 @@
 import React from "react";
 
-import fetch from "isomorphic-fetch";
 
 import BWSHead from "components/BWSHead";
 import MainLayout from "components/MainLayout";
