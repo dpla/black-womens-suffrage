@@ -20,7 +20,7 @@ const CharlotteFortenGrimke = () => {
       <IntroAndPortrait figure={ charlotteFortenGrimke } />
       
       <section>
-        <p><SearchTag label="Charlotte Forten Grimké" tag="blackwomensuffrage_charlotte_forten_grimke"/> was born into the prominent Black abolitionist Forten family in Philadelphia. Her paternal grandparents were the abolitionists and equal rights advocates <Link href="/search?q=Charlotte+Vandine+Forten"><a>Charlotte Vandine Forten</a></Link> and <SearchTag label="James Forten" tag="blackwomensuffrage_james_forten"/>. Forten's mother died when she was just 3 years old, and her father, Robert Bridges Forten, did not want her to attend Philadelphia's segregated schools. Instead, at 16 years old, she was sent to the more progressive Salem, Massachusetts, where she boarded with the Remond family, who were also prominent Black abolitionists.</p>
+        <p><SearchTag label="Charlotte Forten Grimké" tag="blackwomensuffrage_charlotte_forten_grimke"/> was born into the prominent Black abolitionist Forten family in Philadelphia. Her paternal grandparents were the abolitionists and equal rights advocates <Link href="/search?q=Charlotte+Vandine+Forten">Charlotte Vandine Forten</Link> and <SearchTag label="James Forten" tag="blackwomensuffrage_james_forten"/>. Forten's mother died when she was just 3 years old, and her father, Robert Bridges Forten, did not want her to attend Philadelphia's segregated schools. Instead, at 16 years old, she was sent to the more progressive Salem, Massachusetts, where she boarded with the Remond family, who were also prominent Black abolitionists.</p>
       </section>
 
       <section>

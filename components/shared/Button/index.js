@@ -5,7 +5,6 @@ import css from "./Button.module.scss";
 
 const Button = ({
   id,
-  as,
   children,
   className = "",
   controls,
@@ -17,7 +16,6 @@ const Button = ({
   expanded,
   icon,
   onClick,
-  prefetch,
   size,
   style,
   title,
@@ -75,16 +73,13 @@ const Button = ({
   }
 
   let linkProps = {};
-  if (as) linkProps["as"] = as;
   if (title) linkProps["title"] = title;
 
   return (
     <div className={className}>
       {url
-        ? <Link href={url} {...linkProps}>
-            <a {...props} className={buttonClasses} style={style}>
-              {children}
-            </a>
+        ? <Link href={url} {...props} {...linkProps} className={buttonClasses} style={style}>
+            {children}
           </Link>
         : <button
             {...props}

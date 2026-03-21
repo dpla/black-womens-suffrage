@@ -10,9 +10,7 @@ const Footer = () => {
         <section className={scss.footer__section_top}>
           <div data-cy="footer__logo">
             <Link href="/">
-              <a>
-                <img src="/static/logo/dpla_bws-logo-white-footer.svg" alt="Black Women's Suffrage Logo"/>
-              </a>
+              <img src="/static/logo/dpla_bws-logo-white-footer.svg" alt="Black Women's Suffrage Logo"/>
             </Link>
           </div>          
 

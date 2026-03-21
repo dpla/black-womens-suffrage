@@ -1,21 +1,16 @@
-import React, { Component } from "react"
-
+import React, { useEffect } from "react"
 import { initGA, logPageView } from "lib/googleAnalytics.js"
 
-export default class GoogleAnalytics extends Component {
-    componentDidMount () {
+const GoogleAnalytics = ({ children }) => {
+    useEffect(() => {
         if (!window.GA_INITIALIZED) {
             initGA()
             window.GA_INITIALIZED = true
         }
         logPageView()
-    }
+    }, [])
 
-    render () {
-        return (
-            <div>
-                {this.props.children}
-            </div>
-        )
-    }
+    return <div>{children}</div>
 }
+
+export default GoogleAnalytics

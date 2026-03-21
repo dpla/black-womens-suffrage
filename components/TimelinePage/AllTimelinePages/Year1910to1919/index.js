@@ -18,7 +18,7 @@ const Year1910to1919 = () => {
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
-          <p>In a speech at <Link href='/search?q="howard+university"'><a>Howard University</a></Link>, <SearchTag label="Mary Church Terrell" tag="blackwomensuffrage_mary_church_terrell"/> discussed her view that woman's suffrage was needed to help fight societal ills, such as intemperance, that affected Black communities as well as white communities (Terborg-Penn, 86).</p>
+          <p>In a speech at <Link href='/search?q="howard+university"'>Howard University</Link>, <SearchTag label="Mary Church Terrell" tag="blackwomensuffrage_mary_church_terrell"/> discussed her view that woman's suffrage was needed to help fight societal ills, such as intemperance, that affected Black communities as well as white communities (Terborg-Penn, 86).</p>
         </div>
       </div>
 
@@ -72,7 +72,7 @@ const Year1910to1919 = () => {
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
-          <p>Ida B. Wells Barnett and members of the Alpha Suffrage Club work to register votes to try to elect Black aldermen in Chicago. In 1914, <Link href="/search?q=oscar+depriest"><a>Oscar DePriest</a></Link> solicits their help in running for an open alderman seat (Terborg-Penn, 139).</p>
+          <p>Ida B. Wells Barnett and members of the Alpha Suffrage Club work to register votes to try to elect Black aldermen in Chicago. In 1914, <Link href="/search?q=oscar+depriest">Oscar DePriest</Link> solicits their help in running for an open alderman seat (Terborg-Penn, 139).</p>
         </div>
       </div>
 
@@ -86,7 +86,7 @@ const Year1910to1919 = () => {
           <p>NAACP leader <SearchTag label="Mary Talbert" tag="blackwomensuffrage_mary_burnett_talbert"/> writes an article for the August 1915 issue of the NAACP publication, <em>The Crisis</em> entitled "Women and Colored Women" saying, "...this struggle becomes two-fold, first, because we are women and second, because we are colored women…" In an essay in that same issue, <SearchTag label="Nannie Helen Burroughs" tag="blackwomensuffrage_nannie_helen_burroughs"/> responded to a white woman asking what Black women would do with the ballot: "What can she do without it?"</p>
           <p><SearchTag label="Josephine Bruce" tag="blackwomensuffrage_josephine_bruce"/>, wife of Mississippi's first Black senator Blanche K. Bruce, writes editorials for NACW in which she advocates for women's suffrage.</p>
           <p>In New Jersey, a women's suffrage amendment to the state constitution fails. Newspapers report that the large number of African-American women supporting the amendment helped turn voters against it. (Terborg-Penn, 121)</p>
-          <p><Link href='/search?q="equal+suffrage+league+of+virginia"'><a>The Equal Suffrage League of Virginia</a></Link> responds to anti-suffrage advocates' concerns by noting that Black women can be prevented from voting by the same measures used to disenfranchise Black men. (Terborg-Penn, 125)</p>
+          <p><Link href='/search?q="equal+suffrage+league+of+virginia"'>The Equal Suffrage League of Virginia</Link> responds to anti-suffrage advocates' concerns by noting that Black women can be prevented from voting by the same measures used to disenfranchise Black men. (Terborg-Penn, 125)</p>
           <p>Thanks in part to the support of the Alpha Suffrage Club, Oscar DePriest wins a Chicago alderman seat. DePriest comes out in favor of women's suffrage. Black turnout is also credited with helping William Hale Thompson to be elected mayor of Chicago.</p>
         </div>
       </div>
@@ -107,8 +107,8 @@ const Year1910to1919 = () => {
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
-          <p>A "Declaration of Principles" is adopted at the annual NACW convention that includes support for the <Link href='/search?q="susan+b+anthony+amendment"'><a>Susan B. Anthony Amendment</a></Link>.</p>
-          <p><SearchTag label="The National Woman's Party" tag="blackwomensuffrage_national_womans_party"/>, formed by <Link href="/search?q=alice+paul"><a>Alice Paul</a></Link> and <Link href="/search?q=lucy+burns"><a>Lucy Burns</a></Link> in 1913 as the <SearchTag label="Congressional Union for Woman Suffrage" tag="blackwomensuffrage_congressional_union"/>, begins employing methods successfully used by British women, including demonstrations, meetings and parades. These methods are seen as radical at the time.</p>
+          <p>A "Declaration of Principles" is adopted at the annual NACW convention that includes support for the <Link href='/search?q="susan+b+anthony+amendment"'>Susan B. Anthony Amendment</Link>.</p>
+          <p><SearchTag label="The National Woman's Party" tag="blackwomensuffrage_national_womans_party"/>, formed by <Link href="/search?q=alice+paul">Alice Paul</Link> and <Link href="/search?q=lucy+burns">Lucy Burns</Link> in 1913 as the <SearchTag label="Congressional Union for Woman Suffrage" tag="blackwomensuffrage_congressional_union"/>, begins employing methods successfully used by British women, including demonstrations, meetings and parades. These methods are seen as radical at the time.</p>
           <p>Jeanette Rankin, of Wyoming, becomes the first American woman elected to the U.S. House of Representatives.</p>
         </div>
       </div>
@@ -133,9 +133,9 @@ const Year1910to1919 = () => {
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
-          <p>After resisting the lobbying of <Link href="/search?q=Carrie+Chapman+Catt"><a>Carrie Chapman Catt</a></Link> in NAWSA and the picketing and hunger strikes organized by Alice Paul, President Woodrow Wilson finally capitulates and says woman's suffrage is needed as a "war measure." He stalled as long as he possibly could, saying at best that it was an issue that should be decided in the states, a position that was counter to the goal of suffragists who wanted a constitutional amendment.</p>
+          <p>After resisting the lobbying of <Link href="/search?q=Carrie+Chapman+Catt">Carrie Chapman Catt</Link> in NAWSA and the picketing and hunger strikes organized by Alice Paul, President Woodrow Wilson finally capitulates and says woman's suffrage is needed as a "war measure." He stalled as long as he possibly could, saying at best that it was an issue that should be decided in the states, a position that was counter to the goal of suffragists who wanted a constitutional amendment.</p>
           <p>Mississippi Senator John Sharpe Williams proposes an amendment to the Anthony suffrage amendment that would permit only white women to vote.</p>
-          <p>James Calloway writes an article for the <em>Macon Telegraph</em> in which he attempts to discredit <Link href="/search?q=susan+b+anthony"><a>Susan B. Anthony</a></Link> by pointing out her friendships with Black women. His article is reprinted and circulated by suffrage opponents. Anthony invited Black women to stay at her Rochester, NY, home, challenging white resistance to social equality. Mary Church Terrell and Ida B. Wells were just two of several women who stayed as guests at her home. However, Anthony was also willing to sacrifice Black women's voting rights if it could help her achieve her goal of white women's enfranchisement.</p>
+          <p>James Calloway writes an article for the <em>Macon Telegraph</em> in which he attempts to discredit <Link href="/search?q=susan+b+anthony">Susan B. Anthony</Link> by pointing out her friendships with Black women. His article is reprinted and circulated by suffrage opponents. Anthony invited Black women to stay at her Rochester, NY, home, challenging white resistance to social equality. Mary Church Terrell and Ida B. Wells were just two of several women who stayed as guests at her home. However, Anthony was also willing to sacrifice Black women's voting rights if it could help her achieve her goal of white women's enfranchisement.</p>
           <p>Black women in New York City found four chapters of Negro Women Voters across Queens County and, in Harlem, Black women found the Women's Non-Partisan League.</p>
           <p>Gertrude E. Curtis and Laura B. Fisher are chosen as delegates to the New York State Republican convention.</p>
         </div>
@@ -148,7 +148,7 @@ const Year1910to1919 = () => {
         </div>
         <div className={scss.tile__p}>
           <p>Mississippi Senator Pat Harrison unsuccessfully attempts to change the wording of the original Anthony amendment to include only white women.</p>
-          <p>Mary Church Terrell is asked by NAWSA leader <Link href="/search?q=ida+husted+harper"><a>Ida Harper</a></Link> to convince the Northeastern Federation of Colored Women's Clubs to withdraw their request for NAWSA membership. In her request, Harper explained that NAWSA head Carrie Chapman Catt was concerned that accepting the membership would alienate Southern white voters, and that fear of Black women voting was the primary obstacle to ratification (Terborg-Penn, 130). Terrell refuses, instead warning her friend Elizabeth Carter, head of the Northeastern Federation of Colored Women's Clubs of NAWSA's intentions.</p>
+          <p>Mary Church Terrell is asked by NAWSA leader <Link href="/search?q=ida+husted+harper">Ida Harper</Link> to convince the Northeastern Federation of Colored Women's Clubs to withdraw their request for NAWSA membership. In her request, Harper explained that NAWSA head Carrie Chapman Catt was concerned that accepting the membership would alienate Southern white voters, and that fear of Black women voting was the primary obstacle to ratification (Terborg-Penn, 130). Terrell refuses, instead warning her friend Elizabeth Carter, head of the Northeastern Federation of Colored Women's Clubs of NAWSA's intentions.</p>
           <p>The 19th Amendment is passed by both houses of Congress and the ratification process begins. The amendment gives the vote to nearly 3 million Black women; three quarters of them live in the American South (Terborg-Penn, 151).</p>
         </div>
       </div>

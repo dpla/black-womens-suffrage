@@ -6,7 +6,7 @@ function Timeline({ timeId }) {
 
   // Redirect to the first timeline page.
   React.useEffect(() => {
-    Router.push("/timeline/[timeId]", `/timeline/${ timeId }`)
+    Router.push(`/timeline/${timeId}`)
   });
   return null;
 

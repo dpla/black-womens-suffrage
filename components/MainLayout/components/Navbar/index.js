@@ -1,86 +1,49 @@
-import React, { Component } from 'react'
+import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import scss from "./Navbar.module.scss"
-import SearchBar from "components/shared/SearchBar";
+import SearchBar from "components/shared/SearchBar"
 import ActiveLink from './ActiveLink'
 
-class Navbar extends Component {
-  constructor() {
-    super()
+const Navbar = () => {
+  const [showSearchbar, setShowSearchbar] = useState(false)
 
-    this.state = {
-      showSearchbar: false
+  useEffect(() => {
+    if (window.location.pathname === '/search') {
+      setShowSearchbar(true)
     }
+  }, [])
 
-  }
+  const triggerSearchbar = () => setShowSearchbar(prev => !prev)
 
-  componentDidMount = () => {
-    let path = window.location.pathname
-    if (path === '/search') {
-      this.setState({
-        showSearchbar: true
-      })
-    }
-  }
+  return (
+    <>
+      <nav className={scss.navbar} data-cy="navbar">
+        <div className={scss.nav__logo} data-cy="nav__logo">
+          <Link href="/">
+            <img src="/static/logo/dpla_bws-logo-color-nav.png" alt="Black Women's Suffrage Logo" />
+          </Link>
+        </div>
 
-  triggerSearchbar = () => {
-    this.setState({
-      showSearchbar: !this.state.showSearchbar
-    })
-  }
+        <div className={scss.nav__links} data-cy="nav__links">
+          <ActiveLink activeClassName={scss.active} href="/about">About</ActiveLink>
+          <ActiveLink activeClassName={scss.active} href="/timeline">Timeline</ActiveLink>
+          <ActiveLink activeClassName={scss.active} href="/key-figures">Key Figures</ActiveLink>
+          <ActiveLink activeClassName={scss.active} href="/collections">Collections</ActiveLink>
+          <ActiveLink activeClassName={scss.active} href="/partners">Partners</ActiveLink>
 
+          <div className={scss.divider} />
+          <a href="https://dp.la" target="_blank" rel="noopener noreferrer">Visit DPLA</a>
+          <div className={scss.divider} />
 
-  render() {
-    return (
-      <>
-        <nav className={scss.navbar} data-cy="navbar">
-          <div className={scss.nav__logo} data-cy="nav__logo">
-            <Link href="/">
-              <a>
-                <img src="/static/logo/dpla_bws-logo-color-nav.png" alt="Black Women's Suffrage Logo" />
-              </a>
-            </Link>
-          </div>
+          <button onClick={triggerSearchbar} data-cy="searchbar__icon">
+            <img src={"/static/icon/search/search-bar.svg"} alt="Search Bar" className={scss.searchIcon} />
+          </button>
+        </div>
+      </nav>
 
-          <div className={scss.nav__links} data-cy="nav__links">
-
-            <ActiveLink activeClassName={scss.active} href="/about">
-              <a>About</a>
-            </ActiveLink>
-
-            <ActiveLink activeClassName={scss.active} href="/timeline">
-              <a>Timeline</a>
-            </ActiveLink>
-
-            <ActiveLink activeClassName={scss.active} href="/key-figures">
-              <a>Key Figures</a>
-            </ActiveLink>
-
-            <ActiveLink activeClassName={scss.active} href="/collections">
-              <a>Collections</a>
-            </ActiveLink>
-
-            <ActiveLink activeClassName={scss.active} href="/partners">
-              <a>Partners</a>
-            </ActiveLink>
-
-            <div className={scss.divider} />
-            <a href="https://dp.la" target="_blank">Visit DPLA</a>
-            <div className={scss.divider} />
-
-            <button onClick={this.triggerSearchbar} data-cy="searchbar__icon">
-              <img src={"/static/icon/search/search-bar.svg"} alt="Search Bar" className={scss.searchIcon} />
-            </button>
-
-          </div>
-        </nav>
-
-        {this.state.showSearchbar &&
-          <SearchBar />
-        }
-      </>
-    )
-  }
+      {showSearchbar && <SearchBar />}
+    </>
+  )
 }
 
 export default Navbar

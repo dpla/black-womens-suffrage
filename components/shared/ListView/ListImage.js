@@ -43,7 +43,7 @@ class ListImage extends React.Component {
       >
         {/* see issue #869 for details on this hack */}
         {item.id !== "http://dp.la/api/items/#sourceResource" &&
-          <Link href={item.linkHref} as={item.linkAs}>
+          <Link href={item.linkHref}>
             <a
               className={`${css.listItemImageLink} internalItemLink`}
               title={title}

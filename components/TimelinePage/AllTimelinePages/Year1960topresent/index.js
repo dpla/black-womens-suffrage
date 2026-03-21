@@ -29,7 +29,7 @@ const Year1960topresent = () => {
         </div>
         <div className={scss.tile__p}>
           <p>Hamer and several other women are arrested in Winona, Mississippi, while returning from a voter registration workshop in South Carolina, for entering the area of a bus station reserved for whites. All of the women, but especially Hamer, are savagely beaten while in the Winona jail.</p>
-          <p><SearchTag label="Rev. Martin Luther King, Jr." tag="blackwomensuffrage_martin_luther_king_jr"/> leads the <Link href='/search?q="March+on+Washington"+1963'><a>March on Washington for Jobs and Freedom</a></Link> and makes his famed "I Have a Dream" speech.</p>
+          <p><SearchTag label="Rev. Martin Luther King, Jr." tag="blackwomensuffrage_martin_luther_king_jr"/> leads the <Link href='/search?q="March+on+Washington"+1963'>March on Washington for Jobs and Freedom</Link> and makes his famed "I Have a Dream" speech.</p>
         </div>
       </div>
 
@@ -39,7 +39,7 @@ const Year1960topresent = () => {
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
-          <p><Link href='/search?q="civil+rights+act"+1964'><a>Civil Rights Act of 1964</a></Link> is passed, guaranteeing equal employment, limiting the use of voter literacy tests and establishing federal authority over the racial integration of public facilities.</p>
+          <p><Link href='/search?q="civil+rights+act"+1964'>Civil Rights Act of 1964</Link> is passed, guaranteeing equal employment, limiting the use of voter literacy tests and establishing federal authority over the racial integration of public facilities.</p>
         </div>
       </div>
 
@@ -49,8 +49,8 @@ const Year1960topresent = () => {
           <div className={scss.tile__line}></div>
         </div>
         <div className={scss.tile__p}>
-          <p>Armed police attack civil rights marchers on the <Link href="/search?q=Edmund+Pettus+Bridge"><a>Edmund Pettus Bridge</a></Link> in Montgomery, Alabama.</p>
-          <p>The <Link href='/search?q="voting+rights+act"+1965'><a>Voting Rights Act of 1965</a></Link> is passed, prohibiting state and local efforts to prevent Black men and women from exercising their right to vote as laid out in the <SearchTag label="15th" tag="blackwomensuffrage_fifteenth_amendment"/> and 19th amendments. The bill represents a victory for Black women, who had been working for more than a century to win and then ensure the vote for Black women and men.</p>
+          <p>Armed police attack civil rights marchers on the <Link href="/search?q=Edmund+Pettus+Bridge">Edmund Pettus Bridge</Link> in Montgomery, Alabama.</p>
+          <p>The <Link href='/search?q="voting+rights+act"+1965'>Voting Rights Act of 1965</Link> is passed, prohibiting state and local efforts to prevent Black men and women from exercising their right to vote as laid out in the <SearchTag label="15th" tag="blackwomensuffrage_fifteenth_amendment"/> and 19th amendments. The bill represents a victory for Black women, who had been working for more than a century to win and then ensure the vote for Black women and men.</p>
         </div>
       </div>
 

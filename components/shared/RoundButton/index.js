@@ -4,11 +4,9 @@ import Link from "next/link";
 
 const RoundButton = ({text, icon, url}) => {
   return (
-    <Link href={url}>
-        <a className={scss.roundButton} data-cy="round_button">
-            {text}
-            <img src={icon} alt={""}/>
-        </a>
+    <Link href={url} className={scss.roundButton} data-cy="round_button">
+        {text}
+        <img src={icon} alt={""}/>
     </Link>
   )
 };
