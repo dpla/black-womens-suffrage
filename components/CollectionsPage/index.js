@@ -114,16 +114,15 @@ const ExternalCollection = ({collection}) => {
                     <h2>{collection.name}</h2>
                 </a>
                 <p>{collection.description}</p>
-                <button className={scss.collections_button__active}>
-                    <a
-                        href={collection.external_link}
-                        target="_blank"
-                    >
-                        VIEW COLLECTION
-                        <img src="/static/icon/collections-page/button-arrow.svg" alt=""/>
-                        <div className={scss.collections_button__active_underline}/>
-                    </a>
-                </button>
+                <a
+                    href={collection.external_link}
+                    target="_blank"
+                    className={scss.collections_button__active}
+                >
+                    VIEW COLLECTION
+                    <img src="/static/icon/collections-page/button-arrow.svg" alt=""/>
+                    <div className={scss.collections_button__active_underline}/>
+                </a>
             </div>
         </div>
     );
@@ -143,13 +142,11 @@ const InternalCollection = ({slug, collection, index}) => {
                         <h2>{collection.name}</h2>
                 </Link>
                 <p>{collection.description}</p>
-                <button className={scss.collections_button__active}>
-                    <Link href={`/collections/${slug}`}>
-                        VIEW COLLECTION
-                            <img src="/static/icon/collections-page/button-arrow.svg" alt=""/>
-                            <div className={scss.collections_button__active_underline}/>
-                    </Link>
-                </button>
+                <Link href={`/collections/${slug}`} className={scss.collections_button__active}>
+                    VIEW COLLECTION
+                    <img src="/static/icon/collections-page/button-arrow.svg" alt=""/>
+                    <div className={scss.collections_button__active_underline}/>
+                </Link>
             </div>
         </div>
     );

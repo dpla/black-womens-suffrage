@@ -54,7 +54,7 @@ const Year1860to1869 = () => {
         </div>
         <div className={scss.tile__p}>
           <p>Stanton supporter <Link href="/search?q=George+Francis+Train">George Francis Train</Link> argues during a debate over suffrage in Kansas that to grant suffrage to Black men was "absurd, especially if white women were not enfranchised." (Terborg-Penn, 28)</p>
-          <p><Link href="/search?q=Lucy+Stone">Lucy Stone</Link> describes Republicans who criticized those opposed to Black suffrage as "unutterably contemptible from the lips or pens of those whose words, acts, and votes are not against ignorant and degraded negroes, but against every man's mother, wife, and daughter.</p>
+          <p><Link href="/search?q=Lucy+Stone">Lucy Stone</Link> describes Republicans who criticized those opposed to Black suffrage as "unutterably contemptible from the lips or pens of those whose words, acts, and votes are not against ignorant and degraded negroes, but against every man's mother, wife, and daughter."</p>
         </div>
       </div>
 

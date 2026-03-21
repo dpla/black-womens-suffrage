@@ -138,17 +138,17 @@ export async function getServerSideProps(context) {
 
     const page = query.page || 1;
 
+    const emptySearchProps = {
+        results: { docs: [], facets: {}, count: 0 },
+        numberOfActiveFacets: 0,
+        currentPage: Number(page),
+        pageCount: 0,
+        pageSize: page_size,
+        query: query.q || null
+    };
+
     if (page > MAX_PAGE_SIZE) {
-        return {
-            props: {
-                results: { docs: [], facets: {}, count: 0 },
-                numberOfActiveFacets: 0,
-                currentPage: Number(page),
-                pageCount: 0,
-                pageSize: page_size,
-                query: query.q || null
-            }
-        };
+        return { props: emptySearchProps };
     }
 
     const numberOfActiveFacets = facetQueries
@@ -169,6 +169,9 @@ export async function getServerSideProps(context) {
         tagsParam;
 
     const res = await fetch(url);
+    if (!res.ok) {
+        return { props: emptySearchProps };
+    }
     let json = await res.json();
 
     const docs = json.docs ? json.docs.map(result => {

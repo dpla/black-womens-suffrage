@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 import scss from "./Navbar.module.scss"
 import SearchBar from "components/shared/SearchBar"
 import ActiveLink from './ActiveLink'
 
 const Navbar = () => {
   const [showSearchbar, setShowSearchbar] = useState(false)
+  const router = useRouter()
 
   useEffect(() => {
-    if (window.location.pathname === '/search') {
-      setShowSearchbar(true)
-    }
-  }, [])
+    setShowSearchbar(router.pathname === '/search')
+  }, [router.pathname])
 
   const triggerSearchbar = () => setShowSearchbar(prev => !prev)
 

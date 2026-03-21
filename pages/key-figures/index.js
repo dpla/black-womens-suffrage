@@ -9,8 +9,8 @@ function KeyFiguresIndex({ figId }) {
 
   // Redirect to the first key figure.
   React.useEffect(() => {
-    Router.push(`/key-figures/${figId}`)
-  });
+    Router.replace(`/key-figures/${figId}`)
+  }, [figId]);
   return null;
 
 };
