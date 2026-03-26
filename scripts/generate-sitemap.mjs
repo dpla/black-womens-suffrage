@@ -44,5 +44,5 @@ const xml =
   entries +
   `\n</urlset>\n`;
 
-writeFileSync("public/sitemap.xml", xml);
-console.log(`generate-sitemap: wrote ${allUrls.length} URLs to public/sitemap.xml`);
+writeFileSync("public/sitemap-pages.xml", xml);
+console.log(`generate-sitemap: wrote ${allUrls.length} URLs to public/sitemap-pages.xml`);
