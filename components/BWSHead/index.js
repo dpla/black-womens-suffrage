@@ -9,18 +9,18 @@ const BWSHead = (props) => {
     pageTitle,
     pageDescription,
     pageImage,
-    pageImageCaption
+    pageImageCaption,
+    canonicalUrl,
   } = props;
 
-  const defaultPageTitle = "Black Women's Suffrage | DPLA"
+  const defaultPageTitle = "Black Women’s Suffrage | DPLA"
 
   const defaultDescription = "The Black Women’s Suffrage Digital Collection is a collaborative project to provide digital access to materials documenting the roles and experiences of Black Women in the Women’s Suffrage Movement and, more broadly, women’s rights, voting rights, and civic activism between the 1850s and 1960."
 
   const defaultImageUrl = "/static/logo/dpla_bws-logo-color-nav.png"
 
-  const currentPath = router.route;
-  const baseUrl = 'http://blackwomenssuffrage.dp.la';
-  const currentUrl = `${baseUrl}${currentPath}`
+  const baseUrl = ‘https://blackwomenssuffrage.dp.la’;
+  const currentUrl = canonicalUrl || `${baseUrl}${router.asPath}`
 
   return (
     <div>
@@ -50,6 +50,7 @@ const BWSHead = (props) => {
         <link rel='manifest' href='/static/manifest.json' />
         <link rel='mask-icon' href='/static/favicons/safari-pinned-tab.svg' color='#5bbad5' />
         <link rel='shortcut icon' href='/static/favicons/favicon.ico' />
+        <link rel='canonical' href={currentUrl} />
 
         <meta name='twitter:card' content='summary' />
         <meta name='twitter:url' content={currentUrl || baseUrl}/>

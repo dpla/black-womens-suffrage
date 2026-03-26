@@ -18,10 +18,11 @@ import css from "components/ItemComponents/itemComponent.module.scss";
 const ItemDetail = ({url, item}) => {
   return (
     <MainLayout>
-      <BWSHead 
+      <BWSHead
         pageTitle={`${item.title} | DPLA`}
         pageDescription={item.description}
         pageImage={item.thumbnailUrl}
+        canonicalUrl={url}
       />
       <BreadcrumbsModule
         breadcrumbs={[
