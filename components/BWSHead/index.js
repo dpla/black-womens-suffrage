@@ -19,7 +19,7 @@ const BWSHead = (props) => {
 
   const defaultImageUrl = "/static/logo/dpla_bws-logo-color-nav.png"
 
-  const baseUrl = ‘https://blackwomenssuffrage.dp.la’;
+  const baseUrl = 'https://blackwomenssuffrage.dp.la';
   const currentUrl = canonicalUrl || `${baseUrl}${router.asPath}`
 
   return (
