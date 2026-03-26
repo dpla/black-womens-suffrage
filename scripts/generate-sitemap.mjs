@@ -4,20 +4,27 @@
  * Run via the postbuild npm script.
  */
 import { readFileSync, writeFileSync } from "fs";
+import { collections } from "../constants/collections.js";
 import { keyFigures } from "../constants/key-figures.js";
 import { timelineOptions } from "../constants/timeline-options.js";
 
 const BASE = "https://blackwomenssuffrage.dp.la";
+
+const escapeXml = (str) =>
+  str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
 
 const staticRoutes = [
   "/",
   "/about",
   "/timeline",
   "/collections",
-  "/collections/ida-b-wells",
   "/partners",
   "/harmful-language-statement",
 ];
+
+const collectionRoutes = Object.keys(collections)
+  .filter((k) => collections[k].publish)
+  .map((k) => `/collections/${k}`);
 
 const keyFigureRoutes = Object.keys(keyFigures).map((k) => `/key-figures/${k}`);
 const timelineRoutes = timelineOptions.map((r) => `/timeline/${r}`);
@@ -27,6 +34,7 @@ const ibwRoutes = Object.keys(ibwData).map((k) => `/collections/ida-b-wells/${k}
 
 const allUrls = [
   ...staticRoutes,
+  ...collectionRoutes,
   ...keyFigureRoutes,
   ...timelineRoutes,
   ...ibwRoutes,
@@ -35,7 +43,7 @@ const allUrls = [
 const now = new Date().toISOString();
 
 const entries = allUrls
-  .map((url) => `  <url>\n    <loc>${url}</loc>\n    <lastmod>${now}</lastmod>\n  </url>`)
+  .map((url) => `  <url>\n    <loc>${escapeXml(url)}</loc>\n    <lastmod>${now}</lastmod>\n  </url>`)
   .join("\n");
 
 const xml =
