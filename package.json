@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "postbuild": "node scripts/generate-sitemap.mjs",
     "start": "next start",
     "clean": "rm -rf .next ./build ./coverage ./node_modules",
     "nuke": "npm run clean && npm i && npm run build && npm run start"

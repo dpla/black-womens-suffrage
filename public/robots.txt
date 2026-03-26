@@ -1,8 +1,7 @@
-Sitemap: https://blackwomenssuffrage.dp.la/api/sitemap
+Sitemap: https://blackwomenssuffrage.dp.la/sitemap.xml
 
 User-agent: *
 Allow: /*
-Allow: /api/sitemap
 Disallow: /api/health
 Disallow: /api/dpla/*
 Disallow: /search
