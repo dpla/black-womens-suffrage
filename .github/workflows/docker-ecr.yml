@@ -17,12 +17,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Set up QEMU
-        uses: docker/setup-qemu-action@v2
-        with:
-          image: tonistiigi/binfmt:latest
-          platforms: arm64,arm
-
       - name: Set AWS credentials
         if: ${{ !env.ACT }}
         uses: aws-actions/configure-aws-credentials@v2
@@ -35,9 +29,6 @@ jobs:
         if: ${{ !env.ACT }}
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v1
-
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v2
 
         # Get branch names for ECR tagging
       - name: Get branch name (merge)
@@ -59,9 +50,12 @@ jobs:
           BRANCH_NAME: ${{ env.BRANCH_NAME }}
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         run: |
-          docker buildx build \
+          docker build \
+          --platform linux/amd64 \
           -t $ECR_REGISTRY/$ECR_REPOSITORY:latest \
           -t $ECR_REGISTRY/$ECR_REPOSITORY:$BRANCH_NAME \
           -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG \
-          --platform linux/amd64,linux/arm64 . \
-          --push
+          .
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:latest
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$BRANCH_NAME
+          docker push $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
