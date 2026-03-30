@@ -9,7 +9,6 @@ import MaxPageError from "components/SearchPage/MaxPageError";
 import BWSHead from "components/BWSHead";
 
 import {
-    getCurrentUrl,
     getItemThumbnail,
     splitAndURIEncodeFacet,
 } from "lib";
@@ -25,6 +24,8 @@ import {
 import {
     SITE_TAG
 } from "constants/site";
+
+const apiVersion = process.env.API_VERSION || "v2";
 
 const Search = ({ results, numberOfActiveFacets, pageCount, currentPage, pageSize, query }) => {
     const router = useRouter();
@@ -84,7 +85,6 @@ const Search = ({ results, numberOfActiveFacets, pageCount, currentPage, pageSiz
 export async function getServerSideProps(context) {
     const query = context.query;
     const sort_order = query.sort_order || "";
-    const currentUrl = getCurrentUrl(context.req);
 
     const q = query.q
         ? encodeURIComponent(query.q.trim())
@@ -158,8 +158,8 @@ export async function getServerSideProps(context) {
     const facetsParam = `&facets=${possibleFacets.join(",")}&${facetQueries}`;
     const tagsParam = tags.map(x => `&tags=${x}`).join("");
     const url =
-        currentUrl +
-        "/api/dpla/items?exact_field_match=true" +
+        `${process.env.API_URL}/${apiVersion}/items?api_key=${process.env.API_KEY}` +
+        `&exact_field_match=true` +
         `&q=${q}` +
         `&page=${page}` +
         `&page_size=${page_size}` +
