@@ -56,10 +56,16 @@ export async function getServerSideProps(context) {
   const url = getCurrentFullUrl(req);
   try {
     const apiVersion = process.env.API_VERSION || "v2";
-    const res = await fetch(
-      `${process.env.API_URL}/${apiVersion}/items/${encodeURIComponent(itemId)}?api_key=${process.env.API_KEY}`
+    const apiRes = await fetch(
+      `${process.env.API_URL}/${apiVersion}/items/${encodeURIComponent(itemId)}?api_key=${process.env.API_KEY}`,
+      { headers: { "DPLA-INTERNAL-ACCESS": process.env.DPLA_INTERNAL_ACCESS } }
     );
-    const json = await res.json();
+    if (!apiRes.ok) {
+      console.error(`[Item] API request failed: ${apiRes.status} ${apiRes.statusText}`);
+      res.statusCode = 404;
+      return { props: { error: { statusCode: 404 } } };
+    }
+    const json = await apiRes.json();
 
     const doc = json.docs[0];
     const thumbnailUrl = getItemThumbnail(doc);
