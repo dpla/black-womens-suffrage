@@ -173,7 +173,7 @@ export async function getServerSideProps(context) {
     });
     if (!res.ok) {
         console.error(`[Search] API request failed: ${res.status} ${res.statusText}`);
-        return { props: emptySearchProps };
+        return { notFound: true };
     }
     let json = await res.json();
 
