@@ -51,9 +51,7 @@ const ItemDetail = ({url, item}) => {
 
 export async function getServerSideProps(context) {
   const itemId = context.params.itemId;
-  const req = context.req;
-  const res = context.res;
-  const url = getCurrentFullUrl(req);
+  const url = getCurrentFullUrl(context.req);
   try {
     const apiVersion = process.env.API_VERSION || "v2";
     const apiRes = await fetch(
