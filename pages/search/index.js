@@ -168,14 +168,20 @@ export async function getServerSideProps(context) {
         facetsParam +
         tagsParam;
 
-    const res = await fetch(url, {
-        headers: { "DPLA-INTERNAL-ACCESS": process.env.DPLA_INTERNAL_ACCESS }
-    });
-    if (!res.ok) {
-        console.error(`[Search] API request failed: ${res.status} ${res.statusText}`);
+    let json;
+    try {
+        const res = await fetch(url, {
+            headers: { "DPLA-INTERNAL-ACCESS": process.env.DPLA_INTERNAL_ACCESS }
+        });
+        if (!res.ok) {
+            console.error(`[Search] API request failed: ${res.status} ${res.statusText}`);
+            return { notFound: true };
+        }
+        json = await res.json();
+    } catch (error) {
+        console.error("[Search] Unexpected error:", error);
         return { notFound: true };
     }
-    let json = await res.json();
 
     const docs = json.docs ? json.docs.map(result => {
         const thumbnailUrl = getItemThumbnail(result);
