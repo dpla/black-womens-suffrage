@@ -179,7 +179,7 @@ export async function getServerSideProps(context) {
         }
         json = await res.json();
     } catch (error) {
-        console.error("[Search] Unexpected error:", error);
+        console.error("[Search] Unexpected error:", error.message || String(error));
         return { notFound: true };
     }
 
