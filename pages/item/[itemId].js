@@ -98,7 +98,7 @@ export async function getServerSideProps(context) {
       })
     } };
   } catch (error) {
-    console.error('[Item] Unexpected error:', error);
+    console.error('[Item] Unexpected error:', error.message || String(error));
     return { notFound: true };
   }
 };
