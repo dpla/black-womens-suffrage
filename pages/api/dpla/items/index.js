@@ -16,6 +16,7 @@ const proxy = (req, res) => {
 
   return httpProxyMiddleware(req, res, {
     target: process.env.API_URL,
+    headers: { "DPLA-INTERNAL-ACCESS": process.env.DPLA_INTERNAL_ACCESS },
   });
 };
 
