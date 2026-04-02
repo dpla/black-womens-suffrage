@@ -168,7 +168,9 @@ export async function getServerSideProps(context) {
         facetsParam +
         tagsParam;
 
-    const res = await fetch(url);
+    const res = await fetch(url, {
+        headers: { "DPLA-INTERNAL-ACCESS": process.env.DPLA_INTERNAL_ACCESS }
+    });
     if (!res.ok) {
         console.error(`[Search] API request failed: ${res.status} ${res.statusText}`);
         return { props: emptySearchProps };
