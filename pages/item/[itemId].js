@@ -62,8 +62,7 @@ export async function getServerSideProps(context) {
     );
     if (!apiRes.ok) {
       console.error(`[Item] API request failed: ${apiRes.status} ${apiRes.statusText}`);
-      res.statusCode = 404;
-      return { props: { error: { statusCode: 404 } } };
+      return { notFound: true };
     }
     const json = await apiRes.json();
 
@@ -99,11 +98,8 @@ export async function getServerSideProps(context) {
       })
     } };
   } catch (error) {
-    console.log(error);
-    if (res) {
-      res.statusCode = 404;
-    }
-    return { props: {error: { statusCode: 404 } } };
+    console.error('[Item] Unexpected error:', error);
+    return { notFound: true };
   }
 };
 export default ItemDetail;
