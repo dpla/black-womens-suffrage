@@ -51,15 +51,18 @@ const ItemDetail = ({url, item}) => {
 
 export async function getServerSideProps(context) {
   const itemId = context.params.itemId;
-  const req = context.req;
-  const res = context.res;
-  const url = getCurrentFullUrl(req);
+  const url = getCurrentFullUrl(context.req);
   try {
     const apiVersion = process.env.API_VERSION || "v2";
-    const res = await fetch(
-      `${process.env.API_URL}/${apiVersion}/items/${encodeURIComponent(itemId)}?api_key=${process.env.API_KEY}`
+    const apiRes = await fetch(
+      `${process.env.API_URL}/${apiVersion}/items/${encodeURIComponent(itemId)}?api_key=${process.env.API_KEY}`,
+      { headers: { "DPLA-INTERNAL-ACCESS": process.env.DPLA_INTERNAL_ACCESS } }
     );
-    const json = await res.json();
+    if (!apiRes.ok) {
+      console.error(`[Item] API request failed: ${apiRes.status} ${apiRes.statusText}`);
+      return { notFound: true };
+    }
+    const json = await apiRes.json();
 
     const doc = json.docs[0];
     const thumbnailUrl = getItemThumbnail(doc);
@@ -93,11 +96,8 @@ export async function getServerSideProps(context) {
       })
     } };
   } catch (error) {
-    console.log(error);
-    if (res) {
-      res.statusCode = 404;
-    }
-    return { props: {error: { statusCode: 404 } } };
+    console.error('[Item] Unexpected error:', error.message || String(error));
+    return { notFound: true };
   }
 };
 export default ItemDetail;
