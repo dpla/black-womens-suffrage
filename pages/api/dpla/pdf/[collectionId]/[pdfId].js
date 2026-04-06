@@ -39,6 +39,15 @@ const pdfSender = async (req, res) => {
         return;
     }
     res.setHeader("Content-Type", "application/pdf");
+    const contentLength = pdf.headers.get("content-length");
+    if (contentLength) {
+        res.setHeader("Content-Length", contentLength);
+    }
+    if (!pdf.body) {
+        res.statusCode = 502;
+        res.end("Failed to fetch PDF.");
+        return;
+    }
     Readable.fromWeb(pdf.body)
         .on("error", (err) => {
             console.error("[PDF] Stream error:", err);
