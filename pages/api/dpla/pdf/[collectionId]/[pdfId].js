@@ -24,7 +24,15 @@ const pdfSender = async (req, res) => {
     const item = json[pdfId];
     const url = new URL(item.href);
     url.protocol = "http";
-    const pdf = await fetch(url.toString());
+    let pdf;
+    try {
+        pdf = await fetch(url.toString());
+    } catch (err) {
+        console.error("[PDF] Fetch error:", err);
+        res.statusCode = 502;
+        res.end("Failed to fetch PDF.");
+        return;
+    }
     if (!pdf.ok) {
         res.statusCode = 502;
         res.end("Failed to fetch PDF.");
