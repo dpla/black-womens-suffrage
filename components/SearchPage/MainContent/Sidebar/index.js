@@ -36,15 +36,14 @@ const FacetLink = ({ route, queryKey, termObject, disabled }) =>
             page: 1
           })
         }}
+        className={css.facet}
       >
-        <a className={css.facet}>
-          <span className={css.facetName}>
-            {`${termObject.term} `}
-          </span>
-          <span className={css.facetCount}>
-            {addCommasToNumber(termObject.count)}
-          </span>
-        </a>
+        <span className={css.facetName}>
+          {`${termObject.term} `}
+        </span>
+        <span className={css.facetCount}>
+          {addCommasToNumber(termObject.count)}
+        </span>
       </Link>;
 
 class DateFacet extends React.Component {

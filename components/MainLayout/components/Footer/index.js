@@ -15,25 +15,11 @@ const Footer = () => {
           </div>          
 
           <nav className={scss.footer__links} data-cy="footer__links">
-            <Link href="/about">
-              <a>About</a>
-            </Link>
-
-            <Link href="/timeline">
-              <a>Timeline</a>
-            </Link>
-
-            <Link href="/key-figures">
-              <a>Key Figures</a>
-            </Link>
-
-            <Link href="/collections">
-              <a>Collections</a>
-            </Link>
-
-            <Link href="/partners">
-              <a>Partners</a>
-            </Link>
+            <Link href="/about">About</Link>
+            <Link href="/timeline">Timeline</Link>
+            <Link href="/key-figures">Key Figures</Link>
+            <Link href="/collections">Collections</Link>
+            <Link href="/partners">Partners</Link>
           </nav>
 
           <a href="http://dp.la/" rel="noopener" target="_blank" data-cy="footer__logo_dpla"> 
@@ -46,9 +32,7 @@ const Footer = () => {
           <nav className={scss.footer__links_small} data-cy="footer__links_small">
             <a href="http://dp.la/" rel="noopener" target="_blank" className={scss.footer__a}> Visit DPLA</a>
 
-            <Link href="/harmful-language-statement">
-              <a>Harmful Language Statement</a>
-            </Link>
+            <Link href="/harmful-language-statement">Harmful Language Statement</Link>
           </nav>
 
           <section className={scss.footer__section_bottom}>

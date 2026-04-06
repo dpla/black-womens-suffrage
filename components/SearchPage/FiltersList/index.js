@@ -46,15 +46,12 @@ const Filter = ({ name, queryKey, route }) => {
           pathname: route.pathname,
           query: Object.assign({}, clearFacet(route.query, queryKey, name))
         }}
+        className={css.filterLink}
+        title={`Remove ${label} ${name} filter`}
+        aria-label={`Remove ${label} ${name} filter`}
       >
-        <a
-          className={css.filterLink}
-          title={`Remove ${label} ${name} filter`}
-          aria-label={`Remove ${label} ${name} filter`}
-        >
-          {label}: <span className={css.filterText}>{name}</span>
-          <img src={closeIcon} alt={`clear ${name} filter`} />
-        </a>
+        {label}: <span className={css.filterText}>{name}</span>
+        <img src={closeIcon} alt={`clear ${name} filter`} />
       </Link>
     </li>
   );
@@ -113,8 +110,8 @@ class FiltersList extends React.Component {
                 pathname: this.props.route.pathname,
                 query: Object.assign({}, clearAllFacets(query))
               }}
+              className={css.clearAll}
             >
-              <a className={css.clearAll}>
                 <svg
                   className={css.clearAllIcon}
                   width="18"
@@ -131,7 +128,6 @@ class FiltersList extends React.Component {
                   </g>
                 </svg>
                 <span>Clear all filters</span>
-              </a>
             </Link>
           </div>
         </div>

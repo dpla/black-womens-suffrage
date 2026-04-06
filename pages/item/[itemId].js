@@ -65,6 +65,9 @@ export async function getServerSideProps(context) {
     const json = await apiRes.json();
 
     const doc = json.docs[0];
+    if (!doc) {
+      return { notFound: true };
+    }
     const thumbnailUrl = getItemThumbnail(doc);
     const date = doc.sourceResource.date &&
       Array.isArray(doc.sourceResource.date)
