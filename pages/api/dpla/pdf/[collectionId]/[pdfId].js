@@ -1,4 +1,5 @@
 import fs from "fs";
+import { Readable } from "stream";
 
 const pdfSender = async (req, res) => {
     const { query: {collectionId, pdfId}} = req;
@@ -24,9 +25,18 @@ const pdfSender = async (req, res) => {
     const url = new URL(item.href);
     url.protocol = "http";
     const pdf = await fetch(url.toString());
-    const pdfStream = pdf.body
-    pdfStream.on('close', () => { res.end() });
-    pdfStream.pipe(res);
+    if (!pdf.ok) {
+        res.statusCode = 502;
+        res.end("Failed to fetch PDF.");
+        return;
+    }
+    res.setHeader("Content-Type", "application/pdf");
+    Readable.fromWeb(pdf.body)
+        .on("error", (err) => {
+            console.error("[PDF] Stream error:", err);
+            res.end();
+        })
+        .pipe(res);
 
 }
 
