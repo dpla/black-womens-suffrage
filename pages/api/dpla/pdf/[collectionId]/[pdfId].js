@@ -1,5 +1,5 @@
 import fs from "fs";
-import { Readable } from "stream";
+import { Readable, pipeline } from "stream";
 
 const pdfSender = async (req, res) => {
     const { query: {collectionId, pdfId}} = req;
@@ -38,22 +38,22 @@ const pdfSender = async (req, res) => {
         res.end("Failed to fetch PDF.");
         return;
     }
-    res.setHeader("Content-Type", "application/pdf");
-    const contentLength = pdf.headers.get("content-length");
-    if (contentLength) {
-        res.setHeader("Content-Length", contentLength);
-    }
     if (!pdf.body) {
         res.statusCode = 502;
         res.end("Failed to fetch PDF.");
         return;
     }
-    Readable.fromWeb(pdf.body)
-        .on("error", (err) => {
+    const contentLength = pdf.headers.get("content-length");
+    if (contentLength) {
+        res.setHeader("Content-Length", contentLength);
+    }
+    res.setHeader("Content-Type", "application/pdf");
+    pipeline(Readable.fromWeb(pdf.body), res, (err) => {
+        if (err) {
             console.error("[PDF] Stream error:", err);
-            res.end();
-        })
-        .pipe(res);
+            res.destroy(err);
+        }
+    });
 
 }
 
