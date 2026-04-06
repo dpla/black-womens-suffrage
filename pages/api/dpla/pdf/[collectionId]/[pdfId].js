@@ -26,7 +26,7 @@ const pdfSender = async (req, res) => {
     url.protocol = "http";
     let pdf;
     try {
-        pdf = await fetch(url.toString());
+        pdf = await fetch(url.toString(), { signal: AbortSignal.timeout(30000) });
     } catch (err) {
         console.error("[PDF] Fetch error:", err);
         res.statusCode = 502;
@@ -51,7 +51,12 @@ const pdfSender = async (req, res) => {
     pipeline(Readable.fromWeb(pdf.body), res, (err) => {
         if (err) {
             console.error("[PDF] Stream error:", err);
-            res.destroy(err);
+            if (!res.headersSent) {
+                res.statusCode = 502;
+                res.end("Stream error");
+            } else {
+                res.destroy(err);
+            }
         }
     });
 
