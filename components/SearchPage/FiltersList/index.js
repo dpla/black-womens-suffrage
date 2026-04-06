@@ -51,7 +51,7 @@ const Filter = ({ name, queryKey, route }) => {
         aria-label={`Remove ${label} ${name} filter`}
       >
         {label}: <span className={css.filterText}>{name}</span>
-        <img src={closeIcon} alt={`clear ${name} filter`} />
+        <img src={closeIcon} alt="" aria-hidden="true" />
       </Link>
     </li>
   );
