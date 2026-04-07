@@ -1,4 +1,5 @@
 import fs from "fs";
+import { Readable, pipeline } from "stream";
 
 const pdfSender = async (req, res) => {
     const { query: {collectionId, pdfId}} = req;
@@ -23,10 +24,42 @@ const pdfSender = async (req, res) => {
     const item = json[pdfId];
     const url = new URL(item.href);
     url.protocol = "http";
-    const pdf = await fetch(url.toString());
-    const pdfStream = pdf.body
-    pdfStream.on('close', () => { res.end() });
-    pdfStream.pipe(res);
+    let pdf;
+    try {
+        pdf = await fetch(url.toString(), { signal: AbortSignal.timeout(30000) });
+    } catch (err) {
+        console.error("[PDF] Fetch error:", err);
+        res.statusCode = 502;
+        res.end("Failed to fetch PDF.");
+        return;
+    }
+    if (!pdf.ok) {
+        console.error("[PDF] Upstream error:", pdf.status, pdf.statusText);
+        res.statusCode = 502;
+        res.end("Failed to fetch PDF.");
+        return;
+    }
+    if (!pdf.body) {
+        res.statusCode = 502;
+        res.end("Failed to fetch PDF.");
+        return;
+    }
+    const contentLength = pdf.headers.get("content-length");
+    if (contentLength) {
+        res.setHeader("Content-Length", contentLength);
+    }
+    res.setHeader("Content-Type", "application/pdf");
+    pipeline(Readable.fromWeb(pdf.body), res, (err) => {
+        if (err) {
+            console.error("[PDF] Stream error:", err);
+            if (!res.headersSent) {
+                res.statusCode = 502;
+                res.end("Stream error");
+            } else {
+                res.destroy(err);
+            }
+        }
+    });
 
 }
 
