@@ -34,6 +34,7 @@ const pdfSender = async (req, res) => {
         return;
     }
     if (!pdf.ok) {
+        console.error("[PDF] Upstream error:", pdf.status, pdf.statusText);
         res.statusCode = 502;
         res.end("Failed to fetch PDF.");
         return;
