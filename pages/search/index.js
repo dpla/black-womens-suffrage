@@ -156,6 +156,7 @@ export async function getServerSideProps(context) {
     };
 
     if (page > MAX_PAGE_SIZE) {
+        context.res.statusCode = 400;
         return { props: emptySearchProps };
     }
 
