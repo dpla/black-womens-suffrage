@@ -116,7 +116,7 @@ export async function getServerSideProps(context) {
       })
     } };
   } catch (error) {
-    const safeMsg = (error.message || String(error)).replace(/api_key=[^&\s]*/g, "api_key=[redacted]");
+    const safeMsg = String(error?.message ?? error).replace(/api_key=[^&\s]*/g, "api_key=[redacted]");
     console.error('[Item] Unexpected error:', safeMsg);
     context.res.statusCode = 503;
     return { props: { url, item: null, errorState: true } };
