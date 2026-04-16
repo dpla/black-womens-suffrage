@@ -99,7 +99,8 @@ export async function getServerSideProps(context) {
       })
     } };
   } catch (error) {
-    console.error('[Item] Unexpected error:', error.message || String(error));
+    const safeMsg = (error.message || String(error)).replace(/api_key=[^&\s]*/g, "api_key=[redacted]");
+    console.error('[Item] Unexpected error:', safeMsg);
     return { notFound: true };
   }
 };

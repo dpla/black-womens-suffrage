@@ -8,6 +8,8 @@ import MainContent from "components/SearchPage/MainContent";
 import MaxPageError from "components/SearchPage/MaxPageError";
 import BWSHead from "components/BWSHead";
 
+import css from "./search.module.scss";
+
 import {
     getItemThumbnail,
     splitAndURIEncodeFacet,
@@ -27,7 +29,7 @@ import {
 
 const apiVersion = process.env.API_VERSION || "v2";
 
-const Search = ({ results, numberOfActiveFacets, pageCount, currentPage, pageSize, query }) => {
+const Search = ({ results, numberOfActiveFacets, pageCount, currentPage, pageSize, query, errorState }) => {
     const router = useRouter();
     const [showSidebar, setShowSidebar] = useState(false);
 
@@ -50,21 +52,26 @@ const Search = ({ results, numberOfActiveFacets, pageCount, currentPage, pageSiz
                     "Search results" :
                     `Search results for "${query}"`}
             />
-            <OptionsBar
+            {!errorState && <OptionsBar
                 showFilters={showSidebar}
                 currentPage={currentPage}
                 route={router}
                 itemCount={itemCount}
                 onClickToggleFilters={toggleFilters}
                 numberOfActiveFacets={numberOfActiveFacets}
-            />
-            <FiltersList
+            />}
+            {!errorState && <FiltersList
                 showFilters={showSidebar}
                 onClickToggleFilters={toggleFilters}
                 route={router}
                 facets={results.facets}
-            />
-            {currentPage <= MAX_PAGE_SIZE &&
+            />}
+            {errorState && (
+                <p className={css.errorMessage}>
+                    Search results couldn&apos;t be loaded. Please try again.
+                </p>
+            )}
+            {!errorState && currentPage <= MAX_PAGE_SIZE &&
             <MainContent
                 hideSidebar={!showSidebar}
                 paginationInfo={{
@@ -76,7 +83,7 @@ const Search = ({ results, numberOfActiveFacets, pageCount, currentPage, pageSiz
                 facets={results.facets}
                 results={results.docs}
             />}
-            {currentPage > MAX_PAGE_SIZE &&
+            {!errorState && currentPage > MAX_PAGE_SIZE &&
             <MaxPageError maxPage={MAX_PAGE_SIZE} requestedPage={currentPage} />}
         </MainLayout>
     );
@@ -144,7 +151,8 @@ export async function getServerSideProps(context) {
         currentPage: Number(page),
         pageCount: 0,
         pageSize: page_size,
-        query: query.q || null
+        query: query.q || null,
+        errorState: false
     };
 
     if (page > MAX_PAGE_SIZE) {
@@ -175,12 +183,21 @@ export async function getServerSideProps(context) {
         });
         if (!res.ok) {
             console.error(`[Search] API request failed: ${res.status} ${res.statusText}`);
-            return { notFound: true };
+            if (res.status === 429 || res.status >= 500) {
+                context.res.statusCode = 503;
+                context.res.setHeader("Retry-After", "10");
+                return { props: { ...emptySearchProps, errorState: true } };
+            }
+            context.res.statusCode = 502;
+            return { props: { ...emptySearchProps, errorState: true } };
         }
         json = await res.json();
     } catch (error) {
-        console.error("[Search] Unexpected error:", error.message || String(error));
-        return { notFound: true };
+        const safeMsg = (error.message || String(error)).replace(/api_key=[^&\s]*/g, "api_key=[redacted]");
+        console.error("[Search] Unexpected error:", safeMsg);
+        context.res.statusCode = 503;
+        context.res.setHeader("Retry-After", "10");
+        return { props: { ...emptySearchProps, errorState: true } };
     }
 
     const docs = json.docs ? json.docs.map(result => {
@@ -215,7 +232,8 @@ export async function getServerSideProps(context) {
             currentPage: Number(page),
             pageCount,
             pageSize: page_size,
-            query: query.q || null
+            query: query.q || null,
+            errorState: false
         }
     };
 }
