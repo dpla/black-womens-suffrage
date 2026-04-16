@@ -8,6 +8,8 @@ import MainContent from "components/SearchPage/MainContent";
 import MaxPageError from "components/SearchPage/MaxPageError";
 import BWSHead from "components/BWSHead";
 
+import css from "./search.module.scss";
+
 import {
     getItemThumbnail,
     splitAndURIEncodeFacet,
@@ -65,7 +67,7 @@ const Search = ({ results, numberOfActiveFacets, pageCount, currentPage, pageSiz
                 facets={results.facets}
             />}
             {errorState && (
-                <p style={{ textAlign: "center", padding: "2rem" }}>
+                <p className={css.errorMessage}>
                     Search results couldn&apos;t be loaded. Please try again.
                 </p>
             )}
