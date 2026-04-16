@@ -183,9 +183,6 @@ export async function getServerSideProps(context) {
         });
         if (!res.ok) {
             console.error(`[Search] API request failed: ${res.status} ${res.statusText}`);
-            if (res.status === 404 || res.status === 410) {
-                return { notFound: true };
-            }
             if (res.status === 429 || res.status >= 500) {
                 context.res.statusCode = 503;
                 context.res.setHeader("Retry-After", "10");
@@ -196,7 +193,8 @@ export async function getServerSideProps(context) {
         }
         json = await res.json();
     } catch (error) {
-        console.error("[Search] Unexpected error:", error.message || String(error));
+        const safeMsg = (error.message || String(error)).replace(/api_key=[^&\s]*/g, "api_key=[redacted]");
+        console.error("[Search] Unexpected error:", safeMsg);
         context.res.statusCode = 503;
         context.res.setHeader("Retry-After", "10");
         return { props: { ...emptySearchProps, errorState: true } };
