@@ -15,7 +15,20 @@ import {
 
 import css from "components/ItemComponents/itemComponent.module.scss";
 
-const ItemDetail = ({url, item}) => {
+const ItemDetail = ({url, item, errorState}) => {
+  if (errorState || !item) {
+    return (
+      <MainLayout>
+        <BWSHead pageTitle="Item unavailable | DPLA" />
+        <main id="main" role="main" className="container">
+          <p className={css.errorMessage}>
+            This item couldn&apos;t be loaded. Please try again.
+          </p>
+        </main>
+      </MainLayout>
+    );
+  }
+
   return (
     <MainLayout>
       <BWSHead
@@ -60,7 +73,11 @@ export async function getServerSideProps(context) {
     );
     if (!apiRes.ok) {
       console.error(`[Item] API request failed: ${apiRes.status} ${apiRes.statusText}`);
-      return { notFound: true };
+      if (apiRes.status === 404 || apiRes.status === 410) {
+        return { notFound: true };
+      }
+      context.res.statusCode = apiRes.status === 429 || apiRes.status >= 500 ? 503 : 502;
+      return { props: { url, item: null, errorState: true } };
     }
     const json = await apiRes.json();
 
@@ -101,7 +118,8 @@ export async function getServerSideProps(context) {
   } catch (error) {
     const safeMsg = (error.message || String(error)).replace(/api_key=[^&\s]*/g, "api_key=[redacted]");
     console.error('[Item] Unexpected error:', safeMsg);
-    return { notFound: true };
+    context.res.statusCode = 503;
+    return { props: { url, item: null, errorState: true } };
   }
 };
 export default ItemDetail;
