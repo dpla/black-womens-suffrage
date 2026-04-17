@@ -56,6 +56,15 @@ const ItemDetail = ({url, item, errorState}) => {
          className={`container ${css.contentWrapper}`}
        >
          <Content item={item} url={url} />
+         <div className={css.faveAndCiteButtons}>
+           <div className={css.metadataLinks}>
+             <h2>Metadata</h2>
+             <ul>
+               <li><a href={`/item/${item.id}.raw`}>Original record</a></li>
+               <li><a href={`/item/${item.id}.json`}>Enriched JSON-LD</a></li>
+             </ul>
+           </div>
+         </div>
       </main>
 
     </MainLayout>

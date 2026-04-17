@@ -1,0 +1,72 @@
+import { pipeline } from "stream/promises";
+import { Readable } from "stream";
+import { DPLA_ITEM_ID_REGEX } from "constants/items";
+
+export default async function handler(req, res) {
+    if (req.method !== "GET") {
+        res.setHeader("Allow", "GET");
+        res.status(405).json({ error: "Method not allowed" });
+        return;
+    }
+
+    const { idListString, single } = req.query;
+    if (typeof idListString !== "string") {
+        res.status(404).json({ error: "Not found." });
+        return;
+    }
+    const validIds = idListString.split(",").filter(id => !!id && DPLA_ITEM_ID_REGEX.test(id));
+
+    if (validIds.length === 0) {
+        res.status(404).json({ error: "Not found." });
+        return;
+    }
+
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 8000);
+
+    try {
+        const apiVersion = process.env.API_VERSION || "v2";
+        const baseUrl = new URL(`${process.env.API_URL}/${apiVersion}/items/`);
+        baseUrl.searchParams.set("api_key", process.env.API_KEY);
+        baseUrl.pathname += validIds.join(",");
+        const fetchRes = await fetch(baseUrl, {
+            signal: controller.signal,
+            headers: { "DPLA-INTERNAL-ACCESS": process.env.DPLA_INTERNAL_ACCESS },
+        });
+        if (fetchRes.ok) {
+            if (single === "1") {
+                const data = await fetchRes.json();
+                const doc = data?.docs?.[0];
+                if (!doc) {
+                    res.status(404).json({ error: "Not found." });
+                    return;
+                }
+                res.setHeader("Content-Type", "application/json; charset=utf-8");
+                res.setHeader("Cache-Control", "public, max-age=86400");
+                res.status(200).send(JSON.stringify(doc, null, 2));
+            } else {
+                const contentType = fetchRes.headers.get("Content-Type") || "application/json; charset=utf-8";
+                res.setHeader("Cache-Control", "public, max-age=86400");
+                res.setHeader("Content-Type", contentType);
+                res.status(200);
+                await pipeline(Readable.fromWeb(fetchRes.body), res);
+            }
+        } else {
+            fetchRes.body?.cancel?.().catch(() => {});
+            if (fetchRes.status === 404) {
+                res.status(404).json({ error: "Not found." });
+            } else {
+                res.status(fetchRes.status).json({ error: "Upstream service error." });
+            }
+        }
+    } catch (err) {
+        if (err?.name === "AbortError") {
+            res.status(504).json({ error: "Upstream timeout." });
+            return;
+        }
+        console.error("Error proxying request to DPLA API.", err);
+        res.status(502).json({ error: "Upstream service error." });
+    } finally {
+        clearTimeout(timeout);
+    }
+}
