@@ -21,6 +21,11 @@ export default async function handler(req, res) {
         return;
     }
 
+    if (validIds.length > 50) {
+        res.status(400).json({ error: "Too many IDs requested. Maximum is 50." });
+        return;
+    }
+
     const controller = new AbortController();
     const timeout = setTimeout(() => controller.abort(), 8000);
 
