@@ -13,7 +13,7 @@ const BWS_CSP = [
   "frame-ancestors 'self'",
   "form-action 'self'",
   "default-src 'self'",
-  "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://cdn.polyfill.io",
+  "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com",
   "img-src 'self' http: https: data:",
   "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com https://*.ingest.sentry.io",
   "style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com",
