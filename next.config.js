@@ -13,10 +13,10 @@ const BWS_CSP = [
   "frame-ancestors 'self'",
   "form-action 'self'",
   "default-src 'self'",
-  "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com",
+  "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://cdn.polyfill.io",
   "img-src 'self' http: https: data:",
-  "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com",
-  "style-src 'self' 'unsafe-inline'",
+  "connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.googletagmanager.com https://*.ingest.sentry.io",
+  "style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com",
   "font-src 'self'",
   "media-src 'self' https://*.dp.la",
   "frame-src 'self'",
@@ -71,7 +71,7 @@ module.exports = withSentryConfig(config, {
   project: "dpla-frontend",
   // Auth token is only needed for source map uploads during CI builds.
   authToken: process.env.SENTRY_AUTH_TOKEN,
-  disableSourceMapUpload: !process.env.SENTRY_AUTH_TOKEN,
+  sourcemaps: { disable: !process.env.SENTRY_AUTH_TOKEN },
   silent: !process.env.CI,
   telemetry: false,
 });
