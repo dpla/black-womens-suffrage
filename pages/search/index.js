@@ -45,10 +45,10 @@ const Search = ({ results, numberOfActiveFacets, pageCount, currentPage, pageSiz
     return (
         <MainLayout>
             <BWSHead
-                pageTitle={query === undefined ?
+                pageTitle={!query ?
                     "Search Results | DPLA" :
                     `${query} | Search Results | DPLA`}
-                pageDescription={query === undefined ?
+                pageDescription={!query ?
                     "Search results" :
                     `Search results for "${query}"`}
             />
@@ -91,10 +91,12 @@ const Search = ({ results, numberOfActiveFacets, pageCount, currentPage, pageSiz
 
 export async function getServerSideProps(context) {
     const query = context.query;
+    const rawQ = Array.isArray(query.q) ? query.q[0] : query.q;
+    const normalizedQ = rawQ?.trim() || undefined;
     const sort_order = query.sort_order || "";
 
-    const q = query.q
-        ? encodeURIComponent(query.q.trim())
+    const q = normalizedQ
+        ? encodeURIComponent(normalizedQ)
             .replace(/'/g, "%27")
             .replace(/"/g, "%22")
         : "";
@@ -151,7 +153,7 @@ export async function getServerSideProps(context) {
         currentPage: Number(page),
         pageCount: 0,
         pageSize: page_size,
-        query: query.q || null,
+        query: normalizedQ,
         errorState: false
     };
 
@@ -233,7 +235,7 @@ export async function getServerSideProps(context) {
             currentPage: Number(page),
             pageCount,
             pageSize: page_size,
-            query: query.q || null,
+            query: normalizedQ,
             errorState: false
         }
     };
