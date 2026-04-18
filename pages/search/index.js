@@ -45,10 +45,10 @@ const Search = ({ results, numberOfActiveFacets, pageCount, currentPage, pageSiz
     return (
         <MainLayout>
             <BWSHead
-                pageTitle={query === undefined ?
+                pageTitle={!query ?
                     "Search Results | DPLA" :
                     `${query} | Search Results | DPLA`}
-                pageDescription={query === undefined ?
+                pageDescription={!query ?
                     "Search results" :
                     `Search results for "${query}"`}
             />
@@ -151,7 +151,7 @@ export async function getServerSideProps(context) {
         currentPage: Number(page),
         pageCount: 0,
         pageSize: page_size,
-        query: query.q || null,
+        query: query.q?.trim() || undefined,
         errorState: false
     };
 
@@ -233,7 +233,7 @@ export async function getServerSideProps(context) {
             currentPage: Number(page),
             pageCount,
             pageSize: page_size,
-            query: query.q || null,
+            query: query.q?.trim() || undefined,
             errorState: false
         }
     };
