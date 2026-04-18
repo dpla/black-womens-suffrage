@@ -12,6 +12,7 @@ import {
   joinIfArray,
   getItemThumbnail,
 } from "lib";
+import { DPLA_ITEM_ID_REGEX } from "constants/items";
 
 import css from "components/ItemComponents/itemComponent.module.scss";
 
@@ -73,6 +74,9 @@ const ItemDetail = ({url, item, errorState}) => {
 
 export async function getServerSideProps(context) {
   const itemId = context.params.itemId;
+  if (typeof itemId !== "string" || !DPLA_ITEM_ID_REGEX.test(itemId)) {
+    return { notFound: true };
+  }
   const url = getCurrentFullUrl(context.req);
   try {
     const apiVersion = process.env.API_VERSION || "v2";
