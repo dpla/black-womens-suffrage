@@ -6,6 +6,7 @@ import path from 'path'
 import { collections } from "constants/collections"
 import BWSHead from "components/BWSHead";
 import BreadcrumbsModule from "components/CollectionsPage/BreadcrumbsModule"
+import BreadcrumbJsonLd from "components/shared/BreadcrumbJsonLd"
 
 function Collection({ collection, items }) {
 
@@ -22,17 +23,16 @@ function Collection({ collection, items }) {
         />
         <BreadcrumbsModule
             breadcrumbs={[
-              {
-                title: "Collections",
-                url: {
-                  pathname: "/collections"
-                }
-              },
-              { 
-                title: collection.name
-              }
+              { title: "Collections", url: { pathname: "/collections" } },
+              { title: collection.name },
             ]}
           />
+        <BreadcrumbJsonLd
+          breadcrumbs={[
+            { title: "Collections", url: "/collections" },
+            { title: collection.name },
+          ]}
+        />
         <ItemList collection={ collection } items={ items } />
       </MainLayout>
   )
