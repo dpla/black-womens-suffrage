@@ -106,26 +106,25 @@ export async function getServerSideProps(context) {
     const language = doc.sourceResource.language &&
         (Array.isArray(doc.sourceResource.language)
       ? doc.sourceResource.language.map(lang => {
-          return lang.name;
+          return lang?.name;
         })
       : doc.sourceResource.language) || "";
-    const strippedDoc = Object.assign({}, doc, { originalRecord: "" });
-    delete strippedDoc.originalRecord;
+    const { originalRecord, ...strippedDoc } = doc;
     return { props : {
       url,
       item: Object.assign({}, doc.sourceResource, {
         id: doc.id,
         thumbnailUrl,
-        contributor: doc.dataProvider,
+        contributor: doc.dataProvider?.name ?? "",
         intermediateProvider: doc.intermediateProvider ? doc.intermediateProvider : "",
         date: date ? date : "",
         language: language ? language : "",
-        partner: doc.provider.name,
+        partner: doc.provider?.name ?? "",
         sourceUrl: doc.isShownAt,
         useDefaultImage: !doc.object,
         edmRights: doc.rights ? doc.rights : "",
         doc: strippedDoc,
-        originalRecord: doc.originalRecord
+        originalRecord
       })
     } };
   } catch (error) {
