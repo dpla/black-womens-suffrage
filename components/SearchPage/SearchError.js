@@ -1,17 +1,23 @@
 import React from "react";
 import Link from "next/link";
 import Button from "components/shared/Button";
+import PageBanner from "shared/PageBanner";
 import css from "./SearchError.module.scss";
 
 function SearchError() {
   return (
-    <div className={`container ${css.searchError}`}>
-      <h1>Search is temporarily unavailable.</h1>
+    <>
+      <PageBanner
+        title="SEARCH ERROR"
+        text="Search is temporarily unavailable."
+      />
+      <div className={`container ${css.searchError}`}>
       <p>
         We&rsquo;re having trouble connecting to our search service &mdash; this
         is on our end, not yours.
       </p>
-      <Button type="primary" onClick={() => window.location.reload()}>
+      <br />
+      <Button type="primary" size="large" fitContent onClick={() => window.location.reload()}>
         Try again
       </Button>
       <p className={css.statusLink}>
@@ -30,7 +36,8 @@ function SearchError() {
           Explore our <Link href="/key-figures">key figures</Link>
         </li>
       </ul>
-    </div>
+      </div>
+    </>
   );
 }
 
