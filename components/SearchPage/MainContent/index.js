@@ -25,7 +25,7 @@ const MainContent = ({
         {results.length > 0 &&
           <ListView
             route={route}
-            items={addLinkInfoToResults(results, route.query)}
+            items={addLinkInfoToResults(results)}
             viewMode={route.query.list_view}
           />}
         {results.length === 0 &&
