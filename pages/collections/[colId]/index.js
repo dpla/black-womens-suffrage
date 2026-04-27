@@ -10,6 +10,11 @@ import BreadcrumbJsonLd from "components/shared/BreadcrumbJsonLd"
 
 function Collection({ collection, items }) {
 
+  const baseBreadcrumbs = [
+    { title: "Collections", path: "/collections" },
+    { title: collection.name },
+  ];
+
   return (
       <MainLayout
         className="main"
@@ -22,16 +27,10 @@ function Collection({ collection, items }) {
           pageImageCaption={collection.name}
         />
         <BreadcrumbsModule
-            breadcrumbs={[
-              { title: "Collections", url: { pathname: "/collections" } },
-              { title: collection.name },
-            ]}
+            breadcrumbs={baseBreadcrumbs.map(b => ({ title: b.title, url: b.path ? { pathname: b.path } : undefined }))}
           />
         <BreadcrumbJsonLd
-          breadcrumbs={[
-            { title: "Collections", url: "/collections" },
-            { title: collection.name },
-          ]}
+          breadcrumbs={baseBreadcrumbs.map(b => ({ title: b.title, url: b.path }))}
         />
         <ItemList collection={ collection } items={ items } />
       </MainLayout>
