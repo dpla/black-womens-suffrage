@@ -53,7 +53,7 @@ const BWSHead = (props) => {
         <link rel='canonical' href={currentUrl} />
 
         <meta name='twitter:card' content='summary' />
-        <meta name='twitter:url' content={currentUrl || SITE_URL}/>
+        <meta name='twitter:url' content={currentUrl}/>
         <meta name='twitter:title' content="Black Women's Suffrage Collection" />
         <meta name='twitter:description' content={pageDescription || defaultDescription} />
         <meta name='twitter:image' content={pageImage || defaultImageUrl} />
@@ -65,7 +65,7 @@ const BWSHead = (props) => {
         <meta property='og:title' content={pageTitle || defaultPageTitle} />
         <meta property='og:description' content={pageDescription || defaultDescription} />
         <meta property='og:site_name' content={defaultPageTitle} />
-        <meta property='og:url' content={currentUrl || SITE_URL}/>
+        <meta property='og:url' content={currentUrl}/>
         <meta property='og:image' content={pageImage || defaultImageUrl} />
 
       </Head>
