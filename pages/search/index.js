@@ -92,7 +92,7 @@ const Search = ({ results, numberOfActiveFacets, pageCount, currentPage, pageSiz
 export async function getServerSideProps(context) {
     const query = context.query;
     const rawQ = Array.isArray(query.q) ? query.q[0] : query.q;
-    const normalizedQ = rawQ?.trim() || undefined;
+    const normalizedQ = rawQ?.trim() || null;
     const sort_order = query.sort_order || "";
 
     const q = normalizedQ
