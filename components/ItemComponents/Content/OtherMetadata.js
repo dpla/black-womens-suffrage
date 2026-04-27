@@ -30,11 +30,13 @@ const OtherMetadata = ({ item }) => {
             <FacetLink facet="provider" value={item.intermediateProvider} />
           </ItemTermValuePair>}
 
-        {item.subject &&
+        {item.subject?.some(subj => subj?.name) &&
           <ItemTermValuePair className={css.subjects} heading="Subjects">
-            {item.subject.map((subj, i) =>
-              <span key={subj?.name ?? i}>
-                <FacetLink facet="subject" value={subj?.name} />
+            {item.subject
+             .filter(subj => subj?.name)
+             .map((subj, i) =>
+             <span key={subj.name ?? i}>
+               <FacetLink facet="subject" value={subj.name} />
                 <br />
               </span>
             )}
