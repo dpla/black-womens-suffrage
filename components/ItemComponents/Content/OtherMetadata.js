@@ -12,9 +12,10 @@ const OtherMetadata = ({ item }) => {
   return (
     <div className={css.otherMetadata}>
       <dl className={css.contentDL}>
-        <ItemTermValuePair heading="Partner">
-          <FacetLink facet="partner" value={item.partner} />
-        </ItemTermValuePair>
+        {item.partner &&
+          <ItemTermValuePair heading="Partner">
+            <FacetLink facet="partner" value={item.partner} />
+          </ItemTermValuePair>}
 
         {item.contributor &&
           <ItemTermValuePair heading="Contributing Institution">
