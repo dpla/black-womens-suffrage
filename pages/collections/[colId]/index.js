@@ -6,8 +6,20 @@ import path from 'path'
 import { collections } from "constants/collections"
 import BWSHead from "components/BWSHead";
 import BreadcrumbsModule from "components/CollectionsPage/BreadcrumbsModule"
+import BreadcrumbJsonLd from "components/shared/BreadcrumbJsonLd"
+import { UNTITLED_TEXT } from "constants/site"
 
 function Collection({ collection, items }) {
+
+  const baseBreadcrumbs = [
+    { title: "Collections", path: "/collections" },
+    { title: collection.name, path: `/collections/${collection.colId}` },
+  ];
+
+  const normalizedBreadcrumbs = baseBreadcrumbs.map(b => ({
+    ...b,
+    title: b.title || UNTITLED_TEXT,
+  }));
 
   return (
       <MainLayout
@@ -21,18 +33,11 @@ function Collection({ collection, items }) {
           pageImageCaption={collection.name}
         />
         <BreadcrumbsModule
-            breadcrumbs={[
-              {
-                title: "Collections",
-                url: {
-                  pathname: "/collections"
-                }
-              },
-              { 
-                title: collection.name
-              }
-            ]}
+            breadcrumbs={normalizedBreadcrumbs.map(b => ({ title: b.title, url: b.path ? { pathname: b.path } : undefined }))}
           />
+        <BreadcrumbJsonLd
+          breadcrumbs={normalizedBreadcrumbs.map(b => ({ title: b.title, url: b.path }))}
+        />
         <ItemList collection={ collection } items={ items } />
       </MainLayout>
   )

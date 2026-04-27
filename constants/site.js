@@ -1,5 +1,6 @@
 export const GA_TRACKING_ID = "UA-28197764-11";
 export const SITE_TAG = "blackwomensuffrage";
+export const SITE_URL = "https://blackwomenssuffrage.dp.la";
 
 export const UNTITLED_TEXT = "Untitled";
 

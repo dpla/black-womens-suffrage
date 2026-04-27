@@ -167,21 +167,18 @@ class OptionsBar extends React.Component {
                         list_view: "list"
                       })
                     }}
+                    className={[
+                      css.listViewButton,
+                      this.props.route.query.list_view === "grid"
+                        ? css.viewButtonInactive
+                        : css.viewButtonActive
+                    ].join(" ")}
                   >
-                    <a
-                      className={[
-                        css.listViewButton,
-                        this.props.route.query.list_view === "grid"
-                          ? css.viewButtonInactive
-                          : css.viewButtonActive
-                      ].join(" ")}
-                    >
-                      <img
-                        className={css.viewButtonIcon}
-                        src={this.props.route.query.list_view === "grid" ? inactiveListViewIcon : listViewIcon}
-                        alt="List View"
-                      />
-                    </a>
+                    <img
+                      className={css.viewButtonIcon}
+                      src={this.props.route.query.list_view === "grid" ? inactiveListViewIcon : listViewIcon}
+                      alt="List View"
+                    />
                   </Link>
                   <Link
                     href={{
@@ -190,21 +187,18 @@ class OptionsBar extends React.Component {
                         list_view: "grid"
                       })
                     }}
+                    className={[
+                      css.gridViewButton,
+                      this.props.route.query.list_view === "grid"
+                        ? css.viewButtonActive
+                        : css.viewButtonInactive
+                    ].join(" ")}
                   >
-                    <a
-                      className={[
-                        css.gridViewButton,
-                        this.props.route.query.list_view === "grid"
-                          ? css.viewButtonActive
-                          : css.viewButtonInactive
-                      ].join(" ")}
-                    >
-                      <img
-                        className={css.viewButtonIcon}
-                        src={this.props.route.query.list_view === "grid" ? gridViewIcon : inactiveGridViewIcon}
-                        alt="Grid View"
-                      />
-                    </a>
+                    <img
+                      className={css.viewButtonIcon}
+                      src={this.props.route.query.list_view === "grid" ? gridViewIcon : inactiveGridViewIcon}
+                      alt="Grid View"
+                    />
                   </Link>
                 </div>
               </div>

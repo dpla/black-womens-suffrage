@@ -7,6 +7,8 @@ import path from 'path'
 import { collections } from "constants/collections"
 import BWSHead from "components/BWSHead"
 import BreadcrumbsModule from "components/CollectionsPage/BreadcrumbsModule"
+import BreadcrumbJsonLd from "components/shared/BreadcrumbJsonLd"
+import { joinIfArray } from "lib"
 
 function CollectionItem({ item, nextItem, prevItem, amountOfItems, currentItemNumber }) {
   return (
@@ -22,17 +24,16 @@ function CollectionItem({ item, nextItem, prevItem, amountOfItems, currentItemNu
       />
       <BreadcrumbsModule
         breadcrumbs={[
-          {
-            title: "Collections",
-            url: "/collections"
-          },
-          {
-            title: item.colName,
-            url: "/collections/" + item.colId
-          },
-          {
-            title: item.title.join(", ")
-          }
+          { title: "Collections", url: "/collections" },
+          { title: item.colName, url: "/collections/" + item.colId },
+          { title: joinIfArray(item.title) },
+        ]}
+      />
+      <BreadcrumbJsonLd
+        breadcrumbs={[
+          { title: "Collections", url: "/collections" },
+          { title: item.colName, url: "/collections/" + item.colId },
+          { title: joinIfArray(item.title) },
         ]}
       />
       <ItemView 

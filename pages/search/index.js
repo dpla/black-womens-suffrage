@@ -6,9 +6,8 @@ import OptionsBar from "components/SearchPage/OptionsBar";
 import FiltersList from "components/SearchPage/FiltersList";
 import MainContent from "components/SearchPage/MainContent";
 import MaxPageError from "components/SearchPage/MaxPageError";
+import SearchError from "components/SearchPage/SearchError";
 import BWSHead from "components/BWSHead";
-
-import css from "./search.module.scss";
 
 import {
     getItemThumbnail,
@@ -66,11 +65,7 @@ const Search = ({ results, numberOfActiveFacets, pageCount, currentPage, pageSiz
                 route={router}
                 facets={results.facets}
             />}
-            {errorState && (
-                <p className={css.errorMessage}>
-                    Search results couldn&apos;t be loaded. Please try again.
-                </p>
-            )}
+            {errorState && <SearchError />}
             {!errorState && currentPage <= MAX_PAGE_SIZE &&
             <MainContent
                 hideSidebar={!showSidebar}
@@ -92,7 +87,7 @@ const Search = ({ results, numberOfActiveFacets, pageCount, currentPage, pageSiz
 export async function getServerSideProps(context) {
     const query = context.query;
     const rawQ = Array.isArray(query.q) ? query.q[0] : query.q;
-    const normalizedQ = rawQ?.trim() || undefined;
+    const normalizedQ = rawQ?.trim() || null;
     const sort_order = query.sort_order || "";
 
     const q = normalizedQ
