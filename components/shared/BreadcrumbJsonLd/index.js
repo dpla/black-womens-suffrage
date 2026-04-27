@@ -3,7 +3,7 @@ import { SITE_URL } from "constants/site";
 
 function resolveUrl(url) {
   if (!url) return null;
-  if (typeof url === "string") return SITE_URL + url;
+  if (typeof url === "string") return SITE_URL + (url.startsWith("/") ? url : `/${url}`);
   if (url.pathname) return SITE_URL + url.pathname;
   return null;
 }
