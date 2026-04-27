@@ -7,6 +7,7 @@ import { collections } from "constants/collections"
 import BWSHead from "components/BWSHead";
 import BreadcrumbsModule from "components/CollectionsPage/BreadcrumbsModule"
 import BreadcrumbJsonLd from "components/shared/BreadcrumbJsonLd"
+import { UNTITLED_TEXT } from "constants/site"
 
 function Collection({ collection, items }) {
 
@@ -14,6 +15,11 @@ function Collection({ collection, items }) {
     { title: "Collections", path: "/collections" },
     { title: collection.name },
   ];
+
+  const normalizedBreadcrumbs = baseBreadcrumbs.map(b => ({
+    ...b,
+    title: b.title || UNTITLED_TEXT,
+  }));
 
   return (
       <MainLayout
@@ -27,10 +33,10 @@ function Collection({ collection, items }) {
           pageImageCaption={collection.name}
         />
         <BreadcrumbsModule
-            breadcrumbs={baseBreadcrumbs.map(b => ({ title: b.title, url: b.path ? { pathname: b.path } : undefined }))}
+            breadcrumbs={normalizedBreadcrumbs.map(b => ({ title: b.title, url: b.path ? { pathname: b.path } : undefined }))}
           />
         <BreadcrumbJsonLd
-          breadcrumbs={baseBreadcrumbs.map(b => ({ title: b.title, url: b.path }))}
+          breadcrumbs={normalizedBreadcrumbs.map(b => ({ title: b.title, url: b.path }))}
         />
         <ItemList collection={ collection } items={ items } />
       </MainLayout>
