@@ -12,40 +12,32 @@ class NavigationUser extends React.Component {
           {!isHome &&
             <li>
               <Link prefetch href="/">
-                <a>
-                  Home
-                </a>
+                Home
               </Link>
             </li>}
           <li>
             <Link prefetch href="/browse-by-topic">
-              <a>Browse by Topic</a>
+              Browse by Topic
             </Link>
           </li>
           <li>
             <Link prefetch href="/browse-by-partner">
-              <a>Browse by Partner</a>
+              Browse by Partner
             </Link>
           </li>
           <li>
             <Link prefetch href="/exhibitions">
-              <a>
-                Exhibitions
-              </a>
+              Exhibitions
             </Link>
           </li>
           <li>
             <Link prefetch href="/primary-source-sets">
-              <a>
-                Primary Source Sets
-              </a>
+              Primary Source Sets
             </Link>
           </li>
           <li>
             <Link prefetch href="/lists">
-              <a>
-                My Lists
-              </a>
+              My Lists
             </Link>
           </li>
         </ul>
@@ -53,12 +45,12 @@ class NavigationUser extends React.Component {
         <ul className={`${css.links} ${css.secondaryLinks}`}>
           <li>
             <Link prefetch as="/about" href="/about?section=about-us">
-              <a>About DPLA</a>
+              About DPLA
             </Link>
           </li>
           <li>
             <Link prefetch href="/news">
-              <a>News</a>
+              News
             </Link>
           </li>
         </ul>
@@ -66,7 +58,7 @@ class NavigationUser extends React.Component {
         <ul className={`${css.links} ${css.tertiaryLinks}`}>
           <li>
             <Link href={PRO_BASE_URL}>
-              <a>DPLA Pro</a>
+              DPLA Pro
             </Link>
           </li>
         </ul>

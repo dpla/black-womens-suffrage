@@ -9,24 +9,22 @@ const NavigationPro = ({ isHome, className, css }) =>
       {!isHome &&
         <li>
           <Link prefetch as="/" href="/pro">
-            <a>
-              Home
-            </a>
+            Home
           </Link>
         </li>}
       <li>
         <Link prefetch as="/hubs" href="/pro/wp/hubs?section=hubs">
-          <a>Hubs</a>
+          Hubs
         </Link>
       </li>
       <li>
         <Link prefetch as="/ebooks" href="/pro/wp/ebooks?section=ebooks">
-          <a>Ebooks</a>
+          Ebooks
         </Link>
       </li>
       <li>
         <Link prefetch as="/projects" href="/pro/wp?section=projects">
-          <a>Projects</a>
+          Projects
         </Link>
       </li>
     </ul>
@@ -34,12 +32,12 @@ const NavigationPro = ({ isHome, className, css }) =>
     <ul className={`${css.links} ${css.secondaryLinks}`}>
       <li>
         <Link prefetch as="/about" href="/pro/wp?section=about-dpla-pro">
-          <a>About</a>
+          About
         </Link>
       </li>
       <li>
         <Link prefetch as="/events" href="/pro/wp?section=events">
-          <a>Events</a>
+          Events
         </Link>
       </li>
     </ul>
@@ -47,12 +45,12 @@ const NavigationPro = ({ isHome, className, css }) =>
     <ul className={`${css.links} ${css.tertiaryLinks}`}>
       <li>
         <Link href={USER_BASE_URL}>
-          <a>DPLA Main Site</a>
+          DPLA Main Site
         </Link>
       </li>
       <li>
         <Link href={USER_BASE_URL + "/news"}>
-          <a>News</a>
+          News
         </Link>
       </li>
     </ul>

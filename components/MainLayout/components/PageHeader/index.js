@@ -22,23 +22,19 @@ class PageHeader extends React.Component {
             : ""} site-max-width`}
         >
           {(SITE_ENV === "user" || SITE_ENV === "pro") &&
-            <Link prefetch as="/" href={SITE_ENV === "user" ? "/" : "/pro"}>
-              <a className={css.logo} title="Home Page">
-                <dplaLogoWide className={css.logoImg} />
-              </a>
+            <Link prefetch as="/" href={SITE_ENV === "user" ? "/" : "/pro"} className={css.logo} title="Home Page">
+              <dplaLogoWide className={css.logoImg} />
             </Link>}
           {SITE_ENV === "local" &&
-            <Link prefetch href="/local" as="/">
-              <a className={`${css.logo} ${css.local}`} title="Home Page">
-                <img
-                  className={css.localLogo}
-                  alt={`${LOCALS[LOCAL_ID].name} Home`}
-                  src={`/static/local/${LOCALS[LOCAL_ID].theme}/${LOCALS[
-                    LOCAL_ID
-                  ].logo}`}
-                />
-                <span className={css.localText}>{LOCALS[LOCAL_ID].name}</span>
-              </a>
+            <Link prefetch href="/local" as="/" className={`${css.logo} ${css.local}`} title="Home Page">
+              <img
+                className={css.localLogo}
+                alt={`${LOCALS[LOCAL_ID].name} Home`}
+                src={`/static/local/${LOCALS[LOCAL_ID].theme}/${LOCALS[
+                  LOCAL_ID
+                ].logo}`}
+              />
+              <span className={css.localText}>{LOCALS[LOCAL_ID].name}</span>
             </Link>}
           {!hideSearchBar && <SearchBar />
           }
