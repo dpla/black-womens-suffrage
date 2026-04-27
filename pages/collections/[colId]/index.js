@@ -13,7 +13,7 @@ function Collection({ collection, items }) {
 
   const baseBreadcrumbs = [
     { title: "Collections", path: "/collections" },
-    { title: collection.name },
+    { title: collection.name, path: `/collections/${collection.colId}` },
   ];
 
   const normalizedBreadcrumbs = baseBreadcrumbs.map(b => ({
