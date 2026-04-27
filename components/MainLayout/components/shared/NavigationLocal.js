@@ -37,7 +37,7 @@ class NavigationLocal extends Component {
             <Link
               prefetch href={"/local/" + navItem.route}
               as={navItem.route}>
-              <a>{navItem.category}</a>
+              {navItem.category}
             </Link>
           </li>
         );
@@ -63,7 +63,7 @@ class NavigationLocal extends Component {
       blogHtml = (
           <li>
             <Link href={LOCALS[LOCAL_ID].externalLink}>
-              <a>Highlights Blog</a>
+              Highlights Blog
             </Link>
           </li>
       );
@@ -72,7 +72,7 @@ class NavigationLocal extends Component {
         <ul className={`${css.links} ${css.secondaryLinks}`}>
           <li>
             <Link href={LOCALS[LOCAL_ID].externalLink}>
-              <a href={LOCALS[LOCAL_ID].externalLink}>Visit {LOCALS[LOCAL_ID].name}</a>
+              Visit {LOCALS[LOCAL_ID].name}
             </Link>
           </li>
         </ul>
@@ -89,7 +89,7 @@ class NavigationLocal extends Component {
           {!isHome && (
             <li>
               <Link prefetch href="/local" as="/">
-                <a>Home</a>
+                Home
               </Link>
             </li>
           )}
@@ -98,27 +98,27 @@ class NavigationLocal extends Component {
           {LOCALS[LOCAL_ID].hasTerms && (
             <li>
               <Link prefetch href="/terms">
-                <a>Terms and Conditions</a>
+                Terms and Conditions
               </Link>
             </li>
           )}
           {LOCALS[LOCAL_ID].hasBrowseByPartner && (
             <li>
               <Link prefetch href="/browse-by-partner">
-                <a>Browse by Partner</a>
+                Browse by Partner
               </Link>
             </li>
           )}
           {LOCALS[LOCAL_ID].hasBrowseAll && (
             <li>
               <Link prefetch href="/search">
-                <a>Browse All</a>
+                Browse All
               </Link>
             </li>
           )}
           <li>
             <Link prefetch href="/lists">
-              <a>My Lists</a>
+              My Lists
             </Link>
           </li>
         </ul>
