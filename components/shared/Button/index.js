@@ -21,6 +21,7 @@ const Button = ({
   title,
   type,
   state,
+  fitContent = false,
   mustSubmit = false,
   name,
   disabled,
@@ -70,6 +71,10 @@ const Button = ({
     case "active":
       buttonClasses = `${buttonClasses} ${css.active}`;
       break;
+  }
+
+  if (fitContent) {
+    buttonClasses = `${buttonClasses} ${css.buttonFitContent}`;
   }
 
   let linkProps = {};

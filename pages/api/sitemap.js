@@ -1,8 +1,9 @@
 import { keyFigures } from "../../constants/key-figures";
 import {timelineOptions} from "../../constants/timeline-options";
 import * as fs from "fs";
+import { SITE_URL } from "../../constants/site";
 
-const absoluteLink = (path) => { return `https://blackwomenssuffrage.dp.la${path}` }
+const absoluteLink = (path) => { return `${SITE_URL}${path}` }
 
 const buildEntry = (link, date) => {
     return `<url>

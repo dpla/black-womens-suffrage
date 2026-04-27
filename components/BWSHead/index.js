@@ -1,6 +1,7 @@
 import React from "react"
 import Head from "next/head"
 import { useRouter } from 'next/router'
+import { SITE_URL } from "constants/site"
 
 const BWSHead = (props) => {
   const router = useRouter()
@@ -19,8 +20,7 @@ const BWSHead = (props) => {
 
   const defaultImageUrl = "/static/logo/dpla_bws-logo-color-nav.png"
 
-  const baseUrl = 'https://blackwomenssuffrage.dp.la';
-  const currentUrl = canonicalUrl || `${baseUrl}${router.asPath}`
+  const currentUrl = canonicalUrl || `${SITE_URL}${router.asPath}`
 
   return (
     <div>
@@ -53,7 +53,7 @@ const BWSHead = (props) => {
         <link rel='canonical' href={currentUrl} />
 
         <meta name='twitter:card' content='summary' />
-        <meta name='twitter:url' content={currentUrl || baseUrl}/>
+        <meta name='twitter:url' content={currentUrl}/>
         <meta name='twitter:title' content="Black Women's Suffrage Collection" />
         <meta name='twitter:description' content={pageDescription || defaultDescription} />
         <meta name='twitter:image' content={pageImage || defaultImageUrl} />
@@ -65,7 +65,7 @@ const BWSHead = (props) => {
         <meta property='og:title' content={pageTitle || defaultPageTitle} />
         <meta property='og:description' content={pageDescription || defaultDescription} />
         <meta property='og:site_name' content={defaultPageTitle} />
-        <meta property='og:url' content={currentUrl || baseUrl}/>
+        <meta property='og:url' content={currentUrl}/>
         <meta property='og:image' content={pageImage || defaultImageUrl} />
 
       </Head>
