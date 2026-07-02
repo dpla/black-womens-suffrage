@@ -88,11 +88,14 @@ export async function getServerSideProps(context) {
     );
     if (!apiRes.ok) {
       console.error(`[Item] API request failed: ${apiRes.status} ${apiRes.statusText}`);
-      if (apiRes.status === 404 || apiRes.status === 410) {
-        return { notFound: true };
+      // Real upstream outage (rate-limited or server error): retryable 503 error page.
+      if (apiRes.status === 429 || apiRes.status >= 500) {
+        context.res.statusCode = 503;
+        context.res.setHeader("Retry-After", "10");
+        return { props: { url, item: null, errorState: true } };
       }
-      context.res.statusCode = apiRes.status === 429 || apiRes.status >= 500 ? 503 : 502;
-      return { props: { url, item: null, errorState: true } };
+      // Client 4xx (404/410/400): item not available — 404 page, not 5xx (see #149).
+      return { notFound: true };
     }
     const json = await apiRes.json();
 

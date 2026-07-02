@@ -181,13 +181,17 @@ export async function getServerSideProps(context) {
         });
         if (!res.ok) {
             console.error(`[Search] API request failed: ${res.status} ${res.statusText}`);
+            // Real upstream outage (rate-limited or server error): surface a
+            // retryable 503 error page so it's visible but honestly labeled.
             if (res.status === 429 || res.status >= 500) {
                 context.res.statusCode = 503;
                 context.res.setHeader("Retry-After", "10");
                 return { props: { ...emptySearchProps, errorState: true } };
             }
-            context.res.statusCode = 502;
-            return { props: { ...emptySearchProps, errorState: true } };
+            // Client 4xx (usually a 400 from a faceted filter exceeding the API's
+            // 200-char limit): a bad request, not a server failure — render 404,
+            // not 5xx. The old 502 mapping caused sustained false 5xx alarms (#149).
+            return { notFound: true };
         }
         json = await res.json();
     } catch (error) {
