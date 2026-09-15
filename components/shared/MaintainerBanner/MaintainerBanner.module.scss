@@ -1,0 +1,21 @@
+@import "stylesheets/variables";
+
+// The strip dp.la runs above search results and item pages. There it hosts the
+// harmful-content notice with the attribution beneath it; BWS links its harmful
+// language statement from the footer, so here the strip carries the attribution
+// alone. Warm band already used by PageBanner rather than dp.la's merino.
+.wrapper {
+  background-color: $warmBand;
+}
+
+.inner {
+  padding: 0.25rem 1rem;
+}
+
+.maintainer {
+  color: $dimmedTextColor;
+  font-size: 0.875rem;
+  font-style: italic;
+  line-height: 1.35;
+  text-align: center;
+}
