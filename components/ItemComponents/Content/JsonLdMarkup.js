@@ -189,8 +189,11 @@ const JsonLdMarkup = ({ item, url }) => {
       var lon = null;
       let coordinates = joinIfArray(x.coordinates);
       if (coordinates !== undefined) {
-        lat = Number(coordinates.split(",")[0]);
-        lon = Number(coordinates.split(",")[1].trim());
+        // Optional chaining because a coordinates string with no comma leaves
+        // lonStr undefined; the previous split(",")[1].trim() threw on those.
+        const [latStr, lonStr] = coordinates.split(",");
+        lat = Number(latStr?.trim());
+        lon = Number(lonStr?.trim());
       }
       return {
         "@type": "Place",
