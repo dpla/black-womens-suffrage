@@ -3,11 +3,15 @@
 
 name: Node.js CI
 
+# This repository's default branch is main. The triggers below previously named
+# a "develop" branch that does not exist, so this workflow had never run once --
+# no pull request had ever been build-checked.
 on:
   push:
-    branches: [ develop ]
+    branches: [ main ]
   pull_request:
-    branches: [ develop ]
+    branches: [ main ]
+  workflow_dispatch:
 
 permissions:
   contents: read
