@@ -139,6 +139,7 @@ export async function getServerSideProps(context) {
     const safeMsg = String(error?.message ?? error).replace(/api_key=[^&\s]*/g, "api_key=[redacted]");
     console.error('[Item] Unexpected error:', safeMsg);
     context.res.statusCode = 503;
+    context.res.setHeader("Retry-After", "10");
     return { props: { url, item: null, errorState: true } };
   }
 };
