@@ -47,6 +47,22 @@
     }
   }
   
+  // Maintainer attribution, directly under the search field. The search bar
+  // sits on the white .container__curve rather than over the hero photo, so
+  // this takes the darkest neutral for contrast instead of white, and needs
+  // no backing.
+  .searchbar__maintainer {
+    color: $jaguar;
+    font-family: $serifFont;
+    font-size: 1rem;
+    font-style: italic;
+    line-height: 1.35;
+    margin: 1.25rem auto 0;
+    max-width: 34rem;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
   .searchbar__button_advanced {
     display: flex;
     justify-content: center;
