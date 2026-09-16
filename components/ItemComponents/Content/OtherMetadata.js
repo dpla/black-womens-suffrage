@@ -2,13 +2,15 @@ import React from "react";
 
 import ItemTermValuePair from "./ItemTermValuePair";
 import FacetLink from "./FacetLink";
+import selectRightsUri from "./selectRightsUri";
 
 import { joinIfArray, readMyRights } from "lib";
 
 import css from "./Content.module.scss";
 
 const OtherMetadata = ({ item }) => {
-  const rights = item.edmRights ? readMyRights(item.edmRights) : null;
+  const rightsUri = selectRightsUri(item);
+  const rights = rightsUri ? readMyRights(rightsUri) : null;
   return (
     <div className={css.otherMetadata}>
       <dl className={css.contentDL}>
