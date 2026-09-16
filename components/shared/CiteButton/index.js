@@ -16,7 +16,7 @@ class CiteButton extends React.Component {
   }
 
   toggleCiteButton = e => {
-    this.setState({ showCitation: !this.state.showCitation });
+    this.setState(prevState => ({ showCitation: !prevState.showCitation }));
     e.preventDefault();
   };
 

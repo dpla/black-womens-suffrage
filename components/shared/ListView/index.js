@@ -45,7 +45,6 @@ class ListView extends React.Component {
   state = {
     readOnly: false,
     listsInitialized: false,
-    listName: "",
     listUUID: "",
     selectedHash: {},
     lists: [],
@@ -61,8 +60,6 @@ class ListView extends React.Component {
   componentDidUpdate(prevProps, prevState) {
     if (this.state.showMessage !== prevState.showMessage)
       setTimeout(() => this.setState({ showMessage: "" }), MESSAGE_DELAY);
-    if (this.props.name !== prevProps.name)
-      this.setState({ listName: this.props.name });
   }
 
 
