@@ -49,6 +49,25 @@ class MainMetadata extends React.Component {
     this.setState({ isOpen: true });
   }
 
+  renderRightsBadge(item) {
+    /*
+    for situations where the rights are in sourceResource
+    see: https://dp.la/item/7f2973c3c4429087b4874725f3bc67ad
+    items should not have multiple rights but showing them in case a proper uri is present
+    */
+    if (item.edmRights) {
+      return <RightsBadge url={item.edmRights} />;
+    } else if (item.rights && Array.isArray(item.rights)) {
+      // sourceResource.rights is mostly free text, and when it does carry a
+      // standardized URI that URI is rarely first, so [0] would hand the badge
+      // prose and render nothing.
+      const recognized = item.rights.find(value => value && readMyRights(value));
+      return recognized ? <RightsBadge url={recognized} /> : null;
+    } else if (item.rights) {
+      return <RightsBadge url={item.rights} />;
+    }
+  }
+
   render() {
     const { isOpen } = this.state;
     const { item } = this.props;
@@ -99,17 +118,7 @@ class MainMetadata extends React.Component {
               </div>
 
 
-              {/* {item.edmRights && <RightsBadge url={item.edmRights} />} */}
-              {/* 
-        for situations where the rights are in sourceResource
-        see: https://dp.la/item/7f2973c3c4429087b4874725f3bc67ad
-        items should not have multiple rights but showing them in case a proper uri is present
-         */}
-              {/* {item.rights && Array.isArray(item.rights)
-                ? item.rights.map((theRight, index) => {
-                  return <RightsBadge url={theRight} key={index} />;
-                })
-                : item.rights ? <RightsBadge url={item.rights} /> : null} */}
+              {this.renderRightsBadge(item)}
             </dd>
           </div>
 
