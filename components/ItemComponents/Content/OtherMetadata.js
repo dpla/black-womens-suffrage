@@ -77,15 +77,17 @@ const OtherMetadata = ({ item }) => {
 
         {rights &&
           <ItemTermValuePair heading="Standardized Rights Statement">
+            {rights.label &&
+              <a
+                href={rights.url}
+                className={`${css.label} link external`}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                {rights.label}:
+              </a>}
             {rights.description}
             {rights.description !== "" && <br />}
-            <a
-              href={item.edmRights}
-              className="link external"
-              rel="noopener noreferrer"
-            >
-              {item.edmRights}
-            </a>
           </ItemTermValuePair>}
 
         {item.rights &&

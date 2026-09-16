@@ -304,6 +304,12 @@ $listPadding: 1.125rem;
   font-size: 0.9375rem;
 }
 
+// Label prefix on the standardized rights statement, matching dpla-frontend.
+.label {
+  font-weight: bold;
+  margin-right: 0.25em;
+}
+
 .url {
   font-family: $monoFont;
   padding: 9px 12px 12px;

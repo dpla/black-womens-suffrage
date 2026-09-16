@@ -8,6 +8,7 @@ import MainContent from "components/SearchPage/MainContent";
 import MaxPageError from "components/SearchPage/MaxPageError";
 import SearchError from "components/SearchPage/SearchError";
 import BWSHead from "components/BWSHead";
+import MaintainerBanner from "components/shared/MaintainerBanner";
 
 import {
     getItemThumbnail,
@@ -59,6 +60,9 @@ const Search = ({ results, numberOfActiveFacets, pageCount, currentPage, pageSiz
                 onClickToggleFilters={toggleFilters}
                 numberOfActiveFacets={numberOfActiveFacets}
             />}
+            {/* Ungated on purpose: the attribution stands whether or not
+                results loaded, matching dp.la. */}
+            <MaintainerBanner />
             {!errorState && <FiltersList
                 showFilters={showSidebar}
                 onClickToggleFilters={toggleFilters}

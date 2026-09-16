@@ -7,6 +7,7 @@ import CiteButton from "components/shared/CiteButton";
 import BreadcrumbsModule from "components/ItemComponents/BreadcrumbsModule";
 import BreadcrumbJsonLd from "components/shared/BreadcrumbJsonLd";
 import Content from "components/ItemComponents/Content";
+import MaintainerBanner from "components/shared/MaintainerBanner";
 
 import {
   getCurrentFullUrl,
@@ -52,6 +53,8 @@ const ItemDetail = ({url, item, errorState}) => {
           { title: joinIfArray(item.title) },
         ]}
       />
+
+      <MaintainerBanner />
 
       <main
          id="main"
