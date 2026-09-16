@@ -2,7 +2,6 @@ import React from "react";
 
 import ItemImage from "./ItemImage";
 import ItemTermValuePair from "./ItemTermValuePair";
-import selectRightsUri from "./selectRightsUri";
 
 import { googleAnalytics, joinIfArray, readMyRights } from "lib";
 
@@ -54,9 +53,19 @@ class MainMetadata extends React.Component {
     /*
     for situations where the rights are in sourceResource
     see: https://dp.la/item/7f2973c3c4429087b4874725f3bc67ad
+    items should not have multiple rights but showing them in case a proper uri is present
     */
-    const rightsUri = selectRightsUri(item);
-    return rightsUri ? <RightsBadge url={rightsUri} /> : null;
+    if (item.edmRights) {
+      return <RightsBadge url={item.edmRights} />;
+    } else if (item.rights && Array.isArray(item.rights)) {
+      // sourceResource.rights is mostly free text, and when it does carry a
+      // standardized URI that URI is rarely first, so [0] would hand the badge
+      // prose and render nothing.
+      const recognized = item.rights.find(value => value && readMyRights(value));
+      return recognized ? <RightsBadge url={recognized} /> : null;
+    } else if (item.rights) {
+      return <RightsBadge url={item.rights} />;
+    }
   }
 
   render() {
