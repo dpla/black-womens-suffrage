@@ -58,7 +58,11 @@ class MainMetadata extends React.Component {
     if (item.edmRights) {
       return <RightsBadge url={item.edmRights} />;
     } else if (item.rights && Array.isArray(item.rights)) {
-      return <RightsBadge url={item.rights[0]} />;
+      // sourceResource.rights is mostly free text, and when it does carry a
+      // standardized URI that URI is rarely first, so [0] would hand the badge
+      // prose and render nothing.
+      const recognized = item.rights.find(value => value && readMyRights(value));
+      return recognized ? <RightsBadge url={recognized} /> : null;
     } else if (item.rights) {
       return <RightsBadge url={item.rights} />;
     }
