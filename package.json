@@ -42,7 +42,7 @@
     "postcss": "^8.4.31",
     "semver": "^7.5.4",
     "ws": "^8.17.1",
-    "brace-expansion": "^5.0.6",
+    "brace-expansion": "^5.0.12",
     "picomatch": "^2.3.2",
     "js-yaml": "^3.15.2",
     "trim": "^0.0.3"
