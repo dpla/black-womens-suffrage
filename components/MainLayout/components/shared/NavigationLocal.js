@@ -93,7 +93,7 @@ class NavigationLocal extends Component {
             </li>
           )}
           {arbitraryHtml}
-          {contactHtml && contactHtml}
+          {contactHtml}
           {LOCALS[LOCAL_ID].hasTerms && (
             <li>
               <Link prefetch href="/terms">
@@ -122,7 +122,7 @@ class NavigationLocal extends Component {
           </li>
         </ul>
         {visitHtml && <span className={css.divider} />}
-        {visitHtml && visitHtml}
+        {visitHtml}
         <ul className={`${css.links} ${css.tertiaryLinks}`}>
           {blogHtml}
           <li>
