@@ -1,6 +1,5 @@
 import React from "react"
 import { withRouter } from "next/router"
-import CurvedButton from "components/shared/CurvedButton"
 import scss from "./HomeSearchBar.module.scss"
 import Link from "next/link"
 import { MAINTAINER_STATEMENT } from "constants/site"

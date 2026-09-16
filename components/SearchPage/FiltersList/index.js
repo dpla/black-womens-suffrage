@@ -60,7 +60,7 @@ const Filter = ({ name, queryKey, route }) => {
 class FiltersList extends React.Component {
   render() {
     const { query } = this.props.route;
-    const { onClickToggleFilters, showFilters } = this.props;
+    const { showFilters } = this.props;
     return Object.keys(query).some(queryKey =>
       possibleFacets.includes(mapURLPrettifiedFacetsToUgly[queryKey]) || queryKey === "tags"
     )

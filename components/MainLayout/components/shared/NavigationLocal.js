@@ -12,7 +12,6 @@ class NavigationLocal extends Component {
     var contactHtml;
     var arbitraryHtml = null;
     var blogHtml = null;
-    var surveyHtml = null;
 
     if (LOCALS[LOCAL_ID].routes) {
 

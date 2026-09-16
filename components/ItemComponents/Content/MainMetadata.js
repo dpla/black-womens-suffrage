@@ -1,7 +1,6 @@
 import React from "react";
 
 import ItemImage from "./ItemImage";
-import ItemTermValuePair from "./ItemTermValuePair";
 
 import { googleAnalytics, joinIfArray, readMyRights } from "lib";
 

@@ -10,7 +10,7 @@ import {
 } from "lib";
 
 
-import { UNTITLED_TEXT, MESSAGE_DELAY, MAX_LIST_ITEMS } from "constants/site";
+import { UNTITLED_TEXT, MESSAGE_DELAY } from "constants/site";
 
 import css from "./ListView.module.scss";
 
@@ -68,18 +68,11 @@ class ListView extends React.Component {
 
 
   render() {
-    const { items, route, exportable, viewMode } = this.props;
+    const { items, route, viewMode } = this.props;
     const {
       readOnly,
-      listsInitialized,
-      checkboxShown,
-      hasList,
-      lists,
-      listUUID,
-      showMessage,
       selectedHash
     } = this.state;
-    const listCount = Object.keys(selectedHash).length;
 
     return (
         <div>
