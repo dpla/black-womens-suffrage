@@ -576,7 +576,7 @@ export const rights = {
         "url": "http://creativecommons.org/licenses/nc-sa/1.0/",
         "description": "This work is licensed under a Creative Commons NonCommercial-ShareAlike 1.0 Generic License.",
         "label": "NonCommercial-ShareAlike 1.0 Generic",
-        "image": "http://i.creativecommons.org/l/nc-sa/1.0/88x31.png",
+        "image": "https://licensebuttons.net/l/nc-sa/1.0/88x31.png",
         "source": "http://api.creativecommons.org/rest/1.5/details?license-uri=http://creativecommons.org/licenses/nc-sa/1.0/",
         "deprecated": "true",
         "permits": [
@@ -593,7 +593,7 @@ export const rights = {
         "url": "http://creativecommons.org/licenses/nc/1.0/",
         "description": "This work is licensed under a Creative Commons NonCommercial 1.0 Generic License.",
         "label": "NonCommercial 1.0 Generic",
-        "image": "http://i.creativecommons.org/l/nc/1.0/88x31.png",
+        "image": "https://licensebuttons.net/l/nc/1.0/88x31.png",
         "source": "http://api.creativecommons.org/rest/1.5/details?license-uri=http://creativecommons.org/licenses/nc/1.0/",
         "deprecated": "true",
         "permits": [
@@ -609,7 +609,7 @@ export const rights = {
         "url": "http://creativecommons.org/licenses/publicdomain/",
         "description": "This work is in the Public Domain.",
         "label": "Public Domain",
-        "image": "http://i.creativecommons.org/l/publicdomain/88x31.png",
+        "image": "https://licensebuttons.net/l/publicdomain/88x31.png",
         "source": "http://api.creativecommons.org/rest/1.5/details?license-uri=http://creativecommons.org/licenses/publicdomain/",
         "deprecated": "true",
         "permits": [
@@ -623,7 +623,7 @@ export const rights = {
         "url": "http://creativecommons.org/publicdomain/mark/1.0/",
         "description": "This work is free of known copyright restrictions.",
         "label": "Public Domain Mark 1.0",
-        "image": "http://i.creativecommons.org/p/mark/1.0/88x31.png",
+        "image": "https://licensebuttons.net/p/mark/1.0/88x31.png",
         "source": "http://api.creativecommons.org/rest/1.5/details?license-uri=http://creativecommons.org/publicdomain/mark/1.0/",
         "deprecated": "false",
         "permits": [
@@ -637,7 +637,7 @@ export const rights = {
         "url": "http://creativecommons.org/publicdomain/zero/1.0/",
         "description": "To the extent possible under law, the person who associated CC0 with this work has waived all copyright and related or neighboring rights to this work.",
         "label": "CC0 1.0 Universal",
-        "image": "http://i.creativecommons.org/p/zero/1.0/88x31.png",
+        "image": "https://licensebuttons.net/p/zero/1.0/88x31.png",
         "source": "http://api.creativecommons.org/rest/1.5/details?license-uri=http://creativecommons.org/publicdomain/zero/1.0/",
         "deprecated": "false",
         "permits": [
