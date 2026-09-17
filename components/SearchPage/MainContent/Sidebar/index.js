@@ -8,7 +8,8 @@ import Accordion from "components/shared/Accordion";
 import {
   possibleFacets,
   mapFacetsToURLPrettified,
-  prettifiedFacetMap
+  prettifiedFacetMap,
+  DATE_FACET_ID
 } from "constants/search";
 
 import { addCommasToNumber, escapeForRegex, removeQueryParams } from "lib";
@@ -199,54 +200,68 @@ class Sidebar extends React.Component {
       new RegExp('"' + escapeForRegex(value) + '"').test(
         route.query[mapFacetsToURLPrettified[facetKey]]
       );
-    let hasDates = false;
+    const isDateKey = key => key.indexOf("sourceResource.date") === 0;
+    // facets also carries "tags", a synthetic entry the search page injects to
+    // hold the site filter. It is not browsable, and possibleFacets is already
+    // the list of real ones, so reuse it rather than naming "tags" here.
+    const displayable = Object.keys(facets).filter(key =>
+      possibleFacets.includes(key)
+    );
+    // date.begin and date.end both describe the one Date accordion; the first
+    // present key builds it and the other is dropped.
+    const dateKey = displayable.find(isDateKey);
+
+    const termItem = (key, i) => ({
+      id: key,
+      name: prettifiedFacetMap[key],
+      // first two items should be expanded as well as any items
+      // with an active subitem found in the query string
+      active:
+        i < 2 ||
+        facets[key].terms.some(termObject =>
+          isFacetValueInQuery(key, termObject.term)
+        ),
+      type: "term",
+      subitems: facets[key].terms.map(termObject => ({
+        id: termObject.term,
+        content: (
+          <FacetLink
+            route={route}
+            termObject={termObject}
+            queryKey={mapFacetsToURLPrettified[key]}
+            disabled={isFacetValueInQuery(key, termObject.term)}
+          />
+        )
+      }))
+    });
+
+    const dateItem = key => {
+      const dateProps = {};
+      if (route.query.after) dateProps.after = route.query.after;
+      if (route.query.before) dateProps.before = route.query.before;
+      return {
+        id: DATE_FACET_ID,
+        name: prettifiedFacetMap[key],
+        active: true,
+        type: "date",
+        subitems: <DateFacet route={route} {...dateProps} />
+      };
+    };
+
+    // Accordion renders whatever it is handed, so drop anything with nothing to
+    // show here rather than leaving holes for it to skip over.
+    const items = displayable
+      .map((key, i) => {
+        if (key === dateKey) return dateItem(key);
+        if (isDateKey(key)) return null;
+        return facets[key].terms.length ? termItem(key, i) : null;
+      })
+      .filter(Boolean);
+
     return (
       <div className={css.sidebar}>
         <h2>REFINE YOUR SEARCH</h2>
-        <Accordion
-          items={Object.keys(facets).map((key, i) => {
-            if (key.indexOf("sourceResource.date") === -1 && key.indexOf("tags") === -1) {
-              return {
-                name: prettifiedFacetMap[key],
-                // first two items should be expanded as well as any items
-                // with an active subitem found in the query string
-                active:
-                  i < 2 ||
-                    facets[key].terms.some(termObject =>
-                      isFacetValueInQuery(key, termObject.term)
-                    ),
-                type: "term",
-                subitems: facets[key].terms.map(termObject => {
-                  return {
-                    content: possibleFacets.includes(key)
-                      ? <FacetLink
-                          route={route}
-                          termObject={termObject}
-                          queryKey={mapFacetsToURLPrettified[key]}
-                          disabled={isFacetValueInQuery(key, termObject.term)}
-                        />
-                      : ""
-                  };
-                })
-              };
-            } else {
-              if (!hasDates) {
-                hasDates = true; // because there's facets for after and before we dont want two date ranges
-                let dateProps = {};
-                if (route.query.after) dateProps.after = route.query.after;
-                if (route.query.before) dateProps.before = route.query.before;
-                return {
-                  name: prettifiedFacetMap[key],
-                  active: true,
-                  type: "date",
-                  subitems: <DateFacet route={route} {...dateProps} />
-                };
-              } else {
-                return "";
-              }
-            }
-          })}
-        />
+        <Accordion items={items} />
       </div>
     );
   }
