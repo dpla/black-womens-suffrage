@@ -47,23 +47,33 @@ const FacetLink = ({ route, queryKey, termObject, disabled }) =>
       </Link>;
 
 class DateFacet extends React.Component {
-  componentWillMount() {
-    this.setState((state, props) => ({
-      after: props.after || "",
-      before: props.before || ""
-    }));
-  }
+  // Was componentWillMount.
+  state = {
+    after: this.props.after || "",
+    before: this.props.before || ""
+  };
 
-  componentWillReceiveProps(nextProps) {
+  // Deliberately a behaviour change, and the correct one: the old
+  // componentWillReceiveProps compared incoming props against local *state*, so
+  // a parent re-render could overwrite what the user was mid-way through
+  // typing. This triggers on a real props change instead. Returning null when
+  // the values already match preserves the no-op bail-out the old comparison
+  // got by accident -- without it, submitting a date re-renders twice.
+  componentDidUpdate(prevProps) {
     if (
-      nextProps.after !== this.state.after ||
-      nextProps.before !== this.state.before
+      prevProps.after === this.props.after &&
+      prevProps.before === this.props.before
     ) {
-      this.setState({
-        after: nextProps.after || "",
-        before: nextProps.before || ""
-      });
+      return;
     }
+    const after = this.props.after || "";
+    const before = this.props.before || "";
+    this.setState(
+      state =>
+        state.after === after && state.before === before
+          ? null
+          : { after, before }
+    );
   }
 
   cleanText(target, compare) {
@@ -180,17 +190,6 @@ class DateFacet extends React.Component {
 }
 
 class Sidebar extends React.Component {
-  componentWillReceiveProps(nextProps) {
-    if (
-      possibleFacets.some(
-        facet => nextProps.facets[facet] !== this.props.facets[facet]
-      ) ||
-      nextProps.query !== this.props.query
-    ) {
-      this.forceUpdate();
-    }
-  }
-
   render() {
     const { route, facets } = this.props;
     const isFacetValueInQuery = (facetKey, value) =>
