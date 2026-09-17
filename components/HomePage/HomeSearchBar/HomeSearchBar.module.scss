@@ -13,8 +13,18 @@
       box-shadow: 0 0 12px 0 rgba(40,40,48,0.15);
       border-radius: 25px;
       
+      // Was display:block until the 1152px breakpoint, which made the
+      // flex-grow on .searchbar__input inert: the field fell back to its
+      // intrinsic width (~192px) and left the rest of the pill empty. No phone
+      // reaches 1152px in either orientation, so this was never right on
+      // mobile. Flex at every width instead.
       .searchbar__input_container {
-        width: 80%;
+        display: flex;
+        align-items: center; // centres the icon instead of sitting it on the text baseline
+        gap: .5rem;          // the focus outline is drawn outside the field; without a
+                             // gap it paints over the magnifier
+        flex: 1;             // fill .input once that is a flex container (>=768px)
+        min-width: 0;        // let the field shrink rather than overflow
         margin: 0 .75em;
         height: 50px;
 
@@ -80,12 +90,17 @@
   }
   
   .searchbar__input {
+    // No background was declared, so the field took whatever the user agent
+    // gave it and rendered as a mismatched block inside the white pill.
+    background: transparent;
     border: none;
-    border-radius: 0.25rem 0 0 0.25rem;
+    border-radius: 0; // was rounded on the left only, matching nothing
     flex-grow: 1;
     font-size: 1rem;
     height: 100%;
+    min-width: 0;
     padding-left: .5rem;
+    appearance: none; // the prefixed form alone was declared here
     -webkit-appearance: none;
   
   
@@ -146,10 +161,6 @@
   .searchbar__container {  
     .searchbar {
       width: 50%;
-
-      .searchbar__input_container {
-        display: flex;
-      } 
     }
   }
 }
