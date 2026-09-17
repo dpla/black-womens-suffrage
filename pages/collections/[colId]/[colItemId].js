@@ -12,10 +12,7 @@ import { joinIfArray } from "lib"
 
 function CollectionItem({ item, nextItem, prevItem, amountOfItems, currentItemNumber }) {
   return (
-    <MainLayout
-      className="main"
-      role="main"
-    >
+    <MainLayout>
       <BWSHead
         pageTitle={`${item.title} | DPLA`}
         pageDescription={item.description}

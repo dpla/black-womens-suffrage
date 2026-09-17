@@ -21,7 +21,7 @@ const MainContent = ({
         <div className={`${!hideSidebar ? css.isOpen : ""} ${css.sidebar}`}>
           <Sidebar route={route} facets={facets} />
         </div>}
-      <div id="main" role="main" className={css.resultsAndPagination}>
+      <div className={css.resultsAndPagination}>
         {results.length > 0 &&
           <ListView
             route={route}
@@ -29,7 +29,7 @@ const MainContent = ({
             viewMode={route.query.list_view}
           />}
         {results.length === 0 &&
-          <div className={``}>
+          <div>
             <p>
               Your search did not match any items.
             </p>

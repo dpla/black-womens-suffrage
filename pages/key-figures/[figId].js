@@ -6,10 +6,7 @@ import { keyFigures } from "constants/key-figures"
 function KeyFigure({ figure }) {
 
   return (
-      <MainLayout
-        className="main"
-        role="main"
-      >
+      <MainLayout>
         <KeyFiguresPage figure={ figure } />
       </MainLayout>
   )

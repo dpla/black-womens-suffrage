@@ -5,7 +5,7 @@ import BWSHead from "components/BWSHead"
 
 const About = () => {
   return (
-      <MainLayout className="main" role="main">
+      <MainLayout>
         <BWSHead 
         pageTitle="About Black Women's Suffrage | DPLA" 
         pageDescription="Information about the content and creation of the Black Women's Suffrage collection."

@@ -44,6 +44,17 @@ export default [
       // unused import -- 382 false positives on this codebase.
       "react/jsx-uses-vars": "error",
       "react/jsx-uses-react": "error",
+      // MainLayout provides the single <main id="main"> landmark. A page adding
+      // its own recreates the nested-landmark bug this rule exists to prevent,
+      // and CI runs `npm run lint`, so this is enforced for free.
+      "no-restricted-syntax": [
+        "error",
+        {
+          selector: 'JSXOpeningElement[name.name="main"]',
+          message:
+            "Don't render <main> here -- MainLayout already provides the page's single <main id=\"main\"> landmark. Render this as its children instead.",
+        },
+      ],
       "no-unused-vars": [
         "error",
         { args: "none", ignoreRestSiblings: true, varsIgnorePattern: "^_" },
