@@ -20,7 +20,7 @@ function PartnersPage() {
         <section className={scss.partners__section_1}>
           <div className={scss.partners__section_1_intro}>
             <h1>PARTNERSHIP</h1>
-            <p>Digital Public Library of America (DPLA) is proud to partner with the following institutions in the creation of a national digital collection that highlights the roles and experiences of Black women in the women’s suffrage movement, as well as Black women’s history of activism, as part of the centennial celebration of the passage of the 19th Amendment:</p>
+            <p>The Digital Public Library of America (DPLA) is proud to partner with the following institutions in the creation of a national digital collection that highlights the roles and experiences of Black women in the women’s suffrage movement, as well as Black women’s history of activism, as part of the centennial celebration of the passage of the 19th Amendment:</p>
           </div>
           <div className={scss.partners__section_1_logos}>
             <ImgOfflink url={"https://www.amistadresearchcenter.org/"}
@@ -92,7 +92,7 @@ function PartnersPage() {
 
               <div className={scss.partners__section_4_tile}>
                 <p className={scss.partners__section_4_name}>Aaisha Haykal</p>
-                <p className={scss.partners__section_4_role}>Manager of Archival Services, Avery Research Center for African American History & Culture at the College of Charlesto</p>
+                <p className={scss.partners__section_4_role}>Manager of Archival Services, Avery Research Center for African American History & Culture at the College of Charleston</p>
               </div>
 
               <div className={scss.divider}></div>
@@ -140,7 +140,7 @@ function PartnersPage() {
           <div className={scss.partners__section_5_right}>
             <p>This webinar featured a keynote by Allison Robinson, doctoral candidate in American History and American Material Culture at the University of Chicago, discussing teaching with digital exhibits, her experience working with the university’s Ida B. Wells collection, and how digital artifacts can help reconstruct visibility.</p>
             <p>Representatives from our partner institutions also introduced the collections that they are digitizing as part of the Black Women’s Suffrage collection and provided perspective about how these artifacts can help us better understand Black women suffragists and the historical and continuing activism of Black women.</p>
-            <a className={scss.roundButton} href="https://dpla.zoom.us/rec/play/75Z8Ie6h_DI3T9PEtgSDVPEoW9TuJqis13BN_qIKzxmyVHMKNgamYLsWZeMsg3xlnOgP_huLHvi6gzs5?autoplay=true&startTime=1594918908000" target="_blank"  rel="noopener" data-cy="round_button">
+            <a className={scss.roundButton} href="https://www.youtube.com/watch?v=GiK8OZjPAzc" target="_blank"  rel="noopener" data-cy="round_button">
               SEE LIVE RECORDING
               <img src="/static/icon/button-arrow.svg" alt={""} />
             </a>
@@ -149,7 +149,7 @@ function PartnersPage() {
 
         <section className={scss.partners__section_6}>
           <div>
-            <p>For more information about this work, please contact DPLA Director of Community Engagement Shaneé Yvette Murrain at <TextOfflink url="mailto:shanee@dp.la" text="shanee@dp.la" /></p>
+            <p>For more information about this work, please contact DPLA Director of Community Engagement Dominic Byrd-McDevitt at <TextOfflink url="mailto:dominic@dp.la" text="dominic@dp.la" /></p>
           </div>
         </section>
 

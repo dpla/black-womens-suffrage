@@ -9,7 +9,7 @@ function Partners() {
       <MainLayout className="main" role="main">
           <BWSHead 
           pageTitle="Black Women's Suffrage: Partners | DPLA" 
-          pageDescription="DPLA's parters in the creation of the Black Women's Suffrage collection."
+          pageDescription="DPLA's partners in the creation of the Black Women's Suffrage collection."
           />
         <PartnersPage />
       </MainLayout>
