@@ -18,40 +18,11 @@ const inactiveGridViewIcon = "/static/icon/search/icon-search-view-grid-inactive
 const listViewIcon = "/static/icon/search/icon-search-view-list-selected.svg";
 const inactiveListViewIcon = "/static/icon/search/icon-search-view-list-inactive.svg";
 
+// Both dropdowns are pure functions of the URL query -- the change handlers only
+// Router.push, they never write state -- so they are derived in render rather
+// than mirrored. That removes the props-to-state sync the deprecated
+// componentWillMount/componentWillReceiveProps pair existed to maintain.
 class OptionsBar extends React.Component {
-  componentWillMount() {
-    const { sort_by, sort_order, page_size } = this.props.route.query;
-    this.setState({
-      sortValue: getSortOptionFromParams({
-        sortBy: sort_by || "",
-        sortOrder: sort_order || ""
-      }),
-      pageSizeValue: page_size || DEFAULT_PAGE_SIZE
-    });
-  }
-
-  componentWillReceiveProps(nextProps) {
-    const { sort_by, sort_order, page_size } = this.props.route.query;
-    const {
-      sort_by: next_sort_by,
-      sort_order: next_sort_order,
-      page_size: next_page_size
-    } = nextProps.route.query;
-    if (
-      next_sort_by !== sort_by ||
-      next_sort_order !== sort_order ||
-      next_page_size !== page_size
-    ) {
-      this.setState({
-        sortValue: getSortOptionFromParams({
-          sortBy: next_sort_by || "",
-          sortOrder: next_sort_order || ""
-        }),
-        pageSizeValue: next_page_size || "10"
-      });
-    }
-  }
-
   onPageSizeChange = val => {
     Router.push({
       pathname: "/search",
@@ -73,10 +44,6 @@ class OptionsBar extends React.Component {
     });
   };
 
-  toggleFilters = () => {
-    this.setState({ showFilters: !this.state.showFilters });
-  };
-
   render() {
     const {
       currentPage,
@@ -84,6 +51,12 @@ class OptionsBar extends React.Component {
       showFilters,
       numberOfActiveFacets
     } = this.props;
+    const { sort_by, sort_order, page_size } = this.props.route.query;
+    const sortValue = getSortOptionFromParams({
+      sortBy: sort_by || "",
+      sortOrder: sort_order || ""
+    });
+    const pageSizeValue = page_size || DEFAULT_PAGE_SIZE;
     return (
       <>
         <div className={css.wrapper}>
@@ -98,7 +71,7 @@ class OptionsBar extends React.Component {
                 </label>
                 <select
                   id="options-bar-page-size"
-                  value={this.state.pageSizeValue}
+                  value={pageSizeValue}
                   onChange={this.onPageSizeChange}
                 >
                   {pageSizeOptions.map((item, index) =>
@@ -148,7 +121,7 @@ class OptionsBar extends React.Component {
                 </label>
                 <select
                   id="options-bar-sort-by"
-                  value={this.state.sortValue}
+                  value={sortValue}
                   onChange={this.onSortChange}
                 >
                   {sortOptions.map((item, index) =>

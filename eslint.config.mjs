@@ -39,6 +39,7 @@ export default [
       },
     },
     plugins: { react },
+    settings: { react: { version: "detect" } },
     rules: {
       // Without these two, every component used only as a JSX tag reads as an
       // unused import -- 382 false positives on this codebase.
@@ -55,6 +56,12 @@ export default [
             "Don't render <main> here -- MainLayout already provides the page's single <main id=\"main\"> landmark. Render this as its children instead.",
         },
       ],
+      // React 19 removes these outright, and nothing else here would catch a
+      // reintroduction: the build compiles fine and the failure is at runtime.
+      // eslint-plugin-react is already a dependency; its rule also catches the
+      // class-property form (componentWillMount = () => {}), which a
+      // hand-rolled MethodDefinition selector misses.
+      "react/no-deprecated": "error",
       "no-unused-vars": [
         "error",
         { args: "none", ignoreRestSiblings: true, varsIgnorePattern: "^_" },

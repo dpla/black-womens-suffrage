@@ -6,26 +6,32 @@ const addIcon = "/static/dpla-icons/add.svg";
 const subtractIcon = "/static/dpla-icons/subtract.svg";
 
 class Accordion extends React.Component {
-  componentWillMount() {
-    // first save the original items
-    const originalItems = this.props.items.map(item => {
-      return Object.assign({}, item, { active: true });
-    });
-    // activate all of them
-    this.setState({ items: originalItems });
-  }
+  // Starts every item expanded so the server-rendered HTML ships with the facet
+  // content present and aria-expanded="true" -- readable without JS. The
+  // componentDidMount below collapses to the real props after hydration.
+  state = {
+    items: this.props.items.map(item => Object.assign({}, item, { active: true }))
+  };
 
   componentDidMount() {
     // now collapse accordions for realz
     this.setState((state, props) => ({ items: props.items }));
   }
 
-  componentWillReceiveProps(nextProps) {
-    this.setState({
-      items: nextProps.items.map((item, i) =>
-        Object.assign({}, item, { active: this.state.items[i].active })
+  componentDidUpdate(prevProps) {
+    // Load-bearing, not an optimisation: the setState below re-enters this
+    // method, and on a state-only update React passes the same props object, so
+    // this identity check is the only thing terminating the loop.
+    if (prevProps.items === this.props.items) return;
+    // Carries active flags across by array position, which is only right while
+    // the facet list keeps its order -- see the follow-up issue on index keys.
+    // The fallback guards a longer incoming list, which used to index past the
+    // end and throw.
+    this.setState(state => ({
+      items: this.props.items.map((item, i) =>
+        Object.assign({}, item, { active: (state.items[i] || item).active })
       )
-    });
+    }));
   }
 
   onClickItem = index => {
