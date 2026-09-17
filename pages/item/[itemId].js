@@ -22,6 +22,7 @@ const ItemDetail = ({url, item, errorState}) => {
     return (
       <MainLayout>
         <BWSHead pageTitle="Item unavailable | DPLA" />
+        <MaintainerBanner />
         <main id="main" role="main" className="container">
           <p className={css.errorMessage}>
             This item couldn&apos;t be loaded. Please try again.
