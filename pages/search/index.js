@@ -60,8 +60,7 @@ const Search = ({ results, numberOfActiveFacets, pageCount, currentPage, pageSiz
                 onClickToggleFilters={toggleFilters}
                 numberOfActiveFacets={numberOfActiveFacets}
             />}
-            {/* Ungated on purpose: the attribution stands whether or not
-                results loaded, matching dp.la. */}
+            {/* Ungated on purpose -- see MaintainerBanner. */}
             <MaintainerBanner />
             {!errorState && <FiltersList
                 showFilters={showSidebar}
