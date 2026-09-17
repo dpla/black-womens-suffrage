@@ -1,7 +1,6 @@
 import React from "react"
 import Link from "next/link"
 import scss from "../TimelinePagination/TimelinePagination.module.scss"
-import { timelineOptions } from "constants/timeline-options"
 
 const TimelinePagination = ({ prevTime, nextTime }) => {
 

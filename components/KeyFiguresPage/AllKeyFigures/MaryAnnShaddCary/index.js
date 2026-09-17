@@ -1,13 +1,8 @@
-import scss from "components/KeyFiguresPage/KeyFiguresPage.module.scss"
 
 import { maryAnnShaddCary } from "constants/key-figures";
 
 import SectionTitle from "components/KeyFiguresPage/SectionTitle";
-import CurvedTextBox from "components/KeyFiguresPage/CurvedTextBox";
-import LeftBorderTextBox from "components/KeyFiguresPage/LeftBorderTextBox";
-import BorderedTextBox from "components/KeyFiguresPage/BorderedTextBox";
 import Sources from "components/KeyFiguresPage/Sources";
-import KeyFiguresPagination from "components/KeyFiguresPage/KeyFiguresPagination";
 import IntroAndPortrait from "components/KeyFiguresPage/IntroAndPortrait";
 import SearchPrompt from "components/KeyFiguresPage/SearchPrompt";
 import SearchTag from "shared/SearchTag";

@@ -2,14 +2,13 @@ import React from "react";
 import Link from "next/link";
 import { withRouter } from "next/router";
 
-import dplaLogoWide from "/public/static/assets/dpla-icons/dpla-logo-white.svg";
 
 import css from "./PageHeader.module.scss";
 import SearchBar from "components/shared/SearchBar";
 
 class PageHeader extends React.Component {
   render() {
-    const { searchQuery, hideSearchBar, router } = this.props;
+    const { hideSearchBar } = this.props;
     return (
       <div
         className={`${css.headerSearchBar} ${SITE_ENV === "pro"

@@ -3,7 +3,6 @@ import React from "react";
 
 import BWSHead from "components/BWSHead";
 import MainLayout from "components/MainLayout";
-import CiteButton from "components/shared/CiteButton";
 import BreadcrumbsModule from "components/ItemComponents/BreadcrumbsModule";
 import BreadcrumbJsonLd from "components/shared/BreadcrumbJsonLd";
 import Content from "components/ItemComponents/Content";

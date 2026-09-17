@@ -1,5 +1,4 @@
 import React from "react"
-import Link from "next/link"
 import scss from "./ItemView.module.scss"
 import PDFViewer from "../PDFViewer";
 import CollectionItemPagination from "../CollectionItemPagination"

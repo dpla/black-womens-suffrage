@@ -1,0 +1,11 @@
+# Vendored third-party build of pdf.js 2.4.456, served directly by
+# components/CollectionsPage/PDFViewer. Not our source: marking it vendored
+# keeps it out of language statistics and diffs, and it is excluded from
+# linting in eslint.config.mjs.
+#
+# Note this does not by itself remove it from CodeQL/code-quality scanning,
+# which currently reports 16 findings in this bundle. That repository uses
+# CodeQL *default* setup, which does not read .github/codeql/codeql-config.yml,
+# so a path filter has to be set in the repository's code scanning settings
+# or by moving to advanced setup.
+public/static/pdf-js/** linguist-vendored

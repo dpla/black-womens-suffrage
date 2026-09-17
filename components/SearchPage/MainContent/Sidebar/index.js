@@ -48,10 +48,10 @@ const FacetLink = ({ route, queryKey, termObject, disabled }) =>
 
 class DateFacet extends React.Component {
   componentWillMount() {
-    this.setState({
-      after: this.props.after || "",
-      before: this.props.before || ""
-    });
+    this.setState((state, props) => ({
+      after: props.after || "",
+      before: props.before || ""
+    }));
   }
 
   componentWillReceiveProps(nextProps) {
@@ -77,39 +77,25 @@ class DateFacet extends React.Component {
 
   handleAfterText = event => {
     let year = this.cleanText(event.target, this.state.after);
-    this.setState({
-      before: this.state.before,
-      after: year
-    });
+    this.setState({ after: year });
   };
 
   validateAfter = event => {
     let year = this.cleanText(event.target, this.state.after);
     if (year !== "" && this.state.before !== "" && year > this.state.before) {
-      year = this.state.before;
-      this.setState({
-        before: this.state.before,
-        after: year
-      });
+      this.setState(prevState => ({ after: prevState.before }));
     }
   };
 
   handleBeforeText = event => {
     let year = this.cleanText(event.target, this.state.before);
-    this.setState({
-      after: this.state.after,
-      before: year
-    });
+    this.setState({ before: year });
   };
 
   validateBefore = event => {
     let year = this.cleanText(event.target, this.state.before);
     if (year !== "" && this.state.after !== "" && year < this.state.after) {
-      year = this.state.after;
-      this.setState({
-        after: this.state.after,
-        before: year
-      });
+      this.setState(prevState => ({ before: prevState.after }));
     }
   };
 

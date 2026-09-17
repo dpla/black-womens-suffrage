@@ -17,7 +17,7 @@ class Accordion extends React.Component {
 
   componentDidMount() {
     // now collapse accordions for realz
-    this.setState({ items: this.props.items });
+    this.setState((state, props) => ({ items: props.items }));
   }
 
   componentWillReceiveProps(nextProps) {
