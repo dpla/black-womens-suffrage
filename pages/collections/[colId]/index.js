@@ -22,10 +22,7 @@ function Collection({ collection, items }) {
   }));
 
   return (
-      <MainLayout
-        className="main"
-        role="main"
-      >
+      <MainLayout>
         <BWSHead 
           pageTitle={`${collection.name} | DPLA`}
           pageDescription={collection.description}

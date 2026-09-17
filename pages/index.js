@@ -20,7 +20,7 @@ const WEBSITE_JSON_LD = JSON.stringify({
 
 const Home = () => {
   return (
-      <MainLayout className="main" role="main">
+      <MainLayout>
           <BWSHead
           pageTitle="Black Women’s Suffrage | DPLA"
           pageDescription="The Black Women’s Suffrage Digital Collection is a collaborative project to provide digital access to materials documenting the roles and experiences of Black Women in the Women’s Suffrage Movement and, more broadly, women’s rights, voting rights, and civic activism between the 1850s and 1960."

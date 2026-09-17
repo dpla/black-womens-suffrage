@@ -2,9 +2,7 @@ import React from "react";
 
 import css from "./SkipToContent.module.scss";
 
-const SkipToContent = ({ className, id, isHidden, children }) =>
-  <div className={css.skipLink} tabIndex="-1">
-    <a href="#main">Skip to Main Content</a>
-  </div>;
+const SkipToContent = () =>
+  <a className={css.skipLink} href="#main">Skip to Main Content</a>;
 
 export default SkipToContent;

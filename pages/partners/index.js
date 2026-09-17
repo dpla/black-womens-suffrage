@@ -6,7 +6,7 @@ import BWSHead from "components/BWSHead"
 
 function Partners() {
   return (
-      <MainLayout className="main" role="main">
+      <MainLayout>
           <BWSHead 
           pageTitle="Black Women's Suffrage: Partners | DPLA" 
           pageDescription="DPLA's partners in the creation of the Black Women's Suffrage collection."

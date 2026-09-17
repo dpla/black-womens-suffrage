@@ -23,11 +23,11 @@ const ItemDetail = ({url, item, errorState}) => {
       <MainLayout>
         <BWSHead pageTitle="Item unavailable | DPLA" />
         <MaintainerBanner />
-        <main id="main" role="main" className="container">
+        <div className="container">
           <p className={css.errorMessage}>
             This item couldn&apos;t be loaded. Please try again.
           </p>
-        </main>
+        </div>
       </MainLayout>
     );
   }
@@ -56,11 +56,7 @@ const ItemDetail = ({url, item, errorState}) => {
 
       <MaintainerBanner />
 
-      <main
-         id="main"
-         role="main"
-         className={`container ${css.contentWrapper}`}
-       >
+      <div className={`container ${css.contentWrapper}`}>
          <Content item={item} url={url} />
          <div className={css.faveAndCiteButtons}>
            <div className={css.metadataLinks}>
@@ -71,7 +67,7 @@ const ItemDetail = ({url, item, errorState}) => {
              </ul>
            </div>
          </div>
-      </main>
+      </div>
 
     </MainLayout>
   );

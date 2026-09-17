@@ -6,10 +6,7 @@ import { timelineOptions } from "constants/timeline-options"
 function Timeline({ timeId }) {
 
   return (
-      <MainLayout
-        className="main"
-        role="main"
-      >
+      <MainLayout>
         <TimelinePage timeId={ timeId } />
       </MainLayout>
   )

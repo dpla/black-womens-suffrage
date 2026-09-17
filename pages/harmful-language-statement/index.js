@@ -6,7 +6,7 @@ import BWSHead from "components/BWSHead"
 
 function HarmfulLanguageStatement() {
     return (
-        <MainLayout className="main" role="main">
+        <MainLayout>
             <BWSHead 
             pageTitle="Black Women's Suffrage: Harmful Language Statement | DPLA" 
             pageDescription="DPLA's statement on potentially harmful content."

@@ -3,18 +3,23 @@ import Navbar from "./components/Navbar"
 import MobileNavbar from "./components/MobileNavbar"
 import GoogleAnalytics from "components/shared/GoogleAnalytics"
 import Footer from "./components/Footer"
+import SkipToContent from "components/shared/SkipToContent"
 
+// Navbar, MobileNavbar and Footer are siblings of <main>, not children of it --
+// repeated site-wide content does not belong inside the main landmark.
 const MainLayout = ({ children }) => (
-  <main className="container">
+  <div className="container">
+    <SkipToContent />
     <GoogleAnalytics>
       <Navbar />
       <MobileNavbar />
-      <div className="container__curve">
+      {/* eslint-disable-next-line no-restricted-syntax -- the one <main> */}
+      <main id="main" tabIndex="-1" className="container__curve">
         {children}
-      </div>
+      </main>
       <Footer />
     </GoogleAnalytics>
-  </main>
+  </div>
 )
 
 export default MainLayout
