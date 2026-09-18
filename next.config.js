@@ -1,4 +1,6 @@
-const { withSentryConfig } = require("@sentry/nextjs");
+// From @sentry/nextjs/config, not the package root: the root re-export is
+// removed in v11.
+const { withSentryConfig } = require("@sentry/nextjs/config");
 
 // CSP is set here rather than in a CloudFront response headers policy so it
 // only applies to origin responses. CloudFront WAF challenge pages are served
