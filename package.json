@@ -16,7 +16,6 @@
     "@sentry/nextjs": "^10.75.0",
     "babel-plugin-inline-react-svg": "^1.1.1",
     "babel-plugin-module-resolver": "^4.0.0",
-    "localforage": "^1.9.0",
     "moment": "^2.29.4",
     "next": "15.5.25",
     "next-http-proxy-middleware": "^1.2.0",
