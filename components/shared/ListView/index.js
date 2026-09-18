@@ -47,7 +47,6 @@ const ListView = ({ items, route, viewMode }) => (
             type={item.type}
             url={item.thumbnailUrl}
             useDefaultImage={item.useDefaultImage}
-            className={""}
           />
           <div className={css.itemInfo}>
             <h2 className={`hover-underline ${css.itemTitle}`}>
