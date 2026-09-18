@@ -7,10 +7,6 @@ export const UNTITLED_TEXT = "Untitled";
 export const MAINTAINER_STATEMENT =
   "This digital collection of American cultural heritage is maintained by Cleveland Public Library.";
 
-export const MESSAGE_DELAY = 5000;
-
-export const MAX_LIST_ITEMS = 50;
-
 export const resourceTypes = {
   TEXT: "text",
   IMAGE: "image",
