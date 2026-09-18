@@ -41,6 +41,10 @@ export const mapURLPrettifiedFacetsToUgly = {
     tags: "tags"
 };
 
+// Identity for the single Date accordion. Both sourceResource.date.begin and
+// .end feed it, so it cannot be keyed off whichever of the pair arrives first.
+export const DATE_FACET_ID = "date";
+
 export const prettifiedFacetMap = {
     "sourceResource.type": "Type",
     "sourceResource.subject.name": "Subject",
